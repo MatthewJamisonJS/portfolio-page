@@ -1,0 +1,72 @@
+{{ define "main" }}
+
+<!-- Banner / Hero Section -->
+{{ partial "banner.html" . }}
+
+<!-- Navigation (sticky) -->
+{{ partial "navigation.html" . }}
+
+<!-- Main Content: Demos Grid + Music Sidebar -->
+<section id="demos" class="portfolio-demos section">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="section-title text-center">
+          <h2>Portfolio Demos</h2>
+          <p>Explore different approaches to web design and development. Each demo showcases a unique style and use case.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <!-- Left Column: Demo Grid (takes 8 columns on large screens) -->
+      <div class="col-lg-8 col-md-12">
+        <div class="row demo-grid">
+          {{ range where site.Pages "Section" "demos" }}
+          <div class="col-lg-6 col-md-6 col-sm-12 mb-4">
+            <div class="demo-card card h-100">
+              {{ if .Params.image }}
+              <div class="demo-image">
+                <img src="{{ .Params.image | relURL }}" alt="{{ .Title }}" class="card-img-top">
+                <div class="demo-overlay">
+                  <div class="demo-links">
+                    {{ if .Params.demo_url }}
+                    <a href="{{ .Params.demo_url }}" target="_blank" class="btn btn-sm btn-primary" rel="noopener">
+                      View Demo
+                    </a>
+                    {{ end }}
+                    {{ if .Params.github_url }}
+                    <a href="{{ .Params.github_url }}" target="_blank" class="btn btn-sm btn-secondary" rel="noopener">
+                      Source
+                    </a>
+                    {{ end }}
+                  </div>
+                </div>
+              </div>
+              {{ end }}
+              <div class="card-body">
+                <h4 class="card-title">{{ .Title }}</h4>
+                <p class="card-text">{{ .Params.description }}</p>
+                <a href="{{ .RelPermalink }}" class="read-more">Learn more →</a>
+              </div>
+            </div>
+          </div>
+          {{ end }}
+        </div>
+      </div>
+
+      <!-- Right Column: Music Widget Sidebar (takes 4 columns, sticky) -->
+      <div class="col-lg-4 col-md-12">
+        {{ partial "music-widget.html" . }}
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- About Section (optional - can be customized) -->
+{{ partial "about.html" . }}
+
+<!-- Contact Section -->
+{{ partial "contact.html" . }}
+
+{{ end }}

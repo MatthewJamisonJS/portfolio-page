@@ -1,0 +1,12 @@
+{{- $src := .Src -}}
+{{- $alt := .Alt | default "" -}}
+{{- $class := .Class | default "" -}}
+
+{{- $image := resources.Get $src -}}
+
+{{- if $image }}
+  <img src="{{ $image.RelPermalink }}" alt="{{ $alt }}" class="{{ $class }}">
+{{- else }}
+  <!-- Image not found: {{ $src }} -->
+  <img src="{{ $src | absURL }}" alt="{{ $alt }}" class="{{ $class }}">
+{{- end }}

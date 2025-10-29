@@ -1,0 +1,18 @@
+<svg width="48" height="48" xmlns="http://www.w3.org/2000/svg">
+  <!-- Porygon-Z: Digital/Tech Pokemon - Cyan/Magenta -->
+  <defs>
+    <linearGradient id="porygonGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#e91e63;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#00bcd4;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <!-- Head/Body -->
+  <rect x="16" y="12" width="20" height="16" fill="url(#porygonGrad)" rx="2"/>
+  <!-- Eye -->
+  <circle cx="26" cy="20" r="3" fill="#00bcd4"/>
+  <!-- Digital bits -->
+  <rect x="12" y="16" width="4" height="4" fill="#00bcd4"/>
+  <rect x="36" y="18" width="4" height="4" fill="#e91e63"/>
+  <!-- Tail -->
+  <polygon points="16,28 10,32 16,36" fill="url(#porygonGrad)"/>
+</svg>

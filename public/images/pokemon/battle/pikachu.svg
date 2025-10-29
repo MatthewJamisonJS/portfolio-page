@@ -1,0 +1,22 @@
+<svg width="80" height="90" xmlns="http://www.w3.org/2000/svg">
+  <!-- Pikachu - Electric (Classic) -->
+  <!-- Body -->
+  <ellipse cx="40" cy="55" rx="20" ry="22" fill="#ffeb3b"/>
+  <!-- Head -->
+  <circle cx="40" cy="35" r="18" fill="#ffeb3b"/>
+  <!-- Ears (pointy, with black tips) -->
+  <polygon points="30,20 25,5 35,15" fill="#ffeb3b"/>
+  <polygon points="50,20 55,5 45,15" fill="#ffeb3b"/>
+  <polygon points="25,5 27,3 30,8" fill="#333"/>
+  <polygon points="55,5 53,3 50,8" fill="#333"/>
+  <!-- Cheeks (electric red) -->
+  <circle cx="28" cy="35" r="5" fill="#e91e63" opacity="0.8"/>
+  <circle cx="52" cy="35" r="5" fill="#e91e63" opacity="0.8"/>
+  <!-- Eyes -->
+  <circle cx="34" cy="32" r="3" fill="#333"/>
+  <circle cx="46" cy="32" r="3" fill="#333"/>
+  <circle cx="35" cy="31" r="1" fill="white"/>
+  <circle cx="47" cy="31" r="1" fill="white"/>
+  <!-- Tail (lightning bolt) -->
+  <path d="M 55 55 L 65 50 L 60 60 L 70 55 L 60 70" fill="#ffd600" stroke="#ff9800" stroke-width="1"/>
+</svg>

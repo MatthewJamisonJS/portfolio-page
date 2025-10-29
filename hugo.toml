@@ -1,0 +1,129 @@
+################################# Default configuration ###################
+baseURL = "https://matthewjamison.dev/"
+title = "Matthew Jamison - Full-Stack Developer"
+theme = "meghna"
+# Default time zone for time stamps
+timeZone = "America/Chicago"
+# post pagination
+pagination.pagerSize = 6
+# post excerpt
+summaryLength = 15
+# disable language (we're only using English)
+disableLanguages = []
+hasCJKLanguage = false
+
+############################# Build ##############################
+[build]
+noJSConfigInAssets = false
+useResourceCacheWhen = 'fallback'
+[build.buildStats]
+enable = true
+[[build.cachebusters]]
+source = 'assets/.*\.(js|ts|jsx|tsx)'
+target = '(js|scripts|javascript)'
+[[build.cachebusters]]
+source = 'assets/.*\.(css|sass|scss)$'
+target = '(css|styles|scss|sass)'
+[[build.cachebusters]]
+source = 'assets/.*\.(.*)$'
+target = '$1'
+
+############################# Outputs ##############################
+[outputs]
+home = ["HTML", "RSS"]
+
+############################# Imaging ##############################
+[imaging]
+quality = 90
+resampleFilter = "lanczos"
+
+############################# Caches ###############################
+[caches]
+[caches.images]
+dir = ":resourceDir/_gen"
+maxAge = "720h"
+
+[caches.assets]
+dir = ":resourceDir/_gen"
+maxAge = "720h"
+
+############################# Markup ###############################
+[markup]
+[markup.goldmark.renderer]
+unsafe = true
+
+############################# Plugins ##########################
+# css plugins
+[[params.plugins.css]]
+link = "plugins/bootstrap/bootstrap.min.css"
+[[params.plugins.css]]
+link = "plugins/themify-icons/themify-icons.css"
+[[params.plugins.css]]
+link = "plugins/magnific-popup/magnific-popup.css"
+[[params.plugins.css]]
+link = "plugins/slick/slick.css"
+[[params.plugins.css]]
+link = "https://fonts.googleapis.com/css?family=Anaheim|Quattrocento+Sans:400,700&display=swap"
+
+# js plugins
+[[params.plugins.js]]
+link = "plugins/jquery/jquery.min.js"
+[[params.plugins.js]]
+link = "plugins/bootstrap/bootstrap.min.js"
+[[params.plugins.js]]
+link = "plugins/slick/slick.min.js"
+[[params.plugins.js]]
+link = "plugins/shuffle/shuffle.min.js"
+[[params.plugins.js]]
+link = "plugins/magnific-popup/jquery.magnific-popup.min.js"
+[[params.plugins.js]]
+link = "plugins/lazy-load/lozad.min.js"
+
+############################# Default Parameters ##########################
+[params]
+logo = "images/logo.png"
+# Meta data
+description = "Full-Stack Developer | Rails | Python | AI Tooling | Music Creator"
+author = "Matthew Jamison"
+# Google Analytics (add your tracking ID when ready)
+google_analytics_id = ""
+# post share
+post_share = true
+
+# preloader
+[params.preloader]
+enable = false
+preloader = "images/logo.png"
+
+# cookies
+[params.cookies]
+enable = false
+expire_days = 2
+
+# google map (disabled for now)
+[params.map]
+enable = false
+
+############################# social icons ##########################
+[[params.social]]
+icon = "ti-github"
+link = "https://github.com/MatthewJamisonJS"
+
+[[params.social]]
+icon = "ti-linkedin"
+link = "https://www.linkedin.com/in/matthew-jamison-65486bab/"
+
+[[params.social]]
+icon = "ti-music"
+link = "https://matthewjjamison.bandcamp.com/"
+
+################################ English Language ########################
+[Languages.en]
+languageName = "En"
+languageCode = "en-us"
+contentDir = "content/english"
+weight = 1
+
+[Languages.en.params]
+home = "Home"
+copyright = "Copyright &copy; 2025 Matthew Jamison"

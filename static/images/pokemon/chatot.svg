@@ -1,0 +1,15 @@
+<svg width="48" height="48" xmlns="http://www.w3.org/2000/svg">
+  <!-- Chatot: Communication Pokemon - Cyan/Blue -->
+  <!-- Head -->
+  <circle cx="24" cy="20" r="10" fill="#00bcd4"/>
+  <!-- Beak/Note symbol -->
+  <path d="M 28 20 Q 32 18 34 22" stroke="#0097a7" stroke-width="2" fill="none"/>
+  <!-- Musical note -->
+  <circle cx="18" cy="16" r="3" fill="white"/>
+  <rect x="18" y="12" width="2" height="8" fill="white"/>
+  <!-- Body -->
+  <ellipse cx="24" cy="32" rx="8" ry="6" fill="#0097a7"/>
+  <!-- Wings -->
+  <ellipse cx="16" cy="30" rx="4" ry="6" fill="#4dd0e1" opacity="0.8"/>
+  <ellipse cx="32" cy="30" rx="4" ry="6" fill="#4dd0e1" opacity="0.8"/>
+</svg>

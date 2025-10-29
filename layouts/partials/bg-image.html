@@ -1,0 +1,8 @@
+{{- $src := .Src -}}
+{{- $image := resources.Get $src -}}
+
+{{- if $image -}}
+style="background-image: url('{{ $image.RelPermalink }}');"
+{{- else if $src -}}
+style="background-image: url('{{ $src | absURL }}');"
+{{- end -}}

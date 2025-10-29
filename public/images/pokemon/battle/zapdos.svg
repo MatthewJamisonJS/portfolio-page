@@ -1,0 +1,19 @@
+<svg width="120" height="120" xmlns="http://www.w3.org/2000/svg">
+  <!-- Zapdos - Electric/Flying Legendary -->
+  <!-- Body -->
+  <ellipse cx="60" cy="60" rx="22" ry="26" fill="#ffeb3b"/>
+  <!-- Electric wings (spiky) -->
+  <path d="M 30 50 L 15 40 L 20 50 L 10 55 L 25 55 L 30 58 Z" fill="#ffd600" opacity="0.9"/>
+  <path d="M 90 50 L 105 40 L 100 50 L 110 55 L 95 55 L 90 58 Z" fill="#ffd600" opacity="0.9"/>
+  <!-- Lightning bolts from wings -->
+  <polygon points="10,55 8,65 12,60 10,70" fill="#ffeb3b" opacity="0.8"/>
+  <polygon points="110,55 112,65 108,60 110,70" fill="#ffeb3b" opacity="0.8"/>
+  <!-- Head -->
+  <circle cx="60" cy="38" r="18" fill="#ffeb3b"/>
+  <!-- Electric crest (jagged) -->
+  <path d="M 50 22 L 48 15 L 52 20 L 50 12 L 54 18 L 55 10 L 58 18 L 60 8 L 62 18 L 65 10 L 66 18 L 68 12 L 68 20 L 72 15 L 70 22 Z" fill="#ffd600"/>
+  <!-- Beak (sharp) -->
+  <polygon points="60,42 55,48 65,48" fill="#ff9800"/>
+  <!-- Tail feathers (electric) -->
+  <path d="M 60 85 L 55 95 L 60 90 L 58 100 L 62 90 L 65 100 L 63 90 L 68 95 L 63 85 Z" fill="#ffd600" opacity="0.9"/>
+</svg>

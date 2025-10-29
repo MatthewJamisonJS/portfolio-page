@@ -1,0 +1,20 @@
+<svg width="120" height="120" xmlns="http://www.w3.org/2000/svg">
+  <!-- Dragonite - Dragon/Flying -->
+  <!-- Body -->
+  <ellipse cx="60" cy="65" rx="28" ry="35" fill="#ff9800"/>
+  <!-- Belly -->
+  <ellipse cx="60" cy="70" rx="18" ry="22" fill="#ffe0b2"/>
+  <!-- Wings -->
+  <ellipse cx="30" cy="50" rx="18" ry="28" fill="#00bcd4" opacity="0.6" transform="rotate(-15 30 50)"/>
+  <ellipse cx="90" cy="50" rx="18" ry="28" fill="#00bcd4" opacity="0.6" transform="rotate(15 90 50)"/>
+  <!-- Head -->
+  <circle cx="60" cy="35" r="20" fill="#ff9800"/>
+  <!-- Antennae -->
+  <line x1="55" y1="20" x2="50" y2="10" stroke="#ff9800" stroke-width="3"/>
+  <line x1="65" y1="20" x2="70" y2="10" stroke="#ff9800" stroke-width="3"/>
+  <circle cx="50" cy="10" r="4" fill="#ffeb3b"/>
+  <circle cx="70" cy="10" r="4" fill="#ffeb3b"/>
+  <!-- Eyes -->
+  <circle cx="54" cy="32" r="4" fill="white"/>
+  <circle cx="66" cy="32" r="4" fill="white"/>
+</svg>

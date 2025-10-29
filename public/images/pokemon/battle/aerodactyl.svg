@@ -1,0 +1,19 @@
+<svg width="120" height="100" xmlns="http://www.w3.org/2000/svg">
+  <!-- Aerodactyl - Rock/Flying (Prehistoric) -->
+  <!-- Body -->
+  <ellipse cx="60" cy="50" rx="20" ry="18" fill="#6b2d5c"/>
+  <!-- Wings (bat-like, spread wide) -->
+  <path d="M 30 45 Q 10 40 5 55 Q 10 50 30 52 Z" fill="#8b4789" opacity="0.8"/>
+  <path d="M 90 45 Q 110 40 115 55 Q 110 50 90 52 Z" fill="#8b4789" opacity="0.8"/>
+  <!-- Wing claws -->
+  <circle cx="5" cy="55" r="3" fill="#e91e63"/>
+  <circle cx="115" cy="55" r="3" fill="#e91e63"/>
+  <!-- Head -->
+  <ellipse cx="60" cy="35" rx="16" ry="14" fill="#6b2d5c"/>
+  <!-- Jaw/teeth -->
+  <path d="M 50 40 L 45 45 L 50 43 L 55 45 L 60 43 L 65 45 L 70 43 L 75 45 L 70 40 Z" fill="white" opacity="0.9"/>
+  <!-- Horn -->
+  <polygon points="60,20 55,30 65,30" fill="#e91e63"/>
+  <!-- Tail spike -->
+  <polygon points="75,55 85,60 80,50" fill="#8b4789"/>
+</svg>

@@ -1,0 +1,37 @@
+<svg width="100" height="110" xmlns="http://www.w3.org/2000/svg">
+  <!-- Gengar - Ghost/Poison (Sinister Grin) -->
+  <!-- Shadow aura -->
+  <ellipse cx="50" cy="90" rx="40" ry="12" fill="#2d1b3d" opacity="0.6"/>
+  <!-- Body (round, chubby) -->
+  <ellipse cx="50" cy="65" rx="32" ry="35" fill="#6b2d5c"/>
+  <!-- Spikes on back -->
+  <polygon points="30,50 25,45 32,52" fill="#4a1a4a"/>
+  <polygon points="40,45 38,38 42,47" fill="#4a1a4a"/>
+  <polygon points="50,42 50,35 52,44" fill="#4a1a4a"/>
+  <polygon points="60,45 62,38 58,47" fill="#4a1a4a"/>
+  <polygon points="70,50 75,45 68,52" fill="#4a1a4a"/>
+  <!-- Head/Face -->
+  <circle cx="50" cy="45" r="26" fill="#6b2d5c"/>
+  <!-- Ears/Horns -->
+  <ellipse cx="32" cy="30" rx="8" ry="12" fill="#6b2d5c" transform="rotate(-20 32 30)"/>
+  <ellipse cx="68" cy="30" rx="8" ry="12" fill="#6b2d5c" transform="rotate(20 68 30)"/>
+  <!-- Eyes (menacing red) -->
+  <ellipse cx="40" cy="42" rx="8" ry="10" fill="#e91e63"/>
+  <ellipse cx="60" cy="42" rx="8" ry="10" fill="#e91e63"/>
+  <circle cx="40" cy="43" r="4" fill="white" opacity="0.8"/>
+  <circle cx="60" cy="43" r="4" fill="white" opacity="0.8"/>
+  <!-- Sinister grin -->
+  <path d="M 30 52 Q 50 62 70 52" stroke="white" stroke-width="3" fill="none"/>
+  <!-- Teeth (sharp) -->
+  <polygon points="35,52 33,56 37,54" fill="white"/>
+  <polygon points="42,56 40,60 44,58" fill="white"/>
+  <polygon points="50,58 48,62 52,60" fill="white"/>
+  <polygon points="58,56 56,60 60,58" fill="white"/>
+  <polygon points="65,52 63,56 67,54" fill="white"/>
+  <!-- Ghostly wisps -->
+  <ellipse cx="20" cy="55" rx="8" ry="12" fill="#8b4789" opacity="0.7"/>
+  <ellipse cx="80" cy="55" rx="8" ry="12" fill="#8b4789" opacity="0.7"/>
+  <!-- Clawed hands -->
+  <ellipse cx="20" cy="70" rx="8" ry="12" fill="#6b2d5c" transform="rotate(-30 20 70)"/>
+  <ellipse cx="80" cy="70" rx="8" ry="12" fill="#6b2d5c" transform="rotate(30 80 70)"/>
+</svg>

@@ -1,0 +1,1070 @@
+/* ===================================
+   Custom Portfolio Styles
+   =================================== */
+
+/* Color Variables */
+:root {
+  --primary: #e91e63;      /* magenta */
+  --secondary: #6b2d5c;    /* deep purple */
+  --accent: #00bcd4;       /* cyan */
+  --dark-bg: #0a0a0a;      /* almost black */
+  --light-text: #ffffff;
+  --gray-light: #f8f9fa;
+  --gray-medium: #6c757d;
+  --gray-dark: #343a40;
+}
+
+/* ===================================
+   FLASHY Hero Section
+   =================================== */
+
+.hero-area {
+  position: relative;
+  overflow: hidden;
+  min-height: 100vh;
+  background: linear-gradient(135deg,
+    var(--secondary) 0%,
+    var(--primary) 50%,
+    var(--accent) 100%) !important;
+  background-size: 400% 400% !important;
+  animation: gradientShift 15s ease infinite !important;
+}
+
+@keyframes gradientShift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Animated particles/sparkles effect */
+.hero-area::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image:
+    radial-gradient(2px 2px at 20% 30%, white, transparent),
+    radial-gradient(2px 2px at 60% 70%, var(--accent), transparent),
+    radial-gradient(1px 1px at 50% 50%, var(--primary), transparent),
+    radial-gradient(1px 1px at 80% 10%, white, transparent),
+    radial-gradient(2px 2px at 90% 60%, var(--accent), transparent),
+    radial-gradient(1px 1px at 33% 90%, var(--primary), transparent);
+  background-size: 200% 200%;
+  animation: sparkle 20s ease-in-out infinite;
+  opacity: 0.6;
+}
+
+@keyframes sparkle {
+  0%, 100% {
+    opacity: 0.6;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.1);
+  }
+}
+
+.hero-area .block {
+  position: relative;
+  z-index: 10;
+  text-align: center;
+  padding: 200px 20px;
+  text-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.hero-area h1 {
+  font-size: 5rem;
+  font-weight: 900;
+  color: white;
+  text-shadow:
+    0 0 10px rgba(233, 30, 99, 0.8),
+    0 0 20px rgba(233, 30, 99, 0.6),
+    0 0 30px rgba(0, 188, 212, 0.4);
+  animation: glow 2s ease-in-out infinite alternate;
+  margin-bottom: 30px;
+}
+
+@keyframes glow {
+  from {
+    text-shadow:
+      0 0 10px rgba(233, 30, 99, 0.8),
+      0 0 20px rgba(233, 30, 99, 0.6),
+      0 0 30px rgba(0, 188, 212, 0.4);
+  }
+  to {
+    text-shadow:
+      0 0 20px rgba(233, 30, 99, 1),
+      0 0 30px rgba(0, 188, 212, 0.8),
+      0 0 40px rgba(107, 45, 92, 0.6);
+  }
+}
+
+.hero-area p {
+  font-size: 1.5rem;
+  color: white;
+  margin-bottom: 40px;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+.hero-area .video-button {
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  line-height: 100px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--primary), var(--accent));
+  color: white;
+  font-size: 3rem;
+  margin-bottom: 40px;
+  box-shadow:
+    0 0 20px rgba(233, 30, 99, 0.6),
+    0 0 40px rgba(0, 188, 212, 0.4);
+  animation: pulse 2s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+    box-shadow:
+      0 0 20px rgba(233, 30, 99, 0.6),
+      0 0 40px rgba(0, 188, 212, 0.4);
+  }
+  50% {
+    transform: scale(1.1);
+    box-shadow:
+      0 0 30px rgba(233, 30, 99, 0.8),
+      0 0 60px rgba(0, 188, 212, 0.6);
+  }
+}
+
+.hero-area .btn-transparent {
+  background: rgba(255, 255, 255, 0.1);
+  border: 2px solid white;
+  color: white;
+  padding: 15px 40px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  border-radius: 50px;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(10px);
+}
+
+.hero-area .btn-transparent:hover {
+  background: white;
+  color: var(--primary);
+  box-shadow:
+    0 0 20px rgba(255, 255, 255, 0.8),
+    0 0 40px rgba(233, 30, 99, 0.6);
+  transform: translateY(-3px);
+}
+
+/* Responsive hero */
+@media (max-width: 768px) {
+  .hero-area h1 {
+    font-size: 3rem;
+  }
+
+  .hero-area p {
+    font-size: 1.2rem;
+  }
+
+  .hero-area .block {
+    padding: 150px 20px;
+  }
+}
+
+/* ===================================
+   Portfolio Demos Section
+   =================================== */
+
+.portfolio-demos {
+  padding: 80px 0;
+  background: var(--gray-light);
+}
+
+.section-title {
+  margin-bottom: 60px;
+}
+
+.section-title h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--dark-bg);
+  margin-bottom: 15px;
+}
+
+.section-title p {
+  font-size: 1.1rem;
+  color: var(--gray-medium);
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+/* ===================================
+   Demo Cards
+   =================================== */
+
+.demo-grid {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.demo-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: none;
+  overflow: hidden;
+  background: white;
+}
+
+.demo-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.demo-image {
+  position: relative;
+  overflow: hidden;
+  height: 250px;
+  background: var(--gray-dark);
+}
+
+.demo-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.demo-card:hover .demo-image img {
+  transform: scale(1.05);
+}
+
+.demo-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.85);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.demo-card:hover .demo-overlay {
+  opacity: 1;
+}
+
+.demo-links {
+  display: flex;
+  gap: 10px;
+}
+
+.demo-links .btn {
+  padding: 8px 20px;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.demo-card .card-body {
+  padding: 25px;
+}
+
+.demo-card .card-title {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--dark-bg);
+  margin-bottom: 10px;
+}
+
+.theme-badge {
+  margin-bottom: 12px;
+}
+
+.theme-badge .badge {
+  padding: 6px 12px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  background-color: var(--accent);
+}
+
+.demo-card .card-text {
+  color: var(--gray-medium);
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.demo-card .read-more {
+  color: var(--primary);
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.demo-card .read-more:hover {
+  color: var(--secondary);
+}
+
+/* ===================================
+   Music Widget Sidebar
+   =================================== */
+
+.music-widget-container {
+  position: relative;
+}
+
+.sticky-sidebar {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 20px;
+}
+
+.music-widget .card-header {
+  background: var(--dark-bg) !important;
+  border-bottom: 2px solid var(--primary);
+  padding: 15px 20px;
+}
+
+.music-widget .card-header h5 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+.music-widget-container .card-header h5 a {
+  transition: opacity 0.3s ease;
+}
+
+.music-widget-container .card-header h5 a:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.music-widget .card-header i {
+  color: var(--primary);
+  margin-right: 8px;
+}
+
+.bandcamp-embed {
+  background: #1a1a1a;
+  padding: 0;
+}
+
+.bandcamp-embed iframe {
+  display: block;
+}
+
+.music-widget .card-body p {
+  line-height: 1.6;
+}
+
+.music-widget .btn-outline-primary {
+  border-color: var(--primary);
+  color: var(--primary);
+}
+
+.music-widget .btn-outline-primary:hover {
+  background-color: var(--primary);
+  color: white;
+}
+
+.music-widget .btn-outline-secondary {
+  border-color: var(--gray-medium);
+  color: var(--gray-medium);
+}
+
+.music-widget .btn-outline-secondary:hover {
+  background-color: var(--gray-medium);
+  color: white;
+}
+
+/* ===================================
+   Responsive Design
+   =================================== */
+
+/* Tablets and below */
+@media (max-width: 991px) {
+  .sticky-sidebar {
+    position: static;
+    margin-top: 40px;
+  }
+
+  .section-title h2 {
+    font-size: 2rem;
+  }
+
+  .demo-card .card-title {
+    font-size: 1.2rem;
+  }
+}
+
+/* Mobile */
+@media (max-width: 767px) {
+  .portfolio-demos {
+    padding: 60px 0;
+  }
+
+  .section-title {
+    margin-bottom: 40px;
+  }
+
+  .section-title h2 {
+    font-size: 1.75rem;
+  }
+
+  .demo-image {
+    height: 200px;
+  }
+
+  .demo-links {
+    flex-direction: column;
+    width: 80%;
+  }
+
+  .demo-links .btn {
+    width: 100%;
+  }
+}
+
+/* ===================================
+   Utility Classes
+   =================================== */
+
+.text-primary-custom {
+  color: var(--primary) !important;
+}
+
+.bg-primary-custom {
+  background-color: var(--primary) !important;
+}
+
+.text-secondary-custom {
+  color: var(--secondary) !important;
+}
+
+.bg-secondary-custom {
+  background-color: var(--secondary) !important;
+}
+
+.text-accent-custom {
+  color: var(--accent) !important;
+}
+
+.bg-accent-custom {
+  background-color: var(--accent) !important;
+}
+
+/* ===================================
+   Pokemon Icon Styling
+   =================================== */
+
+/* Large Pokemon icons (hero button) */
+.pokemon-icon-large {
+  width: 60px;
+  height: 60px;
+  display: inline-block;
+  animation: float 3s ease-in-out infinite;
+  filter: drop-shadow(0 0 10px rgba(233, 30, 99, 0.5));
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+/* Standard Pokemon icons (contact, widget headers) */
+.pokemon-icon {
+  width: 32px;
+  height: 32px;
+  display: inline-block;
+  margin-right: 8px;
+  transition: transform 0.3s ease;
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.2));
+}
+
+.pokemon-icon:hover {
+  transform: scale(1.15) rotate(5deg);
+}
+
+/* Contact section icon styling */
+.con-info .pokemon-icon {
+  float: left;
+  margin-right: 15px;
+  width: 36px;
+  height: 36px;
+}
+
+/* Add glow effect to Pokemon icons on dark backgrounds */
+.bg-dark .pokemon-icon,
+.card-header.bg-dark .pokemon-icon {
+  filter: drop-shadow(0 0 8px rgba(0, 188, 212, 0.6));
+}
+
+/* Responsive Pokemon icons */
+@media (max-width: 768px) {
+  .pokemon-icon-large {
+    width: 48px;
+    height: 48px;
+  }
+
+  .pokemon-icon {
+    width: 28px;
+    height: 28px;
+  }
+
+  .con-info .pokemon-icon {
+    width: 32px;
+    height: 32px;
+  }
+}
+
+/* ===================================
+   EPIC POKEMON BATTLE SCENE
+   =================================== */
+
+/* Battle Pokemon containers */
+.battle-pokemon {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 250px;
+  z-index: 5;
+  pointer-events: none;
+}
+
+.battle-pokemon.left-side {
+  left: 0;
+}
+
+.battle-pokemon.right-side {
+  right: 0;
+}
+
+/* Individual Pokemon positioning and sizing */
+.pokemon-battle {
+  position: absolute;
+  filter: drop-shadow(0 4px 12px rgba(0, 0, 0, 0.4));
+  transition: transform 0.3s ease;
+}
+
+/* LEFT SIDE - Electric Team + Blastoise (ANGLED TOWARD CENTER) */
+
+/* Blastoise - Tank front row */
+.pokemon-battle.blastoise {
+  width: 140px;
+  height: auto;
+  left: 8%;
+  top: 52%;
+  transform: rotate(8deg);
+  animation: battleStance 3s ease-in-out infinite;
+}
+
+/* Pikachu - Mid row */
+.pokemon-battle.pikachu {
+  width: 90px;
+  height: auto;
+  left: 10%;
+  top: 42%;
+  transform: rotate(12deg);
+  animation: electricBounce 2.5s ease-in-out infinite;
+}
+
+/* Jolteon - Mid-top position */
+.pokemon-battle.jolteon {
+  width: 100px;
+  height: auto;
+  left: 12%;
+  top: 30%;
+  transform: rotate(15deg);
+  animation: agileDash 3.5s ease-in-out infinite;
+}
+
+/* Electabuzz - Mid-bottom */
+.pokemon-battle.electabuzz {
+  width: 110px;
+  height: auto;
+  left: 8%;
+  top: 62%;
+  transform: rotate(5deg);
+  animation: powerCharge 3s ease-in-out infinite;
+}
+
+/* Magneton - Top floating */
+.pokemon-battle.magneton {
+  width: 120px;
+  height: auto;
+  left: 10%;
+  top: 18%;
+  transform: rotate(8deg);
+  animation: magnetFloat 4s ease-in-out infinite;
+}
+
+/* Gengar - Bottom sinister */
+.pokemon-battle.gengar {
+  width: 110px;
+  height: auto;
+  left: 6%;
+  top: 73%;
+  transform: rotate(6deg);
+  animation: ghostlyFloat 3.5s ease-in-out infinite;
+}
+
+/* RIGHT SIDE - Flying Team (ANGLED TOWARD CENTER) */
+
+/* Charizard - Mid row fire dragon */
+.pokemon-battle.charizard {
+  width: 130px;
+  height: auto;
+  right: 10%;
+  top: 30%;
+  transform: rotate(-12deg);
+  animation: dragonFly 4s ease-in-out infinite;
+}
+
+/* Dragonite - Mid-bottom */
+.pokemon-battle.dragonite {
+  width: 120px;
+  height: auto;
+  right: 8%;
+  top: 45%;
+  transform: rotate(-10deg);
+  animation: dragonFly 4.5s ease-in-out infinite 0.5s;
+}
+
+/* Pidgeot - Lower mid */
+.pokemon-battle.pidgeot {
+  width: 105px;
+  height: auto;
+  right: 6%;
+  top: 58%;
+  transform: rotate(-8deg);
+  animation: birdGlide 3s ease-in-out infinite;
+}
+
+/* Aerodactyl - Top ancient */
+.pokemon-battle.aerodactyl {
+  width: 115px;
+  height: auto;
+  right: 12%;
+  top: 22%;
+  transform: rotate(-15deg);
+  animation: pterodactylSoar 3.8s ease-in-out infinite;
+}
+
+/* Articuno - Top ice legendary */
+.pokemon-battle.articuno {
+  width: 125px;
+  height: auto;
+  right: 8%;
+  top: 12%;
+  transform: rotate(-10deg);
+  animation: legendaryGlide 5s ease-in-out infinite;
+}
+
+/* Moltres - Top fire legendary */
+.pokemon-battle.moltres {
+  width: 125px;
+  height: auto;
+  right: 5%;
+  top: 5%;
+  transform: rotate(-8deg);
+  animation: flameWings 4.2s ease-in-out infinite;
+}
+
+/* Zapdos - Bottom electric legendary */
+.pokemon-battle.zapdos {
+  width: 120px;
+  height: auto;
+  right: 10%;
+  top: 65%;
+  transform: rotate(-12deg);
+  animation: thunderWings 3.5s ease-in-out infinite;
+}
+
+/* ===================================
+   BATTLE EFFECTS OVERLAY
+   =================================== */
+
+.battle-effects {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 6;
+  pointer-events: none;
+  opacity: 0.9;
+}
+
+/* Lightning bolt animations */
+.lightning-bolt {
+  animation: lightningFlash 1.5s ease-in-out infinite;
+  filter: drop-shadow(0 0 8px #ffeb3b);
+}
+
+.bolt-1 {
+  animation-delay: 0s;
+}
+
+.bolt-2 {
+  animation-delay: 0.5s;
+}
+
+.bolt-3 {
+  animation-delay: 1s;
+}
+
+@keyframes lightningFlash {
+  0%, 100% {
+    opacity: 0;
+  }
+  10%, 30% {
+    opacity: 1;
+  }
+  20%, 40% {
+    opacity: 0.3;
+  }
+  50%, 90% {
+    opacity: 0;
+  }
+}
+
+/* Water stream animations */
+.water-stream {
+  animation: waterFlow 2s ease-in-out infinite;
+  filter: drop-shadow(0 0 6px #00bcd4);
+}
+
+.stream-1 {
+  animation-delay: 0s;
+}
+
+.stream-2 {
+  animation-delay: 0.3s;
+}
+
+@keyframes waterFlow {
+  0% {
+    opacity: 0;
+    stroke-dasharray: 0 1000;
+  }
+  50% {
+    opacity: 0.7;
+    stroke-dasharray: 1000 0;
+  }
+  100% {
+    opacity: 0;
+    stroke-dasharray: 1000 0;
+  }
+}
+
+/* Fire breath animations */
+.fire-breath {
+  animation: fireBlast 2.5s ease-in-out infinite;
+  filter: drop-shadow(0 0 10px #e91e63);
+}
+
+.flame-1 {
+  animation-delay: 0s;
+}
+
+.flame-2 {
+  animation-delay: 0.2s;
+}
+
+@keyframes fireBlast {
+  0% {
+    opacity: 0;
+    stroke-dasharray: 0 1500;
+  }
+  40% {
+    opacity: 0.8;
+    stroke-dasharray: 1500 0;
+  }
+  100% {
+    opacity: 0;
+    stroke-dasharray: 1500 0;
+  }
+}
+
+/* Ice beam animation */
+.ice-beam {
+  animation: iceBeam 3s ease-in-out infinite;
+  filter: drop-shadow(0 0 8px #00e5ff);
+}
+
+@keyframes iceBeam {
+  0%, 100% {
+    opacity: 0;
+  }
+  20%, 60% {
+    opacity: 0.8;
+  }
+  40% {
+    opacity: 1;
+  }
+}
+
+/* Energy sphere animations */
+.energy-sphere {
+  animation: energyPulse 2s ease-in-out infinite;
+}
+
+.sphere-1 {
+  animation-delay: 0s;
+}
+
+.sphere-2 {
+  animation-delay: 0.7s;
+}
+
+.sphere-3 {
+  animation-delay: 1.4s;
+}
+
+@keyframes energyPulse {
+  0%, 100% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  50% {
+    transform: scale(1);
+    opacity: 0.8;
+  }
+}
+
+/* ===================================
+   POKEMON BATTLE ANIMATIONS
+   =================================== */
+
+/* Battle stance - slight rocking (preserves base angle) */
+@keyframes battleStance {
+  0%, 100% {
+    transform: rotate(8deg) translateY(0px);
+  }
+  50% {
+    transform: rotate(10deg) translateY(-8px);
+  }
+}
+
+/* Electric bounce - quick energy (preserves angles) */
+@keyframes electricBounce {
+  0%, 100% {
+    transform: var(--base-angle, rotate(12deg)) translateY(0px);
+  }
+  25% {
+    transform: var(--base-angle, rotate(12deg)) translateY(-15px) scale(1.05);
+  }
+  50% {
+    transform: var(--base-angle, rotate(12deg)) translateY(0px);
+  }
+  75% {
+    transform: var(--base-angle, rotate(12deg)) translateY(-10px) scale(1.02);
+  }
+}
+
+/* Agile dash - quick movements */
+@keyframes agileDash {
+  0%, 100% {
+    transform: translateX(0px) translateY(0px);
+  }
+  25% {
+    transform: translateX(10px) translateY(-12px);
+  }
+  50% {
+    transform: translateX(0px) translateY(-5px);
+  }
+  75% {
+    transform: translateX(-8px) translateY(-10px);
+  }
+}
+
+/* Power charge - building energy */
+@keyframes powerCharge {
+  0%, 100% {
+    transform: scale(1);
+    filter: drop-shadow(0 4px 12px rgba(255, 235, 59, 0.4));
+  }
+  50% {
+    transform: scale(1.1);
+    filter: drop-shadow(0 4px 20px rgba(255, 235, 59, 0.8));
+  }
+}
+
+/* Magnetic float - steady hover */
+@keyframes magnetFloat {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-15px) rotate(5deg);
+  }
+}
+
+/* Ghostly float - sinister movement */
+@keyframes ghostlyFloat {
+  0%, 100% {
+    transform: translateY(0px) translateX(0px);
+    opacity: 0.9;
+  }
+  33% {
+    transform: translateY(-12px) translateX(5px);
+    opacity: 0.7;
+  }
+  66% {
+    transform: translateY(-8px) translateX(-5px);
+    opacity: 1;
+  }
+}
+
+/* Dragon fly - majestic soaring (preserves base angle) */
+@keyframes dragonFly {
+  0%, 100% {
+    transform: rotate(-12deg) translateY(0px);
+  }
+  50% {
+    transform: rotate(-10deg) translateY(-20px);
+  }
+}
+
+/* Bird glide - smooth flying */
+@keyframes birdGlide {
+  0%, 100% {
+    transform: translateY(0px) translateX(0px);
+  }
+  25% {
+    transform: translateY(-10px) translateX(-8px);
+  }
+  75% {
+    transform: translateY(-15px) translateX(8px);
+  }
+}
+
+/* Pterodactyl soar - ancient flight */
+@keyframes pterodactylSoar {
+  0%, 100% {
+    transform: translateY(0px) rotate(-5deg);
+  }
+  50% {
+    transform: translateY(-18px) rotate(5deg);
+  }
+}
+
+/* Legendary glide - graceful movement */
+@keyframes legendaryGlide {
+  0%, 100% {
+    transform: translateY(0px) scale(1);
+  }
+  50% {
+    transform: translateY(-25px) scale(1.05);
+  }
+}
+
+/* Flame wings - fiery flight */
+@keyframes flameWings {
+  0%, 100% {
+    transform: translateY(0px);
+    filter: drop-shadow(0 4px 12px rgba(233, 30, 99, 0.6));
+  }
+  50% {
+    transform: translateY(-22px);
+    filter: drop-shadow(0 8px 20px rgba(233, 30, 99, 0.9));
+  }
+}
+
+/* Thunder wings - electric flight */
+@keyframes thunderWings {
+  0%, 100% {
+    transform: translateY(0px);
+    filter: drop-shadow(0 4px 12px rgba(255, 235, 59, 0.6));
+  }
+  50% {
+    transform: translateY(-18px);
+    filter: drop-shadow(0 8px 20px rgba(255, 235, 59, 0.9));
+  }
+}
+
+/* ===================================
+   RESPONSIVE BATTLE SCENE
+   =================================== */
+
+/* Tablets */
+@media (max-width: 1200px) {
+  .battle-pokemon {
+    width: 180px;
+  }
+
+  .pokemon-battle {
+    transform: scale(0.8);
+  }
+
+  .pokemon-battle.blastoise,
+  .pokemon-battle.charizard,
+  .pokemon-battle.articuno,
+  .pokemon-battle.moltres {
+    width: 110px;
+  }
+}
+
+/* Mobile - hide battle scene to keep focus on content */
+@media (max-width: 768px) {
+  .battle-pokemon,
+  .battle-effects {
+    display: none;
+  }
+}
+
+/* ===================================
+   Navigation Styles
+   =================================== */
+
+/* Center the navbar brand on all screen sizes */
+.navigation .navbar-brand {
+  width: 100%;
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: white !important;
+}
+
+/* Ensure navigation is always visible */
+.navigation .navbar-collapse {
+  display: flex !important;
+}
+
+/* Mobile optimizations */
+@media (max-width: 768px) {
+  .navigation .navbar {
+    flex-direction: column;
+  }
+  
+  .navigation .navbar-brand {
+    margin-bottom: 10px;
+  }
+  
+  .navigation .navbar-nav {
+    margin-left: 0 !important;
+    width: 100%;
+    justify-content: center;
+  }
+}

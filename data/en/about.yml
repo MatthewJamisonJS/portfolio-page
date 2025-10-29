@@ -1,0 +1,6 @@
+---
+about:
+  enable: true
+  title: "About Me"
+  content: "I'm a full-stack developer passionate about building elegant, efficient web applications. I specialize in Ruby on Rails, Python, and modern JavaScript frameworks, with a focus on creating practical solutions that people love to use."
+  image: "images/about/about.jpg"

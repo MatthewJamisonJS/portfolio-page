@@ -12,8 +12,8 @@
     <div class="row">
       <div class="col-12">
         <div class="section-title text-center">
-          <h2>Portfolio Demos</h2>
-          <p>Explore different approaches to web design and development. Each demo showcases a unique style and use case.</p>
+          <h2>{{ i18n "portfolio_demos" }}</h2>
+          <p>{{ i18n "explore_demos_desc" }}</p>
         </div>
       </div>
     </div>
@@ -33,12 +33,12 @@
                   <div class="demo-links">
                     {{ if .Params.demo_url }}
                     <a href="{{ .Params.demo_url }}" target="_blank" class="btn btn-sm btn-primary" rel="noopener">
-                      View Demo
+                      {{ i18n "view_demo" }}
                     </a>
                     {{ end }}
                     {{ if .Params.github_url }}
                     <a href="{{ .Params.github_url }}" target="_blank" class="btn btn-sm btn-secondary" rel="noopener">
-                      Source
+                      {{ i18n "source_code" }}
                     </a>
                     {{ end }}
                   </div>
@@ -48,7 +48,7 @@
               <div class="card-body">
                 <h3 class="card-title">{{ .Title }}</h3>
                 <p class="card-text">{{ .Params.description }}</p>
-                <a href="{{ .RelPermalink }}" class="read-more">Learn more →</a>
+                <a href="{{ .RelPermalink }}" class="read-more">{{ i18n "learn_more" }}</a>
               </div>
             </div>
           </div>

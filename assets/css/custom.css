@@ -1278,7 +1278,7 @@ body.battle-mode-disabled .fire-breath,
 body.battle-mode-disabled .ice-beam,
 body.battle-mode-disabled .energy-sphere {
   animation: none !important;
-  opacity: 0.5 !important;
+  opacity: 0 !important;
 }
 
 /* EPIC Battle Toggle Button */

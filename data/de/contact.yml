@@ -1,9 +1,9 @@
 ---
 contact:
   enable: true
-  title: "Kontakt Aufnehmen"
-  subtitle: "Haben Sie ein Projekt im Sinn? Lassen Sie uns zusammenarbeiten!"
-  content: "Ich stehe für Freelance-Projekte, Beratung und Vollzeitstellen zur Verfügung. Ob Sie Hilfe bei der Rails-Entwicklung, KI-Integration oder dem Aufbau von etwas Neuem benötigen – ich freue mich darauf, von Ihnen zu hören."
+  title: "Buchen Sie ein 15-Minuten-Gespräch"
+  subtitle: "Benötigen Sie ähnliche Ergebnisse? Lassen Sie uns über Ihr Projekt sprechen."
+  content: "Ich unterstütze Unternehmen bei der Bereitstellung schneller, mehrsprachiger und barrierefreier Websites mit Hugo + Cloudflare Pages. Ob Sie von WordPress migrieren, international expandieren oder WCAG-Konformität benötigen – ich bringe Sie in Wochen, nicht Monaten, vom Konzept zur Produktion."
 
   # Contact form configuration
   contact_form:

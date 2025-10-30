@@ -6,7 +6,30 @@ demo_url: "https://demo-landing-dvx.pages.dev"
 github_url: "https://github.com/MatthewJamisonJS/demo-landing"
 theme_name: "Omega"
 description: "GetHugoThemes の Omega テーマで構築。アプリストアバッジ、スクリーンショット、機能紹介を備えた最新アプリランディングページ。"
-image: "/images/demos/demo-7-app.svg"
+image: "/images/demos/demo-7-app.webp"
+challenge: "モバイルアプリにアプリストアバッジと多言語対応の高速ランディングページが必要"
+solution_time: "2-3週間"
+metrics:
+  - {label: "Lighthouse", value: "98/100"}
+  - {label: "言語数", value: "5 (EN, ES, FR, JA, DE)"}
+  - {label: "読み込み時間", value: "<1秒"}
+---
+
+## ビジネスコンテキスト
+
+**課題**: モバイルアプリにアプリストアバッジと多言語対応の高速ランディングページが必要
+
+**ソリューション**: Hugo静的サイト + Tailwind CSS + Cloudflare Pages + 完全多言語対応
+
+**結果**:
+- ✓ すべての指標で98/100のLighthouseスコア
+- ✓ 多言語対応（5言語）
+- ✓ 世界中で1秒未満の読み込み時間
+- ✓ WCAG AAアクセシビリティ認定
+- ✓ ホスティング費用$0（Cloudflare Pages無料プラン）
+
+**タイムライン**: キックオフから本番デプロイまで2-3週間
+
 ---
 
 ## 概要

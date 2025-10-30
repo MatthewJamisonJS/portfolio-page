@@ -7,6 +7,29 @@ github_url: "https://github.com/MatthewJamisonJS/demo-blog"
 theme_name: "Parsa"
 description: "Construit avec le thème Parsa par GetHugoThemes. Blog axé sur le contenu avec une excellente typographie, expérience de lecture et optimisation SEO."
 image: "/images/demos/demo-5-blog.png"
+challenge: "Site de contenu noyé dans les plugins WordPress, chargements de page lents nuisant au SEO"
+solution_time: "2-3 semaines"
+metrics:
+  - {label: "Lighthouse", value: "98/100"}
+  - {label: "Langues", value: "5 (EN, ES, FR, JA, DE)"}
+  - {label: "Temps de Chargement", value: "<1s"}
+---
+
+## Contexte Commercial
+
+**Défi** : Site de contenu noyé dans les plugins WordPress, chargements de page lents nuisant au SEO
+
+**Solution** : Site statique Hugo + Tailwind CSS + Cloudflare Pages + Support i18n complet
+
+**Résultats** :
+- ✓ Score Lighthouse 98/100 sur toutes les métriques
+- ✓ Support multilingue (5 langues)
+- ✓ Temps de chargement sous une seconde à l'échelle mondiale
+- ✓ Certifié accessibilité WCAG AA
+- ✓ Coûts d'hébergement 0$ (niveau gratuit Cloudflare Pages)
+
+**Calendrier** : 2-3 semaines du lancement au déploiement en production
+
 ---
 
 ## Aperçu

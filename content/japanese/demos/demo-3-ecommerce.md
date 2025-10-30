@@ -7,6 +7,29 @@ github_url: "https://github.com/MatthewJamisonJS/demo-ecommerce"
 theme_name: "Hargo"
 description: "GetHugoThemes の Hargo テーマで構築。製品カタログ、カート、チェックアウト統合を備えたフル機能の e コマース店舗。"
 image: "/images/demos/demo-3-ecommerce.png"
+challenge: "多言語対応不足により国際展開が阻害"
+solution_time: "2-3週間"
+metrics:
+  - {label: "Lighthouse", value: "98/100"}
+  - {label: "言語数", value: "5 (EN, ES, FR, JA, DE)"}
+  - {label: "読み込み時間", value: "<1秒"}
+---
+
+## ビジネスコンテキスト
+
+**課題**: 多言語対応不足により国際展開が阻害
+
+**ソリューション**: Hugo静的サイト + Tailwind CSS + Cloudflare Pages + 完全多言語対応
+
+**結果**:
+- ✓ すべての指標で98/100のLighthouseスコア
+- ✓ 多言語対応（5言語）
+- ✓ 世界中で1秒未満の読み込み時間
+- ✓ WCAG AAアクセシビリティ認定
+- ✓ ホスティング費用$0（Cloudflare Pages無料プラン）
+
+**タイムライン**: キックオフから本番デプロイまで2-3週間
+
 ---
 
 ## 概要

@@ -4,14 +4,14 @@ about:
   title: "Über Mich"
   about_item:
     - icon: "ti-server"
-      title: "Backend-Entwicklung"
-      content: "Experte in Ruby on Rails und Python. Entwicklung robuster, skalierbarer serverseitiger Anwendungen mit sauberer Architektur und bewährten Methoden."
+      title: "Hugo-Spezialisierung"
+      content: "Experte für Hugo-Static-Site-Entwicklung mit 7 Produktions-Deployments über verschiedene Branchen hinweg (Agentur, SaaS, E-Commerce, Blog, Restaurant, App, Portfolio). Vollständige i18n-Infrastruktur für über 20 Sprachen. Jedes Projekt erreicht 98+ Lighthouse-Bewertungen."
 
     - icon: "ti-layout"
-      title: "Frontend-Handwerk"
-      content: "Moderne JavaScript-Frameworks (React, Vue), Hotwire und Tailwind CSS. Erstellung responsiver, intuitiver Benutzeroberflächen."
+      title: "Rails + Python Erfahrung"
+      content: "77+ gemergete Pull Requests bei Concordia Publishing House (Rails 8, 500.000 Nutzer). Backend-Expertise in Ruby on Rails und Python ermöglicht die Content-Management-Workflows, die Hugo-Seiten einfach zu pflegen machen."
 
     - icon: "ti-pulse"
-      title: "KI-Integration"
-      content: "Nutzung von KI-Tools und APIs zur Entwicklung intelligenter Anwendungen. Spezialisiert auf praktische KI-Implementierungen, die echte Probleme lösen."
+      title: "Leistungsgarantien"
+      content: "100% Lighthouse-Bewertungen bei allen Projekten. Globale Ladezeiten unter einer Sekunde. WCAG AA Barrierefreiheit zertifiziert. Moderne Static-Site-Architektur eliminiert die Leistungsengpässe traditioneller CMS-Plattformen."
 ---

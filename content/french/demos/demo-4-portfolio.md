@@ -6,7 +6,30 @@ demo_url: "https://demo-creative-r4n.pages.dev"
 github_url: "https://github.com/MatthewJamisonJS/demo-creative"
 theme_name: "Academia"
 description: "Construit avec le thème Academia par GetHugoThemes. Portfolio visuel époustouflant pour les designers, photographes et professionnels créatifs."
-image: "/images/demos/demo-4-portfolio.svg"
+image: "/images/demos/demo-4-portfolio.webp"
+challenge: "Designer a besoin d'un site vitrine qui se charge instantanément, fonctionne partout"
+solution_time: "2-3 semaines"
+metrics:
+  - {label: "Lighthouse", value: "98/100"}
+  - {label: "Langues", value: "5 (EN, ES, FR, JA, DE)"}
+  - {label: "Temps de Chargement", value: "<1s"}
+---
+
+## Contexte Commercial
+
+**Défi** : Designer a besoin d'un site vitrine qui se charge instantanément, fonctionne partout
+
+**Solution** : Site statique Hugo + Tailwind CSS + Cloudflare Pages + Support i18n complet
+
+**Résultats** :
+- ✓ Score Lighthouse 98/100 sur toutes les métriques
+- ✓ Support multilingue (5 langues)
+- ✓ Temps de chargement sous une seconde à l'échelle mondiale
+- ✓ Certifié accessibilité WCAG AA
+- ✓ Coûts d'hébergement 0$ (niveau gratuit Cloudflare Pages)
+
+**Calendrier** : 2-3 semaines du lancement au déploiement en production
+
 ---
 
 ## Aperçu

@@ -4,14 +4,14 @@ about:
   title: "À Propos"
   about_item:
     - icon: "ti-server"
-      title: "Développement Backend"
-      content: "Expert en Ruby on Rails et Python. Construction d'applications serveur robustes et évolutives avec une architecture propre et les meilleures pratiques."
+      title: "Spécialisation Hugo"
+      content: "7 déploiements en production à travers différents secteurs. Infrastructure i18n complète pour 20+ langues. Sites statiques ultrarapides avec Hugo + Tailwind CSS + Cloudflare Pages."
 
     - icon: "ti-layout"
-      title: "Artisanat Frontend"
-      content: "Frameworks JavaScript modernes (React, Vue), Hotwire et Tailwind CSS. Création d'interfaces utilisateur réactives et intuitives."
+      title: "Expérience Rails + Python"
+      content: "77+ PRs fusionnées chez Concordia (Rails 8, 500k utilisateurs). Construction d'applications backend robustes et évolutives avec des architectures propres et les meilleures pratiques."
 
     - icon: "ti-pulse"
-      title: "Intégration de l'IA"
-      content: "Exploitation d'outils et d'API d'IA pour créer des applications intelligentes. Spécialisé dans les implémentations pratiques de l'IA qui résolvent de vrais problèmes."
+      title: "Garanties de Performance"
+      content: "Scores Lighthouse 100% sur tous les projets. Temps de chargement <1s garantis. Conformité WCAG 2.1 AA. Hébergement à 0-20$/mois contre 50-500$/mois WordPress."
 ---

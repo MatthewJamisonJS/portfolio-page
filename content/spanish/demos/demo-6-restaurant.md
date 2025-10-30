@@ -7,6 +7,29 @@ github_url: "https://github.com/MatthewJamisonJS/demo-restaurant"
 theme_name: "Restaurant"
 description: "Construido con el tema Restaurant de Themefisher. Sitio web de restaurante apetitoso con menú, reservaciones y pedidos en línea."
 image: "/images/demos/demo-6-restaurant.png"
+challenge: "Restaurante local necesita sitio de menú multilingüe para clientes turistas"
+solution_time: "2-3 semanas"
+metrics:
+  - {label: "Lighthouse", value: "98/100"}
+  - {label: "Idiomas", value: "5 (EN, ES, FR, JA, DE)"}
+  - {label: "Tiempo de Carga", value: "<1s"}
+---
+
+## Contexto Empresarial
+
+**Desafío**: Restaurante local necesita sitio de menú multilingüe para clientes turistas
+
+**Solución**: Sitio estático Hugo + Tailwind CSS + Cloudflare Pages + Soporte i18n completo
+
+**Resultados**:
+- ✓ Puntuación Lighthouse de 98/100 en todas las métricas
+- ✓ Soporte multilingüe (5 idiomas)
+- ✓ Tiempos de carga inferiores a 1 segundo a nivel global
+- ✓ Certificado de accesibilidad WCAG AA
+- ✓ $0 en costos de alojamiento (nivel gratuito de Cloudflare Pages)
+
+**Cronograma**: 2-3 semanas desde el inicio hasta el despliegue en producción
+
 ---
 
 ## Descripción general

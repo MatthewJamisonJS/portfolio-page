@@ -1,9 +1,9 @@
 ---
 contact:
   enable: true
-  title: "Contactez-moi"
-  subtitle: "Vous avez un projet en tête ? Travaillons ensemble !"
-  content: "Je suis disponible pour des projets freelance, du conseil et des opportunités à temps plein. Que vous ayez besoin d'aide pour le développement Rails, l'intégration de l'IA ou la création de quelque chose à partir de zéro, j'aimerais avoir de vos nouvelles."
+  title: "Réservez un Appel de 15 Minutes"
+  subtitle: "Besoin de résultats similaires ? Parlons de votre projet."
+  content: "Spécialisé dans le déploiement rapide de sites web statiques performants avec support multilingue et conformité en accessibilité. Des sites WordPress lents aux plateformes internationales ultrarapides hébergées sur Cloudflare Pages. Passons en revue vos besoins et voyons comment je peux aider."
 
   # Contact form configuration
   contact_form:

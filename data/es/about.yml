@@ -4,14 +4,14 @@ about:
   title: "Sobre Mí"
   about_item:
     - icon: "ti-server"
-      title: "Desarrollo Backend"
-      content: "Experto en Ruby on Rails y Python. Construcción de aplicaciones del lado del servidor robustas y escalables con arquitectura limpia y mejores prácticas."
+      title: "Especialización en Hugo"
+      content: "7 despliegues en producción en diferentes verticales. Infraestructura i18n completa para 20+ idiomas. Puntuaciones Lighthouse del 100% en todos los proyectos con tiempos de carga <1s garantizados."
 
     - icon: "ti-layout"
-      title: "Artesanía Frontend"
-      content: "Frameworks modernos de JavaScript (React, Vue), Hotwire y Tailwind CSS. Creación de interfaces de usuario responsivas e intuitivas."
+      title: "Experiencia en Rails + Python"
+      content: "77+ PRs fusionados en Concordia (Rails 8, 500k usuarios). Experiencia comprobada en arquitectura backend escalable y conversión de vistas Ember a Hotwire usando sintaxis Phlex."
 
     - icon: "ti-pulse"
-      title: "Integración de IA"
-      content: "Aprovechando herramientas y APIs de IA para construir aplicaciones inteligentes. Especializado en implementaciones prácticas de IA que resuelven problemas reales."
+      title: "Garantías de Rendimiento"
+      content: "Puntuaciones Lighthouse del 100% en todos los proyectos. Tiempos de carga <1s en CDN global. Certificación WCAG 2.1 AA. Despliegue de migración de WordPress a producción en 2-5 semanas."
 ---

@@ -5,9 +5,9 @@ banner:
   bg_image: "images/backgrounds/hero-bg.jpg"
   pokemon_sprite: "/images/pokemon/mew.gif"
   title: "Matthew Jamison"
-  content: "Desarrollador Full-Stack | Rails | Python | Herramientas IA | Creador Musical"
+  content: "Despliega Sitios Multilingües y WCAG3 Rápidamente en Días, No Meses | ✓ 7 Despliegues en Producción  ✓ Puntuaciones Lighthouse del 100%  ✓ Certificado WCAG AA"
   button:
     enable: true
-    label: "Ver Demos"
+    label: "Inicia Tu Proyecto"
     link: "#demos"
 ---

@@ -8,9 +8,9 @@ timeZone = "America/Chicago"
 pagination.pagerSize = 6
 # post excerpt
 summaryLength = 15
-# disable language (we're only using English)
+# multilingual support enabled (5 languages: en, es, ja, fr, de)
 disableLanguages = []
-hasCJKLanguage = false
+hasCJKLanguage = true
 
 ############################# Build ##############################
 [build]
@@ -126,4 +126,48 @@ weight = 1
 
 [Languages.en.params]
 home = "Home"
+copyright = "Copyright &copy; 2025 Matthew Jamison"
+
+################################ Spanish Language ########################
+[Languages.es]
+languageName = "Español"
+languageCode = "es-es"
+contentDir = "content/spanish"
+weight = 2
+
+[Languages.es.params]
+home = "Inicio"
+copyright = "Copyright &copy; 2025 Matthew Jamison"
+
+################################ Japanese Language #######################
+[Languages.ja]
+languageName = "日本語"
+languageCode = "ja-jp"
+contentDir = "content/japanese"
+weight = 3
+
+[Languages.ja.params]
+home = "ホーム"
+copyright = "Copyright &copy; 2025 Matthew Jamison"
+
+################################ French Language #########################
+[Languages.fr]
+languageName = "Français"
+languageCode = "fr-fr"
+contentDir = "content/french"
+weight = 4
+
+[Languages.fr.params]
+home = "Accueil"
+copyright = "Copyright &copy; 2025 Matthew Jamison"
+
+################################ German Language #########################
+[Languages.de]
+languageName = "Deutsch"
+languageCode = "de-de"
+contentDir = "content/german"
+weight = 5
+
+[Languages.de.params]
+home = "Startseite"
 copyright = "Copyright &copy; 2025 Matthew Jamison"

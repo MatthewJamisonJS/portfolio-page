@@ -5,7 +5,7 @@ draft: false
 demo_url: "https://demo-landing-dvx.pages.dev"
 github_url: "https://github.com/MatthewJamisonJS/demo-landing"
 theme_name: "Omega"
-description: "Construido con el tema Omega de GetHugoThemes. Página de aterrizaje moderna de aplicación con insignias de tienda de aplicaciones, capturas de pantalla y vitrinas de características."
+description: "Maximice descargas de aplicaciones y adquisición de usuarios con una página de aterrizaje diseñada para conversión. Exhibiciones atractivas de características, optimización de tiendas de aplicaciones y llamadas a la acción claras guían a los visitantes desde el interés hasta la instalación—apoyando mercados globales desde el primer día."
 image: "/images/demos/demo-7-app.webp"
 challenge: "Aplicación móvil necesita página de aterrizaje rápida con insignias de tienda de aplicaciones, multilingüe"
 solution_time: "2-3 semanas"

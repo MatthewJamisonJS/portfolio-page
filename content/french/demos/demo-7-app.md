@@ -5,7 +5,7 @@ draft: false
 demo_url: "https://demo-landing-dvx.pages.dev"
 github_url: "https://github.com/MatthewJamisonJS/demo-landing"
 theme_name: "Omega"
-description: "Construit avec le thème Omega par GetHugoThemes. Page d'accueil d'application moderne avec badges d'app stores, captures d'écran et présentations de fonctionnalités."
+description: "Maximisez les téléchargements d'applications et l'acquisition d'utilisateurs avec une page d'accueil conçue pour la conversion. Présentations de fonctionnalités attrayantes, optimisation des app stores et appels à l'action clairs guident les visiteurs de l'intérêt à l'installation—soutenant les marchés mondiaux dès le premier jour."
 image: "/images/demos/demo-7-app.webp"
 challenge: "Application mobile a besoin d'une page d'accueil rapide avec badges d'app stores, multilingue"
 solution_time: "2-3 semaines"

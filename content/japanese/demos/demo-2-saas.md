@@ -5,7 +5,7 @@ draft: false
 demo_url: "https://demo-saas.pages.dev"
 github_url: "https://github.com/MatthewJamisonJS/demo-saas"
 theme_name: "Bigspring Light"
-description: "GetHugoThemes の Bigspring Light テーマで構築。クリーンなデザイン、料金表、コンバージョン重視のレイアウトを備えた最新 SaaS ランディングページ。"
+description: "コンバージョン最適化されたデザインで登録を促進し、顧客獲得コストを削減。明確な価値提案、魅力的な料金設定、信頼構築要素が訪問者を有料顧客に変換—迅速、プロフェッショナル、グローバル展開を前提に構築。"
 image: "/images/demos/demo-2-saas.webp"
 challenge: "製品ローンチに高速ランディングページが必要、複数市場対応が必須"
 solution_time: "2-3週間"

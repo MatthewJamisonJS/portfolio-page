@@ -5,7 +5,7 @@ draft: false
 demo_url: "https://demo-creative-r4n.pages.dev"
 github_url: "https://github.com/MatthewJamisonJS/demo-creative"
 theme_name: "Academia"
-description: "Construido con el tema Academia de GetHugoThemes. Portafolio visual impresionante para diseñadores, fotógrafos y profesionales creativos."
+description: "Atraiga clientes premium con una vitrina visual impresionante que carga instantáneamente en cualquier lugar. Presentación profesional, galerías fluidas y diseño elegante establecen autoridad creativa mientras impulsan consultas—sin necesidad de experiencia técnica."
 image: "/images/demos/demo-4-portfolio.webp"
 challenge: "Diseñador necesita sitio de exhibición que cargue instantáneamente, funcione en todas partes"
 solution_time: "2-3 semanas"

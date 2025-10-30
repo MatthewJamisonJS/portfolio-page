@@ -5,7 +5,7 @@ draft: false
 demo_url: "https://demo-ecommerce-am8.pages.dev"
 github_url: "https://github.com/MatthewJamisonJS/demo-ecommerce"
 theme_name: "Hargo"
-description: "Construit avec le thème Hargo par GetHugoThemes. Vitrine e-commerce complète avec catalogues de produits, panier et intégration de paiement."
+description: "Lancez votre boutique en ligne et commencez à générer des revenus en quelques semaines, pas en mois. Présentations de produits professionnelles, processus de paiement fluides et expériences d'achat optimisées pour mobile maximisent les conversions et réduisent l'abandon de panier en 5 langues."
 image: "/images/demos/demo-3-ecommerce.png"
 challenge: "Expansion internationale bloquée par le manque de support multilingue"
 solution_time: "2-3 semaines"

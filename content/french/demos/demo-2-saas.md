@@ -5,7 +5,7 @@ draft: false
 demo_url: "https://demo-saas.pages.dev"
 github_url: "https://github.com/MatthewJamisonJS/demo-saas"
 theme_name: "Bigspring Light"
-description: "Construit avec le thème Bigspring Light par GetHugoThemes. Page d'accueil SaaS moderne avec design épuré, tableaux de tarification et mise en page axée sur la conversion."
+description: "Stimulez les inscriptions et réduisez les coûts d'acquisition client avec un design optimisé pour la conversion. Propositions de valeur claires, tarification attractive et éléments de confiance transforment les visiteurs en clients payants—rapide, professionnel et conçu pour évoluer à l'échelle mondiale."
 image: "/images/demos/demo-2-saas.webp"
 challenge: "Besoin d'une page d'accueil rapide pour le lancement de produit, doit supporter plusieurs marchés"
 solution_time: "2-3 semaines"

@@ -6,7 +6,7 @@ demo_url: "https://demo-ecommerce-am8.pages.dev"
 github_url: "https://github.com/MatthewJamisonJS/demo-ecommerce"
 theme_name: "Hargo"
 description: "Built with Hargo theme by GetHugoThemes. Full-featured e-commerce storefront with product catalogs, cart, and checkout integration."
-image: "/images/demos/demo-3-ecommerce.webp"
+image: "/images/demos/demo-3-ecommerce.png"
 ---
 
 ## Overview

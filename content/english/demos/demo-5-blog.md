@@ -6,7 +6,7 @@ demo_url: "https://demo-blog-a03.pages.dev"
 github_url: "https://github.com/MatthewJamisonJS/demo-blog"
 theme_name: "Parsa"
 description: "Built with Parsa theme by GetHugoThemes. Content-focused blog with great typography, reading experience, and SEO optimization."
-image: "/images/demos/demo-5-blog.webp"
+image: "/images/demos/demo-5-blog.png"
 ---
 
 ## Overview

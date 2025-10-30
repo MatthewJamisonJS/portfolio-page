@@ -2,73 +2,73 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Matthew Jamison - Full-Stack Developer</title>
-    <link>http://localhost:1313/</link>
+    <link>/</link>
     <description>Recent content on Matthew Jamison - Full-Stack Developer</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 29 Oct 2025 00:00:00 -0500</lastBuildDate>
-    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>About Matthew Jamison</title>
-      <link>http://localhost:1313/about/</link>
+      <link>/about/</link>
       <pubDate>Wed, 29 Oct 2025 00:00:00 -0500</pubDate>
-      <guid>http://localhost:1313/about/</guid>
+      <guid>/about/</guid>
       <description>&lt;h1 id=&#34;about-me&#34;&gt;About Me&lt;/h1&gt;&#xA;&lt;p&gt;Hi, I&amp;rsquo;m Matthew Jamison — a full-stack developer passionate about building elegant, efficient web applications and exploring the intersection of technology and creativity.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Agency/Services Site</title>
-      <link>http://localhost:1313/demos/demo-1-agency/</link>
+      <link>/demos/demo-1-agency/</link>
       <pubDate>Wed, 29 Oct 2025 00:00:00 -0500</pubDate>
-      <guid>http://localhost:1313/demos/demo-1-agency/</guid>
+      <guid>/demos/demo-1-agency/</guid>
       <description>&lt;h2 id=&#34;overview&#34;&gt;Overview&lt;/h2&gt;&#xA;&lt;p&gt;A professional agency website template designed for service-based businesses. Features a modern, clean design with smooth scrolling and engaging animations.&lt;/p&gt;</description>
     </item>
     <item>
       <title>App Landing Page</title>
-      <link>http://localhost:1313/demos/demo-7-app/</link>
+      <link>/demos/demo-7-app/</link>
       <pubDate>Wed, 29 Oct 2025 00:00:00 -0500</pubDate>
-      <guid>http://localhost:1313/demos/demo-7-app/</guid>
+      <guid>/demos/demo-7-app/</guid>
       <description>&lt;h2 id=&#34;overview&#34;&gt;Overview&lt;/h2&gt;&#xA;&lt;p&gt;A sleek, modern landing page template designed for mobile and web app launches. Features app screenshots, feature highlights, and download links.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Blog/Magazine</title>
-      <link>http://localhost:1313/demos/demo-5-blog/</link>
+      <link>/demos/demo-5-blog/</link>
       <pubDate>Wed, 29 Oct 2025 00:00:00 -0500</pubDate>
-      <guid>http://localhost:1313/demos/demo-5-blog/</guid>
+      <guid>/demos/demo-5-blog/</guid>
       <description>&lt;h2 id=&#34;overview&#34;&gt;Overview&lt;/h2&gt;&#xA;&lt;p&gt;A beautiful, content-focused blog template optimized for readability and SEO. Perfect for writers, journalists, and content creators.&lt;/p&gt;</description>
     </item>
     <item>
       <title>E-commerce Store</title>
-      <link>http://localhost:1313/demos/demo-3-ecommerce/</link>
+      <link>/demos/demo-3-ecommerce/</link>
       <pubDate>Wed, 29 Oct 2025 00:00:00 -0500</pubDate>
-      <guid>http://localhost:1313/demos/demo-3-ecommerce/</guid>
+      <guid>/demos/demo-3-ecommerce/</guid>
       <description>&lt;h2 id=&#34;overview&#34;&gt;Overview&lt;/h2&gt;&#xA;&lt;p&gt;A complete e-commerce solution built with Hugo and modern payment integrations. Perfect for small to medium-sized online stores.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Get In Touch</title>
-      <link>http://localhost:1313/contact/</link>
+      <link>/contact/</link>
       <pubDate>Wed, 29 Oct 2025 00:00:00 -0500</pubDate>
-      <guid>http://localhost:1313/contact/</guid>
+      <guid>/contact/</guid>
       <description>&lt;h1 id=&#34;contact&#34;&gt;Contact&lt;/h1&gt;&#xA;&lt;p&gt;Interested in working together? Have a project in mind? Or just want to say hello? I&amp;rsquo;d love to hear from you!&lt;/p&gt;</description>
     </item>
     <item>
       <title>Portfolio/Creative</title>
-      <link>http://localhost:1313/demos/demo-4-portfolio/</link>
+      <link>/demos/demo-4-portfolio/</link>
       <pubDate>Wed, 29 Oct 2025 00:00:00 -0500</pubDate>
-      <guid>http://localhost:1313/demos/demo-4-portfolio/</guid>
+      <guid>/demos/demo-4-portfolio/</guid>
       <description>&lt;h2 id=&#34;overview&#34;&gt;Overview&lt;/h2&gt;&#xA;&lt;p&gt;A visually striking portfolio template designed to showcase creative work. Features full-screen imagery, smooth transitions, and elegant typography.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Restaurant/Food</title>
-      <link>http://localhost:1313/demos/demo-6-restaurant/</link>
+      <link>/demos/demo-6-restaurant/</link>
       <pubDate>Wed, 29 Oct 2025 00:00:00 -0500</pubDate>
-      <guid>http://localhost:1313/demos/demo-6-restaurant/</guid>
+      <guid>/demos/demo-6-restaurant/</guid>
       <description>&lt;h2 id=&#34;overview&#34;&gt;Overview&lt;/h2&gt;&#xA;&lt;p&gt;A mouth-watering restaurant website template featuring rich imagery, menu displays, and reservation systems. Perfect for restaurants, cafés, and food businesses.&lt;/p&gt;</description>
     </item>
     <item>
       <title>SaaS Landing Page</title>
-      <link>http://localhost:1313/demos/demo-2-saas/</link>
+      <link>/demos/demo-2-saas/</link>
       <pubDate>Wed, 29 Oct 2025 00:00:00 -0500</pubDate>
-      <guid>http://localhost:1313/demos/demo-2-saas/</guid>
+      <guid>/demos/demo-2-saas/</guid>
       <description>&lt;h2 id=&#34;overview&#34;&gt;Overview&lt;/h2&gt;&#xA;&lt;p&gt;A conversion-optimized SaaS landing page template designed to showcase your product and drive signups. Built with modern web technologies and best practices.&lt;/p&gt;</description>
     </item>
   </channel>

@@ -2,11 +2,11 @@
 title: "Blog/Magazine"
 date: 2025-10-29
 draft: false
-demo_url: "https://blog-demo.pages.dev"
+demo_url: "https://demo-blog-a03.pages.dev"
 github_url: "https://github.com/MatthewJamisonJS/demo-blog"
-theme_name: "Hugo Journal"
-description: "Built with Hugo Journal theme. Content-focused blog with great typography, reading experience, and SEO optimization."
-image: "/images/demos/demo-5-blog.svg"
+theme_name: "Parsa"
+description: "Built with Parsa theme by GetHugoThemes. Content-focused blog with great typography, reading experience, and SEO optimization."
+image: "/images/demos/demo-5-blog.png"
 ---
 
 ## Overview

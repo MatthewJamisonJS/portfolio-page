@@ -1,5 +1,5 @@
 ################################# Default configuration ###################
-baseURL = "https://matthewjamison.dev/"
+baseURL = "/"
 title = "Matthew Jamison - Full-Stack Developer"
 theme = "meghna"
 # Default time zone for time stamps

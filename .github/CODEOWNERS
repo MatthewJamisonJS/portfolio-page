@@ -1,0 +1,23 @@
+# CODEOWNERS file for portfolio-page repository
+# This file specifies code owners for pull request review assignment
+#
+# Matthew Jamison (@MatthewJamisonJS) is the primary owner of all code
+# and content in this repository.
+
+* @MatthewJamisonJS
+
+# Specific directories (optional - can be expanded as team grows)
+/demo-agency/ @MatthewJamisonJS
+/demo-blog/ @MatthewJamisonJS
+/demo-creative/ @MatthewJamisonJS
+/demo-ecommerce/ @MatthewJamisonJS
+/demo-landing/ @MatthewJamisonJS
+/demo-restaurant/ @MatthewJamisonJS
+/demo-saas/ @MatthewJamisonJS
+
+# Configuration and documentation
+/.github/ @MatthewJamisonJS
+/LICENSE @MatthewJamisonJS
+/SECURITY.md @MatthewJamisonJS
+/CODE_OF_CONDUCT.md @MatthewJamisonJS
+/CHANGELOG.md @MatthewJamisonJS

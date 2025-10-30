@@ -2,11 +2,11 @@
 title: "Restaurant/Food"
 date: 2025-10-29
 draft: false
-demo_url: "https://restaurant-demo.pages.dev"
+demo_url: "https://demo-restaurant-4az.pages.dev"
 github_url: "https://github.com/MatthewJamisonJS/demo-restaurant"
-theme_name: "Hugo Feast"
-description: "Built with Hugo Feast theme. Appetizing restaurant website with menu display, reservations, and online ordering."
-image: "/images/demos/demo-6-restaurant.svg"
+theme_name: "Restaurant"
+description: "Built with Restaurant theme by Themefisher. Appetizing restaurant website with menu display, reservations, and online ordering."
+image: "/images/demos/demo-6-restaurant.webp"
 ---
 
 ## Overview

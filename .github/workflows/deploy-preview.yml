@@ -1,0 +1,59 @@
+name: Deploy Preview
+
+on:
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build-preview:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+      with:
+        submodules: recursive
+
+    - name: Setup Hugo
+      uses: peaceiris/actions-hugo@v2
+      with:
+        hugo-version: '0.152.2'
+        extended: true
+
+    - name: Build site
+      run: hugo --minify --gc
+
+    - name: Check build output
+      run: |
+        echo "Build completed successfully!"
+        echo "Files generated: $(find public -type f | wc -l)"
+        echo "Total size: $(du -sh public | cut -f1)"
+
+        # Verify critical files exist
+        echo ""
+        echo "Verifying critical files:"
+        for file in "index.html" "_headers" "sitemap.xml" "robots.txt"; do
+          if [ -f "public/$file" ]; then
+            echo "  ✓ $file exists"
+          else
+            echo "  ✗ $file MISSING"
+            exit 1
+          fi
+        done
+
+    - name: Verify security headers
+      run: |
+        if [ -f public/_headers ]; then
+          echo "Security headers configuration:"
+          head -5 public/_headers
+          echo ""
+          echo "✓ Security headers file exists and will be applied"
+        else
+          echo "⚠️ Warning: _headers file not found in build output"
+          exit 1
+        fi
+
+    - name: List build output structure
+      run: |
+        echo "Build output structure:"
+        find public -type d -maxdepth 2 | sort | sed 's|public/||' | head -20

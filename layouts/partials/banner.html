@@ -9,23 +9,23 @@ $data.banner.banner.enable }} {{ with $data.banner.banner }} {{"<!-- Welcome Sli
 
   <!-- Pokemon Battle Scene - Left Side (Electric + Others) -->
   <div class="battle-pokemon left-side">
-    <img src="/images/pokemon/battle/blastoise-back.gif" alt="Blastoise" class="pokemon-battle blastoise">
-    <img src="/images/pokemon/battle/pikachu-back.gif" alt="Pikachu" class="pokemon-battle pikachu">
-    <img src="/images/pokemon/battle/jolteon-back.gif" alt="Jolteon" class="pokemon-battle jolteon">
-    <img src="/images/pokemon/battle/electabuzz-back.gif" alt="Electabuzz" class="pokemon-battle electabuzz">
-    <img src="/images/pokemon/battle/magneton-back.gif" alt="Magneton" class="pokemon-battle magneton">
-    <img src="/images/pokemon/battle/gengar-back.gif" alt="Gengar" class="pokemon-battle gengar">
+    <img src="/images/pokemon/battle/blastoise-back.gif" alt="Blastoise Pokemon water type battling animation" class="pokemon-battle blastoise">
+    <img src="/images/pokemon/battle/pikachu-back.gif" alt="Pikachu Pokemon electric type battling animation" class="pokemon-battle pikachu">
+    <img src="/images/pokemon/battle/jolteon-back.gif" alt="Jolteon Pokemon electric type battling animation" class="pokemon-battle jolteon">
+    <img src="/images/pokemon/battle/electabuzz-back.gif" alt="Electabuzz Pokemon electric type battling animation" class="pokemon-battle electabuzz">
+    <img src="/images/pokemon/battle/magneton-back.gif" alt="Magneton Pokemon electric steel type battling animation" class="pokemon-battle magneton">
+    <img src="/images/pokemon/battle/gengar-back.gif" alt="Gengar Pokemon ghost poison type battling animation" class="pokemon-battle gengar">
   </div>
 
   <!-- Pokemon Battle Scene - Right Side (Flying) -->
   <div class="battle-pokemon right-side">
-    <img src="/images/pokemon/battle/charizard.gif" alt="Charizard" class="pokemon-battle charizard">
-    <img src="/images/pokemon/battle/dragonite.gif" alt="Dragonite" class="pokemon-battle dragonite">
-    <img src="/images/pokemon/battle/pidgeot.gif" alt="Pidgeot" class="pokemon-battle pidgeot">
-    <img src="/images/pokemon/battle/aerodactyl.gif" alt="Aerodactyl" class="pokemon-battle aerodactyl">
-    <img src="/images/pokemon/battle/articuno.gif" alt="Articuno" class="pokemon-battle articuno">
-    <img src="/images/pokemon/battle/moltres.gif" alt="Moltres" class="pokemon-battle moltres">
-    <img src="/images/pokemon/battle/zapdos.gif" alt="Zapdos" class="pokemon-battle zapdos">
+    <img src="/images/pokemon/battle/charizard.gif" alt="Charizard Pokemon fire flying type battling animation" class="pokemon-battle charizard">
+    <img src="/images/pokemon/battle/dragonite.gif" alt="Dragonite Pokemon dragon flying type battling animation" class="pokemon-battle dragonite">
+    <img src="/images/pokemon/battle/pidgeot.gif" alt="Pidgeot Pokemon normal flying type battling animation" class="pokemon-battle pidgeot">
+    <img src="/images/pokemon/battle/aerodactyl.gif" alt="Aerodactyl Pokemon rock flying type battling animation" class="pokemon-battle aerodactyl">
+    <img src="/images/pokemon/battle/articuno.gif" alt="Articuno Pokemon ice flying legendary battling animation" class="pokemon-battle articuno">
+    <img src="/images/pokemon/battle/moltres.gif" alt="Moltres Pokemon fire flying legendary battling animation" class="pokemon-battle moltres">
+    <img src="/images/pokemon/battle/zapdos.gif" alt="Zapdos Pokemon electric flying legendary battling animation" class="pokemon-battle zapdos">
   </div>
 
   <!-- Battle Effects -->
@@ -61,7 +61,7 @@ $data.banner.banner.enable }} {{ with $data.banner.banner }} {{"<!-- Welcome Sli
   <div class="block">
     {{ if .pokemon_sprite }}
     <div class="video-button">
-      <img src="{{ .pokemon_sprite | absURL }}" alt="Pokemon" class="pokemon-icon-large">
+      <img src="{{ .pokemon_sprite | absURL }}" alt="Pokemon portrait icon representing developer" class="pokemon-icon-large">
     </div>
     {{ else if .icon }}
     <div class="video-button">

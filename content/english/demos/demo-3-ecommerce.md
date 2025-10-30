@@ -2,11 +2,11 @@
 title: "E-commerce Store"
 date: 2025-10-29
 draft: false
-demo_url: "https://shop-demo.pages.dev"
+demo_url: "https://demo-ecommerce-am8.pages.dev"
 github_url: "https://github.com/MatthewJamisonJS/demo-ecommerce"
-theme_name: "Hugo Shop"
-description: "Built with Hugo Shop theme. Full-featured e-commerce storefront with product catalogs, cart, and checkout integration."
-image: "/images/demos/demo-3-ecommerce.svg"
+theme_name: "Hargo"
+description: "Built with Hargo theme by GetHugoThemes. Full-featured e-commerce storefront with product catalogs, cart, and checkout integration."
+image: "/images/demos/demo-3-ecommerce.webp"
 ---
 
 ## Overview

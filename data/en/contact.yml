@@ -3,3 +3,15 @@ contact:
   enable: true
   title: "Get In Touch"
   subtitle: "Have a project in mind? Let's work together!"
+  content: "I'm available for freelance projects, consulting, and full-time opportunities. Whether you need help with Rails development, AI integration, or building something from scratch, I'd love to hear from you."
+
+  # Contact form configuration
+  contact_form:
+    enable: true
+    form_action: "https://formspree.io/f/xjkpovyv"
+    name: "Your Name"
+    email: "Your Email"
+    subject: "Subject"
+    message: "Your Message"
+    submit: "Send Message"
+---

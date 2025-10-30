@@ -2,11 +2,11 @@
 title: "Portfolio/Creative"
 date: 2025-10-29
 draft: false
-demo_url: "https://portfolio-demo.pages.dev"
-github_url: "https://github.com/MatthewJamisonJS/demo-portfolio"
-theme_name: "Hugo Creative"
-description: "Built with Hugo Creative theme. Stunning visual portfolio for designers, photographers, and creative professionals."
-image: "/images/demos/demo-4-portfolio.svg"
+demo_url: "https://demo-creative-4tn.pages.dev"
+github_url: "https://github.com/MatthewJamisonJS/demo-creative"
+theme_name: "Academia"
+description: "Built with Academia theme by GetHugoThemes. Stunning visual portfolio for designers, photographers, and creative professionals."
+image: "/images/demos/demo-4-portfolio.webp"
 ---
 
 ## Overview

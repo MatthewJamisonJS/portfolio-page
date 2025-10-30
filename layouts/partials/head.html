@@ -1,0 +1,184 @@
+<head>
+	<meta charset="utf-8">
+	<title>{{ .Title }}</title>
+
+	{{ "<!-- mobile responsive meta -->" | safeHTML }}
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ with site.Params.description }}{{ . }}{{ end }}{{ end }}">
+	{{ with site.Params.author }}
+	<meta name="author" content="{{ . }}">{{ end }}
+
+	<!-- theme meta -->
+        <meta name="theme-name" content="meghna-hugo" />
+	{{ hugo.Generator }}
+
+	{{ "<!-- plugins -->" | safeHTML }}
+	{{ range site.Params.plugins.css }}
+	<link rel="stylesheet" href="{{ .link | absURL }}">
+	{{ end }}
+
+	{{"<!-- Main Stylesheet -->"|safeHTML}}
+	{{ $styles := resources.Get "css/style.css" | minify }}
+	<link rel="stylesheet" href="{{ $styles.Permalink }}" media="screen">
+
+	{{"<!-- Custom stylesheet - for your changes -->" |safeHTML}}
+	{{ $custom := resources.Get "css/custom.css" | minify }}
+  <link rel="stylesheet" href="{{ $custom.Permalink }}" media="screen">
+
+	{{ "<!--Favicon-->" | safeHTML }}
+	<link rel="shortcut icon" href="{{ `images/favicon.png` | absURL }}" type="image/x-icon">
+	<link rel="icon" href="{{ `images/favicon.png` | absURL }}" type="image/x-icon">
+
+	{{ with site.Params.google_analytics_id }}
+	{{ "<!-- Global Site Tag (gtag.js) - Google Analytics -->" | safeHTML }}
+	<script async src="https://www.googletagmanager.com/gtag/js?id={{ . }}"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', '{{ . }}');
+	</script>
+	{{ end }}
+
+	<!-- Open Graph / Facebook - Enhanced for Social Sharing -->
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="{{ .Permalink }}">
+	<meta property="og:site_name" content="{{ site.Title }}">
+	<meta property="og:locale" content="en_US">
+	<meta property="og:title" content="{{ if .IsHome }}{{ site.Title }} - Full-Stack Developer | Rails, Python, AI Tooling{{ else }}{{ .Title }} | {{ site.Title }}{{ end }}">
+	<meta property="og:description" content="{{ if .IsHome }}Full-Stack Developer specializing in Ruby on Rails, Python, and AI Tooling. Building accessible, performant web applications. Available for hire.{{ else }}{{ with .Description }}{{ . }}{{ else }}{{ site.Params.description }}{{ end }}{{ end }}">
+	<meta property="og:image" content="{{ site.BaseURL }}images/backgrounds/hero-bg.jpg">
+	<meta property="og:image:width" content="1200">
+	<meta property="og:image:height" content="630">
+	<meta property="og:image:alt" content="Matthew Jamison - Full-Stack Developer Portfolio">
+
+	<!-- Twitter Card - Enhanced -->
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:site" content="@matthewjamison">
+	<meta name="twitter:creator" content="@matthewjamison">
+	<meta name="twitter:url" content="{{ .Permalink }}">
+	<meta name="twitter:title" content="{{ if .IsHome }}Matthew Jamison - Full-Stack Developer{{ else }}{{ .Title }} | {{ site.Title }}{{ end }}">
+	<meta name="twitter:description" content="{{ if .IsHome }}Specialized in Rails, Python & AI Tooling. Building modern, accessible web apps. Open to new projects.{{ else }}{{ with .Description }}{{ . }}{{ else }}{{ site.Params.description }}{{ end }}{{ end }}">
+	<meta name="twitter:image" content="{{ site.BaseURL }}images/backgrounds/hero-bg.jpg">
+	<meta name="twitter:image:alt" content="Matthew Jamison Portfolio">
+
+	<!-- Enhanced SEO -->
+	<link rel="canonical" href="{{ .Permalink }}">
+	<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+	<meta name="keywords" content="full-stack developer, Rails developer, Python developer, AI tooling, web development, Hugo, React, portfolio">
+
+	<!-- JSON-LD Structured Data for Search Engines -->
+	<script type="application/ld+json">
+	{
+		"@context": "https://schema.org",
+		"@graph": [
+			{
+				"@type": "Person",
+				"@id": "{{ site.BaseURL }}#person",
+				"name": "Matthew Jamison",
+				"url": "{{ site.BaseURL }}",
+				"image": {
+					"@type": "ImageObject",
+					"url": "{{ site.BaseURL }}images/backgrounds/hero-bg.jpg"
+				},
+				"jobTitle": "Full-Stack Developer",
+				"description": "Full-Stack Developer specializing in Rails, Python, and AI Tooling. Building modern web applications with a focus on accessibility, performance, and user experience.",
+				"knowsAbout": ["Ruby on Rails", "Python", "JavaScript", "React", "AI Tooling", "Hugo", "Web Accessibility (WCAG)", "SEO", "CloudFlare Pages"],
+				"sameAs": [
+					"https://github.com/MatthewJamisonJS",
+					"https://www.linkedin.com/in/matthew-jamison-65486bab/",
+					"https://matthewjamisonmusic.bandcamp.com"
+				],
+				"worksFor": {
+					"@type": "Organization",
+					"name": "Independent Developer"
+				}
+			},
+			{
+				"@type": "WebSite",
+				"@id": "{{ site.BaseURL }}#website",
+				"url": "{{ site.BaseURL }}",
+				"name": "{{ site.Title }}",
+				"description": "{{ site.Params.description }}",
+				"publisher": {
+					"@id": "{{ site.BaseURL }}#person"
+				},
+				"inLanguage": "en-US"
+			},
+			{
+				"@type": "WebPage",
+				"@id": "{{ .Permalink }}#webpage",
+				"url": "{{ .Permalink }}",
+				"name": "{{ .Title }}",
+				"isPartOf": {
+					"@id": "{{ site.BaseURL }}#website"
+				},
+				"about": {
+					"@id": "{{ site.BaseURL }}#person"
+				},
+				"description": "{{ with .Description }}{{ . }}{{ else }}{{ site.Params.description }}{{ end }}",
+				"inLanguage": "en-US"
+			},
+			{
+				"@type": "ProfessionalService",
+				"@id": "{{ site.BaseURL }}#service",
+				"name": "Full-Stack Development Services",
+				"provider": {
+					"@id": "{{ site.BaseURL }}#person"
+				},
+				"areaServed": "Worldwide",
+				"serviceType": "Web Development",
+				"description": "Professional full-stack web development services including Rails applications, Python backends, AI integration, and modern frontend development with React and Hugo.",
+				"offers": [
+					{
+						"@type": "Offer",
+						"itemOffered": {
+							"@type": "Service",
+							"name": "Rails Application Development",
+							"description": "Custom Ruby on Rails web applications with modern architecture and best practices"
+						}
+					},
+					{
+						"@type": "Offer",
+						"itemOffered": {
+							"@type": "Service",
+							"name": "Python Backend Development",
+							"description": "Scalable Python backends and API development"
+						}
+					},
+					{
+						"@type": "Offer",
+						"itemOffered": {
+							"@type": "Service",
+							"name": "AI Tooling Integration",
+							"description": "Integration of AI tools and automation into existing workflows"
+						}
+					},
+					{
+						"@type": "Offer",
+						"itemOffered": {
+							"@type": "Service",
+							"name": "Web Accessibility (WCAG)",
+							"description": "WCAG 2.1 Level AA compliant web development and accessibility audits"
+						}
+					}
+				]
+			}
+		]
+	}
+	</script>
+
+	<!-- Preconnect to external domains for performance -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="dns-prefetch" href="https://fonts.googleapis.com">
+	<link rel="dns-prefetch" href="https://fonts.gstatic.com">
+	{{ if site.Params.google_analytics_id }}
+	<link rel="preconnect" href="https://www.googletagmanager.com">
+	<link rel="dns-prefetch" href="https://www.googletagmanager.com">
+	{{ end }}
+
+	<!-- Preload critical fonts for performance -->
+	<link rel="preload" href="https://fonts.gstatic.com/s/robotoslab/v34/BngbUXZYTXPIvIBgJJSb6s3BzlRRfKOFbvjojISmYmRjRdE.woff2" as="font" type="font/woff2" crossorigin>
+</head>

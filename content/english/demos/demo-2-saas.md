@@ -6,7 +6,7 @@ demo_url: "https://demo-saas.pages.dev"
 github_url: "https://github.com/MatthewJamisonJS/demo-saas"
 theme_name: "Bigspring Light"
 description: "Built with Bigspring Light theme by GetHugoThemes. Modern SaaS landing page with clean design, pricing tables, and conversion-focused layout."
-image: "/images/demos/demo-2-saas.svg"
+image: "/images/demos/demo-2-saas.webp"
 ---
 
 ## Overview

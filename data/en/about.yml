@@ -2,5 +2,16 @@
 about:
   enable: true
   title: "About Me"
-  content: "I'm a full-stack developer passionate about building elegant, efficient web applications. I specialize in Ruby on Rails, Python, and modern JavaScript frameworks, with a focus on creating practical solutions that people love to use."
-  image: "images/about/about.jpg"
+  about_item:
+    - icon: "ti-server"
+      title: "Backend Development"
+      content: "Expert in Ruby on Rails and Python. Building robust, scalable server-side applications with clean architecture and best practices."
+
+    - icon: "ti-layout"
+      title: "Frontend Craftsmanship"
+      content: "Modern JavaScript frameworks (React, Vue), Hotwire, and Tailwind CSS. Creating responsive, intuitive user interfaces."
+
+    - icon: "ti-pulse"
+      title: "AI Integration"
+      content: "Leveraging AI tools and APIs to build intelligent applications. Specializing in practical AI implementations that solve real problems."
+---

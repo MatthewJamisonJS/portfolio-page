@@ -23,11 +23,12 @@
       <div class="col-lg-8 col-md-12">
         <div class="row demo-grid">
           {{ range where site.Pages "Section" "demos" }}
+          {{ if not .IsNode }}
           <div class="col-lg-6 col-md-6 col-sm-12 mb-4">
             <div class="demo-card card h-100">
               {{ if .Params.image }}
               <div class="demo-image">
-                <img src="{{ .Params.image | relURL }}" alt="{{ .Title }}" class="card-img-top">
+                <img src="{{ .Params.image | relURL }}" alt="{{ .Title }}" class="card-img-top" loading="lazy">
                 <div class="demo-overlay">
                   <div class="demo-links">
                     {{ if .Params.demo_url }}
@@ -45,12 +46,13 @@
               </div>
               {{ end }}
               <div class="card-body">
-                <h4 class="card-title">{{ .Title }}</h4>
+                <h3 class="card-title">{{ .Title }}</h3>
                 <p class="card-text">{{ .Params.description }}</p>
                 <a href="{{ .RelPermalink }}" class="read-more">Learn more →</a>
               </div>
             </div>
           </div>
+          {{ end }}
           {{ end }}
         </div>
       </div>

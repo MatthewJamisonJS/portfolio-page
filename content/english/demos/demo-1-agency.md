@@ -6,7 +6,7 @@ demo_url: "https://demo-agency.pages.dev"
 github_url: "https://github.com/MatthewJamisonJS/demo-agency"
 theme_name: "Andromeda Light"
 description: "Built with Andromeda Light theme by GetHugoThemes. Professional agency template with modern design and responsive layout."
-image: "/images/demos/demo-1-agency.svg"
+image: "/images/demos/demo-1-agency.webp"
 ---
 
 ## Overview

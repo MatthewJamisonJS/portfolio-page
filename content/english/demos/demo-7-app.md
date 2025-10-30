@@ -2,11 +2,11 @@
 title: "App Landing Page"
 date: 2025-10-29
 draft: false
-demo_url: "https://app-demo.pages.dev"
-github_url: "https://github.com/MatthewJamisonJS/demo-app"
-theme_name: "Hugo AppLaunch"
-description: "Built with Hugo AppLaunch theme. Modern app landing page with app store badges, screenshots, and feature showcases."
-image: "/images/demos/demo-7-app.svg"
+demo_url: "https://demo-landing-dxx.pages.dev"
+github_url: "https://github.com/MatthewJamisonJS/demo-landing"
+theme_name: "Omega"
+description: "Built with Omega theme by GetHugoThemes. Modern app landing page with app store badges, screenshots, and feature showcases."
+image: "/images/demos/demo-7-app.webp"
 ---
 
 ## Overview

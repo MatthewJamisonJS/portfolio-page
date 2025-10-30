@@ -1,73 +1,73 @@
 ---
-title: "Blog/Magazine"
+title: "Blog/Magazin"
 date: 2025-10-29
 draft: false
 demo_url: "https://demo-blog-a03.pages.dev"
 github_url: "https://github.com/MatthewJamisonJS/demo-blog"
 theme_name: "Parsa"
-description: "Built with Parsa theme by GetHugoThemes. Content-focused blog with great typography, reading experience, and SEO optimization."
+description: "Erstellt mit dem Parsa Theme von GetHugoThemes. Inhaltsfokussierter Blog mit großartiger Typografie, Leseerlebnis und SEO-Optimierung."
 image: "/images/demos/demo-5-blog.png"
 ---
 
-## Overview
+## Übersicht
 
-A beautiful, content-focused blog template optimized for readability and SEO. Perfect for writers, journalists, and content creators.
+Eine schöne, inhaltsfokussierte Blog-Vorlage, die für Lesbarkeit und SEO optimiert ist. Perfekt für Schriftsteller, Journalisten und Content-Ersteller.
 
-## What it shows
+## Was sie zeigt
 
-- **Article listings**: Multiple layout options (grid, list, featured)
-- **Post detail pages**: Optimized reading experience
-- **Author profiles**: Multiple author support
-- **Categories and tags**: Content organization
-- **Search functionality**: Full-text search
-- **Related posts**: Keep readers engaged
-- **Comments**: Disqus/Commento integration
+- **Artikelauflistungen**: Mehrere Layout-Optionen (Raster, Liste, Featured)
+- **Post-Detailseiten**: Optimiertes Leseerlebnis
+- **Autorenprofile**: Unterstützung für mehrere Autoren
+- **Kategorien und Tags**: Inhaltsorganisation
+- **Suchfunktion**: Volltextsuche
+- **Verwandte Beiträge**: Leser engagiert halten
+- **Kommentare**: Disqus-/Commento-Integration
 
-## Key Features
+## Hauptmerkmale
 
-- Beautiful typography
-- Reading time estimates
-- Table of contents generation
-- Code syntax highlighting
-- Social sharing buttons
-- Newsletter signup forms
-- RSS feed support
-- Archive pages
+- Schöne Typografie
+- Lesezeitschätzungen
+- Inhaltsverzeichnis-Generierung
+- Code-Syntaxhervorhebung
+- Social-Sharing-Buttons
+- Newsletter-Anmeldeformulare
+- RSS-Feed-Unterstützung
+- Archivseiten
 
-## Use Cases
+## Anwendungsfälle
 
-Ideal for:
-- Personal blogs and journals
-- Tech and development blogs
-- News and magazine sites
-- Corporate blogs
-- Content marketing
-- Knowledge bases
-- Documentation sites
+Ideal für:
+- Persönliche Blogs und Tagebücher
+- Tech- und Entwicklungsblogs
+- Nachrichten- und Magazin-Sites
+- Unternehmensblogs
+- Content-Marketing
+- Wissensdatenbanken
+- Dokumentations-Sites
 
-## Tech Stack
+## Technologie-Stack
 
-- **Hugo**: Fast static site generation
-- **Markdown**: Simple content authoring
-- **Syntax highlighting**: Prism.js or Highlight.js
-- **Search**: Lunr.js or Algolia
+- **Hugo**: Schnelle statische Site-Generierung
+- **Markdown**: Einfaches Content-Authoring
+- **Syntaxhervorhebung**: Prism.js oder Highlight.js
+- **Suche**: Lunr.js oder Algolia
 - **Analytics**: Google Analytics, Plausible
 
-## Content Features
+## Inhaltsfunktionen
 
-- SEO optimized (meta tags, structured data)
-- OpenGraph and Twitter Cards
-- Sitemap generation
-- Multiple content types
-- Series/multi-part posts
-- Draft and scheduled posts
-- Multiple languages support
-- AMP pages (optional)
+- SEO-optimiert (Meta-Tags, strukturierte Daten)
+- OpenGraph und Twitter Cards
+- Sitemap-Generierung
+- Mehrere Inhaltstypen
+- Serien-/mehrteilige Beiträge
+- Entwurfs- und geplante Beiträge
+- Mehrsprachenunterstützung
+- AMP-Seiten (optional)
 
-## Performance
+## Leistung
 
-- Minimal JavaScript
-- Optimized for Core Web Vitals
-- Fast page loads
-- Mobile-optimized reading
-- Offline support (PWA optional)
+- Minimales JavaScript
+- Optimiert für Core Web Vitals
+- Schnelle Seitenladevorgänge
+- Für Mobilgeräte optimiertes Lesen
+- Offline-Unterstützung (PWA optional)

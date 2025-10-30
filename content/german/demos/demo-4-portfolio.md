@@ -1,62 +1,62 @@
 ---
-title: "Portfolio/Creative"
+title: "Portfolio/Kreativ"
 date: 2025-10-29
 draft: false
 demo_url: "https://demo-creative-r4n.pages.dev"
 github_url: "https://github.com/MatthewJamisonJS/demo-creative"
 theme_name: "Academia"
-description: "Built with Academia theme by GetHugoThemes. Stunning visual portfolio for designers, photographers, and creative professionals."
+description: "Erstellt mit dem Academia Theme von GetHugoThemes. Beeindruckendes visuelles Portfolio für Designer, Fotografen und Kreativprofis."
 image: "/images/demos/demo-4-portfolio.svg"
 ---
 
-## Overview
+## Übersicht
 
-A visually striking portfolio template designed to showcase creative work. Features full-screen imagery, smooth transitions, and elegant typography.
+Eine visuell beeindruckende Portfolio-Vorlage, die entwickelt wurde, um kreative Arbeiten zu präsentieren. Bietet Vollbild-Bilder, flüssige Übergänge und elegante Typografie.
 
-## What it shows
+## Was sie zeigt
 
-- **Full-screen hero**: Immediately capture attention
-- **Project showcase**: Grid and masonry layouts
-- **Project detail pages**: Case studies with rich media
-- **About section**: Tell your story
-- **Image galleries**: Lightbox and slideshow support
-- **Contact form**: Easy way for clients to reach you
+- **Vollbild-Hero**: Sofortige Aufmerksamkeit erregen
+- **Projekt-Showcase**: Raster- und Masonry-Layouts
+- **Projekt-Detailseiten**: Fallstudien mit reichhaltigen Medien
+- **Über-Bereich**: Erzählen Sie Ihre Geschichte
+- **Bildergalerien**: Lightbox- und Diashow-Unterstützung
+- **Kontaktformular**: Einfache Möglichkeit für Kunden, Sie zu erreichen
 
-## Key Features
+## Hauptmerkmale
 
-- Masonry grid layouts
-- Lazy-loaded images
-- Lightbox photo galleries
-- Smooth page transitions
-- Filterable project categories
-- Video embeds support
-- Instagram feed integration
-- Client testimonials
+- Masonry-Raster-Layouts
+- Lazy-Loading-Bilder
+- Lightbox-Fotogalerien
+- Flüssige Seitenübergänge
+- Filterbare Projektkategorien
+- Video-Einbettungsunterstützung
+- Instagram-Feed-Integration
+- Kunden-Testimonials
 
-## Use Cases
+## Anwendungsfälle
 
-Designed for:
-- Photographers and videographers
-- Graphic and web designers
-- Artists and illustrators
-- Architects and interior designers
-- Creative agencies
-- UX/UI designers
+Entwickelt für:
+- Fotografen und Videografen
+- Grafik- und Webdesigner
+- Künstler und Illustratoren
+- Architekten und Innenarchitekten
+- Kreativagenturen
+- UX/UI-Designer
 
-## Tech Stack
+## Technologie-Stack
 
-- **Hugo**: Fast build times for image-heavy sites
-- **PhotoSwipe**: Beautiful lightbox galleries
-- **Lazy loading**: Optimized image loading
-- **WebP support**: Modern image formats
-- **CSS Grid & Flexbox**: Advanced layouts
+- **Hugo**: Schnelle Build-Zeiten für bildlastige Sites
+- **PhotoSwipe**: Schöne Lightbox-Galerien
+- **Lazy Loading**: Optimiertes Bildladen
+- **WebP-Unterstützung**: Moderne Bildformate
+- **CSS Grid & Flexbox**: Fortgeschrittene Layouts
 
-## Visual Features
+## Visuelle Funktionen
 
-- High-resolution image support
-- Retina-ready graphics
-- Custom fonts and typography
-- Parallax scrolling effects
-- Smooth reveal animations
-- Dark mode support
-- Minimalist design aesthetic
+- Hochauflösende Bildunterstützung
+- Retina-bereite Grafiken
+- Benutzerdefinierte Schriftarten und Typografie
+- Parallax-Scrolling-Effekte
+- Flüssige Enthüllungsanimationen
+- Dark-Mode-Unterstützung
+- Minimalistische Designästhetik

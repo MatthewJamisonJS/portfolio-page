@@ -1,17 +1,17 @@
 ---
 about:
   enable: true
-  title: "About Me"
+  title: "Über Mich"
   about_item:
     - icon: "ti-server"
-      title: "Backend Development"
-      content: "Expert in Ruby on Rails and Python. Building robust, scalable server-side applications with clean architecture and best practices."
+      title: "Backend-Entwicklung"
+      content: "Experte in Ruby on Rails und Python. Entwicklung robuster, skalierbarer serverseitiger Anwendungen mit sauberer Architektur und bewährten Methoden."
 
     - icon: "ti-layout"
-      title: "Frontend Craftsmanship"
-      content: "Modern JavaScript frameworks (React, Vue), Hotwire, and Tailwind CSS. Creating responsive, intuitive user interfaces."
+      title: "Frontend-Handwerk"
+      content: "Moderne JavaScript-Frameworks (React, Vue), Hotwire und Tailwind CSS. Erstellung responsiver, intuitiver Benutzeroberflächen."
 
     - icon: "ti-pulse"
-      title: "AI Integration"
-      content: "Leveraging AI tools and APIs to build intelligent applications. Specializing in practical AI implementations that solve real problems."
+      title: "KI-Integration"
+      content: "Nutzung von KI-Tools und APIs zur Entwicklung intelligenter Anwendungen. Spezialisiert auf praktische KI-Implementierungen, die echte Probleme lösen."
 ---

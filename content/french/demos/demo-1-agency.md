@@ -1,54 +1,54 @@
 ---
-title: "Agency/Services Site"
+title: "Site d'Agence/Services"
 date: 2025-10-29
 draft: false
 demo_url: "https://demo-agency.pages.dev"
 github_url: "https://github.com/MatthewJamisonJS/demo-agency"
 theme_name: "Andromeda Light"
-description: "Built with Andromeda Light theme by GetHugoThemes. Professional agency template with modern design and responsive layout."
+description: "Construit avec le thème Andromeda Light par GetHugoThemes. Modèle d'agence professionnelle avec un design moderne et une mise en page responsive."
 image: "/images/demos/demo-1-agency.webp"
 ---
 
-## Overview
+## Aperçu
 
-A professional agency website template designed for service-based businesses. Features a modern, clean design with smooth scrolling and engaging animations.
+Un modèle de site web d'agence professionnelle conçu pour les entreprises de services. Présente un design moderne et épuré avec un défilement fluide et des animations engageantes.
 
-## What it shows
+## Ce qu'il montre
 
-- **Multi-section landing page**: Hero, services, portfolio, testimonials, and CTA sections
-- **Responsive design**: Looks great on all devices from mobile to desktop
-- **Mobile-first approach**: Optimized for performance on mobile devices
-- **Contact forms**: Integrated contact section for lead generation
+- **Page d'accueil multi-sections** : Sections hero, services, portfolio, témoignages et appels à l'action
+- **Design responsive** : S'affiche parfaitement sur tous les appareils, du mobile au bureau
+- **Approche mobile-first** : Optimisé pour les performances sur les appareils mobiles
+- **Formulaires de contact** : Section de contact intégrée pour la génération de prospects
 
-## Key Features
+## Fonctionnalités Clés
 
-- One-page parallax scrolling design
-- Portfolio showcase with filterable categories
-- Team member profiles
-- Client testimonials carousel
-- Service cards with icons
-- Smooth scroll navigation
-- Call-to-action sections
+- Design de défilement parallaxe d'une seule page
+- Vitrine de portfolio avec catégories filtrables
+- Profils des membres de l'équipe
+- Carrousel de témoignages clients
+- Cartes de services avec icônes
+- Navigation à défilement fluide
+- Sections d'appel à l'action
 
-## Use Cases
+## Cas d'Usage
 
-Perfect for:
-- Freelancers and consultants
-- Creative agencies and studios
-- Marketing and advertising firms
-- Professional services companies
-- Anyone needing a fast, professional web presence
+Parfait pour :
+- Freelancers et consultants
+- Agences créatives et studios
+- Agences de marketing et de publicité
+- Entreprises de services professionnels
+- Toute personne ayant besoin d'une présence web rapide et professionnelle
 
-## Tech Stack
+## Pile Technologique
 
-- **Hugo**: Static site generator for blazing-fast performance
-- **Bootstrap 5**: Responsive grid and components
-- **JavaScript**: Smooth animations and interactions
-- **CSS3**: Modern styling with custom animations
+- **Hugo** : Générateur de site statique pour des performances ultra-rapides
+- **Bootstrap 5** : Grille responsive et composants
+- **JavaScript** : Animations et interactions fluides
+- **CSS3** : Styles modernes avec animations personnalisées
 
 ## Performance
 
-- Lighthouse score: 95+
-- First contentful paint: < 1s
-- Time to interactive: < 2s
-- Static hosting ready (Cloudflare Pages, Netlify, Vercel)
+- Score Lighthouse : 95+
+- First contentful paint : < 1s
+- Time to interactive : < 2s
+- Prêt pour l'hébergement statique (Cloudflare Pages, Netlify, Vercel)

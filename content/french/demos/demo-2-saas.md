@@ -1,58 +1,58 @@
 ---
-title: "SaaS Landing Page"
+title: "Page d'Accueil SaaS"
 date: 2025-10-29
 draft: false
 demo_url: "https://demo-saas.pages.dev"
 github_url: "https://github.com/MatthewJamisonJS/demo-saas"
 theme_name: "Bigspring Light"
-description: "Built with Bigspring Light theme by GetHugoThemes. Modern SaaS landing page with clean design, pricing tables, and conversion-focused layout."
+description: "Construit avec le thème Bigspring Light par GetHugoThemes. Page d'accueil SaaS moderne avec design épuré, tableaux de tarification et mise en page axée sur la conversion."
 image: "/images/demos/demo-2-saas.webp"
 ---
 
-## Overview
+## Aperçu
 
-A conversion-optimized SaaS landing page template designed to showcase your product and drive signups. Built with modern web technologies and best practices.
+Un modèle de page d'accueil SaaS optimisé pour la conversion, conçu pour présenter votre produit et stimuler les inscriptions. Construit avec des technologies web modernes et les meilleures pratiques.
 
-## What it shows
+## Ce qu'il montre
 
-- **Hero with clear value proposition**: Immediately communicate what you offer
-- **Feature highlights**: Showcase your product's key benefits
-- **Pricing tables**: Multiple tiers with feature comparison
-- **Social proof**: Customer testimonials and logos
-- **FAQ section**: Answer common questions
-- **CTA buttons throughout**: Multiple conversion opportunities
+- **Hero avec proposition de valeur claire** : Communiquez immédiatement ce que vous offrez
+- **Points forts des fonctionnalités** : Présentez les principaux avantages de votre produit
+- **Tableaux de tarification** : Plusieurs niveaux avec comparaison des fonctionnalités
+- **Preuve sociale** : Témoignages clients et logos
+- **Section FAQ** : Répondez aux questions courantes
+- **Boutons CTA partout** : Multiples opportunités de conversion
 
-## Key Features
+## Fonctionnalités Clés
 
-- Modern, gradient-rich design
-- Animated feature cards
-- Responsive pricing tables
-- Email signup integration
-- Trust indicators (security badges, client logos)
-- Video demo embed support
-- Mobile-optimized layouts
+- Design moderne riche en dégradés
+- Cartes de fonctionnalités animées
+- Tableaux de tarification responsive
+- Intégration d'inscription par email
+- Indicateurs de confiance (badges de sécurité, logos de clients)
+- Support d'intégration de démo vidéo
+- Mises en page optimisées pour mobile
 
-## Use Cases
+## Cas d'Usage
 
-Ideal for:
-- SaaS product launches
-- Software tool marketing
-- Subscription services
-- API and developer tools
-- B2B software companies
-- Freemium product offerings
+Idéal pour :
+- Lancements de produits SaaS
+- Marketing d'outils logiciels
+- Services d'abonnement
+- API et outils pour développeurs
+- Entreprises de logiciels B2B
+- Offres de produits freemium
 
-## Tech Stack
+## Pile Technologique
 
-- **Hugo + Tailwind CSS**: Utility-first styling with Hugo's speed
-- **Alpine.js**: Lightweight JavaScript for interactions
-- **Form integrations**: Ready for Mailchimp, ConvertKit, etc.
-- **Analytics ready**: Easy Google Analytics integration
+- **Hugo + Tailwind CSS** : Style utility-first avec la vitesse de Hugo
+- **Alpine.js** : JavaScript léger pour les interactions
+- **Intégrations de formulaires** : Prêt pour Mailchimp, ConvertKit, etc.
+- **Prêt pour l'analytique** : Intégration facile de Google Analytics
 
-## Conversion Optimization
+## Optimisation de la Conversion
 
-- Clear primary CTA above the fold
-- Multiple conversion paths
-- Trust signals prominently displayed
-- Fast load times for better conversion
-- Mobile-first responsive design
+- CTA principal clair au-dessus de la ligne de flottaison
+- Multiples chemins de conversion
+- Signaux de confiance affichés en évidence
+- Temps de chargement rapides pour une meilleure conversion
+- Design responsive mobile-first

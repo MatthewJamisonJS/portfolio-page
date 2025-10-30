@@ -1,75 +1,75 @@
 ---
-title: "App Landing Page"
+title: "App-Landing-Page"
 date: 2025-10-29
 draft: false
 demo_url: "https://demo-landing-dvx.pages.dev"
 github_url: "https://github.com/MatthewJamisonJS/demo-landing"
 theme_name: "Omega"
-description: "Built with Omega theme by GetHugoThemes. Modern app landing page with app store badges, screenshots, and feature showcases."
+description: "Erstellt mit dem Omega Theme von GetHugoThemes. Moderne App-Landing-Page mit App-Store-Abzeichen, Screenshots und Feature-Präsentationen."
 image: "/images/demos/demo-7-app.svg"
 ---
 
-## Overview
+## Übersicht
 
-A sleek, modern landing page template designed for mobile and web app launches. Features app screenshots, feature highlights, and download links.
+Eine elegante, moderne Landing-Page-Vorlage, die für Mobile- und Web-App-Launches entwickelt wurde. Bietet App-Screenshots, Feature-Highlights und Download-Links.
 
-## What it shows
+## Was sie zeigt
 
-- **Hero with app preview**: Showcase your app immediately
-- **Feature highlights**: Key benefits and features
-- **Screenshot carousel**: Display app interface
-- **App store badges**: Direct download links
-- **How it works**: Step-by-step explanation
-- **Testimonials**: User reviews and ratings
-- **Pricing (optional)**: Subscription tiers
+- **Hero mit App-Vorschau**: Präsentieren Sie Ihre App sofort
+- **Feature-Highlights**: Wichtigste Vorteile und Funktionen
+- **Screenshot-Karussell**: App-Oberfläche anzeigen
+- **App-Store-Abzeichen**: Direkte Download-Links
+- **So funktioniert es**: Schritt-für-Schritt-Erklärung
+- **Testimonials**: Benutzerbewertungen und Bewertungen
+- **Preise (optional)**: Abonnement-Stufen
 
-## Key Features
+## Hauptmerkmale
 
-- Animated phone mockups
-- Video demo embed
-- App screenshot galleries
-- Feature comparison tables
-- Beta signup forms
-- Press kit download
-- FAQ section
-- Privacy policy links
+- Animierte Telefon-Mockups
+- Video-Demo-Einbettung
+- App-Screenshot-Galerien
+- Feature-Vergleichstabellen
+- Beta-Anmeldeformulare
+- Pressekit-Download
+- FAQ-Bereich
+- Datenschutzrichtlinien-Links
 
-## Use Cases
+## Anwendungsfälle
 
-Designed for:
-- Mobile app launches (iOS/Android)
-- Web application marketing
+Entwickelt für:
+- Mobile-App-Launches (iOS/Android)
+- Web-Applikations-Marketing
 - Progressive Web Apps (PWA)
-- SaaS mobile apps
-- Game launches
-- Productivity tools
-- Social apps
+- SaaS-Mobile-Apps
+- Game-Launches
+- Produktivitäts-Tools
+- Social Apps
 
-## Tech Stack
+## Technologie-Stack
 
-- **Hugo**: Fast, reliable hosting
-- **CSS animations**: Smooth transitions
-- **Device mockups**: Professional presentation
-- **Form integration**: Beta signup collection
-- **Analytics**: Track conversions
+- **Hugo**: Schnelles, zuverlässiges Hosting
+- **CSS-Animationen**: Flüssige Übergänge
+- **Geräte-Mockups**: Professionelle Präsentation
+- **Formular-Integration**: Beta-Anmeldungserfassung
+- **Analytics**: Konversionen verfolgen
 
-## App Marketing Features
+## App-Marketing-Funktionen
 
-- App Store and Google Play badges
-- QR code for easy download
-- Video trailers and demos
-- Feature comparison table
-- User testimonials and ratings
-- Press and media kit
-- Beta testing signup
-- Email notifications
+- App Store und Google Play Abzeichen
+- QR-Code für einfachen Download
+- Video-Trailer und Demos
+- Feature-Vergleichstabelle
+- Benutzer-Testimonials und Bewertungen
+- Presse- und Medienkit
+- Beta-Testing-Anmeldung
+- E-Mail-Benachrichtigungen
 
-## Conversion Elements
+## Konversionselemente
 
-- Clear download CTAs
-- Multiple badge placements
-- Social proof (downloads, ratings)
-- Trust indicators
-- Media coverage mentions
-- Award badges
-- Free trial offers
+- Klare Download-CTAs
+- Mehrere Abzeichen-Platzierungen
+- Social Proof (Downloads, Bewertungen)
+- Vertrauensindikatoren
+- Medienberichterstattung-Erwähnungen
+- Award-Abzeichen
+- Kostenlose Testangebote

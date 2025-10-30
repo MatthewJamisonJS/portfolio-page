@@ -1,62 +1,62 @@
 ---
-title: "E-commerce Store"
+title: "E-Commerce-Shop"
 date: 2025-10-29
 draft: false
 demo_url: "https://demo-ecommerce-am8.pages.dev"
 github_url: "https://github.com/MatthewJamisonJS/demo-ecommerce"
 theme_name: "Hargo"
-description: "Built with Hargo theme by GetHugoThemes. Full-featured e-commerce storefront with product catalogs, cart, and checkout integration."
+description: "Erstellt mit dem Hargo Theme von GetHugoThemes. Voll ausgestatteter E-Commerce-Shop mit Produktkatalogen, Warenkorb und Checkout-Integration."
 image: "/images/demos/demo-3-ecommerce.png"
 ---
 
-## Overview
+## Übersicht
 
-A complete e-commerce solution built with Hugo and modern payment integrations. Perfect for small to medium-sized online stores.
+Eine vollständige E-Commerce-Lösung, die mit Hugo und modernen Zahlungsintegrationen erstellt wurde. Perfekt für kleine bis mittelgroße Online-Shops.
 
-## What it shows
+## Was sie zeigt
 
-- **Product catalog**: Grid and list views with filtering
-- **Product pages**: Detailed product information, images, variations
-- **Shopping cart**: Add to cart functionality
-- **Checkout integration**: Stripe/Snipcart integration
-- **Search functionality**: Product search with filters
-- **Category navigation**: Organized product browsing
+- **Produktkatalog**: Raster- und Listenansichten mit Filterung
+- **Produktseiten**: Detaillierte Produktinformationen, Bilder, Variationen
+- **Warenkorb**: Warenkorb-Funktionalität
+- **Checkout-Integration**: Stripe-/Snipcart-Integration
+- **Suchfunktion**: Produktsuche mit Filtern
+- **Kategorienavigation**: Organisiertes Produktdurchsuchen
 
-## Key Features
+## Hauptmerkmale
 
-- Product image galleries with zoom
-- Color/size variant selection
-- Inventory management display
-- Customer reviews and ratings
-- Related products suggestions
-- Wishlist functionality
-- Order tracking pages
-- Responsive product grids
+- Produktbildergalerien mit Zoom
+- Farb-/Größenvarianten-Auswahl
+- Bestandsverwaltungsanzeige
+- Kundenbewertungen und Bewertungen
+- Vorschläge für verwandte Produkte
+- Wunschlistenfunktion
+- Auftragsverfolgungsseiten
+- Responsive Produktraster
 
-## Use Cases
+## Anwendungsfälle
 
-Perfect for:
-- Small business online stores
-- Artist and creator shops
-- Digital product sales
-- Physical goods retailers
-- Dropshipping stores
-- Boutique and niche retailers
+Perfekt für:
+- Online-Shops für kleine Unternehmen
+- Künstler- und Kreativshops
+- Verkauf digitaler Produkte
+- Einzelhändler für physische Waren
+- Dropshipping-Shops
+- Boutique- und Nischenhändler
 
-## Tech Stack
+## Technologie-Stack
 
-- **Hugo**: Fast static site generation
-- **Snipcart**: Shopping cart and checkout
-- **Stripe**: Payment processing
-- **Algolia**: Product search (optional)
-- **Cloudflare**: CDN and image optimization
+- **Hugo**: Schnelle statische Site-Generierung
+- **Snipcart**: Warenkorb und Checkout
+- **Stripe**: Zahlungsabwicklung
+- **Algolia**: Produktsuche (optional)
+- **Cloudflare**: CDN und Bildoptimierung
 
-## Commerce Features
+## Commerce-Funktionen
 
-- Secure payment processing
-- Inventory tracking
-- Discount codes support
-- Multiple currency support
-- Tax calculation
-- Shipping options
-- Order confirmation emails
+- Sichere Zahlungsabwicklung
+- Bestandsverfolgung
+- Rabattcode-Unterstützung
+- Mehrwährungsunterstützung
+- Steuerberechnung
+- Versandoptionen
+- Auftragsbestätigungs-E-Mails

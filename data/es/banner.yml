@@ -5,9 +5,9 @@ banner:
   bg_image: "images/backgrounds/hero-bg.jpg"
   pokemon_sprite: "/images/pokemon/mew.gif"
   title: "Matthew Jamison"
-  content: "Full-Stack Developer | Rails | Python | AI Tooling | Music Creator"
+  content: "Desarrollador Full-Stack | Rails | Python | Herramientas IA | Creador Musical"
   button:
     enable: true
-    label: "View Demos"
+    label: "Ver Demos"
     link: "#demos"
 ---

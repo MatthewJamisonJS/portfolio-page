@@ -1054,11 +1054,43 @@ button[type="submit"].btn-transparent:hover {
   }
 }
 
-/* Mobile - hide battle scene to keep focus on content */
+/* Mobile - show Blastoise, Mew, and Charizard with spacious layout */
 @media (max-width: 768px) {
-  .battle-pokemon,
-  .battle-effects {
+  /* Hide all Pokemon except Blastoise and Charizard */
+  .battle-pokemon {
     display: none;
+  }
+
+  /* Show and reposition Blastoise (left top corner) */
+  .battle-pokemon[src*="blastoise"] {
+    display: block !important;
+    width: 90px !important;
+    left: 5% !important;
+    top: 12% !important;
+    z-index: 15 !important;
+  }
+
+  /* Show and reposition Charizard (right top corner) */
+  .battle-pokemon[src*="charizard"] {
+    display: block !important;
+    width: 90px !important;
+    right: 5% !important;
+    top: 12% !important;
+    z-index: 15 !important;
+  }
+
+  /* Keep Mew in center (already positioned via hero button) */
+
+  /* Scale battle effects for mobile but keep them visible */
+  .battle-effects {
+    transform: scale(0.5);
+    transform-origin: center;
+    opacity: 0.6;
+  }
+
+  /* Ensure battle scene container maintains spacious aesthetic */
+  .battle-scene {
+    min-height: 400px;
   }
 }
 

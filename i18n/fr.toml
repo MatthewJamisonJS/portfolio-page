@@ -1,0 +1,29 @@
+# French Translations for Portfolio Site
+# TODO: Professional translation needed - currently using English placeholders
+
+# Section Headings
+[portfolio_demos]
+other = "Démos du Portfolio"
+
+[explore_demos_desc]
+other = "Explorez différentes approches de conception et de développement web. Chaque démo présente un style et un cas d'utilisation uniques."
+
+# Buttons and Links
+[view_demo]
+other = "Voir la Démo"
+
+[source_code]
+other = "Code Source"
+
+[learn_more]
+other = "En savoir plus →"
+
+# Music Widget
+[my_music]
+other = "Ma Musique"
+
+[recent_projects]
+other = "Projets Récents"
+
+[view_github]
+other = "Voir GitHub"

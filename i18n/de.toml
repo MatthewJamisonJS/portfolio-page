@@ -1,0 +1,29 @@
+# German Translations for Portfolio Site
+# TODO: Professional translation needed - currently using English placeholders
+
+# Section Headings
+[portfolio_demos]
+other = "Portfolio-Demos"
+
+[explore_demos_desc]
+other = "Erkunden Sie verschiedene Ansätze für Webdesign und -entwicklung. Jede Demo zeigt einen einzigartigen Stil und Anwendungsfall."
+
+# Buttons and Links
+[view_demo]
+other = "Demo Ansehen"
+
+[source_code]
+other = "Quellcode"
+
+[learn_more]
+other = "Mehr erfahren →"
+
+# Music Widget
+[my_music]
+other = "Meine Musik"
+
+[recent_projects]
+other = "Aktuelle Projekte"
+
+[view_github]
+other = "GitHub Ansehen"

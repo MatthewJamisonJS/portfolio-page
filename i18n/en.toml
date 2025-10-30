@@ -1,0 +1,28 @@
+# English Translations for Portfolio Site
+
+# Section Headings
+[portfolio_demos]
+other = "Portfolio Demos"
+
+[explore_demos_desc]
+other = "Explore different approaches to web design and development. Each demo showcases a unique style and use case."
+
+# Buttons and Links
+[view_demo]
+other = "View Demo"
+
+[source_code]
+other = "Source"
+
+[learn_more]
+other = "Learn more →"
+
+# Music Widget
+[my_music]
+other = "My Music"
+
+[recent_projects]
+other = "Recent Projects"
+
+[view_github]
+other = "View GitHub"

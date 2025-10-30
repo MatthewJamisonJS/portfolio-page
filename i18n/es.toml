@@ -1,0 +1,29 @@
+# Spanish Translations for Portfolio Site
+# TODO: Professional translation needed - currently using English placeholders
+
+# Section Headings
+[portfolio_demos]
+other = "Demostraciones de Portafolio"
+
+[explore_demos_desc]
+other = "Explora diferentes enfoques de diseño y desarrollo web. Cada demostración muestra un estilo y caso de uso único."
+
+# Buttons and Links
+[view_demo]
+other = "Ver Demo"
+
+[source_code]
+other = "Código Fuente"
+
+[learn_more]
+other = "Saber más →"
+
+# Music Widget
+[my_music]
+other = "Mi Música"
+
+[recent_projects]
+other = "Proyectos Recientes"
+
+[view_github]
+other = "Ver GitHub"

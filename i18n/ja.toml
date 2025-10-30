@@ -1,0 +1,29 @@
+# Japanese Translations for Portfolio Site
+# TODO: Professional translation needed - currently using English placeholders
+
+# Section Headings
+[portfolio_demos]
+other = "ポートフォリオデモ"
+
+[explore_demos_desc]
+other = "ウェブデザインと開発のさまざまなアプローチを探索してください。各デモは独自のスタイルと使用例を示しています。"
+
+# Buttons and Links
+[view_demo]
+other = "デモを見る"
+
+[source_code]
+other = "ソースコード"
+
+[learn_more]
+other = "詳細を見る →"
+
+# Music Widget
+[my_music]
+other = "私の音楽"
+
+[recent_projects]
+other = "最近のプロジェクト"
+
+[view_github]
+other = "GitHubを見る"

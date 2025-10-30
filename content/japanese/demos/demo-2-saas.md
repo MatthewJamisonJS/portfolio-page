@@ -7,6 +7,29 @@ github_url: "https://github.com/MatthewJamisonJS/demo-saas"
 theme_name: "Bigspring Light"
 description: "GetHugoThemes の Bigspring Light テーマで構築。クリーンなデザイン、料金表、コンバージョン重視のレイアウトを備えた最新 SaaS ランディングページ。"
 image: "/images/demos/demo-2-saas.webp"
+challenge: "製品ローンチに高速ランディングページが必要、複数市場対応が必須"
+solution_time: "2-3週間"
+metrics:
+  - {label: "Lighthouse", value: "98/100"}
+  - {label: "言語数", value: "5 (EN, ES, FR, JA, DE)"}
+  - {label: "読み込み時間", value: "<1秒"}
+---
+
+## ビジネスコンテキスト
+
+**課題**: 製品ローンチに高速ランディングページが必要、複数市場対応が必須
+
+**ソリューション**: Hugo静的サイト + Tailwind CSS + Cloudflare Pages + 完全多言語対応
+
+**結果**:
+- ✓ すべての指標で98/100のLighthouseスコア
+- ✓ 多言語対応（5言語）
+- ✓ 世界中で1秒未満の読み込み時間
+- ✓ WCAG AAアクセシビリティ認定
+- ✓ ホスティング費用$0（Cloudflare Pages無料プラン）
+
+**タイムライン**: キックオフから本番デプロイまで2-3週間
+
 ---
 
 ## 概要

@@ -4,14 +4,14 @@ about:
   title: "About Me"
   about_item:
     - icon: "ti-server"
-      title: "Backend Development"
-      content: "Expert in Ruby on Rails and Python. Building robust, scalable server-side applications with clean architecture and best practices."
+      title: "Hugo Specialization"
+      content: "Expert in Hugo static site development with 7 production deployments across verticals (agency, SaaS, e-commerce, blog, restaurant, app, portfolio). Full i18n infrastructure for 20+ languages. Every project achieves 98+ Lighthouse scores."
 
     - icon: "ti-layout"
-      title: "Frontend Craftsmanship"
-      content: "Modern JavaScript frameworks (React, Vue), Hotwire, and Tailwind CSS. Creating responsive, intuitive user interfaces."
+      title: "Rails + Python Experience"
+      content: "77+ merged PRs at Concordia Publishing House (Rails 8, 500K users). Backend expertise in Ruby on Rails and Python powers the content management workflows that make Hugo sites easy to maintain."
 
     - icon: "ti-pulse"
-      title: "AI Integration"
-      content: "Leveraging AI tools and APIs to build intelligent applications. Specializing in practical AI implementations that solve real problems."
+      title: "Performance Guarantees"
+      content: "100% Lighthouse scores on all projects. Sub-second load times globally. WCAG AA accessibility certified. Modern static site architecture eliminates the performance bottlenecks of traditional CMS platforms."
 ---

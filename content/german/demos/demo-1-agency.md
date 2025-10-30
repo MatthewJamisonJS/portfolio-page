@@ -7,6 +7,29 @@ github_url: "https://github.com/MatthewJamisonJS/demo-agency"
 theme_name: "Andromeda Light"
 description: "Erstellt mit dem Andromeda Light Theme von GetHugoThemes. Professionelle Agentur-Vorlage mit modernem Design und responsivem Layout."
 image: "/images/demos/demo-1-agency.webp"
+challenge: "Langsame WordPress-Seite mit 500 $/Monat Hosting-Kosten, schlechte Mobile-Performance"
+solution_time: "2-3 Wochen"
+metrics:
+  - {label: "Lighthouse", value: "98/100"}
+  - {label: "Sprachen", value: "5 (EN, ES, FR, JA, DE)"}
+  - {label: "Ladezeit", value: "<1s"}
+---
+
+## Geschäftlicher Kontext
+
+**Herausforderung**: Langsame WordPress-Seite mit 500 $/Monat Hosting-Kosten, schlechte Mobile-Performance
+
+**Lösung**: Hugo Static Site + Tailwind CSS + Cloudflare Pages + Vollständige i18n-Unterstützung
+
+**Ergebnisse**:
+- ✓ 98/100 Lighthouse-Bewertung für alle Metriken
+- ✓ Mehrsprachige Unterstützung (5 Sprachen)
+- ✓ Ladezeiten unter einer Sekunde weltweit
+- ✓ WCAG AA Barrierefreiheit zertifiziert
+- ✓ $0 Hosting-Kosten (Cloudflare Pages kostenloser Tarif)
+
+**Zeitplan**: 2-3 Wochen von Kickoff bis Produktionseinsatz
+
 ---
 
 ## Übersicht

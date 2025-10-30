@@ -1,9 +1,9 @@
 ---
 contact:
   enable: true
-  title: "Get In Touch"
-  subtitle: "Have a project in mind? Let's work together!"
-  content: "I'm available for freelance projects, consulting, and full-time opportunities. Whether you need help with Rails development, AI integration, or building something from scratch, I'd love to hear from you."
+  title: "Book 15-Minute Call"
+  subtitle: "Need similar results? Let's talk about your project."
+  content: "I help businesses deploy fast, multilingual, accessible websites using Hugo + Cloudflare Pages. Whether you're migrating from WordPress, expanding internationally, or need WCAG compliance, I'll get you from concept to production in weeks, not months."
 
   # Contact form configuration
   contact_form:

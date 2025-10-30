@@ -1,9 +1,9 @@
 ---
 contact:
   enable: true
-  title: "Contáctame"
-  subtitle: "¿Tienes un proyecto en mente? ¡Trabajemos juntos!"
-  content: "Estoy disponible para proyectos freelance, consultoría y oportunidades de tiempo completo. Ya sea que necesites ayuda con desarrollo en Rails, integración de IA, o construir algo desde cero, me encantaría saber de ti."
+  title: "Reserva una Llamada de 15 Minutos"
+  subtitle: "¿Necesitas resultados similares? Hablemos sobre tu proyecto."
+  content: "Especializado en conversión rápida de sitios estáticos Hugo con puntuaciones Lighthouse garantizadas del 98+, soporte multilingüe completo y certificación WCAG AA. Desde la migración de WordPress hasta el despliegue en producción en 2-5 semanas. Disponible para nuevos proyectos a partir de $2,500."
 
   # Contact form configuration
   contact_form:

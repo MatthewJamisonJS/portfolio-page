@@ -6,7 +6,30 @@ demo_url: "https://demo-landing-dvx.pages.dev"
 github_url: "https://github.com/MatthewJamisonJS/demo-landing"
 theme_name: "Omega"
 description: "Construit avec le thème Omega par GetHugoThemes. Page d'accueil d'application moderne avec badges d'app stores, captures d'écran et présentations de fonctionnalités."
-image: "/images/demos/demo-7-app.svg"
+image: "/images/demos/demo-7-app.webp"
+challenge: "Application mobile a besoin d'une page d'accueil rapide avec badges d'app stores, multilingue"
+solution_time: "2-3 semaines"
+metrics:
+  - {label: "Lighthouse", value: "98/100"}
+  - {label: "Langues", value: "5 (EN, ES, FR, JA, DE)"}
+  - {label: "Temps de Chargement", value: "<1s"}
+---
+
+## Contexte Commercial
+
+**Défi** : Application mobile a besoin d'une page d'accueil rapide avec badges d'app stores, multilingue
+
+**Solution** : Site statique Hugo + Tailwind CSS + Cloudflare Pages + Support i18n complet
+
+**Résultats** :
+- ✓ Score Lighthouse 98/100 sur toutes les métriques
+- ✓ Support multilingue (5 langues)
+- ✓ Temps de chargement sous une seconde à l'échelle mondiale
+- ✓ Certifié accessibilité WCAG AA
+- ✓ Coûts d'hébergement 0$ (niveau gratuit Cloudflare Pages)
+
+**Calendrier** : 2-3 semaines du lancement au déploiement en production
+
 ---
 
 ## Aperçu

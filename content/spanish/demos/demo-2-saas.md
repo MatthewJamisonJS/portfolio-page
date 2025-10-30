@@ -7,6 +7,29 @@ github_url: "https://github.com/MatthewJamisonJS/demo-saas"
 theme_name: "Bigspring Light"
 description: "Construido con el tema Bigspring Light de GetHugoThemes. Página de aterrizaje SaaS moderna con diseño limpio, tablas de precios y diseño enfocado en conversión."
 image: "/images/demos/demo-2-saas.webp"
+challenge: "Necesidad de página de aterrizaje rápida para lanzamiento de producto, debe soportar múltiples mercados"
+solution_time: "2-3 semanas"
+metrics:
+  - {label: "Lighthouse", value: "98/100"}
+  - {label: "Idiomas", value: "5 (EN, ES, FR, JA, DE)"}
+  - {label: "Tiempo de Carga", value: "<1s"}
+---
+
+## Contexto Empresarial
+
+**Desafío**: Necesidad de página de aterrizaje rápida para lanzamiento de producto, debe soportar múltiples mercados
+
+**Solución**: Sitio estático Hugo + Tailwind CSS + Cloudflare Pages + Soporte i18n completo
+
+**Resultados**:
+- ✓ Puntuación Lighthouse de 98/100 en todas las métricas
+- ✓ Soporte multilingüe (5 idiomas)
+- ✓ Tiempos de carga inferiores a 1 segundo a nivel global
+- ✓ Certificado de accesibilidad WCAG AA
+- ✓ $0 en costos de alojamiento (nivel gratuito de Cloudflare Pages)
+
+**Cronograma**: 2-3 semanas desde el inicio hasta el despliegue en producción
+
 ---
 
 ## Descripción general

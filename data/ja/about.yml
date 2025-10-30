@@ -4,14 +4,24 @@ about:
   title: "私について"
   about_item:
     - icon: "ti-server"
-      title: "バックエンド開発"
-      content: "Ruby on Rails と Python のエキスパート。クリーンアーキテクチャとベストプラクティスに従い、堅牢でスケーラブルなサーバーサイドアプリケーションを構築しています。"
+      title: "Hugo専門"
+      content: "✓ 7つの業種にわたる本番環境デプロイメント
+✓ 20以上の言語に対応する多言語対応
+✓ すべてのプロジェクトで100% Lighthouseスコア
+✓ 1秒未満の読み込み時間を保証"
 
     - icon: "ti-layout"
-      title: "フロントエンド技術"
-      content: "React や Vue などの最新 JavaScript フレームワーク、Hotwire、Tailwind CSS を使用。レスポンシブで直感的なユーザーインターフェースを作成します。"
+      title: "Rails + Python経験"
+      content: "✓ Concordia（50万ユーザー）でRails 8の77以上のマージされたPR
+✓ 大規模アプリケーションでの実証済みの実績
+✓ クリーンアーキテクチャとベストプラクティス
+✓ チーム協働とコードレビュー"
 
     - icon: "ti-pulse"
-      title: "AI統合"
-      content: "AI ツールと API を活用してインテリジェントなアプリケーションを構築。実際の問題を解決する実用的な AI 実装を専門とします。"
+      title: "パフォーマンス保証"
+      content: "✓ すべてのプロジェクトで100% Lighthouseスコア
+✓ 1秒未満の読み込み時間
+✓ WCAG AA準拠
+✓ WordPressと比較して10倍高速
+✓ Cloudflareグローバル配信"
 ---

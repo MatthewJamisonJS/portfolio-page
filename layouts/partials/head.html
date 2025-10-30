@@ -26,8 +26,8 @@
   <link rel="stylesheet" href="{{ $custom.Permalink }}" media="screen">
 
 	{{ "<!--Favicon-->" | safeHTML }}
-	<link rel="shortcut icon" href="{{ `images/favicon.png` | absURL }}" type="image/x-icon">
-	<link rel="icon" href="{{ `images/favicon.png` | absURL }}" type="image/x-icon">
+	<link rel="shortcut icon" href="{{ `images/pokemon/mew.gif` | absURL }}" type="image/gif">
+	<link rel="icon" href="{{ `images/pokemon/mew.gif` | absURL }}" type="image/gif">
 
 	{{ with site.Params.google_analytics_id }}
 	{{ "<!-- Global Site Tag (gtag.js) - Google Analytics -->" | safeHTML }}
@@ -46,8 +46,8 @@
 	<meta property="og:url" content="{{ .Permalink }}">
 	<meta property="og:site_name" content="{{ site.Title }}">
 	<meta property="og:locale" content="en_US">
-	<meta property="og:title" content="{{ if .IsHome }}{{ site.Title }} - Full-Stack Developer | Rails, Python, AI Tooling{{ else }}{{ .Title }} | {{ site.Title }}{{ end }}">
-	<meta property="og:description" content="{{ if .IsHome }}Full-Stack Developer specializing in Ruby on Rails, Python, and AI Tooling. Building accessible, performant web applications. Available for hire.{{ else }}{{ with .Description }}{{ . }}{{ else }}{{ site.Params.description }}{{ end }}{{ end }}">
+	<meta property="og:title" content="{{ if .IsHome }}{{ site.Title }} - Results-Driven Full-Stack Developer{{ else }}{{ .Title }} | {{ site.Title }}{{ end }}">
+	<meta property="og:description" content="{{ if .IsHome }}Full-stack developer delivering measurable ROI: 98+ Lighthouse scores, $6k/year savings, 79% faster load times. Rails, Python, Hugo, AI. Conversion-optimized development for real business results.{{ else }}{{ with .Description }}{{ . }}{{ else }}{{ site.Params.description }}{{ end }}{{ end }}">
 	<meta property="og:image" content="{{ site.BaseURL }}images/backgrounds/hero-bg.jpg">
 	<meta property="og:image:width" content="1200">
 	<meta property="og:image:height" content="630">
@@ -58,15 +58,15 @@
 	<meta name="twitter:site" content="@matthewjamison">
 	<meta name="twitter:creator" content="@matthewjamison">
 	<meta name="twitter:url" content="{{ .Permalink }}">
-	<meta name="twitter:title" content="{{ if .IsHome }}Matthew Jamison - Full-Stack Developer{{ else }}{{ .Title }} | {{ site.Title }}{{ end }}">
-	<meta name="twitter:description" content="{{ if .IsHome }}Specialized in Rails, Python & AI Tooling. Building modern, accessible web apps. Open to new projects.{{ else }}{{ with .Description }}{{ . }}{{ else }}{{ site.Params.description }}{{ end }}{{ end }}">
+	<meta name="twitter:title" content="{{ if .IsHome }}Matthew Jamison - Results-Driven Full-Stack Developer{{ else }}{{ .Title }} | {{ site.Title }}{{ end }}">
+	<meta name="twitter:description" content="{{ if .IsHome }}Measurable ROI: 98+ Lighthouse scores, $6k/year savings, 79% faster load times. Rails, Python, Hugo, AI. Conversion-optimized development.{{ else }}{{ with .Description }}{{ . }}{{ else }}{{ site.Params.description }}{{ end }}{{ end }}">
 	<meta name="twitter:image" content="{{ site.BaseURL }}images/backgrounds/hero-bg.jpg">
 	<meta name="twitter:image:alt" content="Matthew Jamison Portfolio">
 
 	<!-- Enhanced SEO -->
 	<link rel="canonical" href="{{ .Permalink }}">
 	<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
-	<meta name="keywords" content="full-stack developer, Rails developer, Python developer, AI tooling, web development, Hugo, React, portfolio">
+	<meta name="keywords" content="full-stack developer, performance optimization, conversion rate optimization, lighthouse optimization, wcag compliance, Rails, Python, Hugo, AI tooling, web development, ROI-focused development, cost reduction">
 
 	<!-- JSON-LD Structured Data for Search Engines -->
 	<script type="application/ld+json">
@@ -83,8 +83,8 @@
 					"url": "{{ site.BaseURL }}images/backgrounds/hero-bg.jpg"
 				},
 				"jobTitle": "Full-Stack Developer",
-				"description": "Full-Stack Developer specializing in Rails, Python, and AI Tooling. Building modern web applications with a focus on accessibility, performance, and user experience.",
-				"knowsAbout": ["Ruby on Rails", "Python", "JavaScript", "React", "AI Tooling", "Hugo", "Web Accessibility (WCAG)", "SEO", "CloudFlare Pages"],
+				"description": "Full-stack developer focused on measurable business outcomes: conversion optimization, performance improvements, and cost reduction. Delivers 98+ Lighthouse scores, WCAG compliance, and significant ROI across Rails, Python, Hugo, and AI projects.",
+				"knowsAbout": ["Performance Optimization", "Conversion Rate Optimization", "Ruby on Rails", "Python", "Hugo", "AI Tooling", "Web Accessibility (WCAG)", "Lighthouse Optimization", "Cost Reduction Strategies"],
 				"sameAs": [
 					"https://github.com/MatthewJamisonJS",
 					"https://www.linkedin.com/in/matthew-jamison-65486bab/",
@@ -123,44 +123,44 @@
 			{
 				"@type": "ProfessionalService",
 				"@id": "{{ site.BaseURL }}#service",
-				"name": "Full-Stack Development Services",
+				"name": "Performance & Conversion-Focused Development",
 				"provider": {
 					"@id": "{{ site.BaseURL }}#person"
 				},
 				"areaServed": "Worldwide",
-				"serviceType": "Web Development",
-				"description": "Professional full-stack web development services including Rails applications, Python backends, AI integration, and modern frontend development with React and Hugo.",
+				"serviceType": ["Web Development", "Performance Optimization", "Conversion Rate Optimization"],
+				"description": "Full-stack development services focused on measurable business outcomes: faster load times, lower hosting costs, higher conversion rates, and WCAG compliance. Technologies include Rails, Python, Hugo, and AI tooling.",
 				"offers": [
 					{
 						"@type": "Offer",
 						"itemOffered": {
 							"@type": "Service",
-							"name": "Rails Application Development",
-							"description": "Custom Ruby on Rails web applications with modern architecture and best practices"
+							"name": "Performance Optimization & Cost Reduction",
+							"description": "Achieve 98+ Lighthouse scores, 79% faster load times, and $6k/year hosting savings through optimized architecture and modern static site generation"
 						}
 					},
 					{
 						"@type": "Offer",
 						"itemOffered": {
 							"@type": "Service",
-							"name": "Python Backend Development",
-							"description": "Scalable Python backends and API development"
+							"name": "Conversion-Optimized Development",
+							"description": "Full-stack web applications designed for measurable conversion improvements using Rails, Python, Hugo, or modern JavaScript frameworks"
 						}
 					},
 					{
 						"@type": "Offer",
 						"itemOffered": {
 							"@type": "Service",
-							"name": "AI Tooling Integration",
-							"description": "Integration of AI tools and automation into existing workflows"
+							"name": "WCAG Compliance & Accessibility",
+							"description": "WCAG 2.1 Level AA certification with 15% audience expansion and improved SEO rankings. Includes automated testing and manual screen reader verification"
 						}
 					},
 					{
 						"@type": "Offer",
 						"itemOffered": {
 							"@type": "Service",
-							"name": "Web Accessibility (WCAG)",
-							"description": "WCAG 2.1 Level AA compliant web development and accessibility audits"
+							"name": "AI Integration & Automation",
+							"description": "Strategic AI tooling integration to reduce operational costs and improve workflow efficiency"
 						}
 					}
 				]

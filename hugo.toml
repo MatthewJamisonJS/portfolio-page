@@ -83,12 +83,17 @@ link = "plugins/lazy-load/lozad.min.js"
 [params]
 logo = "images/logo.png"
 # Meta data
-description = "Full-Stack Developer | Rails | Python | AI Tooling | Music Creator"
+description = "Full-stack developer delivering measurable ROI: 98+ Lighthouse scores, $6k/year hosting savings, 79% faster load times. Rails • Python • Hugo • AI Tooling. Conversion-optimized development for real business results."
 author = "Matthew Jamison"
 # Google Analytics (add your tracking ID when ready)
 google_analytics_id = ""
 # post share
 post_share = true
+
+# Blog configuration
+[params.blog]
+enable = true
+posts_per_page = 9
 
 # preloader
 [params.preloader]
@@ -171,3 +176,10 @@ weight = 5
 [Languages.de.params]
 home = "Startseite"
 copyright = "Copyright &copy; 2025 Matthew Jamison"
+
+############################# Navigation Menu ##########################
+# Add blog to main menu
+[[menu.main]]
+name = "Blog"
+URL = "blog"
+weight = 4

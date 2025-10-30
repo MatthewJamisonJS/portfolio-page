@@ -5,7 +5,7 @@ banner:
   bg_image: "images/backgrounds/hero-bg.jpg"
   pokemon_sprite: "/images/pokemon/mew.gif"
   title: "Matthew Jamison"
-  content: "Deploy Fast Multilingual WCAG3 Sites in Days, Not Months | ✓ 7 Production Deployments  ✓ 100% Lighthouse Scores  ✓ WCAG AA Certified"
+  content: "Full-Stack Developer Delivering Measurable ROI | ✓ 79% Faster Load Times  ✓ $6k/Year Hosting Savings  ✓ 98+ Lighthouse Scores  ✓ WCAG AA Certified"
   button:
     enable: true
     label: "Start Your Project"

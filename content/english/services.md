@@ -1,101 +1,176 @@
 ---
 title: "Services"
-date: 2025-10-30
+date: 2025-10-31
 draft: false
-description: "Fast, multilingual, accessible website deployment services. From concept to production in weeks, not months."
+description: "Bringing your business to life online. Client-centered web development focused on your success."
 ---
 
-## Website Deployment Services
+# Bringing Your Business to Life Online
 
-Transform your web presence with blazing-fast, multilingual, accessible sites built on modern static site technology.
+Your business has a mission. Your customers need to find you.
 
----
-
-## Service Packages
-
-### ⚡ Speed Package
-**Perfect for**: Businesses migrating from slow WordPress/legacy platforms
-
-**What's included**:
-- Hugo static site conversion
-- Cloudflare Pages deployment
-- 98+ Lighthouse score guarantee
-- Sub-second global load times
-- Custom Tailwind CSS styling
-
-**Timeline**: 2-3 weeks
-**Starting at**: $2,500
-
-**Proof**: [See Agency Demo](../demos/demo-1-agency/) - 98/100 Lighthouse, <1s load
+Let's create a web presence that serves both.
 
 ---
 
-### 🌍 Multilingual Package
-**Perfect for**: International businesses needing multi-market presence
+## Service Options
 
-**What's included**:
-- Everything in Speed Package
-- Full i18n infrastructure (Hugo + yaml)
-- 5+ language support (EN, ES, FR, JA, DE, +custom)
-- Language switcher UI
-- Per-language content management
+### 🌱 Foundation Service
 
-**Timeline**: 3-4 weeks
-**Starting at**: $3,500
+**For businesses establishing their web presence**
 
-**Proof**: [See E-commerce Demo](../demos/demo-3-ecommerce/) - 5 languages, WCAG AA
+#### What You Get
+- Fast, reliable performance (98+ Lighthouse scores)
+- Works flawlessly on all devices
+- Search engine friendly
+- Training so you control updates yourself
+- 2-3 week delivery
 
----
+#### This Serves You Best If
+- You're launching your business online
+- Your current site doesn't reflect your work quality
+- You want stability without complexity
+- Your customers deserve better
 
-### ♿ Accessibility Package
-**Perfect for**: Organizations requiring WCAG compliance
+**Investment:** $2,500
 
-**What's included**:
-- Everything in Multilingual Package
-- WCAG 2.1 AA certification
-- Screen reader optimization
-- Keyboard navigation
-- Accessibility audit + remediation
-- Compliance documentation
-
-**Timeline**: 4-5 weeks
-**Starting at**: $4,500
-
-**Proof**: [See Portfolio Demo](../demos/demo-4-portfolio/) - WCAG AA, perfect Lighthouse accessibility score
+[Get Started →](/contact?service=foundation)
 
 ---
 
-## Why This Stack?
+### 🌍 Complete Presence
 
-### 🚀 Performance
-Static sites load 10x faster than WordPress. No database queries, no server-side rendering. Just pure HTML/CSS/JS served from global CDN.
+**For businesses reaching broader markets**
 
-### 💰 Cost Efficiency
-- **WordPress**: $50-500/mo hosting + maintenance
-- **Hugo + Cloudflare**: $0-20/mo (free tier covers most sites)
+#### What You Get
+- **Everything in Foundation Service**
+- 5-language multilingual support (EN, ES, FR, JA, DE)
+- WCAG AA accessibility compliance
+- Analytics & conversion tracking
+- 30-day post-launch support
+- 2 comprehensive training sessions
+- 2-3 week delivery
 
-### 🔒 Security
-No WordPress vulnerabilities, no plugin conflicts, no database to hack. Static = secure.
+#### This Serves You Best If
+- Your customers speak multiple languages
+- You're expanding to international markets
+- Accessibility compliance matters to your mission
+- You want to reach everyone who needs you
 
-### 📈 SEO
-Sub-second load times + perfect Lighthouse scores = better rankings.
+**Investment:** $4,500
+
+[Get Started →](/contact?service=complete-presence)
 
 ---
 
-## Process
+### 🤝 Partnership Service
 
-1. **Discovery Call** (30 min): Understand your needs, review current site
-2. **Proposal**: Detailed scope, timeline, pricing
-3. **Design**: Theme selection or custom Tailwind design
-4. **Development**: 2-5 weeks depending on package
-5. **Deployment**: Cloudflare Pages + DNS setup
-6. **Training**: Content management walkthrough
-7. **Support**: 30 days post-launch support included
+**For businesses committed to ongoing growth**
+
+#### What You Get
+- **Everything in Complete Presence**
+- Quarterly optimization reviews
+- Priority support (24-hour response)
+- Ongoing performance improvements
+- Custom conversion optimization
+- Unlimited training as needed
+- Long-term technical partnership
+
+#### This Serves You Best If
+- Your business is growing and needs evolve
+- Conversion and customer experience are critical
+- You value a partner who understands your mission
+- You want someone invested in your long-term success
+
+**Investment:** $7,500
+
+[Get Started →](/contact?service=partnership)
+
+---
+
+## Pricing Concerns?
+
+These numbers reflect the quality and care I bring to each partnership. If they're outside your budget, reach out anyway—let's have an honest conversation about your situation and goals.
+
+Sometimes we can find creative solutions or adjust scope to make it work.
+
+[Let's talk about your needs →](/contact?service=budget-inquiry)
+
+---
+
+## What Makes This Different
+
+### 💬 Direct Developer Access
+You talk to the person building your site. No middlemen, no delays.
+
+### ⚡ Fast Delivery
+Weeks, not months. Ship fast, measure results, iterate.
+
+### 💰 Fixed Pricing
+What you see is what you pay. No surprise fees or scope creep.
+
+### 🛠️ Training Included
+You'll know how to manage your site. Never feel dependent.
+
+### 🤝 Your Success = My Success
+I care about your business outcomes, not just shipping code.
+
+---
+
+## Comparison
+
+| Feature | Foundation | Complete Presence | Partnership |
+|---------|------------|-------------------|-------------|
+| **Delivery** | 2-3 weeks | 2-3 weeks | 2-3 weeks initial |
+| **Performance** | 98+ Lighthouse | 98+ Lighthouse | 98+ Lighthouse |
+| **Training** | 1 session | 2 sessions | Unlimited |
+| **Multilingual** | - | 5 languages | 5 languages |
+| **Accessibility** | Add-on available | WCAG AA ✓ | WCAG AA ✓ |
+| **Analytics** | Basic | Full setup ✓ | Advanced ✓ |
+| **Support** | Launch only | 30 days | Ongoing |
+| **Priority Access** | - | - | ✓ 24hr response |
+| **Optimization** | - | - | ✓ Quarterly reviews |
+
+---
+
+## Frequently Asked Questions
+
+**How do I choose the right service?**
+Let's talk for 15 minutes. I'll ask about your goals and recommend honestly—even if that means I'm not the right fit.
+
+**What if I'm not technical?**
+That's why training is included. I explain everything in plain English and make sure you're confident before we're done.
+
+**Can you work with my industry?**
+I've served restaurants, agencies, e-commerce stores, portfolios, SaaS companies, and app launches. If you have a business goal, I can help achieve it.
+
+**What about changes after launch?**
+Training covers most updates you'll need. For bigger changes, we'll discuss scope and pricing transparently before starting.
+
+**Why not hire an agency?**
+No overhead means lower costs. Direct access means faster communication. One person genuinely invested in your success.
+
+**What if my budget is tight?**
+Reach out anyway. Sometimes we can phase work, adjust scope, or find creative solutions that work for where you are now.
 
 ---
 
 ## Ready to Start?
 
-[**Book 15-Minute Call →**](#contact)
+The best next step is a conversation—no sales pitch, no pressure. Just me listening to your business goals and offering honest guidance.
 
-Or [see all case studies](../demos/) to explore what's possible.
+[Schedule a Conversation →](/contact?service=consultation)
+
+---
+
+## See Real Examples
+
+Curious what's possible? Explore the [7 production demos](/demos/) showing different industries, use cases, and results.
+
+Each demo includes:
+- Live site you can test
+- Business impact metrics
+- Technical implementation details
+- Cost savings analysis
+
+[View All Demos →](/demos/)

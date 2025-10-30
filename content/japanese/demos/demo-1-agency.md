@@ -5,7 +5,7 @@ draft: false
 demo_url: "https://demo-agency.pages.dev"
 github_url: "https://github.com/MatthewJamisonJS/demo-agency"
 theme_name: "Andromeda Light"
-description: "GetHugoThemes の Andromeda Light テーマで構築。最新デザインと反応型レイアウトを備えたプロフェッショナルな代理店テンプレート。"
+description: "洗練されたエージェンシープレゼンスで瞬時にクライアントの信頼を獲得。ポートフォリオを披露し、訪問者をリードに変換し、信頼性を確立—数週間でローンチ可能、ホスティングコストゼロ、98/100のパフォーマンス。"
 image: "/images/demos/demo-1-agency.webp"
 challenge: "WordPressサイトの低速化とホスティング費用月額$500、モバイルパフォーマンス不良"
 solution_time: "2-3週間"

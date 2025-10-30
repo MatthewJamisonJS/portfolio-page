@@ -5,7 +5,7 @@ draft: false
 demo_url: "https://demo-landing-dvx.pages.dev"
 github_url: "https://github.com/MatthewJamisonJS/demo-landing"
 theme_name: "Omega"
-description: "GetHugoThemes の Omega テーマで構築。アプリストアバッジ、スクリーンショット、機能紹介を備えた最新アプリランディングページ。"
+description: "コンバージョン用に設計されたランディングページでアプリのダウンロードとユーザー獲得を最大化。魅力的な機能紹介、アプリストア最適化、明確な行動喚起が訪問者を関心からインストールへ導く—初日からグローバル市場をサポート。"
 image: "/images/demos/demo-7-app.webp"
 challenge: "モバイルアプリにアプリストアバッジと多言語対応の高速ランディングページが必要"
 solution_time: "2-3週間"

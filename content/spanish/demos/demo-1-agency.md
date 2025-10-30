@@ -5,7 +5,7 @@ draft: false
 demo_url: "https://demo-agency.pages.dev"
 github_url: "https://github.com/MatthewJamisonJS/demo-agency"
 theme_name: "Andromeda Light"
-description: "Construido con el tema Andromeda Light de GetHugoThemes. Plantilla de agencia profesional con diseño moderno y diseño responsivo."
+description: "Gane la confianza del cliente instantáneamente con una presencia de agencia pulida. Muestre su portafolio, convierta visitantes en clientes potenciales y establezca credibilidad—listo para lanzar en semanas con cero costos de alojamiento y rendimiento de 98/100."
 image: "/images/demos/demo-1-agency.webp"
 challenge: "Sitio WordPress lento con costos de alojamiento de $500/mes, bajo rendimiento móvil"
 solution_time: "2-3 semanas"

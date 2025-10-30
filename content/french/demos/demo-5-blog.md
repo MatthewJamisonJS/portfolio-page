@@ -5,7 +5,7 @@ draft: false
 demo_url: "https://demo-blog-a03.pages.dev"
 github_url: "https://github.com/MatthewJamisonJS/demo-blog"
 theme_name: "Parsa"
-description: "Construit avec le thème Parsa par GetHugoThemes. Blog axé sur le contenu avec une excellente typographie, expérience de lecture et optimisation SEO."
+description: "Construisez votre autorité et générez du trafic organique avec une plateforme de contenu conçue pour l'engagement et la découverte. Structure optimisée pour le SEO, lisibilité exceptionnelle et présentation professionnelle transforment les lecteurs en abonnés, clients et ambassadeurs."
 image: "/images/demos/demo-5-blog.png"
 challenge: "Site de contenu noyé dans les plugins WordPress, chargements de page lents nuisant au SEO"
 solution_time: "2-3 semaines"

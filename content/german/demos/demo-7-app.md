@@ -5,7 +5,7 @@ draft: false
 demo_url: "https://demo-landing-dvx.pages.dev"
 github_url: "https://github.com/MatthewJamisonJS/demo-landing"
 theme_name: "Omega"
-description: "Erstellt mit dem Omega Theme von GetHugoThemes. Moderne App-Landing-Page mit App-Store-Abzeichen, Screenshots und Feature-Präsentationen."
+description: "Maximieren Sie App-Downloads und Nutzerakquise mit einer für Konversion konzipierten Landing-Page. Überzeugende Feature-Präsentationen, App-Store-Optimierung und klare Handlungsaufforderungen führen Besucher vom Interesse zur Installation—mit globaler Marktunterstützung vom ersten Tag an."
 image: "/images/demos/demo-7-app.webp"
 challenge: "Mobile-App benötigt schnelle Landing-Page mit App-Store-Abzeichen, mehrsprachig"
 solution_time: "2-3 Wochen"

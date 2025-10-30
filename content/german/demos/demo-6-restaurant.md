@@ -5,7 +5,7 @@ draft: false
 demo_url: "https://demo-restaurant-4az.pages.dev"
 github_url: "https://github.com/MatthewJamisonJS/demo-restaurant"
 theme_name: "Restaurant"
-description: "Erstellt mit dem Restaurant Theme von Themefisher. Appetitanregende Restaurant-Website mit Menüanzeige, Reservierungen und Online-Bestellung."
+description: "Füllen Sie mehr Tische und steigern Sie Online-Bestellungen mit einer appetitanregenden digitalen Präsenz in 5 Sprachen. Präsentieren Sie Menüs ansprechend, erfassen Sie Reservierungen sofort und vereinfachen Sie Bestellungen—während Sie die Marke Ihres Restaurants bei Touristen und Einheimischen stärken."
 image: "/images/demos/demo-6-restaurant.png"
 challenge: "Lokales Restaurant benötigt mehrsprachige Menü-Seite für Touristen"
 solution_time: "2-3 Wochen"

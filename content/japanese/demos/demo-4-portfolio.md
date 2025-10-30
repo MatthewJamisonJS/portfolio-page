@@ -1,62 +1,62 @@
 ---
-title: "Portfolio/Creative"
+title: "ポートフォリオ・クリエイティブ"
 date: 2025-10-29
 draft: false
 demo_url: "https://demo-creative-r4n.pages.dev"
 github_url: "https://github.com/MatthewJamisonJS/demo-creative"
 theme_name: "Academia"
-description: "Built with Academia theme by GetHugoThemes. Stunning visual portfolio for designers, photographers, and creative professionals."
+description: "GetHugoThemes の Academia テーマで構築。デザイナー、フォトグラファー、クリエイティブプロフェッショナル向けの素晴らしいビジュアルポートフォリオ。"
 image: "/images/demos/demo-4-portfolio.svg"
 ---
 
-## Overview
+## 概要
 
-A visually striking portfolio template designed to showcase creative work. Features full-screen imagery, smooth transitions, and elegant typography.
+クリエイティブワークをショーケースするために設計された視覚的に印象的なポートフォリオテンプレート。フルスクリーン画像、スムーズなトランジション、エレガントなタイポグラフィが特徴です。
 
-## What it shows
+## 示される内容
 
-- **Full-screen hero**: Immediately capture attention
-- **Project showcase**: Grid and masonry layouts
-- **Project detail pages**: Case studies with rich media
-- **About section**: Tell your story
-- **Image galleries**: Lightbox and slideshow support
-- **Contact form**: Easy way for clients to reach you
+- **フルスクリーンヒーロー**: 即座に注目を集める
+- **プロジェクトショーケース**: グリッドとメイソンリーレイアウト
+- **プロジェクト詳細ページ**: リッチメディア付きのケーススタディ
+- **アバウトセクション**: あなたのストーリーを伝える
+- **画像ギャラリー**: ライトボックスとスライドショーのサポート
+- **問い合わせフォーム**: クライアントが簡単に連絡できる方法
 
-## Key Features
+## 主な機能
 
-- Masonry grid layouts
-- Lazy-loaded images
-- Lightbox photo galleries
-- Smooth page transitions
-- Filterable project categories
-- Video embeds support
-- Instagram feed integration
-- Client testimonials
+- メイソンリーグリッドレイアウト
+- 遅延読み込みされる画像
+- ライトボックス写真ギャラリー
+- スムーズなページトランジション
+- フィルタリング可能なプロジェクトカテゴリー
+- ビデオ埋め込みのサポート
+- Instagram フィード統合
+- クライアントのお客様の声
 
-## Use Cases
+## 使用例
 
-Designed for:
-- Photographers and videographers
-- Graphic and web designers
-- Artists and illustrators
-- Architects and interior designers
-- Creative agencies
-- UX/UI designers
+以下に設計されています：
+- フォトグラファーとビデオグラファー
+- グラフィックデザイナーとウェブデザイナー
+- アーティストとイラストレーター
+- 建築家とインテリアデザイナー
+- クリエイティブエージェンシー
+- UX/UI デザイナー
 
-## Tech Stack
+## 技術スタック
 
-- **Hugo**: Fast build times for image-heavy sites
-- **PhotoSwipe**: Beautiful lightbox galleries
-- **Lazy loading**: Optimized image loading
-- **WebP support**: Modern image formats
-- **CSS Grid & Flexbox**: Advanced layouts
+- **Hugo**: 画像の多いサイトの高速ビルド時間
+- **PhotoSwipe**: 美しいライトボックスギャラリー
+- **遅延読み込み**: 最適化された画像読み込み
+- **WebP サポート**: 最新の画像フォーマット
+- **CSS Grid & Flexbox**: 高度なレイアウト
 
-## Visual Features
+## ビジュアル機能
 
-- High-resolution image support
-- Retina-ready graphics
-- Custom fonts and typography
-- Parallax scrolling effects
-- Smooth reveal animations
-- Dark mode support
-- Minimalist design aesthetic
+- 高解像度画像サポート
+- Retina 対応グラフィック
+- カスタムフォントとタイポグラフィ
+- パララックススクロール効果
+- スムーズなリビール アニメーション
+- ダークモードサポート
+- ミニマリストデザイン美学

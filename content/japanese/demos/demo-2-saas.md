@@ -1,58 +1,58 @@
 ---
-title: "SaaS Landing Page"
+title: "SaaS ランディングページ"
 date: 2025-10-29
 draft: false
 demo_url: "https://demo-saas.pages.dev"
 github_url: "https://github.com/MatthewJamisonJS/demo-saas"
 theme_name: "Bigspring Light"
-description: "Built with Bigspring Light theme by GetHugoThemes. Modern SaaS landing page with clean design, pricing tables, and conversion-focused layout."
+description: "GetHugoThemes の Bigspring Light テーマで構築。クリーンなデザイン、料金表、コンバージョン重視のレイアウトを備えた最新 SaaS ランディングページ。"
 image: "/images/demos/demo-2-saas.webp"
 ---
 
-## Overview
+## 概要
 
-A conversion-optimized SaaS landing page template designed to showcase your product and drive signups. Built with modern web technologies and best practices.
+製品をショーケースしてサインアップを促進するために設計されたコンバージョン最適化型 SaaS ランディングページテンプレート。最新のウェブテクノロジーとベストプラクティスで構築されています。
 
-## What it shows
+## 示される内容
 
-- **Hero with clear value proposition**: Immediately communicate what you offer
-- **Feature highlights**: Showcase your product's key benefits
-- **Pricing tables**: Multiple tiers with feature comparison
-- **Social proof**: Customer testimonials and logos
-- **FAQ section**: Answer common questions
-- **CTA buttons throughout**: Multiple conversion opportunities
+- **明確なバリュープロポジション付きヒーロー**: 提供内容を即座に伝達
+- **機能ハイライト**: 製品の主な利点を紹介
+- **料金表**: 機能比較を含む複数のティア
+- **ソーシャルプルーフ**: 顧客の声とロゴ
+- **FAQ セクション**: よくある質問に回答
+- **全体的な CTA ボタン**: 複数のコンバージョン機会
 
-## Key Features
+## 主な機能
 
-- Modern, gradient-rich design
-- Animated feature cards
-- Responsive pricing tables
-- Email signup integration
-- Trust indicators (security badges, client logos)
-- Video demo embed support
-- Mobile-optimized layouts
+- グラデーション豊富なモダンデザイン
+- アニメーション付きフィーチャーカード
+- レスポンシブな料金表
+- メールサインアップ統合
+- 信頼指標（セキュリティバッジ、クライアントロゴ）
+- ビデオデモ埋め込みのサポート
+- モバイル最適化されたレイアウト
 
-## Use Cases
+## 使用例
 
-Ideal for:
-- SaaS product launches
-- Software tool marketing
-- Subscription services
-- API and developer tools
-- B2B software companies
-- Freemium product offerings
+以下に最適です：
+- SaaS 製品のローンチ
+- ソフトウェアツールのマーケティング
+- サブスクリプションサービス
+- API と開発者ツール
+- B2B ソフトウェア企業
+- フリーミアム製品オファリング
 
-## Tech Stack
+## 技術スタック
 
-- **Hugo + Tailwind CSS**: Utility-first styling with Hugo's speed
-- **Alpine.js**: Lightweight JavaScript for interactions
-- **Form integrations**: Ready for Mailchimp, ConvertKit, etc.
-- **Analytics ready**: Easy Google Analytics integration
+- **Hugo + Tailwind CSS**: Hugo のスピードと組み合わせたユーティリティファースト スタイリング
+- **Alpine.js**: 相互作用のための軽量 JavaScript
+- **フォーム統合**: Mailchimp、ConvertKit などに対応
+- **アナリティクス対応**: Google Analytics 統合が容易
 
-## Conversion Optimization
+## コンバージョン最適化
 
-- Clear primary CTA above the fold
-- Multiple conversion paths
-- Trust signals prominently displayed
-- Fast load times for better conversion
-- Mobile-first responsive design
+- ファールド上部の明確なプライマリ CTA
+- 複数のコンバージョンパス
+- 目立つ場所に信頼シグナルを表示
+- より高いコンバージョンのための高速読み込み時間
+- モバイルファースト反応型デザイン

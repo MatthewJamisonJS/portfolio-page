@@ -1,62 +1,62 @@
 ---
-title: "E-commerce Store"
+title: "ネットショップ"
 date: 2025-10-29
 draft: false
 demo_url: "https://demo-ecommerce-am8.pages.dev"
 github_url: "https://github.com/MatthewJamisonJS/demo-ecommerce"
 theme_name: "Hargo"
-description: "Built with Hargo theme by GetHugoThemes. Full-featured e-commerce storefront with product catalogs, cart, and checkout integration."
+description: "GetHugoThemes の Hargo テーマで構築。製品カタログ、カート、チェックアウト統合を備えたフル機能の e コマース店舗。"
 image: "/images/demos/demo-3-ecommerce.png"
 ---
 
-## Overview
+## 概要
 
-A complete e-commerce solution built with Hugo and modern payment integrations. Perfect for small to medium-sized online stores.
+Hugo と最新のペイメント統合で構築された完全な e コマースソリューション。小から中規模のオンラインストアに最適です。
 
-## What it shows
+## 示される内容
 
-- **Product catalog**: Grid and list views with filtering
-- **Product pages**: Detailed product information, images, variations
-- **Shopping cart**: Add to cart functionality
-- **Checkout integration**: Stripe/Snipcart integration
-- **Search functionality**: Product search with filters
-- **Category navigation**: Organized product browsing
+- **製品カタログ**: フィルタリング機能付きのグリッドビューとリストビュー
+- **製品ページ**: 詳細な製品情報、画像、バリエーション
+- **ショッピングカート**: カートに追加の機能
+- **チェックアウト統合**: Stripe/Snipcart 統合
+- **検索機能**: フィルター付きの製品検索
+- **カテゴリーナビゲーション**: 整理された製品閲覧
 
-## Key Features
+## 主な機能
 
-- Product image galleries with zoom
-- Color/size variant selection
-- Inventory management display
-- Customer reviews and ratings
-- Related products suggestions
-- Wishlist functionality
-- Order tracking pages
-- Responsive product grids
+- ズーム機能付きの製品画像ギャラリー
+- 色/サイズバリエーション選択
+- 在庫管理表示
+- カスタマーレビューと評価
+- 関連製品の提案
+- ウィッシュリスト機能
+- 注文追跡ページ
+- レスポンシブな製品グリッド
 
-## Use Cases
+## 使用例
 
-Perfect for:
-- Small business online stores
-- Artist and creator shops
-- Digital product sales
-- Physical goods retailers
-- Dropshipping stores
-- Boutique and niche retailers
+以下に最適です：
+- 中小企業のオンラインストア
+- アーティストとクリエイターのショップ
+- デジタル製品販売
+- 物理製品小売業者
+- ドロップシッピングストア
+- ブティックとニッチ小売業者
 
-## Tech Stack
+## 技術スタック
 
-- **Hugo**: Fast static site generation
-- **Snipcart**: Shopping cart and checkout
-- **Stripe**: Payment processing
-- **Algolia**: Product search (optional)
-- **Cloudflare**: CDN and image optimization
+- **Hugo**: 高速静的サイト生成
+- **Snipcart**: ショッピングカートとチェックアウト
+- **Stripe**: 支払い処理
+- **Algolia**: 製品検索（オプション）
+- **Cloudflare**: CDN と画像最適化
 
-## Commerce Features
+## コマース機能
 
-- Secure payment processing
-- Inventory tracking
-- Discount codes support
-- Multiple currency support
-- Tax calculation
-- Shipping options
-- Order confirmation emails
+- 安全な支払い処理
+- 在庫追跡
+- 割引コードのサポート
+- 複数通貨サポート
+- 税金計算
+- 配送オプション
+- 注文確認メール

@@ -1,73 +1,73 @@
 ---
-title: "Blog/Magazine"
+title: "Blog/Revista"
 date: 2025-10-29
 draft: false
 demo_url: "https://demo-blog-a03.pages.dev"
 github_url: "https://github.com/MatthewJamisonJS/demo-blog"
 theme_name: "Parsa"
-description: "Built with Parsa theme by GetHugoThemes. Content-focused blog with great typography, reading experience, and SEO optimization."
+description: "Construido con el tema Parsa de GetHugoThemes. Blog enfocado en contenido con excelente tipografía, experiencia de lectura y optimización SEO."
 image: "/images/demos/demo-5-blog.png"
 ---
 
-## Overview
+## Descripción general
 
-A beautiful, content-focused blog template optimized for readability and SEO. Perfect for writers, journalists, and content creators.
+Una hermosa plantilla de blog enfocada en contenido optimizada para legibilidad y SEO. Perfecto para escritores, periodistas y creadores de contenido.
 
-## What it shows
+## Lo que muestra
 
-- **Article listings**: Multiple layout options (grid, list, featured)
-- **Post detail pages**: Optimized reading experience
-- **Author profiles**: Multiple author support
-- **Categories and tags**: Content organization
-- **Search functionality**: Full-text search
-- **Related posts**: Keep readers engaged
-- **Comments**: Disqus/Commento integration
+- **Listados de artículos**: Múltiples opciones de diseño (cuadrícula, lista, destacado)
+- **Páginas de detalle de la publicación**: Experiencia de lectura optimizada
+- **Perfiles de autor**: Soporte de múltiples autores
+- **Categorías y etiquetas**: Organización de contenido
+- **Funcionalidad de búsqueda**: Búsqueda de texto completo
+- **Publicaciones relacionadas**: Mantén a los lectores comprometidos
+- **Comentarios**: Integración de Disqus/Commento
 
-## Key Features
+## Características principales
 
-- Beautiful typography
-- Reading time estimates
-- Table of contents generation
-- Code syntax highlighting
-- Social sharing buttons
-- Newsletter signup forms
-- RSS feed support
-- Archive pages
+- Tipografía hermosa
+- Estimaciones de tiempo de lectura
+- Generación de tabla de contenidos
+- Resaltado de sintaxis de código
+- Botones de compartir en redes sociales
+- Formularios de registro de boletín
+- Soporte de fuente RSS
+- Páginas de archivo
 
-## Use Cases
+## Casos de uso
 
-Ideal for:
-- Personal blogs and journals
-- Tech and development blogs
-- News and magazine sites
-- Corporate blogs
-- Content marketing
-- Knowledge bases
-- Documentation sites
+Ideal para:
+- Blogs y diarios personales
+- Blogs de tecnología y desarrollo
+- Sitios de noticias y revistas
+- Blogs corporativos
+- Marketing de contenidos
+- Bases de conocimiento
+- Sitios de documentación
 
-## Tech Stack
+## Pila de tecnología
 
-- **Hugo**: Fast static site generation
-- **Markdown**: Simple content authoring
-- **Syntax highlighting**: Prism.js or Highlight.js
-- **Search**: Lunr.js or Algolia
-- **Analytics**: Google Analytics, Plausible
+- **Hugo**: Generación rápida de sitios estáticos
+- **Markdown**: Creación simple de contenido
+- **Resaltado de sintaxis**: Prism.js o Highlight.js
+- **Búsqueda**: Lunr.js o Algolia
+- **Analítica**: Google Analytics, Plausible
 
-## Content Features
+## Características de contenido
 
-- SEO optimized (meta tags, structured data)
-- OpenGraph and Twitter Cards
-- Sitemap generation
-- Multiple content types
-- Series/multi-part posts
-- Draft and scheduled posts
-- Multiple languages support
-- AMP pages (optional)
+- Optimizado para SEO (meta etiquetas, datos estructurados)
+- Gráficos abiertos y tarjetas de Twitter
+- Generación de mapa del sitio
+- Múltiples tipos de contenido
+- Publicaciones en serie/multiparte
+- Publicaciones de borrador y programadas
+- Soporte de múltiples idiomas
+- Páginas de AMP (opcional)
 
-## Performance
+## Rendimiento
 
-- Minimal JavaScript
-- Optimized for Core Web Vitals
-- Fast page loads
-- Mobile-optimized reading
-- Offline support (PWA optional)
+- JavaScript mínimo
+- Optimizado para Core Web Vitals
+- Carga de página rápida
+- Lectura optimizada para dispositivos móviles
+- Soporte sin conexión (PWA opcional)

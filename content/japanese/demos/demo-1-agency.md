@@ -1,54 +1,54 @@
 ---
-title: "Agency/Services Site"
+title: "代理店・サービスサイト"
 date: 2025-10-29
 draft: false
 demo_url: "https://demo-agency.pages.dev"
 github_url: "https://github.com/MatthewJamisonJS/demo-agency"
 theme_name: "Andromeda Light"
-description: "Built with Andromeda Light theme by GetHugoThemes. Professional agency template with modern design and responsive layout."
+description: "GetHugoThemes の Andromeda Light テーマで構築。最新デザインと反応型レイアウトを備えたプロフェッショナルな代理店テンプレート。"
 image: "/images/demos/demo-1-agency.webp"
 ---
 
-## Overview
+## 概要
 
-A professional agency website template designed for service-based businesses. Features a modern, clean design with smooth scrolling and engaging animations.
+サービス型ビジネス向けに設計されたプロフェッショナルな代理店ウェブサイトテンプレート。モダンで清潔なデザイン、スムーズなスクロール、魅力的なアニメーションが特徴です。
 
-## What it shows
+## 示される内容
 
-- **Multi-section landing page**: Hero, services, portfolio, testimonials, and CTA sections
-- **Responsive design**: Looks great on all devices from mobile to desktop
-- **Mobile-first approach**: Optimized for performance on mobile devices
-- **Contact forms**: Integrated contact section for lead generation
+- **複数セクションのランディングページ**: ヒーロー、サービス、ポートフォリオ、お客様の声、CTA セクション
+- **レスポンシブデザイン**: モバイルからデスクトップまですべてのデバイスで美しく表示
+- **モバイルファーストアプローチ**: モバイルデバイスでのパフォーマンスに最適化
+- **問い合わせフォーム**: リード生成のための統合された問い合わせセクション
 
-## Key Features
+## 主な機能
 
-- One-page parallax scrolling design
-- Portfolio showcase with filterable categories
-- Team member profiles
-- Client testimonials carousel
-- Service cards with icons
-- Smooth scroll navigation
-- Call-to-action sections
+- ワンページのパララックススクロールデザイン
+- カテゴリーごとにフィルタリング可能なポートフォリオショーケース
+- チームメンバープロフィール
+- クライアントお客様の声カルーセル
+- アイコン付きのサービスカード
+- スムーズなスクロールナビゲーション
+- 行動喚起セクション
 
-## Use Cases
+## 使用例
 
-Perfect for:
-- Freelancers and consultants
-- Creative agencies and studios
-- Marketing and advertising firms
-- Professional services companies
-- Anyone needing a fast, professional web presence
+以下に最適です：
+- フリーランサーとコンサルタント
+- クリエイティブエージェンシーとスタジオ
+- マーケティングおよび広告会社
+- プロフェッショナルサービス企業
+- 迅速でプロフェッショナルなウェブプレゼンスが必要な全ての方
 
-## Tech Stack
+## 技術スタック
 
-- **Hugo**: Static site generator for blazing-fast performance
-- **Bootstrap 5**: Responsive grid and components
-- **JavaScript**: Smooth animations and interactions
-- **CSS3**: Modern styling with custom animations
+- **Hugo**: 超高速パフォーマンスのための静的サイトジェネレーター
+- **Bootstrap 5**: レスポンシブグリッドとコンポーネント
+- **JavaScript**: スムーズなアニメーションと相互作用
+- **CSS3**: カスタムアニメーション付きの最新スタイリング
 
-## Performance
+## パフォーマンス
 
-- Lighthouse score: 95+
-- First contentful paint: < 1s
-- Time to interactive: < 2s
-- Static hosting ready (Cloudflare Pages, Netlify, Vercel)
+- Lighthouse スコア: 95 以上
+- First contentful paint: 1 秒未満
+- Time to interactive: 2 秒未満
+- 静的ホスティング対応（Cloudflare Pages、Netlify、Vercel）

@@ -1,62 +1,62 @@
 ---
-title: "Portfolio/Creative"
+title: "Portafolio/Creativo"
 date: 2025-10-29
 draft: false
 demo_url: "https://demo-creative-r4n.pages.dev"
 github_url: "https://github.com/MatthewJamisonJS/demo-creative"
 theme_name: "Academia"
-description: "Built with Academia theme by GetHugoThemes. Stunning visual portfolio for designers, photographers, and creative professionals."
+description: "Construido con el tema Academia de GetHugoThemes. Portafolio visual impresionante para diseñadores, fotógrafos y profesionales creativos."
 image: "/images/demos/demo-4-portfolio.svg"
 ---
 
-## Overview
+## Descripción general
 
-A visually striking portfolio template designed to showcase creative work. Features full-screen imagery, smooth transitions, and elegant typography.
+Una plantilla de portafolio visualmente impresionante diseñada para mostrar trabajo creativo. Cuenta con imágenes a pantalla completa, transiciones suaves y tipografía elegante.
 
-## What it shows
+## Lo que muestra
 
-- **Full-screen hero**: Immediately capture attention
-- **Project showcase**: Grid and masonry layouts
-- **Project detail pages**: Case studies with rich media
-- **About section**: Tell your story
-- **Image galleries**: Lightbox and slideshow support
-- **Contact form**: Easy way for clients to reach you
+- **Héroe a pantalla completa**: Captura la atención inmediatamente
+- **Vitrina de proyectos**: Diseños en cuadrícula y mampostería
+- **Páginas de detalle del proyecto**: Estudios de caso con medios enriquecidos
+- **Sección acerca de**: Cuenta tu historia
+- **Galerías de imágenes**: Soporte de lightbox y presentación de diapositivas
+- **Formulario de contacto**: Manera fácil para que los clientes se comuniquen contigo
 
-## Key Features
+## Características principales
 
-- Masonry grid layouts
-- Lazy-loaded images
-- Lightbox photo galleries
-- Smooth page transitions
-- Filterable project categories
-- Video embeds support
-- Instagram feed integration
-- Client testimonials
+- Diseños de cuadrícula de mampostería
+- Imágenes cargadas con pereza
+- Galerías de fotos con lightbox
+- Transiciones de página suave
+- Categorías de proyecto filtrables
+- Soporte para incrustar videos
+- Integración de fuente de Instagram
+- Testimonios de clientes
 
-## Use Cases
+## Casos de uso
 
-Designed for:
-- Photographers and videographers
-- Graphic and web designers
-- Artists and illustrators
-- Architects and interior designers
-- Creative agencies
-- UX/UI designers
+Diseñado para:
+- Fotógrafos y videógrafos
+- Diseñadores gráficos y web
+- Artistas e ilustradores
+- Arquitectos y diseñadores de interiores
+- Agencias creativas
+- Diseñadores de UX/UI
 
-## Tech Stack
+## Pila de tecnología
 
-- **Hugo**: Fast build times for image-heavy sites
-- **PhotoSwipe**: Beautiful lightbox galleries
-- **Lazy loading**: Optimized image loading
-- **WebP support**: Modern image formats
-- **CSS Grid & Flexbox**: Advanced layouts
+- **Hugo**: Tiempos de construcción rápidos para sitios con muchas imágenes
+- **PhotoSwipe**: Hermosas galerías de lightbox
+- **Carga perezosa**: Carga de imagen optimizada
+- **Soporte de WebP**: Formatos de imagen modernos
+- **CSS Grid & Flexbox**: Diseños avanzados
 
-## Visual Features
+## Características visuales
 
-- High-resolution image support
-- Retina-ready graphics
-- Custom fonts and typography
-- Parallax scrolling effects
-- Smooth reveal animations
-- Dark mode support
-- Minimalist design aesthetic
+- Soporte de imagen de alta resolución
+- Gráficos listos para retina
+- Fuentes personalizadas y tipografía
+- Efectos de desplazamiento de paralaje
+- Animaciones de revelación suave
+- Soporte de modo oscuro
+- Estética de diseño minimalista

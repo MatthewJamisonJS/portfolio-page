@@ -1,72 +1,72 @@
 ---
-title: "Restaurant/Food"
+title: "レストラン・フード"
 date: 2025-10-29
 draft: false
 demo_url: "https://demo-restaurant-4az.pages.dev"
 github_url: "https://github.com/MatthewJamisonJS/demo-restaurant"
 theme_name: "Restaurant"
-description: "Built with Restaurant theme by Themefisher. Appetizing restaurant website with menu display, reservations, and online ordering."
+description: "Themefisher の Restaurant テーマで構築。リッチな画像、メニュー表示、予約システムを備えた食欲をそそるレストランウェブサイト。"
 image: "/images/demos/demo-6-restaurant.png"
 ---
 
-## Overview
+## 概要
 
-A mouth-watering restaurant website template featuring rich imagery, menu displays, and reservation systems. Perfect for restaurants, cafés, and food businesses.
+豊富な画像、メニュー表示、予約システムを備えた食欲をそそるレストランウェブサイトテンプレート。レストラン、カフェ、食品ビジネスに最適です。
 
-## What it shows
+## 示される内容
 
-- **Appetizing hero**: Full-screen food photography
-- **Interactive menu**: Organized by category with prices
-- **Location and hours**: Easy to find information
-- **Reservation system**: OpenTable integration
-- **Gallery**: Showcase your dishes and ambiance
-- **Special events**: Highlight promotions and events
+- **食欲をそそるヒーロー**: フルスクリーンの食事写真
+- **インタラクティブメニュー**: カテゴリーごとに価格付きで整理
+- **場所と営業時間**: 情報を簡単に見つけられる
+- **予約システム**: OpenTable 統合
+- **ギャラリー**: 料理と雰囲気を紹介
+- **特別イベント**: プロモーションとイベントをハイライト
 
-## Key Features
+## 主な機能
 
-- Beautiful food photography
-- PDF menu download
-- Allergen information
-- Chef profiles
-- Customer reviews
-- Google Maps integration
-- Social media feeds
-- Mobile-friendly menu
+- 美しい食事写真
+- PDF メニューダウンロード
+- アレルギー情報
+- シェフプロフィール
+- カスタマーレビュー
+- Google マップ統合
+- ソーシャルメディアフィード
+- モバイルフレンドリーなメニュー
 
-## Use Cases
+## 使用例
 
-Perfect for:
-- Restaurants and bistros
-- Cafés and coffee shops
-- Food trucks
-- Catering services
-- Bars and breweries
-- Bakeries and dessert shops
-- Private dining venues
+以下に最適です：
+- レストランとビストロ
+- カフェとコーヒーショップ
+- フードトラック
+- ケータリングサービス
+- バーと醸造所
+- ベーカリーとデザートショップ
+- プライベートダイニングベニュー
 
-## Tech Stack
+## 技術スタック
 
-- **Hugo**: Fast, reliable hosting
-- **OpenTable API**: Reservation widget
-- **Google Maps**: Location display
-- **Instagram API**: Social feed
-- **Image optimization**: Fast-loading food photos
+- **Hugo**: 高速で信頼性の高いホスティング
+- **OpenTable API**: 予約ウィジェット
+- **Google マップ**: 場所の表示
+- **Instagram API**: ソーシャルフィード
+- **画像最適化**: 高速読み込みの食事写真
 
-## Restaurant Features
+## レストラン機能
 
-- Online menu with categories
-- Pricing and descriptions
-- Dietary information (vegan, gluten-free, etc.)
-- Daily specials
-- Happy hour promotions
-- Private event inquiries
-- Gift card information
-- Newsletter signup
+- カテゴリー付きのオンラインメニュー
+- 価格と説明
+- 食事情報（ビーガン、グルテンフリーなど）
+- 本日のおすすめ
+- ハッピーアワープロモーション
+- プライベートイベント問い合わせ
+- ギフトカード情報
+- ニュースレター購読
 
-## Integration Options
+## 統合オプション
 
-- Online ordering (DoorDash, Uber Eats)
-- Reservation systems (OpenTable, Resy)
-- Payment processing
-- Email marketing
-- Review platforms (Yelp, Google)
+- オンライン注文（DoorDash、Uber Eats）
+- 予約システム（OpenTable、Resy）
+- 支払い処理
+- メールマーケティング
+- レビュープラットフォーム（Yelp、Google）

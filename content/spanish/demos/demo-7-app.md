@@ -1,75 +1,75 @@
 ---
-title: "App Landing Page"
+title: "Página de Aterrizaje de Aplicación"
 date: 2025-10-29
 draft: false
 demo_url: "https://demo-landing-dvx.pages.dev"
 github_url: "https://github.com/MatthewJamisonJS/demo-landing"
 theme_name: "Omega"
-description: "Built with Omega theme by GetHugoThemes. Modern app landing page with app store badges, screenshots, and feature showcases."
+description: "Construido con el tema Omega de GetHugoThemes. Página de aterrizaje moderna de aplicación con insignias de tienda de aplicaciones, capturas de pantalla y vitrinas de características."
 image: "/images/demos/demo-7-app.svg"
 ---
 
-## Overview
+## Descripción general
 
-A sleek, modern landing page template designed for mobile and web app launches. Features app screenshots, feature highlights, and download links.
+Una plantilla de página de aterrizaje moderna y elegante diseñada para lanzamientos de aplicaciones móviles y web. Incluye capturas de pantalla de la aplicación, destacados de características y enlaces de descarga.
 
-## What it shows
+## Lo que muestra
 
-- **Hero with app preview**: Showcase your app immediately
-- **Feature highlights**: Key benefits and features
-- **Screenshot carousel**: Display app interface
-- **App store badges**: Direct download links
-- **How it works**: Step-by-step explanation
-- **Testimonials**: User reviews and ratings
-- **Pricing (optional)**: Subscription tiers
+- **Héroe con vista previa de la aplicación**: Muestra tu aplicación inmediatamente
+- **Destacados de características**: Beneficios y características clave
+- **Carrusel de capturas de pantalla**: Mostrar interfaz de la aplicación
+- **Insignias de tienda de aplicaciones**: Enlaces de descarga directa
+- **Cómo funciona**: Explicación paso a paso
+- **Testimonios**: Reseñas y calificaciones de usuarios
+- **Precios (opcional)**: Niveles de suscripción
 
-## Key Features
+## Características principales
 
-- Animated phone mockups
-- Video demo embed
-- App screenshot galleries
-- Feature comparison tables
-- Beta signup forms
-- Press kit download
-- FAQ section
-- Privacy policy links
+- Maquetas de teléfono animadas
+- Incrustar demostración de video
+- Galerías de capturas de pantalla de la aplicación
+- Tablas de comparación de características
+- Formularios de registro beta
+- Descarga de kit de prensa
+- Sección de preguntas frecuentes
+- Enlaces de política de privacidad
 
-## Use Cases
+## Casos de uso
 
-Designed for:
-- Mobile app launches (iOS/Android)
-- Web application marketing
-- Progressive Web Apps (PWA)
-- SaaS mobile apps
-- Game launches
-- Productivity tools
-- Social apps
+Diseñado para:
+- Lanzamientos de aplicaciones móviles (iOS/Android)
+- Marketing de aplicaciones web
+- Aplicaciones web progresivas (PWA)
+- Aplicaciones SaaS móviles
+- Lanzamientos de juegos
+- Herramientas de productividad
+- Aplicaciones sociales
 
-## Tech Stack
+## Pila de tecnología
 
-- **Hugo**: Fast, reliable hosting
-- **CSS animations**: Smooth transitions
-- **Device mockups**: Professional presentation
-- **Form integration**: Beta signup collection
-- **Analytics**: Track conversions
+- **Hugo**: Alojamiento rápido y confiable
+- **Animaciones CSS**: Transiciones suaves
+- **Maquetas de dispositivos**: Presentación profesional
+- **Integración de formularios**: Recopilación de registro beta
+- **Analítica**: Rastrear conversiones
 
-## App Marketing Features
+## Características de marketing de aplicaciones
 
-- App Store and Google Play badges
-- QR code for easy download
-- Video trailers and demos
-- Feature comparison table
-- User testimonials and ratings
-- Press and media kit
-- Beta testing signup
-- Email notifications
+- Insignias de App Store y Google Play
+- Código QR para descarga fácil
+- Tráileres de video y demostraciones
+- Tabla de comparación de características
+- Testimonios y calificaciones de usuarios
+- Kit de prensa y medios
+- Registro de prueba beta
+- Notificaciones por correo electrónico
 
-## Conversion Elements
+## Elementos de conversión
 
-- Clear download CTAs
-- Multiple badge placements
-- Social proof (downloads, ratings)
-- Trust indicators
-- Media coverage mentions
-- Award badges
-- Free trial offers
+- CTAs de descarga claros
+- Múltiples ubicaciones de insignias
+- Prueba social (descargas, calificaciones)
+- Indicadores de confianza
+- Menciones de cobertura de medios
+- Insignias de premio
+- Ofertas de prueba gratuita

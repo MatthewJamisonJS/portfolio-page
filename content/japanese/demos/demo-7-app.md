@@ -1,75 +1,75 @@
 ---
-title: "App Landing Page"
+title: "アプリランディングページ"
 date: 2025-10-29
 draft: false
 demo_url: "https://demo-landing-dvx.pages.dev"
 github_url: "https://github.com/MatthewJamisonJS/demo-landing"
 theme_name: "Omega"
-description: "Built with Omega theme by GetHugoThemes. Modern app landing page with app store badges, screenshots, and feature showcases."
+description: "GetHugoThemes の Omega テーマで構築。アプリストアバッジ、スクリーンショット、機能紹介を備えた最新アプリランディングページ。"
 image: "/images/demos/demo-7-app.svg"
 ---
 
-## Overview
+## 概要
 
-A sleek, modern landing page template designed for mobile and web app launches. Features app screenshots, feature highlights, and download links.
+モバイルおよびウェブアプリのローンチ向けに設計されたスリークでモダンなランディングページテンプレート。アプリスクリーンショット、機能ハイライト、ダウンロードリンクが備わっています。
 
-## What it shows
+## 示される内容
 
-- **Hero with app preview**: Showcase your app immediately
-- **Feature highlights**: Key benefits and features
-- **Screenshot carousel**: Display app interface
-- **App store badges**: Direct download links
-- **How it works**: Step-by-step explanation
-- **Testimonials**: User reviews and ratings
-- **Pricing (optional)**: Subscription tiers
+- **アプリプレビュー付きヒーロー**: あなたのアプリを即座に紹介
+- **機能ハイライト**: 主な利点と機能
+- **スクリーンショットカルーセル**: アプリインターフェースを表示
+- **アプリストアバッジ**: 直接ダウンロードリンク
+- **使い方**: ステップバイステップの説明
+- **お客様の声**: ユーザーレビューと評価
+- **料金（オプション）**: サブスクリプションティア
 
-## Key Features
+## 主な機能
 
-- Animated phone mockups
-- Video demo embed
-- App screenshot galleries
-- Feature comparison tables
-- Beta signup forms
-- Press kit download
-- FAQ section
-- Privacy policy links
+- アニメーション付きスマートフォンモックアップ
+- ビデオデモ埋め込み
+- アプリスクリーンショットギャラリー
+- 機能比較表
+- ベータサインアップフォーム
+- プレスキットダウンロード
+- FAQ セクション
+- プライバシーポリシーリンク
 
-## Use Cases
+## 使用例
 
-Designed for:
-- Mobile app launches (iOS/Android)
-- Web application marketing
-- Progressive Web Apps (PWA)
-- SaaS mobile apps
-- Game launches
-- Productivity tools
-- Social apps
+以下に設計されています：
+- モバイルアプリのローンチ（iOS/Android）
+- ウェブアプリケーションのマーケティング
+- Progressive Web Apps（PWA）
+- SaaS モバイルアプリ
+- ゲームのローンチ
+- 生産性ツール
+- ソーシャルアプリ
 
-## Tech Stack
+## 技術スタック
 
-- **Hugo**: Fast, reliable hosting
-- **CSS animations**: Smooth transitions
-- **Device mockups**: Professional presentation
-- **Form integration**: Beta signup collection
-- **Analytics**: Track conversions
+- **Hugo**: 高速で信頼性の高いホスティング
+- **CSS アニメーション**: スムーズなトランジション
+- **デバイスモックアップ**: プロフェッショナルなプレゼンテーション
+- **フォーム統合**: ベータサインアップ収集
+- **アナリティクス**: コンバージョン追跡
 
-## App Marketing Features
+## アプリマーケティング機能
 
-- App Store and Google Play badges
-- QR code for easy download
-- Video trailers and demos
-- Feature comparison table
-- User testimonials and ratings
-- Press and media kit
-- Beta testing signup
-- Email notifications
+- App Store および Google Play バッジ
+- ダウンロード用 QR コード
+- ビデオトレーラーとデモ
+- 機能比較表
+- ユーザーお客様の声と評価
+- プレスとメディアキット
+- ベータテストサインアップ
+- メール通知
 
-## Conversion Elements
+## コンバージョン要素
 
-- Clear download CTAs
-- Multiple badge placements
-- Social proof (downloads, ratings)
-- Trust indicators
-- Media coverage mentions
-- Award badges
-- Free trial offers
+- クリアなダウンロード CTA
+- 複数のバッジプレースメント
+- ソーシャルプルーフ（ダウンロード、評価）
+- 信頼指標
+- メディアカバレッジの掲載
+- アワードバッジ
+- 無料トライアルオファー

@@ -1,72 +1,72 @@
 ---
-title: "Restaurant/Food"
+title: "Restaurante/Comida"
 date: 2025-10-29
 draft: false
 demo_url: "https://demo-restaurant-4az.pages.dev"
 github_url: "https://github.com/MatthewJamisonJS/demo-restaurant"
 theme_name: "Restaurant"
-description: "Built with Restaurant theme by Themefisher. Appetizing restaurant website with menu display, reservations, and online ordering."
+description: "Construido con el tema Restaurant de Themefisher. Sitio web de restaurante apetitoso con menú, reservaciones y pedidos en línea."
 image: "/images/demos/demo-6-restaurant.png"
 ---
 
-## Overview
+## Descripción general
 
-A mouth-watering restaurant website template featuring rich imagery, menu displays, and reservation systems. Perfect for restaurants, cafés, and food businesses.
+Una plantilla de sitio web de restaurante que se ve deliciosa con imágenes ricas, pantallas de menú y sistemas de reservación. Perfecto para restaurantes, cafeterías y negocios de comida.
 
-## What it shows
+## Lo que muestra
 
-- **Appetizing hero**: Full-screen food photography
-- **Interactive menu**: Organized by category with prices
-- **Location and hours**: Easy to find information
-- **Reservation system**: OpenTable integration
-- **Gallery**: Showcase your dishes and ambiance
-- **Special events**: Highlight promotions and events
+- **Héroe apetitoso**: Fotografía de comida a pantalla completa
+- **Menú interactivo**: Organizado por categoría con precios
+- **Ubicación y horario**: Fácil de encontrar información
+- **Sistema de reservación**: Integración de OpenTable
+- **Galería**: Muestra tus platos y ambiente
+- **Eventos especiales**: Destacar promociones y eventos
 
-## Key Features
+## Características principales
 
-- Beautiful food photography
-- PDF menu download
-- Allergen information
-- Chef profiles
-- Customer reviews
-- Google Maps integration
-- Social media feeds
-- Mobile-friendly menu
+- Hermosa fotografía de comida
+- Descarga de menú PDF
+- Información de alérgenos
+- Perfiles de chef
+- Reseñas de clientes
+- Integración de Google Maps
+- Fuentes de redes sociales
+- Menú amigable para dispositivos móviles
 
-## Use Cases
+## Casos de uso
 
-Perfect for:
-- Restaurants and bistros
-- Cafés and coffee shops
-- Food trucks
-- Catering services
-- Bars and breweries
-- Bakeries and dessert shops
-- Private dining venues
+Perfecto para:
+- Restaurantes y bistros
+- Cafeterías y cafeterías
+- Camiones de comida
+- Servicios de catering
+- Bares y cervecerías
+- Pastelerías y tiendas de postres
+- Lugares de comedor privado
 
-## Tech Stack
+## Pila de tecnología
 
-- **Hugo**: Fast, reliable hosting
-- **OpenTable API**: Reservation widget
-- **Google Maps**: Location display
-- **Instagram API**: Social feed
-- **Image optimization**: Fast-loading food photos
+- **Hugo**: Alojamiento rápido y confiable
+- **API de OpenTable**: Widget de reservación
+- **Google Maps**: Visualización de ubicación
+- **API de Instagram**: Fuente social
+- **Optimización de imagen**: Fotos de comida de carga rápida
 
-## Restaurant Features
+## Características del restaurante
 
-- Online menu with categories
-- Pricing and descriptions
-- Dietary information (vegan, gluten-free, etc.)
-- Daily specials
-- Happy hour promotions
-- Private event inquiries
-- Gift card information
-- Newsletter signup
+- Menú en línea con categorías
+- Precios y descripciones
+- Información dietética (vegano, sin gluten, etc.)
+- Especiales del día
+- Promociones de happy hour
+- Consultas de eventos privados
+- Información de tarjeta de regalo
+- Registro de boletín
 
-## Integration Options
+## Opciones de integración
 
-- Online ordering (DoorDash, Uber Eats)
-- Reservation systems (OpenTable, Resy)
-- Payment processing
-- Email marketing
-- Review platforms (Yelp, Google)
+- Pedidos en línea (DoorDash, Uber Eats)
+- Sistemas de reservación (OpenTable, Resy)
+- Procesamiento de pagos
+- Marketing por correo electrónico
+- Plataformas de reseña (Yelp, Google)

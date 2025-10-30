@@ -1,73 +1,73 @@
 ---
-title: "Blog/Magazine"
+title: "ブログ・マガジン"
 date: 2025-10-29
 draft: false
 demo_url: "https://demo-blog-a03.pages.dev"
 github_url: "https://github.com/MatthewJamisonJS/demo-blog"
 theme_name: "Parsa"
-description: "Built with Parsa theme by GetHugoThemes. Content-focused blog with great typography, reading experience, and SEO optimization."
+description: "GetHugoThemes の Parsa テーマで構築。優れたタイポグラフィ、読みやすさ、SEO 最適化を備えたコンテンツ重視のブログ。"
 image: "/images/demos/demo-5-blog.png"
 ---
 
-## Overview
+## 概要
 
-A beautiful, content-focused blog template optimized for readability and SEO. Perfect for writers, journalists, and content creators.
+読みやすさと SEO のために最適化された美しいコンテンツ重視のブログテンプレート。執筆者、ジャーナリスト、コンテンツクリエイター向けに最適です。
 
-## What it shows
+## 示される内容
 
-- **Article listings**: Multiple layout options (grid, list, featured)
-- **Post detail pages**: Optimized reading experience
-- **Author profiles**: Multiple author support
-- **Categories and tags**: Content organization
-- **Search functionality**: Full-text search
-- **Related posts**: Keep readers engaged
-- **Comments**: Disqus/Commento integration
+- **記事一覧**: 複数のレイアウトオプション（グリッド、リスト、フィーチャー）
+- **投稿詳細ページ**: 最適化された読みやすさ
+- **著者プロフィール**: 複数著者のサポート
+- **カテゴリーとタグ**: コンテンツ組織
+- **検索機能**: フルテキスト検索
+- **関連投稿**: 読者を引き続き惹きつける
+- **コメント**: Disqus/Commento 統合
 
-## Key Features
+## 主な機能
 
-- Beautiful typography
-- Reading time estimates
-- Table of contents generation
-- Code syntax highlighting
-- Social sharing buttons
-- Newsletter signup forms
-- RSS feed support
-- Archive pages
+- 美しいタイポグラフィ
+- 読了時間の推定
+- 目次の自動生成
+- コードシンタックスハイライト
+- ソーシャル共有ボタン
+- ニュースレター購読フォーム
+- RSS フィードサポート
+- アーカイブページ
 
-## Use Cases
+## 使用例
 
-Ideal for:
-- Personal blogs and journals
-- Tech and development blogs
-- News and magazine sites
-- Corporate blogs
-- Content marketing
-- Knowledge bases
-- Documentation sites
+以下に最適です：
+- 個人ブログとジャーナル
+- テックおよび開発ブログ
+- ニュースとマガジンサイト
+- 企業ブログ
+- コンテンツマーケティング
+- ナレッジベース
+- ドキュメンテーションサイト
 
-## Tech Stack
+## 技術スタック
 
-- **Hugo**: Fast static site generation
-- **Markdown**: Simple content authoring
-- **Syntax highlighting**: Prism.js or Highlight.js
-- **Search**: Lunr.js or Algolia
-- **Analytics**: Google Analytics, Plausible
+- **Hugo**: 高速静的サイト生成
+- **Markdown**: シンプルなコンテンツ作成
+- **シンタックスハイライト**: Prism.js または Highlight.js
+- **検索**: Lunr.js または Algolia
+- **アナリティクス**: Google Analytics、Plausible
 
-## Content Features
+## コンテンツ機能
 
-- SEO optimized (meta tags, structured data)
-- OpenGraph and Twitter Cards
-- Sitemap generation
-- Multiple content types
-- Series/multi-part posts
-- Draft and scheduled posts
-- Multiple languages support
-- AMP pages (optional)
+- SEO 最適化（メタタグ、構造化データ）
+- OpenGraph と Twitter Card
+- サイトマップ生成
+- 複数のコンテンツタイプ
+- シリーズ/複数部分投稿
+- 下書きとスケジュール投稿
+- 複数言語サポート
+- AMP ページ（オプション）
 
-## Performance
+## パフォーマンス
 
-- Minimal JavaScript
-- Optimized for Core Web Vitals
-- Fast page loads
-- Mobile-optimized reading
-- Offline support (PWA optional)
+- 最小限の JavaScript
+- Core Web Vitals に最適化
+- 高速なページ読み込み
+- モバイル最適化された読みやすさ
+- オフラインサポート（PWA オプション）

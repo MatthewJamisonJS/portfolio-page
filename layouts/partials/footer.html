@@ -42,6 +42,10 @@
 {{ $script := resources.Get "js/script.js" | minify | fingerprint "sha384"}}
 <script src="{{ $script.Permalink }}" integrity="{{ $script.Data.Integrity }}"></script>
 
+<!-- Battle Animation CSS -->
+{{ $battleCSS := resources.Get "css/battle-animations.css" | minify | fingerprint "sha384" }}
+<link rel="stylesheet" href="{{ $battleCSS.Permalink }}" integrity="{{ $battleCSS.Data.Integrity }}">
+
 <!-- cookie -->
 {{ if site.Params.cookies.enable }}
 <script src="https://cdnjs.cloudflare.com/ajax/libs/js-cookie/2.2.1/js.cookie.min.js"></script>
@@ -64,3 +68,221 @@
 	})(jQuery);
 </script>
 {{ end }}
+
+<!-- Service Parameter Handler for Contact Form -->
+<script>
+(function() {
+	// Check if URL has service parameter
+	const urlParams = new URLSearchParams(window.location.search);
+	const service = urlParams.get('service');
+
+	if (service) {
+		// Map service slugs to display names
+		const serviceNames = {
+			'foundation': 'Foundation Service',
+			'complete-presence': 'Complete Presence',
+			'partnership': 'Partnership'
+		};
+
+		const serviceName = serviceNames[service];
+
+		if (serviceName) {
+			// Wait for DOM to be ready
+			document.addEventListener('DOMContentLoaded', function() {
+				// Set subject field placeholder
+				const subjectField = document.getElementById('subject');
+				if (subjectField) {
+					subjectField.placeholder = serviceName;
+					subjectField.style.color = '#9ca3af'; // Gray color
+				}
+
+				// Populate hidden service tier field
+				const serviceTierField = document.getElementById('service-tier');
+				if (serviceTierField) {
+					serviceTierField.value = serviceName;
+				}
+
+				// Scroll to contact section smoothly
+				const contactSection = document.getElementById('contact');
+				if (contactSection) {
+					setTimeout(function() {
+						contactSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+					}, 100);
+				}
+
+				// Auto-focus name field after scroll
+				setTimeout(function() {
+					const nameField = document.getElementById('name');
+					if (nameField) {
+						nameField.focus();
+					}
+				}, 800);
+			});
+		}
+	}
+})();
+</script>
+
+<!-- Epic Pokemon Battle Animation Scripts -->
+{{ $particleJS := resources.Get "js/battle-particles.js" | minify | fingerprint "sha384" }}
+{{ $controllerJS := resources.Get "js/battle-controller.js" | minify | fingerprint "sha384" }}
+<script src="{{ $particleJS.Permalink }}" integrity="{{ $particleJS.Data.Integrity }}"></script>
+<script src="{{ $controllerJS.Permalink }}" integrity="{{ $controllerJS.Data.Integrity }}"></script>
+
+<!-- Multi-Layer Vortex Portal Animation for Start Project Button -->
+<script>
+(function() {
+	console.log('🌀 Portal script loaded');
+
+	// Use both DOMContentLoaded and window.load for safety
+	function initPortalAnimation() {
+		console.log('🔍 Looking for start project button...');
+		const startBtn = document.getElementById('start-project-btn');
+
+		console.log('Button found:', startBtn);
+
+		if (startBtn) {
+			console.log('✅ Button found! Adding click listener');
+
+			startBtn.addEventListener('click', function(e) {
+				console.log('🎯 Button clicked! Starting portal animation');
+				e.preventDefault();
+				e.stopPropagation();
+
+				// Get button position (viewport coordinates)
+				const rect = this.getBoundingClientRect();
+				const x = rect.left + rect.width / 2;
+				const y = rect.top + rect.height / 2;
+
+				console.log('📍 Button position (viewport):', { x, y, rect });
+				console.log('📍 Scroll position:', { scrollX: window.scrollX, scrollY: window.scrollY });
+				console.log('📍 Window size:', { width: window.innerWidth, height: window.innerHeight });
+
+				// Create full-screen portal overlay
+				const overlay = document.createElement('div');
+				overlay.className = 'portal-overlay';
+
+				// Create portal center container positioned at button
+				const center = document.createElement('div');
+				center.className = 'portal-center';
+				center.style.left = (x - 200) + 'px'; // Offset by half of 400px
+				center.style.top = (y - 200) + 'px';
+
+				// Create outer ring (cyan)
+				const ring1 = document.createElement('div');
+				ring1.className = 'portal-ring portal-ring-1';
+
+				// Create middle ring (purple)
+				const ring2 = document.createElement('div');
+				ring2.className = 'portal-ring portal-ring-2';
+
+				// Create ring 3 (pink)
+				const ring3 = document.createElement('div');
+				ring3.className = 'portal-ring portal-ring-3';
+
+				// Create ring 4 (orange)
+				const ring4 = document.createElement('div');
+				ring4.className = 'portal-ring portal-ring-4';
+
+				// Create ring 5 (yellow)
+				const ring5 = document.createElement('div');
+				ring5.className = 'portal-ring portal-ring-5';
+
+				// Create bright core
+				const core = document.createElement('div');
+				core.className = 'portal-core';
+
+				// Assemble portal structure
+				center.appendChild(ring1);
+				center.appendChild(ring2);
+				center.appendChild(ring3);
+				center.appendChild(ring4);
+				center.appendChild(ring5);
+				center.appendChild(core);
+				overlay.appendChild(center);
+
+				// Add to body
+				document.body.appendChild(overlay);
+				console.log('✨ EPIC portal created with', overlay.querySelectorAll('.portal-ring').length, 'rings + core');
+
+				// DIAGNOSTIC: Check computed styles immediately after adding to DOM
+				setTimeout(function() {
+					const overlayStyle = window.getComputedStyle(overlay);
+					const centerStyle = window.getComputedStyle(center);
+					const ring1Style = window.getComputedStyle(ring1);
+
+					console.log('🔍 DIAGNOSTIC - Overlay computed styles:', {
+						position: overlayStyle.position,
+						zIndex: overlayStyle.zIndex,
+						display: overlayStyle.display,
+						width: overlayStyle.width,
+						height: overlayStyle.height,
+						background: overlayStyle.background,
+						opacity: overlayStyle.opacity
+					});
+
+					console.log('🔍 DIAGNOSTIC - Center computed styles:', {
+						position: centerStyle.position,
+						left: centerStyle.left,
+						top: centerStyle.top,
+						width: centerStyle.width,
+						height: centerStyle.height,
+						transform: centerStyle.transform
+					});
+
+					console.log('🔍 DIAGNOSTIC - Ring1 computed styles:', {
+						position: ring1Style.position,
+						width: ring1Style.width,
+						height: ring1Style.height,
+						border: ring1Style.border,
+						borderRadius: ring1Style.borderRadius,
+						boxShadow: ring1Style.boxShadow,
+						opacity: ring1Style.opacity,
+						transform: ring1Style.transform,
+						animation: ring1Style.animation,
+						animationName: ring1Style.animationName,
+						animationDuration: ring1Style.animationDuration
+					});
+
+					console.log('🔍 DIAGNOSTIC - Element positions in viewport:');
+					console.log('  Overlay rect:', overlay.getBoundingClientRect());
+					console.log('  Center rect:', center.getBoundingClientRect());
+					console.log('  Ring1 rect:', ring1.getBoundingClientRect());
+				}, 50); // Small delay to let styles apply
+
+				// Navigate to services page after animation is nearly complete (2800ms)
+				const targetUrl = this.href;
+				setTimeout(function() {
+					console.log('🚀 Navigating to:', targetUrl);
+					window.location.href = targetUrl;
+				}, 2800);
+
+				// Clean up overlay after animation completes (if still on page)
+				setTimeout(function() {
+					if (document.body.contains(overlay)) {
+						document.body.removeChild(overlay);
+					}
+				}, 3500);
+			});
+		} else {
+			console.error('❌ Start project button not found!');
+		}
+	}
+
+	// Try on DOMContentLoaded
+	if (document.readyState === 'loading') {
+		document.addEventListener('DOMContentLoaded', initPortalAnimation);
+	} else {
+		// DOM already loaded
+		initPortalAnimation();
+	}
+
+	// Also try on window load as fallback
+	window.addEventListener('load', function() {
+		console.log('🔄 Window loaded, checking button again');
+		if (!document.getElementById('start-project-btn')) {
+			console.log('⚠️ Button still not found on window load');
+		}
+	});
+})();
+</script>

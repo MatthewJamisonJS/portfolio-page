@@ -26,3 +26,317 @@ other = "Recent Projects"
 
 [view_github]
 other = "View GitHub"
+
+# Services/Pricing Page Translations
+
+# Hero Section
+[pricing_hero_title]
+other = "Let's Partner for Your Success"
+
+[pricing_hero_subtitle]
+other = "No agencies. No middlemen. No surprises. Just one business owner helping another—because your success is my business."
+
+[pricing_pain_intro]
+other = "The agency model is broken:"
+
+[pricing_pain_1]
+other = "60% of negative reviews cite communication failures"
+
+[pricing_pain_2]
+other = "40% of projects miss deadlines entirely"
+
+[pricing_pain_3]
+other = "Projects cost 189% of original estimates on average"
+
+[pricing_transition]
+other = "I built my practice differently."
+
+# Differentiators Section
+[pricing_differentiators_title]
+other = "What Makes This Different"
+
+[pricing_differentiators_subtitle]
+other = "Five principles that guide every partnership"
+
+[diff_1_title]
+other = "Direct Developer Access"
+
+[diff_1_desc]
+other = "You talk to the person building your site—no project manager middlemen"
+
+[diff_2_title]
+other = "Fast Delivery"
+
+[diff_2_desc]
+other = "2-3 week launch—not 3-6 months of waiting"
+
+[diff_3_title]
+other = "Fixed Price, Zero Surprises"
+
+[diff_3_desc]
+other = "What you see is what you pay—no hourly rate padding or scope creep invoices"
+
+[diff_4_title]
+other = "Training + Support Included"
+
+[diff_4_desc]
+other = "Never abandoned after launch—you own your site and know how to run it"
+
+[diff_5_title]
+other = "Business-First Partnership"
+
+[diff_5_desc]
+other = "I care about your revenue, not awards—every decision measured by ROI"
+
+# Pricing Tiers Section
+[pricing_tiers_title]
+other = "Service Packages"
+
+[pricing_tiers_subtitle]
+other = "Choose the right level of partnership for your business"
+
+# Tier 1 - Foundation
+[tier_1_name]
+other = "Foundation Service"
+
+[tier_1_tagline]
+other = "For businesses establishing their web presence"
+
+[tier_1_feat_1]
+other = "Fast, reliable performance (98+ Lighthouse scores)"
+
+[tier_1_feat_2]
+other = "Works flawlessly on all devices"
+
+[tier_1_feat_3]
+other = "Search engine friendly"
+
+[tier_1_feat_4]
+other = "Training so you control updates yourself"
+
+[tier_1_feat_5]
+other = "2-3 week delivery"
+
+[tier_1_perfect]
+other = "Launching your business online, replacing outdated sites, establishing professional presence"
+
+# Tier 2 - Complete Presence
+[tier_2_name]
+other = "Complete Presence"
+
+[tier_2_tagline]
+other = "For businesses reaching broader markets"
+
+[tier_2_feat_0]
+other = "Everything in Foundation Service"
+
+[tier_2_feat_1]
+other = "5-language multilingual support (EN, ES, FR, JA, DE)"
+
+[tier_2_feat_2]
+other = "WCAG AA accessibility compliance"
+
+[tier_2_feat_3]
+other = "Analytics & conversion tracking"
+
+[tier_2_feat_4]
+other = "30-day post-launch support"
+
+[tier_2_feat_5]
+other = "2 comprehensive training sessions"
+
+[tier_2_perfect]
+other = "International markets, multilingual customers, accessibility compliance, reaching everyone who needs you"
+
+# Tier 3 - Partnership
+[tier_3_name]
+other = "Partnership Service"
+
+[tier_3_tagline]
+other = "For businesses committed to ongoing growth"
+
+[tier_3_feat_0]
+other = "Everything in Complete Presence"
+
+[tier_3_feat_1]
+other = "Quarterly optimization reviews"
+
+[tier_3_feat_2]
+other = "Priority support (24-hour response)"
+
+[tier_3_feat_3]
+other = "Ongoing performance improvements"
+
+[tier_3_feat_4]
+other = "Custom conversion optimization"
+
+[tier_3_feat_5]
+other = "Unlimited training as needed"
+
+[tier_3_feat_6]
+other = "Long-term technical partnership"
+
+[tier_3_perfect]
+other = "Growing businesses, evolving needs, critical conversions, long-term success partnerships"
+
+# Common Tier Elements
+[most_popular]
+other = "Most Popular"
+
+[what_you_get]
+other = "What You Get"
+
+[perfect_for]
+other = "Perfect For"
+
+# CTA Buttons
+[get_started]
+other = "Get Started"
+
+[start_growing]
+other = "Start Growing"
+
+[lets_partner]
+other = "Let's Partner"
+
+[schedule_call]
+other = "Schedule 15-Minute Call"
+
+# Pricing Concerns Section
+[pricing_concerns_title]
+other = "Pricing Concerns?"
+
+[pricing_concerns_text]
+other = "These numbers reflect the quality and care I bring to each partnership. If they're outside your budget, reach out anyway—let's have an honest conversation about your situation and goals."
+
+[pricing_concerns_cta]
+other = "Let's talk about your needs →"
+
+# Comparison Table Section
+[comparison_title]
+other = "How I'm Different"
+
+[comparison_subtitle]
+other = "See the difference between typical agencies and my approach"
+
+[typical_agency]
+other = "Typical Agency"
+
+[how_i_serve]
+other = "How I Serve You"
+
+[comp_communication]
+other = "Communication"
+
+[comp_comm_agency_1]
+other = "2-5 business days response"
+
+[comp_comm_agency_2]
+other = "Talk to project manager"
+
+[comp_comm_me_1]
+other = "Same day (often hours)"
+
+[comp_comm_me_2]
+other = "Talk to the actual developer"
+
+[comp_timeline]
+other = "Timeline"
+
+[comp_time_agency_1]
+other = "8-12 weeks typical"
+
+[comp_time_agency_2]
+other = "40% miss deadlines"
+
+[comp_time_me_1]
+other = "2-3 weeks guaranteed"
+
+[comp_time_me_2]
+other = "On time or refund"
+
+[comp_pricing]
+other = "Pricing"
+
+[comp_price_agency_1]
+other = "189% of original estimate"
+
+[comp_price_agency_2]
+other = "$150-300/hour changes"
+
+[comp_price_me_1]
+other = "Fixed price, zero surprises"
+
+[comp_price_me_2]
+other = "Changes discussed upfront"
+
+[comp_postlaunch]
+other = "Post-Launch"
+
+[comp_post_agency_1]
+other = "Training costs extra"
+
+[comp_post_agency_2]
+other = "$500/month retainer"
+
+[comp_post_me_1]
+other = "Training included"
+
+[comp_post_me_2]
+other = "You own it, you run it"
+
+# FAQ Section
+[faq_title]
+other = "Frequently Asked Questions"
+
+[faq_subtitle]
+other = "Clear answers to common questions"
+
+[faq_1_q]
+other = "How do I choose the right service?"
+
+[faq_1_a]
+other = "Let's talk for 15 minutes. I'll ask about your goals and recommend honestly—even if that means I'm not the right fit."
+
+[faq_2_q]
+other = "What if I'm not technical?"
+
+[faq_2_a]
+other = "That's why training is included. I explain everything in plain English and make sure you're confident before we're done."
+
+[faq_3_q]
+other = "What about changes after launch?"
+
+[faq_3_a]
+other = "Training covers most updates you'll need. For bigger changes, we'll discuss scope and pricing transparently before starting."
+
+[faq_4_q]
+other = "Why not hire an agency?"
+
+[faq_4_a]
+other = "No overhead means lower costs. Direct access means faster communication. One person genuinely invested in your success."
+
+[faq_5_q]
+other = "What if my budget is tight?"
+
+[faq_5_a]
+other = "Reach out anyway. Sometimes we can phase work, adjust scope, or find creative solutions that work for where you are now."
+
+# Final CTA Section
+[final_cta_title]
+other = "Ready to Start?"
+
+[final_cta_subtitle]
+other = "The best next step is a conversation—no sales pitch, no pressure. Just me listening to your business goals and offering honest guidance."
+
+[or_contact_form]
+other = "Or use the"
+
+[contact_form_link]
+other = "contact form below"
+
+[see_examples]
+other = "Curious what's possible?"
+
+[view_demos]
+other = "View All Demos →"

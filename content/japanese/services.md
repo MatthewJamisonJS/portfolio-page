@@ -2,6 +2,7 @@
 title: "サービス"
 date: 2025-10-31
 draft: false
+type: "services"
 description: "お客様のビジネスをオンラインで実現します。お客様の成功を第一に考えたウェブ開発サービス。"
 ---
 

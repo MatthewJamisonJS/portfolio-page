@@ -1,0 +1,984 @@
+/* ============================================================================
+   EPIC POKEMON BATTLE ANIMATIONS
+   Continuous 12-second battle choreography with type-specific attacks
+   ============================================================================ */
+
+/* ============================================================================
+   1. BASE CLASSES & CONTAINERS
+   ============================================================================ */
+
+/* Canvas container for particle effects */
+#battle-particle-canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    pointer-events: none;
+    z-index: 1000;
+    display: none;
+}
+
+body.battle-mode #battle-particle-canvas {
+    display: block;
+}
+
+/* Battle Toggle Button */
+.battle-toggle-btn {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 2000;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 15px 25px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: #ffffff;
+    border: 3px solid rgba(255, 255, 255, 0.3);
+    border-radius: 50px;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    box-shadow: 0 8px 25px rgba(118, 75, 162, 0.4),
+                0 0 40px rgba(102, 126, 234, 0.3);
+    transition: all 0.3s ease;
+    will-change: transform;
+    transform: translate3d(0, 0, 0);
+}
+
+.battle-toggle-btn:hover {
+    transform: translate3d(0, -5px, 0) scale(1.05);
+    box-shadow: 0 12px 35px rgba(118, 75, 162, 0.5),
+                0 0 60px rgba(102, 126, 234, 0.4);
+    border-color: rgba(255, 255, 255, 0.5);
+}
+
+.battle-toggle-btn:active {
+    transform: translate3d(0, -2px, 0) scale(1.02);
+}
+
+.battle-icon {
+    font-size: 24px;
+    animation: battle-icon-pulse 2s ease-in-out infinite;
+}
+
+.battle-text {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Animate icon */
+@keyframes battle-icon-pulse {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2) rotate(10deg);
+    }
+}
+
+/* When battle is active */
+body.battle-mode .battle-toggle-btn {
+    background: linear-gradient(135deg, #f44336 0%, #ff6b00 100%);
+    box-shadow: 0 8px 25px rgba(244, 67, 54, 0.4),
+                0 0 40px rgba(255, 107, 0, 0.3);
+    animation: battle-active-pulse 1.5s ease-in-out infinite;
+}
+
+body.battle-mode .battle-icon {
+    animation: battle-icon-spin 2s linear infinite;
+}
+
+@keyframes battle-active-pulse {
+    0%, 100% {
+        box-shadow: 0 8px 25px rgba(244, 67, 54, 0.4),
+                    0 0 40px rgba(255, 107, 0, 0.3);
+    }
+    50% {
+        box-shadow: 0 12px 35px rgba(244, 67, 54, 0.6),
+                    0 0 60px rgba(255, 107, 0, 0.5);
+    }
+}
+
+@keyframes battle-icon-spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+    .battle-toggle-btn {
+        bottom: 20px;
+        right: 20px;
+        padding: 12px 20px;
+        font-size: 14px;
+    }
+
+    .battle-icon {
+        font-size: 20px;
+    }
+}
+
+/* Pokemon sprite base with GPU acceleration */
+.pokemon-battle {
+    will-change: transform, filter;
+    transform: translate3d(0, 0, 0);
+    transition: filter 0.3s ease-out, transform 0.3s ease-out;
+}
+
+/* Battle effects SVG optimization */
+.battle-effects {
+    will-change: transform;
+    transform: translate3d(0, 0, 0);
+}
+
+/* Attack path base class */
+.attack-path {
+    will-change: transform, opacity;
+    transform: translate3d(0, 0, 0);
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+/* ============================================================================
+   2. ENERGY BUILDUP ANIMATIONS (0.5s before each attack)
+   ============================================================================ */
+
+/* Electric type energy buildup */
+@keyframes energy-buildup-electric {
+    0% {
+        filter: brightness(1) drop-shadow(0 0 0px #ffeb3b);
+    }
+    50% {
+        filter: brightness(1.7) drop-shadow(0 0 35px #ffeb3b) drop-shadow(0 0 20px #00e5ff);
+    }
+    100% {
+        filter: brightness(1.5) drop-shadow(0 0 30px #ffeb3b);
+    }
+}
+
+/* Fire type energy buildup */
+@keyframes energy-buildup-fire {
+    0% {
+        filter: brightness(1) drop-shadow(0 0 0px #ff6b00);
+    }
+    50% {
+        filter: brightness(1.5) drop-shadow(0 0 40px #ff6b00) drop-shadow(0 0 20px #f44336);
+    }
+    100% {
+        filter: brightness(1.3) drop-shadow(0 0 35px #ff6b00);
+    }
+}
+
+/* Water type energy buildup */
+@keyframes energy-buildup-water {
+    0% {
+        filter: brightness(1) drop-shadow(0 0 0px #03a9f4);
+    }
+    50% {
+        filter: brightness(1.6) drop-shadow(0 0 35px #03a9f4) drop-shadow(0 0 20px #00bcd4);
+    }
+    100% {
+        filter: brightness(1.4) drop-shadow(0 0 30px #03a9f4);
+    }
+}
+
+/* Ice type energy buildup */
+@keyframes energy-buildup-ice {
+    0% {
+        filter: brightness(1) drop-shadow(0 0 0px #b3e5fc);
+    }
+    50% {
+        filter: brightness(1.4) drop-shadow(0 0 45px #b3e5fc) drop-shadow(0 0 25px #ffffff);
+    }
+    100% {
+        filter: brightness(1.2) drop-shadow(0 0 40px #b3e5fc);
+    }
+}
+
+/* Flying type energy buildup */
+@keyframes energy-buildup-flying {
+    0% {
+        filter: brightness(1) drop-shadow(0 0 0px #ffffff);
+        transform: translate3d(0, 0, 0);
+    }
+    50% {
+        filter: brightness(1.3) drop-shadow(0 0 30px #ffffff) drop-shadow(0 0 15px #00bcd4);
+        transform: translate3d(0, -5px, 0);
+    }
+    100% {
+        filter: brightness(1.2) drop-shadow(0 0 25px #ffffff);
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+/* Ghost type energy buildup */
+@keyframes energy-buildup-ghost {
+    0% {
+        filter: brightness(1) drop-shadow(0 0 0px #9c27b0);
+    }
+    50% {
+        filter: brightness(0.7) drop-shadow(0 0 55px #9c27b0) drop-shadow(0 0 30px #1a1a1a);
+    }
+    100% {
+        filter: brightness(0.8) drop-shadow(0 0 50px #9c27b0);
+    }
+}
+
+/* ============================================================================
+   3. ELECTRIC ATTACK ANIMATIONS
+   ============================================================================ */
+
+/* Epic multi-stage electric bolt with branching */
+@keyframes electric-bolt-strike {
+    0% {
+        opacity: 0;
+        stroke-dasharray: 0 1000;
+        stroke: #ffeb3b;
+        filter: drop-shadow(0 0 3px #ffeb3b);
+        transform: scale(1) translateX(0);
+    }
+    3% {
+        opacity: 1;
+        stroke-dasharray: 1000 0;
+        stroke: #ffffff;
+        filter: drop-shadow(0 0 25px #ffeb3b)
+                drop-shadow(0 0 50px #ffeb3b)
+                drop-shadow(0 0 75px rgba(255, 235, 59, 0.8));
+        transform: scale(1.15) translateX(3px);
+    }
+    6% {
+        opacity: 0.4;
+        stroke: #ffeb3b;
+        filter: drop-shadow(0 0 12px #ffeb3b);
+        transform: scale(1) translateX(-2px);
+    }
+    10% {
+        opacity: 1;
+        stroke: #ffffff;
+        filter: drop-shadow(0 0 30px #ffeb3b)
+                drop-shadow(0 0 60px #00e5ff)
+                drop-shadow(0 0 90px rgba(0, 229, 255, 0.6));
+        transform: scale(1.2) translateX(2px);
+    }
+    15% {
+        opacity: 0.6;
+        stroke: #00e5ff;
+        filter: drop-shadow(0 0 18px #00e5ff);
+        transform: scale(1.05) translateX(0);
+    }
+    20% {
+        opacity: 0.9;
+        stroke: #9c27b0;
+        filter: drop-shadow(0 0 25px #9c27b0);
+        transform: scale(1.1) translateX(-1px);
+    }
+    28% {
+        opacity: 0;
+        stroke: #9c27b0;
+        stroke-dasharray: 1000 0;
+        filter: drop-shadow(0 0 0px #9c27b0);
+        transform: scale(1) translateX(0);
+    }
+    100% {
+        opacity: 0;
+        stroke-dasharray: 1000 0;
+        filter: drop-shadow(0 0 0px #ffeb3b);
+        transform: scale(1) translateX(0);
+    }
+}
+
+/* Electric branching sparks */
+@keyframes electric-branch-spark {
+    0% {
+        opacity: 0;
+        stroke-dasharray: 0 200;
+        transform: scale(0.5);
+    }
+    10% {
+        opacity: 1;
+        stroke-dasharray: 200 0;
+        transform: scale(1.2);
+    }
+    25% {
+        opacity: 0;
+        stroke-dasharray: 200 0;
+        transform: scale(1);
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+/* ============================================================================
+   4. FIRE ATTACK ANIMATIONS
+   ============================================================================ */
+
+/* Fire stream with expanding gradient */
+@keyframes fire-stream-blast {
+    0% {
+        opacity: 0;
+        stroke-width: 0.2;
+        stroke: #ff6b00;
+        filter: drop-shadow(0 0 5px #ff6b00);
+        transform: scale(0.3);
+    }
+    8% {
+        opacity: 0.9;
+        stroke-width: 2.5;
+        stroke: #ffeb3b;
+        filter: drop-shadow(0 0 40px #ff6b00)
+                drop-shadow(0 0 60px #f44336);
+        transform: scale(1);
+    }
+    15% {
+        opacity: 1;
+        stroke-width: 3;
+        stroke: #ffffff;
+        filter: drop-shadow(0 0 50px #ff6b00)
+                drop-shadow(0 0 80px #f44336)
+                drop-shadow(0 0 100px rgba(244, 67, 54, 0.6));
+        transform: scale(1.1);
+    }
+    30% {
+        opacity: 0.8;
+        stroke-width: 2;
+        stroke: #f44336;
+        filter: drop-shadow(0 0 35px #ff6b00);
+        transform: scale(1);
+    }
+    45% {
+        opacity: 0.4;
+        stroke-width: 1;
+        stroke: #ff6b00;
+        filter: drop-shadow(0 0 20px #ff6b00);
+        transform: scale(0.9);
+    }
+    60% {
+        opacity: 0;
+        stroke-width: 0.3;
+        filter: drop-shadow(0 0 0px #ff6b00);
+        transform: scale(0.7);
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+/* Fire burst explosion at impact */
+@keyframes fire-burst-impact {
+    0% {
+        transform: scale(0) rotate(0deg);
+        opacity: 0;
+    }
+    20% {
+        transform: scale(1.5) rotate(45deg);
+        opacity: 1;
+    }
+    40% {
+        transform: scale(2) rotate(90deg);
+        opacity: 0.7;
+    }
+    60% {
+        transform: scale(2.5) rotate(135deg);
+        opacity: 0.3;
+    }
+    100% {
+        transform: scale(3) rotate(180deg);
+        opacity: 0;
+    }
+}
+
+/* ============================================================================
+   5. WATER ATTACK ANIMATIONS
+   ============================================================================ */
+
+/* Hydro pump water stream */
+@keyframes water-stream-flow {
+    0% {
+        opacity: 0;
+        stroke-width: 0.3;
+        stroke: #1976d2;
+        stroke-dasharray: 0 500;
+        filter: drop-shadow(0 0 5px #03a9f4);
+    }
+    10% {
+        opacity: 0.8;
+        stroke-width: 2;
+        stroke: #03a9f4;
+        stroke-dasharray: 500 0;
+        filter: drop-shadow(0 0 30px #03a9f4)
+                drop-shadow(0 0 45px #00bcd4);
+    }
+    25% {
+        opacity: 1;
+        stroke-width: 2.5;
+        stroke: #00bcd4;
+        filter: drop-shadow(0 0 40px #03a9f4)
+                drop-shadow(0 0 60px #00bcd4)
+                drop-shadow(0 0 80px rgba(0, 188, 212, 0.5));
+    }
+    45% {
+        opacity: 0.7;
+        stroke-width: 1.8;
+        stroke: #03a9f4;
+        filter: drop-shadow(0 0 25px #03a9f4);
+    }
+    65% {
+        opacity: 0.3;
+        stroke-width: 1;
+        stroke: #1976d2;
+        filter: drop-shadow(0 0 10px #03a9f4);
+    }
+    100% {
+        opacity: 0;
+        stroke-width: 0.3;
+        filter: drop-shadow(0 0 0px #03a9f4);
+    }
+}
+
+/* Water splash impact effect */
+@keyframes water-splash {
+    0% {
+        transform: scale(0);
+        opacity: 1;
+    }
+    30% {
+        transform: scale(1.8);
+        opacity: 0.8;
+    }
+    60% {
+        transform: scale(3);
+        opacity: 0.3;
+    }
+    100% {
+        transform: scale(4);
+        opacity: 0;
+    }
+}
+
+/* ============================================================================
+   6. ICE ATTACK ANIMATIONS
+   ============================================================================ */
+
+/* Ice beam with crystalline effect */
+@keyframes ice-beam-freeze {
+    0% {
+        opacity: 0;
+        stroke-width: 0.2;
+        stroke: #b3e5fc;
+        stroke-dasharray: 0 400;
+        filter: drop-shadow(0 0 5px #b3e5fc);
+    }
+    12% {
+        opacity: 1;
+        stroke-width: 1.5;
+        stroke: #ffffff;
+        stroke-dasharray: 400 0;
+        filter: drop-shadow(0 0 35px #b3e5fc)
+                drop-shadow(0 0 50px #ffffff)
+                drop-shadow(0 0 70px rgba(179, 229, 252, 0.7));
+    }
+    30% {
+        opacity: 0.9;
+        stroke-width: 1.2;
+        stroke: #00e5ff;
+        filter: drop-shadow(0 0 30px #b3e5fc)
+                drop-shadow(0 0 45px #00e5ff);
+    }
+    50% {
+        opacity: 0.6;
+        stroke-width: 0.9;
+        stroke: #b3e5fc;
+        filter: drop-shadow(0 0 20px #b3e5fc);
+    }
+    75% {
+        opacity: 0.3;
+        stroke-width: 0.5;
+        filter: drop-shadow(0 0 10px #b3e5fc);
+    }
+    100% {
+        opacity: 0;
+        stroke-width: 0.2;
+        filter: drop-shadow(0 0 0px #b3e5fc);
+    }
+}
+
+/* Ice crystal burst */
+@keyframes ice-crystal-shatter {
+    0% {
+        transform: scale(0.5) rotate(0deg);
+        opacity: 1;
+    }
+    40% {
+        transform: scale(1.5) rotate(90deg);
+        opacity: 0.8;
+    }
+    70% {
+        transform: scale(2.5) rotate(180deg);
+        opacity: 0.4;
+    }
+    100% {
+        transform: scale(3.5) rotate(270deg);
+        opacity: 0;
+    }
+}
+
+/* Freeze effect on target */
+@keyframes freeze-target {
+    0% {
+        filter: brightness(1) hue-rotate(0deg);
+    }
+    50% {
+        filter: brightness(0.8) hue-rotate(180deg) saturate(0.7);
+    }
+    100% {
+        filter: brightness(1) hue-rotate(0deg);
+    }
+}
+
+/* ============================================================================
+   7. FLYING ATTACK ANIMATIONS
+   ============================================================================ */
+
+/* Air slash blade */
+@keyframes air-slash-cut {
+    0% {
+        opacity: 0;
+        stroke-width: 0.3;
+        stroke-dasharray: 0 300;
+        transform: translateX(-50px) scale(0.5);
+        filter: drop-shadow(0 0 5px #ffffff);
+    }
+    15% {
+        opacity: 1;
+        stroke-width: 1.8;
+        stroke-dasharray: 300 0;
+        transform: translateX(0) scale(1.2);
+        filter: drop-shadow(0 0 25px #ffffff)
+                drop-shadow(0 0 40px #00bcd4);
+    }
+    35% {
+        opacity: 0.8;
+        stroke-width: 1.5;
+        transform: translateX(30px) scale(1);
+        filter: drop-shadow(0 0 20px #ffffff);
+    }
+    60% {
+        opacity: 0.3;
+        stroke-width: 0.8;
+        transform: translateX(60px) scale(0.8);
+        filter: drop-shadow(0 0 10px #ffffff);
+    }
+    100% {
+        opacity: 0;
+        stroke-width: 0.3;
+        transform: translateX(100px) scale(0.5);
+        filter: drop-shadow(0 0 0px #ffffff);
+    }
+}
+
+/* Wind streak lines */
+@keyframes wind-streak {
+    0% {
+        opacity: 0;
+        stroke-dasharray: 0 200;
+        transform: translateX(0);
+    }
+    20% {
+        opacity: 0.7;
+        stroke-dasharray: 200 0;
+        transform: translateX(20px);
+    }
+    60% {
+        opacity: 0.3;
+        transform: translateX(50px);
+    }
+    100% {
+        opacity: 0;
+        transform: translateX(80px);
+    }
+}
+
+/* ============================================================================
+   8. GHOST ATTACK ANIMATIONS
+   ============================================================================ */
+
+/* Shadow ball with dark energy */
+@keyframes shadow-ball-travel {
+    0% {
+        opacity: 0;
+        transform: translate(0, 0) scale(0.3);
+        filter: drop-shadow(0 0 10px #9c27b0);
+    }
+    15% {
+        opacity: 1;
+        transform: translate(15%, 2%) scale(0.8);
+        filter: drop-shadow(0 0 35px #9c27b0)
+                drop-shadow(0 0 50px #1a1a1a);
+    }
+    30% {
+        opacity: 0.95;
+        transform: translate(30%, -1%) scale(1);
+        filter: drop-shadow(0 0 40px #9c27b0)
+                drop-shadow(0 0 60px #1a1a1a)
+                drop-shadow(0 0 80px rgba(156, 39, 176, 0.6));
+    }
+    50% {
+        opacity: 0.9;
+        transform: translate(50%, 1%) scale(1.1);
+        filter: drop-shadow(0 0 45px #9c27b0);
+    }
+    70% {
+        opacity: 0.85;
+        transform: translate(70%, -2%) scale(1);
+        filter: drop-shadow(0 0 35px #9c27b0);
+    }
+    90% {
+        opacity: 0.5;
+        transform: translate(90%, 0%) scale(0.8);
+        filter: drop-shadow(0 0 20px #9c27b0);
+    }
+    100% {
+        opacity: 0;
+        transform: translate(100%, 0%) scale(0.5);
+        filter: drop-shadow(0 0 0px #9c27b0);
+    }
+}
+
+/* Ghostly wisp trail */
+@keyframes ghost-wisp {
+    0% {
+        opacity: 0.8;
+        transform: scale(1) rotate(0deg);
+        filter: blur(2px);
+    }
+    50% {
+        opacity: 0.4;
+        transform: scale(1.5) rotate(180deg);
+        filter: blur(4px);
+    }
+    100% {
+        opacity: 0;
+        transform: scale(2) rotate(360deg);
+        filter: blur(6px);
+    }
+}
+
+/* Purple screen tint */
+@keyframes ghost-screen-tint {
+    0%, 100% {
+        background: rgba(156, 39, 176, 0);
+    }
+    50% {
+        background: rgba(156, 39, 176, 0.15);
+    }
+}
+
+/* ============================================================================
+   9. IMPACT EFFECTS
+   ============================================================================ */
+
+/* Radial explosion burst */
+@keyframes impact-explosion {
+    0% {
+        transform: scale(0);
+        opacity: 1;
+    }
+    30% {
+        transform: scale(1.5);
+        opacity: 0.9;
+    }
+    60% {
+        transform: scale(2.5);
+        opacity: 0.5;
+    }
+    100% {
+        transform: scale(4);
+        opacity: 0;
+    }
+}
+
+/* Screen shake for epic moments */
+@keyframes screen-shake {
+    0%, 100% {
+        transform: translate3d(0, 0, 0);
+    }
+    10% {
+        transform: translate3d(-8px, 4px, 0);
+    }
+    20% {
+        transform: translate3d(6px, -6px, 0);
+    }
+    30% {
+        transform: translate3d(-6px, 6px, 0);
+    }
+    40% {
+        transform: translate3d(8px, -4px, 0);
+    }
+    50% {
+        transform: translate3d(-4px, 8px, 0);
+    }
+    60% {
+        transform: translate3d(6px, -6px, 0);
+    }
+    70% {
+        transform: translate3d(-6px, 4px, 0);
+    }
+    80% {
+        transform: translate3d(4px, -6px, 0);
+    }
+    90% {
+        transform: translate3d(-3px, 3px, 0);
+    }
+}
+
+/* Hit flash on target */
+@keyframes hit-flash {
+    0%, 100% {
+        filter: brightness(1);
+    }
+    50% {
+        filter: brightness(2.5) saturate(0);
+    }
+}
+
+/* Knockback animation */
+@keyframes knockback {
+    0%, 100% {
+        transform: translate3d(0, 0, 0) rotate(0deg);
+    }
+    35% {
+        transform: translate3d(-20px, 0, 0) rotate(-4deg);
+    }
+    65% {
+        transform: translate3d(10px, 0, 0) rotate(2deg);
+    }
+}
+
+/* Knockback right (for right-side Pokemon) */
+@keyframes knockback-right {
+    0%, 100% {
+        transform: translate3d(0, 0, 0) rotate(0deg);
+    }
+    35% {
+        transform: translate3d(20px, 0, 0) rotate(4deg);
+    }
+    65% {
+        transform: translate3d(-10px, 0, 0) rotate(-2deg);
+    }
+}
+
+/* ============================================================================
+   10. POKEMON SPRITE REACTIONS
+   ============================================================================ */
+
+/* Attack thrust forward */
+@keyframes attack-thrust {
+    0%, 100% {
+        transform: translate3d(0, 0, 0);
+    }
+    25% {
+        transform: translate3d(-10px, 0, 0);
+    }
+    55% {
+        transform: translate3d(6px, 0, 0);
+    }
+}
+
+/* Attack thrust right (for right-side Pokemon) */
+@keyframes attack-thrust-right {
+    0%, 100% {
+        transform: translate3d(0, 0, 0);
+    }
+    25% {
+        transform: translate3d(10px, 0, 0);
+    }
+    55% {
+        transform: translate3d(-6px, 0, 0);
+    }
+}
+
+/* Electric crackle effect during charging */
+@keyframes electric-crackle {
+    0%, 100% {
+        filter: brightness(1.5) hue-rotate(0deg);
+    }
+    25% {
+        filter: brightness(1.8) hue-rotate(8deg);
+    }
+    50% {
+        filter: brightness(1.4) hue-rotate(-8deg);
+    }
+    75% {
+        filter: brightness(1.7) hue-rotate(5deg);
+    }
+}
+
+/* ============================================================================
+   11. UTILITY CLASSES FOR BATTLE STATES
+   ============================================================================ */
+
+/* Pokemon charging energy */
+.pokemon-battle[data-charging="true"].electric {
+    animation: energy-buildup-electric 0.5s ease-in-out, electric-crackle 0.5s steps(8);
+}
+
+.pokemon-battle[data-charging="true"].fire {
+    animation: energy-buildup-fire 0.5s ease-in-out;
+}
+
+.pokemon-battle[data-charging="true"].water {
+    animation: energy-buildup-water 0.5s ease-in-out;
+}
+
+.pokemon-battle[data-charging="true"].ice {
+    animation: energy-buildup-ice 0.5s ease-in-out;
+}
+
+.pokemon-battle[data-charging="true"].flying {
+    animation: energy-buildup-flying 0.5s ease-in-out;
+}
+
+.pokemon-battle[data-charging="true"].ghost {
+    animation: energy-buildup-ghost 0.5s ease-in-out;
+}
+
+/* Pokemon attacking (thrust forward) */
+.pokemon-battle[data-attacking="true"].left-side {
+    animation: attack-thrust 0.6s ease-out;
+}
+
+.pokemon-battle[data-attacking="true"].right-side {
+    animation: attack-thrust-right 0.6s ease-out;
+}
+
+/* Pokemon getting hit */
+.pokemon-battle[data-hit="true"] {
+    animation: hit-flash 0.3s ease-out, knockback 0.5s ease-out;
+}
+
+.pokemon-battle[data-hit="true"].right-side {
+    animation: hit-flash 0.3s ease-out, knockback-right 0.5s ease-out;
+}
+
+/* Pokemon hit by type-specific attack */
+.pokemon-battle[data-hit-by="fire"] {
+    filter: brightness(1.2) contrast(1.3) saturate(1.6);
+    animation: hit-flash 0.4s ease-out, knockback 0.5s ease-out;
+}
+
+.pokemon-battle[data-hit-by="water"] {
+    filter: brightness(0.85) saturate(1.4) hue-rotate(180deg);
+    animation: hit-flash 0.4s ease-out, knockback 0.5s ease-out;
+}
+
+.pokemon-battle[data-hit-by="ice"] {
+    animation: freeze-target 0.8s ease-out, knockback 0.5s ease-out;
+}
+
+/* Screen shake for Phase 6 epic finale */
+body.battle-mode[data-phase="6"] .hero-area {
+    animation: screen-shake 1.5s ease-in-out;
+}
+
+/* ============================================================================
+   12. PERFORMANCE OPTIMIZATIONS
+   ============================================================================ */
+
+/* Reduce animations when page not visible */
+body:not(.page-visible) .pokemon-battle,
+body:not(.page-visible) .battle-effects * {
+    animation-play-state: paused !important;
+}
+
+/* GPU acceleration for all animated elements */
+.pokemon-battle,
+.battle-effects path,
+.battle-effects circle,
+#battle-particle-canvas {
+    will-change: transform, opacity;
+    transform: translate3d(0, 0, 0);
+}
+
+/* ============================================================================
+   13. MOBILE & LOW-END DEVICE FALLBACKS
+   ============================================================================ */
+
+@media (max-width: 768px) {
+    /* Reduce glow intensity on mobile */
+    @keyframes electric-bolt-strike {
+        0%, 100% { opacity: 0; }
+        10% {
+            opacity: 1;
+            filter: drop-shadow(0 0 15px #ffeb3b);
+        }
+    }
+
+    @keyframes fire-stream-blast {
+        0%, 100% { opacity: 0; }
+        15% {
+            opacity: 1;
+            filter: drop-shadow(0 0 20px #ff6b00);
+        }
+    }
+
+    @keyframes water-stream-flow {
+        0%, 100% { opacity: 0; }
+        25% {
+            opacity: 1;
+            filter: drop-shadow(0 0 20px #03a9f4);
+        }
+    }
+
+    /* Reduce screen shake on mobile */
+    @keyframes screen-shake {
+        0%, 100% { transform: translate3d(0, 0, 0); }
+        50% { transform: translate3d(-4px, 4px, 0); }
+    }
+}
+
+/* Low-end device class added by JavaScript */
+.low-end-device .pokemon-battle[data-charging="true"] {
+    animation-duration: 0.3s !important;
+}
+
+.low-end-device .battle-effects path {
+    filter: none !important;
+    animation-duration: 0.8s !important;
+}
+
+/* ============================================================================
+   14. BATTLE BUTTON CONTROL
+   ============================================================================ */
+
+/* Only animate when battle-mode is active */
+body:not(.battle-mode) .battle-effects path,
+body:not(.battle-mode) .battle-effects circle {
+    opacity: 0 !important;
+    animation: none !important;
+}
+
+body:not(.battle-mode) .pokemon-battle {
+    animation: none !important;
+    filter: none !important;
+}
+
+/* Respect user's motion preferences only when battle mode is OFF */
+@media (prefers-reduced-motion: reduce) {
+    body:not(.battle-mode) * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+}
+
+/* Battle animations override motion preferences when battle mode is ON */
+body.battle-mode * {
+    /* Battle animations ignore OS motion preferences */
+}

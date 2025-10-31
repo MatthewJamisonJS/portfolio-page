@@ -1,0 +1,138 @@
+# Service pricing tiers
+tiers:
+  - name: "Starter"
+    slug: "starter"
+    price: "$2,500"
+    duration: "2-3 weeks"
+    description: "Perfect for small businesses and MVPs"
+    features:
+      - "Single page application"
+      - "Responsive design"
+      - "Basic SEO optimization"
+      - "Contact form integration"
+      - "1 month support"
+    highlighted: false
+
+  - name: "Professional"
+    slug: "professional"
+    price: "$5,500"
+    duration: "4-6 weeks"
+    description: "Ideal for growing businesses"
+    features:
+      - "Multi-page website"
+      - "Custom design system"
+      - "Advanced SEO & analytics"
+      - "CMS integration"
+      - "E-commerce ready"
+      - "3 months support"
+    highlighted: true
+
+  - name: "Enterprise"
+    slug: "enterprise"
+    price: "$12,000+"
+    duration: "8-12 weeks"
+    description: "For complex applications"
+    features:
+      - "Full-stack application"
+      - "Custom architecture"
+      - "API development"
+      - "Database design"
+      - "DevOps & deployment"
+      - "Performance optimization"
+      - "6 months support"
+    highlighted: false
+
+# Comparison table features
+comparison:
+  categories:
+    - name: "Project Scope"
+      features:
+        - name: "Pages/Components"
+          starter: "1-3 pages"
+          professional: "5-10 pages"
+          enterprise: "Unlimited"
+        - name: "Custom Design"
+          starter: false
+          professional: true
+          enterprise: true
+        - name: "Revisions Included"
+          starter: "2 rounds"
+          professional: "4 rounds"
+          enterprise: "Unlimited"
+
+    - name: "Development Features"
+      features:
+        - name: "Responsive Design"
+          starter: true
+          professional: true
+          enterprise: true
+        - name: "CMS Integration"
+          starter: false
+          professional: true
+          enterprise: true
+        - name: "E-commerce"
+          starter: false
+          professional: "Basic"
+          enterprise: "Advanced"
+        - name: "API Development"
+          starter: false
+          professional: false
+          enterprise: true
+        - name: "Database Design"
+          starter: false
+          professional: "Basic"
+          enterprise: "Advanced"
+
+    - name: "SEO & Performance"
+      features:
+        - name: "Basic SEO"
+          starter: true
+          professional: true
+          enterprise: true
+        - name: "Advanced SEO"
+          starter: false
+          professional: true
+          enterprise: true
+        - name: "Performance Optimization"
+          starter: false
+          professional: true
+          enterprise: true
+        - name: "Analytics Integration"
+          starter: false
+          professional: true
+          enterprise: true
+
+    - name: "Support & Maintenance"
+      features:
+        - name: "Post-Launch Support"
+          starter: "1 month"
+          professional: "3 months"
+          enterprise: "6 months"
+        - name: "Priority Support"
+          starter: false
+          professional: true
+          enterprise: true
+        - name: "Emergency Fixes"
+          starter: false
+          professional: false
+          enterprise: true
+
+# FAQ content
+faq:
+  - question: "How long does a typical project take?"
+    answer: "Project timelines vary based on scope and complexity. Starter packages typically take 2-3 weeks, Professional packages 4-6 weeks, and Enterprise projects 8-12 weeks. I provide detailed timelines during the consultation phase and maintain regular communication throughout development."
+
+  - question: "What's included in post-launch support?"
+    answer: "Post-launch support includes bug fixes, minor content updates, and technical assistance. The duration varies by package: 1 month for Starter, 3 months for Professional, and 6 months for Enterprise. Extended support packages are available for purchase."
+
+  - question: "Do you offer payment plans?"
+    answer: "Yes! I offer flexible payment structures. Typically, projects are split into milestones: 30% upfront, 40% at midpoint, and 30% upon completion. For Enterprise projects, we can arrange custom payment schedules that align with your budget and project phases."
+
+  - question: "Can I upgrade my package later?"
+    answer: "Absolutely! Many clients start with a Starter or Professional package and upgrade as their needs grow. I design all projects with scalability in mind, making it easy to add features and functionality down the road without rebuilding from scratch."
+
+  - question: "What technologies do you use?"
+    answer: "I specialize in modern web technologies including React, Next.js, Hugo, Tailwind CSS, Node.js, and various headless CMS platforms. Technology choices are always tailored to your specific needs, ensuring optimal performance, maintainability, and scalability."
+
+  - question: "Do you provide hosting and domain services?"
+    answer: "While I don't directly provide hosting, I can guide you through selecting the best hosting solution for your needs and handle the entire deployment process. I work with platforms like Vercel, Netlify, AWS, and traditional hosting providers to ensure your site is fast, secure, and reliable."

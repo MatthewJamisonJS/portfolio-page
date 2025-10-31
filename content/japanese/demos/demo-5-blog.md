@@ -2,6 +2,9 @@
 title: "ブログ・マガジン"
 date: 2025-10-29
 draft: false
+build:
+  list: always
+  render: never
 demo_url: "https://demo-blog-a03.pages.dev"
 github_url: "https://github.com/MatthewJamisonJS/demo-blog"
 theme_name: "Parsa"

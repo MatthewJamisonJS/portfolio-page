@@ -22,7 +22,7 @@
 	<link rel="stylesheet" href="{{ $styles.Permalink }}" media="screen">
 
 	{{"<!-- Custom stylesheet - for your changes -->" |safeHTML}}
-	{{ $custom := resources.Get "css/custom.css" | minify }}
+	{{ $custom := resources.Get "css/custom.css" | minify | fingerprint }}
   <link rel="stylesheet" href="{{ $custom.Permalink }}" media="screen">
 
 	{{ "<!--Favicon-->" | safeHTML }}

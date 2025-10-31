@@ -151,9 +151,12 @@ jQuery(function ($) {
 		// Check for stored preference
 		const storedPreference = localStorage.getItem('battle-mode');
 
-		// DEFAULT TO OFF - User must opt-in to see animations (WCAG 2.2.2 compliant)
-		// This provides the safest, most accessible experience by default
-		let battleModeEnabled = storedPreference === 'enabled' ? true : false;
+		// DEFAULT TO ON for desktop, OFF for mobile (WCAG 2.2.2 compliant)
+		// Desktop users get the full experience, mobile users get cleaner UI
+		const isDesktop = window.innerWidth > 768;
+		let battleModeEnabled = storedPreference === 'enabled' ? true :
+		                        storedPreference === 'disabled' ? false :
+		                        isDesktop; // Default ON for desktop, OFF for mobile
 
 		// Create the EPIC battle toggle button
 		const battleToggle = $('<button>', {
@@ -171,7 +174,13 @@ jQuery(function ($) {
 		updateButtonState();
 
 		// Add button to page
+		// Only show Battle button on homepage
+	const isHomepage = window.location.pathname === '/' ||
+	                   window.location.pathname.match(/^\/(en|es|ja|fr|de)\/?$/);
+
+	if (isHomepage) {
 		$('body').append(battleToggle);
+	}
 
 		// Toggle function
 		function toggleBattleMode() {
@@ -226,6 +235,86 @@ jQuery(function ($) {
 		// Console message for developers
 		console.log('⚔️ EPIC BATTLE MODE: ' + (battleModeEnabled ? 'ENABLED' : 'DISABLED'));
 		console.log('Click the button at bottom left to toggle Pokemon animations!');
+	})();
+
+	/* ========================================================================= */
+	/*	Pricing CTA Handler - Smooth service tier pre-fill
+	/* ========================================================================= */
+
+	(function initPricingCTAs() {
+		// Handle pricing CTA button clicks with visual feedback
+		$(document).on('click', '.pricing-cta-btn', function(e) {
+			e.preventDefault();
+			var $btn = $(this);
+			var serviceTier = $btn.attr('data-service');
+			var targetHref = $btn.attr('href');
+
+			if (serviceTier) {
+				// Visual feedback - button pulse
+				$btn.addClass('cta-clicked');
+				setTimeout(function() {
+					$btn.removeClass('cta-clicked');
+				}, 600);
+
+				// Store service tier in sessionStorage
+				sessionStorage.setItem('selectedService', serviceTier);
+				console.log('💼 Service tier selected: ' + serviceTier);
+			}
+
+			// Smooth scroll to contact section if hash present
+			if (targetHref && targetHref.includes('#contact')) {
+				var $contactSection = $('#contact');
+				if ($contactSection.length) {
+					$('html, body').animate({
+						scrollTop: $contactSection.offset().top - 50
+					}, 800, 'easeInOutExpo');
+				}
+			}
+		});
+
+		// Pre-fill contact form subject on page load with animation
+		$(window).on('load', function() {
+			var selectedService = sessionStorage.getItem('selectedService');
+			if (selectedService) {
+				var $subjectField = $('#subject');
+				var $serviceField = $('#service-tier');
+
+				if ($subjectField.length) {
+					// Small delay for smooth appearance
+					setTimeout(function() {
+						// Pre-fill subject with [Service Tier] prefix (editable)
+						var prefixedValue = '[' + selectedService + '] ';
+						$subjectField.val(prefixedValue);
+
+						// Pre-fill hidden service field (locked, not editable)
+						if ($serviceField.length) {
+							$serviceField.val(selectedService);
+							console.log('🔒 Hidden service field locked: ' + selectedService);
+						}
+
+						// Add animation class for cyan glow effect
+						$subjectField.addClass('field-prefilled');
+
+						// Focus field and position cursor at end
+						$subjectField.focus();
+						var fieldLength = prefixedValue.length;
+						$subjectField[0].setSelectionRange(fieldLength, fieldLength);
+
+						console.log('📋 Contact form pre-filled with: ' + prefixedValue);
+
+						// Remove animation class after animation completes
+						setTimeout(function() {
+							$subjectField.removeClass('field-prefilled');
+						}, 1500);
+
+						// Clear sessionStorage after use
+						sessionStorage.removeItem('selectedService');
+					}, 300);
+				}
+			}
+		});
+
+		console.log('💼 Pricing CTA handler initialized');
 	})();
 
 });

@@ -43,6 +43,8 @@
 						<label for="message" class="sr-only">{{ .message }}</label>
 						<textarea rows="6" placeholder="{{ .message }}" class="form-control" name="message" id="message" aria-label="{{ .message }}" required></textarea>
 					</div>
+					<!-- Hidden field for service tier (populated by JavaScript) -->
+					<input type="hidden" name="service" id="service-tier" value="">
 					<div id="cf-submit">
 						<button type="submit" id="contact-submit" class="btn btn-transparent btn-block"
 							value="{{ .submit }}">{{ .submit }}</button>

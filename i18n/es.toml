@@ -27,3 +27,317 @@ other = "Proyectos Recientes"
 
 [view_github]
 other = "Ver GitHub"
+
+# Servicios/Página de Precios - Traducciones
+
+# Sección Hero
+[pricing_hero_title]
+other = "Hagamos Equipo Para Tu Éxito"
+
+[pricing_hero_subtitle]
+other = "Sin agencias. Sin intermediarios. Sin sorpresas. Solo un empresario ayudando a otro—porque tu éxito es mi negocio."
+
+[pricing_pain_intro]
+other = "El modelo de agencia está roto:"
+
+[pricing_pain_1]
+other = "60% de las reseñas negativas citan fallas de comunicación"
+
+[pricing_pain_2]
+other = "40% de los proyectos pierden plazos por completo"
+
+[pricing_pain_3]
+other = "Los proyectos cuestan 189% de las estimaciones originales en promedio"
+
+[pricing_transition]
+other = "Construí mi práctica de manera diferente."
+
+# Sección de Diferenciadores
+[pricing_differentiators_title]
+other = "Qué Hace Esto Diferente"
+
+[pricing_differentiators_subtitle]
+other = "Cinco principios que guían cada asociación"
+
+[diff_1_title]
+other = "Acceso Directo al Desarrollador"
+
+[diff_1_desc]
+other = "Hablas con la persona que construye tu sitio—sin intermediarios de gestión de proyectos"
+
+[diff_2_title]
+other = "Entrega Rápida"
+
+[diff_2_desc]
+other = "Lanzamiento en 2-3 semanas—no 3-6 meses de espera"
+
+[diff_3_title]
+other = "Precio Fijo, Cero Sorpresas"
+
+[diff_3_desc]
+other = "Lo que ves es lo que pagas—sin relleno de tarifas por hora o facturas por cambios de alcance"
+
+[diff_4_title]
+other = "Capacitación + Soporte Incluido"
+
+[diff_4_desc]
+other = "Nunca abandonado después del lanzamiento—tú posees tu sitio y sabes cómo ejecutarlo"
+
+[diff_5_title]
+other = "Asociación Enfocada en el Negocio"
+
+[diff_5_desc]
+other = "Me importan tus ingresos, no los premios—cada decisión medida por ROI"
+
+# Sección de Niveles de Precios
+[pricing_tiers_title]
+other = "Paquetes de Servicios"
+
+[pricing_tiers_subtitle]
+other = "Elige el nivel adecuado de asociación para tu negocio"
+
+# Nivel 1 - Fundación
+[tier_1_name]
+other = "Servicio Fundación"
+
+[tier_1_tagline]
+other = "Para empresas que establecen su presencia web"
+
+[tier_1_feat_1]
+other = "Rendimiento rápido y confiable (puntuaciones Lighthouse 98+)"
+
+[tier_1_feat_2]
+other = "Funciona perfectamente en todos los dispositivos"
+
+[tier_1_feat_3]
+other = "Amigable para motores de búsqueda"
+
+[tier_1_feat_4]
+other = "Capacitación para que controles las actualizaciones tú mismo"
+
+[tier_1_feat_5]
+other = "Entrega en 2-3 semanas"
+
+[tier_1_perfect]
+other = "Lanzar tu negocio en línea, reemplazar sitios obsoletos, establecer presencia profesional"
+
+# Nivel 2 - Presencia Completa
+[tier_2_name]
+other = "Presencia Completa"
+
+[tier_2_tagline]
+other = "Para empresas que alcanzan mercados más amplios"
+
+[tier_2_feat_0]
+other = "Todo en Servicio Fundación"
+
+[tier_2_feat_1]
+other = "Soporte multilingüe en 5 idiomas (EN, ES, FR, JA, DE)"
+
+[tier_2_feat_2]
+other = "Cumplimiento de accesibilidad WCAG AA"
+
+[tier_2_feat_3]
+other = "Análisis y seguimiento de conversiones"
+
+[tier_2_feat_4]
+other = "Soporte post-lanzamiento de 30 días"
+
+[tier_2_feat_5]
+other = "2 sesiones de capacitación completas"
+
+[tier_2_perfect]
+other = "Mercados internacionales, clientes multilingües, cumplimiento de accesibilidad, llegar a todos los que te necesitan"
+
+# Nivel 3 - Asociación
+[tier_3_name]
+other = "Servicio de Asociación"
+
+[tier_3_tagline]
+other = "Para empresas comprometidas con el crecimiento continuo"
+
+[tier_3_feat_0]
+other = "Todo en Presencia Completa"
+
+[tier_3_feat_1]
+other = "Revisiones de optimización trimestrales"
+
+[tier_3_feat_2]
+other = "Soporte prioritario (respuesta en 24 horas)"
+
+[tier_3_feat_3]
+other = "Mejoras continuas de rendimiento"
+
+[tier_3_feat_4]
+other = "Optimización de conversión personalizada"
+
+[tier_3_feat_5]
+other = "Capacitación ilimitada según sea necesario"
+
+[tier_3_feat_6]
+other = "Asociación técnica a largo plazo"
+
+[tier_3_perfect]
+other = "Empresas en crecimiento, necesidades en evolución, conversiones críticas, asociaciones de éxito a largo plazo"
+
+# Elementos Comunes de Niveles
+[most_popular]
+other = "Más Popular"
+
+[what_you_get]
+other = "Lo Que Obtienes"
+
+[perfect_for]
+other = "Perfecto Para"
+
+# Botones CTA
+[get_started]
+other = "Comenzar"
+
+[start_growing]
+other = "Comenzar a Crecer"
+
+[lets_partner]
+other = "Hagamos Equipo"
+
+[schedule_call]
+other = "Programar Llamada de 15 Minutos"
+
+# Sección de Preocupaciones sobre Precios
+[pricing_concerns_title]
+other = "¿Preocupaciones sobre el Precio?"
+
+[pricing_concerns_text]
+other = "Estos números reflejan la calidad y el cuidado que aporto a cada asociación. Si están fuera de tu presupuesto, comunícate de todos modos—tengamos una conversación honesta sobre tu situación y objetivos."
+
+[pricing_concerns_cta]
+other = "Hablemos sobre tus necesidades →"
+
+# Sección de Tabla de Comparación
+[comparison_title]
+other = "Cómo Soy Diferente"
+
+[comparison_subtitle]
+other = "Ve la diferencia entre las agencias típicas y mi enfoque"
+
+[typical_agency]
+other = "Agencia Típica"
+
+[how_i_serve]
+other = "Cómo Te Sirvo"
+
+[comp_communication]
+other = "Comunicación"
+
+[comp_comm_agency_1]
+other = "Respuesta en 2-5 días hábiles"
+
+[comp_comm_agency_2]
+other = "Hablas con el gerente de proyecto"
+
+[comp_comm_me_1]
+other = "El mismo día (a menudo horas)"
+
+[comp_comm_me_2]
+other = "Hablas con el desarrollador real"
+
+[comp_timeline]
+other = "Cronograma"
+
+[comp_time_agency_1]
+other = "8-12 semanas típico"
+
+[comp_time_agency_2]
+other = "40% pierden plazos"
+
+[comp_time_me_1]
+other = "2-3 semanas garantizadas"
+
+[comp_time_me_2]
+other = "A tiempo o reembolso"
+
+[comp_pricing]
+other = "Precios"
+
+[comp_price_agency_1]
+other = "189% de la estimación original"
+
+[comp_price_agency_2]
+other = "Cambios a $150-300/hora"
+
+[comp_price_me_1]
+other = "Precio fijo, cero sorpresas"
+
+[comp_price_me_2]
+other = "Cambios discutidos por adelantado"
+
+[comp_postlaunch]
+other = "Post-Lanzamiento"
+
+[comp_post_agency_1]
+other = "Capacitación cuesta extra"
+
+[comp_post_agency_2]
+other = "Retención de $500/mes"
+
+[comp_post_me_1]
+other = "Capacitación incluida"
+
+[comp_post_me_2]
+other = "Lo posees, tú lo ejecutas"
+
+# Sección FAQ
+[faq_title]
+other = "Preguntas Frecuentes"
+
+[faq_subtitle]
+other = "Respuestas claras a preguntas comunes"
+
+[faq_1_q]
+other = "¿Cómo elijo el servicio correcto?"
+
+[faq_1_a]
+other = "Hablemos durante 15 minutos. Preguntaré sobre tus objetivos y recomendaré honestamente—incluso si eso significa que no soy la opción correcta."
+
+[faq_2_q]
+other = "¿Qué pasa si no soy técnico?"
+
+[faq_2_a]
+other = "Por eso la capacitación está incluida. Explico todo en español sencillo y me aseguro de que tengas confianza antes de terminar."
+
+[faq_3_q]
+other = "¿Qué pasa con los cambios después del lanzamiento?"
+
+[faq_3_a]
+other = "La capacitación cubre la mayoría de las actualizaciones que necesitarás. Para cambios más grandes, discutiremos el alcance y los precios de manera transparente antes de comenzar."
+
+[faq_4_q]
+other = "¿Por qué no contratar una agencia?"
+
+[faq_4_a]
+other = "Sin gastos generales significa costos más bajos. Acceso directo significa comunicación más rápida. Una persona genuinamente invertida en tu éxito."
+
+[faq_5_q]
+other = "¿Qué pasa si mi presupuesto es ajustado?"
+
+[faq_5_a]
+other = "Comunícate de todos modos. A veces podemos dividir el trabajo en fases, ajustar el alcance o encontrar soluciones creativas que funcionen para donde estás ahora."
+
+# Sección CTA Final
+[final_cta_title]
+other = "¿Listo Para Comenzar?"
+
+[final_cta_subtitle]
+other = "El mejor siguiente paso es una conversación—sin discurso de ventas, sin presión. Solo yo escuchando tus objetivos comerciales y ofreciendo orientación honesta."
+
+[or_contact_form]
+other = "O usa el"
+
+[contact_form_link]
+other = "formulario de contacto a continuación"
+
+[see_examples]
+other = "¿Curioso sobre qué es posible?"
+
+[view_demos]
+other = "Ver Todas las Demostraciones →"

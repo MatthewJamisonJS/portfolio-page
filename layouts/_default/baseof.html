@@ -3,11 +3,10 @@
 {{ partial "head.html" . }}
 
 <body id="body" data-spy="scroll" data-target=".navbar" data-offset="55">
-  <!-- Skip to main content link for accessibility (WCAG 2.4.1) -->
   <a href="#main-content" class="skip-to-content">Skip to main content</a>
-
   <div id="content">
     {{ partial "preloader.html" . }}
+    {{ partial "navigation.html" . }}
     <main id="main-content">
       {{- block "main" . }}{{- end }}
     </main>

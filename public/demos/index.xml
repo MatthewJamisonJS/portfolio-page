@@ -1,15 +1,61 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Demos on Matthew Jamison - Full-Stack Developer</title><link>/demos/</link><description>Recent content in Demos on Matthew Jamison - Full-Stack Developer</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Wed, 29 Oct 2025 00:00:00 -0500</lastBuildDate><atom:link href="/demos/index.xml" rel="self" type="application/rss+xml"/><item><title>Agency/Services Site</title><link>/demos/demo-1-agency/</link><pubDate>Wed, 29 Oct 2025 00:00:00 -0500</pubDate><guid>/demos/demo-1-agency/</guid><description>&lt;h2 id="business-context"&gt;Business Context&lt;/h2&gt;
-&lt;p&gt;&lt;strong&gt;Challenge&lt;/strong&gt;: Slow WordPress site costing $500/mo in hosting, poor mobile performance&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Solution&lt;/strong&gt;: Hugo static site + Tailwind CSS + Cloudflare Pages + Full i18n support&lt;/p&gt;</description></item><item><title>App Landing Page</title><link>/demos/demo-7-app/</link><pubDate>Wed, 29 Oct 2025 00:00:00 -0500</pubDate><guid>/demos/demo-7-app/</guid><description>&lt;h2 id="business-context"&gt;Business Context&lt;/h2&gt;
-&lt;p&gt;&lt;strong&gt;Challenge&lt;/strong&gt;: Mobile app needs fast landing page with app store badges, multi-language&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Solution&lt;/strong&gt;: Hugo static site + Tailwind CSS + Cloudflare Pages + Full i18n support&lt;/p&gt;</description></item><item><title>Blog/Magazine</title><link>/demos/demo-5-blog/</link><pubDate>Wed, 29 Oct 2025 00:00:00 -0500</pubDate><guid>/demos/demo-5-blog/</guid><description>&lt;h2 id="business-context"&gt;Business Context&lt;/h2&gt;
-&lt;p&gt;&lt;strong&gt;Challenge&lt;/strong&gt;: Content site drowning in WordPress plugins, slow page loads hurting SEO&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Solution&lt;/strong&gt;: Hugo static site + Tailwind CSS + Cloudflare Pages + Full i18n support&lt;/p&gt;</description></item><item><title>E-commerce Store</title><link>/demos/demo-3-ecommerce/</link><pubDate>Wed, 29 Oct 2025 00:00:00 -0500</pubDate><guid>/demos/demo-3-ecommerce/</guid><description>&lt;h2 id="business-context"&gt;Business Context&lt;/h2&gt;
-&lt;p&gt;&lt;strong&gt;Challenge&lt;/strong&gt;: International expansion blocked by lack of multilingual support&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Solution&lt;/strong&gt;: Hugo static site + Tailwind CSS + Cloudflare Pages + Full i18n support&lt;/p&gt;</description></item><item><title>Portfolio/Creative</title><link>/demos/demo-4-portfolio/</link><pubDate>Wed, 29 Oct 2025 00:00:00 -0500</pubDate><guid>/demos/demo-4-portfolio/</guid><description>&lt;h2 id="business-context"&gt;Business Context&lt;/h2&gt;
-&lt;p&gt;&lt;strong&gt;Challenge&lt;/strong&gt;: Designer needs showcase site that loads instantly, works everywhere&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Solution&lt;/strong&gt;: Hugo static site + Tailwind CSS + Cloudflare Pages + Full i18n support&lt;/p&gt;</description></item><item><title>Restaurant/Food</title><link>/demos/demo-6-restaurant/</link><pubDate>Wed, 29 Oct 2025 00:00:00 -0500</pubDate><guid>/demos/demo-6-restaurant/</guid><description>&lt;h2 id="business-context"&gt;Business Context&lt;/h2&gt;
-&lt;p&gt;&lt;strong&gt;Challenge&lt;/strong&gt;: Local restaurant needs multilingual menu site for tourist customers&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Solution&lt;/strong&gt;: Hugo static site + Tailwind CSS + Cloudflare Pages + Full i18n support&lt;/p&gt;</description></item><item><title>SaaS Landing Page</title><link>/demos/demo-2-saas/</link><pubDate>Wed, 29 Oct 2025 00:00:00 -0500</pubDate><guid>/demos/demo-2-saas/</guid><description>&lt;h2 id="business-context"&gt;Business Context&lt;/h2&gt;
-&lt;p&gt;&lt;strong&gt;Challenge&lt;/strong&gt;: Need fast landing page for product launch, must support multiple markets&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Solution&lt;/strong&gt;: Hugo static site + Tailwind CSS + Cloudflare Pages + Full i18n support&lt;/p&gt;</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Demos on Matthew Jamison - Full-Stack Developer</title>
+    <link>http://localhost:1313/demos/</link>
+    <description>Recent content in Demos on Matthew Jamison - Full-Stack Developer</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 29 Oct 2025 00:00:00 -0500</lastBuildDate>
+    <atom:link href="http://localhost:1313/demos/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Agency/Services Site</title>
+      <link></link>
+      <pubDate>Wed, 29 Oct 2025 00:00:00 -0500</pubDate>
+      <guid></guid>
+      <description>&lt;h2 id=&#34;business-context&#34;&gt;Business Context&lt;/h2&gt;&#xA;&lt;p&gt;&lt;strong&gt;Challenge&lt;/strong&gt;: Slow WordPress site costing $500/mo in hosting, poor mobile performance&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Solution&lt;/strong&gt;: Hugo static site + Tailwind CSS + Cloudflare Pages + Full i18n support&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>App Landing Page</title>
+      <link></link>
+      <pubDate>Wed, 29 Oct 2025 00:00:00 -0500</pubDate>
+      <guid></guid>
+      <description>&lt;h2 id=&#34;business-context&#34;&gt;Business Context&lt;/h2&gt;&#xA;&lt;p&gt;&lt;strong&gt;Challenge&lt;/strong&gt;: Mobile app needs fast landing page with app store badges, multi-language&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Solution&lt;/strong&gt;: Hugo static site + Tailwind CSS + Cloudflare Pages + Full i18n support&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Blog/Magazine</title>
+      <link></link>
+      <pubDate>Wed, 29 Oct 2025 00:00:00 -0500</pubDate>
+      <guid></guid>
+      <description>&lt;h2 id=&#34;business-context&#34;&gt;Business Context&lt;/h2&gt;&#xA;&lt;p&gt;&lt;strong&gt;Challenge&lt;/strong&gt;: Content site drowning in WordPress plugins, slow page loads hurting SEO&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Solution&lt;/strong&gt;: Hugo static site + Tailwind CSS + Cloudflare Pages + Full i18n support&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>E-commerce Store</title>
+      <link></link>
+      <pubDate>Wed, 29 Oct 2025 00:00:00 -0500</pubDate>
+      <guid></guid>
+      <description>&lt;h2 id=&#34;business-context&#34;&gt;Business Context&lt;/h2&gt;&#xA;&lt;p&gt;&lt;strong&gt;Challenge&lt;/strong&gt;: International expansion blocked by lack of multilingual support&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Solution&lt;/strong&gt;: Hugo static site + Tailwind CSS + Cloudflare Pages + Full i18n support&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Portfolio/Creative</title>
+      <link></link>
+      <pubDate>Wed, 29 Oct 2025 00:00:00 -0500</pubDate>
+      <guid></guid>
+      <description>&lt;h2 id=&#34;business-context&#34;&gt;Business Context&lt;/h2&gt;&#xA;&lt;p&gt;&lt;strong&gt;Challenge&lt;/strong&gt;: Designer needs showcase site that loads instantly, works everywhere&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Solution&lt;/strong&gt;: Hugo static site + Tailwind CSS + Cloudflare Pages + Full i18n support&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Restaurant/Food</title>
+      <link></link>
+      <pubDate>Wed, 29 Oct 2025 00:00:00 -0500</pubDate>
+      <guid></guid>
+      <description>&lt;h2 id=&#34;business-context&#34;&gt;Business Context&lt;/h2&gt;&#xA;&lt;p&gt;&lt;strong&gt;Challenge&lt;/strong&gt;: Local restaurant needs multilingual menu site for tourist customers&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Solution&lt;/strong&gt;: Hugo static site + Tailwind CSS + Cloudflare Pages + Full i18n support&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>SaaS Landing Page</title>
+      <link></link>
+      <pubDate>Wed, 29 Oct 2025 00:00:00 -0500</pubDate>
+      <guid></guid>
+      <description>&lt;h2 id=&#34;business-context&#34;&gt;Business Context&lt;/h2&gt;&#xA;&lt;p&gt;&lt;strong&gt;Challenge&lt;/strong&gt;: Need fast landing page for product launch, must support multiple markets&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Solution&lt;/strong&gt;: Hugo static site + Tailwind CSS + Cloudflare Pages + Full i18n support&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

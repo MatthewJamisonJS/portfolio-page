@@ -2,6 +2,7 @@
 title: "Servicios"
 date: 2025-10-31
 draft: false
+type: "services"
 description: "Dando vida a tu negocio en línea. Desarrollo web centrado en el cliente, enfocado en tu éxito."
 ---
 

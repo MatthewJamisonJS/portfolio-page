@@ -9,5 +9,5 @@ banner:
   button:
     enable: true
     label: "Start Your Project"
-    link: "#demos"
+    link: "/services/"
 ---

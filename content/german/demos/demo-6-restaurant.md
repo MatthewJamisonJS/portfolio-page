@@ -2,6 +2,9 @@
 title: "Restaurant/Gastronomie"
 date: 2025-10-29
 draft: false
+build:
+  list: always
+  render: never
 demo_url: "https://demo-restaurant-4az.pages.dev"
 github_url: "https://github.com/MatthewJamisonJS/demo-restaurant"
 theme_name: "Restaurant"

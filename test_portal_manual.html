@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal Animation Test</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+        }
+
+        .test-container {
+            text-align: center;
+            color: white;
+        }
+
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 2rem;
+        }
+
+        #test-btn {
+            padding: 20px 50px;
+            font-size: 1.5rem;
+            background: #fff;
+            color: #764ba2;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+            transition: transform 0.2s;
+        }
+
+        #test-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.4);
+        }
+
+        /* Portal overlay container - FULL SCREEN */
+        .portal-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            pointer-events: none;
+            z-index: 999999;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: rgba(0, 0, 0, 0);
+            animation: portal-bg-darken 2.8s ease-out forwards;
+        }
+
+        /* Portal center point - starts at button position */
+        .portal-center {
+            position: absolute;
+            width: 400px;
+            height: 400px;
+            transform-origin: center center;
+        }
+
+        /* Multiple rotating rings for depth */
+        .portal-ring {
+            position: absolute;
+            border-radius: 50%;
+            border-style: solid;
+        }
+
+        /* Outer ring */
+        .portal-ring-1 {
+            width: 400px;
+            height: 400px;
+            border: 4px solid rgba(0, 188, 212, 0.8);
+            box-shadow: 0 0 40px rgba(0, 188, 212, 0.6),
+                        inset 0 0 40px rgba(0, 188, 212, 0.4);
+            animation: portal-ring-spin-1 2.8s linear forwards;
+        }
+
+        /* Middle ring */
+        .portal-ring-2 {
+            width: 280px;
+            height: 280px;
+            top: 60px;
+            left: 60px;
+            border: 6px solid rgba(156, 39, 176, 0.9);
+            box-shadow: 0 0 60px rgba(156, 39, 176, 0.7),
+                        inset 0 0 60px rgba(156, 39, 176, 0.5);
+            animation: portal-ring-spin-2 2.8s linear forwards;
+        }
+
+        /* Inner ring */
+        .portal-ring-3 {
+            width: 220px;
+            height: 220px;
+            top: 90px;
+            left: 90px;
+            border: 7px solid rgba(233, 30, 99, 0.95);
+            box-shadow: 0 0 80px rgba(233, 30, 99, 0.8),
+                        inset 0 0 80px rgba(233, 30, 99, 0.6);
+            animation: portal-ring-spin-3 2.8s linear forwards;
+        }
+
+        /* Extra ring 4 - orange */
+        .portal-ring-4 {
+            width: 160px;
+            height: 160px;
+            top: 120px;
+            left: 120px;
+            border: 9px solid rgba(255, 152, 0, 0.98);
+            box-shadow: 0 0 100px rgba(255, 152, 0, 0.85),
+                        inset 0 0 100px rgba(255, 152, 0, 0.7);
+            animation: portal-ring-spin-4 2.8s linear forwards;
+        }
+
+        /* Extra ring 5 - yellow */
+        .portal-ring-5 {
+            width: 100px;
+            height: 100px;
+            top: 150px;
+            left: 150px;
+            border: 10px solid rgba(255, 235, 59, 1);
+            box-shadow: 0 0 120px rgba(255, 235, 59, 0.9),
+                        inset 0 0 120px rgba(255, 235, 59, 0.8);
+            animation: portal-ring-spin-5 2.8s linear forwards;
+        }
+
+        /* Core vortex */
+        .portal-core {
+            position: absolute;
+            width: 80px;
+            height: 80px;
+            top: 160px;
+            left: 160px;
+            border-radius: 50%;
+            background: radial-gradient(circle,
+                #ffffff 0%,
+                #ff1744 30%,
+                #e91e63 60%,
+                #9c27b0 100%
+            );
+            box-shadow: 0 0 100px #ff1744,
+                        0 0 200px #9c27b0,
+                        inset 0 0 50px #ffffff;
+            animation: portal-core-pulse 2.8s ease-in-out forwards;
+        }
+
+        /* Background darkening */
+        @keyframes portal-bg-darken {
+            0% {
+                background: rgba(0, 0, 0, 0);
+            }
+            30% {
+                background: rgba(0, 0, 0, 0.3);
+            }
+            70% {
+                background: rgba(0, 0, 0, 0.7);
+            }
+            100% {
+                background: rgba(0, 0, 0, 0.95);
+            }
+        }
+
+        /* Ring animations - counter-rotating for vortex effect */
+        @keyframes portal-ring-spin-1 {
+            0% {
+                transform: scale(0.1) rotate(0deg);
+                opacity: 0;
+            }
+            10% {
+                opacity: 1;
+            }
+            100% {
+                transform: scale(5) rotate(720deg);
+                opacity: 0;
+            }
+        }
+
+        @keyframes portal-ring-spin-2 {
+            0% {
+                transform: scale(0.1) rotate(0deg);
+                opacity: 0;
+            }
+            15% {
+                opacity: 1;
+            }
+            100% {
+                transform: scale(7) rotate(-540deg);
+                opacity: 0;
+            }
+        }
+
+        @keyframes portal-ring-spin-3 {
+            0% {
+                transform: scale(0.1) rotate(0deg);
+                opacity: 0;
+            }
+            20% {
+                opacity: 1;
+            }
+            100% {
+                transform: scale(9) rotate(900deg);
+                opacity: 0;
+            }
+        }
+
+        @keyframes portal-ring-spin-4 {
+            0% {
+                transform: scale(0.1) rotate(0deg);
+                opacity: 0;
+            }
+            25% {
+                opacity: 1;
+            }
+            100% {
+                transform: scale(11) rotate(-720deg);
+                opacity: 0;
+            }
+        }
+
+        @keyframes portal-ring-spin-5 {
+            0% {
+                transform: scale(0.1) rotate(0deg);
+                opacity: 0;
+            }
+            30% {
+                opacity: 1;
+            }
+            100% {
+                transform: scale(13) rotate(1080deg);
+                opacity: 0;
+            }
+        }
+
+        /* Core pulsing and expanding */
+        @keyframes portal-core-pulse {
+            0% {
+                transform: scale(0.5);
+                opacity: 1;
+            }
+            25% {
+                transform: scale(1.2);
+                opacity: 1;
+            }
+            50% {
+                transform: scale(0.9);
+                opacity: 1;
+            }
+            75% {
+                transform: scale(1.5);
+                opacity: 1;
+            }
+            100% {
+                transform: scale(15);
+                opacity: 0;
+            }
+        }
+
+        .instructions {
+            margin-top: 2rem;
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+    </style>
+</head>
+<body>
+    <div class="test-container">
+        <h1>🌀 Portal Animation Test</h1>
+        <button id="test-btn">Click Me!</button>
+        <p class="instructions">Watch for multi-layer rotating portal effect</p>
+    </div>
+
+    <script>
+        document.getElementById('test-btn').addEventListener('click', function(e) {
+            console.log('🎯 Button clicked! Starting portal animation');
+
+            // Get button position
+            const rect = this.getBoundingClientRect();
+            const x = rect.left + rect.width / 2;
+            const y = rect.top + rect.height / 2;
+
+            console.log('📍 Button position:', { x, y });
+
+            // Create full-screen portal overlay
+            const overlay = document.createElement('div');
+            overlay.className = 'portal-overlay';
+
+            // Create portal center container positioned at button
+            const center = document.createElement('div');
+            center.className = 'portal-center';
+            center.style.left = (x - 200) + 'px'; // Offset by half of 400px
+            center.style.top = (y - 200) + 'px';
+
+            // Create outer ring (cyan)
+            const ring1 = document.createElement('div');
+            ring1.className = 'portal-ring portal-ring-1';
+
+            // Create middle ring (purple)
+            const ring2 = document.createElement('div');
+            ring2.className = 'portal-ring portal-ring-2';
+
+            // Create ring 3 (pink)
+            const ring3 = document.createElement('div');
+            ring3.className = 'portal-ring portal-ring-3';
+
+            // Create ring 4 (orange)
+            const ring4 = document.createElement('div');
+            ring4.className = 'portal-ring portal-ring-4';
+
+            // Create ring 5 (yellow)
+            const ring5 = document.createElement('div');
+            ring5.className = 'portal-ring portal-ring-5';
+
+            // Create bright core
+            const core = document.createElement('div');
+            core.className = 'portal-core';
+
+            // Assemble portal structure
+            center.appendChild(ring1);
+            center.appendChild(ring2);
+            center.appendChild(ring3);
+            center.appendChild(ring4);
+            center.appendChild(ring5);
+            center.appendChild(core);
+            overlay.appendChild(center);
+
+            // Add to body
+            document.body.appendChild(overlay);
+            console.log('✨ EPIC portal created with', overlay.querySelectorAll('.portal-ring').length, 'rings + core');
+
+            // Clean up after animation
+            setTimeout(function() {
+                if (document.body.contains(overlay)) {
+                    document.body.removeChild(overlay);
+                    console.log('🧹 Portal removed');
+                }
+            }, 3500);
+        });
+    </script>
+</body>
+</html>

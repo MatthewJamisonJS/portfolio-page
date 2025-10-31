@@ -48,7 +48,7 @@
               <div class="card-body">
                 <h3 class="card-title">{{ .Title }}</h3>
                 <p class="card-text">{{ .Params.description }}</p>
-                <a href="{{ .RelPermalink }}" class="read-more">{{ i18n "learn_more" }}</a>
+                <a href="{{ "services" | relLangURL }}" class="read-more">{{ i18n "learn_more" }}</a>
               </div>
             </div>
           </div>

@@ -27,3 +27,317 @@ other = "Aktuelle Projekte"
 
 [view_github]
 other = "GitHub Ansehen"
+
+# Service/Preisseite - Übersetzungen
+
+# Hero-Bereich
+[pricing_hero_title]
+other = "Partnerschaft Für Ihren Erfolg"
+
+[pricing_hero_subtitle]
+other = "Keine Agenturen. Keine Mittelsmänner. Keine Überraschungen. Nur ein Unternehmer, der einem anderen hilft—denn Ihr Erfolg ist mein Geschäft."
+
+[pricing_pain_intro]
+other = "Das Agenturmodell ist kaputt:"
+
+[pricing_pain_1]
+other = "60% der negativen Bewertungen nennen Kommunikationsprobleme"
+
+[pricing_pain_2]
+other = "40% der Projekte verpassen Termine vollständig"
+
+[pricing_pain_3]
+other = "Projekte kosten durchschnittlich 189% der ursprünglichen Schätzungen"
+
+[pricing_transition]
+other = "Ich habe meine Praxis anders aufgebaut."
+
+# Differenzierungsbereich
+[pricing_differentiators_title]
+other = "Was Dies Anders Macht"
+
+[pricing_differentiators_subtitle]
+other = "Fünf Prinzipien, die jede Partnerschaft leiten"
+
+[diff_1_title]
+other = "Direkter Entwicklerzugang"
+
+[diff_1_desc]
+other = "Sie sprechen mit der Person, die Ihre Website erstellt—keine Projektmanager als Mittelsmänner"
+
+[diff_2_title]
+other = "Schnelle Lieferung"
+
+[diff_2_desc]
+other = "2-3 Wochen Start—nicht 3-6 Monate Wartezeit"
+
+[diff_3_title]
+other = "Festpreis, Null Überraschungen"
+
+[diff_3_desc]
+other = "Was Sie sehen, ist was Sie zahlen—keine aufgeblähten Stundensätze oder Rechnungen für Umfangsausweitung"
+
+[diff_4_title]
+other = "Schulung + Support Inklusive"
+
+[diff_4_desc]
+other = "Nie nach dem Start im Stich gelassen—Sie besitzen Ihre Website und wissen, wie man sie betreibt"
+
+[diff_5_title]
+other = "Geschäftsorientierte Partnerschaft"
+
+[diff_5_desc]
+other = "Mir geht es um Ihren Umsatz, nicht um Auszeichnungen—jede Entscheidung wird am ROI gemessen"
+
+# Preisstufenbereich
+[pricing_tiers_title]
+other = "Servicepakete"
+
+[pricing_tiers_subtitle]
+other = "Wählen Sie das richtige Partnerschaftsniveau für Ihr Unternehmen"
+
+# Stufe 1 - Fundament
+[tier_1_name]
+other = "Fundament-Service"
+
+[tier_1_tagline]
+other = "Für Unternehmen, die ihre Webpräsenz etablieren"
+
+[tier_1_feat_1]
+other = "Schnelle, zuverlässige Leistung (Lighthouse-Scores 98+)"
+
+[tier_1_feat_2]
+other = "Funktioniert einwandfrei auf allen Geräten"
+
+[tier_1_feat_3]
+other = "Suchmaschinenfreundlich"
+
+[tier_1_feat_4]
+other = "Schulung, damit Sie Updates selbst steuern"
+
+[tier_1_feat_5]
+other = "2-3 Wochen Lieferung"
+
+[tier_1_perfect]
+other = "Ihr Geschäft online starten, veraltete Websites ersetzen, professionelle Präsenz etablieren"
+
+# Stufe 2 - Vollständige Präsenz
+[tier_2_name]
+other = "Vollständige Präsenz"
+
+[tier_2_tagline]
+other = "Für Unternehmen, die breitere Märkte erreichen"
+
+[tier_2_feat_0]
+other = "Alles im Fundament-Service"
+
+[tier_2_feat_1]
+other = "5-sprachige mehrsprachige Unterstützung (EN, ES, FR, JA, DE)"
+
+[tier_2_feat_2]
+other = "WCAG AA Barrierefreiheitskonformität"
+
+[tier_2_feat_3]
+other = "Analysen & Conversion-Tracking"
+
+[tier_2_feat_4]
+other = "30-Tage-Support nach dem Start"
+
+[tier_2_feat_5]
+other = "2 umfassende Schulungssitzungen"
+
+[tier_2_perfect]
+other = "Internationale Märkte, mehrsprachige Kunden, Barrierefreiheitskonformität, alle erreichen, die Sie brauchen"
+
+# Stufe 3 - Partnerschaft
+[tier_3_name]
+other = "Partnerschafts-Service"
+
+[tier_3_tagline]
+other = "Für Unternehmen, die sich kontinuierlichem Wachstum verschrieben haben"
+
+[tier_3_feat_0]
+other = "Alles in Vollständiger Präsenz"
+
+[tier_3_feat_1]
+other = "Vierteljährliche Optimierungsüberprüfungen"
+
+[tier_3_feat_2]
+other = "Prioritäts-Support (24-Stunden-Antwort)"
+
+[tier_3_feat_3]
+other = "Laufende Leistungsverbesserungen"
+
+[tier_3_feat_4]
+other = "Individuelle Conversion-Optimierung"
+
+[tier_3_feat_5]
+other = "Unbegrenzte Schulung nach Bedarf"
+
+[tier_3_feat_6]
+other = "Langfristige technische Partnerschaft"
+
+[tier_3_perfect]
+other = "Wachsende Unternehmen, sich entwickelnde Bedürfnisse, kritische Conversions, langfristige Erfolgspartnerschaften"
+
+# Gemeinsame Stufenelemente
+[most_popular]
+other = "Am Beliebtesten"
+
+[what_you_get]
+other = "Was Sie Bekommen"
+
+[perfect_for]
+other = "Perfekt Für"
+
+# CTA-Buttons
+[get_started]
+other = "Jetzt Starten"
+
+[start_growing]
+other = "Wachsen Beginnen"
+
+[lets_partner]
+other = "Partner Werden"
+
+[schedule_call]
+other = "15-Minuten-Anruf Planen"
+
+# Preisbedenken-Bereich
+[pricing_concerns_title]
+other = "Preisbedenken?"
+
+[pricing_concerns_text]
+other = "Diese Zahlen spiegeln die Qualität und Sorgfalt wider, die ich in jede Partnerschaft einbringe. Wenn sie außerhalb Ihres Budgets liegen, melden Sie sich trotzdem—lassen Sie uns ein ehrliches Gespräch über Ihre Situation und Ziele führen."
+
+[pricing_concerns_cta]
+other = "Lassen Sie uns über Ihre Bedürfnisse sprechen →"
+
+# Vergleichstabellen-Bereich
+[comparison_title]
+other = "Wie Ich Anders Bin"
+
+[comparison_subtitle]
+other = "Sehen Sie den Unterschied zwischen typischen Agenturen und meinem Ansatz"
+
+[typical_agency]
+other = "Typische Agentur"
+
+[how_i_serve]
+other = "Wie Ich Sie Bediene"
+
+[comp_communication]
+other = "Kommunikation"
+
+[comp_comm_agency_1]
+other = "2-5 Werktage Antwortzeit"
+
+[comp_comm_agency_2]
+other = "Sprechen Sie mit dem Projektmanager"
+
+[comp_comm_me_1]
+other = "Noch am selben Tag (oft Stunden)"
+
+[comp_comm_me_2]
+other = "Sprechen Sie mit dem tatsächlichen Entwickler"
+
+[comp_timeline]
+other = "Zeitplan"
+
+[comp_time_agency_1]
+other = "Typisch 8-12 Wochen"
+
+[comp_time_agency_2]
+other = "40% verpassen Termine"
+
+[comp_time_me_1]
+other = "2-3 Wochen garantiert"
+
+[comp_time_me_2]
+other = "Pünktlich oder Rückerstattung"
+
+[comp_pricing]
+other = "Preisgestaltung"
+
+[comp_price_agency_1]
+other = "189% der ursprünglichen Schätzung"
+
+[comp_price_agency_2]
+other = "Änderungen zu $150-300/Stunde"
+
+[comp_price_me_1]
+other = "Festpreis, null Überraschungen"
+
+[comp_price_me_2]
+other = "Änderungen im Voraus besprochen"
+
+[comp_postlaunch]
+other = "Nach dem Start"
+
+[comp_post_agency_1]
+other = "Schulung kostet extra"
+
+[comp_post_agency_2]
+other = "$500/Monat Retainer"
+
+[comp_post_me_1]
+other = "Schulung inklusive"
+
+[comp_post_me_2]
+other = "Sie besitzen es, Sie führen es"
+
+# FAQ-Bereich
+[faq_title]
+other = "Häufig Gestellte Fragen"
+
+[faq_subtitle]
+other = "Klare Antworten auf häufige Fragen"
+
+[faq_1_q]
+other = "Wie wähle ich den richtigen Service?"
+
+[faq_1_a]
+other = "Lassen Sie uns 15 Minuten sprechen. Ich werde nach Ihren Zielen fragen und ehrlich empfehlen—auch wenn das bedeutet, dass ich nicht die richtige Wahl bin."
+
+[faq_2_q]
+other = "Was ist, wenn ich nicht technisch bin?"
+
+[faq_2_a]
+other = "Deshalb ist die Schulung enthalten. Ich erkläre alles auf einfache Weise und stelle sicher, dass Sie sich sicher fühlen, bevor wir fertig sind."
+
+[faq_3_q]
+other = "Was ist mit Änderungen nach dem Start?"
+
+[faq_3_a]
+other = "Die Schulung deckt die meisten Updates ab, die Sie benötigen. Für größere Änderungen besprechen wir Umfang und Preis transparent, bevor wir beginnen."
+
+[faq_4_q]
+other = "Warum keine Agentur beauftragen?"
+
+[faq_4_a]
+other = "Kein Overhead bedeutet niedrigere Kosten. Direkter Zugang bedeutet schnellere Kommunikation. Eine Person, die wirklich in Ihren Erfolg investiert ist."
+
+[faq_5_q]
+other = "Was ist, wenn mein Budget knapp ist?"
+
+[faq_5_a]
+other = "Melden Sie sich trotzdem. Manchmal können wir Arbeit in Phasen aufteilen, den Umfang anpassen oder kreative Lösungen finden, die für Ihre aktuelle Situation funktionieren."
+
+# Abschließender CTA-Bereich
+[final_cta_title]
+other = "Bereit Anzufangen?"
+
+[final_cta_subtitle]
+other = "Der beste nächste Schritt ist ein Gespräch—kein Verkaufsgespräch, kein Druck. Nur ich, der Ihren Geschäftszielen zuhört und ehrliche Anleitung bietet."
+
+[or_contact_form]
+other = "Oder nutzen Sie das"
+
+[contact_form_link]
+other = "Kontaktformular unten"
+
+[see_examples]
+other = "Neugierig, was möglich ist?"
+
+[view_demos]
+other = "Alle Demos Ansehen →"

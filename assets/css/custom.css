@@ -744,36 +744,96 @@ button[type="submit"].btn-transparent:hover {
   opacity: 0.9;
 }
 
-/* Lightning bolt animations */
+/* EPIC Lightning bolt animations */
 .lightning-bolt {
-  animation: lightningFlash 1.5s ease-in-out infinite;
+  animation: epicLightningStrike 2s ease-in-out infinite;
   filter: drop-shadow(0 0 8px #ffeb3b);
+  transform-origin: center center;
 }
 
+/* Pikachu's main attack - fastest */
 .bolt-1 {
+  animation-duration: 2s;
   animation-delay: 0s;
 }
 
+/* Pikachu's follow-up strike */
 .bolt-2 {
-  animation-delay: 0.5s;
+  animation-duration: 2s;
+  animation-delay: 0.3s;
 }
 
+/* Magneton's electric assault */
 .bolt-3 {
-  animation-delay: 1s;
+  animation-duration: 2.2s;
+  animation-delay: 0.8s;
 }
 
-@keyframes lightningFlash {
-  0%, 100% {
+/* Zapdos legendary thunder - most powerful */
+.bolt-4 {
+  animation-duration: 2s;
+  animation-delay: 1.5s;
+}
+
+@keyframes epicLightningStrike {
+  /* Build-up - electricity gathering */
+  0% {
     opacity: 0;
+    stroke-dasharray: 0 500;
+    filter: drop-shadow(0 0 2px #ffeb3b);
+    transform: scale(1) translateX(0);
   }
-  10%, 30% {
+
+  /* Initial strike - white-hot core */
+  5% {
     opacity: 1;
+    stroke-dasharray: 500 0;
+    stroke: #ffffff;
+    filter: drop-shadow(0 0 20px #ffeb3b)
+            drop-shadow(0 0 40px #ffeb3b)
+            drop-shadow(0 0 60px rgba(255, 235, 59, 0.8));
+    transform: scale(1.1) translateX(2px);
   }
-  20%, 40% {
+
+  /* Dim between flashes */
+  8% {
     opacity: 0.3;
+    stroke: #ffeb3b;
+    filter: drop-shadow(0 0 10px #ffeb3b);
+    transform: scale(1) translateX(-1px);
   }
-  50%, 90% {
+
+  /* Secondary flash - intense */
+  12% {
+    opacity: 1;
+    stroke: #ffffff;
+    filter: drop-shadow(0 0 25px #ffeb3b)
+            drop-shadow(0 0 50px #00e5ff);
+    transform: scale(1.15) translateX(1px);
+  }
+
+  /* Fade with residual glow */
+  18% {
+    opacity: 0.5;
+    stroke: #ffeb3b;
+    filter: drop-shadow(0 0 15px #ffeb3b);
+    transform: scale(1) translateX(0);
+  }
+
+  /* Third flash (aftershock) - cyan tint */
+  22% {
+    opacity: 0.9;
+    stroke: #00e5ff;
+    filter: drop-shadow(0 0 20px #00e5ff);
+    transform: scale(1.08) translateX(-1px);
+  }
+
+  /* Complete fade out */
+  30%, 100% {
     opacity: 0;
+    stroke-dasharray: 500 0;
+    filter: drop-shadow(0 0 0px #ffeb3b);
+    transform: scale(1) translateX(0);
   }
 }
 
@@ -1228,15 +1288,8 @@ button[type="submit"].btn-transparent:hover {
     transform: rotate(0deg) !important;
   }
 
-  /* Disable battle effects animations */
-  .lightning-bolt,
-  .water-stream,
-  .fire-breath,
-  .ice-beam,
-  .energy-sphere {
-    animation: none !important;
-    opacity: 0.5 !important;
-  }
+  /* Battle effects intentionally excluded - controlled by Battle Button only */
+  /* Lightning, water, fire, ice, and energy animations respect Battle Button, not OS motion preferences */
 
   /* Keep battle scene visible but static */
   .battle-pokemon {
@@ -1311,6 +1364,15 @@ body.battle-mode-disabled .ice-beam,
 body.battle-mode-disabled .energy-sphere {
   animation: none !important;
   opacity: 0 !important;
+}
+
+/* Disable portal animation when battle mode is off */
+body.battle-mode-disabled .portal-overlay,
+body.battle-mode-disabled .portal-center,
+body.battle-mode-disabled .portal-ring,
+body.battle-mode-disabled .portal-core {
+  display: none !important;
+  animation: none !important;
 }
 
 /* EPIC Battle Toggle Button */
@@ -1423,17 +1485,10 @@ body.battle-mode-disabled .battle-toggle:hover {
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
 }
 
-/* Mobile responsive */
+/* Mobile responsive - Hide battle button on mobile for cleaner UI */
 @media (max-width: 768px) {
   .battle-toggle {
-    bottom: 15px;
-    left: 15px;
-    padding: 10px 18px;
-    font-size: 0.85rem;
-  }
-
-  .battle-toggle::before {
-    font-size: 1rem;
+    display: none !important; /* Hide battle button on mobile - animations controlled by default */
   }
 }
 
@@ -1450,4 +1505,1288 @@ body.battle-mode-disabled .battle-toggle:hover {
   .battle-toggle:hover {
     transform: scale(1.05);
   }
+}
+
+/* ========================================================================= */
+/*	SERVICES/PRICING PAGE STYLES
+/* ========================================================================= */
+
+.services-pricing-page {
+    background: var(--dark-bg);
+    color: var(--light-text);
+}
+
+.section-spacing {
+    padding: 80px 0;
+}
+
+.section-bg-dark {
+    background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 100%);
+}
+
+.section-bg-darker {
+    background: linear-gradient(135deg, #050505 0%, #0f0f0f 100%);
+}
+
+.section-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--light-text);
+    margin-bottom: 1rem;
+}
+
+.section-subtitle {
+    font-size: 1.1rem;
+    color: var(--gray-medium);
+}
+
+.text-cyan {
+    color: var(--accent) !important;
+}
+
+.text-magenta {
+    color: var(--primary) !important;
+}
+
+.text-light-gray {
+    color: var(--gray-medium);
+}
+
+/* ========================================================================= */
+/*	PRICING HERO SECTION
+/* ========================================================================= */
+
+.pricing-hero {
+    padding: 100px 0 80px;
+}
+
+.pain-points-callout {
+    max-width: 600px;
+    padding: 30px;
+    background: rgba(107, 45, 92, 0.1);
+    border: 1px solid rgba(233, 30, 99, 0.3);
+    border-radius: 12px;
+    margin-top: 30px;
+}
+
+.pain-points-list {
+    list-style: none;
+    padding-left: 0;
+    text-align: left;
+}
+
+.pain-points-list li {
+    padding: 8px 0 8px 30px;
+    position: relative;
+    color: var(--gray-light);
+}
+
+.pain-points-list li:before {
+    content: "✗";
+    position: absolute;
+    left: 0;
+    color: #ef4444;
+    font-weight: bold;
+}
+
+/* ========================================================================= */
+/*	DIFFERENTIATOR CARDS
+/* ========================================================================= */
+
+.differentiators-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.differentiator-card {
+    background: linear-gradient(145deg, #1e293b 0%, #0f172a 100%);
+    border: 1px solid rgba(0, 188, 212, 0.15);
+    border-radius: 12px;
+    padding: 24px 20px;
+    text-align: center;
+    transition: all 0.2s ease;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.differentiator-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0, 188, 212, 0.15);
+    border-color: rgba(0, 188, 212, 0.3);
+}
+
+.differentiator-card .card-icon {
+    font-size: 2.5rem;
+    margin-bottom: 4px;
+    opacity: 0.9;
+}
+
+.differentiator-card .card-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #00bcd4;
+    margin-bottom: 8px;
+    line-height: 1.3;
+}
+
+.differentiator-card .card-description {
+    color: #94a3b8;
+    font-size: 0.9rem;
+    line-height: 1.5;
+    margin-bottom: 0;
+}
+
+.differentiators-grid {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* ========================================================================= */
+/*	PRICING CARDS (CRITICAL SECTION)
+/* ========================================================================= */
+
+.pricing-compact-section {
+    background: linear-gradient(180deg, rgba(30, 41, 59, 0.4) 0%, rgba(15, 23, 42, 0.6) 100%);
+    padding: 30px 0 40px;
+    margin-top: 0;
+}
+
+/* Hero text - ultra compact for above-the-fold fit */
+.pricing-hero-title {
+    font-size: 2rem;
+    line-height: 1.2;
+}
+
+.pricing-hero-subtitle {
+    font-size: 0.95rem;
+    line-height: 1.4;
+}
+
+.pricing-cards-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 2.5rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+/* Bootstrap columns need flex display to pass height to cards */
+.pricing-cards-wrapper > [class*="col-"] {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Pricing Card Link Wrapper */
+.pricing-card-link {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.pricing-card-link:hover,
+.pricing-card-link:focus,
+.pricing-card-link:active {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Click animation */
+.pricing-card-link:active .pricing-card {
+    transform: scale(0.98);
+    transition: transform 0.1s ease;
+}
+
+@keyframes card-click-pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(0.98);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.pricing-card-link.clicked .pricing-card {
+    animation: card-click-pulse 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.pricing-card {
+    background: linear-gradient(145deg, #1e293b 0%, #0f172a 100%);
+    border: 2px solid transparent;
+    border-radius: 16px;
+    padding: 0;
+    position: relative;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    will-change: transform, box-shadow;
+    flex: 0 1 320px;
+    max-width: 350px;
+    min-width: 280px;
+}
+
+.pricing-card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 16px;
+    padding: 2px;
+    background: linear-gradient(135deg, var(--primary) 0%, var(--accent) 100%);
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    opacity: 0.3;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+}
+
+.pricing-card:hover {
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: 0 0 30px rgba(0, 188, 212, 0.6), 0 20px 40px rgba(0, 0, 0, 0.4);
+}
+
+.pricing-card:hover::before {
+    opacity: 0.6;
+}
+
+/* RECOMMENDED CARD - CENTER HIGHLIGHT (Same size as others, just badge) */
+.pricing-card.recommended {
+    border-color: transparent;
+    z-index: 10;
+}
+
+.pricing-card.recommended::before {
+    opacity: 0.5;
+}
+
+@keyframes pulse-glow {
+    0%, 100% {
+        box-shadow: 0 0 50px rgba(0, 188, 212, 0.5);
+        opacity: 0.8;
+    }
+    50% {
+        box-shadow: 0 0 70px rgba(0, 188, 212, 0.7);
+        opacity: 1;
+    }
+}
+
+.recommended-badge {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+    color: white;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    z-index: 5;
+    box-shadow: 0 4px 12px rgba(16, 185, 129, 0.4);
+}
+
+.pricing-card .card-header {
+    padding: 24px 24px 28px;
+    text-align: center;
+}
+
+.pricing-card .tier-icon {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+}
+
+.pricing-card .tier-name {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 0.5rem;
+    letter-spacing: -0.5px;
+    line-height: 1.2;
+    white-space: normal;
+    overflow: visible;
+    text-overflow: clip;
+}
+
+.pricing-card .tier-tagline {
+    font-size: 0.95rem;
+    color: #9ca3af;
+    line-height: 1.4;
+}
+
+.pricing-card .card-pricing {
+    text-align: center;
+    padding: 16px 24px;
+    background: rgba(0, 0, 0, 0.3);
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.pricing-card .price-currency {
+    font-size: 2rem;
+    font-weight: 600;
+    background: linear-gradient(135deg, var(--primary) 0%, var(--accent) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    vertical-align: top;
+}
+
+.pricing-card .price-amount {
+    font-size: 2.8rem;
+    font-weight: 700;
+    background: linear-gradient(135deg, var(--primary) 0%, var(--accent) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    line-height: 1;
+}
+
+.pricing-card .card-body {
+    padding: 28px 40px;
+    flex-grow: 1;
+}
+
+.pricing-card .features-heading {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--accent);
+    margin-bottom: 1.2rem;
+}
+
+.pricing-card .features-list {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 1.5rem;
+}
+
+.pricing-card .features-list li {
+    padding: 10px 0;
+    display: flex;
+    align-items: flex-start;
+    color: #ffffff;
+    font-size: 1.4rem;
+    line-height: 1.5;
+}
+
+.pricing-card .features-list .check-icon {
+    color: var(--accent);
+    font-weight: bold;
+    margin-right: 18px;
+    font-size: 1.8rem;
+    flex-shrink: 0;
+}
+
+.pricing-card .perfect-for {
+    background: rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    border-radius: 10px;
+    border-left: 4px solid var(--primary);
+}
+
+.pricing-card .perfect-for-heading {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: var(--primary);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 0.8rem;
+}
+
+.pricing-card .perfect-for-text {
+    font-size: 1.3rem;
+    color: #d1d5db;
+    margin: 0;
+    line-height: 1.6;
+}
+
+.pricing-card .card-footer {
+    padding: 24px 40px;
+    background: rgba(0, 0, 0, 0.2);
+}
+
+/* ========================================================================= */
+/*	CTA BUTTONS
+/* ========================================================================= */
+
+.btn-pricing {
+    display: block;
+    width: 100%;
+    padding: 16px 32px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    border: none;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+.btn-foundation {
+    background: linear-gradient(135deg, var(--secondary) 0%, var(--primary) 100%);
+    color: white;
+}
+
+.btn-complete {
+    background: linear-gradient(135deg, var(--primary) 0%, var(--accent) 100%);
+    color: white;
+    font-size: 1.2rem;
+    padding: 18px 32px;
+}
+
+.btn-partnership {
+    background: linear-gradient(135deg, var(--accent) 0%, var(--secondary) 100%);
+    color: white;
+}
+
+.btn-pricing:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(233, 30, 99, 0.4);
+    color: white;
+}
+
+/* BUTTON CLICK ANIMATION */
+.btn-pricing.cta-clicked {
+    animation: button-pulse 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@keyframes button-pulse {
+    0% {
+        transform: scale(1);
+        box-shadow: 0 0 0 0 rgba(233, 30, 99, 0.7);
+    }
+    50% {
+        transform: scale(0.95);
+        box-shadow: 0 0 0 10px rgba(233, 30, 99, 0.4);
+    }
+    100% {
+        transform: scale(1.05);
+        box-shadow: 0 0 0 20px rgba(233, 30, 99, 0);
+    }
+}
+
+/* ========================================================================= */
+/*	PRICING CARDS RESPONSIVE BREAKPOINTS
+/* ========================================================================= */
+
+/* Mobile: Stack cards vertically, full width */
+@media (max-width: 768px) {
+    .pricing-cards-wrapper {
+        flex-direction: column;
+        gap: 2rem;
+        max-width: 100%;
+    }
+
+    .pricing-card {
+        flex: 1 1 100%;
+        max-width: 100%;
+        min-width: 300px;
+    }
+
+    .pricing-card .tier-name {
+        font-size: 1.3rem;
+    }
+
+    .pricing-card .price-amount {
+        font-size: 2.5rem;
+    }
+}
+
+/* Tablet: 2 cards per row */
+@media (min-width: 769px) and (max-width: 1099px) {
+    .pricing-cards-wrapper {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .pricing-card {
+        flex: 0 1 320px;
+    }
+}
+
+/* Desktop and larger: 3 cards in one row */
+@media (min-width: 1100px) {
+    .pricing-cards-wrapper {
+        flex-wrap: nowrap;
+        max-width: 1200px;
+        justify-content: center;
+    }
+
+    .pricing-card {
+        flex: 0 1 320px;
+    }
+}
+
+/* ========================================================================= */
+/*	PRICING CARD CTA BUTTONS
+/* ========================================================================= */
+
+.card-cta {
+    padding: 0 20px 20px 20px;
+    margin-top: auto;
+    position: relative;
+    z-index: 10;
+}
+
+.btn-pricing-card {
+    display: block;
+    width: 100%;
+    padding: 14px 24px;
+    font-size: 1rem;
+    font-weight: 600;
+    text-align: center;
+    text-decoration: none;
+    color: #ffffff;
+    background: #00bcd4;
+    border: 1px solid #00acc1;
+    border-radius: 6px;
+    transition: all 0.2s ease;
+    box-shadow: 0 2px 8px rgba(0, 188, 212, 0.15);
+    cursor: pointer;
+    letter-spacing: 0.3px;
+}
+
+.btn-pricing-card:hover {
+    background: #00acc1;
+    border-color: #0097a7;
+    box-shadow: 0 4px 12px rgba(0, 188, 212, 0.25);
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.btn-pricing-card:active {
+    transform: translateY(1px);
+    box-shadow: 0 1px 4px rgba(0, 188, 212, 0.2);
+}
+
+/* Visual feedback for button click (used by JavaScript) */
+.btn-pricing-card.cta-clicked {
+    animation: ctaPulse 0.4s ease-out;
+}
+
+@keyframes ctaPulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(0.98);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .btn-pricing-card {
+        padding: 12px 20px;
+        font-size: 0.95rem;
+    }
+}
+
+/* ========================================================================= */
+/*	SERVICE TIER COMPARISON TABLE (Darkrise-inspired)
+/* ========================================================================= */
+
+.comparison-section {
+    background: rgba(10, 10, 10, 0.5);
+    padding: 80px 0;
+}
+
+.comparison-table-container {
+    overflow-x: auto;
+    border-radius: 16px;
+    background: rgba(30, 41, 59, 0.3);
+    padding: 2px;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.services-comparison-table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 900px;
+    background: linear-gradient(145deg, rgba(15, 23, 42, 0.8) 0%, rgba(10, 15, 30, 0.9) 100%);
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+}
+
+/* Table Header Styling */
+.services-comparison-table thead tr {
+    background: linear-gradient(180deg, rgba(30, 41, 59, 0.8) 0%, rgba(15, 23, 42, 0.9) 100%);
+}
+
+.services-comparison-table thead th {
+    padding: 32px 28px;
+    text-align: center;
+    border-bottom: 2px solid rgba(0, 188, 212, 0.2);
+    vertical-align: top;
+}
+
+.services-comparison-table thead th.feature-label {
+    text-align: left;
+    font-weight: 700;
+    color: var(--accent);
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    width: 40%;
+}
+
+/* Tier Header Content */
+.tier-header-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+}
+
+.tier-icon-small {
+    font-size: 2.5rem;
+    margin-bottom: 4px;
+}
+
+.tier-name-small {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #ffffff;
+    letter-spacing: -0.3px;
+}
+
+.tier-price-small {
+    font-size: 1.8rem;
+    font-weight: 700;
+    background: linear-gradient(135deg, var(--primary) 0%, var(--accent) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-top: 4px;
+}
+
+/* Highlighted Column (Complete Presence - Most Popular) */
+.services-comparison-table thead th.highlighted {
+    background: linear-gradient(180deg, rgba(0, 188, 212, 0.25) 0%, rgba(0, 188, 212, 0.12) 100%);
+    border-left: 2px solid rgba(0, 188, 212, 0.5);
+    border-right: 2px solid rgba(0, 188, 212, 0.5);
+    position: relative;
+    box-shadow: 0 0 20px rgba(0, 188, 212, 0.2);
+}
+
+.services-comparison-table tbody tr td:nth-child(3) {
+    background: linear-gradient(180deg, rgba(0, 188, 212, 0.08) 0%, rgba(0, 188, 212, 0.04) 100%);
+    border-left: 2px solid rgba(0, 188, 212, 0.3);
+    border-right: 2px solid rgba(0, 188, 212, 0.3);
+}
+
+/* Table Body Rows */
+.services-comparison-table tbody tr {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    transition: all 0.2s ease;
+}
+
+.services-comparison-table tbody tr:hover {
+    background: rgba(0, 188, 212, 0.08);
+    transform: scale(1.005);
+}
+
+.services-comparison-table tbody tr:last-child {
+    border-bottom: none;
+}
+
+/* Feature Name Column */
+.services-comparison-table td.feature-name {
+    padding: 24px 28px;
+    text-align: left;
+    font-size: 1.1rem;
+    color: #f3f4f6;
+    font-weight: 500;
+    line-height: 1.6;
+}
+
+/* Feature Value Columns */
+.services-comparison-table td.feature-value {
+    padding: 24px 28px;
+    text-align: center;
+    font-size: 1rem;
+    color: #d1d5db;
+    font-weight: 500;
+}
+
+/* Check and X Icons */
+.services-comparison-table .check-icon {
+    color: var(--accent);
+    font-size: 1.6rem;
+    font-weight: bold;
+    text-shadow: 0 0 10px rgba(0, 188, 212, 0.5);
+    display: inline-block;
+}
+
+.services-comparison-table .x-icon {
+    color: #ef4444;
+    font-size: 1.4rem;
+    opacity: 0.6;
+    display: inline-block;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .comparison-table-container {
+        margin: 0 20px;
+    }
+
+    .services-comparison-table {
+        min-width: 700px;
+    }
+
+    .tier-icon-small {
+        font-size: 1.5rem;
+    }
+
+    .tier-name-small {
+        font-size: 0.95rem;
+    }
+
+    .tier-price-small {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .comparison-section {
+        padding: 60px 0;
+    }
+
+    .comparison-table-container {
+        margin: 0 10px;
+        border-radius: 12px;
+    }
+
+    .services-comparison-table {
+        min-width: 600px;
+    }
+
+    .services-comparison-table thead th,
+    .services-comparison-table td {
+        padding: 16px 12px;
+        font-size: 0.85rem;
+    }
+
+    .tier-icon-small {
+        font-size: 1.3rem;
+    }
+
+    .tier-name-small {
+        font-size: 0.85rem;
+    }
+
+    .tier-price-small {
+        font-size: 1rem;
+    }
+
+    .services-comparison-table .check-icon {
+        font-size: 1.2rem;
+    }
+
+    .services-comparison-table .x-icon {
+        font-size: 1rem;
+    }
+}
+
+/* ========================================================================= */
+/*	CONTACT FORM FIELD PRE-FILL ANIMATION
+/* ========================================================================= */
+
+#subject.field-prefilled {
+    animation: field-highlight 1.5s ease-out;
+    border-color: var(--accent) !important;
+}
+
+@keyframes field-highlight {
+    0% {
+        box-shadow: 0 0 0 0 rgba(0, 188, 212, 0);
+    }
+    30% {
+        box-shadow: 0 0 0 8px rgba(0, 188, 212, 0.5);
+    }
+    70% {
+        box-shadow: 0 0 0 12px rgba(0, 188, 212, 0.2);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(0, 188, 212, 0);
+    }
+}
+
+/* ========================================================================= */
+/*	COMPARISON TABLE
+/* ========================================================================= */
+
+.comparison-table-wrapper {
+    overflow-x: auto;
+    border-radius: 12px;
+    background: rgba(30, 41, 59, 0.4);
+}
+
+.comparison-table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 600px;
+}
+
+.comparison-table thead th {
+    background: rgba(0, 0, 0, 0.4);
+    padding: 20px;
+    font-weight: 600;
+    text-align: left;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+}
+
+.comparison-table .agency-column {
+    color: #ef4444;
+}
+
+.comparison-table .me-column {
+    color: var(--accent);
+}
+
+.comparison-table tbody tr {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.comparison-table tbody td {
+    padding: 20px;
+    vertical-align: top;
+}
+
+.comparison-table .category-name {
+    font-weight: 600;
+    color: var(--light-text);
+}
+
+.comparison-table .comparison-item {
+    display: flex;
+    align-items: flex-start;
+    padding: 8px 0;
+}
+
+.comparison-table .check-icon {
+    color: var(--accent);
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+.comparison-table .x-icon {
+    color: #ef4444;
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+/* ========================================================================= */
+/*	FAQ ACCORDION
+/* ========================================================================= */
+
+.faq-accordion {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.faq-item {
+    background: rgba(30, 41, 59, 0.4);
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: all 0.3s ease;
+}
+
+.faq-item:hover {
+    border-color: var(--accent);
+}
+
+.faq-question {
+    width: 100%;
+    padding: 20px 25px;
+    background: transparent;
+    border: none;
+    color: var(--light-text);
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-align: left;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+
+.faq-question:hover {
+    color: var(--accent);
+}
+
+.faq-icon {
+    font-size: 1.5rem;
+    color: var(--accent);
+    transition: transform 0.3s ease;
+    font-weight: normal;
+}
+
+.faq-item.active .faq-icon {
+    transform: rotate(45deg);
+}
+
+.faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.faq-item.active .faq-answer {
+    max-height: 500px;
+}
+
+.faq-answer p {
+    padding: 0 25px 20px;
+    margin: 0;
+    color: var(--gray-medium);
+    line-height: 1.6;
+}
+
+/* ========================================================================= */
+/*	FINAL CTA SECTION
+/* ========================================================================= */
+
+.cta-box {
+    background: linear-gradient(135deg, rgba(233, 30, 99, 0.1) 0%, rgba(0, 188, 212, 0.1) 100%);
+    border: 2px solid rgba(233, 30, 99, 0.3);
+    border-radius: 16px;
+    padding: 60px 40px;
+}
+
+.btn-cta-primary {
+    display: inline-block;
+    padding: 18px 48px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-decoration: none;
+    background: linear-gradient(135deg, var(--primary) 0%, var(--accent) 100%);
+    color: white;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.btn-cta-primary:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 24px rgba(233, 30, 99, 0.5);
+    color: white;
+}
+
+/* ========================================================================= */
+/*	RESPONSIVE BREAKPOINTS
+/* ========================================================================= */
+
+@media (max-width: 768px) {
+    .pricing-cards-wrapper {
+        grid-template-columns: 1fr;
+    }
+
+    .pricing-card.recommended {
+        transform: none;
+    }
+
+    .pricing-card:hover {
+        transform: translateY(-4px);
+    }
+
+    .section-spacing {
+        padding: 60px 0;
+    }
+
+    .section-title {
+        font-size: 2rem;
+    }
+
+    .pricing-card .price-amount {
+        font-size: 3rem;
+    }
+
+    .comparison-table-wrapper {
+        -webkit-overflow-scrolling: touch;
+    }
+
+    .differentiators-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (min-width: 1024px) {
+    .pricing-cards-wrapper {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* ========================================================================= */
+/*	GRADIENT RIPPLE PORTAL ANIMATION
+/* ========================================================================= */
+
+/* Portal overlay container - FULL SCREEN */
+.portal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    pointer-events: none;
+    z-index: 999999;
+    background: rgba(0, 0, 0, 0);
+    animation: portal-bg-darken 2.8s ease-out forwards;
+}
+
+/* Portal center point - starts at button position */
+.portal-center {
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    transform-origin: center center;
+}
+
+/* Multiple rotating rings for depth */
+.portal-ring {
+    position: absolute;
+    border-radius: 50%;
+    border-style: solid;
+}
+
+/* Outer ring */
+.portal-ring-1 {
+    width: 400px;
+    height: 400px;
+    top: 0;
+    left: 0;
+    border: 4px solid rgba(0, 188, 212, 0.8);
+    box-shadow: 0 0 40px rgba(0, 188, 212, 0.6),
+                inset 0 0 40px rgba(0, 188, 212, 0.4);
+    animation: portal-ring-spin-1 2.8s linear forwards;
+}
+
+/* Middle ring */
+.portal-ring-2 {
+    width: 280px;
+    height: 280px;
+    top: 60px;
+    left: 60px;
+    border: 6px solid rgba(156, 39, 176, 0.9);
+    box-shadow: 0 0 60px rgba(156, 39, 176, 0.7),
+                inset 0 0 60px rgba(156, 39, 176, 0.5);
+    animation: portal-ring-spin-2 2.8s linear forwards;
+}
+
+/* Inner ring */
+.portal-ring-3 {
+    width: 220px;
+    height: 220px;
+    top: 90px;
+    left: 90px;
+    border: 7px solid rgba(233, 30, 99, 0.95);
+    box-shadow: 0 0 80px rgba(233, 30, 99, 0.8),
+                inset 0 0 80px rgba(233, 30, 99, 0.6);
+    animation: portal-ring-spin-3 2.8s linear forwards;
+}
+
+/* Extra ring 4 - orange */
+.portal-ring-4 {
+    width: 160px;
+    height: 160px;
+    top: 120px;
+    left: 120px;
+    border: 9px solid rgba(255, 152, 0, 0.98);
+    box-shadow: 0 0 100px rgba(255, 152, 0, 0.85),
+                inset 0 0 100px rgba(255, 152, 0, 0.7);
+    animation: portal-ring-spin-4 2.8s linear forwards;
+}
+
+/* Extra ring 5 - yellow */
+.portal-ring-5 {
+    width: 100px;
+    height: 100px;
+    top: 150px;
+    left: 150px;
+    border: 10px solid rgba(255, 235, 59, 1);
+    box-shadow: 0 0 120px rgba(255, 235, 59, 0.9),
+                inset 0 0 120px rgba(255, 235, 59, 0.8);
+    animation: portal-ring-spin-5 2.8s linear forwards;
+}
+
+/* Core vortex */
+.portal-core {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    top: 160px;
+    left: 160px;
+    border-radius: 50%;
+    background: radial-gradient(circle,
+        #ffffff 0%,
+        #ff1744 30%,
+        #e91e63 60%,
+        #9c27b0 100%
+    );
+    box-shadow: 0 0 100px #ff1744,
+                0 0 200px #9c27b0,
+                inset 0 0 50px #ffffff;
+    animation: portal-core-pulse 2.8s ease-in-out forwards;
+}
+
+/* Background darkening */
+@keyframes portal-bg-darken {
+    0% {
+        background: rgba(0, 0, 0, 0);
+    }
+    30% {
+        background: rgba(0, 0, 0, 0.3);
+    }
+    70% {
+        background: rgba(0, 0, 0, 0.7);
+    }
+    100% {
+        background: rgba(0, 0, 0, 0.95);
+    }
+}
+
+/* Ring animations - counter-rotating for vortex effect */
+@keyframes portal-ring-spin-1 {
+    0% {
+        transform: scale(0.1) rotate(0deg);
+        opacity: 0;
+    }
+    10% {
+        opacity: 1;
+    }
+    100% {
+        transform: scale(5) rotate(720deg);
+        opacity: 0;
+    }
+}
+
+@keyframes portal-ring-spin-2 {
+    0% {
+        transform: scale(0.1) rotate(0deg);
+        opacity: 0;
+    }
+    15% {
+        opacity: 1;
+    }
+    100% {
+        transform: scale(7) rotate(-540deg);
+        opacity: 0;
+    }
+}
+
+@keyframes portal-ring-spin-3 {
+    0% {
+        transform: scale(0.1) rotate(0deg);
+        opacity: 0;
+    }
+    20% {
+        opacity: 1;
+    }
+    100% {
+        transform: scale(9) rotate(900deg);
+        opacity: 0;
+    }
+}
+
+@keyframes portal-ring-spin-4 {
+    0% {
+        transform: scale(0.1) rotate(0deg);
+        opacity: 0;
+    }
+    25% {
+        opacity: 1;
+    }
+    100% {
+        transform: scale(11) rotate(-720deg);
+        opacity: 0;
+    }
+}
+
+@keyframes portal-ring-spin-5 {
+    0% {
+        transform: scale(0.1) rotate(0deg);
+        opacity: 0;
+    }
+    30% {
+        opacity: 1;
+    }
+    100% {
+        transform: scale(13) rotate(1080deg);
+        opacity: 0;
+    }
+}
+
+/* Core pulsing and expanding */
+@keyframes portal-core-pulse {
+    0% {
+        transform: scale(0.5);
+        opacity: 1;
+    }
+    25% {
+        transform: scale(1.2);
+        opacity: 1;
+    }
+    50% {
+        transform: scale(0.9);
+        opacity: 1;
+    }
+    75% {
+        transform: scale(1.5);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(15);
+        opacity: 0;
+    }
+}
+
+/* Respect user motion preferences */
+@media (prefers-reduced-motion: reduce) {
+    /* Portal and lightning animations intentionally excluded - controlled by Battle Button instead */
+    /* Override the universal * selector to preserve animation timing */
+    .portal-overlay,
+    .portal-center,
+    .portal-ring,
+    .portal-ring-1,
+    .portal-ring-2,
+    .portal-ring-3,
+    .portal-ring-4,
+    .portal-ring-5,
+    .portal-core {
+        animation-duration: 2.8s !important;
+    }
+
+    /* Preserve epic lightning strike timing */
+    .lightning-bolt,
+    .bolt-1,
+    .bolt-2,
+    .bolt-3,
+    .bolt-4 {
+        animation-duration: 2s !important;
+    }
+
+    .bolt-3 {
+        animation-duration: 2.2s !important;
+    }
 }

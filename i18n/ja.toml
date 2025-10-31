@@ -27,3 +27,317 @@ other = "最近のプロジェクト"
 
 [view_github]
 other = "GitHubを見る"
+
+# サービス/料金ページ - 翻訳
+
+# ヒーローセクション
+[pricing_hero_title]
+other = "成功のためのパートナーシップ"
+
+[pricing_hero_subtitle]
+other = "代理店はありません。仲介者はありません。驚きはありません。ただの起業家が別の起業家を助けます—あなたの成功が私のビジネスだからです。"
+
+[pricing_pain_intro]
+other = "代理店モデルは壊れています："
+
+[pricing_pain_1]
+other = "否定的なレビューの60%がコミュニケーション失敗を指摘"
+
+[pricing_pain_2]
+other = "プロジェクトの40%が期限を完全に逃す"
+
+[pricing_pain_3]
+other = "プロジェクトの平均費用は当初見積もりの189%"
+
+[pricing_transition]
+other = "私は違う方法で実践を構築しました。"
+
+# 差別化要因セクション
+[pricing_differentiators_title]
+other = "何が違うのか"
+
+[pricing_differentiators_subtitle]
+other = "すべてのパートナーシップを導く5つの原則"
+
+[diff_1_title]
+other = "開発者への直接アクセス"
+
+[diff_1_desc]
+other = "サイトを構築している本人と話します—プロジェクトマネージャーの仲介はありません"
+
+[diff_2_title]
+other = "迅速な納品"
+
+[diff_2_desc]
+other = "2〜3週間でローンチ—3〜6ヶ月の待機ではありません"
+
+[diff_3_title]
+other = "固定価格、驚きゼロ"
+
+[diff_3_desc]
+other = "見たものが支払うもの—時給の水増しやスコープクリープの請求書はありません"
+
+[diff_4_title]
+other = "トレーニング + サポート込み"
+
+[diff_4_desc]
+other = "ローンチ後も見捨てられません—サイトを所有し、運用方法を知っています"
+
+[diff_5_title]
+other = "ビジネス第一のパートナーシップ"
+
+[diff_5_desc]
+other = "私は賞ではなく、あなたの収益を気にします—すべての決定はROIで測定されます"
+
+# 料金レベルセクション
+[pricing_tiers_title]
+other = "サービスパッケージ"
+
+[pricing_tiers_subtitle]
+other = "ビジネスに適したパートナーシップのレベルを選択してください"
+
+# レベル1 - 基礎
+[tier_1_name]
+other = "基礎サービス"
+
+[tier_1_tagline]
+other = "ウェブプレゼンスを確立する企業向け"
+
+[tier_1_feat_1]
+other = "高速で信頼性の高いパフォーマンス（Lighthouseスコア98以上）"
+
+[tier_1_feat_2]
+other = "すべてのデバイスで完璧に動作"
+
+[tier_1_feat_3]
+other = "検索エンジンフレンドリー"
+
+[tier_1_feat_4]
+other = "自分で更新を管理できるトレーニング"
+
+[tier_1_feat_5]
+other = "2〜3週間で納品"
+
+[tier_1_perfect]
+other = "オンラインでビジネスを立ち上げる、古いサイトを置き換える、プロフェッショナルなプレゼンスを確立する"
+
+# レベル2 - 完全なプレゼンス
+[tier_2_name]
+other = "完全なプレゼンス"
+
+[tier_2_tagline]
+other = "より広い市場に到達する企業向け"
+
+[tier_2_feat_0]
+other = "基礎サービスのすべて"
+
+[tier_2_feat_1]
+other = "5言語の多言語サポート（EN、ES、FR、JA、DE）"
+
+[tier_2_feat_2]
+other = "WCAG AAアクセシビリティ準拠"
+
+[tier_2_feat_3]
+other = "分析とコンバージョン追跡"
+
+[tier_2_feat_4]
+other = "30日間のローンチ後サポート"
+
+[tier_2_feat_5]
+other = "2回の包括的なトレーニングセッション"
+
+[tier_2_perfect]
+other = "国際市場、多言語顧客、アクセシビリティコンプライアンス、必要としているすべての人に届ける"
+
+# レベル3 - パートナーシップ
+[tier_3_name]
+other = "パートナーシップサービス"
+
+[tier_3_tagline]
+other = "継続的な成長にコミットする企業向け"
+
+[tier_3_feat_0]
+other = "完全なプレゼンスのすべて"
+
+[tier_3_feat_1]
+other = "四半期ごとの最適化レビュー"
+
+[tier_3_feat_2]
+other = "優先サポート（24時間以内の対応）"
+
+[tier_3_feat_3]
+other = "継続的なパフォーマンス改善"
+
+[tier_3_feat_4]
+other = "カスタムコンバージョン最適化"
+
+[tier_3_feat_5]
+other = "必要に応じた無制限のトレーニング"
+
+[tier_3_feat_6]
+other = "長期的な技術パートナーシップ"
+
+[tier_3_perfect]
+other = "成長企業、進化するニーズ、重要なコンバージョン、長期的な成功のパートナーシップ"
+
+# レベル共通要素
+[most_popular]
+other = "最も人気"
+
+[what_you_get]
+other = "得られるもの"
+
+[perfect_for]
+other = "最適な用途"
+
+# CTAボタン
+[get_started]
+other = "始める"
+
+[start_growing]
+other = "成長を始める"
+
+[lets_partner]
+other = "パートナーになる"
+
+[schedule_call]
+other = "15分間の通話を予約"
+
+# 料金の懸念セクション
+[pricing_concerns_title]
+other = "料金に関する懸念？"
+
+[pricing_concerns_text]
+other = "これらの数字は、私が各パートナーシップにもたらす品質とケアを反映しています。予算外の場合でも、とにかく連絡してください—あなたの状況と目標について正直な会話をしましょう。"
+
+[pricing_concerns_cta]
+other = "ニーズについて話しましょう →"
+
+# 比較表セクション
+[comparison_title]
+other = "私の違い"
+
+[comparison_subtitle]
+other = "典型的な代理店と私のアプローチの違いをご覧ください"
+
+[typical_agency]
+other = "典型的な代理店"
+
+[how_i_serve]
+other = "私のサービス提供方法"
+
+[comp_communication]
+other = "コミュニケーション"
+
+[comp_comm_agency_1]
+other = "2〜5営業日の対応"
+
+[comp_comm_agency_2]
+other = "プロジェクトマネージャーと話す"
+
+[comp_comm_me_1]
+other = "当日（多くの場合数時間）"
+
+[comp_comm_me_2]
+other = "実際の開発者と話す"
+
+[comp_timeline]
+other = "タイムライン"
+
+[comp_time_agency_1]
+other = "通常8〜12週間"
+
+[comp_time_agency_2]
+other = "40%が期限を逃す"
+
+[comp_time_me_1]
+other = "2〜3週間保証"
+
+[comp_time_me_2]
+other = "期限内または返金"
+
+[comp_pricing]
+other = "料金"
+
+[comp_price_agency_1]
+other = "当初見積もりの189%"
+
+[comp_price_agency_2]
+other = "変更は$150-300/時間"
+
+[comp_price_me_1]
+other = "固定価格、驚きゼロ"
+
+[comp_price_me_2]
+other = "変更は事前に議論"
+
+[comp_postlaunch]
+other = "ローンチ後"
+
+[comp_post_agency_1]
+other = "トレーニングは追加費用"
+
+[comp_post_agency_2]
+other = "$500/月のリテーナー"
+
+[comp_post_me_1]
+other = "トレーニング込み"
+
+[comp_post_me_2]
+other = "所有し、運用する"
+
+# FAQセクション
+[faq_title]
+other = "よくある質問"
+
+[faq_subtitle]
+other = "一般的な質問への明確な回答"
+
+[faq_1_q]
+other = "適切なサービスをどのように選ぶのですか？"
+
+[faq_1_a]
+other = "15分間話しましょう。目標について尋ね、正直にお勧めします—たとえそれが私が適切でないことを意味していても。"
+
+[faq_2_q]
+other = "技術的でない場合はどうなりますか？"
+
+[faq_2_a]
+other = "だからこそトレーニングが含まれています。すべてを平易な言葉で説明し、完了する前に自信を持っていることを確認します。"
+
+[faq_3_q]
+other = "ローンチ後の変更はどうなりますか？"
+
+[faq_3_a]
+other = "トレーニングは必要な更新のほとんどをカバーします。大きな変更については、開始前にスコープと料金を透明に議論します。"
+
+[faq_4_q]
+other = "なぜ代理店を雇わないのですか？"
+
+[faq_4_a]
+other = "オーバーヘッドがないということは、コストが低いということです。直接アクセスは、コミュニケーションが速いことを意味します。本当にあなたの成功に投資している一人の人間。"
+
+[faq_5_q]
+other = "予算が厳しい場合はどうなりますか？"
+
+[faq_5_a]
+other = "とにかく連絡してください。時には作業を段階的に進めたり、スコープを調整したり、今のあなたに合った創造的な解決策を見つけることができます。"
+
+# 最終CTAセクション
+[final_cta_title]
+other = "始める準備はできましたか？"
+
+[final_cta_subtitle]
+other = "次の最善のステップは会話です—セールストークはありません、プレッシャーもありません。ただ私があなたのビジネス目標を聞き、正直なガイダンスを提供します。"
+
+[or_contact_form]
+other = "または"
+
+[contact_form_link]
+other = "下記の問い合わせフォームを使用してください"
+
+[see_examples]
+other = "何が可能か気になりますか？"
+
+[view_demos]
+other = "すべてのデモを見る →"

@@ -2,6 +2,7 @@
 title: "Dienstleistungen"
 date: 2025-10-31
 draft: false
+type: "services"
 description: "Ihr Unternehmen erfolgreich online präsentieren. Kundenorientierte Webentwicklung mit Fokus auf Ihren Erfolg."
 ---
 

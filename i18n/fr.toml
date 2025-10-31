@@ -27,3 +27,317 @@ other = "Projets Récents"
 
 [view_github]
 other = "Voir GitHub"
+
+# Services/Page de Tarification - Traductions
+
+# Section Hero
+[pricing_hero_title]
+other = "Partenariat Pour Votre Réussite"
+
+[pricing_hero_subtitle]
+other = "Pas d'agences. Pas d'intermédiaires. Pas de surprises. Juste un entrepreneur qui aide un autre—parce que votre succès est mon affaire."
+
+[pricing_pain_intro]
+other = "Le modèle d'agence est cassé :"
+
+[pricing_pain_1]
+other = "60% des avis négatifs citent des échecs de communication"
+
+[pricing_pain_2]
+other = "40% des projets ratent complètement leurs délais"
+
+[pricing_pain_3]
+other = "Les projets coûtent en moyenne 189% des estimations initiales"
+
+[pricing_transition]
+other = "J'ai construit ma pratique différemment."
+
+# Section des Différenciateurs
+[pricing_differentiators_title]
+other = "Ce Qui Fait la Différence"
+
+[pricing_differentiators_subtitle]
+other = "Cinq principes qui guident chaque partenariat"
+
+[diff_1_title]
+other = "Accès Direct au Développeur"
+
+[diff_1_desc]
+other = "Vous parlez à la personne qui construit votre site—pas d'intermédiaires de gestion de projet"
+
+[diff_2_title]
+other = "Livraison Rapide"
+
+[diff_2_desc]
+other = "Lancement en 2-3 semaines—pas 3-6 mois d'attente"
+
+[diff_3_title]
+other = "Prix Fixe, Zéro Surprise"
+
+[diff_3_desc]
+other = "Ce que vous voyez est ce que vous payez—pas de gonflage de tarifs horaires ou de factures pour changement de périmètre"
+
+[diff_4_title]
+other = "Formation + Support Inclus"
+
+[diff_4_desc]
+other = "Jamais abandonné après le lancement—vous possédez votre site et savez comment le gérer"
+
+[diff_5_title]
+other = "Partenariat Axé sur l'Entreprise"
+
+[diff_5_desc]
+other = "Je me soucie de vos revenus, pas des prix—chaque décision mesurée par le ROI"
+
+# Section des Niveaux de Tarification
+[pricing_tiers_title]
+other = "Forfaits de Services"
+
+[pricing_tiers_subtitle]
+other = "Choisissez le niveau de partenariat adapté à votre entreprise"
+
+# Niveau 1 - Fondation
+[tier_1_name]
+other = "Service Fondation"
+
+[tier_1_tagline]
+other = "Pour les entreprises qui établissent leur présence web"
+
+[tier_1_feat_1]
+other = "Performances rapides et fiables (scores Lighthouse 98+)"
+
+[tier_1_feat_2]
+other = "Fonctionne parfaitement sur tous les appareils"
+
+[tier_1_feat_3]
+other = "Optimisé pour les moteurs de recherche"
+
+[tier_1_feat_4]
+other = "Formation pour que vous contrôliez les mises à jour vous-même"
+
+[tier_1_feat_5]
+other = "Livraison en 2-3 semaines"
+
+[tier_1_perfect]
+other = "Lancer votre entreprise en ligne, remplacer des sites obsolètes, établir une présence professionnelle"
+
+# Niveau 2 - Présence Complète
+[tier_2_name]
+other = "Présence Complète"
+
+[tier_2_tagline]
+other = "Pour les entreprises qui visent des marchés plus larges"
+
+[tier_2_feat_0]
+other = "Tout dans Service Fondation"
+
+[tier_2_feat_1]
+other = "Support multilingue en 5 langues (EN, ES, FR, JA, DE)"
+
+[tier_2_feat_2]
+other = "Conformité d'accessibilité WCAG AA"
+
+[tier_2_feat_3]
+other = "Analyses et suivi des conversions"
+
+[tier_2_feat_4]
+other = "Support post-lancement de 30 jours"
+
+[tier_2_feat_5]
+other = "2 sessions de formation complètes"
+
+[tier_2_perfect]
+other = "Marchés internationaux, clients multilingues, conformité d'accessibilité, atteindre tous ceux qui ont besoin de vous"
+
+# Niveau 3 - Partenariat
+[tier_3_name]
+other = "Service Partenariat"
+
+[tier_3_tagline]
+other = "Pour les entreprises engagées dans la croissance continue"
+
+[tier_3_feat_0]
+other = "Tout dans Présence Complète"
+
+[tier_3_feat_1]
+other = "Revues d'optimisation trimestrielles"
+
+[tier_3_feat_2]
+other = "Support prioritaire (réponse sous 24 heures)"
+
+[tier_3_feat_3]
+other = "Améliorations continues des performances"
+
+[tier_3_feat_4]
+other = "Optimisation de conversion personnalisée"
+
+[tier_3_feat_5]
+other = "Formation illimitée selon les besoins"
+
+[tier_3_feat_6]
+other = "Partenariat technique à long terme"
+
+[tier_3_perfect]
+other = "Entreprises en croissance, besoins évolutifs, conversions critiques, partenariats de succès à long terme"
+
+# Éléments Communs des Niveaux
+[most_popular]
+other = "Plus Populaire"
+
+[what_you_get]
+other = "Ce Que Vous Obtenez"
+
+[perfect_for]
+other = "Parfait Pour"
+
+# Boutons CTA
+[get_started]
+other = "Commencer"
+
+[start_growing]
+other = "Commencer à Grandir"
+
+[lets_partner]
+other = "Devenons Partenaires"
+
+[schedule_call]
+other = "Planifier un Appel de 15 Minutes"
+
+# Section des Préoccupations sur les Prix
+[pricing_concerns_title]
+other = "Préoccupations sur les Prix ?"
+
+[pricing_concerns_text]
+other = "Ces chiffres reflètent la qualité et le soin que j'apporte à chaque partenariat. S'ils dépassent votre budget, contactez-moi quand même—ayons une conversation honnête sur votre situation et vos objectifs."
+
+[pricing_concerns_cta]
+other = "Parlons de vos besoins →"
+
+# Section du Tableau de Comparaison
+[comparison_title]
+other = "Comment Je Suis Différent"
+
+[comparison_subtitle]
+other = "Voyez la différence entre les agences typiques et mon approche"
+
+[typical_agency]
+other = "Agence Typique"
+
+[how_i_serve]
+other = "Comment Je Vous Sers"
+
+[comp_communication]
+other = "Communication"
+
+[comp_comm_agency_1]
+other = "Réponse en 2-5 jours ouvrables"
+
+[comp_comm_agency_2]
+other = "Vous parlez au chef de projet"
+
+[comp_comm_me_1]
+other = "Le jour même (souvent en heures)"
+
+[comp_comm_me_2]
+other = "Vous parlez au vrai développeur"
+
+[comp_timeline]
+other = "Calendrier"
+
+[comp_time_agency_1]
+other = "8-12 semaines typique"
+
+[comp_time_agency_2]
+other = "40% ratent les délais"
+
+[comp_time_me_1]
+other = "2-3 semaines garanties"
+
+[comp_time_me_2]
+other = "À temps ou remboursement"
+
+[comp_pricing]
+other = "Tarification"
+
+[comp_price_agency_1]
+other = "189% de l'estimation initiale"
+
+[comp_price_agency_2]
+other = "Modifications à $150-300/heure"
+
+[comp_price_me_1]
+other = "Prix fixe, zéro surprise"
+
+[comp_price_me_2]
+other = "Modifications discutées à l'avance"
+
+[comp_postlaunch]
+other = "Post-Lancement"
+
+[comp_post_agency_1]
+other = "Formation en supplément"
+
+[comp_post_agency_2]
+other = "Forfait de $500/mois"
+
+[comp_post_me_1]
+other = "Formation incluse"
+
+[comp_post_me_2]
+other = "Vous le possédez, vous le gérez"
+
+# Section FAQ
+[faq_title]
+other = "Questions Fréquemment Posées"
+
+[faq_subtitle]
+other = "Réponses claires aux questions courantes"
+
+[faq_1_q]
+other = "Comment choisir le bon service ?"
+
+[faq_1_a]
+other = "Parlons pendant 15 minutes. Je vous poserai des questions sur vos objectifs et recommanderai honnêtement—même si cela signifie que je ne suis pas la bonne personne."
+
+[faq_2_q]
+other = "Et si je ne suis pas technique ?"
+
+[faq_2_a]
+other = "C'est pourquoi la formation est incluse. J'explique tout en français simple et m'assure que vous êtes confiant avant de terminer."
+
+[faq_3_q]
+other = "Qu'en est-il des modifications après le lancement ?"
+
+[faq_3_a]
+other = "La formation couvre la plupart des mises à jour dont vous aurez besoin. Pour les modifications plus importantes, nous discuterons du périmètre et des prix de manière transparente avant de commencer."
+
+[faq_4_q]
+other = "Pourquoi ne pas embaucher une agence ?"
+
+[faq_4_a]
+other = "Pas de frais généraux signifie des coûts plus bas. L'accès direct signifie une communication plus rapide. Une personne véritablement investie dans votre succès."
+
+[faq_5_q]
+other = "Et si mon budget est serré ?"
+
+[faq_5_a]
+other = "Contactez-moi quand même. Parfois, nous pouvons échelonner le travail, ajuster le périmètre ou trouver des solutions créatives qui fonctionnent pour votre situation actuelle."
+
+# Section CTA Final
+[final_cta_title]
+other = "Prêt à Commencer ?"
+
+[final_cta_subtitle]
+other = "La meilleure prochaine étape est une conversation—pas de discours de vente, pas de pression. Juste moi qui écoute vos objectifs commerciaux et offre des conseils honnêtes."
+
+[or_contact_form]
+other = "Ou utilisez le"
+
+[contact_form_link]
+other = "formulaire de contact ci-dessous"
+
+[see_examples]
+other = "Curieux de ce qui est possible ?"
+
+[view_demos]
+other = "Voir Toutes les Démos →"

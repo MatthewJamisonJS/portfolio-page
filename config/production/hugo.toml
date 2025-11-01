@@ -34,7 +34,7 @@ home = ["HTML", "RSS"]
 
 ############################# Imaging ##############################
 [imaging]
-quality = 90
+quality = 85
 resampleFilter = "lanczos"
 
 ############################# Caches ###############################
@@ -52,30 +52,40 @@ maxAge = "720h"
 [markup.goldmark.renderer]
 unsafe = true
 
+############################# Minify ###############################
+[minify]
+  disableHTML = false
+  disableCSS = false
+  disableJS = false
+  disableJSON = false
+  disableXML = false
+  disableSVG = false
+  [minify.tdewolff]
+    [minify.tdewolff.html]
+      keepWhitespace = false
+    [minify.tdewolff.css]
+      precision = 2
+      keepCSS2 = false
+    [minify.tdewolff.js]
+      precision = 2
+      keepVarNames = false
+
 ############################# Plugins ##########################
 # css plugins
 [[params.plugins.css]]
 link = "plugins/bootstrap/bootstrap.min.css"
 [[params.plugins.css]]
 link = "plugins/themify-icons/themify-icons.css"
+# Removed unused plugins (magnific-popup, slick)
 [[params.plugins.css]]
-link = "plugins/magnific-popup/magnific-popup.css"
-[[params.plugins.css]]
-link = "plugins/slick/slick.css"
-[[params.plugins.css]]
-link = "https://fonts.googleapis.com/css?family=Anaheim|Quattrocento+Sans:400,700&display=swap"
+link = "css/fonts.css"
 
 # js plugins
 [[params.plugins.js]]
 link = "plugins/jquery/jquery.min.js"
 [[params.plugins.js]]
 link = "plugins/bootstrap/bootstrap.min.js"
-[[params.plugins.js]]
-link = "plugins/slick/slick.min.js"
-[[params.plugins.js]]
-link = "plugins/shuffle/shuffle.min.js"
-[[params.plugins.js]]
-link = "plugins/magnific-popup/jquery.magnific-popup.min.js"
+# Removed unused plugins (slick, shuffle, magnific-popup) - 120KB savings
 [[params.plugins.js]]
 link = "plugins/lazy-load/lozad.min.js"
 

@@ -1,0 +1,28 @@
+{
+  "name": "Matthew Jamison - Full-Stack Developer Portfolio",
+  "short_name": "MJ Portfolio",
+  "description": "Full-stack developer delivering measurable ROI: 98+ Lighthouse scores, $6k/year hosting savings, 79% faster load times. Rails, Python, Hugo, AI Tooling.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#000000",
+  "theme_color": "#ffeb3b",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/images/pokemon/mew.gif",
+      "sizes": "77x77",
+      "type": "image/gif",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/images/backgrounds/hero-bg.webp",
+      "sizes": "512x512",
+      "type": "image/webp",
+      "purpose": "any"
+    }
+  ],
+  "categories": ["business", "productivity", "development"],
+  "lang": "en-US",
+  "dir": "ltr"
+}

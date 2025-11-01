@@ -113,6 +113,7 @@ body.battle-mode .battle-icon {
 /* Mobile responsive */
 @media (max-width: 768px) {
     .battle-toggle-btn {
+        display: none;
         bottom: 20px;
         right: 20px;
         padding: 12px 20px;
@@ -964,7 +965,8 @@ body:not(.battle-mode) .battle-effects circle {
     animation: none !important;
 }
 
-body:not(.battle-mode) .pokemon-battle {
+body:not(.pokemon-visible):not(.battle-mode) .pokemon-battle {
+    display: none !important; /* Hide Pokemon GIFs until visible or battle starts */
     animation: none !important;
     filter: none !important;
 }

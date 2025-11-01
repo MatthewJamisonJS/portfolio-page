@@ -9,7 +9,7 @@ demo_url: "https://demo-blog-a03.pages.dev"
 github_url: "https://github.com/MatthewJamisonJS/demo-blog"
 theme_name: "Parsa"
 description: "エンゲージメントと発見のために設計されたコンテンツプラットフォームで権威を構築し、オーガニックトラフィックを促進。SEO最適化された構造、優れた読みやすさ、プロフェッショナルなプレゼンテーションが読者をサブスクライバー、顧客、アドボケイトに変換。"
-image: "/images/demos/demo-5-blog.png"
+image: "/images/demos/demo-5-blog.webp"
 challenge: "WordPressプラグインで重くなったコンテンツサイト、ページ読み込み遅延がSEOに悪影響"
 solution_time: "2-3週間"
 metrics:

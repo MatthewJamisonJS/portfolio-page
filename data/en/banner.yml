@@ -1,7 +1,7 @@
 ---
 banner:
   enable: true
-  bg_image_webp: "images/backgrounds/hero-bg.jpg"
+  bg_image_webp: "images/backgrounds/hero-bg.webp"
   bg_image: "images/backgrounds/hero-bg.jpg"
   pokemon_sprite: "/images/pokemon/mew.gif"
   title: "Matthew Jamison"

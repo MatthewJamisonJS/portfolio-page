@@ -16,55 +16,9 @@ jQuery(function ($) {
 	const observer = lozad(); // lazy loads elements with default selector as ".lozad"
 	observer.observe();
 
-	/* ========================================================================= */
-	/*	Magnific popup
-	/* =========================================================================  */
-	$('.image-popup').magnificPopup({
-		type: 'image',
-		removalDelay: 160, //delay removal by X to allow out-animation
-		callbacks: {
-			beforeOpen: function () {
-				// just a hack that adds mfp-anim class to markup
-				this.st.image.markup = this.st.image.markup.replace('mfp-figure', 'mfp-figure mfp-with-anim');
-				this.st.mainClass = this.st.el.attr('data-effect');
-			}
-		},
-		closeOnContentClick: true,
-		midClick: true,
-		fixedContentPos: false,
-		fixedBgPos: true
-	});
-
-	/* ========================================================================= */
-	/*	Portfolio Filtering Hook
-	/* =========================================================================  */
-
-	var containerEl = document.querySelector('.shuffle-wrapper');
-	if (containerEl) {
-		var Shuffle = window.Shuffle;
-		var myShuffle = new Shuffle(document.querySelector('.shuffle-wrapper'), {
-			itemSelector: '.shuffle-item',
-			buffer: 1
-		});
-
-		jQuery('input[name="shuffle-filter"]').on('change', function (evt) {
-			var input = evt.currentTarget;
-			if (input.checked) {
-				myShuffle.filter(input.value);
-			}
-		});
-	}
-
-	/* ========================================================================= */
-	/*	Testimonial Carousel
-	/* =========================================================================  */
-
-	$("#testimonials").slick({
-		infinite: true,
-		arrows: false,
-		autoplay: true,
-		autoplaySpeed: 4000
-	});
+	// Removed Magnific Popup - plugin deleted
+	// Removed Shuffle Portfolio Filtering - plugin deleted
+	// Removed Slick Testimonial Carousel - plugin deleted
 
 	/* ========================================================================= */
 	/*	animation scroll js
@@ -149,7 +103,7 @@ jQuery(function ($) {
 
 	(function initBattleToggle() {
 		// Check for stored preference
-		const storedPreference = localStorage.getItem('battle-mode');
+		const storedPreference = localStorage.getItem('pokemon-visible');
 
 		// DEFAULT TO ON for desktop, OFF for mobile (WCAG 2.2.2 compliant)
 		// Desktop users get the full experience, mobile users get cleaner UI
@@ -168,8 +122,16 @@ jQuery(function ($) {
 		});
 
 		// Apply initial state
-		if (!battleModeEnabled) {
-			$('body').addClass('battle-mode-disabled');
+		if (battleModeEnabled) {
+			$('body').addClass('pokemon-visible');
+
+			// Load Pokemon GIFs on page load if enabled
+			document.querySelectorAll('.battle-lazy').forEach(img => {
+				const dataSrc = img.getAttribute('data-src');
+				if (dataSrc && !img.src) {
+					img.src = dataSrc;
+				}
+			});
 		}
 		updateButtonState();
 
@@ -187,11 +149,19 @@ jQuery(function ($) {
 			battleModeEnabled = !battleModeEnabled;
 
 			if (battleModeEnabled) {
-				$('body').removeClass('battle-mode-disabled');
-				localStorage.setItem('battle-mode', 'enabled');
+				$('body').addClass('pokemon-visible');
+				localStorage.setItem('pokemon-visible', 'enabled');
+
+				// Load Pokemon GIFs when making them visible
+				document.querySelectorAll('.battle-lazy').forEach(img => {
+					const dataSrc = img.getAttribute('data-src');
+					if (dataSrc && !img.src) {
+						img.src = dataSrc;
+					}
+				});
 			} else {
-				$('body').addClass('battle-mode-disabled');
-				localStorage.setItem('battle-mode', 'disabled');
+				$('body').removeClass('pokemon-visible');
+				localStorage.setItem('pokemon-visible', 'disabled');
 			}
 
 			battleToggle.attr('aria-pressed', battleModeEnabled);
@@ -225,7 +195,7 @@ jQuery(function ($) {
 		// Listen for system preference changes
 		window.matchMedia('(prefers-reduced-motion: reduce)').addEventListener('change', function(e) {
 			// Only auto-disable if user hasn't explicitly set a preference
-			if (localStorage.getItem('battle-mode') === null && e.matches) {
+			if (localStorage.getItem('pokemon-visible') === null && e.matches) {
 				if (battleModeEnabled) {
 					toggleBattleMode();
 				}
@@ -274,6 +244,18 @@ jQuery(function ($) {
 
 		// Pre-fill contact form subject on page load with animation
 		$(window).on('load', function() {
+			// Check URL parameter first (new architecture) - takes precedence
+			var urlParams = new URLSearchParams(window.location.search);
+			var urlService = urlParams.get('service');
+
+			// If URL has service parameter, clear sessionStorage and let footer.html handle it
+			if (urlService) {
+				sessionStorage.removeItem('selectedService');
+				console.log('🔗 URL service parameter detected, deferring to footer.html handler');
+				return; // Exit early, footer.html will handle the pre-fill
+			}
+
+			// Otherwise, fall back to sessionStorage (legacy support)
 			var selectedService = sessionStorage.getItem('selectedService');
 			if (selectedService) {
 				var $subjectField = $('#subject');

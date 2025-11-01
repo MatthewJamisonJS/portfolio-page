@@ -22,24 +22,7 @@
   position: relative;
   overflow: hidden;
   min-height: 100vh;
-  background: linear-gradient(135deg,
-    var(--secondary) 0%,
-    var(--primary) 50%,
-    var(--accent) 100%) !important;
-  background-size: 400% 400% !important;
-  animation: gradientShift 15s ease infinite !important;
-}
-
-@keyframes gradientShift {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
+  /* Background image and gradient now handled by child elements (<img> + gradient overlay) */
 }
 
 /* Animated particles/sparkles effect */
@@ -60,6 +43,7 @@
   background-size: 200% 200%;
   animation: sparkle 20s ease-in-out infinite;
   opacity: 0.6;
+  z-index: 2; /* Layer above gradient overlay */
 }
 
 @keyframes sparkle {
@@ -2459,9 +2443,10 @@ body.battle-mode-disabled .battle-toggle:hover {
 }
 
 .faq-answer p {
-    padding: 0 25px 20px;
+    padding: 20px 25px 20px;
     margin: 0;
-    color: var(--gray-medium);
+    color: #b0b0b0;
+    font-size: 1.5rem;
     line-height: 1.6;
 }
 

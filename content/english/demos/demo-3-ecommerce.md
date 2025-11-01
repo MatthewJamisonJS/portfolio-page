@@ -9,7 +9,7 @@ demo_url: "https://demo-ecommerce-am8.pages.dev"
 github_url: "https://github.com/MatthewJamisonJS/demo-ecommerce"
 theme_name: "Hargo"
 description: "Launch your online store and start generating revenue in weeks, not months. Professional product showcases, seamless checkout flows, and mobile-optimized shopping experiences maximize conversions and reduce cart abandonment across 5 languages."
-image: "/images/demos/demo-3-ecommerce.png"
+image: "/images/demos/demo-3-ecommerce.webp"
 challenge: "International expansion blocked by lack of multilingual support"
 solution_time: "2-3 weeks"
 metrics:

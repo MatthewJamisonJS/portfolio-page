@@ -9,7 +9,7 @@ demo_url: "https://demo-blog-a03.pages.dev"
 github_url: "https://github.com/MatthewJamisonJS/demo-blog"
 theme_name: "Parsa"
 description: "Bauen Sie Autorität auf und generieren Sie organischen Traffic mit einer Content-Plattform für Engagement und Entdeckung. SEO-optimierte Struktur, außergewöhnliche Lesbarkeit und professionelle Präsentation verwandeln Leser in Abonnenten, Kunden und Fürsprecher."
-image: "/images/demos/demo-5-blog.png"
+image: "/images/demos/demo-5-blog.webp"
 challenge: "Content-Seite ertrinkt in WordPress-Plugins, langsame Ladezeiten schaden der SEO"
 solution_time: "2-3 Wochen"
 metrics:

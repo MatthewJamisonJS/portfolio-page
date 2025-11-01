@@ -35,12 +35,12 @@
 
 {{ "<!-- JS Plugins -->" | safeHTML }}
 {{ range site.Params.plugins.js}}
-<script src="{{ .link | absURL }}"></script>
+<script src="{{ .link | absURL }}" defer></script>
 {{ end }}
 
 {{ "<!-- Main Script -->" | safeHTML }}
 {{ $script := resources.Get "js/script.js" | minify | fingerprint "sha384"}}
-<script src="{{ $script.Permalink }}" integrity="{{ $script.Data.Integrity }}"></script>
+<script src="{{ $script.Permalink }}" integrity="{{ $script.Data.Integrity }}" defer></script>
 
 <!-- Battle Animation CSS -->
 {{ $battleCSS := resources.Get "css/battle-animations.css" | minify | fingerprint "sha384" }}
@@ -81,7 +81,10 @@
 		const serviceNames = {
 			'foundation': 'Foundation Service',
 			'complete-presence': 'Complete Presence',
-			'partnership': 'Partnership'
+			'partnership': 'Partnership',
+			'budget-inquiry': 'Budget Inquiry',
+			'consultation': 'Consultation',
+			'general': 'General Inquiry'
 		};
 
 		const serviceName = serviceNames[service];
@@ -126,8 +129,45 @@
 <!-- Epic Pokemon Battle Animation Scripts -->
 {{ $particleJS := resources.Get "js/battle-particles.js" | minify | fingerprint "sha384" }}
 {{ $controllerJS := resources.Get "js/battle-controller.js" | minify | fingerprint "sha384" }}
-<script src="{{ $particleJS.Permalink }}" integrity="{{ $particleJS.Data.Integrity }}"></script>
-<script src="{{ $controllerJS.Permalink }}" integrity="{{ $controllerJS.Data.Integrity }}"></script>
+<script src="{{ $particleJS.Permalink }}" integrity="{{ $particleJS.Data.Integrity }}" defer></script>
+<script src="{{ $controllerJS.Permalink }}" integrity="{{ $controllerJS.Data.Integrity }}" defer></script>
+
+<!-- FAQ Accordion Functionality -->
+<script>
+(function() {
+	document.addEventListener('DOMContentLoaded', function() {
+		const faqButtons = document.querySelectorAll('.faq-question');
+
+		faqButtons.forEach(button => {
+			button.addEventListener('click', function() {
+				const faqItem = this.parentElement;
+				const answer = faqItem.querySelector('.faq-answer');
+				const isExpanded = this.getAttribute('aria-expanded') === 'true';
+
+				// Close all other FAQs
+				faqButtons.forEach(otherButton => {
+					if (otherButton !== this) {
+						otherButton.setAttribute('aria-expanded', 'false');
+						otherButton.querySelector('.faq-icon').textContent = '+';
+						otherButton.parentElement.querySelector('.faq-answer').style.maxHeight = '0';
+					}
+				});
+
+				// Toggle current FAQ
+				if (isExpanded) {
+					this.setAttribute('aria-expanded', 'false');
+					this.querySelector('.faq-icon').textContent = '+';
+					answer.style.maxHeight = '0';
+				} else {
+					this.setAttribute('aria-expanded', 'true');
+					this.querySelector('.faq-icon').textContent = '−';
+					answer.style.maxHeight = answer.scrollHeight + 'px';
+				}
+			});
+		});
+	});
+})();
+</script>
 
 <!-- Multi-Layer Vortex Portal Animation for Start Project Button -->
 <script>

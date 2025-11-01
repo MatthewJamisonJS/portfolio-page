@@ -17,7 +17,7 @@
       <div class="row g-4 pricing-cards-wrapper justify-content-center">
         <!-- Tier 1: Foundation Service -->
         <div class="col-lg-4 col-md-6">
-          <a href="/?service=foundation#contact" class="pricing-card-link">
+          <a href="{{ "/" | relLangURL }}#contact" class="pricing-card-link" onclick="sessionStorage.setItem('selectedService', 'Foundation Service');">
             <div class="pricing-card" data-tier="foundation">
               <div class="card-header">
                 <div class="tier-icon">🌱</div>
@@ -38,7 +38,7 @@
 
         <!-- Tier 2: Complete Presence (RECOMMENDED) -->
         <div class="col-lg-4 col-md-6">
-          <a href="/?service=complete-presence#contact" class="pricing-card-link">
+          <a href="{{ "/" | relLangURL }}#contact" class="pricing-card-link" onclick="sessionStorage.setItem('selectedService', 'Complete Presence');">
             <div class="pricing-card recommended" data-tier="complete">
               <div class="recommended-badge">Most Popular</div>
 
@@ -61,7 +61,7 @@
 
         <!-- Tier 3: Partnership Service -->
         <div class="col-lg-4 col-md-6">
-          <a href="/?service=partnership#contact" class="pricing-card-link">
+          <a href="{{ "/" | relLangURL }}#contact" class="pricing-card-link" onclick="sessionStorage.setItem('selectedService', 'Partnership Service');">
             <div class="pricing-card" data-tier="partnership">
               <div class="card-header">
                 <div class="tier-icon">🤝</div>
@@ -87,7 +87,7 @@
           <div class="pricing-concerns-note">
             <h4 class="mb-3">Pricing Concerns?</h4>
             <p class="mb-3">These numbers reflect the quality and care I bring to each partnership. If they're outside your budget, reach out anyway—let's have an honest conversation about your situation and goals.</p>
-            <a href="/contact?service=budget-inquiry" class="text-cyan pricing-cta-btn" data-service="Budget Inquiry">Let's talk about your needs →</a>
+            <a href="{{ "/" | relLangURL }}#contact" class="text-cyan pricing-cta-btn" onclick="sessionStorage.setItem('selectedService', 'Budget Inquiry');">Let's talk about your needs →</a>
           </div>
         </div>
       </div>
@@ -248,7 +248,7 @@
                 <span class="faq-icon">+</span>
               </button>
               <div class="faq-answer">
-                <p>Let's talk for 15 minutes. I'll ask about your goals and recommend honestly—even if that means I'm not the right fit.</p>
+                <p>Start with Foundation if you're launching for the first time. Choose Complete Presence if you need multilingual reach or WCAG compliance. Go Partnership if you want ongoing optimization and priority support. Still not sure? Book a 15-min call and we'll figure it out together.</p>
               </div>
             </div>
 
@@ -259,7 +259,7 @@
                 <span class="faq-icon">+</span>
               </button>
               <div class="faq-answer">
-                <p>That's why training is included. I explain everything in plain English and make sure you're confident before we're done.</p>
+                <p>That's the point. You own your site and control updates yourself after I train you. No calling an agency every time you need to change a sentence. You'll get recorded training sessions and a simple CMS that makes sense.</p>
               </div>
             </div>
 
@@ -270,7 +270,7 @@
                 <span class="faq-icon">+</span>
               </button>
               <div class="faq-answer">
-                <p>Training covers most updates you'll need. For bigger changes, we'll discuss scope and pricing transparently before starting.</p>
+                <p>Foundation includes 2 weeks of post-launch support for urgent fixes. Complete Presence includes 30 days of support. Partnership includes unlimited support plus quarterly optimization. Any changes outside your support window? We discuss scope and pricing upfront—no surprise invoices.</p>
               </div>
             </div>
 
@@ -281,7 +281,7 @@
                 <span class="faq-icon">+</span>
               </button>
               <div class="faq-answer">
-                <p>No overhead means lower costs. Direct access means faster communication. One person genuinely invested in your success.</p>
+                <p>Agencies charge $150-300/hour and you talk to project managers, not developers. With me, you get direct developer access, same-day responses, and fixed pricing. Plus I actually care about your revenue, not billable hours.</p>
               </div>
             </div>
 
@@ -292,7 +292,7 @@
                 <span class="faq-icon">+</span>
               </button>
               <div class="faq-answer">
-                <p>Reach out anyway. Sometimes we can phase work, adjust scope, or find creative solutions that work for where you are now.</p>
+                <p>Let's talk. I work with underserved businesses and can structure payment plans or suggest MVP approaches. Worst case, I'll point you toward free resources that actually help. No sales pressure.</p>
               </div>
             </div>
           </div>
@@ -311,17 +311,9 @@
             <p class="cta-subtitle mb-5">The best next step is a conversation—no sales pitch, no pressure. Just me listening to your business goals and offering honest guidance.</p>
 
             <div class="cta-buttons">
-              <a href="/contact?service=consultation" class="btn btn-cta-primary pricing-cta-btn" data-service="Consultation">
+              <a href="{{ "/" | relLangURL }}#contact" class="btn btn-cta-primary" onclick="sessionStorage.setItem('selectedService', 'General Consultation');">
                 Schedule 15-Minute Call
               </a>
-              <p class="cta-alternative mt-3">
-                Or use the <a href="/contact" class="text-cyan pricing-cta-btn" data-service="General Inquiry">contact form below</a>
-              </p>
-            </div>
-
-            <div class="demos-link mt-5">
-              <p class="text-light-gray">Curious what's possible?</p>
-              <a href="/demos" class="text-magenta fw-semibold">View All Demos →</a>
             </div>
           </div>
         </div>

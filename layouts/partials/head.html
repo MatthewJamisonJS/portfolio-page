@@ -12,18 +12,41 @@
         <meta name="theme-name" content="meghna-hugo" />
 	{{ hugo.Generator }}
 
+	{{ "<!-- CRITICAL INLINE CSS - Above-the-fold instant render -->" | safeHTML}}
+	{{ $criticalInline := resources.Get "css/critical-inline.css" | minify }}
+	<style>{{ $criticalInline.Content | safeCSS }}</style>
+
+	{{ "<!-- PRELOAD HERO IMAGE - LCP optimization with responsive srcset -->" | safeHTML}}
+	<link rel="preload"
+		href="{{ "images/backgrounds/hero-bg-desktop.webp" | absURL }}"
+		as="image"
+		type="image/webp"
+		imagesrcset="
+			{{ "images/backgrounds/hero-bg-mobile.webp" | absURL }} 768w,
+			{{ "images/backgrounds/hero-bg-tablet.webp" | absURL }} 1280w,
+			{{ "images/backgrounds/hero-bg-desktop.webp" | absURL }} 1920w
+		"
+		imagesizes="100vw"
+		fetchpriority="high">
+
 	{{ "<!-- plugins -->" | safeHTML }}
 	{{ range site.Params.plugins.css }}
+	{{ if or (in .link "bootstrap") (in .link "themify") }}
+	{{ "<!-- Defer non-critical CSS -->" | safeHTML }}
+	<link rel="preload" href="{{ .link | absURL }}" as="style" onload="this.onload=null;this.rel='stylesheet'">
+	<noscript><link rel="stylesheet" href="{{ .link | absURL }}"></noscript>
+	{{ else }}
 	<link rel="stylesheet" href="{{ .link | absURL }}">
+	{{ end }}
 	{{ end }}
 
 	{{"<!-- Main Stylesheet -->"|safeHTML}}
 	{{ $styles := resources.Get "css/style.css" | minify }}
 	<link rel="stylesheet" href="{{ $styles.Permalink }}" media="screen">
 
-	{{"<!-- Custom stylesheet - for your changes -->" |safeHTML}}
+	{{"<!-- Custom stylesheet with ALL animations - Render-blocking for instant animation start -->" |safeHTML}}
 	{{ $custom := resources.Get "css/custom.css" | minify | fingerprint }}
-  <link rel="stylesheet" href="{{ $custom.Permalink }}" media="screen">
+	<link rel="stylesheet" href="{{ $custom.Permalink }}" media="screen">
 
 	{{ "<!--Favicon-->" | safeHTML }}
 	<link rel="shortcut icon" href="{{ `images/pokemon/mew.gif` | absURL }}" type="image/gif">
@@ -169,16 +192,20 @@
 	}
 	</script>
 
-	<!-- Preconnect to external domains for performance -->
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link rel="dns-prefetch" href="https://fonts.googleapis.com">
-	<link rel="dns-prefetch" href="https://fonts.gstatic.com">
+	<!-- Preload critical self-hosted fonts for performance -->
+	<link rel="preload" href="/fonts/anaheim-v17-latin-regular.woff2" as="font" type="font/woff2" crossorigin>
+	<link rel="preload" href="/fonts/quattrocento-sans-v22-latin-regular.woff2" as="font" type="font/woff2" crossorigin>
+
+	<!-- PWA Manifest -->
+	<link rel="manifest" href="/manifest.json">
+	<meta name="mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+	<meta name="apple-mobile-web-app-title" content="MJ Portfolio">
+
 	{{ if site.Params.google_analytics_id }}
+	<!-- Preconnect to Google Analytics -->
 	<link rel="preconnect" href="https://www.googletagmanager.com">
 	<link rel="dns-prefetch" href="https://www.googletagmanager.com">
 	{{ end }}
-
-	<!-- Preload critical fonts for performance -->
-	<link rel="preload" href="https://fonts.gstatic.com/s/robotoslab/v34/BngbUXZYTXPIvIBgJJSb6s3BzlRRfKOFbvjojISmYmRjRdE.woff2" as="font" type="font/woff2" crossorigin>
 </head>

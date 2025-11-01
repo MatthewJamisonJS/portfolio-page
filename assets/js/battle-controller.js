@@ -143,6 +143,15 @@ class BattleController {
         this.active = true;
         document.body.classList.add('battle-mode');
 
+        // Load Pokemon GIFs now (from data-src to src)
+        document.querySelectorAll('.battle-lazy').forEach(img => {
+            const dataSrc = img.getAttribute('data-src');
+            if (dataSrc && !img.src) {
+                img.src = dataSrc;
+                console.log(`🎮 Loading: ${dataSrc}`);
+            }
+        });
+
         // Initialize if not already done
         if (!this.particleSystem) {
             this.init();

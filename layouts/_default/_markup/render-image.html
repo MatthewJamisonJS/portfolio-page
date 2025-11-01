@@ -1,0 +1,65 @@
+{{- /* Hugo Responsive Image Render Hook */ -}}
+{{- /* Converts markdown images to responsive, optimized WebP images with explicit dimensions */ -}}
+
+{{- $alt := .Text -}}
+{{- $caption := "" -}}
+{{- with .Title -}}
+  {{- $caption = . -}}
+{{- end -}}
+
+{{- /* Try to get image from page resources first, then from static */ -}}
+{{- $img := .Page.Resources.GetMatch (.Destination | safeURL) -}}
+{{- $staticPath := "" -}}
+
+{{- if not $img -}}
+  {{- /* Image not in page bundle, try static folder */ -}}
+  {{- $staticPath = printf "/static/%s" .Destination -}}
+  {{- $img = resources.Get (.Destination | strings.TrimPrefix "/") -}}
+{{- end -}}
+
+{{- if $img -}}
+  {{- /* Generate responsive image sizes */ -}}
+  {{- $imgSmall := $img.Resize "480x webp q85" -}}
+  {{- $imgMedium := $img.Resize "800x webp q85" -}}
+  {{- $imgLarge := $img.Resize "1200x webp q85" -}}
+  {{- $imgXL := $img.Resize "1600x webp q85" -}}
+
+  <picture>
+    {{- /* WebP sources with srcset for different screen sizes */ -}}
+    <source
+      type="image/webp"
+      srcset="
+        {{- $imgSmall.RelPermalink }} 480w,
+        {{- $imgMedium.RelPermalink }} 800w,
+        {{- $imgLarge.RelPermalink }} 1200w,
+        {{- $imgXL.RelPermalink }} 1600w"
+      sizes="(max-width: 480px) 100vw, (max-width: 800px) 90vw, (max-width: 1200px) 80vw, 1200px"
+    />
+    {{- /* Fallback img tag with explicit dimensions (prevents CLS) */ -}}
+    <img
+      src="{{ $imgMedium.RelPermalink }}"
+      alt="{{ $alt }}"
+      width="{{ $imgMedium.Width }}"
+      height="{{ $imgMedium.Height }}"
+      loading="lazy"
+      decoding="async"
+      {{- if $caption }} title="{{ $caption }}"{{ end -}}
+    />
+  </picture>
+  {{- if $caption -}}
+    <figcaption>{{ $caption | safeHTML }}</figcaption>
+  {{- end -}}
+{{- else -}}
+  {{- /* Fallback: render simple img tag if resource not found */ -}}
+  <img
+    src="{{ .Destination | safeURL }}"
+    alt="{{ $alt }}"
+    loading="lazy"
+    decoding="async"
+    {{- if $caption }} title="{{ $caption }}"{{ end -}}
+  />
+  {{- if $caption -}}
+    <figcaption>{{ $caption | safeHTML }}</figcaption>
+  {{- end -}}
+  {{- warnf "Image not found as Hugo resource: %s (in %s)" .Destination .Page.File.Path -}}
+{{- end -}}

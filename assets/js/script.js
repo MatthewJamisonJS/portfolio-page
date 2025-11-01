@@ -231,13 +231,22 @@ jQuery(function ($) {
 				console.log('💼 Service tier selected: ' + serviceTier);
 			}
 
-			// Smooth scroll to contact section if hash present
-			if (targetHref && targetHref.includes('#contact')) {
-				var $contactSection = $('#contact');
-				if ($contactSection.length) {
-					$('html, body').animate({
-						scrollTop: $contactSection.offset().top - 50
-					}, 800, 'easeInOutExpo');
+			// Navigate to contact section (handles both same-page and cross-page)
+			if (targetHref) {
+				if (targetHref.includes('#contact')) {
+					var $contactSection = $('#contact');
+					if ($contactSection.length) {
+						// Same page - smooth scroll
+						$('html, body').animate({
+							scrollTop: $contactSection.offset().top - 50
+						}, 800, 'easeInOutExpo');
+					} else {
+						// Different page - navigate to homepage contact section
+						window.location.href = targetHref;
+					}
+				} else {
+					// No hash - just navigate
+					window.location.href = targetHref;
 				}
 			}
 		});

@@ -62,10 +62,8 @@ link = "plugins/themify-icons/themify-icons.css"
 # fonts.css inlined in head.html for zero render-blocking
 
 # js plugins
-[[params.plugins.js]]
-link = "plugins/jquery/jquery.min.js"
-[[params.plugins.js]]
-link = "plugins/bootstrap/bootstrap.min.js"
+# jQuery removed - all JS is vanilla (Phase 5)
+# Bootstrap.js removed - CSS-only framework (Phase 5)
 # Removed unused plugins (slick, shuffle, magnific-popup) - 120KB savings
 [[params.plugins.js]]
 link = "plugins/lazy-load/lozad.min.js"

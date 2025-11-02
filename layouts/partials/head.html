@@ -18,7 +18,7 @@
 
 	{{ "<!-- PRELOAD HERO IMAGE - LCP optimization with responsive srcset -->" | safeHTML}}
 	<link rel="preload"
-		href="{{ "images/backgrounds/hero-bg-desktop.webp" | absURL }}"
+		href="{{ "images/backgrounds/hero-bg-mobile.webp" | absURL }}"
 		as="image"
 		type="image/webp"
 		imagesrcset="
@@ -26,7 +26,7 @@
 			{{ "images/backgrounds/hero-bg-tablet.webp" | absURL }} 1280w,
 			{{ "images/backgrounds/hero-bg-desktop.webp" | absURL }} 1920w
 		"
-		imagesizes="100vw"
+		imagesizes="(max-width: 768px) 768px, (max-width: 1280px) 1280px, 1920px"
 		fetchpriority="high">
 
 	{{ "<!-- plugins -->" | safeHTML }}

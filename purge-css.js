@@ -16,21 +16,21 @@ async function purgeCSSFiles() {
       './public/**/*.html',
       './public/**/*.js',
       './layouts/**/*.html',
-      './themes/meghna/layouts/**/*.html'
+      './themes/meghna/layouts/**/*.html',
+      './content/**/*.md',
+      './assets/js/**/*.js'
     ],
     css: [bootstrapInput],
     safelist: {
       standard: [
-        'active', 'show', 'fade', 'collapsing', 'modal-backdrop',
-        'tooltip', 'popover', 'dropdown-menu', 'nav-link',
-        'carousel-item-next', 'carousel-item-prev', 'collapse',
-        'navbar-dark', 'navbar-expand-lg', 'navbar-collapse',
-        'sticky-top', 'container', 'row', 'col-lg-4', 'col-md-6',
-        'btn', 'btn-primary', 'btn-secondary', 'card', 'card-body',
-        'form-group', 'form-control'
+        'active', 'show', 'fade', 'collapsing',
+        'collapse', 'navbar-collapse',
+        'container', 'row',
+        'btn', 'btn-transparent', 'page-scroll',
+        'hero-area', 'hero-gradient-overlay', 'video-button'
       ],
-      deep: [/carousel/, /modal/, /dropdown/, /nav/, /navbar/, /btn/, /col-/, /form-/],
-      greedy: [/^slick/, /^wow/, /fade/, /battle/, /pokemon/]
+      deep: [/nav/, /navbar/, /btn/, /col-/, /hero/],
+      greedy: [/fade/, /pokemon/]
     }
   });
 

@@ -20,66 +20,6 @@ $data.banner.banner.enable }} {{ with $data.banner.banner }} {{"<!-- Welcome Sli
   {{/* Animated gradient overlay layer */}}
   <div class="hero-gradient-overlay"></div>
 
-  <!-- Pokemon Battle Scene - Left Side (Electric + Others) -->
-  <div class="battle-pokemon left-side">
-    <img data-src="/images/pokemon/battle/blastoise-back.gif" alt="Blastoise Pokemon water type battling animation" class="pokemon-battle blastoise battle-lazy">
-    <img data-src="/images/pokemon/battle/pikachu-back.gif" alt="Pikachu Pokemon electric type battling animation" class="pokemon-battle pikachu battle-lazy">
-    <img data-src="/images/pokemon/battle/jolteon-back.gif" alt="Jolteon Pokemon electric type battling animation" class="pokemon-battle jolteon battle-lazy">
-    <img data-src="/images/pokemon/battle/electabuzz-back.gif" alt="Electabuzz Pokemon electric type battling animation" class="pokemon-battle electabuzz battle-lazy">
-    <img data-src="/images/pokemon/battle/magneton-back.gif" alt="Magneton Pokemon electric steel type battling animation" class="pokemon-battle magneton battle-lazy">
-    <img data-src="/images/pokemon/battle/gengar-back.gif" alt="Gengar Pokemon ghost poison type battling animation" class="pokemon-battle gengar battle-lazy">
-  </div>
-
-  <!-- Pokemon Battle Scene - Right Side (Flying) -->
-  <div class="battle-pokemon right-side">
-    <img data-src="/images/pokemon/battle/charizard.gif" alt="Charizard Pokemon fire flying type battling animation" class="pokemon-battle charizard battle-lazy">
-    <img data-src="/images/pokemon/battle/dragonite.gif" alt="Dragonite Pokemon dragon flying type battling animation" class="pokemon-battle dragonite battle-lazy">
-    <img data-src="/images/pokemon/battle/pidgeot.gif" alt="Pidgeot Pokemon normal flying type battling animation" class="pokemon-battle pidgeot battle-lazy">
-    <img data-src="/images/pokemon/battle/aerodactyl.gif" alt="Aerodactyl Pokemon rock flying type battling animation" class="pokemon-battle aerodactyl battle-lazy">
-    <img data-src="/images/pokemon/battle/articuno.gif" alt="Articuno Pokemon ice flying legendary battling animation" class="pokemon-battle articuno battle-lazy">
-    <img data-src="/images/pokemon/battle/moltres.gif" alt="Moltres Pokemon fire flying legendary battling animation" class="pokemon-battle moltres battle-lazy">
-    <img data-src="/images/pokemon/battle/zapdos.gif" alt="Zapdos Pokemon electric flying legendary battling animation" class="pokemon-battle zapdos battle-lazy">
-  </div>
-
-  <!-- Canvas for Particle Effects -->
-  <canvas id="battle-particle-canvas"></canvas>
-
-  <!-- Battle Toggle Button -->
-  <button id="battle-toggle-btn" class="battle-toggle-btn" aria-label="Toggle Pokemon battle animations">
-    <span class="battle-icon">⚔️</span>
-    <span class="battle-text">Start Battle</span>
-  </button>
-
-  <!-- Battle Effects -->
-  <svg class="battle-effects" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none">
-    <!-- Lightning bolts from Pikachu to Charizard -->
-    <path class="lightning-bolt bolt-1 attack-path" d="M 12 42 L 45 38 L 43 40 L 88 32" stroke="#ffeb3b" stroke-width="0.5" fill="none" opacity="0" style="animation: electric-bolt-strike 2.8s ease-in-out infinite;"/>
-    <path class="lightning-bolt bolt-2 attack-path" d="M 10 44 L 46 42 L 44 44 L 90 35" stroke="#ffeb3b" stroke-width="0.4" fill="none" opacity="0" style="animation: electric-bolt-strike 2.8s ease-in-out infinite 0.3s;"/>
-
-    <!-- Lightning from Magneton to Moltres -->
-    <path class="lightning-bolt bolt-3 attack-path" d="M 12 20 L 50 15 L 48 17 L 93 8" stroke="#ffeb3b" stroke-width="0.4" fill="none" opacity="0" style="animation: electric-bolt-strike 2.8s ease-in-out infinite 0.8s;"/>
-
-    <!-- Water streams from Blastoise to Dragonite -->
-    <path class="water-stream stream-1 attack-path" d="M 10 52 Q 50 48 90 46" stroke="#00bcd4" stroke-width="1" fill="none" opacity="0" style="animation: water-stream-flow 3s ease-in-out infinite 1.2s;"/>
-    <path class="water-stream stream-2 attack-path" d="M 11 54 Q 50 50 89 48" stroke="#00bcd4" stroke-width="0.8" fill="none" opacity="0" style="animation: water-stream-flow 3s ease-in-out infinite 1.3s;"/>
-
-    <!-- Fire breath from Charizard to Jolteon -->
-    <path class="fire-breath flame-1 attack-path" d="M 88 32 Q 50 35 14 36" stroke="#e91e63" stroke-width="1.2" fill="none" opacity="0" style="animation: fire-stream-blast 3s ease-in-out infinite 2s;"/>
-    <path class="fire-breath flame-2 attack-path" d="M 89 34 Q 50 37 13 38" stroke="#ff6f00" stroke-width="1" fill="none" opacity="0" style="animation: fire-stream-blast 3s ease-in-out infinite 2.1s;"/>
-
-    <!-- Ice beam from Articuno to Electabuzz -->
-    <path class="ice-beam beam-1 attack-path" d="M 90 14 L 10 60" stroke="#00e5ff" stroke-width="0.6" fill="none" opacity="0" style="animation: ice-beam-freeze 2.5s ease-in-out infinite 2.5s;"/>
-
-    <!-- Thunder from Zapdos to Gengar -->
-    <path class="lightning-bolt bolt-4 attack-path" d="M 88 65 L 54 66 L 52 68 L 8 69" stroke="#ffeb3b" stroke-width="0.5" fill="none" opacity="0" style="animation: electric-bolt-strike 2.8s ease-in-out infinite 1.5s;"/>
-
-    <!-- Energy spheres in the center battleground -->
-    <circle class="energy-sphere sphere-1" cx="50" cy="40" r="1.5" fill="#e91e63" opacity="0"/>
-    <circle class="energy-sphere sphere-2" cx="48" cy="50" r="1.2" fill="#ffeb3b" opacity="0"/>
-    <circle class="energy-sphere sphere-3" cx="52" cy="45" r="1.8" fill="#00bcd4" opacity="0"/>
-    <circle class="energy-sphere sphere-4" cx="50" cy="55" r="1.3" fill="#ff6f00" opacity="0"/>
-  </svg>
-
   <div class="block">
     {{ if .pokemon_sprite }}
     <div class="video-button">

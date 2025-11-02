@@ -18,14 +18,13 @@ module.exports = {
     './static/js/**/*.js'
   ],
   css: [
-    // All CSS files to be purged
+    // All CSS files to be purged (Phase 6: purge everything)
     './themes/meghna/static/plugins/bootstrap/bootstrap.min.css',
     './themes/meghna/static/css/style.css',
-    './themes/meghna/static/plugins/themify-icons/themify-icons.css',
     './assets/css/custom.css',
     './assets/css/battle-animations.css'
   ],
-  output: './static/plugins/bootstrap/',
+  output: './static/css/purged/',
   safelist: {
     // Classes that are dynamically added or used in animations
     standard: [

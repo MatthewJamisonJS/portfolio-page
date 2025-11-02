@@ -81,9 +81,8 @@ link = "css/themify-icons-minimal.css"  # Only 6 used icons: 13KB → 1KB (92% s
 
 # js plugins
 # jQuery removed - converted all code to vanilla JS (85KB savings, 200ms TBT reduction)
-[[params.plugins.js]]
-link = "plugins/bootstrap/bootstrap.min.js"
-# Removed unused plugins (slick, shuffle, magnific-popup, jquery) - 205KB total savings
+# Bootstrap.js removed - CSS-only framework (Phase 6: Fix jQuery undefined error)
+# Removed unused plugins (slick, shuffle, magnific-popup, jquery, bootstrap.js) - 240KB total savings
 [[params.plugins.js]]
 link = "plugins/lazy-load/lozad.min.js"
 

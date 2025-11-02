@@ -42,43 +42,6 @@
 {{ $script := resources.Get "js/script.js" | minify | fingerprint "sha384"}}
 <script src="{{ $script.Permalink }}" integrity="{{ $script.Data.Integrity }}" defer></script>
 
-<!-- Battle Animation CSS - Lazy loaded (24KB saved from initial load) -->
-{{ $battleCSS := resources.Get "css/battle-animations.css" | minify | fingerprint "sha384" }}
-<script>
-// Lazy-load battle animations CSS only when needed
-(function() {
-  let battleCSSLoaded = false;
-  const battleCSSHref = "{{ $battleCSS.Permalink }}";
-  const battleCSSIntegrity = "{{ $battleCSS.Data.Integrity }}";
-
-  function loadBattleCSS() {
-    if (battleCSSLoaded) return;
-
-    const link = document.createElement('link');
-    link.rel = 'stylesheet';
-    link.href = battleCSSHref;
-    link.integrity = battleCSSIntegrity;
-    link.crossOrigin = 'anonymous';
-    document.head.appendChild(link);
-
-    battleCSSLoaded = true;
-  }
-
-  // Load when battle button is clicked
-  document.addEventListener('DOMContentLoaded', function() {
-    const battleButtons = document.querySelectorAll('.video-button, [class*="battle"]');
-    battleButtons.forEach(function(btn) {
-      btn.addEventListener('click', loadBattleCSS, { once: true });
-    });
-
-    // Preload on hover for better UX (loads before click)
-    battleButtons.forEach(function(btn) {
-      btn.addEventListener('mouseenter', loadBattleCSS, { once: true });
-    });
-  });
-})();
-</script>
-
 <!-- cookie -->
 {{ if site.Params.cookies.enable }}
 <script src="https://cdnjs.cloudflare.com/ajax/libs/js-cookie/2.2.1/js.cookie.min.js"></script>
@@ -158,12 +121,6 @@
 	}
 })();
 </script>
-
-<!-- Epic Pokemon Battle Animation Scripts -->
-{{ $particleJS := resources.Get "js/battle-particles.js" | minify | fingerprint "sha384" }}
-{{ $controllerJS := resources.Get "js/battle-controller.js" | minify | fingerprint "sha384" }}
-<script src="{{ $particleJS.Permalink }}" integrity="{{ $particleJS.Data.Integrity }}" defer></script>
-<script src="{{ $controllerJS.Permalink }}" integrity="{{ $controllerJS.Data.Integrity }}" defer></script>
 
 <!-- FAQ Accordion Functionality -->
 <script>

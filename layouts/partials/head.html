@@ -40,13 +40,15 @@
 	{{ end }}
 	{{ end }}
 
-	{{"<!-- Main Stylesheet -->"|safeHTML}}
+	{{"<!-- Main Stylesheet - Async loaded for better FCP/LCP -->" |safeHTML}}
 	{{ $styles := resources.Get "css/style.css" | minify }}
-	<link rel="stylesheet" href="{{ $styles.Permalink }}" media="screen">
+	<link rel="preload" href="{{ $styles.Permalink }}" as="style" onload="this.onload=null;this.rel='stylesheet'">
+	<noscript><link rel="stylesheet" href="{{ $styles.Permalink }}"></noscript>
 
-	{{"<!-- Custom stylesheet with ALL animations - Render-blocking for instant animation start -->" |safeHTML}}
+	{{"<!-- Custom stylesheet - Async loaded to prevent render blocking -->" |safeHTML}}
 	{{ $custom := resources.Get "css/custom.css" | minify | fingerprint }}
-	<link rel="stylesheet" href="{{ $custom.Permalink }}" media="screen">
+	<link rel="preload" href="{{ $custom.Permalink }}" as="style" onload="this.onload=null;this.rel='stylesheet'">
+	<noscript><link rel="stylesheet" href="{{ $custom.Permalink }}"></noscript>
 
 	{{ "<!--Favicon-->" | safeHTML }}
 	<link rel="shortcut icon" href="{{ `images/pokemon/mew.gif` | absURL }}" type="image/gif">

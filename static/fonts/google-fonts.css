@@ -1,21 +1,26 @@
+/* Self-hosted Google Fonts - Zero external requests */
+/* Anaheim (headings) + Quattrocento Sans (body) */
+
 @font-face {
   font-family: 'Anaheim';
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url(https://fonts.gstatic.com/s/anaheim/v17/8vIX7w042Wp87g4Gy0_24JbCiPrl-h5sLqrF.ttf) format('truetype');
+  src: url('/fonts/anaheim-v17-latin-regular.woff2') format('woff2');
 }
+
 @font-face {
   font-family: 'Quattrocento Sans';
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url(https://fonts.gstatic.com/s/quattrocentosans/v22/va9c4lja2NVIDdIAAoMR5MfuElaRB3zO.ttf) format('truetype');
+  src: url('/fonts/quattrocento-sans-v22-latin-regular.woff2') format('woff2');
 }
+
 @font-face {
   font-family: 'Quattrocento Sans';
   font-style: normal;
   font-weight: 700;
   font-display: swap;
-  src: url(https://fonts.gstatic.com/s/quattrocentosans/v22/va9Z4lja2NVIDdIAAoMR5MfuElaRB0RykmrW.ttf) format('truetype');
+  src: url('/fonts/quattrocento-sans-v22-latin-700.woff2') format('woff2');
 }

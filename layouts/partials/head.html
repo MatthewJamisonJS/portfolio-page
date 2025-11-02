@@ -16,18 +16,13 @@
 	{{ $criticalInline := resources.Get "css/critical-inline.css" | minify }}
 	<style>{{ $criticalInline.Content | safeCSS }}</style>
 
-	{{ "<!-- PRELOAD HERO IMAGE - LCP optimization with responsive srcset -->" | safeHTML}}
+	{{ "<!-- PRELOAD HERO IMAGE - LCP optimization (mobile-first) -->" | safeHTML}}
 	<link rel="preload"
 		href="{{ "images/backgrounds/hero-bg-mobile.webp" | absURL }}"
 		as="image"
 		type="image/webp"
-		imagesrcset="
-			{{ "images/backgrounds/hero-bg-mobile.webp" | absURL }} 768w,
-			{{ "images/backgrounds/hero-bg-tablet.webp" | absURL }} 1280w,
-			{{ "images/backgrounds/hero-bg-desktop.webp" | absURL }} 1920w
-		"
-		imagesizes="(max-width: 768px) 768px, (max-width: 1280px) 1280px, 1920px"
 		fetchpriority="high">
+	{{ "<!-- Desktop hero loaded via CSS background-image with media queries -->" | safeHTML}}
 
 	{{ "<!-- plugins -->" | safeHTML }}
 	{{ range site.Params.plugins.css }}

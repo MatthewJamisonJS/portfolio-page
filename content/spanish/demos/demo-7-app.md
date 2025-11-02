@@ -5,7 +5,7 @@ draft: false
 build:
   list: always
   render: never
-demo_url: "https://demo-landing-dvx.pages.dev"
+demo_url: "https://demo-landing-dxx.pages.dev"
 github_url: "https://github.com/MatthewJamisonJS/demo-landing"
 theme_name: "Omega"
 description: "Maximice descargas de aplicaciones y adquisición de usuarios con una página de aterrizaje diseñada para conversión. Exhibiciones atractivas de características, optimización de tiendas de aplicaciones y llamadas a la acción claras guían a los visitantes desde el interés hasta la instalación—apoyando mercados globales desde el primer día."

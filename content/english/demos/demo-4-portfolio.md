@@ -5,7 +5,7 @@ draft: false
 build:
   list: always
   render: never
-demo_url: "https://demo-creative-r4n.pages.dev"
+demo_url: "https://demo-creative-4tn.pages.dev"
 github_url: "https://github.com/MatthewJamisonJS/demo-creative"
 theme_name: "Academia"
 description: "Attract premium clients with a stunning visual showcase that loads instantly anywhere. Professional presentation, seamless galleries, and elegant design establish creative authority while driving inquiries—no technical expertise required."

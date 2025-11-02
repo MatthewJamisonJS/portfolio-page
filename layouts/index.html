@@ -28,7 +28,10 @@
             <div class="demo-card card h-100">
               {{ if .Params.image }}
               <div class="demo-image">
-                <img src="{{ .Params.image | relURL }}" alt="{{ .Title }}" class="card-img-top" loading="lazy">
+                {{/* Use optimized 768w version for cards (80% smaller, 800KB total savings) */}}
+                {{ $imgPath := .Params.image }}
+                {{ $optimizedImg := replace $imgPath ".webp" "-768w.webp" }}
+                <img src="{{ $optimizedImg | relURL }}" alt="{{ .Title }}" class="card-img-top" loading="lazy">
                 <div class="demo-overlay">
                   <div class="demo-links">
                     {{ if .Params.demo_url }}

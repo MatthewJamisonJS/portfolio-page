@@ -1,0 +1,49 @@
+/* Themify Icons - Minimal (Only icons used in portfolio) */
+/* Reduced from 13KB to ~1KB - 92% smaller */
+
+@font-face {
+  font-family: themify;
+  display: swap;
+  src: url(../plugins/themify-icons/fonts/themify.woff) format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
+[class*=" ti-"],
+[class^=ti-] {
+  font-family: themify;
+  speak: none;
+  font-style: normal;
+  font-weight: 400;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Footer social icons (3 icons) */
+.ti-github:before {
+  content: "\e73f";
+}
+
+.ti-linkedin:before {
+  content: "\e735";
+}
+
+.ti-music:before {
+  content: "\e688";
+}
+
+/* About section icons (3 icons) */
+.ti-server:before {
+  content: "\e67d";
+}
+
+.ti-layout:before {
+  content: "\e62e";
+}
+
+.ti-pulse:before {
+  content: "\e680";
+}

@@ -476,8 +476,8 @@ button[type="submit"].btn-transparent:hover {
 
 /* Large Pokemon icons (hero button) */
 .pokemon-icon-large {
-  width: 60px;
-  height: 60px;
+  max-width: 60px;
+  height: auto;
   display: inline-block;
   animation: floatMew 3s ease-in-out infinite;
   filter: drop-shadow(0 0 10px rgba(233, 30, 99, 0.5));
@@ -494,8 +494,8 @@ button[type="submit"].btn-transparent:hover {
 
 /* Standard Pokemon icons (contact, widget headers) */
 .pokemon-icon {
-  width: 32px;
-  height: 32px;
+  max-width: 32px;
+  height: auto;
   display: inline-block;
   margin-right: 8px;
   transition: transform 0.3s ease;
@@ -510,8 +510,8 @@ button[type="submit"].btn-transparent:hover {
 .con-info .pokemon-icon {
   float: left;
   margin-right: 15px;
-  width: 36px;
-  height: 36px;
+  max-width: 36px;
+  height: auto;
 }
 
 /* Add glow effect to Pokemon icons on dark backgrounds */
@@ -523,18 +523,18 @@ button[type="submit"].btn-transparent:hover {
 /* Responsive Pokemon icons */
 @media (max-width: 768px) {
   .pokemon-icon-large {
-    width: 48px;
-    height: 48px;
+    max-width: 48px;
+    height: auto;
   }
 
   .pokemon-icon {
-    width: 28px;
-    height: 28px;
+    max-width: 28px;
+    height: auto;
   }
 
   .con-info .pokemon-icon {
-    width: 32px;
-    height: 32px;
+    max-width: 32px;
+    height: auto;
   }
 }
 

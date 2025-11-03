@@ -23,7 +23,7 @@ $data.banner.banner.enable }} {{ with $data.banner.banner }} {{"<!-- Welcome Sli
   <div class="block">
     {{ if .pokemon_sprite }}
     <div class="video-button">
-      <img src="{{ .pokemon_sprite | absURL }}" alt="Pokemon portrait icon representing developer" class="pokemon-icon-large">
+      <img src="{{ .pokemon_sprite | absURL }}" srcset="{{ .pokemon_sprite | absURL }} 1x, /images/pokemon/mew-1x.gif 2x" alt="Pokemon portrait icon representing developer" class="pokemon-icon-large" width="47" height="60">
     </div>
     {{ else if .icon }}
     <div class="video-button">

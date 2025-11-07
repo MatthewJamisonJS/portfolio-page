@@ -19,12 +19,12 @@
     </div>
 
     <div class="row">
-      <!-- Left Column: Demo Grid (takes 8 columns on large screens) -->
-      <div class="col-lg-8 col-md-12">
+      <!-- Demo Grid - Full Width -->
+      <div class="col-12">
         <div class="row demo-grid">
           {{ range where site.Pages "Section" "demos" }}
           {{ if not .IsNode }}
-          <div class="col-lg-6 col-md-6 col-sm-12 mb-4">
+          <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
             <div class="demo-card card h-100">
               {{ if .Params.image }}
               <div class="demo-image">
@@ -52,18 +52,13 @@
               <div class="card-body">
                 <h3 class="card-title">{{ .Title }}</h3>
                 <p class="card-text">{{ .Params.description }}</p>
-                <a href="{{ "services" | relLangURL }}" class="read-more">{{ i18n "learn_more" }}</a>
+                <a href="#contact" class="read-more page-scroll">{{ i18n "learn_more" }}</a>
               </div>
             </div>
           </div>
           {{ end }}
           {{ end }}
         </div>
-      </div>
-
-      <!-- Right Column: Music Widget Sidebar (takes 4 columns, sticky) -->
-      <div class="col-lg-4 col-md-12">
-        {{ partial "music-widget.html" . }}
       </div>
     </div>
   </div>

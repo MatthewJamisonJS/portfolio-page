@@ -2,12 +2,12 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Demos on Matthew Jamison - Full-Stack Developer</title>
-    <link>/demos/</link>
+    <link>http://localhost:1313/demos/</link>
     <description>Recent content in Demos on Matthew Jamison - Full-Stack Developer</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 29 Oct 2025 00:00:00 -0500</lastBuildDate>
-    <atom:link href="/demos/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/demos/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Agency/Services Site</title>
       <link></link>

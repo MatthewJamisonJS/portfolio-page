@@ -263,7 +263,8 @@ button[type="submit"].btn-transparent:hover {
   transition: opacity 0.3s ease;
 }
 
-.demo-card:hover .demo-overlay {
+.demo-card:hover .demo-overlay,
+.demo-overlay:focus-within {
   opacity: 1;
 }
 
@@ -1180,25 +1181,56 @@ button[type="submit"].btn-transparent:hover {
 
 /* Skip to content link - hidden until focused (WCAG 2.4.1) */
 .skip-to-content {
-  position: absolute;
-  top: -40px;
-  left: 0;
-  background: #1a1a1a; /* Dark background for strong contrast */
+  position: fixed;
+  top: -100px;
+  left: 20px;
+  background: #1a1a1a;
   color: white;
-  padding: 8px 16px;
+  padding: 12px 24px;
   text-decoration: none;
   z-index: 10000;
-  border-radius: 0 0 4px 0;
   font-weight: 600;
-  transition: top 0.3s ease;
-  border: 2px solid var(--accent);
+  font-size: 1rem;
+  opacity: 0;
+  transform: translateY(-100%);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  border: 3px solid var(--accent);
+  border-radius: 8px;
 }
 
 .skip-to-content:focus {
-  top: 0;
-  outline: 3px solid #ffd700; /* Gold outline for visibility */
+  top: 20px;
+  opacity: 1;
+  transform: translateY(0);
+  outline: 3px solid var(--accent);
+  outline-offset: 3px;
+  box-shadow: 0 4px 16px rgba(0, 188, 212, 0.4);
+}
+
+/* ===================================
+   Global Focus Styles - Rounded Highlights
+   =================================== */
+
+/* Apply rounded highlight to all focusable elements */
+a:focus,
+button:focus,
+input:focus,
+textarea:focus,
+select:focus,
+[tabindex]:focus {
+  outline: 3px solid var(--accent);
   outline-offset: 2px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  border-radius: 6px;
+  transition: outline 0.2s ease;
+}
+
+/* Special focus for buttons */
+.btn:focus,
+button:focus {
+  outline: 3px solid var(--accent);
+  outline-offset: 3px;
+  border-radius: 8px;
+  box-shadow: 0 0 0 4px rgba(0, 188, 212, 0.2);
 }
 
 /* ===================================
@@ -1361,11 +1393,11 @@ body.battle-mode-disabled .portal-core {
 }
 
 .section-bg-dark {
-    background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 100%);
+    background: #1a1a1a;
 }
 
 .section-bg-darker {
-    background: linear-gradient(135deg, #050505 0%, #0f0f0f 100%);
+    background: #0f0f0f;
 }
 
 .section-title {
@@ -1441,7 +1473,7 @@ body.battle-mode-disabled .portal-core {
 }
 
 .differentiator-card {
-    background: linear-gradient(145deg, #1e293b 0%, #0f172a 100%);
+    background: #1e293b;
     border: 1px solid rgba(0, 188, 212, 0.15);
     border-radius: 12px;
     padding: 24px 20px;
@@ -1490,7 +1522,7 @@ body.battle-mode-disabled .portal-core {
 /* ========================================================================= */
 
 .pricing-compact-section {
-    background: linear-gradient(180deg, rgba(30, 41, 59, 0.4) 0%, rgba(15, 23, 42, 0.6) 100%);
+    background: rgba(30, 41, 59, 0.5);
     padding: 30px 0 40px;
     margin-top: 0;
 }
@@ -1561,8 +1593,8 @@ body.battle-mode-disabled .portal-core {
 }
 
 .pricing-card {
-    background: linear-gradient(145deg, #1e293b 0%, #0f172a 100%);
-    border: 2px solid transparent;
+    background: #1e293b;
+    border: 2px solid rgba(0, 188, 212, 0.3);
     border-radius: 16px;
     padding: 0;
     position: relative;
@@ -1585,7 +1617,7 @@ body.battle-mode-disabled .portal-core {
     bottom: 0;
     border-radius: 16px;
     padding: 2px;
-    background: linear-gradient(135deg, var(--primary) 0%, var(--accent) 100%);
+    background: var(--accent);
     -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
     -webkit-mask-composite: xor;
     mask-composite: exclude;
@@ -1677,20 +1709,14 @@ body.battle-mode-disabled .portal-core {
 .pricing-card .price-currency {
     font-size: 2rem;
     font-weight: 600;
-    background: linear-gradient(135deg, var(--primary) 0%, var(--accent) 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+    color: var(--accent);
     vertical-align: top;
 }
 
 .pricing-card .price-amount {
     font-size: 2.8rem;
     font-weight: 700;
-    background: linear-gradient(135deg, var(--primary) 0%, var(--accent) 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+    color: var(--accent);
     line-height: 1;
 }
 
@@ -1778,19 +1804,19 @@ body.battle-mode-disabled .portal-core {
 }
 
 .btn-foundation {
-    background: linear-gradient(135deg, var(--secondary) 0%, var(--primary) 100%);
+    background: var(--primary);
     color: white;
 }
 
 .btn-complete {
-    background: linear-gradient(135deg, var(--primary) 0%, var(--accent) 100%);
+    background: var(--accent);
     color: white;
     font-size: 1.2rem;
     padding: 18px 32px;
 }
 
 .btn-partnership {
-    background: linear-gradient(135deg, var(--accent) 0%, var(--secondary) 100%);
+    background: var(--secondary);
     color: white;
 }
 
@@ -1961,7 +1987,7 @@ body.battle-mode-disabled .portal-core {
     width: 100%;
     border-collapse: collapse;
     min-width: 900px;
-    background: linear-gradient(145deg, rgba(15, 23, 42, 0.8) 0%, rgba(10, 15, 30, 0.9) 100%);
+    background: rgba(15, 23, 42, 0.85);
     border-radius: 16px;
     overflow: hidden;
     box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
@@ -1969,7 +1995,7 @@ body.battle-mode-disabled .portal-core {
 
 /* Table Header Styling */
 .services-comparison-table thead tr {
-    background: linear-gradient(180deg, rgba(30, 41, 59, 0.8) 0%, rgba(15, 23, 42, 0.9) 100%);
+    background: rgba(30, 41, 59, 0.85);
 }
 
 .services-comparison-table thead th {

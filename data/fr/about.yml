@@ -4,14 +4,14 @@ about:
   title: "À Propos"
   about_item:
     - icon: "ti-server"
-      title: "Spécialisation Hugo"
-      content: "7 déploiements en production à travers différents secteurs. Infrastructure i18n complète pour 20+ langues. Sites statiques ultrarapides avec Hugo + Tailwind CSS + Cloudflare Pages."
+      title: "Le Bon Outil pour le Bon Travail"
+      content: "Développeur full-stack avec expertise en Ruby on Rails pour applications backend, Rust pour exécutables performants, Hugo pour sites statiques rapides, et Shopify pour e-commerce. Je choisis les technologies en fonction de vos besoins spécifiques, pas des tendances."
 
     - icon: "ti-layout"
-      title: "Expérience Rails + Python"
-      content: "77+ PRs fusionnées chez Concordia (Rails 8, 500k utilisateurs). Construction d'applications backend robustes et évolutives avec des architectures propres et les meilleures pratiques."
+      title: "Du Greenfield au Legacy"
+      content: "77+ PRs fusionnées chez Concordia Publishing House (Rails 8, 500k utilisateurs). À l'aise pour construire de nouveaux projets de zéro, optimiser des bases de code existantes, ou contribuer à des équipes avec des cultures de développement établies. Je m'adapte à votre flux de travail."
 
     - icon: "ti-pulse"
-      title: "Garanties de Performance"
-      content: "Scores Lighthouse 100% sur tous les projets. Temps de chargement <1s garantis. Conformité WCAG 2.1 AA. Hébergement à 0-20$/mois contre 50-500$/mois WordPress."
+      title: "Travaux de Portfolio"
+      content: "Les démos Hugo présentées ici sont des Single Page Applications de démonstration—des templates rapidement personnalisables qui démontrent une architecture propre. Au fur et à mesure de mes constructions, je les remplacerai par des projets de production complets sur différentes stacks technologiques."
 ---

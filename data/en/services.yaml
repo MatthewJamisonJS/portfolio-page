@@ -132,7 +132,7 @@ faq:
     answer: "Absolutely! Many clients start with a Starter or Professional package and upgrade as their needs grow. I design all projects with scalability in mind, making it easy to add features and functionality down the road without rebuilding from scratch."
 
   - question: "What technologies do you use?"
-    answer: "I specialize in modern web technologies including React, Next.js, Hugo, Tailwind CSS, Node.js, and various headless CMS platforms. Technology choices are always tailored to your specific needs, ensuring optimal performance, maintainability, and scalability."
+    answer: "I work across the full stack: Ruby on Rails for backend-capable applications, Rust for performant executables, Hugo for fast static sites, Shopify for e-commerce customization, plus modern frontend tools like React, Tailwind CSS, and various headless CMS platforms. Technology choices are always tailored to your specific needs—I pick the right tool for the job, not what's trendy."
 
   - question: "Do you provide hosting and domain services?"
     answer: "While I don't directly provide hosting, I can guide you through selecting the best hosting solution for your needs and handle the entire deployment process. I work with platforms like Vercel, Netlify, AWS, and traditional hosting providers to ensure your site is fast, secure, and reliable."

@@ -4,14 +4,14 @@ about:
   title: "Über Mich"
   about_item:
     - icon: "ti-server"
-      title: "Hugo-Spezialisierung"
-      content: "Experte für Hugo-Static-Site-Entwicklung mit 7 Produktions-Deployments über verschiedene Branchen hinweg (Agentur, SaaS, E-Commerce, Blog, Restaurant, App, Portfolio). Vollständige i18n-Infrastruktur für über 20 Sprachen. Jedes Projekt erreicht 98+ Lighthouse-Bewertungen."
+      title: "Das Richtige Werkzeug für den Job"
+      content: "Full-Stack-Entwickler mit Expertise in Ruby on Rails für Backend-fähige Anwendungen, Rust für performante Executables, Hugo für schnelle statische Seiten und Shopify für E-Commerce. Ich wähle Technologien basierend auf Ihren spezifischen Anforderungen, nicht nach Trends."
 
     - icon: "ti-layout"
-      title: "Rails + Python Erfahrung"
-      content: "77+ gemergete Pull Requests bei Concordia Publishing House (Rails 8, 500.000 Nutzer). Backend-Expertise in Ruby on Rails und Python ermöglicht die Content-Management-Workflows, die Hugo-Seiten einfach zu pflegen machen."
+      title: "Von Greenfield zu Legacy"
+      content: "77+ gemergete Pull Requests bei Concordia Publishing House (Rails 8, 500.000 Nutzer). Komfortabel beim Aufbau neuer Projekte von Grund auf, bei der Optimierung bestehender Codebasen oder beim Beitrag zu Teams mit etablierten Entwicklungskulturen. Ich passe mich Ihrem Workflow an."
 
     - icon: "ti-pulse"
-      title: "Leistungsgarantien"
-      content: "100% Lighthouse-Bewertungen bei allen Projekten. Globale Ladezeiten unter einer Sekunde. WCAG AA Barrierefreiheit zertifiziert. Moderne Static-Site-Architektur eliminiert die Leistungsengpässe traditioneller CMS-Plattformen."
+      title: "Portfolio-Arbeiten"
+      content: "Die hier gezeigten Hugo-Demos sind Platzhalter Single Page Applications—schnell anpassbare Templates, die saubere Architektur demonstrieren. Während ich weiter baue, werde ich diese durch vollständige Produktionsprojekte mit verschiedenen Tech-Stacks ersetzen."
 ---

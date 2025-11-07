@@ -4,14 +4,14 @@ about:
   title: "Sobre Mí"
   about_item:
     - icon: "ti-server"
-      title: "Especialización en Hugo"
-      content: "7 despliegues en producción en diferentes verticales. Infraestructura i18n completa para 20+ idiomas. Puntuaciones Lighthouse del 100% en todos los proyectos con tiempos de carga <1s garantizados."
+      title: "La Herramienta Correcta para el Trabajo"
+      content: "Desarrollador full-stack con experiencia en Ruby on Rails para aplicaciones con backend, Rust para ejecutables de alto rendimiento, Hugo para sitios estáticos rápidos, y Shopify para e-commerce. Elijo tecnologías según tus necesidades específicas, no las tendencias."
 
     - icon: "ti-layout"
-      title: "Experiencia en Rails + Python"
-      content: "77+ PRs fusionados en Concordia (Rails 8, 500k usuarios). Experiencia comprobada en arquitectura backend escalable y conversión de vistas Ember a Hotwire usando sintaxis Phlex."
+      title: "Nuevos Proyectos a Sistemas Legacy"
+      content: "77+ PRs fusionados en Concordia Publishing House (Rails 8, 500k usuarios). Cómodo construyendo nuevos proyectos desde cero, optimizando código existente, o contribuyendo a equipos con culturas de desarrollo establecidas. Me adapto a tu flujo de trabajo."
 
     - icon: "ti-pulse"
-      title: "Garantías de Rendimiento"
-      content: "Puntuaciones Lighthouse del 100% en todos los proyectos. Tiempos de carga <1s en CDN global. Certificación WCAG 2.1 AA. Despliegue de migración de WordPress a producción en 2-5 semanas."
+      title: "Trabajo de Portafolio"
+      content: "Las demos de Hugo mostradas aquí son Single Page Applications de ejemplo—plantillas rápidamente personalizables que demuestran arquitectura limpia. A medida que continúo construyendo, las reemplazaré con proyectos de producción completos en diferentes stacks tecnológicos."
 ---

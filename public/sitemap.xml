@@ -1,18 +1,39 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-  xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  <url>
-    <loc>/</loc>
-    <lastmod>2025-10-31T00:00:00-05:00</lastmod>
-  </url><url>
-    <loc>/services/</loc>
-    <lastmod>2025-10-31T00:00:00-05:00</lastmod>
-  </url><url>
-    <loc>/demos/</loc>
-    <lastmod>2025-10-29T00:00:00-05:00</lastmod>
-  </url><url>
-    <loc>/categories/</loc>
-  </url><url>
-    <loc>/tags/</loc>
-  </url>
-</urlset>
+<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  
+  <sitemap>
+    <loc>http://localhost:1313/en/sitemap.xml</loc>
+    
+      <lastmod>2025-10-29T00:00:00-05:00</lastmod>
+    
+  </sitemap>
+  
+  <sitemap>
+    <loc>http://localhost:1313/es/sitemap.xml</loc>
+    
+      <lastmod>2025-10-29T00:00:00-05:00</lastmod>
+    
+  </sitemap>
+  
+  <sitemap>
+    <loc>http://localhost:1313/ja/sitemap.xml</loc>
+    
+      <lastmod>2025-10-29T00:00:00-05:00</lastmod>
+    
+  </sitemap>
+  
+  <sitemap>
+    <loc>http://localhost:1313/fr/sitemap.xml</loc>
+    
+      <lastmod>2025-10-29T00:00:00-05:00</lastmod>
+    
+  </sitemap>
+  
+  <sitemap>
+    <loc>http://localhost:1313/de/sitemap.xml</loc>
+    
+      <lastmod>2025-10-29T00:00:00-05:00</lastmod>
+    
+  </sitemap>
+  
+</sitemapindex>

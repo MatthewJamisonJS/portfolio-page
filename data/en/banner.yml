@@ -5,7 +5,7 @@ banner:
   bg_image: "images/backgrounds/hero-bg.jpg"
   pokemon_sprite: "/images/pokemon/mew.gif"
   title: "Matthew Jamison"
-  content: "Full-Stack Developer Delivering Measurable ROI | ✓ 79% Faster Load Times  ✓ $6k/Year Hosting Savings  ✓ 98+ Lighthouse Scores  ✓ WCAG AA Certified"
+  content: "Full-Stack Developer | Right Tool, Right Job | Ruby on Rails • Rust • Hugo • Shopify | Greenfield Projects • Optimizations • Team Contributions"
   button:
     enable: true
     label: "Start Your Project"

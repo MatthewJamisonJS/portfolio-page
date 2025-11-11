@@ -5,7 +5,7 @@ banner:
   bg_image: "images/backgrounds/hero-bg.jpg"
   pokemon_sprite: "/images/pokemon/mew.gif"
   title: "Matthew Jamison"
-  content: "数週間ではなく数日で高速多言語WCAG3対応サイトを展開 | ✓ 7つの本番環境デプロイメント  ✓ 100% Lighthouseスコア  ✓ WCAG AA認定"
+  content: "フルスタック開発者 | 適材適所のツール選択 | Ruby on Rails • Rust • Hugo • Shopify | 新規プロジェクト • 最適化 • チーム貢献"
   button:
     enable: true
     label: "プロジェクトを開始"

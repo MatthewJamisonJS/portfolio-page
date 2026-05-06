@@ -1,0 +1,39 @@
+faq:
+  enable: true
+  title: "Common questions"
+  items:
+    - question: "What is AEO and how is it different from SEO?"
+      answer: "AEO (Answer Engine Optimization) is the practice of structuring your site so AI tools like ChatGPT, Perplexity, and Google's AI Overview cite you when someone asks a question. SEO targets the ten blue links. AEO targets being the quoted answer. The work overlaps — schema, page speed, content quality — but the goal is different."
+
+    - question: "Is AI search really replacing Google?"
+      answer: "Not entirely, but the share is shifting fast. Gartner forecasts traditional search volume will drop 25% by the end of 2026. Adobe Analytics reported AI traffic to U.S. retail sites grew 393% year-over-year in Q1 2026. The customers asking AI for recommendations are real, and they're a growing share."
+
+    - question: "How much does AEO cost?"
+      answer: "Three tiers. Audit is $250 one-time. Setup and Hand-off is $700 one-time. Done-For-You runs $500 to $1,200 per month. We don't hide the prices and we don't quote different rates to different prospects. The tier you pick depends on whether you want to learn it, run it after, or have us manage it."
+
+    - question: "How long until I see results?"
+      answer: "First measurable changes in about 30 days. Steady-state results around month six. The work is foundational — month one usually looks like a net loss because we're fixing things that should have been fixed before. By month twelve the curve compounds. Anyone promising faster is either lying or doing something that gets your business penalized."
+
+    - question: "Why are your prices so much lower than other agencies?"
+      answer: "Two reasons. We cap year one at 5 St. Louis clients, so we don't carry agency overhead. And we run the actual work ourselves — there's no project manager, no account executive, no slide deck. Slow growth means deep service. If you want a logo on a portfolio of 200 clients, we are not the right fit."
+
+    - question: "Can you guarantee a #1 ranking or a ChatGPT citation?"
+      answer: "No, and anyone who does is lying or breaking Google's rules. What we guarantee is the work itself: every month you see exactly what we did, you keep full access to your accounts, and you can stop any time. The result we shoot for is realistic ROI math, not a position promise."
+
+    - question: "What if I already have an SEO person?"
+      answer: "AEO and SEO overlap, so good SEO work makes our job easier. We'll often coordinate with an existing person rather than replace them. If your SEO setup is solid, the audit is the right starting point — it tells you exactly which AEO-specific gaps need closing without redoing what already works."
+
+    - question: "What if I don't even have a website?"
+      answer: "You can absolutely get cited by AI without a website. AI engines pull from Google Business Profile, Yelp, Foursquare, Apple Business Connect, and others. We'll claim and complete those first. A basic five-page site comes second. The site is the one piece you fully control, but it's not the foundation — your business listings are."
+
+    - question: "What about my Google Business Profile?"
+      answer: "GBP is the single highest-ROI lever for local businesses. A complete, optimized GBP can move a business into the local 3-pack within 30–60 days with no other changes. If your profile is unclaimed, half empty, or missing photos, that's where every engagement starts. The Whitespark 2024 ranking factors study still puts GBP at #1 for local pack."
+
+    - question: "What if I want to stop?"
+      answer: "Stop. You own everything we touch — your domain, your GBP, your accounts, your content. We have no contract longer than month-to-month. If the work isn't paying off, you should leave, and honestly we'd rather know. Locking clients in is a sign that the work isn't good enough to keep them voluntarily."
+
+    - question: "Is 'AEO' the same as Answer Engine Optimization?"
+      answer: "Yes. We use AEO as shorthand throughout the site. It's the same thing as Generative Engine Optimization (GEO) — the industry hasn't settled on one term yet. Note: 'AEO' is also American Eagle Outfitters' stock ticker. Different industry, different trademark class. Our service is in the marketing-services class, not retail apparel."
+
+    - question: "Can I do this myself with the audit?"
+      answer: "Yes. The Audit tier is built for that. You get the prioritized fix list, a 1-hour walkthrough, and you implement at your pace. Most owners can fix the high-impact items in an afternoon — robots.txt, Bing Webmaster Tools, schema basics. The audit credits toward Setup if you change your mind later."

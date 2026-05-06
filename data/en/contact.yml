@@ -1,11 +1,10 @@
 ---
 contact:
   enable: true
-  title: "Book 15-Minute Call"
-  subtitle: "Need similar results? Let's talk about your project."
-  content: "I help businesses deploy fast, multilingual, accessible websites using Hugo + Cloudflare Pages. Whether you're migrating from WordPress, expanding internationally, or need WCAG compliance, I'll get you from concept to production in weeks, not months."
+  title: "Book a Discovery Call"
+  subtitle: "First step is a free 30-minute call."
+  content: "No pitch, just a fit check. We figure out together if AEO makes sense for your business right now. If it does, we walk you through the audit. If it doesn't, we tell you that too."
 
-  # Contact form configuration
   contact_form:
     enable: true
     form_action: "https://formspree.io/f/xjkpovyv"

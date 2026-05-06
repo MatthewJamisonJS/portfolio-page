@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <title>Gateway Tech AEO — AI search optimization for St. Louis small businesses</title>
+  <desc>Open Graph card for matthewjamison.dev</desc>
+
+  <defs>
+    <!-- Brand-palette diagonal gradient -->
+    <linearGradient id="brandBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%"   stop-color="#0a0a0a"/>
+      <stop offset="35%"  stop-color="#6b2d5c"/>
+      <stop offset="70%"  stop-color="#e91e63"/>
+      <stop offset="100%" stop-color="#00bcd4"/>
+    </linearGradient>
+
+    <!-- Subtle vignette to keep text legible -->
+    <radialGradient id="vignette" cx="50%" cy="50%" r="75%">
+      <stop offset="0%"   stop-color="#0a0a0a" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#0a0a0a" stop-opacity="0.55"/>
+    </radialGradient>
+
+    <!-- Soft glow for the wordmark -->
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background gradient -->
+  <rect width="1200" height="630" fill="url(#brandBg)"/>
+  <rect width="1200" height="630" fill="url(#vignette)"/>
+
+  <!-- Decorative sparkle dots (palette-tinted, low opacity) -->
+  <g fill="#ffffff" opacity="0.55">
+    <circle cx="160"  cy="110" r="2.5"/>
+    <circle cx="340"  cy="80"  r="1.8"/>
+    <circle cx="520"  cy="60"  r="2"/>
+    <circle cx="780"  cy="90"  r="1.5"/>
+    <circle cx="990"  cy="70"  r="2.2"/>
+    <circle cx="1090" cy="160" r="1.8"/>
+    <circle cx="120"  cy="540" r="2.2"/>
+    <circle cx="1100" cy="490" r="2.5"/>
+    <circle cx="820"  cy="540" r="1.6"/>
+    <circle cx="270"  cy="500" r="1.5"/>
+  </g>
+  <g fill="#00bcd4" opacity="0.7">
+    <circle cx="80"   cy="320" r="2.2"/>
+    <circle cx="1140" cy="350" r="2.4"/>
+    <circle cx="640"  cy="40"  r="1.8"/>
+  </g>
+  <g fill="#e91e63" opacity="0.7">
+    <circle cx="60"   cy="220" r="1.8"/>
+    <circle cx="1130" cy="260" r="2"/>
+  </g>
+
+  <!-- Top thin accent bar -->
+  <rect x="0" y="0" width="1200" height="6" fill="#00bcd4" opacity="0.85"/>
+
+  <!-- Wordmark -->
+  <g font-family="'Helvetica Neue', 'Arial Black', Arial, sans-serif" fill="#ffffff" text-anchor="middle">
+    <text x="600" y="245" font-size="80" font-weight="900" letter-spacing="3" filter="url(#glow)">
+      GATEWAY TECH AEO
+    </text>
+
+    <!-- Tagline -->
+    <text x="600" y="305" font-size="28" font-weight="500" opacity="0.96">
+      AI search optimization for St. Louis small businesses
+    </text>
+
+    <!-- Three-pillar inline -->
+    <text x="600" y="385" font-size="22" font-weight="700" letter-spacing="6" opacity="0.92">
+      TECHNICAL · AUTHORITY · CONTENT
+    </text>
+
+    <!-- Verifiable proof line -->
+    <text x="600" y="540" font-size="20" font-weight="500" opacity="0.85">
+      matthewjamison.dev — Lighthouse 98+ · 5 languages · $0 hosting
+    </text>
+  </g>
+
+  <!-- Bottom accent bar with brand gradient -->
+  <rect x="0" y="624" width="1200" height="6" fill="#e91e63" opacity="0.9"/>
+</svg>

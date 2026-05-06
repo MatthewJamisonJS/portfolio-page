@@ -68,10 +68,10 @@
 	<meta property="og:locale" content="en_US">
 	<meta property="og:title" content="{{ if .IsHome }}{{ site.Title }} - Results-Driven Full-Stack Developer{{ else }}{{ .Title }} | {{ site.Title }}{{ end }}">
 	<meta property="og:description" content="{{ if .IsHome }}Full-stack developer delivering measurable ROI: 98+ Lighthouse scores, $6k/year savings, 79% faster load times. Rails, Python, Hugo, AI. Conversion-optimized development for real business results.{{ else }}{{ with .Description }}{{ . }}{{ else }}{{ site.Params.description }}{{ end }}{{ end }}">
-	<meta property="og:image" content="{{ site.BaseURL }}images/backgrounds/hero-bg.jpg">
+	<meta property="og:image" content="{{ site.BaseURL }}images/og/og-default.png">
 	<meta property="og:image:width" content="1200">
 	<meta property="og:image:height" content="630">
-	<meta property="og:image:alt" content="Matthew Jamison - Full-Stack Developer Portfolio">
+	<meta property="og:image:alt" content="Gateway Tech AEO — AI search optimization for St. Louis small businesses">
 
 	<!-- Twitter Card - Enhanced -->
 	<meta name="twitter:card" content="summary_large_image">
@@ -80,8 +80,8 @@
 	<meta name="twitter:url" content="{{ .Permalink }}">
 	<meta name="twitter:title" content="{{ if .IsHome }}Matthew Jamison - Results-Driven Full-Stack Developer{{ else }}{{ .Title }} | {{ site.Title }}{{ end }}">
 	<meta name="twitter:description" content="{{ if .IsHome }}Measurable ROI: 98+ Lighthouse scores, $6k/year savings, 79% faster load times. Rails, Python, Hugo, AI. Conversion-optimized development.{{ else }}{{ with .Description }}{{ . }}{{ else }}{{ site.Params.description }}{{ end }}{{ end }}">
-	<meta name="twitter:image" content="{{ site.BaseURL }}images/backgrounds/hero-bg.jpg">
-	<meta name="twitter:image:alt" content="Matthew Jamison Portfolio">
+	<meta name="twitter:image" content="{{ site.BaseURL }}images/og/og-default.png">
+	<meta name="twitter:image:alt" content="Gateway Tech AEO — AI search optimization for St. Louis small businesses">
 
 	<!-- Enhanced SEO -->
 	<link rel="canonical" href="{{ .Permalink }}">
@@ -100,7 +100,7 @@
 				"url": "{{ site.BaseURL }}",
 				"image": {
 					"@type": "ImageObject",
-					"url": "{{ site.BaseURL }}images/backgrounds/hero-bg.jpg"
+					"url": "{{ site.BaseURL }}images/og/og-default.png"
 				},
 				"jobTitle": "Full-Stack Developer",
 				"description": "Full-stack developer focused on measurable business outcomes: conversion optimization, performance improvements, and cost reduction. Delivers 98+ Lighthouse scores, WCAG compliance, and significant ROI across Rails, Python, Hugo, and AI projects.",

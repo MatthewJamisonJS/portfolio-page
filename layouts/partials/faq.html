@@ -1,0 +1,28 @@
+{{ $data := index site.Data site.Language.Lang }}
+{{ if $data.faq.enable }}
+{{ with $data.faq }}
+<section id="faq" class="section faq-section" aria-labelledby="faq-title">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 text-center mb-4">
+        <h2 id="faq-title" class="faq-title">{{ .title }}</h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-10 offset-lg-1">
+        <ul class="faq-accordion list-unstyled">
+          {{ range $i, $item := .items }}
+          <li class="faq-item">
+            <details>
+              <summary><h3 class="faq-question">{{ $item.question }}</h3></summary>
+              <div class="faq-answer">{{ $item.answer | markdownify }}</div>
+            </details>
+          </li>
+          {{ end }}
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+{{ end }}
+{{ end }}

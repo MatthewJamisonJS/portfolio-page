@@ -67,7 +67,52 @@ module.exports = {
       'ti-music',
       'ti-server',
       'ti-layout',
-      'ti-pulse'
+      'ti-pulse',
+      // AEO rebrand: hero compression
+      'hero-stack',
+      'hero-subtitle',
+      'hero-pillars',
+      'hero-price-floor',
+      'hero-byline',
+      // AEO rebrand: method (three pillars)
+      'method-section',
+      'method-title',
+      'method-intro',
+      'method-grid',
+      'pillar-card',
+      'pillar-technical',
+      'pillar-authority',
+      'pillar-content',
+      'pillar-icon',
+      'pillar-title',
+      'pillar-tagline',
+      'pillar-bullets',
+      // AEO rebrand: pricing
+      'pricing-section',
+      'pricing-title',
+      'pricing-grid',
+      'pricing-card',
+      'pricing-highlighted',
+      'pricing-name',
+      'pricing-price',
+      'pricing-cadence',
+      'pricing-use',
+      'pricing-includes',
+      'pricing-cta',
+      'pricing-pick',
+      'pricing-footnote',
+      // AEO rebrand: FAQ
+      'faq-section',
+      'faq-title',
+      'faq-accordion',
+      'faq-item',
+      'faq-question',
+      'faq-answer',
+      // AEO rebrand: discovery CTA
+      'discovery-cta',
+      'discovery-title',
+      'discovery-sub',
+      'discovery-btn'
     ],
     // Deep matching for component variations
     deep: [
@@ -81,7 +126,12 @@ module.exports = {
       /^section/,      // Section classes
       /^container/,    // Layout containers
       /^row/,          // Grid rows
-      /^col-/          // Grid columns
+      /^col-/,         // Grid columns
+      /^method-/,      // AEO method section
+      /^pillar-/,      // AEO pillar cards
+      /^pricing-/,     // AEO pricing tiers
+      /^faq-/,         // AEO FAQ accordion
+      /^discovery-/    // AEO discovery CTA
     ],
     // Greedy matching for animation keyframes
     greedy: [

@@ -1,0 +1,12 @@
+brand:
+  # Single source of truth for brand identity. Swap `name` to retarget
+  # everything (hero, footer, schema, OG meta) on next rebuild.
+  name: "Gateway Tech AEO"
+  legal_status: "LLC formation in progress"
+  show_legal_status: true            # toggle false once LLC clears
+  operator: "Matthew Jamison"
+  city: "St. Louis"
+  region: "MO"
+  email: "matthew@gatewaytechaeo.com"
+  phone_format: "(314) ___-____"     # placeholder — fill once tracking number live
+  website: "https://matthewjamison.dev"

@@ -1,13 +1,14 @@
 ---
 banner:
   enable: true
-  bg_image_webp: "images/backgrounds/hero-bg.webp"
-  bg_image: "images/backgrounds/hero-bg.jpg"
   pokemon_sprite: "/images/pokemon/mew.gif"
-  title: "Matthew Jamison"
-  content: "Full-Stack Developer Delivering Measurable ROI | ✓ 79% Faster Load Times  ✓ $6k/Year Hosting Savings  ✓ 98+ Lighthouse Scores  ✓ WCAG AA Certified"
+  title: "AI is changing how customers find you."
+  subtitle: "We help St. Louis small businesses get cited by ChatGPT, Perplexity, and Google's AI Overview — before your competitors do."
+  pillars_inline: "Technical · Authority · Content"
+  price_floor: "from $250 audit · $700 setup · $500–1,200/mo managed"
+  byline_format: "Operating as %s · %s · %s, %s"
   button:
     enable: true
-    label: "Start Your Project"
-    link: "#contact"
+    label: "Schedule a 30-min Discovery Call (free)"
+    link: "#contact?service=discovery"
 ---

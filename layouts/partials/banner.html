@@ -1,8 +1,8 @@
-{{ $data := index site.Data site.Language.Lang }} {{ if
-$data.banner.banner.enable }} {{ with $data.banner.banner }} {{"<!-- Welcome Slider-->"
-| safeHTML}}
+{{ $data := index site.Data site.Language.Lang }}
+{{ $brand := $data.brand }}
+{{ if $data.banner.banner.enable }}
+{{ with $data.banner.banner }}
 <section class="hero-area">
-  {{/* Hero background as <img> for LCP optimization - Responsive srcset */}}
   <img
     srcset="
       {{ "images/backgrounds/hero-bg-mobile.webp" | absURL }} 768w,
@@ -11,32 +11,31 @@ $data.banner.banner.enable }} {{ with $data.banner.banner }} {{"<!-- Welcome Sli
     "
     sizes="100vw"
     src="{{ "images/backgrounds/hero-bg-desktop.webp" | absURL }}"
-    alt="Hero background showcasing developer portfolio"
+    alt="Hero background for Gateway Tech AEO"
     class="hero-bg-image"
     fetchpriority="high"
     width="1920"
     height="1080"
   >
-  {{/* Animated gradient overlay layer */}}
   <div class="hero-gradient-overlay"></div>
 
-  <div class="block">
+  <div class="block hero-stack">
     {{ if .pokemon_sprite }}
     <div class="video-button">
-      <img src="{{ .pokemon_sprite | absURL }}" alt="Pokemon portrait icon representing developer" class="pokemon-icon-large" width="47" height="60">
-    </div>
-    {{ else if .icon }}
-    <div class="video-button">
-      <i class="{{ .icon }}"></i>
+      <img src="{{ .pokemon_sprite | absURL }}" alt="Operator brand mark" class="pokemon-icon-large" width="47" height="60">
     </div>
     {{ end }}
     <h1>{{ .title | markdownify }}</h1>
-    <p>{{ .content | markdownify }}</p>
-    {{ if .button.enable }} {{ with .button }}
-    <a href="{{ .link }}" id="start-project-btn" class="btn btn-transparent page-scroll"
-      >{{ .label }}</a
-    >
-    {{ end }} {{ end }}
+    <p class="hero-subtitle">{{ .subtitle | markdownify }}</p>
+    <p class="hero-pillars">{{ .pillars_inline }}</p>
+    <p class="hero-price-floor">{{ .price_floor }}</p>
+    <p class="hero-byline">
+      Operating as <strong>{{ $brand.brand.name }}</strong>{{ if $brand.brand.show_legal_status }} <em>({{ $brand.brand.legal_status }})</em>{{ end }} · {{ $brand.brand.operator }} · {{ $brand.brand.city }}, {{ $brand.brand.region }}
+    </p>
+    {{ if .button.enable }}{{ with .button }}
+    <a href="{{ .link }}" id="start-project-btn" class="btn btn-transparent page-scroll">{{ .label }}</a>
+    {{ end }}{{ end }}
   </div>
 </section>
-{{"<!-- /Welcome Slider-->" | safeHTML}} {{end}} {{end}}
+{{ end }}
+{{ end }}

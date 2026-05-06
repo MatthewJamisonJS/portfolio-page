@@ -7,9 +7,8 @@ banner:
   subtitle: "We help St. Louis small businesses get cited by ChatGPT, Perplexity, and Google's AI Overview — before your competitors do."
   pillars_inline: "Technical · Authority · Content"
   price_floor: "from $250 audit · $700 setup · $500–1,200/mo managed"
-  byline_format: "Operating as %s · %s · %s, %s"
   button:
     enable: true
     label: "Schedule a 30-min Discovery Call (free)"
-    link: "#contact?service=discovery"
+    link: "?service=discovery#contact"
 ---

@@ -325,3 +325,6 @@ other = "Setup & Hand-off"
 
 [dfy_tier]
 other = "Done-For-You"
+
+[discovery_cta_button]
+other = "Book the call"

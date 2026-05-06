@@ -1,9 +1,7 @@
-{{ $data := index site.Data site.Language.Lang }}
-{{ $brand := $data.brand }}
 <section class="discovery-cta" aria-labelledby="discovery-title">
   <div class="container text-center">
-    <h2 id="discovery-title" class="discovery-title">Schedule a 30-min Discovery Call</h2>
-    <p class="discovery-sub">Free. No pitch. We figure out together if AEO makes sense for your business right now.</p>
-    <a href="#contact?service=discovery" class="btn btn-transparent page-scroll discovery-btn" data-service="discovery">Book the call</a>
+    <h2 id="discovery-title" class="discovery-title">{{ i18n "discovery_cta_label" }}</h2>
+    <p class="discovery-sub">{{ i18n "discovery_cta_subtitle" }}</p>
+    <a href="?service=discovery#contact" class="btn btn-transparent page-scroll discovery-btn" data-service="discovery">{{ i18n "discovery_cta_button" | default "Book the call" }}</a>
   </div>
 </section>

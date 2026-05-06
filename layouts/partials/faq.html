@@ -14,7 +14,7 @@
           {{ range $i, $item := .items }}
           <li class="faq-item">
             <details>
-              <summary><h3 class="faq-question">{{ $item.question }}</h3></summary>
+              <summary><span class="faq-question">{{ $item.question }}</span></summary>
               <div class="faq-answer">{{ $item.answer | markdownify }}</div>
             </details>
           </li>

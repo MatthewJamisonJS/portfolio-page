@@ -181,13 +181,13 @@
 					{{ range $i, $tier := $pricing.tiers }}{{ if $i }},{{ end }}
 					{
 						"@type": "Offer",
-						"name": {{ $tier.name | jsonify }},
-						"price": {{ $tier.price | jsonify }},
+						"name": {{ $tier.name | jsonify | safeJS }},
+						"price": {{ $tier.price | jsonify | safeJS }},
 						"priceCurrency": "USD",
-						"description": {{ $tier.use_when | jsonify }}
+						"description": {{ $tier.use_when | jsonify | safeJS }}
 					}{{ end }}
 				]
-			},
+			}{{ if .IsHome }},
 			{
 				"@type": "FAQPage",
 				"@id": "{{ .Permalink }}#faq",
@@ -195,14 +195,14 @@
 					{{ range $i, $item := $faq.items }}{{ if $i }},{{ end }}
 					{
 						"@type": "Question",
-						"name": {{ $item.question | jsonify }},
+						"name": {{ $item.question | jsonify | safeJS }},
 						"acceptedAnswer": {
 							"@type": "Answer",
-							"text": {{ $item.answer | jsonify }}
+							"text": {{ $item.answer | jsonify | safeJS }}
 						}
 					}{{ end }}
 				]
-			}
+			}{{ end }}
 		]
 	}
 	</script>

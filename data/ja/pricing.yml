@@ -1,0 +1,47 @@
+# TODO: translate to Japanese
+pricing:
+  enable: true
+  title: "Three honest tiers"
+  pick_label: "How to pick"
+  pick_text: "If you have time and want to learn — Audit. If you want it built right but you'll run it after — Setup & Hand-off. If you want it managed and you don't want to think about it — Done-For-You."
+  footnote: "Audit credits toward Setup if you continue. No long contracts. We cap year one at 5 St. Louis clients — slow growth means deep service."
+  tiers:
+    - slug: "audit"
+      name: "Audit"
+      price: "$250"
+      cadence: "one-time"
+      highlight: false
+      use_when: "You're skeptical and want to see the work before you commit. You'll fix things yourself afterwards."
+      includes:
+        - "Full visibility audit"
+        - "Prioritized fix list"
+        - "1-hour walkthrough"
+        - "You implement"
+      cta_label: "Start with an audit"
+      cta_link: "?service=audit#contact"
+    - slug: "setup"
+      name: "Setup & Hand-off"
+      price: "$700"
+      cadence: "one-time"
+      highlight: true
+      use_when: "You want it built right, then you run it after a training session."
+      includes:
+        - "Everything in Audit"
+        - "Implementation done"
+        - "Training session"
+        - "You run it after"
+      cta_label: "Pick Setup & Hand-off"
+      cta_link: "?service=setup#contact"
+    - slug: "dfy"
+      name: "Done-For-You"
+      price: "$500–1,200"
+      cadence: "per month"
+      highlight: false
+      use_when: "You have a budget but no time. You want it managed end-to-end."
+      includes:
+        - "Everything in Setup"
+        - "Monthly optimization"
+        - "Content & reviews"
+        - "Reporting + strategy"
+      cta_label: "Talk about a retainer"
+      cta_link: "?service=dfy#contact"

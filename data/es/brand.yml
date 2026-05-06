@@ -1,0 +1,11 @@
+# TODO: translate to Spanish once English copy is locked
+brand:
+  name: "Gateway Tech AEO"
+  legal_status: "LLC formation in progress"
+  show_legal_status: true
+  operator: "Matthew Jamison"
+  city: "St. Louis"
+  region: "MO"
+  email: "matthew@gatewaytechaeo.com"
+  phone_format: "(314) ___-____"
+  website: "https://matthewjamison.dev"

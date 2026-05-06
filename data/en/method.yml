@@ -1,0 +1,35 @@
+method:
+  enable: true
+  title: "How we think about AEO"
+  intro: "Every action we take fits into one of three buckets. If a tactic does not strengthen one of these pillars, we don't do it."
+  pillars:
+    - id: "technical"
+      title: "Technical"
+      tagline: "Can AI find and read you?"
+      icon: "ti-server"
+      bullets:
+        - "robots.txt allows AI bots"
+        - "Schema markup (LocalBusiness, FAQ)"
+        - "Mobile speed under 3 seconds"
+        - "Bing index submitted"
+        - "Sitemap clean and current"
+    - id: "authority"
+      title: "Authority"
+      tagline: "Can AI trust you?"
+      icon: "ti-pulse"
+      bullets:
+        - "Google Business Profile 100% complete"
+        - "NAP consistency everywhere"
+        - "Review generation system"
+        - "Citations on key directories"
+        - "Brand mentions across the web"
+    - id: "content"
+      title: "Content"
+      tagline: "Do you match what people ask?"
+      icon: "ti-layout"
+      bullets:
+        - "Answer-first formatting"
+        - "FAQ pages with schema"
+        - "Statistics every 150 words"
+        - "Comparison tables"
+        - "Local-intent landing pages"

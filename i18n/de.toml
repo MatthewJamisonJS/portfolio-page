@@ -286,58 +286,45 @@ other = "Schulung inklusive"
 [comp_post_me_2]
 other = "Sie besitzen es, Sie führen es"
 
-# FAQ-Bereich
-[faq_title]
-other = "Häufig Gestellte Fragen"
-
-[faq_subtitle]
-other = "Klare Antworten auf häufige Fragen"
-
-[faq_1_q]
-other = "Wie wähle ich den richtigen Service?"
-
-[faq_1_a]
-other = "Lassen Sie uns 15 Minuten sprechen. Ich werde nach Ihren Zielen fragen und ehrlich empfehlen—auch wenn das bedeutet, dass ich nicht die richtige Wahl bin."
-
-[faq_2_q]
-other = "Was ist, wenn ich nicht technisch bin?"
-
-[faq_2_a]
-other = "Deshalb ist die Schulung enthalten. Ich erkläre alles auf einfache Weise und stelle sicher, dass Sie sich sicher fühlen, bevor wir fertig sind."
-
-[faq_3_q]
-other = "Was ist mit Änderungen nach dem Start?"
-
-[faq_3_a]
-other = "Die Schulung deckt die meisten Updates ab, die Sie benötigen. Für größere Änderungen besprechen wir Umfang und Preis transparent, bevor wir beginnen."
-
-[faq_4_q]
-other = "Warum keine Agentur beauftragen?"
-
-[faq_4_a]
-other = "Kein Overhead bedeutet niedrigere Kosten. Direkter Zugang bedeutet schnellere Kommunikation. Eine Person, die wirklich in Ihren Erfolg investiert ist."
-
-[faq_5_q]
-other = "Was ist, wenn mein Budget knapp ist?"
-
-[faq_5_a]
-other = "Melden Sie sich trotzdem. Manchmal können wir Arbeit in Phasen aufteilen, den Umfang anpassen oder kreative Lösungen finden, die für Ihre aktuelle Situation funktionieren."
-
-# Abschließender CTA-Bereich
-[final_cta_title]
-other = "Bereit Anzufangen?"
-
-[final_cta_subtitle]
-other = "Der beste nächste Schritt ist ein Gespräch—kein Verkaufsgespräch, kein Druck. Nur ich, der Ihren Geschäftszielen zuhört und ehrliche Anleitung bietet."
-
-[or_contact_form]
-other = "Oder nutzen Sie das"
-
-[contact_form_link]
-other = "Kontaktformular unten"
-
 [see_examples]
 other = "Neugierig, was möglich ist?"
 
 [view_demos]
 other = "Alle Demos Ansehen →"
+
+# TODO: translate to German
+[method_title]
+other = "How we think about AEO"
+
+[pricing_title]
+other = "Three honest tiers"
+
+[faq_title]
+other = "Common questions"
+
+[discovery_cta_label]
+other = "Schedule a 30-min Discovery Call"
+
+[discovery_cta_subtitle]
+other = "Free. No pitch. We figure out together if AEO makes sense for your business right now."
+
+[pillar_technical]
+other = "Technical"
+
+[pillar_authority]
+other = "Authority"
+
+[pillar_content]
+other = "Content"
+
+[audit_tier]
+other = "Audit"
+
+[setup_tier]
+other = "Setup & Hand-off"
+
+[dfy_tier]
+other = "Done-For-You"
+
+[discovery_cta_button]
+other = "Book the call"

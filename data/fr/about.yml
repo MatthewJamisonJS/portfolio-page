@@ -1,17 +1,18 @@
+# TODO: translate to French
 ---
 about:
   enable: true
-  title: "À Propos"
+  title: "About"
   about_item:
     - icon: "ti-server"
-      title: "Le Bon Outil pour le Bon Travail"
-      content: "Développeur full-stack avec expertise en Ruby on Rails pour applications backend, Rust pour exécutables performants, Hugo pour sites statiques rapides, et Shopify pour e-commerce. Je choisis les technologies en fonction de vos besoins spécifiques, pas des tendances."
+      title: "Right Tool, Right Job"
+      content: "Full-stack developer foundation: Ruby on Rails for SaaS, Hugo for fast static sites, Shopify for commerce, plus AEO methodology layered on top. We pick technology based on what your business actually needs, not what's trending."
 
     - icon: "ti-layout"
-      title: "Du Greenfield au Legacy"
-      content: "77+ PRs fusionnées chez Concordia Publishing House (Rails 8, 500k utilisateurs). À l'aise pour construire de nouveaux projets de zéro, optimiser des bases de code existantes, ou contribuer à des équipes avec des cultures de développement établies. Je m'adapte à votre flux de travail."
+      title: "From Concordia to Main Street"
+      content: "Day job: software developer at Concordia Publishing House. 194+ merged PRs on Rails 8 applications serving over a million users — counter auto-updates daily on my GitHub profile, so the proof's right there. I been working. Now I'm bringing that same rigor to St. Louis small businesses at indie-friendly pricing."
 
     - icon: "ti-pulse"
-      title: "Travaux de Portfolio"
-      content: "Les démos Hugo présentées ici sont des Single Page Applications de démonstration—des templates rapidement personnalisables qui démontrent une architecture propre. Au fur et à mesure de mes constructions, je les remplacerai par des projets de production complets sur différentes stacks technologiques."
+      title: "The site you're on is the demo"
+      content: "Lighthouse 98+, FAQPage schema, multilingual (5 languages), Cloudflare Pages, $0 hosting cost. Verify the score in your browser address bar. We do for clients what we do for ourselves."
 ---

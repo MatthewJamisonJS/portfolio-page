@@ -1,0 +1,35 @@
+{{ $data := index site.Data site.Language.Lang }}
+{{ if $data.pricing.pricing.enable }}
+{{ with $data.pricing.pricing }}
+<section id="pricing" class="section pricing-section" aria-labelledby="pricing-title">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 text-center mb-4">
+        <h2 id="pricing-title" class="pricing-title">{{ .title }}</h2>
+      </div>
+    </div>
+    <div class="row pricing-grid">
+      {{ range .tiers }}
+      <div class="col-lg-4 col-md-6 mb-4">
+        <article class="pricing-card{{ if .highlight }} pricing-highlighted{{ end }}" aria-labelledby="tier-{{ .slug }}-title">
+          <h3 id="tier-{{ .slug }}-title" class="pricing-name">{{ .name }}</h3>
+          <p class="pricing-price"><strong>{{ .price }}</strong> <span class="pricing-cadence">{{ .cadence }}</span></p>
+          <p class="pricing-use">{{ .use_when }}</p>
+          <ul class="pricing-includes">
+            {{ range .includes }}<li>{{ . }}</li>{{ end }}
+          </ul>
+          <a href="{{ .cta_link }}" class="btn btn-transparent pricing-cta page-scroll" data-service="{{ .slug }}">{{ .cta_label }}</a>
+        </article>
+      </div>
+      {{ end }}
+    </div>
+    <div class="row">
+      <div class="col-12 text-center pricing-pick">
+        <p><strong>{{ .pick_label }}:</strong> {{ .pick_text }}</p>
+        <p class="pricing-footnote"><small>{{ .footnote }}</small></p>
+      </div>
+    </div>
+  </div>
+</section>
+{{ end }}
+{{ end }}

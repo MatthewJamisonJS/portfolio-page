@@ -1,17 +1,18 @@
+# TODO: translate to Japanese
 ---
 about:
   enable: true
-  title: "私について"
+  title: "About"
   about_item:
     - icon: "ti-server"
-      title: "適材適所のツール選択"
-      content: "バックエンド対応アプリケーション向けRuby on Rails、高性能実行ファイル向けRust、高速静的サイト向けHugo、eコマース向けShopifyなど、幅広い技術スタックの専門知識を持つフルスタック開発者。トレンドではなく、お客様の具体的なニーズに基づいて技術を選択します。"
+      title: "Right Tool, Right Job"
+      content: "Full-stack developer foundation: Ruby on Rails for SaaS, Hugo for fast static sites, Shopify for commerce, plus AEO methodology layered on top. We pick technology based on what your business actually needs, not what's trending."
 
     - icon: "ti-layout"
-      title: "新規プロジェクトからレガシーシステムまで"
-      content: "Concordia Publishing House（Rails 8、50万ユーザー）で77以上のマージされたPR。ゼロからの新規プロジェクト構築、既存コードベースの最適化、確立された開発文化を持つチームへの貢献など、あらゆる環境で活躍。お客様のワークフローに適応します。"
+      title: "From Concordia to Main Street"
+      content: "Day job: software developer at Concordia Publishing House. 194+ merged PRs on Rails 8 applications serving over a million users — counter auto-updates daily on my GitHub profile, so the proof's right there. I been working. Now I'm bringing that same rigor to St. Louis small businesses at indie-friendly pricing."
 
     - icon: "ti-pulse"
-      title: "ポートフォリオ作品"
-      content: "ここで紹介しているHugoデモは、プレースホルダーのシングルページアプリケーション—素早くカスタマイズ可能なテンプレートで、クリーンなアーキテクチャを実証しています。継続的に構築を進めながら、異なる技術スタックを使用した完全な本番プロジェクトに置き換えていきます。"
+      title: "The site you're on is the demo"
+      content: "Lighthouse 98+, FAQPage schema, multilingual (5 languages), Cloudflare Pages, $0 hosting cost. Verify the score in your browser address bar. We do for clients what we do for ourselves."
 ---

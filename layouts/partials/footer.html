@@ -75,11 +75,10 @@
 	if (service) {
 		// Map service slugs to display names
 		const serviceNames = {
-			'foundation': 'Foundation Service',
-			'complete-presence': 'Complete Presence',
-			'partnership': 'Partnership',
-			'budget-inquiry': 'Budget Inquiry',
-			'consultation': 'Consultation',
+			'audit': 'Audit',
+			'setup': 'Setup & Hand-off',
+			'dfy': 'Done-For-You',
+			'discovery': 'Discovery Call',
 			'general': 'General Inquiry'
 		};
 
@@ -122,42 +121,7 @@
 })();
 </script>
 
-<!-- FAQ Accordion Functionality -->
-<script>
-(function() {
-	document.addEventListener('DOMContentLoaded', function() {
-		const faqButtons = document.querySelectorAll('.faq-question');
-
-		faqButtons.forEach(button => {
-			button.addEventListener('click', function() {
-				const faqItem = this.parentElement;
-				const answer = faqItem.querySelector('.faq-answer');
-				const isExpanded = this.getAttribute('aria-expanded') === 'true';
-
-				// Close all other FAQs
-				faqButtons.forEach(otherButton => {
-					if (otherButton !== this) {
-						otherButton.setAttribute('aria-expanded', 'false');
-						otherButton.querySelector('.faq-icon').textContent = '+';
-						otherButton.parentElement.querySelector('.faq-answer').style.maxHeight = '0';
-					}
-				});
-
-				// Toggle current FAQ
-				if (isExpanded) {
-					this.setAttribute('aria-expanded', 'false');
-					this.querySelector('.faq-icon').textContent = '+';
-					answer.style.maxHeight = '0';
-				} else {
-					this.setAttribute('aria-expanded', 'true');
-					this.querySelector('.faq-icon').textContent = '−';
-					answer.style.maxHeight = answer.scrollHeight + 'px';
-				}
-			});
-		});
-	});
-})();
-</script>
+<!-- FAQ accordion now uses native <details>/<summary>; no JS needed -->
 
 <!-- Multi-Layer Vortex Portal Animation for Start Project Button -->
 <script>

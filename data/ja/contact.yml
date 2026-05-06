@@ -1,17 +1,17 @@
+# TODO: translate to Japanese
 ---
 contact:
   enable: true
-  title: "15分間の電話予約"
-  subtitle: "同様の結果をお求めですか？プロジェクトについてお話ししましょう。"
-  content: "WordPressから高速静的サイトへの移行、多言語対応の国際展開、またはWCAGアクセシビリティ認定が必要な場合でも、お気軽にお問い合わせください。7つの本番環境デプロイメントの実績と100% Lighthouseスコアの保証により、数週間ではなく数日でプロフェッショナルなウェブサイトを展開いたします。"
+  title: "Book a Discovery Call"
+  subtitle: "First step is a free 30-minute call."
+  content: "No pitch, just a fit check. We figure out together if AEO makes sense for your business right now. If it does, we walk you through the audit. If it doesn't, we tell you that too."
 
-  # Contact form configuration
   contact_form:
     enable: true
     form_action: "https://formspree.io/f/xjkpovyv"
-    name: "お名前"
-    email: "メールアドレス"
-    subject: "件名"
-    message: "メッセージ"
-    submit: "送信"
+    name: "Your Name"
+    email: "Your Email"
+    subject: "Subject"
+    message: "Your Message"
+    submit: "Send Message"
 ---

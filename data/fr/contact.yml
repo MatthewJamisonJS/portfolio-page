@@ -1,17 +1,17 @@
+# TODO: translate to French
 ---
 contact:
   enable: true
-  title: "Réservez un Appel de 15 Minutes"
-  subtitle: "Besoin de résultats similaires ? Parlons de votre projet."
-  content: "Spécialisé dans le déploiement rapide de sites web statiques performants avec support multilingue et conformité en accessibilité. Des sites WordPress lents aux plateformes internationales ultrarapides hébergées sur Cloudflare Pages. Passons en revue vos besoins et voyons comment je peux aider."
+  title: "Book a Discovery Call"
+  subtitle: "First step is a free 30-minute call."
+  content: "No pitch, just a fit check. We figure out together if AEO makes sense for your business right now. If it does, we walk you through the audit. If it doesn't, we tell you that too."
 
-  # Contact form configuration
   contact_form:
     enable: true
     form_action: "https://formspree.io/f/xjkpovyv"
-    name: "Votre Nom"
-    email: "Votre Email"
-    subject: "Sujet"
-    message: "Votre Message"
-    submit: "Envoyer le Message"
+    name: "Your Name"
+    email: "Your Email"
+    subject: "Subject"
+    message: "Your Message"
+    submit: "Send Message"
 ---

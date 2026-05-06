@@ -6,7 +6,19 @@
 <!-- Navigation (sticky) -->
 {{ partial "navigation.html" . }}
 
-<!-- Main Content: Demos Grid + Music Sidebar -->
+<!-- Three-pillar Method section -->
+{{ partial "method.html" . }}
+
+<!-- Pricing tiers -->
+{{ partial "pricing.html" . }}
+
+<!-- FAQ accordion (FAQPage schema lives in head.html) -->
+{{ partial "faq.html" . }}
+
+<!-- About section (theme partial; data refreshed via about.yml) -->
+{{ partial "about.html" . }}
+
+<!-- Demos grid — proof points -->
 <section id="demos" class="portfolio-demos section">
   <div class="container">
     <div class="row">
@@ -17,9 +29,7 @@
         </div>
       </div>
     </div>
-
     <div class="row">
-      <!-- Demo Grid - Full Width -->
       <div class="col-12">
         <div class="row demo-grid">
           {{ range where site.Pages "Section" "demos" }}
@@ -28,23 +38,14 @@
             <div class="demo-card card h-100">
               {{ if .Params.image }}
               <div class="demo-image">
-                {{/* Use responsive images: 582w for typical viewport, 768w for larger displays */}}
                 {{ $imgPath := .Params.image }}
                 {{ $img582 := replace $imgPath ".webp" "-582w.webp" }}
                 {{ $img768 := replace $imgPath ".webp" "-768w.webp" }}
                 <img src="{{ $img582 | relURL }}" srcset="{{ $img582 | relURL }} 582w, {{ $img768 | relURL }} 768w" sizes="(max-width: 768px) 100vw, 582px" alt="{{ .Title }}" class="card-img-top" loading="lazy">
                 <div class="demo-overlay">
                   <div class="demo-links">
-                    {{ if .Params.demo_url }}
-                    <a href="{{ .Params.demo_url }}" target="_blank" class="btn btn-sm btn-primary" rel="noopener">
-                      {{ i18n "view_demo" }}
-                    </a>
-                    {{ end }}
-                    {{ if .Params.github_url }}
-                    <a href="{{ .Params.github_url }}" target="_blank" class="btn btn-sm btn-secondary" rel="noopener">
-                      {{ i18n "source_code" }}
-                    </a>
-                    {{ end }}
+                    {{ if .Params.demo_url }}<a href="{{ .Params.demo_url }}" target="_blank" class="btn btn-sm btn-primary" rel="noopener">{{ i18n "view_demo" }}</a>{{ end }}
+                    {{ if .Params.github_url }}<a href="{{ .Params.github_url }}" target="_blank" class="btn btn-sm btn-secondary" rel="noopener">{{ i18n "source_code" }}</a>{{ end }}
                   </div>
                 </div>
               </div>
@@ -64,10 +65,10 @@
   </div>
 </section>
 
-<!-- About Section (optional - can be customized) -->
-{{ partial "about.html" . }}
+<!-- Discovery CTA strip -->
+{{ partial "cta-discovery.html" . }}
 
-<!-- Contact Section -->
+<!-- Contact form -->
 {{ partial "contact.html" . }}
 
 {{ end }}

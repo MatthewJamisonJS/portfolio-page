@@ -1,17 +1,18 @@
+# TODO: translate to Spanish
 ---
 about:
   enable: true
-  title: "Sobre Mí"
+  title: "About"
   about_item:
     - icon: "ti-server"
-      title: "La Herramienta Correcta para el Trabajo"
-      content: "Desarrollador full-stack con experiencia en Ruby on Rails para aplicaciones con backend, Rust para ejecutables de alto rendimiento, Hugo para sitios estáticos rápidos, y Shopify para e-commerce. Elijo tecnologías según tus necesidades específicas, no las tendencias."
+      title: "Right Tool, Right Job"
+      content: "Full-stack developer foundation: Ruby on Rails for SaaS, Hugo for fast static sites, Shopify for commerce, plus AEO methodology layered on top. We pick technology based on what your business actually needs, not what's trending."
 
     - icon: "ti-layout"
-      title: "Nuevos Proyectos a Sistemas Legacy"
-      content: "77+ PRs fusionados en Concordia Publishing House (Rails 8, 500k usuarios). Cómodo construyendo nuevos proyectos desde cero, optimizando código existente, o contribuyendo a equipos con culturas de desarrollo establecidas. Me adapto a tu flujo de trabajo."
+      title: "From Concordia to Main Street"
+      content: "Day job: software developer at Concordia Publishing House. 194+ merged PRs on Rails 8 applications serving over a million users — counter auto-updates daily on my GitHub profile, so the proof's right there. I been working. Now I'm bringing that same rigor to St. Louis small businesses at indie-friendly pricing."
 
     - icon: "ti-pulse"
-      title: "Trabajo de Portafolio"
-      content: "Las demos de Hugo mostradas aquí son Single Page Applications de ejemplo—plantillas rápidamente personalizables que demuestran arquitectura limpia. A medida que continúo construyendo, las reemplazaré con proyectos de producción completos en diferentes stacks tecnológicos."
+      title: "The site you're on is the demo"
+      content: "Lighthouse 98+, FAQPage schema, multilingual (5 languages), Cloudflare Pages, $0 hosting cost. Verify the score in your browser address bar. We do for clients what we do for ourselves."
 ---

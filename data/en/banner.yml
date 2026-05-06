@@ -1,13 +1,13 @@
 ---
 banner:
   enable: true
-  bg_image_webp: "images/backgrounds/hero-bg.webp"
-  bg_image: "images/backgrounds/hero-bg.jpg"
   pokemon_sprite: "/images/pokemon/mew.gif"
-  title: "Matthew Jamison"
-  content: "Full-Stack Developer | Right Tool, Right Job | Ruby on Rails • Rust • Hugo • Shopify | Greenfield Projects • Optimizations • Team Contributions"
+  title: "AI is changing how customers find you."
+  subtitle: "We help St. Louis small businesses get cited by ChatGPT, Perplexity, and Google's AI Overview — before your competitors do."
+  pillars_inline: "Technical · Authority · Content"
+  price_floor: "from $250 audit · $700 setup · $500–1,200/mo managed"
   button:
     enable: true
-    label: "Start Your Project"
-    link: "#contact"
+    label: "Schedule a 30-min Discovery Call (free)"
+    link: "?service=discovery#contact"
 ---

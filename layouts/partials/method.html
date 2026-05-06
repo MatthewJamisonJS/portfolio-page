@@ -1,0 +1,29 @@
+{{ $data := index site.Data site.Language.Lang }}
+{{ if $data.method.enable }}
+{{ with $data.method }}
+<section id="method" class="section method-section" aria-labelledby="method-title">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 text-center mb-4">
+        <h2 id="method-title" class="method-title">{{ .title }}</h2>
+        <p class="method-intro">{{ .intro }}</p>
+      </div>
+    </div>
+    <div class="row method-grid">
+      {{ range .pillars }}
+      <div class="col-lg-4 col-md-6 mb-4">
+        <article class="pillar-card pillar-{{ .id }}" aria-labelledby="pillar-{{ .id }}-title">
+          <div class="pillar-icon" aria-hidden="true"><i class="{{ .icon }}"></i></div>
+          <h3 id="pillar-{{ .id }}-title" class="pillar-title">{{ .title }}</h3>
+          <p class="pillar-tagline">{{ .tagline }}</p>
+          <ul class="pillar-bullets">
+            {{ range .bullets }}<li>{{ . }}</li>{{ end }}
+          </ul>
+        </article>
+      </div>
+      {{ end }}
+    </div>
+  </div>
+</section>
+{{ end }}
+{{ end }}

@@ -93,7 +93,7 @@ link = "plugins/lazy-load/lozad.min.js"
 [params]
 logo = "images/logo.png"
 # Meta data
-description = "Full-stack developer delivering measurable ROI: 98+ Lighthouse scores, $6k/year hosting savings, 79% faster load times. Rails • Python • Hugo • AI Tooling. Conversion-optimized development for real business results."
+description = "Full-stack developer picking the right tool for the job. Ruby on Rails • Rust • Hugo • Shopify. Greenfield projects, legacy optimizations, and team contributions. Real business results over trends."
 author = "Matthew Jamison"
 # Google Analytics (add your tracking ID when ready)
 google_analytics_id = ""

@@ -1,27 +1,18 @@
+# TODO: translate to Japanese
 ---
 about:
   enable: true
-  title: "私について"
+  title: "About"
   about_item:
     - icon: "ti-server"
-      title: "Hugo専門"
-      content: "✓ 7つの業種にわたる本番環境デプロイメント
-✓ 20以上の言語に対応する多言語対応
-✓ すべてのプロジェクトで100% Lighthouseスコア
-✓ 1秒未満の読み込み時間を保証"
+      title: "Right Tool, Right Job"
+      content: "Full-stack developer foundation: Ruby on Rails for SaaS, Hugo for fast static sites, Shopify for commerce, plus AEO methodology layered on top. We pick technology based on what your business actually needs, not what's trending."
 
     - icon: "ti-layout"
-      title: "Rails + Python経験"
-      content: "✓ Concordia（50万ユーザー）でRails 8の77以上のマージされたPR
-✓ 大規模アプリケーションでの実証済みの実績
-✓ クリーンアーキテクチャとベストプラクティス
-✓ チーム協働とコードレビュー"
+      title: "From Concordia to Main Street"
+      content: "Day job: software developer at Concordia Publishing House. 194+ merged PRs on Rails 8 applications serving over a million users — counter auto-updates daily on my GitHub profile, so the proof's right there. I been working. Now I'm bringing that same rigor to St. Louis small businesses at indie-friendly pricing."
 
     - icon: "ti-pulse"
-      title: "パフォーマンス保証"
-      content: "✓ すべてのプロジェクトで100% Lighthouseスコア
-✓ 1秒未満の読み込み時間
-✓ WCAG AA準拠
-✓ WordPressと比較して10倍高速
-✓ Cloudflareグローバル配信"
+      title: "The site you're on is the demo"
+      content: "Lighthouse 98+, FAQPage schema, multilingual (5 languages), Cloudflare Pages, $0 hosting cost. Verify the score in your browser address bar. We do for clients what we do for ourselves."
 ---

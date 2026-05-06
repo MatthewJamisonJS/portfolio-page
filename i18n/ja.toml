@@ -286,58 +286,42 @@ other = "トレーニング込み"
 [comp_post_me_2]
 other = "所有し、運用する"
 
-# FAQセクション
-[faq_title]
-other = "よくある質問"
-
-[faq_subtitle]
-other = "一般的な質問への明確な回答"
-
-[faq_1_q]
-other = "適切なサービスをどのように選ぶのですか？"
-
-[faq_1_a]
-other = "15分間話しましょう。目標について尋ね、正直にお勧めします—たとえそれが私が適切でないことを意味していても。"
-
-[faq_2_q]
-other = "技術的でない場合はどうなりますか？"
-
-[faq_2_a]
-other = "だからこそトレーニングが含まれています。すべてを平易な言葉で説明し、完了する前に自信を持っていることを確認します。"
-
-[faq_3_q]
-other = "ローンチ後の変更はどうなりますか？"
-
-[faq_3_a]
-other = "トレーニングは必要な更新のほとんどをカバーします。大きな変更については、開始前にスコープと料金を透明に議論します。"
-
-[faq_4_q]
-other = "なぜ代理店を雇わないのですか？"
-
-[faq_4_a]
-other = "オーバーヘッドがないということは、コストが低いということです。直接アクセスは、コミュニケーションが速いことを意味します。本当にあなたの成功に投資している一人の人間。"
-
-[faq_5_q]
-other = "予算が厳しい場合はどうなりますか？"
-
-[faq_5_a]
-other = "とにかく連絡してください。時には作業を段階的に進めたり、スコープを調整したり、今のあなたに合った創造的な解決策を見つけることができます。"
-
-# 最終CTAセクション
-[final_cta_title]
-other = "始める準備はできましたか？"
-
-[final_cta_subtitle]
-other = "次の最善のステップは会話です—セールストークはありません、プレッシャーもありません。ただ私があなたのビジネス目標を聞き、正直なガイダンスを提供します。"
-
-[or_contact_form]
-other = "または"
-
-[contact_form_link]
-other = "下記の問い合わせフォームを使用してください"
-
 [see_examples]
 other = "何が可能か気になりますか？"
 
 [view_demos]
 other = "すべてのデモを見る →"
+
+# TODO: translate to Japanese
+[method_title]
+other = "How we think about AEO"
+
+[pricing_title]
+other = "Three honest tiers"
+
+[faq_title]
+other = "Common questions"
+
+[discovery_cta_label]
+other = "Schedule a 30-min Discovery Call"
+
+[discovery_cta_subtitle]
+other = "Free. No pitch. We figure out together if AEO makes sense for your business right now."
+
+[pillar_technical]
+other = "Technical"
+
+[pillar_authority]
+other = "Authority"
+
+[pillar_content]
+other = "Content"
+
+[audit_tier]
+other = "Audit"
+
+[setup_tier]
+other = "Setup & Hand-off"
+
+[dfy_tier]
+other = "Done-For-You"

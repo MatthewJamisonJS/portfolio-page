@@ -285,58 +285,41 @@ other = "Training included"
 [comp_post_me_2]
 other = "You own it, you run it"
 
-# FAQ Section
-[faq_title]
-other = "Frequently Asked Questions"
-
-[faq_subtitle]
-other = "Clear answers to common questions"
-
-[faq_1_q]
-other = "How do I choose the right service?"
-
-[faq_1_a]
-other = "Let's talk for 15 minutes. I'll ask about your goals and recommend honestly—even if that means I'm not the right fit."
-
-[faq_2_q]
-other = "What if I'm not technical?"
-
-[faq_2_a]
-other = "That's why training is included. I explain everything in plain English and make sure you're confident before we're done."
-
-[faq_3_q]
-other = "What about changes after launch?"
-
-[faq_3_a]
-other = "Training covers most updates you'll need. For bigger changes, we'll discuss scope and pricing transparently before starting."
-
-[faq_4_q]
-other = "Why not hire an agency?"
-
-[faq_4_a]
-other = "No overhead means lower costs. Direct access means faster communication. One person genuinely invested in your success."
-
-[faq_5_q]
-other = "What if my budget is tight?"
-
-[faq_5_a]
-other = "Reach out anyway. Sometimes we can phase work, adjust scope, or find creative solutions that work for where you are now."
-
-# Final CTA Section
-[final_cta_title]
-other = "Ready to Start?"
-
-[final_cta_subtitle]
-other = "The best next step is a conversation—no sales pitch, no pressure. Just me listening to your business goals and offering honest guidance."
-
-[or_contact_form]
-other = "Or use the"
-
-[contact_form_link]
-other = "contact form below"
-
 [see_examples]
 other = "Curious what's possible?"
 
 [view_demos]
 other = "View All Demos →"
+
+[method_title]
+other = "How we think about AEO"
+
+[pricing_title]
+other = "Three honest tiers"
+
+[faq_title]
+other = "Common questions"
+
+[discovery_cta_label]
+other = "Schedule a 30-min Discovery Call"
+
+[discovery_cta_subtitle]
+other = "Free. No pitch. We figure out together if AEO makes sense for your business right now."
+
+[pillar_technical]
+other = "Technical"
+
+[pillar_authority]
+other = "Authority"
+
+[pillar_content]
+other = "Content"
+
+[audit_tier]
+other = "Audit"
+
+[setup_tier]
+other = "Setup & Hand-off"
+
+[dfy_tier]
+other = "Done-For-You"

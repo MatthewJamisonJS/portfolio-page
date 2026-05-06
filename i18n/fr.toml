@@ -286,58 +286,42 @@ other = "Formation incluse"
 [comp_post_me_2]
 other = "Vous le possédez, vous le gérez"
 
-# Section FAQ
-[faq_title]
-other = "Questions Fréquemment Posées"
-
-[faq_subtitle]
-other = "Réponses claires aux questions courantes"
-
-[faq_1_q]
-other = "Comment choisir le bon service ?"
-
-[faq_1_a]
-other = "Parlons pendant 15 minutes. Je vous poserai des questions sur vos objectifs et recommanderai honnêtement—même si cela signifie que je ne suis pas la bonne personne."
-
-[faq_2_q]
-other = "Et si je ne suis pas technique ?"
-
-[faq_2_a]
-other = "C'est pourquoi la formation est incluse. J'explique tout en français simple et m'assure que vous êtes confiant avant de terminer."
-
-[faq_3_q]
-other = "Qu'en est-il des modifications après le lancement ?"
-
-[faq_3_a]
-other = "La formation couvre la plupart des mises à jour dont vous aurez besoin. Pour les modifications plus importantes, nous discuterons du périmètre et des prix de manière transparente avant de commencer."
-
-[faq_4_q]
-other = "Pourquoi ne pas embaucher une agence ?"
-
-[faq_4_a]
-other = "Pas de frais généraux signifie des coûts plus bas. L'accès direct signifie une communication plus rapide. Une personne véritablement investie dans votre succès."
-
-[faq_5_q]
-other = "Et si mon budget est serré ?"
-
-[faq_5_a]
-other = "Contactez-moi quand même. Parfois, nous pouvons échelonner le travail, ajuster le périmètre ou trouver des solutions créatives qui fonctionnent pour votre situation actuelle."
-
-# Section CTA Final
-[final_cta_title]
-other = "Prêt à Commencer ?"
-
-[final_cta_subtitle]
-other = "La meilleure prochaine étape est une conversation—pas de discours de vente, pas de pression. Juste moi qui écoute vos objectifs commerciaux et offre des conseils honnêtes."
-
-[or_contact_form]
-other = "Ou utilisez le"
-
-[contact_form_link]
-other = "formulaire de contact ci-dessous"
-
 [see_examples]
 other = "Curieux de ce qui est possible ?"
 
 [view_demos]
 other = "Voir Toutes les Démos →"
+
+# TODO: translate to French
+[method_title]
+other = "How we think about AEO"
+
+[pricing_title]
+other = "Three honest tiers"
+
+[faq_title]
+other = "Common questions"
+
+[discovery_cta_label]
+other = "Schedule a 30-min Discovery Call"
+
+[discovery_cta_subtitle]
+other = "Free. No pitch. We figure out together if AEO makes sense for your business right now."
+
+[pillar_technical]
+other = "Technical"
+
+[pillar_authority]
+other = "Authority"
+
+[pillar_content]
+other = "Content"
+
+[audit_tier]
+other = "Audit"
+
+[setup_tier]
+other = "Setup & Hand-off"
+
+[dfy_tier]
+other = "Done-For-You"

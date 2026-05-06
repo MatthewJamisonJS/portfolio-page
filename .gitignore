@@ -19,3 +19,5 @@ Thumbs.db
 # Temporary files
 *.tmp
 .tmp/
+# Local AI context, specs, and settings — never commit (competitive sensitivity)
+.claude/

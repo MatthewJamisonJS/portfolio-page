@@ -1,13 +1,16 @@
 ---
 banner:
   enable: true
-  brand_mark: "/images/brand/mj-mark.svg"
-  title: "AI is changing how customers find you."
-  subtitle: "We help St. Louis small businesses get cited by ChatGPT, Perplexity, and Google's AI Overview — before your competitors do."
+  kicker: "Answer Engine Optimization · St. Louis"
+  title: "Watch AI pick the winners <em>on your block.</em>"
+  subtitle: "Then decide whether you want to be one of them. We help St. Louis small businesses get cited by ChatGPT, Perplexity, Claude, and Google's AI Overview — before your competitors are."
   pillars_inline: "Technical · Authority · Content"
   price_floor: "from $250 audit · $700 setup · $500–1,200/mo managed"
   button:
     enable: true
-    label: "Send a brief"
+    label: "Book a free AEO audit"
+    link: "?service=audit#contact"
+  secondary:
+    label: "Or send a brief"
     link: "?service=brief#contact"
 ---

@@ -122,11 +122,6 @@ brand = "linkedin"
 label = "LinkedIn"
 link = "https://www.linkedin.com/in/matthew-jamison-65486bab/"
 
-[[params.social]]
-brand = "bandcamp"
-label = "Bandcamp"
-link = "https://matthewjjamison.bandcamp.com/"
-
 ################################ English Language ########################
 [Languages.en]
 languageName = "En"

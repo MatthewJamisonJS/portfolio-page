@@ -1,0 +1,22 @@
+{{ $data := index site.Data site.Language.Lang }}
+{{ if $data.about.about.enable }}
+{{ with $data.about.about }}
+<section id="about" class="section about-section" aria-labelledby="about-title">
+  <div class="container">
+    {{ with .kicker }}<div class="kicker">{{ . }}</div>{{ end }}
+    <h2 id="about-title">{{ .title }}</h2>
+    <hr class="title-rule" aria-hidden="true">
+    {{ with .lede }}<p class="about-quote">{{ . | markdownify }}</p>{{ end }}
+
+    <div class="about-creds">
+      {{ range .credentials }}
+      <div class="about-cred">
+        <div class="about-cred-num"><em>{{ .number }}</em></div>
+        <p class="about-cred-desc">{{ .description }}</p>
+      </div>
+      {{ end }}
+    </div>
+  </div>
+</section>
+{{ end }}
+{{ end }}

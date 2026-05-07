@@ -1,0 +1,59 @@
+reel:
+  enable: true
+  eyebrow: "Live AI-citation proof"
+  cycle_label: "Cycles every 4s · 16s loop"
+  aria_label: "Looping reel of AI search results citing St. Louis businesses"
+  disclaimer: "Illustrative · names not real · drop in your own city in production"
+  cards:
+    - engine_slug: "chatgpt"
+      engine: "ChatGPT · 4o"
+      dot: "G"
+      query: "best roofers in St. Louis"
+      answer: |
+        For residential roofing in St. Louis, three businesses come up most often:
+        <mark>Heartland Crest Roofing</mark>, <mark>Soulard Slate &amp; Tile</mark>, and
+        <mark>Gateway Ridgeline Co.</mark> All three publish detailed FAQ pages and
+        structured pricing.
+      cites:
+        - text: "heartlandcrest.com"
+        - text: "soulardslate.com"
+        - text: "gatewayridgeline.com"
+    - engine_slug: "perplexity"
+      engine: "Perplexity · Pro"
+      dot: "P"
+      query: "family-owned Mexican restaurant near Cherokee Street"
+      answer: |
+        Two family-owned spots near Cherokee Street stand out:
+        <mark>La Vereda Cocina</mark> (since 2011) and
+        <mark>Tres Hermanos Taquería</mark> (since 2008). Both are cited for their
+        schema-marked menus and FAQ-style hours.
+      cites:
+        - text: "laveredacocina.com"
+        - text: "treshermanostaqueria.com"
+        - text: "cherokeestreet.org"
+    - engine_slug: "google"
+      engine: "Google · AI Overview"
+      dot: "A"
+      query: "St. Louis small business CPA accepting new clients"
+      answer: |
+        Three CPAs in the St. Louis metro currently note availability for small-business
+        clients: <mark>Lemay &amp; Heger CPA</mark>, <mark>Forest Park Tax Group</mark>, and
+        <mark>Northside Books &amp; Tax</mark>.
+      cites:
+        - text: "lemayheger.com"
+        - text: "forestparktax.com"
+        - text: "northsidebooks.com"
+    - engine_slug: "claude"
+      engine: "Claude · Sonnet"
+      dot: "C"
+      query: "reliable HVAC company in South City St. Louis"
+      answer: |
+        In South City, three HVAC providers are commonly cited:
+        <mark>Tower Grove Heat &amp; Cool</mark>, <mark>Bevo Mill Mechanical</mark>, and
+        <mark class="you">your business here</mark> — if your structured data tells the
+        model you exist.
+      cites:
+        - text: "towergroveheat.com"
+        - text: "bevomillmech.com"
+        - text: "your business here →"
+          win: true

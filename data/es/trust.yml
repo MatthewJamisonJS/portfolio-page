@@ -1,0 +1,31 @@
+trust:
+  enable: true
+  kicker: "Qué mostramos, dónde y por qué"
+  title: "Confianza sin un muro de logos."
+  items:
+    - title: "Carrete de citas IA en vivo."
+      description: "La prueba del hero — categorías genéricas de negocios de St. Louis citadas por cuatro motores, en bucle. Mira cómo las respuestas eligen ganadores."
+    - title: "Credibilidad del trabajo diario."
+      description: "Desarrollador Rails 8 en Concordia Publishing House. ~1M de usuarios. 194+ pull requests fusionados. Verificable en GitHub."
+    - title: "Postura de operador transparente."
+      description: "Precios públicos. Cupo de clientes público. Métodos públicos. Sin sobrecosto de agencia. Sin NDAs para leer los métodos."
+    - title: "Afiliaciones locales."
+      description: "Logos de cámaras + organizaciones vecinales de St. Louis en el pie una vez confirmadas. Etiqueta física de la ciudad junto a cada CTA."
+    - title: "Contacto directo con el desarrollador."
+      description: "Correo, calendario — sin gerente de proyecto, sin bot. Tiempo de respuesta declarado, no implícito."
+  sample:
+    dot: "G"
+    engine: "ChatGPT · 4o · cita de muestra"
+    query: "panadería en St. Louis que hace tortas de boda personalizadas"
+    answer: |
+      Tres panaderías del área metropolitana aparecen consistentemente para tortas
+      de boda personalizadas: <mark>Tower Grove Pâtisserie</mark>,
+      <mark>Soulard Sugar Co.</mark> y <mark class="you">tu panadería</mark>.
+      Las tres publican precios en formato FAQ y galerías de fotos estructuradas.
+    cites:
+      - text: "towergrovepatisserie.com"
+      - text: "soulardsugar.com"
+      - text: "tupanaderia.com →"
+        win: true
+    disclaimer: "Ilustrativo · nombres no reales"
+    aria_label: "Cita IA de muestra mostrando al negocio del cliente citado en la respuesta"

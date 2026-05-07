@@ -1,0 +1,59 @@
+reel:
+  enable: true
+  eyebrow: "Prueba en vivo de citas IA"
+  cycle_label: "Cambia cada 4 s · ciclo de 16 s"
+  aria_label: "Carrete en bucle de resultados de búsqueda IA citando empresas de St. Louis"
+  disclaimer: "Ilustrativo · nombres no reales · en producción se ajustan a tu ciudad"
+  cards:
+    - engine_slug: "chatgpt"
+      engine: "ChatGPT · 4o"
+      dot: "G"
+      query: "mejores techadores en St. Louis"
+      answer: |
+        Para techos residenciales en St. Louis, tres empresas aparecen con más
+        frecuencia: <mark>Heartland Crest Roofing</mark>, <mark>Soulard Slate &amp; Tile</mark>
+        y <mark>Gateway Ridgeline Co.</mark> Las tres publican páginas de FAQ
+        detalladas y precios estructurados.
+      cites:
+        - text: "heartlandcrest.com"
+        - text: "soulardslate.com"
+        - text: "gatewayridgeline.com"
+    - engine_slug: "perplexity"
+      engine: "Perplexity · Pro"
+      dot: "P"
+      query: "restaurante mexicano familiar cerca de Cherokee Street"
+      answer: |
+        Dos lugares familiares cerca de Cherokee Street destacan:
+        <mark>La Vereda Cocina</mark> (desde 2011) y
+        <mark>Tres Hermanos Taquería</mark> (desde 2008). Ambos son citados por
+        sus menús con schema y horarios en formato FAQ.
+      cites:
+        - text: "laveredacocina.com"
+        - text: "treshermanostaqueria.com"
+        - text: "cherokeestreet.org"
+    - engine_slug: "google"
+      engine: "Google · AI Overview"
+      dot: "A"
+      query: "contador (CPA) en St. Louis aceptando nuevos clientes"
+      answer: |
+        Tres CPAs en el área metropolitana de St. Louis indican disponibilidad
+        para clientes pequeños: <mark>Lemay &amp; Heger CPA</mark>,
+        <mark>Forest Park Tax Group</mark> y <mark>Northside Books &amp; Tax</mark>.
+      cites:
+        - text: "lemayheger.com"
+        - text: "forestparktax.com"
+        - text: "northsidebooks.com"
+    - engine_slug: "claude"
+      engine: "Claude · Sonnet"
+      dot: "C"
+      query: "compañía HVAC confiable en South City St. Louis"
+      answer: |
+        En South City, tres proveedores HVAC suelen ser citados:
+        <mark>Tower Grove Heat &amp; Cool</mark>, <mark>Bevo Mill Mechanical</mark> y
+        <mark class="you">tu negocio aquí</mark> — si tu schema le dice al modelo
+        que existes.
+      cites:
+        - text: "towergroveheat.com"
+        - text: "bevomillmech.com"
+        - text: "tu negocio aquí →"
+          win: true

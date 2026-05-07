@@ -1,18 +1,16 @@
-# TODO: translate to Spanish
 ---
 about:
   enable: true
-  title: "About"
-  about_item:
-    - icon: "ti-server"
-      title: "Right Tool, Right Job"
-      content: "Full-stack developer foundation: Ruby on Rails for SaaS, Hugo for fast static sites, Shopify for commerce, plus AEO methodology layered on top. We pick technology based on what your business actually needs, not what's trending."
-
-    - icon: "ti-layout"
-      title: "From Concordia to Main Street"
-      content: "Day job: software developer at Concordia Publishing House. 194+ merged PRs on Rails 8 applications serving over a million users — counter auto-updates daily on my GitHub profile, so the proof's right there. I been working. Now I'm bringing that same rigor to St. Louis small businesses at indie-friendly pricing."
-
-    - icon: "ti-pulse"
-      title: "The site you're on is the demo"
-      content: "Lighthouse 98+, FAQPage schema, multilingual (5 languages), Cloudflare Pages, $0 hosting cost. Verify the score in your browser address bar. We do for clients what we do for ourselves."
+  kicker: "Por qué funciona"
+  title: "Ingeniería de producción, precio para empresas independientes."
+  lede: "El mismo rigor de Rails 8 que mantiene una editorial con un millón de usuarios — redirigido a la página FAQ, el schema y el Perfil de Empresa de Google de los que depende tu visibilidad en la búsqueda IA."
+  credentials:
+    - number: "~1M"
+      description: "Usuarios en la aplicación Rails 8 con la que trabajo en Concordia Publishing House — cada día laboral."
+    - number: "194+"
+      description: "Pull requests fusionados en el código de producción, verificables en mi perfil público de GitHub."
+    - number: "Lighthouse 98+"
+      description: "En el sitio que estás leyendo. Verifica la puntuación en la barra de direcciones ahora mismo."
+    - number: "5"
+      description: "Cupo de clientes del primer año en el área metropolitana de St. Louis. Tras cinco compromisos activos, el formulario se cierra."
 ---

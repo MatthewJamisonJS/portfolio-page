@@ -26,7 +26,7 @@
 			{{ if .contact_form.enable }}
 			{{ with .contact_form }}
 			<div class="col-lg-6 wow fadeInUp" data-wow-duration="500ms" data-wow-delay="300ms">
-				<form id="contact-form" class="form-meghna" method="post" action="{{ .form_action }}" role="form">
+				<form id="contact-form" class="form-meghna brief-form" method="post" action="{{ .form_action }}" role="form">
 					<div class="form-group">
 						<label for="name" class="sr-only">{{ .name }}</label>
 						<input type="text" placeholder="{{ .name }}" class="form-control" name="name" id="name" aria-label="{{ .name }}" required>
@@ -36,12 +36,24 @@
 						<input type="email" placeholder="{{ .email }}" class="form-control" name="email" id="email" aria-label="{{ .email }}" required>
 					</div>
 					<div class="form-group">
-						<label for="subject" class="sr-only">{{ .subject }}</label>
-						<input type="text" placeholder="{{ .subject }}" class="form-control" name="subject" id="subject" aria-label="{{ .subject }}" required>
+						<label for="site_url" class="sr-only">{{ .site_url }}</label>
+						<input type="url" placeholder="{{ .site_url }}" class="form-control" name="site_url" id="site_url" aria-label="{{ .site_url }}" inputmode="url" autocapitalize="off" autocorrect="off">
+					</div>
+					<div class="form-group">
+						<label for="location" class="sr-only">{{ .location }}</label>
+						<input type="text" placeholder="{{ .location }}" class="form-control" name="location" id="location" aria-label="{{ .location }}" required>
+					</div>
+					<div class="form-group">
+						<label for="business_one_liner" class="sr-only">{{ .business_one_liner }}</label>
+						<input type="text" placeholder="{{ .business_one_liner }}" class="form-control" name="business_one_liner" id="business_one_liner" aria-label="{{ .business_one_liner }}" maxlength="240" required>
+					</div>
+					<div class="form-group">
+						<label for="current_goals" class="sr-only">{{ .current_goals }}</label>
+						<textarea rows="3" placeholder="{{ .current_goals }}" class="form-control" name="current_goals" id="current_goals" aria-label="{{ .current_goals }}" required></textarea>
 					</div>
 					<div class="form-group">
 						<label for="message" class="sr-only">{{ .message }}</label>
-						<textarea rows="6" placeholder="{{ .message }}" class="form-control" name="message" id="message" aria-label="{{ .message }}" required></textarea>
+						<textarea rows="4" placeholder="{{ .message }}" class="form-control" name="message" id="message" aria-label="{{ .message }}"></textarea>
 					</div>
 					<!-- Hidden field for service tier (populated by JavaScript) -->
 					<input type="hidden" name="service" id="service-tier" value="">

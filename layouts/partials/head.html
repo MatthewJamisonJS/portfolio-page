@@ -8,8 +8,6 @@
 	{{ with site.Params.author }}
 	<meta name="author" content="{{ . }}">{{ end }}
 
-	<!-- theme meta -->
-        <meta name="theme-name" content="meghna-hugo" />
 	{{ hugo.Generator }}
 
 	{{ "<!-- CRITICAL INLINE CSS - Above-the-fold instant render -->" | safeHTML}}
@@ -46,8 +44,11 @@
 	<noscript><link rel="stylesheet" href="{{ $custom.Permalink }}"></noscript>
 
 	{{ "<!--Favicon-->" | safeHTML }}
-	<link rel="shortcut icon" href="{{ `images/pokemon/mew.gif` | absURL }}" type="image/gif">
-	<link rel="icon" href="{{ `images/pokemon/mew.gif` | absURL }}" type="image/gif">
+	<link rel="icon" href="{{ `images/favicon/favicon.svg` | absURL }}" type="image/svg+xml">
+	<link rel="icon" href="{{ `images/favicon/favicon-32.png` | absURL }}" sizes="32x32" type="image/png">
+	<link rel="icon" href="{{ `images/favicon/favicon-16.png` | absURL }}" sizes="16x16" type="image/png">
+	<link rel="apple-touch-icon" href="{{ `images/favicon/apple-touch-icon.png` | absURL }}" sizes="180x180">
+	<link rel="shortcut icon" href="{{ `images/favicon/favicon.ico` | absURL }}">
 
 	{{ with site.Params.google_analytics_id }}
 	{{ "<!-- Global Site Tag (gtag.js) - Google Analytics -->" | safeHTML }}
@@ -61,34 +62,50 @@
 	</script>
 	{{ end }}
 
-	<!-- Open Graph / Facebook - Enhanced for Social Sharing -->
+	{{ $banner := (index site.Data site.Language.Lang).banner.banner }}
+	{{ $brand := (index site.Data site.Language.Lang).brand.brand }}
+	{{/* OG locale: convert hugo's "en-us" / "es-es" / "ja-jp" → "en_US" / "es_ES" / "ja_JP". */}}
+	{{ $localeParts := split (site.LanguageCode | default "en-us") "-" }}
+	{{ $ogLocale := printf "%s_%s" (index $localeParts 0) (upper (index $localeParts 1)) }}
+	{{ $ogTitle := cond .IsHome (printf "%s — %s" $brand.name $banner.title) (printf "%s | %s" .Title site.Title) }}
+	{{ $ogDescription := cond .IsHome $banner.subtitle (or .Description site.Params.description) }}
+
+	<!-- Open Graph / Facebook -->
 	<meta property="og:type" content="website">
 	<meta property="og:url" content="{{ .Permalink }}">
-	<meta property="og:site_name" content="{{ site.Title }}">
-	<meta property="og:locale" content="en_US">
-	<meta property="og:title" content="{{ if .IsHome }}{{ site.Title }} - Results-Driven Full-Stack Developer{{ else }}{{ .Title }} | {{ site.Title }}{{ end }}">
-	<meta property="og:description" content="{{ if .IsHome }}Full-stack developer delivering measurable ROI: 98+ Lighthouse scores, $6k/year savings, 79% faster load times. Rails, Python, Hugo, AI. Conversion-optimized development for real business results.{{ else }}{{ with .Description }}{{ . }}{{ else }}{{ site.Params.description }}{{ end }}{{ end }}">
+	<meta property="og:site_name" content="{{ $brand.name }}">
+	<meta property="og:locale" content="{{ $ogLocale }}">
+	<meta property="og:title" content="{{ $ogTitle }}">
+	<meta property="og:description" content="{{ $ogDescription }}">
 	<meta property="og:image" content="{{ site.BaseURL }}images/og/og-default.png">
 	<meta property="og:image:width" content="1200">
 	<meta property="og:image:height" content="630">
-	<meta property="og:image:alt" content="Gateway Tech AEO — AI search optimization for St. Louis small businesses">
+	<meta property="og:image:alt" content="{{ $brand.name }} — AI search optimization for St. Louis small businesses">
 
-	<!-- Twitter Card - Enhanced -->
+	<!-- Twitter Card -->
 	<meta name="twitter:card" content="summary_large_image">
 	<meta name="twitter:site" content="@matthewjamison">
 	<meta name="twitter:creator" content="@matthewjamison">
 	<meta name="twitter:url" content="{{ .Permalink }}">
-	<meta name="twitter:title" content="{{ if .IsHome }}Matthew Jamison - Results-Driven Full-Stack Developer{{ else }}{{ .Title }} | {{ site.Title }}{{ end }}">
-	<meta name="twitter:description" content="{{ if .IsHome }}Measurable ROI: 98+ Lighthouse scores, $6k/year savings, 79% faster load times. Rails, Python, Hugo, AI. Conversion-optimized development.{{ else }}{{ with .Description }}{{ . }}{{ else }}{{ site.Params.description }}{{ end }}{{ end }}">
+	<meta name="twitter:title" content="{{ $ogTitle }}">
+	<meta name="twitter:description" content="{{ $ogDescription }}">
 	<meta name="twitter:image" content="{{ site.BaseURL }}images/og/og-default.png">
-	<meta name="twitter:image:alt" content="Gateway Tech AEO — AI search optimization for St. Louis small businesses">
+	<meta name="twitter:image:alt" content="{{ $brand.name }} — AI search optimization for St. Louis small businesses">
 
 	<!-- Enhanced SEO -->
 	<link rel="canonical" href="{{ .Permalink }}">
 	<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
-	<meta name="keywords" content="full-stack developer, performance optimization, conversion rate optimization, lighthouse optimization, wcag compliance, Rails, Python, Hugo, AI tooling, web development, ROI-focused development, cost reduction">
+	<meta name="keywords" content="answer engine optimization, AEO, AI search optimization, schema markup, structured data, ChatGPT citations, Perplexity citations, Google AI Overview, St. Louis small business, full-stack developer">
 
-	{{ $brand := (index site.Data site.Language.Lang).brand.brand }}
+	{{/* hreflang alternates for every locale + x-default → EN. Audit C3. */}}
+	{{ range .AllTranslations }}
+	<link rel="alternate" hreflang="{{ .Lang }}" href="{{ .Permalink }}">
+	{{- end }}
+	{{ range where .AllTranslations "Lang" "en" }}
+	<link rel="alternate" hreflang="x-default" href="{{ .Permalink }}">
+	{{- end }}
+
+	{{/* $brand and $banner already declared near OG meta block above; reuse here. */}}
 	{{ $pricing := (index site.Data site.Language.Lang).pricing.pricing }}
 	{{ $faq := (index site.Data site.Language.Lang).faq.faq }}
 	<!-- JSON-LD Structured Data for Search Engines -->
@@ -101,12 +118,14 @@
 				"@id": "{{ site.BaseURL }}#person",
 				"name": "{{ $brand.operator }}",
 				"url": "{{ site.BaseURL }}",
+				"email": "mailto:{{ $brand.email }}",
 				"image": {
 					"@type": "ImageObject",
 					"url": "{{ site.BaseURL }}images/og/og-default.png"
 				},
 				"jobTitle": "Full-Stack Developer & AEO Consultant",
 				"description": "Working software developer at Concordia Publishing House (Rails 8, ~1M users, 194+ merged PRs verifiable on the operator's GitHub profile). Now offering Answer Engine Optimization services to St. Louis small businesses through {{ $brand.name }}.",
+				"knowsLanguage": ["en", "es", "ja", "fr", "de"],
 				"knowsAbout": [
 					"Answer Engine Optimization",
 					"Generative Engine Optimization",
@@ -117,10 +136,39 @@
 					"Web Performance",
 					"WCAG Accessibility"
 				],
+				"worksFor": {
+					"@type": "Organization",
+					"name": "Concordia Publishing House",
+					"url": "https://www.cph.org/",
+					"description": "Lutheran publishing company headquartered in St. Louis, MO; operator's full-time employer."
+				},
+				"hasOccupation": {
+					"@type": "Occupation",
+					"name": "Full-Stack Developer & AEO Consultant",
+					"skills": [
+						"Ruby on Rails",
+						"Hugo",
+						"Schema Markup",
+						"Answer Engine Optimization",
+						"Generative Engine Optimization",
+						"Local SEO",
+						"Web Performance",
+						"WCAG Accessibility",
+						"PostgreSQL",
+						"Cloudflare Pages"
+					],
+					"occupationLocation": {
+						"@type": "City",
+						"name": "{{ $brand.city }}",
+						"addressRegion": "{{ $brand.region }}",
+						"addressCountry": "US"
+					}
+				},
 				"sameAs": [
 					"https://github.com/MatthewJamisonJS",
 					"https://www.linkedin.com/in/matthew-jamison-65486bab/",
 					"https://matthewjjamison.bandcamp.com",
+					"https://x.com/matthewjamison",
 					"https://gatewaytechaeo.com"
 				]
 			},
@@ -147,7 +195,7 @@
 				"name": "{{ site.Title }}",
 				"description": "{{ site.Params.description }}",
 				"publisher": { "@id": "{{ site.BaseURL }}#person" },
-				"inLanguage": "en-US"
+				"inLanguage": "{{ site.LanguageCode | default "en-us" }}"
 			},
 			{
 				"@type": "WebPage",
@@ -157,19 +205,34 @@
 				"isPartOf": { "@id": "{{ site.BaseURL }}#website" },
 				"about": { "@id": "{{ site.BaseURL }}#organization" },
 				"description": "{{ with .Description }}{{ . }}{{ else }}{{ site.Params.description }}{{ end }}",
-				"inLanguage": "en-US"
+				"inLanguage": "{{ site.LanguageCode | default "en-us" }}"
 			},
 			{
 				"@type": "ProfessionalService",
 				"@id": "{{ site.BaseURL }}#service",
 				"name": "Answer Engine Optimization for St. Louis Small Businesses",
 				"provider": { "@id": "{{ site.BaseURL }}#organization" },
+				"image": "{{ site.BaseURL }}images/og/og-default.png",
+				"priceRange": "$250 – $1,200/mo",
 				"areaServed": {
 					"@type": "City",
 					"name": "{{ $brand.city }}",
 					"addressRegion": "{{ $brand.region }}",
 					"addressCountry": "US"
 				},
+				"geo": {
+					"@type": "GeoCoordinates",
+					"latitude": 38.6270,
+					"longitude": -90.1994
+				},
+				"openingHoursSpecification": [
+					{
+						"@type": "OpeningHoursSpecification",
+						"dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+						"opens": "09:00",
+						"closes": "17:00"
+					}
+				],
 				"serviceType": [
 					"Answer Engine Optimization",
 					"Generative Engine Optimization",
@@ -182,10 +245,26 @@
 					{
 						"@type": "Offer",
 						"name": {{ $tier.name | jsonify | safeJS }},
-						"price": {{ $tier.price | jsonify | safeJS }},
-						"priceCurrency": "USD",
-						"description": {{ $tier.use_when | jsonify | safeJS }}
-					}{{ end }}
+						"description": {{ $tier.use_when | jsonify | safeJS }},
+						"priceSpecification": {
+							"@type": "PriceSpecification",
+							"minPrice": "{{ $tier.price_min }}",
+							"maxPrice": "{{ $tier.price_max }}",
+							"priceCurrency": "{{ $tier.price_currency | default "USD" }}",
+							"unitText": "{{ $tier.price_unit }}"
+						}
+					}{{ end }}{{ with $pricing.intake }}{{ if .enable }},
+					{
+						"@type": "Offer",
+						"name": {{ .name | jsonify | safeJS }},
+						"description": {{ .description | jsonify | safeJS }},
+						"price": "{{ .price | default "0" }}",
+						"priceCurrency": "{{ .price_currency | default "USD" }}",
+						"availability": "https://schema.org/InStock",
+						"url": {{ printf "%s%s" site.BaseURL .url_path | jsonify | safeJS }},
+						"category": {{ .category | jsonify | safeJS }}
+					}
+					{{ end }}{{ end }}
 				]
 			}{{ if .IsHome }},
 			{
@@ -202,12 +281,39 @@
 						}
 					}{{ end }}
 				]
+			}{{ end }}{{ if eq .Section "about" }},
+			{
+				"@type": "AboutPage",
+				"@id": "{{ .Permalink }}#aboutpage",
+				"url": "{{ .Permalink }}",
+				"name": "{{ .Title }} — {{ $brand.operator }}",
+				"isPartOf": { "@id": "{{ site.BaseURL }}#website" },
+				"about": { "@id": "{{ site.BaseURL }}#person" },
+				"mainEntity": { "@id": "{{ site.BaseURL }}#person" },
+				"inLanguage": "{{ site.LanguageCode | default "en-us" }}"
+			},
+			{
+				"@type": "Article",
+				"@id": "{{ .Permalink }}#article",
+				"headline": "About {{ $brand.operator }}",
+				"description": "{{ .Description }}",
+				"url": "{{ .Permalink }}",
+				"datePublished": "{{ .Date.Format "2006-01-02" }}",
+				"dateModified": "{{ .Lastmod.Format "2006-01-02" }}",
+				"author": { "@id": "{{ site.BaseURL }}#person" },
+				"publisher": { "@id": "{{ site.BaseURL }}#organization" },
+				"image": "{{ site.BaseURL }}images/og/og-default.png",
+				"mainEntityOfPage": { "@id": "{{ .Permalink }}#aboutpage" },
+				"inLanguage": "{{ site.LanguageCode | default "en-us" }}"
 			}{{ end }}
 		]
 	}
 	</script>
 
-	<!-- Preload critical self-hosted fonts for performance -->
+	<!-- Preload critical self-hosted fonts for performance.
+	     @font-face rules that consume these are inlined in critical-inline.css
+	     above (audit M3); the duplicate /css/fonts.css remains in static/ for
+	     anyone hand-loading it but is no longer wired into the document. -->
 	<link rel="preload" href="/fonts/anaheim-v17-latin-regular.woff2" as="font" type="font/woff2" crossorigin>
 	<link rel="preload" href="/fonts/quattrocento-sans-v22-latin-regular.woff2" as="font" type="font/woff2" crossorigin>
 

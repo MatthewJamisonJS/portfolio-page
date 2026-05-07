@@ -10,6 +10,13 @@ pricing:
       name: "Audit"
       price: "$250"
       cadence: "one-time"
+      # Structured-price fields drive ProfessionalService.offers[].priceSpecification
+      # in head.html (audit H7 fix). The visible `price` / `cadence` strings stay for
+      # human display in the pricing card; the schema reads from these numeric fields.
+      price_min: "250"
+      price_max: "250"
+      price_currency: "USD"
+      price_unit: "one-time"
       highlight: false
       use_when: "You're skeptical and want to see the work before you commit. You'll fix things yourself afterwards."
       includes:
@@ -23,6 +30,10 @@ pricing:
       name: "Setup & Hand-off"
       price: "$700"
       cadence: "one-time"
+      price_min: "700"
+      price_max: "700"
+      price_currency: "USD"
+      price_unit: "one-time"
       highlight: true
       use_when: "You want it built right, then you run it after a training session."
       includes:
@@ -36,6 +47,10 @@ pricing:
       name: "Done-For-You"
       price: "$500–1,200"
       cadence: "per month"
+      price_min: "500"
+      price_max: "1200"
+      price_currency: "USD"
+      price_unit: "per month"
       highlight: false
       use_when: "You have a budget but no time. You want it managed end-to-end."
       includes:
@@ -45,3 +60,13 @@ pricing:
         - "Reporting + strategy"
       cta_label: "Talk about a retainer"
       cta_link: "?service=dfy#contact"
+  # TODO: translate to French. Schema-only Offer; mirrored from data/en/pricing.yml.
+  # Consumed by ProfessionalService.offers in head.html. Audit H6 reframe.
+  intake:
+    enable: true
+    name: "Project brief intake"
+    description: "Email-first intake. First reply within 48–96 hours."
+    price: "0"
+    price_currency: "USD"
+    url_path: "?service=brief#contact"
+    category: "Free consultation"

@@ -87,37 +87,6 @@
   text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
 }
 
-.hero-area .video-button {
-  display: inline-block;
-  width: 100px;
-  height: 100px;
-  line-height: 100px;
-  border-radius: 50%;
-  background: linear-gradient(135deg, var(--primary), var(--accent));
-  color: white;
-  font-size: 3rem;
-  margin-bottom: 40px;
-  box-shadow:
-    0 0 20px rgba(233, 30, 99, 0.6),
-    0 0 40px rgba(0, 188, 212, 0.4);
-  animation: pulse 2s ease-in-out infinite;
-}
-
-@keyframes pulse {
-  0%, 100% {
-    transform: scale(1);
-    box-shadow:
-      0 0 20px rgba(233, 30, 99, 0.6),
-      0 0 40px rgba(0, 188, 212, 0.4);
-  }
-  50% {
-    transform: scale(1.1);
-    box-shadow:
-      0 0 30px rgba(233, 30, 99, 0.8),
-      0 0 60px rgba(0, 188, 212, 0.6);
-  }
-}
-
 .hero-area .btn-transparent {
   background: rgba(107, 45, 92, 0.95); /* Solid dark background for contrast */
   border: 2px solid white;
@@ -471,661 +440,6 @@ button[type="submit"].btn-transparent:hover {
   background-color: var(--accent) !important;
 }
 
-/* ===================================
-   Pokemon Icon Styling
-   =================================== */
-
-/* Large Pokemon icons (hero button) */
-.pokemon-icon-large {
-  max-width: 60px;
-  height: auto;
-  display: inline-block;
-  animation: floatMew 3s ease-in-out infinite;
-  filter: drop-shadow(0 0 10px rgba(233, 30, 99, 0.5));
-}
-
-@keyframes floatMew {
-  0%, 100% {
-    transform: translateX(-6px) translateY(-12px);
-  }
-  50% {
-    transform: translateX(-6px) translateY(-22px);
-  }
-}
-
-/* Standard Pokemon icons (contact, widget headers) */
-.pokemon-icon {
-  max-width: 32px;
-  height: auto;
-  display: inline-block;
-  margin-right: 8px;
-  transition: transform 0.3s ease;
-  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.2));
-}
-
-.pokemon-icon:hover {
-  transform: scale(1.15) rotate(5deg);
-}
-
-/* Contact section icon styling */
-.con-info .pokemon-icon {
-  float: left;
-  margin-right: 15px;
-  max-width: 36px;
-  height: auto;
-}
-
-/* Add glow effect to Pokemon icons on dark backgrounds */
-.bg-dark .pokemon-icon,
-.card-header.bg-dark .pokemon-icon {
-  filter: drop-shadow(0 0 8px rgba(0, 188, 212, 0.6));
-}
-
-/* Responsive Pokemon icons */
-@media (max-width: 768px) {
-  .pokemon-icon-large {
-    max-width: 48px;
-    height: auto;
-  }
-
-  .pokemon-icon {
-    max-width: 28px;
-    height: auto;
-  }
-
-  .con-info .pokemon-icon {
-    max-width: 32px;
-    height: auto;
-  }
-}
-
-/* ===================================
-   EPIC POKEMON BATTLE SCENE
-   =================================== */
-
-/* Battle Pokemon containers */
-.battle-pokemon {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  width: 250px;
-  z-index: 5;
-  pointer-events: none;
-}
-
-.battle-pokemon.left-side {
-  left: 0;
-}
-
-.battle-pokemon.right-side {
-  right: 0;
-}
-
-/* Individual Pokemon positioning and sizing */
-.pokemon-battle {
-  position: absolute;
-  filter: drop-shadow(0 4px 12px rgba(0, 0, 0, 0.4));
-  transition: transform 0.3s ease;
-}
-
-/* LEFT SIDE - Electric Team + Blastoise (ANGLED TOWARD CENTER) */
-
-/* Blastoise - Tank front row */
-.pokemon-battle.blastoise {
-  width: 140px;
-  height: auto;
-  left: 8%;
-  top: 52%;
-  transform: rotate(8deg);
-  animation: battleStance 3s ease-in-out infinite;
-}
-
-/* Pikachu - Mid row */
-.pokemon-battle.pikachu {
-  width: 90px;
-  height: auto;
-  left: 10%;
-  top: 42%;
-  transform: rotate(12deg);
-  animation: electricBounce 2.5s ease-in-out infinite;
-}
-
-/* Jolteon - Mid-top position */
-.pokemon-battle.jolteon {
-  width: 100px;
-  height: auto;
-  left: 12%;
-  top: 30%;
-  transform: rotate(15deg);
-  animation: agileDash 3.5s ease-in-out infinite;
-}
-
-/* Electabuzz - Mid-bottom */
-.pokemon-battle.electabuzz {
-  width: 110px;
-  height: auto;
-  left: 8%;
-  top: 62%;
-  transform: rotate(5deg);
-  animation: powerCharge 3s ease-in-out infinite;
-}
-
-/* Magneton - Top floating */
-.pokemon-battle.magneton {
-  width: 120px;
-  height: auto;
-  left: 10%;
-  top: 18%;
-  transform: rotate(8deg);
-  animation: magnetFloat 4s ease-in-out infinite;
-}
-
-/* Gengar - Bottom sinister */
-.pokemon-battle.gengar {
-  width: 110px;
-  height: auto;
-  left: 6%;
-  top: 73%;
-  transform: rotate(6deg);
-  animation: ghostlyFloat 3.5s ease-in-out infinite;
-}
-
-/* RIGHT SIDE - Flying Team (ANGLED TOWARD CENTER) */
-
-/* Charizard - Mid row fire dragon */
-.pokemon-battle.charizard {
-  width: 130px;
-  height: auto;
-  right: 10%;
-  top: 30%;
-  transform: rotate(-12deg);
-  animation: dragonFly 4s ease-in-out infinite;
-}
-
-/* Dragonite - Mid-bottom */
-.pokemon-battle.dragonite {
-  width: 120px;
-  height: auto;
-  right: 8%;
-  top: 45%;
-  transform: rotate(-10deg);
-  animation: dragonFly 4.5s ease-in-out infinite 0.5s;
-}
-
-/* Pidgeot - Lower mid */
-.pokemon-battle.pidgeot {
-  width: 105px;
-  height: auto;
-  right: 6%;
-  top: 58%;
-  transform: rotate(-8deg);
-  animation: birdGlide 3s ease-in-out infinite;
-}
-
-/* Aerodactyl - Top ancient */
-.pokemon-battle.aerodactyl {
-  width: 115px;
-  height: auto;
-  right: 12%;
-  top: 22%;
-  transform: rotate(-15deg);
-  animation: pterodactylSoar 3.8s ease-in-out infinite;
-}
-
-/* Articuno - Top ice legendary */
-.pokemon-battle.articuno {
-  width: 125px;
-  height: auto;
-  right: 8%;
-  top: 12%;
-  transform: rotate(-10deg);
-  animation: legendaryGlide 5s ease-in-out infinite;
-}
-
-/* Moltres - Top fire legendary */
-.pokemon-battle.moltres {
-  width: 125px;
-  height: auto;
-  right: 5%;
-  top: 5%;
-  transform: rotate(-8deg);
-  animation: flameWings 4.2s ease-in-out infinite;
-}
-
-/* Zapdos - Bottom electric legendary */
-.pokemon-battle.zapdos {
-  width: 120px;
-  height: auto;
-  right: 10%;
-  top: 65%;
-  transform: rotate(-12deg);
-  animation: thunderWings 3.5s ease-in-out infinite;
-}
-
-/* ===================================
-   BATTLE EFFECTS OVERLAY
-   =================================== */
-
-.battle-effects {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 6;
-  pointer-events: none;
-  opacity: 0.9;
-}
-
-/* EPIC Lightning bolt animations */
-.lightning-bolt {
-  animation: epicLightningStrike 2s ease-in-out infinite;
-  filter: drop-shadow(0 0 8px #ffeb3b);
-  transform-origin: center center;
-}
-
-/* Pikachu's main attack - fastest */
-.bolt-1 {
-  animation-duration: 2s;
-  animation-delay: 0s;
-}
-
-/* Pikachu's follow-up strike */
-.bolt-2 {
-  animation-duration: 2s;
-  animation-delay: 0.3s;
-}
-
-/* Magneton's electric assault */
-.bolt-3 {
-  animation-duration: 2.2s;
-  animation-delay: 0.8s;
-}
-
-/* Zapdos legendary thunder - most powerful */
-.bolt-4 {
-  animation-duration: 2s;
-  animation-delay: 1.5s;
-}
-
-@keyframes epicLightningStrike {
-  /* Build-up - electricity gathering */
-  0% {
-    opacity: 0;
-    stroke-dasharray: 0 500;
-    filter: drop-shadow(0 0 2px #ffeb3b);
-    transform: scale(1) translateX(0);
-  }
-
-  /* Initial strike - white-hot core */
-  5% {
-    opacity: 1;
-    stroke-dasharray: 500 0;
-    stroke: #ffffff;
-    filter: drop-shadow(0 0 20px #ffeb3b)
-            drop-shadow(0 0 40px #ffeb3b)
-            drop-shadow(0 0 60px rgba(255, 235, 59, 0.8));
-    transform: scale(1.1) translateX(2px);
-  }
-
-  /* Dim between flashes */
-  8% {
-    opacity: 0.3;
-    stroke: #ffeb3b;
-    filter: drop-shadow(0 0 10px #ffeb3b);
-    transform: scale(1) translateX(-1px);
-  }
-
-  /* Secondary flash - intense */
-  12% {
-    opacity: 1;
-    stroke: #ffffff;
-    filter: drop-shadow(0 0 25px #ffeb3b)
-            drop-shadow(0 0 50px #00e5ff);
-    transform: scale(1.15) translateX(1px);
-  }
-
-  /* Fade with residual glow */
-  18% {
-    opacity: 0.5;
-    stroke: #ffeb3b;
-    filter: drop-shadow(0 0 15px #ffeb3b);
-    transform: scale(1) translateX(0);
-  }
-
-  /* Third flash (aftershock) - cyan tint */
-  22% {
-    opacity: 0.9;
-    stroke: #00e5ff;
-    filter: drop-shadow(0 0 20px #00e5ff);
-    transform: scale(1.08) translateX(-1px);
-  }
-
-  /* Complete fade out */
-  30%, 100% {
-    opacity: 0;
-    stroke-dasharray: 500 0;
-    filter: drop-shadow(0 0 0px #ffeb3b);
-    transform: scale(1) translateX(0);
-  }
-}
-
-/* Water stream animations */
-.water-stream {
-  animation: waterFlow 2s ease-in-out infinite;
-  filter: drop-shadow(0 0 6px #00bcd4);
-}
-
-.stream-1 {
-  animation-delay: 0s;
-}
-
-.stream-2 {
-  animation-delay: 0.3s;
-}
-
-@keyframes waterFlow {
-  0% {
-    opacity: 0;
-    stroke-dasharray: 0 1000;
-  }
-  50% {
-    opacity: 0.7;
-    stroke-dasharray: 1000 0;
-  }
-  100% {
-    opacity: 0;
-    stroke-dasharray: 1000 0;
-  }
-}
-
-/* Fire breath animations */
-.fire-breath {
-  animation: fireBlast 2.5s ease-in-out infinite;
-  filter: drop-shadow(0 0 10px #e91e63);
-}
-
-.flame-1 {
-  animation-delay: 0s;
-}
-
-.flame-2 {
-  animation-delay: 0.2s;
-}
-
-@keyframes fireBlast {
-  0% {
-    opacity: 0;
-    stroke-dasharray: 0 1500;
-  }
-  40% {
-    opacity: 0.8;
-    stroke-dasharray: 1500 0;
-  }
-  100% {
-    opacity: 0;
-    stroke-dasharray: 1500 0;
-  }
-}
-
-/* Ice beam animation */
-.ice-beam {
-  animation: iceBeam 3s ease-in-out infinite;
-  filter: drop-shadow(0 0 8px #00e5ff);
-}
-
-@keyframes iceBeam {
-  0%, 100% {
-    opacity: 0;
-  }
-  20%, 60% {
-    opacity: 0.8;
-  }
-  40% {
-    opacity: 1;
-  }
-}
-
-/* Energy sphere animations */
-.energy-sphere {
-  animation: energyPulse 2s ease-in-out infinite;
-}
-
-.sphere-1 {
-  animation-delay: 0s;
-}
-
-.sphere-2 {
-  animation-delay: 0.7s;
-}
-
-.sphere-3 {
-  animation-delay: 1.4s;
-}
-
-@keyframes energyPulse {
-  0%, 100% {
-    transform: scale(0);
-    opacity: 0;
-  }
-  50% {
-    transform: scale(1);
-    opacity: 0.8;
-  }
-}
-
-/* ===================================
-   POKEMON BATTLE ANIMATIONS
-   =================================== */
-
-/* Battle stance - slight rocking (preserves base angle) */
-@keyframes battleStance {
-  0%, 100% {
-    transform: rotate(8deg) translateY(0px);
-  }
-  50% {
-    transform: rotate(10deg) translateY(-8px);
-  }
-}
-
-/* Electric bounce - quick energy (preserves angles) */
-@keyframes electricBounce {
-  0%, 100% {
-    transform: var(--base-angle, rotate(12deg)) translateY(0px);
-  }
-  25% {
-    transform: var(--base-angle, rotate(12deg)) translateY(-15px) scale(1.05);
-  }
-  50% {
-    transform: var(--base-angle, rotate(12deg)) translateY(0px);
-  }
-  75% {
-    transform: var(--base-angle, rotate(12deg)) translateY(-10px) scale(1.02);
-  }
-}
-
-/* Agile dash - quick movements */
-@keyframes agileDash {
-  0%, 100% {
-    transform: translateX(0px) translateY(0px);
-  }
-  25% {
-    transform: translateX(10px) translateY(-12px);
-  }
-  50% {
-    transform: translateX(0px) translateY(-5px);
-  }
-  75% {
-    transform: translateX(-8px) translateY(-10px);
-  }
-}
-
-/* Power charge - building energy */
-@keyframes powerCharge {
-  0%, 100% {
-    transform: scale(1);
-    filter: drop-shadow(0 4px 12px rgba(255, 235, 59, 0.4));
-  }
-  50% {
-    transform: scale(1.1);
-    filter: drop-shadow(0 4px 20px rgba(255, 235, 59, 0.8));
-  }
-}
-
-/* Magnetic float - steady hover */
-@keyframes magnetFloat {
-  0%, 100% {
-    transform: translateY(0px) rotate(0deg);
-  }
-  50% {
-    transform: translateY(-15px) rotate(5deg);
-  }
-}
-
-/* Ghostly float - sinister movement */
-@keyframes ghostlyFloat {
-  0%, 100% {
-    transform: translateY(0px) translateX(0px);
-    opacity: 0.9;
-  }
-  33% {
-    transform: translateY(-12px) translateX(5px);
-    opacity: 0.7;
-  }
-  66% {
-    transform: translateY(-8px) translateX(-5px);
-    opacity: 1;
-  }
-}
-
-/* Dragon fly - majestic soaring (preserves base angle) */
-@keyframes dragonFly {
-  0%, 100% {
-    transform: rotate(-12deg) translateY(0px);
-  }
-  50% {
-    transform: rotate(-10deg) translateY(-20px);
-  }
-}
-
-/* Bird glide - smooth flying */
-@keyframes birdGlide {
-  0%, 100% {
-    transform: translateY(0px) translateX(0px);
-  }
-  25% {
-    transform: translateY(-10px) translateX(-8px);
-  }
-  75% {
-    transform: translateY(-15px) translateX(8px);
-  }
-}
-
-/* Pterodactyl soar - ancient flight */
-@keyframes pterodactylSoar {
-  0%, 100% {
-    transform: translateY(0px) rotate(-5deg);
-  }
-  50% {
-    transform: translateY(-18px) rotate(5deg);
-  }
-}
-
-/* Legendary glide - graceful movement */
-@keyframes legendaryGlide {
-  0%, 100% {
-    transform: translateY(0px) scale(1);
-  }
-  50% {
-    transform: translateY(-25px) scale(1.05);
-  }
-}
-
-/* Flame wings - fiery flight */
-@keyframes flameWings {
-  0%, 100% {
-    transform: translateY(0px);
-    filter: drop-shadow(0 4px 12px rgba(233, 30, 99, 0.6));
-  }
-  50% {
-    transform: translateY(-22px);
-    filter: drop-shadow(0 8px 20px rgba(233, 30, 99, 0.9));
-  }
-}
-
-/* Thunder wings - electric flight */
-@keyframes thunderWings {
-  0%, 100% {
-    transform: translateY(0px);
-    filter: drop-shadow(0 4px 12px rgba(255, 235, 59, 0.6));
-  }
-  50% {
-    transform: translateY(-18px);
-    filter: drop-shadow(0 8px 20px rgba(255, 235, 59, 0.9));
-  }
-}
-
-/* ===================================
-   RESPONSIVE BATTLE SCENE
-   =================================== */
-
-/* Tablets */
-@media (max-width: 1200px) {
-  .battle-pokemon {
-    width: 180px;
-  }
-
-  .pokemon-battle {
-    transform: scale(0.8);
-  }
-
-  .pokemon-battle.blastoise,
-  .pokemon-battle.charizard,
-  .pokemon-battle.articuno,
-  .pokemon-battle.moltres {
-    width: 110px;
-  }
-}
-
-/* Mobile - show Blastoise, Mew, and Charizard with spacious layout */
-@media (max-width: 768px) {
-  /* Hide all Pokemon except Blastoise and Charizard */
-  .battle-pokemon {
-    display: none;
-  }
-
-  /* Show and reposition Blastoise (left top corner) */
-  .battle-pokemon[src*="blastoise"] {
-    display: block !important;
-    width: 90px !important;
-    left: 5% !important;
-    top: 12% !important;
-    z-index: 15 !important;
-  }
-
-  /* Show and reposition Charizard (right top corner) */
-  .battle-pokemon[src*="charizard"] {
-    display: block !important;
-    width: 90px !important;
-    right: 5% !important;
-    top: 12% !important;
-    z-index: 15 !important;
-  }
-
-  /* Keep Mew in center (already positioned via hero button) */
-
-  /* Scale battle effects for mobile but keep them visible */
-  .battle-effects {
-    transform: scale(0.5);
-    transform-origin: center;
-    opacity: 0.6;
-  }
-
-  /* Ensure battle scene container maintains spacious aesthetic */
-  .battle-scene {
-    min-height: 400px;
-  }
-}
 
 /* ===================================
    Navigation Styles
@@ -1269,12 +583,6 @@ button:focus {
                  0 0 30px rgba(0, 188, 212, 0.4) !important;
   }
 
-  /* Remove button pulse animation */
-  .hero-area .video-button {
-    animation: none !important;
-    transform: scale(1) !important;
-  }
-
   /* Static hover states for demo cards */
   .demo-card:hover {
     transform: none !important;
@@ -1284,100 +592,12 @@ button:focus {
     transform: none !important;
   }
 
-  /* Disable all Pokemon battle animations */
-  .pokemon-battle,
-  .pokemon-icon,
-  .pokemon-icon-large {
-    animation: none !important;
-    transform: rotate(0deg) !important;
-  }
-
-  /* Battle effects intentionally excluded - controlled by Battle Button only */
-  /* Lightning, water, fire, ice, and energy animations respect Battle Button, not OS motion preferences */
-
-  /* Keep battle scene visible but static */
-  .battle-pokemon {
-    animation: none !important;
-  }
-
   /* Disable WOW.js animations */
   .wow {
     animation: none !important;
   }
 }
 
-/* ===================================
-   EPIC BATTLE TOGGLE BUTTON
-   Pokemon-Themed Animation Control
-   =================================== */
-
-/* Battle mode disabled class - applied via JavaScript */
-body.battle-mode-disabled {
-  /* Disable all animations when battle mode is off */
-}
-
-/* Completely disable all animations and reduce motion when battle is OFF */
-body.battle-mode-disabled *,
-body.battle-mode-disabled *::before,
-body.battle-mode-disabled *::after {
-  animation-duration: 0.01ms !important;
-  animation-iteration-count: 1 !important;
-  transition-duration: 0.01ms !important;
-  scroll-behavior: auto !important;
-}
-
-/* Hide Pokemon GIFs when battle mode is disabled for performance */
-body.battle-mode-disabled .battle-pokemon img,
-body.battle-mode-disabled .pokemon-battle img,
-body.battle-mode-disabled .battle-effects {
-  opacity: 0.3 !important;
-  filter: grayscale(100%) !important;
-}
-
-body.battle-mode-disabled .hero-area {
-  animation: none !important;
-  background: linear-gradient(135deg, var(--secondary) 0%, var(--primary) 50%, var(--accent) 100%) !important;
-  background-position: 0% 50% !important;
-}
-
-body.battle-mode-disabled .hero-area::before {
-  animation: none !important;
-  opacity: 0.6 !important;
-  transform: scale(1) !important;
-}
-
-body.battle-mode-disabled .hero-area h1 {
-  animation: none !important;
-  text-shadow: 0 0 10px rgba(233, 30, 99, 0.8),
-               0 0 20px rgba(233, 30, 99, 0.6),
-               0 0 30px rgba(0, 188, 212, 0.4) !important;
-}
-
-body.battle-mode-disabled .pokemon-battle,
-body.battle-mode-disabled .pokemon-icon,
-body.battle-mode-disabled .pokemon-icon-large {
-  animation: none !important;
-  transform: rotate(0deg) !important;
-}
-
-body.battle-mode-disabled .battle-effects,
-body.battle-mode-disabled .lightning-bolt,
-body.battle-mode-disabled .water-stream,
-body.battle-mode-disabled .fire-breath,
-body.battle-mode-disabled .ice-beam,
-body.battle-mode-disabled .energy-sphere {
-  animation: none !important;
-  opacity: 0 !important;
-}
-
-/* Disable portal animation when battle mode is off */
-body.battle-mode-disabled .portal-overlay,
-body.battle-mode-disabled .portal-center,
-body.battle-mode-disabled .portal-ring,
-body.battle-mode-disabled .portal-core {
-  display: none !important;
-  animation: none !important;
-}
 
 /* ========================================================================= */
 /*	SERVICES/PRICING PAGE STYLES
@@ -2602,106 +1822,466 @@ body.battle-mode-disabled .portal-core {
 .hero-price-floor { font-size: 1rem; font-weight: 500; opacity: 0.95; }
 .hero-byline { font-size: 0.85rem; opacity: 0.7; max-width: 56ch; }
 
-/* ===================================
-   AEO REBRAND: Method section (three pillars)
-   =================================== */
+/* ===================================================================
+   AEO sections — technical-research-brief aesthetic.
 
-.method-section { padding: 4rem 0; background: var(--gray-light); }
-.method-title { color: var(--secondary); margin-bottom: 0.5rem; }
-.method-intro { color: var(--gray-medium); max-width: 60ch; margin: 0 auto 2rem; }
+   Color discipline:
+     --accent (cyan)    → links, eyebrow labels, structural emphasis, +/− glyphs
+     --primary (magenta)→ saved scarcity: highlighted CTA, identity rules, focus pull
+     --secondary        → DECORATION ONLY (2.0:1 fails AA on dark-bg). Borders + gradients.
+   Body text uses the audited --text-primary / --text-secondary / --text-muted ramp
+   defined in critical-inline.css. Every section explicitly declares color so
+   nothing inherits the legacy light-theme defaults that caused the original
+   FAQ-invisibility bug.
+   =================================================================== */
+
+/* === Method (three pillars) === */
+.method-section {
+  padding: clamp(72px, 8vw, 120px) 0;
+  background: var(--surface-1);
+  color: var(--text-primary);
+}
+.method-title {
+  color: var(--text-primary);
+  font-family: 'Anaheim', system-ui, sans-serif;
+  font-weight: 700;
+  font-size: clamp(2rem, 4vw, 2.75rem);
+  letter-spacing: -0.02em;
+  line-height: 1.15;
+  margin: 0 0 12px;
+}
+.method-intro {
+  color: var(--text-secondary);
+  font-family: 'Quattrocento Sans', Georgia, serif;
+  font-size: 1.0625rem;
+  line-height: 1.6;
+  max-width: 65ch;
+  margin: 0 auto 3rem;
+}
 .method-grid { gap: 0; }
 .pillar-card {
-  background: white;
-  border-radius: 0.75rem;
-  padding: 2rem 1.5rem;
+  background: var(--surface-2);
+  border: 1px solid var(--rule);
+  border-left: 3px solid var(--accent);
+  border-radius: 4px;
+  padding: 2rem 1.75rem;
   height: 100%;
-  box-shadow: 0 4px 20px rgba(107, 45, 92, 0.08);
-  border-top: 4px solid var(--primary);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  transition: border-left-width 200ms ease, background 200ms ease;
 }
-.pillar-card:hover { transform: translateY(-4px); box-shadow: 0 8px 28px rgba(107, 45, 92, 0.16); }
-.pillar-technical { border-top-color: var(--secondary); }
-.pillar-authority  { border-top-color: var(--primary); }
-.pillar-content    { border-top-color: var(--accent); }
-.pillar-icon { font-size: 2.5rem; color: var(--primary); margin-bottom: 1rem; }
-.pillar-title { font-size: 1.5rem; font-weight: 800; color: var(--gray-dark); margin-bottom: 0.25rem; }
-.pillar-tagline { font-size: 1rem; color: var(--gray-medium); font-style: italic; margin-bottom: 1rem; }
-.pillar-bullets { list-style: none; padding: 0; }
-.pillar-bullets li { padding: 0.4rem 0; border-bottom: 1px solid var(--gray-light); font-size: 0.95rem; }
+.pillar-card:hover,
+.pillar-card:focus-within {
+  border-left-width: 6px;
+  background: var(--surface-3);
+}
+.pillar-technical { border-left-color: var(--accent); }
+.pillar-authority { border-left-color: var(--primary); }
+.pillar-content   { border-left-color: var(--accent); }
+.pillar-icon {
+  display: inline-block;
+  font-family: 'Quattrocento Sans', Georgia, serif;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--accent);
+  font-feature-settings: 'tnum';
+  margin-bottom: 1rem;
+}
+.pillar-title {
+  font-family: 'Anaheim', system-ui, sans-serif;
+  font-size: 1.375rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  letter-spacing: -0.01em;
+  margin: 0 0 4px;
+}
+.pillar-tagline {
+  font-family: 'Quattrocento Sans', Georgia, serif;
+  font-size: 0.9375rem;
+  color: var(--text-secondary);
+  font-style: italic;
+  margin: 0 0 1.25rem;
+}
+.pillar-bullets { list-style: none; padding: 0; margin: 0; }
+.pillar-bullets li {
+  color: var(--text-primary);
+  font-family: 'Quattrocento Sans', Georgia, serif;
+  font-size: 0.9375rem;
+  line-height: 1.55;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid var(--rule);
+}
 .pillar-bullets li:last-child { border-bottom: 0; }
 
-/* ===================================
-   AEO REBRAND: Pricing tiers
-   =================================== */
-
-.pricing-section { padding: 4rem 0; background: var(--dark-bg); color: var(--light-text); }
-.pricing-title { text-align: center; color: white; margin-bottom: 2rem; }
+/* === Pricing tiers === */
+.pricing-section {
+  padding: clamp(72px, 8vw, 120px) 0;
+  background: var(--surface-1);
+  color: var(--text-primary);
+}
+.pricing-title {
+  color: var(--text-primary);
+  font-family: 'Anaheim', system-ui, sans-serif;
+  font-weight: 700;
+  font-size: clamp(2rem, 4vw, 2.75rem);
+  letter-spacing: -0.02em;
+  text-align: center;
+  margin: 0 0 3rem;
+}
 .pricing-grid { gap: 0; }
 .pricing-card {
-  background: rgba(255,255,255,0.04);
-  border: 1px solid rgba(255,255,255,0.12);
-  border-radius: 0.75rem;
-  padding: 2rem 1.5rem;
+  background: var(--surface-2);
+  border: 1px solid var(--rule);
+  border-top: 3px solid var(--rule-strong);
+  border-radius: 4px;
+  padding: 2rem 1.75rem;
   height: 100%;
   position: relative;
+  transition: background 200ms ease, border-top-color 200ms ease;
 }
+.pricing-card:hover { background: var(--surface-3); }
 .pricing-highlighted {
-  background: linear-gradient(135deg, rgba(233,30,99,0.18), rgba(0,188,212,0.12));
-  border-color: var(--primary);
-  transform: scale(1.03);
+  border-top-color: var(--primary);
+  background: var(--surface-3);
 }
-.pricing-name { font-size: 1.6rem; font-weight: 800; color: white; }
-.pricing-price strong { font-size: 2.2rem; color: white; }
-.pricing-cadence { display: block; font-size: 0.95rem; opacity: 0.7; margin-top: 0.2rem; }
-.pricing-use { font-size: 0.95rem; color: rgba(255,255,255,0.85); margin: 1rem 0; }
-.pricing-includes { list-style: none; padding: 0; margin: 1rem 0; }
-.pricing-includes li { padding: 0.35rem 0; font-size: 0.95rem; }
-.pricing-includes li::before { content: "✓ "; color: var(--accent); margin-right: 0.4rem; }
-.pricing-cta { margin-top: 1rem; }
-.pricing-pick { margin-top: 2rem; color: rgba(255,255,255,0.85); }
-.pricing-footnote { color: rgba(255,255,255,0.65); }
+.pricing-highlighted::before {
+  content: 'Recommended';
+  position: absolute;
+  top: -12px;
+  right: 16px;
+  background: var(--primary);
+  color: var(--light-text);
+  font-family: 'Quattrocento Sans', Georgia, serif;
+  font-size: 0.6875rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  padding: 4px 10px;
+  border-radius: 2px;
+}
+.pricing-name {
+  display: block;
+  color: var(--accent);
+  font-family: 'Quattrocento Sans', Georgia, serif;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  margin: 0 0 0.75rem;
+}
+.pricing-price {
+  display: block;
+  margin: 0 0 0.25rem;
+}
+.pricing-price strong {
+  display: inline-block;
+  font-family: 'Anaheim', system-ui, sans-serif;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  letter-spacing: -0.03em;
+  font-feature-settings: 'tnum';
+}
+.pricing-cadence {
+  display: block;
+  color: var(--text-muted);
+  font-family: 'Quattrocento Sans', Georgia, serif;
+  font-size: 0.875rem;
+  margin-top: 0.25rem;
+}
+.pricing-use {
+  color: var(--text-secondary);
+  font-family: 'Quattrocento Sans', Georgia, serif;
+  font-size: 0.9375rem;
+  line-height: 1.55;
+  margin: 1.5rem 0 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--rule);
+}
+.pricing-includes { list-style: none; padding: 0; margin: 1rem 0 1.5rem; }
+.pricing-includes li {
+  position: relative;
+  padding: 0.4rem 0 0.4rem 1.5rem;
+  font-family: 'Quattrocento Sans', Georgia, serif;
+  font-size: 0.9375rem;
+  line-height: 1.5;
+  color: var(--text-primary);
+}
+.pricing-includes li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0.65rem;
+  width: 8px;
+  height: 8px;
+  background: var(--accent);
+  border-radius: 50%;
+  box-shadow: 0 0 0 4px rgba(0, 188, 212, 0.15);
+}
+.pricing-cta { margin-top: 1.5rem; }
+.pricing-pick {
+  text-align: center;
+  margin: 3rem auto 1rem;
+  color: var(--text-secondary);
+  font-family: 'Quattrocento Sans', Georgia, serif;
+  font-size: 0.9375rem;
+  max-width: 60ch;
+}
+.pricing-footnote {
+  text-align: center;
+  color: var(--text-muted);
+  font-family: 'Quattrocento Sans', Georgia, serif;
+  font-size: 0.8125rem;
+  max-width: 60ch;
+  margin: 0 auto;
+}
 
-/* ===================================
-   AEO REBRAND: FAQ accordion
-   =================================== */
-
-.faq-section { padding: 4rem 0; }
-.faq-title { text-align: center; margin-bottom: 2rem; color: var(--secondary); }
-.faq-accordion { margin: 0; }
-.faq-item { border-bottom: 1px solid var(--gray-light); padding: 0.5rem 0; }
-.faq-item details { padding: 0.5rem 0; }
+/* === FAQ accordion (the immediate fix) === */
+.faq-section {
+  padding: clamp(72px, 8vw, 120px) 0;
+  background: var(--surface-1);
+  color: var(--text-primary);
+}
+.faq-title {
+  color: var(--text-primary);                  /* was --secondary, 2.0:1 — fix */
+  font-family: 'Anaheim', system-ui, sans-serif;
+  font-weight: 700;
+  font-size: clamp(2rem, 4vw, 2.75rem);
+  letter-spacing: -0.02em;
+  text-align: left;
+  margin: 0 0 0;
+}
+.faq-title::after {
+  content: '';
+  display: block;
+  width: 64px;
+  height: 3px;
+  background: var(--primary);
+  margin-top: 16px;
+  margin-bottom: 3rem;
+}
+.faq-accordion {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.faq-item {
+  border-top: 1px solid var(--rule);
+  padding: 0;
+}
+.faq-item:last-child { border-bottom: 1px solid var(--rule); }
+.faq-item details { padding: 24px 0; }
 .faq-item summary {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 24px;
   cursor: pointer;
   list-style: none;
+  padding-right: 0;
   position: relative;
-  padding-right: 2rem;
 }
-.faq-item summary::-webkit-details-marker { display: none; }
+.faq-item summary::-webkit-details-marker,
+.faq-item summary::marker { display: none; content: ''; }
 .faq-item summary::after {
-  content: "+";
-  position: absolute;
-  right: 0;
-  top: 0.4rem;
+  content: '+';
+  flex-shrink: 0;
+  color: var(--accent);
+  font-family: 'Anaheim', system-ui, sans-serif;
+  font-weight: 400;
   font-size: 1.5rem;
+  line-height: 1;
+  transition: color 150ms ease;
+}
+.faq-item details[open] summary::after { content: '−'; color: var(--primary); }
+.faq-item summary:focus-visible {
+  outline: none;
+  box-shadow: var(--focus-ring);
+  border-radius: 2px;
+}
+.faq-question {                                /* was --gray-dark — invisible — fix */
+  display: inline;
+  color: var(--text-primary);
+  font-family: 'Anaheim', system-ui, sans-serif;
+  font-weight: 600;
+  font-size: 1.0625rem;
+  line-height: 1.4;
+  letter-spacing: -0.01em;
+}
+.faq-answer {                                  /* was --gray-dark — invisible — fix */
+  color: var(--text-primary);
+  font-family: 'Quattrocento Sans', Georgia, serif;
+  font-size: 1rem;
+  line-height: 1.7;
+  margin-top: 16px;
+  max-width: 65ch;
+}
+.faq-answer a {
+  color: var(--accent);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  text-decoration-thickness: 1px;
+  transition: color 150ms ease;
+}
+.faq-answer a:hover,
+.faq-answer a:focus-visible { color: var(--primary); }
+.faq-answer a:focus-visible {
+  outline: none;
+  box-shadow: var(--focus-ring);
+  border-radius: 2px;
+}
+
+/* === Demos-offer callout — these are spinnable for clients === */
+.demos-offer {
+  margin-top: clamp(48px, 6vw, 80px);
+  padding-top: clamp(48px, 6vw, 80px);
+  border-top: 1px solid var(--rule);
+}
+.demos-offer-title {
+  font-family: 'Anaheim', system-ui, sans-serif;
+  font-weight: 700;
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  letter-spacing: -0.02em;
+  color: var(--text-primary);
+  margin: 0 0 1rem;
+}
+.demos-offer-body {
+  font-family: 'Quattrocento Sans', Georgia, serif;
+  font-size: 1.0625rem;
+  line-height: 1.65;
+  color: var(--text-secondary);
+  max-width: 65ch;
+  margin: 0 auto 1.5rem;
+}
+.demos-offer-cta {
+  display: inline-block;
+  color: var(--accent);
+  font-family: 'Anaheim', system-ui, sans-serif;
+  font-weight: 700;
+  font-size: 1rem;
+  letter-spacing: 0.02em;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  text-decoration-thickness: 1px;
+  padding: 8px 12px;
+  border-radius: 2px;
+  transition: color 150ms ease, background 150ms ease;
+}
+.demos-offer-cta:hover,
+.demos-offer-cta:focus-visible {
   color: var(--primary);
-  transition: transform 0.2s ease;
+  background: var(--surface-2);
 }
-.faq-item details[open] summary::after { content: "−"; }
-.faq-question { display: inline; font-size: 1.05rem; font-weight: 700; color: var(--gray-dark); }
-.faq-answer { padding: 0.75rem 0 0.5rem; color: var(--gray-dark); font-size: 0.98rem; line-height: 1.6; max-width: 75ch; }
+.demos-offer-cta:focus-visible {
+  outline: none;
+  box-shadow: var(--focus-ring);
+}
 
-/* ===================================
-   AEO REBRAND: Discovery CTA
-   =================================== */
+/* === Footer brand-mark grid === */
+.social-list {
+  list-style: none;
+  margin: 0 0 1.5rem;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+.social-item { margin: 0; }
+.social-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;            /* WCAG 2.5.5 AAA target size */
+  height: 44px;
+  background: var(--surface-2);
+  border: 1px solid var(--rule);
+  border-radius: 6px;
+  color: var(--text-secondary);
+  text-decoration: none;
+  transition: color 150ms ease, background 150ms ease, border-color 150ms ease, transform 150ms ease;
+}
+.social-link:hover,
+.social-link:focus-visible {
+  color: var(--accent);
+  background: var(--surface-3);
+  border-color: var(--accent);
+  transform: translateY(-1px);
+}
+.social-link:focus-visible {
+  outline: none;
+  box-shadow: var(--focus-ring);
+}
+.social-mark {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+  pointer-events: none;
+}
 
+/* === Discovery CTA === */
 .discovery-cta {
-  padding: 3rem 1rem;
-  background: linear-gradient(135deg, var(--secondary), var(--primary), var(--accent));
-  color: white;
+  padding: clamp(72px, 8vw, 120px) 0;
+  background: var(--surface-1);
+  color: var(--text-primary);
+  text-align: center;
+  position: relative;
 }
-.discovery-title { color: white; font-size: 2rem; font-weight: 800; }
-.discovery-sub { color: rgba(255,255,255,0.92); font-size: 1.1rem; margin-bottom: 1.5rem; }
-.discovery-btn { background: white; color: var(--secondary); font-weight: 700; }
+.discovery-cta::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: clamp(240px, 60vw, 720px);
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    var(--rule-strong) 50%,
+    transparent 100%
+  );
+}
+.discovery-title {
+  color: var(--text-primary);
+  font-family: 'Anaheim', system-ui, sans-serif;
+  font-weight: 700;
+  font-size: clamp(2rem, 4vw, 2.75rem);
+  letter-spacing: -0.02em;
+  line-height: 1.15;
+  margin: 0 0 1rem;
+}
+.discovery-sub {
+  color: var(--text-secondary);
+  font-family: 'Quattrocento Sans', Georgia, serif;
+  font-size: 1.0625rem;
+  line-height: 1.6;
+  margin: 0 auto 2rem;
+  max-width: 60ch;
+}
+.discovery-btn {
+  display: inline-block;
+  background: var(--primary);
+  color: var(--light-text);
+  border: 0;
+  padding: 16px 32px;
+  font-family: 'Anaheim', system-ui, sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-decoration: none;
+  border-radius: 2px;
+  transition: background 150ms ease, transform 150ms ease;
+}
+.discovery-btn:hover,
+.discovery-btn:focus-visible {
+  background: #f43f7a;                         /* +1 step lighter for hover; still 4.5:1 */
+  transform: translateY(-1px);
+}
+.discovery-btn:focus-visible {
+  outline: none;
+  box-shadow: var(--focus-ring);
+}
 
 /* ===================================
    AEO REBRAND: Reduced motion respect

@@ -7,6 +7,15 @@ other = "Portfolio Demos"
 [explore_demos_desc]
 other = "Explore different approaches to web design and development. Each demo showcases a unique style and use case."
 
+[demos_offer_title]
+other = "Want one of these for your business?"
+
+[demos_offer_body]
+other = "Each demo is the same Hugo + schema templating I'd ship for your site — same Lighthouse posture, same WCAG 2.1 AA, same AEO-ready structured data. Pick one you like and I'll fork it for your domain, brand it for your business, and wire in the content tailored to what you actually do."
+
+[demos_offer_cta]
+other = "Send a brief →"
+
 # Buttons and Links
 [view_demo]
 other = "View Demo"
@@ -300,12 +309,6 @@ other = "Three honest tiers"
 [faq_title]
 other = "Common questions"
 
-[discovery_cta_label]
-other = "Schedule a 30-min Discovery Call"
-
-[discovery_cta_subtitle]
-other = "Free. No pitch. We figure out together if AEO makes sense for your business right now."
-
 [pillar_technical]
 other = "Technical"
 
@@ -324,5 +327,3 @@ other = "Setup & Hand-off"
 [dfy_tier]
 other = "Done-For-You"
 
-[discovery_cta_button]
-other = "Book the call"

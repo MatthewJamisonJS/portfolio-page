@@ -7,6 +7,8 @@ brand:
   operator: "Matthew Jamison"
   city: "St. Louis"
   region: "MO"
-  email: "matthew@gatewaytechaeo.com"
-  phone_format: "(314) ___-____"     # placeholder — fill once tracking number live
+  # Email reverts to icloud.com until Cloudflare Email Routing for
+  # matthew@gatewaytechaeo.com is verified live (orchestrator owns the swap
+  # post-Phase-5 per AEO-TIGHTEN-SHIP §3 + decision 1 of vivid-wondering-harp.md).
+  email: "jamison.matthew@icloud.com"
   website: "https://matthewjamison.dev"

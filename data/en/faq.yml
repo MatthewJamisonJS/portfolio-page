@@ -6,7 +6,7 @@ faq:
       answer: "AEO (Answer Engine Optimization) is the practice of structuring your site so AI tools like ChatGPT, Perplexity, and Google's AI Overview cite you when someone asks a question. SEO targets the ten blue links. AEO targets being the quoted answer. The work overlaps — schema, page speed, content quality — but the goal is different."
 
     - question: "Is AI search really replacing Google?"
-      answer: "Not entirely, but the share is shifting fast. Gartner forecasts traditional search volume will drop 25% by the end of 2026. Adobe Analytics reported AI traffic to U.S. retail sites grew 393% year-over-year in Q1 2026. The customers asking AI for recommendations are real, and they're a growing share."
+      answer: "Not entirely, but the share is shifting fast. <a href='https://www.gartner.com/en/newsroom/press-releases/2024-02-19-gartner-predicts-search-engine-volume-will-drop-25-percent-by-2026-due-to-ai-chatbots-and-other-virtual-agents' rel='external nofollow'>Gartner forecasts traditional search volume will drop 25% by 2026</a>. <a href='https://business.adobe.com/blog/ai-traffic-surge-retail-sites-not-machine-readable' rel='external nofollow'>Adobe Digital Insights reported AI traffic to U.S. retail sites grew 393% year-over-year in Q1 2026</a>. The customers asking AI for recommendations are real, and they're a growing share."
 
     - question: "How much does AEO cost?"
       answer: "Three tiers. Audit is $250 one-time. Setup and Hand-off is $700 one-time. Done-For-You runs $500 to $1,200 per month. We don't hide the prices and we don't quote different rates to different prospects. The tier you pick depends on whether you want to learn it, run it after, or have us manage it."
@@ -27,7 +27,7 @@ faq:
       answer: "You can absolutely get cited by AI without a website. AI engines pull from Google Business Profile, Yelp, Foursquare, Apple Business Connect, and others. We'll claim and complete those first. A basic five-page site comes second. The site is the one piece you fully control, but it's not the foundation — your business listings are."
 
     - question: "What about my Google Business Profile?"
-      answer: "GBP is the single highest-ROI lever for local businesses. A complete, optimized GBP can move a business into the local 3-pack within 30–60 days with no other changes. If your profile is unclaimed, half empty, or missing photos, that's where every engagement starts. The Whitespark 2024 ranking factors study still puts GBP at #1 for local pack."
+      answer: "GBP is the single highest-ROI lever for local businesses. A complete, optimized GBP can move a business into the local 3-pack within 30–60 days with no other changes. If your profile is unclaimed, half empty, or missing photos, that's where every engagement starts. The <a href='https://whitespark.ca/local-search-ranking-factors/' rel='external nofollow'>Whitespark 2024 ranking factors study</a> still puts GBP at #1 for local pack."
 
     - question: "What if I want to stop?"
       answer: "Stop. You own everything we touch — your domain, your GBP, your accounts, your content. We have no contract longer than month-to-month. If the work isn't paying off, you should leave, and honestly we'd rather know. Locking clients in is a sign that the work isn't good enough to keep them voluntarily."

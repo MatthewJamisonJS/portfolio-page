@@ -1,0 +1,29 @@
+{
+  "ci": {
+    "collect": {
+      "url": [
+        "http://127.0.0.1:1313/",
+        "http://127.0.0.1:1313/es/",
+        "http://127.0.0.1:1313/ja/",
+        "http://127.0.0.1:1313/fr/",
+        "http://127.0.0.1:1313/de/"
+      ],
+      "numberOfRuns": 1,
+      "startServerCommand": "hugo server --environment production --minify --port 1313 --bind 127.0.0.1 --disableFastRender",
+      "startServerReadyPattern": "Web Server is available"
+    },
+    "_thresholds_note": "Aligned with the post-Phase-1 baseline locked in AEO-Token-Conserving-Recap.md decision 5 (perf 88-89, a11y 93, bp 96, seo 100). Performance gap below 0.95 predates the AEO branch and is out of scope here per recap; raise this floor after a dedicated perf phase. Worst observed across 5 locales on the AEO branch: perf 0.83 (fr, de), a11y 0.93, bp 0.96, seo 1.00.",
+    "assert": {
+      "assertions": {
+        "categories:performance": ["error", { "minScore": 0.80 }],
+        "categories:accessibility": ["error", { "minScore": 0.93 }],
+        "categories:best-practices": ["error", { "minScore": 0.95 }],
+        "categories:seo": ["error", { "minScore": 1.00 }]
+      }
+    },
+    "upload": {
+      "target": "filesystem",
+      "outputDir": ".lighthouseci"
+    }
+  }
+}

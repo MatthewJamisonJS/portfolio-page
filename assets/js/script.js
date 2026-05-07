@@ -110,10 +110,6 @@ document.addEventListener('DOMContentLoaded', function () {
 	}
 
 	/* ========================================================================= */
-	/*	Battle toggle removed - simplified to decorative Pokemon only
-	/* ========================================================================= */
-
-	/* ========================================================================= */
 	/*	Pricing CTA Handler - Vanilla JS version
 	/* ========================================================================= */
 
@@ -155,55 +151,24 @@ document.addEventListener('DOMContentLoaded', function () {
 			}
 		});
 
-		// Pre-fill contact form subject on page load with animation
+		// Service-tier pre-fill on page load. The legacy sessionStorage path
+		// hydrated a #subject input that no longer exists after the H6 brief-
+		// intake redesign (contact.html only has the hidden #service-tier
+		// input now). URL ?service=… is handled by the footer inline script;
+		// this block is a thin sessionStorage→hidden-input bridge for any in-
+		// page CTA that still routes through sessionStorage.
 		window.addEventListener('load', function() {
-			// Check URL parameter first (new architecture) - takes precedence
 			const urlParams = new URLSearchParams(window.location.search);
-			const urlService = urlParams.get('service');
-
-			// If URL has service parameter, clear sessionStorage and let footer.html handle it
-			if (urlService) {
+			if (urlParams.get('service')) {
 				sessionStorage.removeItem('selectedService');
-				console.log('🔗 URL service parameter detected, deferring to footer.html handler');
-				return; // Exit early, footer.html will handle the pre-fill
+				return;
 			}
 
-			// Otherwise, fall back to sessionStorage (legacy support)
 			const selectedService = sessionStorage.getItem('selectedService');
-			if (selectedService) {
-				const subjectField = document.getElementById('subject');
-				const serviceField = document.getElementById('service-tier');
-
-				if (subjectField) {
-					// Small delay for smooth appearance
-					setTimeout(function() {
-						// Pre-fill subject with [Service Tier] prefix (editable)
-						const prefixedValue = '[' + selectedService + '] ';
-						subjectField.value = prefixedValue;
-
-						// Pre-fill hidden service field (locked, not editable)
-						if (serviceField) {
-							serviceField.value = selectedService;
-							console.log('🔒 Hidden service field locked: ' + selectedService);
-						}
-
-						// Add animation class for cyan glow effect
-						subjectField.classList.add('field-prefilled');
-
-						// Focus field and position cursor at end
-						subjectField.focus();
-						const fieldLength = prefixedValue.length;
-						subjectField.setSelectionRange(fieldLength, fieldLength);
-
-						console.log('📋 Contact form pre-filled with: ' + prefixedValue);
-
-						// Remove animation class after animation completes
-						setTimeout(() => subjectField.classList.remove('field-prefilled'), 1500);
-
-						// Clear sessionStorage after use
-						sessionStorage.removeItem('selectedService');
-					}, 300);
-				}
+			const serviceField = document.getElementById('service-tier');
+			if (selectedService && serviceField) {
+				serviceField.value = selectedService;
+				sessionStorage.removeItem('selectedService');
 			}
 		});
 

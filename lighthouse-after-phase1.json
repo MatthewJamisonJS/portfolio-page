@@ -1,0 +1,79 @@
+{
+  "collected_at": "2026-05-07T11:57:52.687Z",
+  "branch": "feat/aeo-tighten-ship",
+  "phase": "post-phase-1",
+  "hugo_mode": "server --environment production --minify",
+  "note": "Local hugo dev server, single run per locale. Production Cloudflare deploy may score higher.",
+  "locales": [
+    {
+      "locale": "de",
+      "url": "http://127.0.0.1:1313/de/",
+      "performance": 87,
+      "accessibility": 93,
+      "best_practices": 96,
+      "seo": 100,
+      "delta_vs_baseline": {
+        "performance": 8,
+        "accessibility": 0,
+        "best_practices": 3,
+        "seo": 0
+      }
+    },
+    {
+      "locale": "en",
+      "url": "http://127.0.0.1:1313/",
+      "performance": 88,
+      "accessibility": 93,
+      "best_practices": 96,
+      "seo": 100,
+      "delta_vs_baseline": {
+        "performance": 12,
+        "accessibility": 0,
+        "best_practices": 3,
+        "seo": 0
+      }
+    },
+    {
+      "locale": "es",
+      "url": "http://127.0.0.1:1313/es/",
+      "performance": 89,
+      "accessibility": 93,
+      "best_practices": 96,
+      "seo": 100,
+      "delta_vs_baseline": {
+        "performance": 10,
+        "accessibility": 0,
+        "best_practices": 3,
+        "seo": 0
+      }
+    },
+    {
+      "locale": "fr",
+      "url": "http://127.0.0.1:1313/fr/",
+      "performance": 89,
+      "accessibility": 93,
+      "best_practices": 96,
+      "seo": 100,
+      "delta_vs_baseline": {
+        "performance": 9,
+        "accessibility": 0,
+        "best_practices": 3,
+        "seo": 0
+      }
+    },
+    {
+      "locale": "ja",
+      "url": "http://127.0.0.1:1313/ja/",
+      "performance": 89,
+      "accessibility": 93,
+      "best_practices": 96,
+      "seo": 100,
+      "delta_vs_baseline": {
+        "performance": 9,
+        "accessibility": 0,
+        "best_practices": 0,
+        "seo": 0
+      }
+    }
+  ]
+}

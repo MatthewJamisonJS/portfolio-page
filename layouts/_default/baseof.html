@@ -12,22 +12,9 @@
     </main>
   </div>
   {{- partial "footer.html" . -}}
-
-  <!-- Schema.org JSON-LD Structured Data -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Person",
-    "name": "Matthew Jamison",
-    "url": "https://matthewjamison.dev",
-    "jobTitle": "Full-Stack Developer",
-    "description": "Full-Stack Developer specializing in Rails, Python, and AI Tooling",
-    "sameAs": [
-      "https://github.com/MatthewJamisonJS",
-      "https://www.linkedin.com/in/matthew-jamison-65486bab/"
-    ]
-  }
-  </script>
+  {{/* Person/Organization/ProfessionalService schema lives in head.html @graph;
+       the prior duplicate Person block here conflicted with AEO positioning
+       (jobTitle/description out of sync). Removed per audit C2. */}}
 </body>
 
 </html>

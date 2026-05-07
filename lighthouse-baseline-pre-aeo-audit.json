@@ -1,0 +1,44 @@
+{
+  "collected_at": "2026-05-07T05:11:51.413Z",
+  "branch": "feat/aeo-tighten-ship",
+  "commit": "006b0c0",
+  "hugo_mode": "server --environment production --minify",
+  "note": "New baseline per AEO-TIGHTEN-SHIP §0. Pre-optimization deferred until after AEO refactor lands. Production Cloudflare deploy may score higher than local dev server.",
+  "locales": [
+    {
+      "url": "http://127.0.0.1:1313/",
+      "performance": 76,
+      "accessibility": 93,
+      "best_practices": 93,
+      "seo": 100
+    },
+    {
+      "url": "http://127.0.0.1:1313/es/",
+      "performance": 79,
+      "accessibility": 93,
+      "best_practices": 93,
+      "seo": 100
+    },
+    {
+      "url": "http://127.0.0.1:1313/ja/",
+      "performance": 80,
+      "accessibility": 93,
+      "best_practices": 96,
+      "seo": 100
+    },
+    {
+      "url": "http://127.0.0.1:1313/fr/",
+      "performance": 80,
+      "accessibility": 93,
+      "best_practices": 93,
+      "seo": 100
+    },
+    {
+      "url": "http://127.0.0.1:1313/de/",
+      "performance": 79,
+      "accessibility": 93,
+      "best_practices": 93,
+      "seo": 100
+    }
+  ]
+}

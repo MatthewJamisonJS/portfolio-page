@@ -2,16 +2,19 @@
 ---
 contact:
   enable: true
-  title: "Book a Discovery Call"
-  subtitle: "First step is a free 30-minute call."
-  content: "No pitch, just a fit check. We figure out together if AEO makes sense for your business right now. If it does, we walk you through the audit. If it doesn't, we tell you that too."
+  title: "Project intake"
+  subtitle: "Email-first intake. I reply within 48–96 hours."
+  content: "Tell me about your business so I can be useful right away. The more context the brief carries, the more tailored the first reply — I use what you send to draft something specific to your site, your city, and your customers. St. Louis local? Coffee meeting works too — same brief."
 
   contact_form:
     enable: true
     form_action: "https://formspree.io/f/xjkpovyv"
     name: "Your Name"
     email: "Your Email"
-    subject: "Subject"
-    message: "Your Message"
-    submit: "Send Message"
+    site_url: "Your Site (URL, if you have one)"
+    location: "City, State"
+    business_one_liner: "What does your business do? (one sentence)"
+    current_goals: "What would you like AEO to fix?"
+    message: "Anything else I should know"
+    submit: "Send brief"
 ---

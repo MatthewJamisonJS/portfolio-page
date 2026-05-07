@@ -1,0 +1,34 @@
+name: AEO Tighten-Ship Tests
+
+on:
+  pull_request:
+    branches: [main]
+  push:
+    branches: [feat/aeo-tighten-ship]
+
+jobs:
+  bdd:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          submodules: recursive
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install Hugo 0.152.2
+        run: |
+          wget -qO- https://github.com/gohugoio/hugo/releases/download/v0.152.2/hugo_extended_0.152.2_linux-amd64.tar.gz | tar xz
+          sudo mv hugo /usr/local/bin/
+
+      - name: Run BDD/TDD test harness
+        run: bash tests/run-all.sh
+
+      - name: Upload Lighthouse results
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: lighthouse
+          path: .lighthouseci/

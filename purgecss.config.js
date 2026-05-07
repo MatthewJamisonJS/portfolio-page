@@ -21,8 +21,7 @@ module.exports = {
     // All CSS files to be purged (Phase 6: purge everything)
     './themes/meghna/static/plugins/bootstrap/bootstrap.min.css',
     './themes/meghna/static/css/style.css',
-    './assets/css/custom.css',
-    './assets/css/battle-animations.css'
+    './assets/css/custom.css'
   ],
   output: './static/css/purged/',
   safelist: {
@@ -45,11 +44,25 @@ module.exports = {
       'portal-ring-4',
       'portal-ring-5',
       'portal-core',
-      // Pokemon decorative animations
-      'pokemon-pikachu',
-      'pokemon-mew',
-      'pokemon-celebi',
-      'pokemon-jirachi',
+      // Brand mark
+      'hero-mark',
+      'hero-mark-img',
+      // Shared section primitives (research-brief redesign)
+      'section-eyebrow',
+      'section-title',
+      'section-rule',
+      // Footer brand-mark grid (real Simple-Icons SVG marks)
+      'social-list',
+      'social-item',
+      'social-link',
+      'social-mark',
+      // Brief intake form
+      'brief-form',
+      // Demos-offer callout (spinnable demos copy)
+      'demos-offer',
+      'demos-offer-title',
+      'demos-offer-body',
+      'demos-offer-cta',
       // Lazy loading
       'lozad',
       'loaded',
@@ -117,7 +130,6 @@ module.exports = {
     // Deep matching for component variations
     deep: [
       /^portal-/,      // Portal animation system
-      /^pokemon-/,     // Pokemon decorative elements
       /^nav/,          // Navigation components
       /^btn/,          // Button variants
       /^card/,         // Card components
@@ -138,8 +150,6 @@ module.exports = {
       /^wow/,
       /fade/,
       /^portal/,
-      /^pokemon/,
-      /^battle/,
       /@keyframes/
     ]
   },

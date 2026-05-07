@@ -20,9 +20,9 @@
   <div class="hero-gradient-overlay"></div>
 
   <div class="block hero-stack">
-    {{ if .pokemon_sprite }}
-    <div class="video-button">
-      <img src="{{ .pokemon_sprite | absURL }}" alt="Operator brand mark" class="pokemon-icon-large" width="47" height="60">
+    {{ with .brand_mark }}
+    <div class="hero-mark">
+      <img src="{{ . | absURL }}" alt="Matthew Jamison brand mark" class="hero-mark-img" width="56" height="56">
     </div>
     {{ end }}
     <h1>{{ .title | markdownify }}</h1>

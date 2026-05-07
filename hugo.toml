@@ -1,6 +1,6 @@
 ################################# Default configuration ###################
 baseURL = "/"
-title = "Matthew Jamison - Full-Stack Developer"
+title = "Gateway Tech AEO — AI search optimization for St. Louis small businesses"
 theme = "meghna"
 # Default time zone for time stamps
 timeZone = "America/Chicago"
@@ -93,7 +93,7 @@ link = "plugins/lazy-load/lozad.min.js"
 [params]
 logo = "images/logo.png"
 # Meta data
-description = "Full-stack developer picking the right tool for the job. Ruby on Rails • Rust • Hugo • Shopify. Greenfield projects, legacy optimizations, and team contributions. Real business results over trends."
+description = "Answer Engine Optimization for St. Louis small businesses. Get cited by ChatGPT, Perplexity, and Google's AI Overview — before your competitors do."
 author = "Matthew Jamison"
 # Google Analytics (add your tracking ID when ready)
 google_analytics_id = ""
@@ -114,17 +114,22 @@ expire_days = 2
 [params.map]
 enable = false
 
-############################# social icons ##########################
+############################# social marks ##########################
+# Each entry's `brand` slug maps to a real inline brand SVG in
+# layouts/partials/footer.html. Marks come from Simple Icons (CC0).
 [[params.social]]
-icon = "ti-github"
+brand = "github"
+label = "GitHub"
 link = "https://github.com/MatthewJamisonJS"
 
 [[params.social]]
-icon = "ti-linkedin"
+brand = "linkedin"
+label = "LinkedIn"
 link = "https://www.linkedin.com/in/matthew-jamison-65486bab/"
 
 [[params.social]]
-icon = "ti-music"
+brand = "bandcamp"
+label = "Bandcamp"
 link = "https://matthewjjamison.bandcamp.com/"
 
 ################################ English Language ########################
@@ -136,7 +141,7 @@ weight = 1
 
 [Languages.en.params]
 home = "Home"
-copyright = "Copyright &copy; 2025 Matthew Jamison"
+copyright = "Matthew Jamison"
 
 ################################ Spanish Language ########################
 [Languages.es]
@@ -147,7 +152,7 @@ weight = 2
 
 [Languages.es.params]
 home = "Inicio"
-copyright = "Copyright &copy; 2025 Matthew Jamison"
+copyright = "Matthew Jamison"
 
 ################################ Japanese Language #######################
 [Languages.ja]
@@ -158,7 +163,7 @@ weight = 3
 
 [Languages.ja.params]
 home = "ホーム"
-copyright = "Copyright &copy; 2025 Matthew Jamison"
+copyright = "Matthew Jamison"
 
 ################################ French Language #########################
 [Languages.fr]
@@ -169,7 +174,7 @@ weight = 4
 
 [Languages.fr.params]
 home = "Accueil"
-copyright = "Copyright &copy; 2025 Matthew Jamison"
+copyright = "Matthew Jamison"
 
 ################################ German Language #########################
 [Languages.de]
@@ -180,6 +185,6 @@ weight = 5
 
 [Languages.de.params]
 home = "Startseite"
-copyright = "Copyright &copy; 2025 Matthew Jamison"
+copyright = "Matthew Jamison"
 
 ############################# Navigation Menu ##########################

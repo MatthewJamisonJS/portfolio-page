@@ -1,4 +1,57 @@
+# robots.txt for matthewjamison.dev
+# AEO posture: every verified AI crawler is welcomed by name.
+# Source list: AEO-TIGHTEN-SHIP.md §A.2 (each entry verified against vendor docs).
+
+# Default — allow everything for legacy/general crawlers.
 User-agent: *
+Allow: /
+
+# OpenAI crawlers
+# https://platform.openai.com/docs/bots
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+# Anthropic crawlers
+# https://docs.anthropic.com/en/docs/agents-and-tools/web-crawler
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+# Perplexity crawlers
+# https://docs.perplexity.ai/guides/bots
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Perplexity-User
+Allow: /
+
+# Google AI / Gemini training opt-in
+# https://developers.google.com/search/docs/crawling-indexing/overview-google-crawlers
+User-agent: Google-Extended
+Allow: /
+
+# Microsoft Bing (powers Copilot)
+# https://www.bing.com/webmasters/help/which-crawlers-does-bing-use-8c184ec0
+User-agent: Bingbot
+Allow: /
+
+# Apple Spotlight / Siri / Apple Intelligence
+# https://support.apple.com/en-us/119829
+User-agent: Applebot
+Allow: /
+
+User-agent: Applebot-Extended
 Allow: /
 
 Sitemap: https://matthewjamison.dev/sitemap.xml

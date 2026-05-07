@@ -102,7 +102,7 @@ Expected output:
 Security headers are automatically applied via `static/_headers`:
 
 ```
-Content-Security-Policy: default-src 'self'; script-src 'self' 'unsafe-inline' https://formspree.io https://cdnjs.cloudflare.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https:; connect-src 'self' https://formspree.io
+Content-Security-Policy: default-src 'self'; script-src 'self' 'unsafe-inline' https://formspree.io https://static.cloudflareinsights.com; style-src 'self' 'unsafe-inline'; font-src 'self'; img-src 'self' data: https:; connect-src 'self' https://formspree.io https://cloudflareinsights.com; frame-src 'self' https://bandcamp.com https://*.bandcamp.com
 
 X-Frame-Options: SAMEORIGIN
 X-Content-Type-Options: nosniff
@@ -124,7 +124,7 @@ Expected response:
 HTTP/2 200
 date: Thu, 29 Oct 2025 23:00:00 GMT
 content-type: text/html; charset=utf-8
-content-security-policy: default-src 'self'; script-src 'self' 'unsafe-inline' https://formspree.io https://cdnjs.cloudflare.com; ...
+content-security-policy: default-src 'self'; script-src 'self' 'unsafe-inline' https://formspree.io https://static.cloudflareinsights.com; ...
 x-frame-options: SAMEORIGIN
 x-content-type-options: nosniff
 strict-transport-security: max-age=31536000; includeSubDomains; preload

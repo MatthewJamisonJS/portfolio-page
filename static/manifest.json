@@ -1,28 +1,34 @@
 {
-  "name": "Matthew Jamison - Full-Stack Developer Portfolio",
-  "short_name": "MJ Portfolio",
-  "description": "Full-stack developer delivering measurable ROI: 98+ Lighthouse scores, $6k/year hosting savings, 79% faster load times. Rails, Python, Hugo, AI Tooling.",
+  "name": "Gateway Tech AEO — Matthew Jamison",
+  "short_name": "Gateway Tech AEO",
+  "description": "Answer Engine Optimization for St. Louis small businesses: get cited by ChatGPT, Perplexity, and Google's AI Overview before your competitors do.",
   "start_url": "/",
   "scope": "/",
   "display": "standalone",
-  "background_color": "#000000",
-  "theme_color": "#ffeb3b",
+  "background_color": "#0a0a0a",
+  "theme_color": "#00bcd4",
   "orientation": "portrait-primary",
   "icons": [
     {
-      "src": "/images/pokemon/mew.gif",
-      "sizes": "77x77",
-      "type": "image/gif",
+      "src": "/images/favicon/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "/images/favicon/favicon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
       "purpose": "any maskable"
     },
     {
-      "src": "/images/backgrounds/hero-bg.webp",
-      "sizes": "512x512",
-      "type": "image/webp",
+      "src": "/images/favicon/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png",
       "purpose": "any"
     }
   ],
-  "categories": ["business", "productivity", "development"],
+  "categories": ["business", "productivity", "marketing"],
   "lang": "en-US",
   "dir": "ltr"
 }

@@ -236,8 +236,20 @@
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .ai-card { animation: none; opacity: 1; transform: none; pointer-events: auto; }
-  .ai-card:not(:first-child) { display: none; }
+  .ai-reel-stack {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .ai-card {
+    animation: none;
+    position: static;
+    inset: auto;
+    opacity: 1;
+    transform: none;
+    pointer-events: auto;
+  }
 }
 
 @media (max-width: 900px) {
@@ -380,18 +392,18 @@
 }
 .pricing-price {
   font-family: var(--font-serif);
-  font-weight: 300;
+  font-weight: 400;
   font-size: 3.5rem;
   line-height: 1;
   letter-spacing: -0.025em;
   color: var(--ink);
   margin: 0;
 }
-.pricing-price strong { font-weight: 300; color: var(--ink); }
+.pricing-price strong { font-weight: 400; color: var(--ink); }
 .pricing-cadence {
   font-family: var(--font-sans);
   font-size: 0.875rem;
-  font-weight: 500;
+  font-weight: 600;
   color: var(--stone);
   letter-spacing: 0.04em;
   margin-left: 6px;
@@ -420,7 +432,7 @@
   position: absolute;
   left: 0;
   color: var(--brick);
-  font-weight: 700;
+  font-weight: 600;
 }
 .pricing-cta {
   display: inline-flex;
@@ -627,7 +639,7 @@
 .about-section .about-quote {
   font-family: var(--font-serif);
   font-style: italic;
-  font-weight: 300;
+  font-weight: 400;
   font-size: clamp(1.5rem, 2.5vw, 2.125rem);
   line-height: 1.32;
   color: var(--ink);
@@ -652,7 +664,7 @@
 .about-cred-num {
   font-family: var(--font-serif);
   font-size: 2.75rem;
-  font-weight: 300;
+  font-weight: 400;
   line-height: 1;
   color: var(--ink);
 }
@@ -830,7 +842,7 @@
 }
 .faq-item details[open] summary::after { content: '−'; }
 .faq-item summary:focus-visible { outline: 3px solid var(--brick); outline-offset: 2px; border-radius: 4px; }
-.faq-question { font-weight: 500; color: var(--ink); }
+.faq-question { font-weight: 600; color: var(--ink); }
 .faq-answer {
   font-size: 1rem;
   color: var(--ink-soft);

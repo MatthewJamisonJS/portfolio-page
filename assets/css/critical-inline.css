@@ -59,7 +59,7 @@
   --bone-2:      #ece5d6;       /* card surface, stamps */
   --ink:         #14110f;       /* primary type */
   --ink-soft:    #2a2622;       /* supporting type, 14.7:1 vs bone (AAA) */
-  --stone:       #847e74;       /* muted UI text, 4.7:1 vs bone (AA) */
+  --stone:       #6b665d;       /* muted UI text, 4.87:1 vs bone (AA) */
   --stone-2:     #b8b1a3;       /* hairline UI on dark */
   --rule:        #d9d1bf;       /* hairline rule on bone */
   --rule-strong: #14110f;       /* thick rule */

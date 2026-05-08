@@ -62,8 +62,10 @@
 	{{/* OG locale: convert hugo's "en-us" / "es-es" / "ja-jp" → "en_US" / "es_ES" / "ja_JP". */}}
 	{{ $localeParts := split (site.LanguageCode | default "en-us") "-" }}
 	{{ $ogLocale := printf "%s_%s" (index $localeParts 0) (upper (index $localeParts 1)) }}
-	{{ $ogTitle := cond .IsHome (printf "%s — %s" $brand.name $banner.title) (printf "%s | %s" .Title site.Title) }}
-	{{ $ogDescription := cond .IsHome $banner.subtitle (or .Description site.Params.description) }}
+	{{/* banner.title carries inline <em> HTML for the visible hero headline; strip it
+	     here so og:title / twitter:title ship clean text to social embeds and crawlers. */}}
+	{{ $ogTitle := cond .IsHome (printf "%s — %s" $brand.name (plainify $banner.title)) (printf "%s | %s" .Title site.Title) }}
+	{{ $ogDescription := cond .IsHome (plainify $banner.subtitle) (or .Description site.Params.description) }}
 
 	<!-- Open Graph / Facebook -->
 	<meta property="og:type" content="website">

@@ -1,5 +1,5 @@
 // PurgeCSS configuration — Gateway Tech AEO editorial system
-// Bone/ink/brick palette. Pokemon, portal, music-widget all stripped.
+// Bone / ink / brick palette. Decorative accent system fully removed.
 module.exports = {
   content: [
     './public/**/*.html',
@@ -96,6 +96,6 @@ module.exports = {
   rejected: [
     /carousel/, /modal/, /tooltip/, /popover/, /dropdown/, /alert/,
     /badge/, /breadcrumb/, /pagination/, /progress/, /spinner/, /toast/,
-    /pokemon/, /portal-/, /battle-/, /music-widget/, /sparkle/
+    /portal-/, /sparkle/
   ]
 };

@@ -1,0 +1,56 @@
+{{ $data := index site.Data site.Language.Lang }}
+{{ with $data.reel.reel }}
+{{ if .enable }}
+{{ $loops := where .loops "enabled" true }}
+{{ if gt (len $loops) 0 }}
+<figure class="aeo-videos" aria-label="{{ .aria_label }}">
+  {{ range $loops }}
+  <div class="aeo-video-wrapper" data-loop="{{ .slug }}">
+    <video class="aeo-video"
+           loop muted playsinline
+           preload="none"
+           poster="{{ .poster | absURL }}"
+           width="800" height="500"
+           aria-label="{{ .aria_label }}"
+           data-lazy-loop>
+      <source data-src="{{ .webm | absURL }}" type="video/webm">
+      <source data-src="{{ .mp4 | absURL }}" type="video/mp4">
+      <img class="aeo-video-fallback" src="{{ .poster | absURL }}" alt="{{ .aria_label }}" loading="lazy" decoding="async" width="800" height="500">
+    </video>
+  </div>
+  {{ end }}
+</figure>
+<script>
+  (function () {
+    var videos = document.querySelectorAll('video[data-lazy-loop]');
+    if (!videos.length) return;
+    function hydrate(v) {
+      v.querySelectorAll('source[data-src]').forEach(function (s) {
+        s.src = s.dataset.src;
+        s.removeAttribute('data-src');
+      });
+      v.load();
+      var p = v.play();
+      if (p && p.catch) p.catch(function () {});
+    }
+    if (!('IntersectionObserver' in window)) {
+      videos.forEach(hydrate);
+      return;
+    }
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) {
+        var v = e.target;
+        if (e.isIntersecting) {
+          if (!v.dataset.hydrated) { hydrate(v); v.dataset.hydrated = '1'; }
+          else { var p = v.play(); if (p && p.catch) p.catch(function(){}); }
+        } else if (v.dataset.hydrated) {
+          v.pause();
+        }
+      });
+    }, { rootMargin: '200px', threshold: 0.25 });
+    videos.forEach(function (v) { io.observe(v); });
+  })();
+</script>
+{{ end }}
+{{ end }}
+{{ end }}

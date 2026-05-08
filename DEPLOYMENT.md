@@ -247,6 +247,67 @@ Test at: https://pagespeed.web.dev/
 - **Formspree Integration**: https://formspree.io/docs/
 - **Lighthouse Testing**: https://pagespeed.web.dev/
 
+## AEO loop video production
+
+The hero `.aeo-videos` reel renders one or more terminal-style citation loops. Each
+loop is produced from a checked-in [VHS](https://github.com/charmbracelet/vhs) `.tape`
+script under `assets/video-tapes/`. Output is encoded to webm (vp9) + mp4 (H.264) +
+WebP poster.
+
+### Tools
+
+```bash
+brew install vhs ffmpeg webp
+```
+
+`vhs` requires Google Chrome installed (used for headless render). `webp` provides
+`cwebp` for the poster encode (ffmpeg's libwebp encoder is not always present).
+
+### Producing a loop end-to-end
+
+```bash
+cd /Users/wwjd_._/Code/portfolio-page
+
+# 1. VHS produces the mp4 (Output line in the .tape file points here)
+vhs assets/video-tapes/loop1-italian.tape
+
+# 2. Encode webm from the mp4
+ffmpeg -y -i static/videos/loop1-italian.mp4 \
+  -c:v libvpx-vp9 -b:v 0 -crf 35 -row-mt 1 -an \
+  static/videos/loop1-italian.webm
+
+# 3. Extract poster frame at t=4s, encode WebP via cwebp
+ffmpeg -y -i static/videos/loop1-italian.mp4 \
+  -ss 00:00:04 -frames:v 1 -update 1 -vf "scale=800:500" \
+  /tmp/loop1-italian-poster.png
+cwebp -q 85 /tmp/loop1-italian-poster.png \
+  -o static/images/posters/loop1-italian-poster.webp
+rm /tmp/loop1-italian-poster.png
+
+# 4. Verify file-size budget
+du -h static/videos/loop1-italian.{webm,mp4} \
+       static/images/posters/loop1-italian-poster.webp
+```
+
+### Size budget (hard gates)
+
+| Asset | Max |
+|---|---|
+| webm | 250 KB |
+| mp4  | 350 KB |
+| poster.webp | 30 KB |
+
+If oversize, raise `-crf` (try 38, then 42) and re-encode webm. Fall back to a
+stricter H.264 ffmpeg pass on the mp4 if needed.
+
+### Wiring a finished loop into the site
+
+1. Place the `.tape`, `.webm`, `.mp4`, and `.webp` poster at the paths the recipe writes.
+2. Edit `data/{en,es,ja,fr,de}/reel.yml` — set `enabled: true` on the matching loop
+   slug across all five locales.
+3. Run `hugo --environment production --minify --gc` and verify the new `<video
+   data-loop="…">` slot renders.
+
 ## Files Reference
 
 - `.cloudflare/deploy.sh` - Deployment helper script

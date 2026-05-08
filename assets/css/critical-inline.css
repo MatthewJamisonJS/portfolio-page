@@ -396,6 +396,46 @@ a:hover { color: var(--brick-deep); }
 
 :focus-visible { outline: 3px solid var(--brick); outline-offset: 3px; }
 
+/* ----- AEO loop videos (hero right column) ----- */
+.aeo-videos {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  max-width: 100%;
+  margin: 0;
+}
+.aeo-video-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 800px;
+  aspect-ratio: 16 / 10;
+  background: var(--ink);
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(20, 17, 15, 0.15);
+}
+.aeo-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.aeo-video-fallback {
+  display: none;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media (max-width: 1024px) {
+  .aeo-videos { gap: 12px; }
+  .aeo-video-wrapper { max-width: 600px; margin: 0 auto; }
+}
+@media (max-width: 768px) {
+  .aeo-videos { gap: 8px; }
+  .aeo-video-wrapper { max-width: 100%; border-radius: 4px; }
+}
+
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after {
     animation-duration: 0.001ms !important;
@@ -404,4 +444,6 @@ a:hover { color: var(--brick-deep); }
     scroll-behavior: auto !important;
   }
   .hero-area .hero-texture { display: none; }
+  .aeo-video { display: none; }
+  .aeo-video-wrapper .aeo-video-fallback { display: block; }
 }

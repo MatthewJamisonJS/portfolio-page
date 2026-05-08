@@ -75,8 +75,7 @@ unsafe = true
 # css plugins
 [[params.plugins.css]]
 link = "plugins/bootstrap/bootstrap.purged.min.css"  # Purged: 152KB → 60KB (92KB savings)
-[[params.plugins.css]]
-link = "plugins/themify-icons/themify-icons.css"
+# themify-icons removed post-rebrand (no <i class="ti-*"> in editorial layout)
 # Removed unused plugins (magnific-popup, slick)
 # fonts.css inlined in head.html for zero render-blocking
 

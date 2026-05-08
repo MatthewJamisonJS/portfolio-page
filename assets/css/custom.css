@@ -290,13 +290,12 @@
 }
 .pillar-card:hover,
 .pillar-card:focus-within { transform: translateY(-2px); }
-.pillar-icon {
-  width: 36px;
-  height: 36px;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 1.25rem;
+.pillar-num {
+  font-family: var(--font-mono);
+  font-size: 0.8125rem;
+  font-weight: 500;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
   color: var(--brick);
 }
 .pillar-title {
@@ -494,6 +493,7 @@
   font-size: clamp(2rem, 4vw, 3rem);
   line-height: 1.05;
   letter-spacing: -0.02em;
+  color: var(--ink);
   margin: 0 0 0.5rem;
 }
 .trust-grid {
@@ -635,7 +635,8 @@
 }
 
 /* ----- About (slim, business-facing) ----- */
-.about-section { background: var(--bone); }
+.about-section { background: var(--bone); color: var(--ink); }
+.about-section h2 { color: var(--ink); }
 .about-section .about-quote {
   font-family: var(--font-serif);
   font-style: italic;
@@ -853,13 +854,57 @@
 .faq-answer a:hover { color: var(--brick-deep); }
 
 /* ----- Contact form ----- */
-.contact-area { background: var(--bone); }
-.contact-area h2 {
+.contact-us.section-bg,
+.contact-area {
+  background: var(--bone-2);
+  color: var(--ink);
+  padding-top: var(--pad-y);
+  padding-bottom: var(--pad-y);
+}
+.contact-us.section-bg h2,
+.contact-us.section-bg h3,
+.contact-us.section-bg p,
+.contact-us.section-bg label,
+.contact-us.section-bg .contact-info h3,
+.contact-us.section-bg .contact-info p { color: var(--ink); }
+.contact-us.section-bg .contact-info p { font-size: 1rem; }
+.contact-us.section-bg h2 {
   font-family: var(--font-serif);
   font-weight: 400;
   font-size: clamp(2rem, 4vw, 3rem);
   text-align: center;
   margin: 0 0 2rem;
+  color: var(--ink);
+}
+.contact-us.section-bg .border-meghna {
+  display: block;
+  width: 64px;
+  height: 3px;
+  background: var(--brick);
+  border: 0;
+  margin: 16px auto 32px;
+}
+.contact-us.section-bg h2 .color { color: var(--brick) !important; }
+.contact-us.section-bg input,
+.contact-us.section-bg textarea,
+.contact-us.section-bg select {
+  background: #fff;
+  color: var(--ink);
+  border: 1px solid var(--rule);
+}
+.contact-us.section-bg input::placeholder,
+.contact-us.section-bg textarea::placeholder,
+.contact-us.section-bg .form-control::placeholder {
+  color: var(--ink-soft);
+  opacity: 1;
+}
+.contact-us.section-bg input:focus,
+.contact-us.section-bg textarea:focus,
+.contact-us.section-bg select:focus {
+  outline: 3px solid var(--brick);
+  outline-offset: 2px;
+  border-color: var(--brick);
+  background: #fff;
   color: var(--ink);
 }
 .contact-form input,
@@ -882,7 +927,8 @@
   outline-offset: 2px;
   border-color: var(--brick);
 }
-.contact-form button[type="submit"] {
+.contact-form button[type="submit"],
+button#contact-submit {
   display: inline-flex;
   align-items: center;
   gap: 8px;
@@ -891,8 +937,8 @@
   font-weight: 600;
   padding: 14px 26px;
   border-radius: 999px;
-  background: var(--ink);
-  color: var(--bone);
+  background: var(--ink) !important;
+  color: var(--bone) !important;
   border: 1px solid var(--ink);
   cursor: pointer;
 }

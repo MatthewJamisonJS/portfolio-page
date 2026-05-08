@@ -33,12 +33,7 @@
 	{{ end }}
 	{{ end }}
 
-	{{"<!-- Main Stylesheet - Async loaded for better FCP/LCP -->" |safeHTML}}
-	{{ $styles := resources.Get "css/style.css" | minify }}
-	<link rel="preload" href="{{ $styles.Permalink }}" as="style" onload="this.onload=null;this.rel='stylesheet'">
-	<noscript><link rel="stylesheet" href="{{ $styles.Permalink }}"></noscript>
-
-	{{"<!-- Custom stylesheet - Async loaded to prevent render blocking -->" |safeHTML}}
+	{{"<!-- Custom stylesheet — full editorial system, theme style.css dropped post-rebrand -->" |safeHTML}}
 	{{ $custom := resources.Get "css/custom.css" | minify | fingerprint }}
 	<link rel="preload" href="{{ $custom.Permalink }}" as="style" onload="this.onload=null;this.rel='stylesheet'">
 	<noscript><link rel="stylesheet" href="{{ $custom.Permalink }}"></noscript>

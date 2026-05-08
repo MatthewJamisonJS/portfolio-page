@@ -65,8 +65,8 @@
   --rule-strong: #14110f;       /* thick rule */
 
   /* Accent */
-  --brick:       #b84a2c;       /* primary accent — 4.91:1 vs bone (AA-large/UI) */
-  --brick-deep:  #8a3520;       /* hover, focus, mark fill — 7.8:1 vs bone (AAA) */
+  --brick:       #ad4527;       /* primary accent — 4.95:1 vs bone (AA normal) */
+  --brick-deep:  #8a3520;       /* hover, focus, mark fill — 7.0:1 vs bone (AAA) */
   --slate:       #2a3447;       /* dark surface alt */
   --citron:      #c9a13a;       /* tweak/notice pip only */
 

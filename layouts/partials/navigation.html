@@ -57,7 +57,8 @@
         </ul>
         <!-- Language List -->
         {{- if hugo.IsMultilingual }}
-        <select id="select-language" onchange="location = this.value;">
+        <label for="select-language" class="sr-only">{{ i18n "select_language" | default "Select language" }}</label>
+        <select id="select-language" aria-label="{{ i18n "select_language" | default "Select language" }}" onchange="location = this.value;">
           {{ $siteLanguages := site.Languages }} {{ $pageLang := .Page.Lang }}
           {{ range .Page.AllTranslations }} {{ $translation := . }} {{ range
           $siteLanguages }} {{ if eq $translation.Lang .Lang }} {{ $selected :=

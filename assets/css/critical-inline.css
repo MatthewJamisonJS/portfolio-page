@@ -397,4 +397,5 @@ a:hover { color: var(--brick-deep); }
     transition-duration: 0.001ms !important;
     scroll-behavior: auto !important;
   }
+  .hero-area .hero-texture { display: none; }
 }

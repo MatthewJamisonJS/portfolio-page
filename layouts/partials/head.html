@@ -33,12 +33,7 @@
 	{{ end }}
 	{{ end }}
 
-	{{"<!-- Main Stylesheet - Async loaded for better FCP/LCP -->" |safeHTML}}
-	{{ $styles := resources.Get "css/style.css" | minify }}
-	<link rel="preload" href="{{ $styles.Permalink }}" as="style" onload="this.onload=null;this.rel='stylesheet'">
-	<noscript><link rel="stylesheet" href="{{ $styles.Permalink }}"></noscript>
-
-	{{"<!-- Custom stylesheet - Async loaded to prevent render blocking -->" |safeHTML}}
+	{{"<!-- Custom stylesheet — full editorial system, theme style.css dropped post-rebrand -->" |safeHTML}}
 	{{ $custom := resources.Get "css/custom.css" | minify | fingerprint }}
 	<link rel="preload" href="{{ $custom.Permalink }}" as="style" onload="this.onload=null;this.rel='stylesheet'">
 	<noscript><link rel="stylesheet" href="{{ $custom.Permalink }}"></noscript>
@@ -67,8 +62,10 @@
 	{{/* OG locale: convert hugo's "en-us" / "es-es" / "ja-jp" → "en_US" / "es_ES" / "ja_JP". */}}
 	{{ $localeParts := split (site.LanguageCode | default "en-us") "-" }}
 	{{ $ogLocale := printf "%s_%s" (index $localeParts 0) (upper (index $localeParts 1)) }}
-	{{ $ogTitle := cond .IsHome (printf "%s — %s" $brand.name $banner.title) (printf "%s | %s" .Title site.Title) }}
-	{{ $ogDescription := cond .IsHome $banner.subtitle (or .Description site.Params.description) }}
+	{{/* banner.title carries inline <em> HTML for the visible hero headline; strip it
+	     here so og:title / twitter:title ship clean text to social embeds and crawlers. */}}
+	{{ $ogTitle := cond .IsHome (printf "%s — %s" $brand.name (plainify $banner.title)) (printf "%s | %s" .Title site.Title) }}
+	{{ $ogDescription := cond .IsHome (plainify $banner.subtitle) (or .Description site.Params.description) }}
 
 	<!-- Open Graph / Facebook -->
 	<meta property="og:type" content="website">
@@ -167,7 +164,6 @@
 				"sameAs": [
 					"https://github.com/MatthewJamisonJS",
 					"https://www.linkedin.com/in/matthew-jamison-65486bab/",
-					"https://matthewjjamison.bandcamp.com",
 					"https://x.com/matthewjamison",
 					"https://gatewaytechaeo.com"
 				]
@@ -310,12 +306,14 @@
 	}
 	</script>
 
-	<!-- Preload critical self-hosted fonts for performance.
-	     @font-face rules that consume these are inlined in critical-inline.css
-	     above (audit M3); the duplicate /css/fonts.css remains in static/ for
-	     anyone hand-loading it but is no longer wired into the document. -->
-	<link rel="preload" href="/fonts/anaheim-v17-latin-regular.woff2" as="font" type="font/woff2" crossorigin>
-	<link rel="preload" href="/fonts/quattrocento-sans-v22-latin-regular.woff2" as="font" type="font/woff2" crossorigin>
+	<!-- Preload critical self-hosted fonts. The @font-face rules that consume
+	     these are inlined in critical-inline.css (audit M3). Newsreader 400 is
+	     the hero serif; IBM Plex Sans 400 carries body and CTAs; IBM Plex Mono
+	     500 sets the kicker / corner-rule chrome. Italic + heavier weights
+	     load on demand. -->
+	<link rel="preload" href="/fonts/newsreader-v26-latin-regular.woff2" as="font" type="font/woff2" crossorigin>
+	<link rel="preload" href="/fonts/ibm-plex-sans-v23-latin-regular.woff2" as="font" type="font/woff2" crossorigin>
+	<link rel="preload" href="/fonts/ibm-plex-mono-v20-latin-500.woff2" as="font" type="font/woff2" crossorigin>
 
 	<!-- PWA Manifest -->
 	<link rel="manifest" href="/manifest.json">
@@ -330,9 +328,4 @@
 	<link rel="dns-prefetch" href="https://www.googletagmanager.com">
 	{{ end }}
 
-	<!-- Preconnect to Bandcamp for music widget LCP optimization (332ms savings) -->
-	<link rel="preconnect" href="https://bandcamp.com" crossorigin>
-	<link rel="dns-prefetch" href="https://bandcamp.com">
-	<link rel="preconnect" href="https://f4.bcbits.com" crossorigin>
-	<link rel="dns-prefetch" href="https://f4.bcbits.com">
 </head>

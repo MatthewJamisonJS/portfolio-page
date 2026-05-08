@@ -10,10 +10,10 @@
       </div>
     </div>
     <div class="row method-grid">
-      {{ range .pillars }}
+      {{ range $i, $p := .pillars }}
       <div class="col-lg-4 col-md-6 mb-4">
         <article class="pillar-card pillar-{{ .id }}" aria-labelledby="pillar-{{ .id }}-title">
-          <div class="pillar-icon" aria-hidden="true"><i class="{{ .icon }}"></i></div>
+          <div class="pillar-num" aria-hidden="true">{{ printf "0%d · Pillar %d" (add $i 1) (add $i 1) }}</div>
           <h3 id="pillar-{{ .id }}-title" class="pillar-title">{{ .title }}</h3>
           <p class="pillar-tagline">{{ .tagline }}</p>
           <ul class="pillar-bullets">

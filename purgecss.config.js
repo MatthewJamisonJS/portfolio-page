@@ -1,171 +1,101 @@
-// Enhanced PurgeCSS configuration for Phase 5
-// Target: 221KB → 30KB CSS (reduce by 86%)
+// PurgeCSS configuration — Gateway Tech AEO editorial system
+// Bone / ink / brick palette. Decorative accent system fully removed.
 module.exports = {
   content: [
-    // Generated HTML from all languages
     './public/**/*.html',
     './public/**/*.js',
-    // Hugo templates
     './layouts/**/*.html',
     './themes/meghna/layouts/**/*.html',
-    // Content files (may contain classes)
     './content/**/*.md',
-    // Data files (YAML/JSON may reference classes)
     './data/**/*.yml',
     './data/**/*.json',
-    // JavaScript files (dynamic classes)
     './assets/js/**/*.js',
     './static/js/**/*.js'
   ],
   css: [
-    // All CSS files to be purged (Phase 6: purge everything)
     './themes/meghna/static/plugins/bootstrap/bootstrap.min.css',
     './themes/meghna/static/css/style.css',
     './assets/css/custom.css'
   ],
   output: './static/css/purged/',
   safelist: {
-    // Classes that are dynamically added or used in animations
     standard: [
-      'active',
-      'show',
-      'fade',
-      'collapsing',
-      'modal-backdrop',
-      'collapse',
+      'active', 'show', 'fade', 'collapsing', 'modal-backdrop', 'collapse',
       'nav-link',
-      // Portal animation classes (footer.html line 193-232)
-      'portal-overlay',
-      'portal-center',
-      'portal-ring',
-      'portal-ring-1',
-      'portal-ring-2',
-      'portal-ring-3',
-      'portal-ring-4',
-      'portal-ring-5',
-      'portal-core',
-      // Brand mark
-      'hero-mark',
-      'hero-mark-img',
-      // Shared section primitives (research-brief redesign)
-      'section-eyebrow',
-      'section-title',
-      'section-rule',
-      // Footer brand-mark grid (real Simple-Icons SVG marks)
-      'social-list',
-      'social-item',
-      'social-link',
-      'social-mark',
-      // Brief intake form
-      'brief-form',
-      // Demos-offer callout (spinnable demos copy)
-      'demos-offer',
-      'demos-offer-title',
-      'demos-offer-body',
-      'demos-offer-cta',
-      // Lazy loading
-      'lozad',
-      'loaded',
-      // Pricing CTA
-      'cta-clicked',
-      'field-prefilled',
-      // WOW animations
-      'wow',
-      'fadeInUp',
-      'fadeIn',
-      'bounceIn',
-      // Themify icons (only the ones actually used)
-      'ti-github',
-      'ti-linkedin',
-      'ti-music',
-      'ti-server',
-      'ti-layout',
-      'ti-pulse',
-      // AEO rebrand: hero compression
-      'hero-stack',
-      'hero-subtitle',
-      'hero-pillars',
-      'hero-price-floor',
-      'hero-byline',
-      // AEO rebrand: method (three pillars)
-      'method-section',
-      'method-title',
-      'method-intro',
-      'method-grid',
-      'pillar-card',
-      'pillar-technical',
-      'pillar-authority',
-      'pillar-content',
-      'pillar-icon',
-      'pillar-title',
-      'pillar-tagline',
-      'pillar-bullets',
-      // AEO rebrand: pricing
-      'pricing-section',
-      'pricing-title',
-      'pricing-grid',
-      'pricing-card',
-      'pricing-highlighted',
-      'pricing-name',
-      'pricing-price',
-      'pricing-cadence',
-      'pricing-use',
-      'pricing-includes',
-      'pricing-cta',
-      'pricing-pick',
+      // Editorial primitives
+      'kicker', 'title-rule', 'section-eyebrow', 'section-title', 'section-rule',
+      // Hero (variant C)
+      'hero-area', 'hero-bg-image', 'hero-stack', 'hero-copy', 'hero-corner-rule',
+      'hero-subtitle', 'hero-pillars', 'hero-price-floor', 'hero-byline',
+      'hero-cta', 'hero-cta-secondary',
+      'mark', 'keystone',
+      // AI-citation reel
+      'ai-reel', 'ai-reel-meta', 'ai-reel-eyebrow', 'ai-reel-cycle',
+      'ai-reel-stack', 'ai-reel-disclaimer',
+      'ai-card', 'ai-card-bar', 'ai-card-dot', 'ai-card-engine',
+      'ai-card-query', 'ai-card-answer', 'ai-card-cites', 'ai-card-cite',
+      'is-win', 'you',
+      // Method
+      'method-section', 'method-title', 'method-intro', 'method-grid',
+      'pillar-card', 'pillar-technical', 'pillar-authority', 'pillar-content',
+      'pillar-icon', 'pillar-title', 'pillar-tagline', 'pillar-bullets',
+      // Pricing
+      'pricing-section', 'pricing-title', 'pricing-grid', 'pricing-card',
+      'pricing-highlighted', 'pricing-name', 'pricing-price', 'pricing-cadence',
+      'pricing-use', 'pricing-includes', 'pricing-cta', 'pricing-pick',
       'pricing-footnote',
-      // AEO rebrand: FAQ
-      'faq-section',
-      'faq-title',
-      'faq-accordion',
-      'faq-item',
-      'faq-question',
-      'faq-answer',
-      // AEO rebrand: discovery CTA
-      'discovery-cta',
-      'discovery-title',
-      'discovery-sub',
-      'discovery-btn'
+      // Trust block
+      'trust-section', 'trust-head', 'trust-grid', 'trust-list', 'trust-item',
+      'trust-num', 'trust-title', 'trust-desc',
+      'trust-stage', 'trust-stage-head', 'trust-stage-dot',
+      'trust-stage-q', 'trust-stage-a', 'trust-stage-cites', 'trust-stage-cite',
+      'trust-stage-disclaimer',
+      // About slim
+      'about-section', 'about-quote', 'about-creds', 'about-cred',
+      'about-cred-num', 'about-cred-desc',
+      // FAQ
+      'faq-section', 'faq-title', 'faq-accordion', 'faq-item',
+      'faq-question', 'faq-answer',
+      // Demos grid
+      'portfolio-demos', 'demo-grid', 'demo-card', 'demo-image',
+      'demo-overlay', 'demo-links',
+      'demos-offer', 'demos-offer-title', 'demos-offer-body', 'demos-offer-cta',
+      // Footer + social
+      'social-list', 'social-item', 'social-link', 'social-mark',
+      // Misc
+      'brief-form', 'lozad', 'loaded',
+      'cta-clicked', 'field-prefilled',
+      'wow', 'fadeInUp', 'fadeIn', 'bounceIn',
+      // Themify icons retained
+      'ti-github', 'ti-linkedin', 'ti-music', 'ti-server', 'ti-layout', 'ti-pulse'
     ],
-    // Deep matching for component variations
     deep: [
-      /^portal-/,      // Portal animation system
-      /^nav/,          // Navigation components
-      /^btn/,          // Button variants
-      /^card/,         // Card components
-      /^demo-/,        // Demo card styles
-      /^hero-/,        // Hero section
-      /^section/,      // Section classes
-      /^container/,    // Layout containers
-      /^row/,          // Grid rows
-      /^col-/,         // Grid columns
-      /^method-/,      // AEO method section
-      /^pillar-/,      // AEO pillar cards
-      /^pricing-/,     // AEO pricing tiers
-      /^faq-/,         // AEO FAQ accordion
-      /^discovery-/    // AEO discovery CTA
+      /^nav/,
+      /^btn/,
+      /^card/,
+      /^demo-/,
+      /^hero-/,
+      /^section/,
+      /^container/,
+      /^row/,
+      /^col-/,
+      /^method-/,
+      /^pillar-/,
+      /^pricing-/,
+      /^faq-/,
+      /^trust-/,
+      /^ai-/,
+      /^about-/
     ],
-    // Greedy matching for animation keyframes
     greedy: [
       /^wow/,
       /fade/,
-      /^portal/,
       /@keyframes/
     ]
   },
-  // Reject list - classes we definitely don't need
   rejected: [
-    /carousel/,      // Not using Bootstrap carousel
-    /modal/,         // Not using Bootstrap modals
-    /tooltip/,       // Not using Bootstrap tooltips
-    /popover/,       // Not using Bootstrap popovers
-    /dropdown/,      // Not using Bootstrap dropdowns
-    /alert/,         // Not using Bootstrap alerts
-    /badge/,         // Not using Bootstrap badges
-    /breadcrumb/,    // Not using breadcrumbs
-    /pagination/,    // Not using Bootstrap pagination
-    /progress/,      // Not using progress bars
-    /spinner/,       // Not using spinners
-    /toast/          // Not using toasts
+    /carousel/, /modal/, /tooltip/, /popover/, /dropdown/, /alert/,
+    /badge/, /breadcrumb/, /pagination/, /progress/, /spinner/, /toast/,
+    /portal-/, /sparkle/
   ]
 };

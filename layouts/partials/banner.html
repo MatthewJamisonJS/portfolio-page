@@ -2,7 +2,9 @@
 {{ $brand := $data.brand }}
 {{ if $data.banner.banner.enable }}
 {{ with $data.banner.banner }}
-<section class="hero-area">
+<section class="hero-area" aria-labelledby="hero-headline">
+  {{/* The hero img stays as the LCP element to keep Lighthouse stable, but
+       it sits behind a desaturated bone canvas so the editorial layout reads. */}}
   <img
     srcset="
       {{ "images/backgrounds/hero-bg-mobile.webp" | absURL }} 768w,
@@ -11,30 +13,41 @@
     "
     sizes="100vw"
     src="{{ "images/backgrounds/hero-bg-desktop.webp" | absURL }}"
-    alt="Hero background for Gateway Tech AEO"
+    alt=""
     class="hero-bg-image"
     fetchpriority="high"
     width="1920"
     height="1080"
+    aria-hidden="true"
   >
-  <div class="hero-gradient-overlay"></div>
 
-  <div class="block hero-stack">
-    {{ with .brand_mark }}
-    <div class="hero-mark">
-      <img src="{{ . | absURL }}" alt="Matthew Jamison brand mark" class="hero-mark-img" width="56" height="56">
+  <div class="hero-stack">
+    <div class="hero-copy">
+      <div class="hero-corner-rule">
+        <span class="mark"><span class="keystone" aria-hidden="true"></span> {{ $brand.brand.name }}</span>
+        <span>{{ $brand.brand.city }} · {{ $brand.brand.region }}</span>
+      </div>
+      {{ with .kicker }}<div class="kicker">{{ . }}</div>{{ end }}
+      <h1 id="hero-headline">{{ .title | safeHTML }}</h1>
+      <hr class="title-rule" aria-hidden="true">
+      <p class="hero-subtitle">{{ .subtitle | markdownify }}</p>
+      {{ with .pillars_inline }}<p class="hero-pillars">{{ . }}</p>{{ end }}
+      {{ with .price_floor }}<p class="hero-price-floor">{{ . }}</p>{{ end }}
+      <p class="hero-byline">
+        Operating as <strong>{{ $brand.brand.name }}</strong>{{ if $brand.brand.show_legal_status }} <em>({{ $brand.brand.legal_status }})</em>{{ end }} · {{ $brand.brand.operator }}
+      </p>
+      {{ if .button.enable }}{{ with .button }}
+      <a href="{{ .link }}" id="start-project-btn" class="hero-cta page-scroll" data-service="audit">
+        <span>{{ .label }}</span>
+        <span aria-hidden="true">→</span>
+      </a>
+      {{ end }}{{ end }}
+      {{ with .secondary }}
+      <a href="{{ .link }}" class="hero-cta-secondary page-scroll" data-service="brief">{{ .label }}</a>
+      {{ end }}
     </div>
-    {{ end }}
-    <h1>{{ .title | markdownify }}</h1>
-    <p class="hero-subtitle">{{ .subtitle | markdownify }}</p>
-    <p class="hero-pillars">{{ .pillars_inline }}</p>
-    <p class="hero-price-floor">{{ .price_floor }}</p>
-    <p class="hero-byline">
-      Operating as <strong>{{ $brand.brand.name }}</strong>{{ if $brand.brand.show_legal_status }} <em>({{ $brand.brand.legal_status }})</em>{{ end }} · {{ $brand.brand.operator }} · {{ $brand.brand.city }}, {{ $brand.brand.region }}
-    </p>
-    {{ if .button.enable }}{{ with .button }}
-    <a href="{{ .link }}" id="start-project-btn" class="btn btn-transparent page-scroll">{{ .label }}</a>
-    {{ end }}{{ end }}
+
+    {{ partial "ai-citation-reel.html" . }}
   </div>
 </section>
 {{ end }}

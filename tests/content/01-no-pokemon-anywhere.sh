@@ -43,9 +43,11 @@ if [[ -d static/images/pokemon ]]; then
   FAIL=1
 fi
 
-# 4. The new MJ brand mark must be present.
-if [[ ! -f static/images/brand/mj-mark.svg ]]; then
-  echo "FAIL — replacement brand mark static/images/brand/mj-mark.svg missing"
+# 4. The replacement brand mark must be present. Post-rebrand the favicon
+#    SVG (Gateway Tech AEO keystone-arch triplet) is the canonical mark;
+#    the prior static/images/brand/mj-mark.svg was retired with the AEO redesign.
+if [[ ! -f static/images/favicon/favicon.svg ]]; then
+  echo "FAIL — replacement brand mark static/images/favicon/favicon.svg missing"
   FAIL=1
 fi
 

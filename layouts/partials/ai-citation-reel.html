@@ -3,18 +3,50 @@
 {{ if .enable }}
 <figure class="ai-reel" aria-label="{{ .aria_label | default "Looping reel of AI search results citing St. Louis businesses" }}">
   {{/* Primary: real recorded loop of AI engines citing St. Louis businesses.
-       Autoplays muted/loop/playsinline. Browsers that honor
-       prefers-reduced-motion will skip autoplay; the CSS card-cycle below
-       is the fallback. */}}
+       Lazy-loaded via IntersectionObserver — preload="none" + data-src on the
+       sources keeps the ~700KB video off the critical path on mobile (where
+       the reel stacks below the hero copy and isn't above the fold). The
+       observer hydrates src + calls load()/play() the moment the figure
+       intersects the viewport. Browsers that honor prefers-reduced-motion
+       will skip autoplay; the CSS card-cycle below is the fallback. */}}
   <video class="ai-reel-video"
-         autoplay loop muted playsinline
-         preload="metadata"
+         loop muted playsinline
+         preload="none"
          poster="{{ "images/backgrounds/reel-poster.webp" | absURL }}"
          width="1280" height="800"
-         aria-hidden="true">
-    <source src="{{ "videos/ai-search-reel.webm" | absURL }}" type="video/webm">
-    <source src="{{ "videos/ai-search-reel.mp4"  | absURL }}" type="video/mp4">
+         aria-hidden="true"
+         data-lazy-reel>
+    <source data-src="{{ "videos/ai-search-reel.webm" | absURL }}" type="video/webm">
+    <source data-src="{{ "videos/ai-search-reel.mp4"  | absURL }}" type="video/mp4">
   </video>
+  <script>
+    (function () {
+      var video = document.currentScript.previousElementSibling;
+      if (!video || !('IntersectionObserver' in window)) {
+        // Fallback: graceful — observer unsupported, just hydrate immediately.
+        if (video) hydrate(video);
+        return;
+      }
+      function hydrate(v) {
+        v.querySelectorAll('source[data-src]').forEach(function (s) {
+          s.src = s.dataset.src;
+          s.removeAttribute('data-src');
+        });
+        v.load();
+        var p = v.play();
+        if (p && p.catch) p.catch(function () { /* autoplay blocked, poster stays */ });
+      }
+      var io = new IntersectionObserver(function (entries) {
+        entries.forEach(function (entry) {
+          if (entry.isIntersecting) {
+            hydrate(entry.target);
+            io.unobserve(entry.target);
+          }
+        });
+      }, { rootMargin: '200px' });
+      io.observe(video);
+    })();
+  </script>
 
   {{/* Fallback: CSS-cycled card stack. Hidden when video plays; visible when
        reduced-motion / no-video / no-JS. */}}

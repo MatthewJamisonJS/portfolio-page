@@ -102,7 +102,7 @@ Expected output:
 Security headers are automatically applied via `static/_headers`:
 
 ```
-Content-Security-Policy: default-src 'self'; script-src 'self' 'unsafe-inline' https://formspree.io https://static.cloudflareinsights.com; style-src 'self' 'unsafe-inline'; font-src 'self'; img-src 'self' data: https:; connect-src 'self' https://formspree.io https://cloudflareinsights.com; frame-src 'self'
+Content-Security-Policy: default-src 'self'; script-src 'self' 'unsafe-inline' https://formspree.io https://static.cloudflareinsights.com; style-src 'self' 'unsafe-inline'; font-src 'self'; img-src 'self' data: https:; media-src 'self'; connect-src 'self' https://formspree.io https://cloudflareinsights.com; frame-src 'self'
 
 X-Frame-Options: SAMEORIGIN
 X-Content-Type-Options: nosniff

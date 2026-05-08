@@ -300,12 +300,19 @@
 
 	<!-- Preload critical self-hosted fonts. The @font-face rules that consume
 	     these are inlined in critical-inline.css (audit M3). Newsreader 400 is
-	     the hero serif; IBM Plex Sans 400 carries body and CTAs; IBM Plex Mono
-	     500 sets the kicker / corner-rule chrome. Italic + heavier weights
-	     load on demand. -->
+	     the hero serif; Newsreader italic carries the hero subtitle (LCP after
+	     the hero photo was removed); IBM Plex Sans 400/600 cover body, CTAs,
+	     and section titles; IBM Plex Mono 500 sets the kicker / corner-rule
+	     chrome. -->
 	<link rel="preload" href="/fonts/newsreader-v26-latin-regular.woff2" as="font" type="font/woff2" crossorigin>
+	<link rel="preload" href="/fonts/newsreader-v26-latin-italic.woff2" as="font" type="font/woff2" crossorigin>
 	<link rel="preload" href="/fonts/ibm-plex-sans-v23-latin-regular.woff2" as="font" type="font/woff2" crossorigin>
+	<link rel="preload" href="/fonts/ibm-plex-sans-v23-latin-600.woff2" as="font" type="font/woff2" crossorigin>
 	<link rel="preload" href="/fonts/ibm-plex-mono-v20-latin-500.woff2" as="font" type="font/woff2" crossorigin>
+
+	<!-- Preconnect to Cloudflare Web Analytics beacon (auto-injected by
+	     Cloudflare Pages). Saves DNS+TCP+TLS on first beacon request. -->
+	<link rel="preconnect" href="https://cloudflareinsights.com" crossorigin>
 
 	<!-- PWA Manifest -->
 	<link rel="manifest" href="/manifest.json">

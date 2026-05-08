@@ -14,14 +14,6 @@
 	{{ $criticalInline := resources.Get "css/critical-inline.css" | minify }}
 	<style>{{ $criticalInline.Content | safeCSS }}</style>
 
-	{{ "<!-- PRELOAD HERO IMAGE - LCP optimization (mobile-first) -->" | safeHTML}}
-	<link rel="preload"
-		href="{{ "images/backgrounds/hero-bg-mobile.webp" | absURL }}"
-		as="image"
-		type="image/webp"
-		fetchpriority="high">
-	{{ "<!-- Desktop hero loaded via CSS background-image with media queries -->" | safeHTML}}
-
 	{{ "<!-- plugins -->" | safeHTML }}
 	{{ range site.Params.plugins.css }}
 	{{ if or (in .link "bootstrap") (in .link "themify") }}

@@ -214,18 +214,15 @@ a:hover { color: var(--brick-deep); }
           mask-image: radial-gradient(ellipse 80% 60% at 65% 50%, #000 50%, transparent 100%);
   z-index: 0;
 }
-.hero-area .hero-bg-image {
+.hero-area .hero-texture {
   position: absolute;
   inset: 0;
   width: 100%;
   height: 100%;
-  object-fit: cover;
-  object-position: center;
-  z-index: -1;
-  opacity: 0.08;
-  filter: grayscale(1) contrast(1.05);
-  /* GPU acceleration; LCP-stable, no animation on the LCP element */
-  transform: translate3d(0, 0, 0);
+  opacity: 0.10;
+  mix-blend-mode: multiply;
+  pointer-events: none;
+  z-index: 0;
 }
 .hero-stack {
   position: relative;
@@ -240,7 +237,6 @@ a:hover { color: var(--brick-deep); }
 .hero-copy { display: flex; flex-direction: column; gap: 1.25rem; }
 .hero-corner-rule {
   display: flex;
-  justify-content: space-between;
   align-items: baseline;
   font-family: var(--font-mono);
   font-size: var(--type-kicker);

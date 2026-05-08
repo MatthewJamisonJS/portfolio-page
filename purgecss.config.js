@@ -25,7 +25,7 @@ module.exports = {
       // Editorial primitives
       'kicker', 'title-rule', 'section-eyebrow', 'section-title', 'section-rule',
       // Hero (variant C)
-      'hero-area', 'hero-bg-image', 'hero-stack', 'hero-copy', 'hero-corner-rule',
+      'hero-area', 'hero-texture', 'hero-stack', 'hero-copy', 'hero-corner-rule',
       'hero-subtitle', 'hero-pillars', 'hero-price-floor', 'hero-byline',
       'hero-cta', 'hero-cta-secondary',
       'mark', 'keystone',

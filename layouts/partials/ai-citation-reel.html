@@ -1,29 +1,42 @@
 {{ $data := index site.Data site.Language.Lang }}
 {{ with $data.reel.reel }}
 {{ if .enable }}
-<div class="ai-reel" aria-label="{{ .aria_label | default "Looping reel of AI search results citing St. Louis businesses" }}" role="region">
-  <div class="ai-reel-meta" aria-hidden="true">
-    <span class="ai-reel-eyebrow">{{ .eyebrow | default "Live AI-citation proof" }}</span>
-    <span class="ai-reel-cycle">{{ .cycle_label | default "Cycles every 4 seconds" }}</span>
+<figure class="ai-reel" aria-label="{{ .aria_label | default "Looping reel of AI search results citing St. Louis businesses" }}">
+  {{/* Primary: real recorded loop of AI engines citing St. Louis businesses.
+       Autoplays muted/loop/playsinline. Browsers that honor
+       prefers-reduced-motion will skip autoplay; the CSS card-cycle below
+       is the fallback. */}}
+  <video class="ai-reel-video"
+         autoplay loop muted playsinline
+         preload="metadata"
+         poster="{{ "images/backgrounds/reel-poster.webp" | absURL }}"
+         width="1280" height="800"
+         aria-hidden="true">
+    <source src="{{ "videos/ai-search-reel.webm" | absURL }}" type="video/webm">
+    <source src="{{ "videos/ai-search-reel.mp4"  | absURL }}" type="video/mp4">
+  </video>
+
+  {{/* Fallback: CSS-cycled card stack. Hidden when video plays; visible when
+       reduced-motion / no-video / no-JS. */}}
+  <div class="ai-reel-fallback" data-reel-fallback>
+    <div class="ai-reel-stack">
+      {{ range $i, $card := .cards }}
+      <article class="ai-card" data-engine="{{ .engine_slug }}" style="--reel-delay: {{ mul $i 4 }}s">
+        <header class="ai-card-bar">
+          <span class="ai-card-dot" aria-hidden="true">{{ .dot }}</span>
+          <span class="ai-card-engine">{{ .engine }}</span>
+        </header>
+        <p class="ai-card-query">"{{ .query }}"</p>
+        <p class="ai-card-answer">{{ .answer | safeHTML }}</p>
+        <ul class="ai-card-cites">
+          {{ range .cites }}
+          <li class="ai-card-cite{{ if .win }} is-win{{ end }}">{{ .text }}</li>
+          {{ end }}
+        </ul>
+      </article>
+      {{ end }}
+    </div>
   </div>
-  <div class="ai-reel-stack">
-    {{ range $i, $card := .cards }}
-    <article class="ai-card" data-engine="{{ .engine_slug }}" style="--reel-delay: {{ mul $i 4 }}s">
-      <header class="ai-card-bar">
-        <span class="ai-card-dot" aria-hidden="true">{{ .dot }}</span>
-        <span class="ai-card-engine">{{ .engine }}</span>
-      </header>
-      <p class="ai-card-query">"{{ .query }}"</p>
-      <p class="ai-card-answer">{{ .answer | safeHTML }}</p>
-      <ul class="ai-card-cites">
-        {{ range .cites }}
-        <li class="ai-card-cite{{ if .win }} is-win{{ end }}">{{ .text }}</li>
-        {{ end }}
-      </ul>
-    </article>
-    {{ end }}
-  </div>
-  <p class="ai-reel-disclaimer">{{ .disclaimer | default "Illustrative · names not real" }}</p>
-</div>
+</figure>
 {{ end }}
 {{ end }}

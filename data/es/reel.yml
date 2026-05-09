@@ -1,28 +1,22 @@
 reel:
   enable: true
   eyebrow: "Prueba en vivo de citas IA"
-  cycle_label: "Tres bucles · empresas de St. Louis citadas"
-  aria_label: "Carretes en bucle de resultados de búsqueda IA citando empresas de St. Louis"
-  disclaimer: "Ilustrativo · nombres no reales · en producción se ajustan a tu ciudad"
+  aria_label: "Grabaciones en vivo de motores de búsqueda IA respondiendo a consultas AEO de St. Louis"
+  disclaimer: "Grabado · capturado 2026-05-09 · las empresas son respuestas reales de cada proveedor de IA"
   loops:
-    - slug: italian
+    - slug: gemini
       enabled: true
-      query: "best Italian restaurant on the Hill St. Louis"
-      poster: /images/posters/loop1-italian-poster.webp
-      webm: /videos/loop1-italian.webm
-      mp4:  /videos/loop1-italian.mp4
-      aria_label: "Resultados de búsqueda IA para el mejor restaurante italiano en The Hill, St. Louis"
-    - slug: dentist
-      enabled: false
-      query: "Tower Grove dentist accepting new patients"
-      poster: /images/posters/loop2-dentist-poster.webp
-      webm: /videos/loop2-dentist.webm
-      mp4:  /videos/loop2-dentist.mp4
-      aria_label: "Resultados de búsqueda IA para dentistas en Tower Grove que aceptan nuevos pacientes en St. Louis"
-    - slug: donuts
-      enabled: false
-      query: "best donut shops near 63112"
-      poster: /images/posters/loop3-donuts-poster.webp
-      webm: /videos/loop3-donuts.webm
-      mp4:  /videos/loop3-donuts.mp4
-      aria_label: "Resultados de búsqueda IA para las mejores donuterías cerca del 63112"
+      engine: "Gemini · 2.5 Flash"
+      query: "St. Louis AEO queries (Dutchtown coworking · O'Fallon drywalling · south city tamales · University City real estate)"
+      poster: /images/posters/loop-gemini-poster.webp
+      webm: /videos/loop-gemini.webm
+      mp4:  /videos/loop-gemini.mp4
+      aria_label: "Google Gemini respondiendo a cuatro consultas AEO de St. Louis"
+    - slug: openai
+      enabled: true
+      engine: "ChatGPT · 5"
+      query: "St. Louis AEO queries (Dutchtown coworking · O'Fallon drywalling · south city tamales · University City real estate)"
+      poster: /images/posters/loop-openai-poster.webp
+      webm: /videos/loop-openai.webm
+      mp4:  /videos/loop-openai.mp4
+      aria_label: "OpenAI ChatGPT respondiendo a cuatro consultas AEO de St. Louis"

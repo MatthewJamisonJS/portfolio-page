@@ -1,28 +1,22 @@
 reel:
   enable: true
   eyebrow: "AI 引用のリアルタイム証拠"
-  cycle_label: "3つのループ · 引用された St. Louis のビジネス"
-  aria_label: "St. Louis のビジネスを引用する AI 検索結果のループ動画"
-  disclaimer: "例示 · 名前は架空 · 本番環境では各自の都市に置き換え"
+  aria_label: "St. Louis の AEO クエリに応答する AI 検索エンジンのライブ録画"
+  disclaimer: "録画リール · 2026-05-09 撮影 · ビジネスは各 AI プロバイダーからの実際の応答"
   loops:
-    - slug: italian
+    - slug: gemini
       enabled: true
-      query: "best Italian restaurant on the Hill St. Louis"
-      poster: /images/posters/loop1-italian-poster.webp
-      webm: /videos/loop1-italian.webm
-      mp4:  /videos/loop1-italian.mp4
-      aria_label: "St. Louis の Hill 地区にあるベスト・イタリアン・レストランの AI 検索結果"
-    - slug: dentist
-      enabled: false
-      query: "Tower Grove dentist accepting new patients"
-      poster: /images/posters/loop2-dentist-poster.webp
-      webm: /videos/loop2-dentist.webm
-      mp4:  /videos/loop2-dentist.mp4
-      aria_label: "St. Louis の Tower Grove で新規患者を受け入れている歯科医院の AI 検索結果"
-    - slug: donuts
-      enabled: false
-      query: "best donut shops near 63112"
-      poster: /images/posters/loop3-donuts-poster.webp
-      webm: /videos/loop3-donuts.webm
-      mp4:  /videos/loop3-donuts.mp4
-      aria_label: "63112 周辺のベスト・ドーナツ店の AI 検索結果"
+      engine: "Gemini · 2.5 Flash"
+      query: "St. Louis AEO queries (Dutchtown coworking · O'Fallon drywalling · south city tamales · University City real estate)"
+      poster: /images/posters/loop-gemini-poster.webp
+      webm: /videos/loop-gemini.webm
+      mp4:  /videos/loop-gemini.mp4
+      aria_label: "Google Gemini が St. Louis の 4 つの AEO クエリに応答"
+    - slug: openai
+      enabled: true
+      engine: "ChatGPT · 5"
+      query: "St. Louis AEO queries (Dutchtown coworking · O'Fallon drywalling · south city tamales · University City real estate)"
+      poster: /images/posters/loop-openai-poster.webp
+      webm: /videos/loop-openai.webm
+      mp4:  /videos/loop-openai.mp4
+      aria_label: "OpenAI ChatGPT が St. Louis の 4 つの AEO クエリに応答"

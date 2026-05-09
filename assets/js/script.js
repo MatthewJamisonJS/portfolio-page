@@ -175,44 +175,4 @@ document.addEventListener('DOMContentLoaded', function () {
 		console.log('💼 Pricing CTA handler initialized');
 	})();
 
-	/* ========================================================================= */
-	/*	AI-citation reel — lazy play / pause when off-screen
-	/*	Saves mobile decode cost + battery; falls back to fallback card stack
-	/*	if <video> can't be created or fails to load. */
-	/* ========================================================================= */
-	(function () {
-		const video = document.querySelector('.ai-reel-video');
-		if (!video) return;
-
-		// If <video> element type isn't supported at all, surface fallback.
-		if (typeof video.play !== 'function') {
-			document.documentElement.classList.add('no-video');
-			return;
-		}
-
-		// Hard error from the <source> chain (e.g., codec rejected) → fallback.
-		video.addEventListener('error', function () {
-			document.documentElement.classList.add('no-video');
-		});
-
-		// Pause when out of viewport, resume when back. Skip wiring if the
-		// browser has no IntersectionObserver — video keeps running, no harm.
-		if (!('IntersectionObserver' in window)) return;
-
-		const io = new IntersectionObserver(function (entries) {
-			entries.forEach(function (entry) {
-				if (entry.isIntersecting) {
-					video.play().catch(function () {
-						// Autoplay blocked (rare with muted+playsinline). Surface fallback.
-						document.documentElement.classList.add('no-video');
-					});
-				} else {
-					video.pause();
-				}
-			});
-		}, { threshold: 0.4 });
-
-		io.observe(video);
-	})();
-
 });

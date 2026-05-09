@@ -29,8 +29,13 @@ module.exports = {
       'hero-subtitle', 'hero-pillars', 'hero-price-floor', 'hero-byline',
       'hero-cta', 'hero-cta-secondary',
       'mark', 'keystone',
-      // AEO loop videos
-      'aeo-videos', 'aeo-video-wrapper', 'aeo-video', 'aeo-video-fallback',
+      // AEO live-citation reel
+      'aeo-reel', 'aeo-reel-eyebrow', 'aeo-reel-eyebrow-dot',
+      'aeo-reel-card', 'aeo-reel-card-head',
+      'aeo-reel-engine', 'aeo-reel-tag',
+      'aeo-reel-frame', 'aeo-reel-video', 'aeo-reel-fallback',
+      'aeo-reel-foot', 'aeo-reel-pause', 'aeo-reel-pause-icon',
+      'aeo-reel-pause-label', 'aeo-reel-disclaimer',
       // Method
       'method-section', 'method-title', 'method-intro', 'method-grid',
       'pillar-card', 'pillar-technical', 'pillar-authority', 'pillar-content',

@@ -266,7 +266,7 @@ brew install vhs ffmpeg webp
 ### Producing a loop end-to-end
 
 ```bash
-cd /Users/wwjd_._/Code/portfolio-page
+cd "$(git rev-parse --show-toplevel)"
 
 # 1. VHS produces the mp4 (Output line in the .tape file points here)
 vhs assets/video-tapes/loop1-italian.tape

@@ -3,52 +3,61 @@
 {{ if .enable }}
 {{ $loops := where .loops "enabled" true }}
 {{ if gt (len $loops) 0 }}
-<figure class="aeo-videos" aria-label="{{ .aria_label }}">
-  {{ range $loops }}
-  <div class="aeo-video-wrapper" data-loop="{{ .slug }}">
-    <video class="aeo-video"
-           loop muted playsinline
-           preload="none"
-           poster="{{ .poster | absURL }}"
-           width="800" height="500"
-           aria-label="{{ .aria_label }}"
-           data-lazy-loop>
-      <source data-src="{{ .webm | absURL }}" type="video/webm">
-      <source data-src="{{ .mp4 | absURL }}" type="video/mp4">
-      <img class="aeo-video-fallback" src="{{ .poster | absURL }}" alt="{{ .aria_label }}" loading="lazy" decoding="async" width="800" height="500">
-    </video>
-  </div>
+<figure class="aeo-reel" aria-labelledby="aeo-reel-eyebrow">
+  {{ with .eyebrow }}
+  <p id="aeo-reel-eyebrow" class="aeo-reel-eyebrow">
+    <span class="aeo-reel-eyebrow-dot" aria-hidden="true"></span>
+    <span>{{ . }}</span>
+  </p>
   {{ end }}
+
+  {{ range $loops }}
+  <article class="aeo-reel-card" data-loop="{{ .slug }}">
+    <header class="aeo-reel-card-head">
+      <span class="aeo-reel-engine">{{ .engine | default .slug }}</span>
+      <span class="aeo-reel-tag" aria-hidden="true">live capture</span>
+    </header>
+    <div class="aeo-reel-frame">
+      <video class="aeo-reel-video"
+             autoplay loop muted playsinline
+             preload="metadata"
+             poster="{{ .poster | relURL }}"
+             width="800" height="500"
+             aria-label="{{ .aria_label }}">
+        <source src="{{ .webm | relURL }}" type="video/webm">
+        <source src="{{ .mp4 | relURL }}" type="video/mp4">
+      </video>
+    </div>
+  </article>
+  {{ end }}
+
+  <footer class="aeo-reel-foot">
+    <button class="aeo-reel-pause" type="button" aria-pressed="false" data-aeo-pause>
+      <span class="aeo-reel-pause-icon" aria-hidden="true">▮▮</span>
+      <span class="aeo-reel-pause-label">Pause</span>
+    </button>
+    {{ with .disclaimer }}<p class="aeo-reel-disclaimer">{{ . }}</p>{{ end }}
+  </footer>
 </figure>
 <script>
   (function () {
-    var videos = document.querySelectorAll('video[data-lazy-loop]');
-    if (!videos.length) return;
-    function hydrate(v) {
-      v.querySelectorAll('source[data-src]').forEach(function (s) {
-        s.src = s.dataset.src;
-        s.removeAttribute('data-src');
-      });
-      v.load();
-      var p = v.play();
-      if (p && p.catch) p.catch(function () {});
-    }
-    if (!('IntersectionObserver' in window)) {
-      videos.forEach(hydrate);
-      return;
-    }
-    var io = new IntersectionObserver(function (entries) {
-      entries.forEach(function (e) {
-        var v = e.target;
-        if (e.isIntersecting) {
-          if (!v.dataset.hydrated) { hydrate(v); v.dataset.hydrated = '1'; }
-          else { var p = v.play(); if (p && p.catch) p.catch(function(){}); }
-        } else if (v.dataset.hydrated) {
+    var btn = document.querySelector('[data-aeo-pause]');
+    if (!btn) return;
+    var videos = document.querySelectorAll('.aeo-reel-video');
+    btn.addEventListener('click', function () {
+      var paused = btn.getAttribute('aria-pressed') !== 'true';
+      btn.setAttribute('aria-pressed', paused ? 'true' : 'false');
+      btn.querySelector('.aeo-reel-pause-icon').textContent = paused ? '▶' : '▮▮';
+      btn.querySelector('.aeo-reel-pause-label').textContent = paused ? 'Resume' : 'Pause';
+      videos.forEach(function (v) {
+        if (paused) {
           v.pause();
+        } else {
+          var p = v.play();
+          if (p && p.catch) p.catch(function () {});
         }
       });
-    }, { rootMargin: '200px', threshold: 0.25 });
-    videos.forEach(function (v) { io.observe(v); });
+    });
   })();
 </script>
 {{ end }}

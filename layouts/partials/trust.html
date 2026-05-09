@@ -22,22 +22,6 @@
         {{ end }}
       </ol>
 
-      {{ with .sample }}
-      <aside class="trust-stage" aria-label="{{ .aria_label | default "Sample AI citation showing the client business cited in the answer" }}">
-        <header class="trust-stage-head">
-          <span class="trust-stage-dot" aria-hidden="true">{{ .dot }}</span>
-          <strong>{{ .engine }}</strong>
-        </header>
-        <p class="trust-stage-q">"{{ .query }}"</p>
-        <p class="trust-stage-a">{{ .answer | safeHTML }}</p>
-        <ul class="trust-stage-cites">
-          {{ range .cites }}
-          <li class="trust-stage-cite{{ if .win }} is-win{{ end }}">{{ .text }}</li>
-          {{ end }}
-        </ul>
-        <p class="trust-stage-disclaimer">{{ .disclaimer | default "Illustrative · names not real" }}</p>
-      </aside>
-      {{ end }}
     </div>
   </div>
 </section>

@@ -838,3 +838,17 @@ button#contact-submit {
 /* ----- Bootstrap row/col bridge ----- */
 .text-center { text-align: center; }
 .mb-4 { margin-bottom: 1.5rem; }
+
+/* ----- Reduced-motion global nuke -----
+   Moved out of critical-inline.css to keep first-paint payload small.
+   This block disables animations + transitions sitewide for users who
+   prefer reduced motion (PR #35 review feedback). The hero/reel-specific
+   reduced-motion swaps stay inline so the swap renders pre-CSS-load. */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}

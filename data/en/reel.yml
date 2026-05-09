@@ -1,28 +1,22 @@
 reel:
   enable: true
   eyebrow: "Live AI-citation proof"
-  cycle_label: "Three loops · cited St. Louis businesses"
-  aria_label: "Looping reels of AI search results citing St. Louis businesses"
-  disclaimer: "Illustrative · names not real · drop in your own city in production"
+  aria_label: "Live recordings of AI search engines responding to St. Louis AEO queries"
+  disclaimer: "Recorded reel · captured 2026-05-09 · businesses are real responses from each AI provider"
   loops:
-    - slug: italian
+    - slug: gemini
       enabled: true
-      query: "best Italian restaurant on the Hill St. Louis"
-      poster: /images/posters/loop1-italian-poster.webp
-      webm: /videos/loop1-italian.webm
-      mp4:  /videos/loop1-italian.mp4
-      aria_label: "AI search results for best Italian restaurant on the Hill, St. Louis"
-    - slug: dentist
-      enabled: false
-      query: "Tower Grove dentist accepting new patients"
-      poster: /images/posters/loop2-dentist-poster.webp
-      webm: /videos/loop2-dentist.webm
-      mp4:  /videos/loop2-dentist.mp4
-      aria_label: "AI search results for Tower Grove dentist accepting new patients in St. Louis"
-    - slug: donuts
-      enabled: false
-      query: "best donut shops near 63112"
-      poster: /images/posters/loop3-donuts-poster.webp
-      webm: /videos/loop3-donuts.webm
-      mp4:  /videos/loop3-donuts.mp4
-      aria_label: "AI search results for best donut shops near 63112"
+      engine: "Gemini · 2.5 Flash"
+      query: "St. Louis AEO queries (Dutchtown coworking · O'Fallon drywalling · south city tamales · University City real estate)"
+      poster: /images/posters/loop-gemini-poster.webp
+      webm: /videos/loop-gemini.webm
+      mp4:  /videos/loop-gemini.mp4
+      aria_label: "Google Gemini responding to four St. Louis AEO queries"
+    - slug: openai
+      enabled: true
+      engine: "ChatGPT · 5"
+      query: "St. Louis AEO queries (Dutchtown coworking · O'Fallon drywalling · south city tamales · University City real estate)"
+      poster: /images/posters/loop-openai-poster.webp
+      webm: /videos/loop-openai.webm
+      mp4:  /videos/loop-openai.mp4
+      aria_label: "OpenAI ChatGPT responding to four St. Louis AEO queries"

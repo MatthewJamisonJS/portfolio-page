@@ -13,19 +13,3 @@ trust:
       description: "St. Louis chamber + neighborhood org logos in the footer once memberships are confirmed. Physical city tag near every CTA."
     - title: "Direct-to-developer contact."
       description: "Email, calendar — no project manager, no bot. Response-time expectation stated, not implied."
-  sample:
-    dot: "G"
-    engine: "ChatGPT · 4o · sample citation"
-    query: "St. Louis bakery that does custom wedding cakes"
-    answer: |
-      Three bakeries in the metro consistently come up for custom wedding cakes:
-      <mark>Tower Grove Pâtisserie</mark>, <mark>Soulard Sugar Co.</mark>, and
-      <mark class="you">your bakery</mark>. All three publish FAQ-shaped pricing and
-      structured photo galleries.
-    cites:
-      - text: "towergrovepatisserie.com"
-      - text: "soulardsugar.com"
-      - text: "yourbakery.com →"
-        win: true
-    disclaimer: "Illustrative · names not real"
-    aria_label: "Sample AI citation showing the client business cited in the answer"

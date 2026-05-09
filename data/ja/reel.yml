@@ -13,7 +13,7 @@ reel:
       mp4:  /videos/loop1-italian.mp4
       aria_label: "St. Louis の Hill 地区にあるベスト・イタリアン・レストランの AI 検索結果"
     - slug: dentist
-      enabled: false
+      enabled: true
       query: "Tower Grove dentist accepting new patients"
       poster: /images/posters/loop2-dentist-poster.webp
       webm: /videos/loop2-dentist.webm

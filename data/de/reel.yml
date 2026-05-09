@@ -13,7 +13,7 @@ reel:
       mp4:  /videos/loop1-italian.mp4
       aria_label: "AI-Suchergebnisse für bestes italienisches Restaurant auf The Hill, St. Louis"
     - slug: dentist
-      enabled: false
+      enabled: true
       query: "Tower Grove dentist accepting new patients"
       poster: /images/posters/loop2-dentist-poster.webp
       webm: /videos/loop2-dentist.webm

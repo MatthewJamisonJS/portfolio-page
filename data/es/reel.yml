@@ -20,7 +20,7 @@ reel:
       mp4:  /videos/loop2-dentist.mp4
       aria_label: "Resultados de búsqueda IA para dentistas en Tower Grove que aceptan nuevos pacientes en St. Louis"
     - slug: donuts
-      enabled: false
+      enabled: true
       query: "best donut shops near 63112"
       poster: /images/posters/loop3-donuts-poster.webp
       webm: /videos/loop3-donuts.webm

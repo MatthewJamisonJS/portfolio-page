@@ -19,11 +19,6 @@
       <h1 id="hero-headline">{{ .title | safeHTML }}</h1>
       <hr class="title-rule" aria-hidden="true">
       <p class="hero-subtitle">{{ .subtitle | markdownify }}</p>
-      {{ with .pillars_inline }}<p class="hero-pillars">{{ . }}</p>{{ end }}
-      {{ with .price_floor }}<p class="hero-price-floor">{{ . }}</p>{{ end }}
-      <p class="hero-byline">
-        Operating as <strong>{{ $brand.brand.name }}</strong>{{ if $brand.brand.show_legal_status }} <em>({{ $brand.brand.legal_status }})</em>{{ end }} · {{ $brand.brand.operator }}
-      </p>
       {{ if .button.enable }}{{ with .button }}
       <a href="{{ .link }}" id="start-project-btn" class="hero-cta page-scroll" data-service="brief">
         <span>{{ .label }}</span>

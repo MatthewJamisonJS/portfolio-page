@@ -327,3 +327,16 @@ other = "Setup & Hand-off"
 [dfy_tier]
 other = "Done-For-You"
 
+
+# AEO video reel
+[aeo_reel_live_capture]
+other = "live capture"
+
+[aeo_reel_pause]
+other = "Pause"
+
+[aeo_reel_resume]
+other = "Resume"
+
+[aeo_reel_description]
+other = "Looped screen recordings of Google Gemini and OpenAI ChatGPT generating responses to four St. Louis AEO test queries (Dutchtown coworking, O'Fallon drywalling, south city tamales, University City real estate). Both engines surface matthewjamison.dev or gatewaytechaeo.com in their cited sources."

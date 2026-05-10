@@ -1,16 +1,14 @@
 ---
 banner:
   enable: true
-  kicker: "Answer Engine Optimization · St. Louis"
-  title: "Watch AI pick the winners <em>on your block.</em>"
-  subtitle: "Then decide whether you want to be one of them. We help St. Louis small businesses get cited by ChatGPT, Perplexity, Claude, and Google's AI Overview — before your competitors are."
-  pillars_inline: "Technical · Authority · Content"
-  price_floor: "from $250 audit · $700 setup · $500–1,200/mo managed"
+  kicker: "Antwort-Engine-Optimierung · St. Louis"
+  title: "Beobachten Sie, wie KI die Gewinner <em>in Ihrem Viertel</em> auswählt."
+  subtitle: "Entscheiden Sie dann, ob Sie einer davon sein wollen. Wir helfen kleinen Unternehmen in St. Louis, von ChatGPT, Perplexity, Claude und Googles KI-Übersicht zitiert zu werden — bevor es Ihre Konkurrenz tut."
   button:
     enable: true
-    label: "Book a free AEO audit"
-    link: "?service=audit#contact"
-  secondary:
-    label: "Or send a brief"
+    label: "Kostenloses Brief senden"
     link: "?service=brief#contact"
+  secondary:
+    label: "Preise ansehen"
+    link: "#pricing"
 ---

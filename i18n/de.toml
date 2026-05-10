@@ -328,3 +328,16 @@ other = "Each demo is the same Hugo + schema templating I'd ship for your site â
 
 [demos_offer_cta]
 other = "Send a brief â†’"
+
+# AEO-Video-Reel
+[aeo_reel_live_capture]
+other = "Live-Aufnahme"
+
+[aeo_reel_pause]
+other = "Pause"
+
+[aeo_reel_resume]
+other = "Fortsetzen"
+
+[aeo_reel_description]
+other = "Bildschirmaufnahmen in Schleife von Google Gemini und OpenAI ChatGPT, die Antworten auf vier St. Louis AEO-Testanfragen erzeugen (Coworking in Dutchtown, Trockenbau in O'Fallon, Tamales in South City, Immobilien in University City). Beide Engines verweisen auf matthewjamison.dev oder gatewaytechaeo.com als zitierte Quellen."

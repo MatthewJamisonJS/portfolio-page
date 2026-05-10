@@ -4,13 +4,11 @@ banner:
   kicker: "Optimización para motores de respuesta · St. Louis"
   title: "Mira cómo la IA elige a los ganadores <em>de tu cuadra.</em>"
   subtitle: "Después decide si tú quieres ser uno de ellos. Ayudamos a pequeñas empresas de St. Louis a ser citadas por ChatGPT, Perplexity, Claude y la IA de Google — antes que tu competencia."
-  pillars_inline: "Técnica · Autoridad · Contenido"
-  price_floor: "desde $250 auditoría · $700 implementación · $500–1,200/mes gestionado"
   button:
     enable: true
-    label: "Reserva una auditoría AEO gratis"
-    link: "?service=audit#contact"
-  secondary:
-    label: "O envía un brief"
+    label: "Envía un brief gratis"
     link: "?service=brief#contact"
+  secondary:
+    label: "Ver los precios"
+    link: "#pricing"
 ---

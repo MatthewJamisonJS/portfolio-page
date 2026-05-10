@@ -29,12 +29,13 @@ module.exports = {
       'hero-subtitle', 'hero-pillars', 'hero-price-floor', 'hero-byline',
       'hero-cta', 'hero-cta-secondary',
       'mark', 'keystone',
-      // AI-citation reel
-      'ai-reel', 'ai-reel-meta', 'ai-reel-eyebrow', 'ai-reel-cycle',
-      'ai-reel-stack', 'ai-reel-disclaimer',
-      'ai-card', 'ai-card-bar', 'ai-card-dot', 'ai-card-engine',
-      'ai-card-query', 'ai-card-answer', 'ai-card-cites', 'ai-card-cite',
-      'is-win', 'you',
+      // AEO live-citation reel
+      'aeo-reel', 'aeo-reel-eyebrow', 'aeo-reel-eyebrow-dot',
+      'aeo-reel-card', 'aeo-reel-card-head',
+      'aeo-reel-engine', 'aeo-reel-tag',
+      'aeo-reel-frame', 'aeo-reel-video', 'aeo-reel-fallback',
+      'aeo-reel-foot', 'aeo-reel-pause', 'aeo-reel-pause-icon',
+      'aeo-reel-pause-label', 'aeo-reel-disclaimer',
       // Method
       'method-section', 'method-title', 'method-intro', 'method-grid',
       'pillar-card', 'pillar-technical', 'pillar-authority', 'pillar-content',
@@ -84,7 +85,7 @@ module.exports = {
       /^pricing-/,
       /^faq-/,
       /^trust-/,
-      /^ai-/,
+      /^aeo-/,
       /^about-/
     ],
     greedy: [

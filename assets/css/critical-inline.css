@@ -408,25 +408,28 @@ a:hover { color: var(--brick-deep); }
     border-right: 0;
   }
 
-  /* Mobile zoom: fill the frame and crop the browser chrome so the
-     conversation column dominates. `cover` + scale + transform-origin
-     biased upward keeps the answer / citation text centered. Per-loop
-     `--reel-zoom` and `--reel-focus-y` let each engine be tuned without
-     touching the base rule (Gemini and ChatGPT frame their answer area
-     at slightly different vertical positions). */
+  /* Mobile zoom: crop out the browser chrome (top tabs/URL bar) AND
+     the left-side ChatGPT/Gemini sidebar so the answer column
+     dominates the frame. cover + scale + transform-origin biased
+     toward the right-of-center conversation column. Per-loop
+     `--reel-zoom`, `--reel-focus-x`, `--reel-focus-y` tune each engine
+     independently — ChatGPT recording has a wider left sidebar than
+     Gemini, so its X focus runs farther right. */
   .aeo-reel-card .aeo-reel-video {
     object-fit: cover;
-    object-position: center var(--reel-focus-y, 35%);
-    transform: scale(var(--reel-zoom, 1.4));
-    transform-origin: center var(--reel-focus-y, 35%);
+    object-position: var(--reel-focus-x, 60%) var(--reel-focus-y, 50%);
+    transform: scale(var(--reel-zoom, 2.0));
+    transform-origin: var(--reel-focus-x, 60%) var(--reel-focus-y, 50%);
   }
   .aeo-reel-card[data-loop="gemini"] {
-    --reel-zoom: 1.45;
-    --reel-focus-y: 38%;
+    --reel-zoom: 2.1;
+    --reel-focus-x: 62%;
+    --reel-focus-y: 52%;
   }
   .aeo-reel-card[data-loop="openai"] {
-    --reel-zoom: 1.45;
-    --reel-focus-y: 32%;
+    --reel-zoom: 2.4;
+    --reel-focus-x: 72%;
+    --reel-focus-y: 55%;
   }
   /* Bigger corner crosshairs at viewport scale so the editorial
      framing reads at phone size. */

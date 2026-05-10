@@ -29,7 +29,6 @@
       "meta",
       "nav",
       "noscript",
-      "ol",
       "option",
       "p",
       "path",
@@ -48,12 +47,6 @@
       "ul"
     ],
     "classes": [
-      "about-cred",
-      "about-cred-desc",
-      "about-cred-num",
-      "about-creds",
-      "about-quote",
-      "about-section",
       "active",
       "aeo-reel",
       "aeo-reel-card",
@@ -197,19 +190,9 @@
       "text-center",
       "title",
       "title-rule",
-      "trust-desc",
-      "trust-grid",
-      "trust-head",
-      "trust-item",
-      "trust-list",
-      "trust-num",
-      "trust-section",
-      "trust-title",
       "wow"
     ],
     "ids": [
-      "about",
-      "about-title",
       "aeo-reel-eyebrow",
       "blog",
       "body",
@@ -255,8 +238,6 @@
       "tier-audit-title",
       "tier-dfy-title",
       "tier-setup-title",
-      "trust",
-      "trust-title",
       "ビジネスコンテキスト"
     ]
   }

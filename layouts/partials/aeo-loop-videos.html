@@ -15,25 +15,73 @@
   <article class="aeo-reel-card" data-loop="{{ .slug }}">
     <header class="aeo-reel-card-head">
       <span class="aeo-reel-engine">{{ .engine | default .slug }}</span>
-      <span class="aeo-reel-tag" aria-hidden="true">snapshot</span>
+      <span class="aeo-reel-tag" aria-hidden="true">live capture</span>
     </header>
     <div class="aeo-reel-frame">
-      <img class="aeo-reel-still"
-           src="{{ .poster | relURL }}"
-           alt="{{ .aria_label }}"
-           width="800" height="500"
-           loading="lazy"
-           decoding="async">
+      <video class="aeo-reel-video"
+             autoplay loop muted playsinline
+             preload="metadata"
+             poster="{{ .poster | relURL }}"
+             width="800" height="500"
+             aria-label="{{ .aria_label }}">
+        <source src="{{ .webm | relURL }}" type="video/webm">
+        <source src="{{ .mp4 | relURL }}" type="video/mp4">
+      </video>
     </div>
   </article>
   {{ end }}
 
-  {{ with .disclaimer }}
   <footer class="aeo-reel-foot">
-    <p class="aeo-reel-disclaimer">{{ . }}</p>
+    <button class="aeo-reel-pause" type="button" aria-pressed="false" data-aeo-pause>
+      <span class="aeo-reel-pause-icon" aria-hidden="true">▮▮</span>
+      <span class="aeo-reel-pause-label">Pause</span>
+    </button>
+    {{ with .disclaimer }}<p class="aeo-reel-disclaimer">{{ . }}</p>{{ end }}
   </footer>
-  {{ end }}
 </figure>
+<script>
+  (function () {
+    var btn = document.querySelector('[data-aeo-pause]');
+    var videos = document.querySelectorAll('.aeo-reel-video');
+    if (!videos.length) return;
+
+    // Manual pause button (WCAG 2.2.2)
+    if (btn) {
+      btn.addEventListener('click', function () {
+        var paused = btn.getAttribute('aria-pressed') !== 'true';
+        btn.setAttribute('aria-pressed', paused ? 'true' : 'false');
+        btn.querySelector('.aeo-reel-pause-icon').textContent = paused ? '▶' : '▮▮';
+        btn.querySelector('.aeo-reel-pause-label').textContent = paused ? 'Resume' : 'Pause';
+        videos.forEach(function (v) {
+          v.dataset.userPaused = paused ? 'true' : 'false';
+          if (paused) {
+            v.pause();
+          } else {
+            var p = v.play();
+            if (p && p.catch) p.catch(function () {});
+          }
+        });
+      });
+    }
+
+    // Pause off-screen videos to save battery / CPU
+    if ('IntersectionObserver' in window) {
+      var io = new IntersectionObserver(function (entries) {
+        entries.forEach(function (entry) {
+          var v = entry.target;
+          if (v.dataset.userPaused === 'true') return;
+          if (entry.isIntersecting) {
+            var p = v.play();
+            if (p && p.catch) p.catch(function () {});
+          } else {
+            v.pause();
+          }
+        });
+      }, { threshold: 0.25 });
+      videos.forEach(function (v) { io.observe(v); });
+    }
+  })();
+</script>
 {{ end }}
 {{ end }}
 {{ end }}

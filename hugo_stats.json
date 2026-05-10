@@ -37,6 +37,7 @@
       "section",
       "select",
       "small",
+      "source",
       "span",
       "strong",
       "style",
@@ -44,7 +45,8 @@
       "svg",
       "textarea",
       "title",
-      "ul"
+      "ul",
+      "video"
     ],
     "classes": [
       "active",
@@ -57,8 +59,11 @@
       "aeo-reel-eyebrow-dot",
       "aeo-reel-foot",
       "aeo-reel-frame",
-      "aeo-reel-still",
+      "aeo-reel-pause",
+      "aeo-reel-pause-icon",
+      "aeo-reel-pause-label",
       "aeo-reel-tag",
+      "aeo-reel-video",
       "border-meghna",
       "brief-form",
       "btn",

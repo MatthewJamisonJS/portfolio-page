@@ -326,12 +326,16 @@ a:hover { color: var(--brick-deep); }
 .hero-cta-secondary:hover { color: var(--brick); border-bottom-color: var(--brick); }
 
 @media (max-width: 900px) {
-  .hero-stack { grid-template-columns: 1fr; }
-  .hero-area { padding-top: 5rem; padding-bottom: 4rem; }
-  .hero-copy { align-items: center; text-align: center; }
+  :root {
+    --pad-y: clamp(3.75rem, 9vw, 5rem);
+  }
+  .hero-stack { grid-template-columns: 1fr; gap: 2.75rem; }
+  .hero-area { padding-top: 5.5rem; padding-bottom: 5rem; }
+  .hero-copy { align-items: center; text-align: center; gap: 1.5rem; }
   .hero-corner-rule { justify-content: center; }
   .hero-subtitle { margin-left: auto; margin-right: auto; }
   .hero-cta, .hero-cta-secondary { align-self: center; }
+  .hero-stack .aeo-reel { display: none; }
 }
 
 /* ===================================
@@ -492,7 +496,7 @@ a:hover { color: var(--brick-deep); }
   border-top: 0;
 }
 
-.aeo-reel-video {
+.aeo-reel-still {
   display: block;
   width: 100%;
   height: 100%;
@@ -501,46 +505,8 @@ a:hover { color: var(--brick-deep); }
 }
 .aeo-reel-foot {
   display: flex;
-  flex-direction: column;
   justify-content: center;
-  align-items: center;
-  gap: 12px;
   margin-top: 4px;
-}
-.aeo-reel-pause {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  font-family: var(--font-mono);
-  font-size: 0.6875rem;
-  letter-spacing: 0.16em;
-  text-transform: uppercase;
-  color: var(--bone);
-  background: var(--ink);
-  border: 1px solid var(--ink);
-  border-radius: 999px;
-  padding: 7px 16px 6px;
-  cursor: pointer;
-  transition: background 0.18s ease, border-color 0.18s ease, color 0.18s ease;
-}
-.aeo-reel-pause:hover,
-.aeo-reel-pause:focus-visible {
-  background: var(--brick);
-  border-color: var(--brick);
-  outline: none;
-}
-.aeo-reel-pause:focus-visible {
-  outline: 2px solid var(--bone);
-  outline-offset: 2px;
-}
-.aeo-reel-pause[aria-pressed="true"] {
-  background: var(--brick);
-  border-color: var(--brick);
-}
-.aeo-reel-pause-icon {
-  font-size: 0.5rem;
-  letter-spacing: -0.05em;
-  line-height: 1;
 }
 .aeo-reel-disclaimer {
   font-family: var(--font-mono);
@@ -563,7 +529,6 @@ a:hover { color: var(--brick-deep); }
   .aeo-reel-frame::after { width: 10px; height: 10px; top: 6px; left: 6px; }
   .aeo-reel-frame::after { top: auto; left: auto; bottom: 6px; right: 6px; }
   .aeo-reel-disclaimer { max-width: 100%; }
-  .aeo-reel-pause { justify-content: center; }
 }
 
 @media (prefers-reduced-motion: reduce) {

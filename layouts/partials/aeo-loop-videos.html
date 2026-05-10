@@ -15,51 +15,25 @@
   <article class="aeo-reel-card" data-loop="{{ .slug }}">
     <header class="aeo-reel-card-head">
       <span class="aeo-reel-engine">{{ .engine | default .slug }}</span>
-      <span class="aeo-reel-tag" aria-hidden="true">live capture</span>
+      <span class="aeo-reel-tag" aria-hidden="true">snapshot</span>
     </header>
     <div class="aeo-reel-frame">
-      <video class="aeo-reel-video"
-             autoplay loop muted playsinline
-             preload="metadata"
-             poster="{{ .poster | relURL }}"
-             width="800" height="500"
-             aria-label="{{ .aria_label }}">
-        <source src="{{ .webm | relURL }}" type="video/webm">
-        <source src="{{ .mp4 | relURL }}" type="video/mp4">
-      </video>
+      <img class="aeo-reel-still"
+           src="{{ .poster | relURL }}"
+           alt="{{ .aria_label }}"
+           width="800" height="500"
+           loading="lazy"
+           decoding="async">
     </div>
   </article>
   {{ end }}
 
+  {{ with .disclaimer }}
   <footer class="aeo-reel-foot">
-    <button class="aeo-reel-pause" type="button" aria-pressed="false" data-aeo-pause>
-      <span class="aeo-reel-pause-icon" aria-hidden="true">▮▮</span>
-      <span class="aeo-reel-pause-label">Pause</span>
-    </button>
-    {{ with .disclaimer }}<p class="aeo-reel-disclaimer">{{ . }}</p>{{ end }}
+    <p class="aeo-reel-disclaimer">{{ . }}</p>
   </footer>
+  {{ end }}
 </figure>
-<script>
-  (function () {
-    var btn = document.querySelector('[data-aeo-pause]');
-    if (!btn) return;
-    var videos = document.querySelectorAll('.aeo-reel-video');
-    btn.addEventListener('click', function () {
-      var paused = btn.getAttribute('aria-pressed') !== 'true';
-      btn.setAttribute('aria-pressed', paused ? 'true' : 'false');
-      btn.querySelector('.aeo-reel-pause-icon').textContent = paused ? '▶' : '▮▮';
-      btn.querySelector('.aeo-reel-pause-label').textContent = paused ? 'Resume' : 'Pause';
-      videos.forEach(function (v) {
-        if (paused) {
-          v.pause();
-        } else {
-          var p = v.play();
-          if (p && p.catch) p.catch(function () {});
-        }
-      });
-    });
-  })();
-</script>
 {{ end }}
 {{ end }}
 {{ end }}

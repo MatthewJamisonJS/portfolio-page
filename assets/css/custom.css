@@ -178,8 +178,10 @@
 }
 .pillar-bullets li:last-child { border-bottom: 1px solid var(--rule); }
 @media (max-width: 768px) {
-  .pillar-card { padding: 1.75rem 1rem 1.25rem; }
+  .method-grid { gap: 2.5rem 0; }
+  .pillar-card { padding: 2rem 1rem 1.5rem; }
   .pillar-title { font-size: 2rem; }
+  .pillar-bullets li { padding: 0.875rem 0; font-size: 1rem; }
 }
 
 /* ----- Pricing (three tiers) ----- */

@@ -335,7 +335,61 @@ a:hover { color: var(--brick-deep); }
   .hero-corner-rule { justify-content: center; }
   .hero-subtitle { margin-left: auto; margin-right: auto; }
   .hero-cta, .hero-cta-secondary { align-self: center; }
-  .hero-stack .aeo-reel { display: none; }
+
+  /* Reel on mobile: each card claims a full viewport so the user
+     scrolls one engine recording at a time below the hero CTAs.
+     100svh keeps layout stable as iOS/Android chrome appears.
+     align-items + text-align center the engine label, frame, and
+     footer on the X axis; justify-content centers on Y. */
+  .hero-stack .aeo-reel {
+    gap: 0;
+    margin-top: 1.5rem;
+    width: 100%;
+    max-width: 100%;
+    min-width: 0; /* break default grid-item min-width: auto so frame can shrink below 600px */
+    box-sizing: border-box;
+  }
+  .aeo-reel-eyebrow {
+    padding: 0 1rem;
+    justify-content: center;
+  }
+  .aeo-reel-card {
+    min-height: 100vh;
+    min-height: 100svh;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    padding: 1.5rem 1rem;
+    box-sizing: border-box;
+    width: 100%;
+    text-align: center;
+  }
+  .aeo-reel-card + .aeo-reel-card {
+    border-top: 1px solid var(--rule);
+  }
+  .aeo-reel-card-head {
+    width: 100%;
+    max-width: 600px;
+    justify-content: center;
+    flex-wrap: wrap;
+    row-gap: 6px;
+  }
+  .aeo-reel-frame {
+    width: 100%;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    aspect-ratio: 16 / 10;
+  }
+  .aeo-reel-foot {
+    width: 100%;
+    margin-top: 0;
+    padding: 1.25rem 1rem 0;
+    border-top: 1px solid var(--rule);
+    flex-direction: column;
+    align-items: center;
+    gap: 0.75rem;
+  }
 }
 
 /* ===================================
@@ -496,13 +550,6 @@ a:hover { color: var(--brick-deep); }
   border-top: 0;
 }
 
-.aeo-reel-still {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  background: var(--ink);
-}
 .aeo-reel-foot {
   display: flex;
   justify-content: center;

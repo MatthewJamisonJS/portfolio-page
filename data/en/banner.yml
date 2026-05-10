@@ -3,7 +3,7 @@ banner:
   enable: true
   kicker: "Answer Engine Optimization · St. Louis"
   title: "Watch AI pick the winners <em>on your block.</em>"
-  subtitle: "Then decide whether you want to be one of them. We help St. Louis small businesses get cited by ChatGPT, Perplexity, Claude, and Google's AI Overview — before your competitors are."
+  subtitle: "Then decide whether you want to be one of them. We help St. Louis small businesses get cited by ChatGPT, Perplexity, Claude, and Google's AI Overview."
   button:
     enable: true
     label: "Send a free brief"

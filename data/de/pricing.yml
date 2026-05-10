@@ -1,15 +1,14 @@
-# TODO: translate to German
 pricing:
   enable: true
-  title: "Three honest tiers"
-  pick_label: "How to pick"
-  pick_text: "If you have time and want to learn — Audit. If you want it built right but you'll run it after — Setup & Hand-off. If you want it managed and you don't want to think about it — Done-For-You."
-  footnote: "Audit credits toward Setup if you continue. No long contracts. We cap year one at 5 St. Louis clients — slow growth means deep service."
+  title: "Drei ehrliche Stufen"
+  pick_label: "So wählen Sie"
+  pick_text: "Wenn Sie Zeit haben und es lernen wollen — Audit. Wenn Sie wollen, dass es richtig gebaut wird, aber Sie es danach selbst betreiben — Setup und Übergabe. Wenn Sie es verwaltet wissen wollen und nicht darüber nachdenken müssen — Done-For-You."
+  footnote: "Der Audit wird auf Setup angerechnet, wenn Sie weitermachen. Keine langen Verträge. Wir begrenzen das erste Jahr auf 5 Kunden im Großraum St. Louis — langsames Wachstum bedeutet tiefer Service."
   tiers:
     - slug: "audit"
       name: "Audit"
       price: "$250"
-      cadence: "one-time"
+      cadence: "einmalig"
       # Structured-price fields drive ProfessionalService.offers[].priceSpecification
       # in head.html (audit H7 fix). The visible `price` / `cadence` strings stay for
       # human display in the pricing card; the schema reads from these numeric fields.
@@ -18,55 +17,55 @@ pricing:
       price_currency: "USD"
       price_unit: "one-time"
       highlight: false
-      use_when: "You're skeptical and want to see the work before you commit. You'll fix things yourself afterwards."
+      use_when: "Sie sind skeptisch und wollen die Arbeit sehen, bevor Sie sich festlegen. Sie reparieren danach selbst."
       includes:
-        - "Full visibility audit"
-        - "Prioritized fix list"
-        - "1-hour walkthrough"
-        - "You implement"
-      cta_label: "Start with an audit"
+        - "Vollständiges Sichtbarkeits-Audit"
+        - "Priorisierte Mängelliste"
+        - "1-stündige Begehung"
+        - "Sie setzen es um"
+      cta_label: "Mit einem Audit starten"
       cta_link: "?service=audit#contact"
     - slug: "setup"
-      name: "Setup & Hand-off"
+      name: "Setup und Übergabe"
       price: "$700"
-      cadence: "one-time"
+      cadence: "einmalig"
       price_min: "700"
       price_max: "700"
       price_currency: "USD"
       price_unit: "one-time"
       highlight: true
-      use_when: "You want it built right, then you run it after a training session."
+      use_when: "Sie wollen, dass es richtig gebaut wird, und betreiben es nach einer Schulungssitzung selbst."
       includes:
-        - "Everything in Audit"
-        - "Implementation done"
-        - "Training session"
-        - "You run it after"
-      cta_label: "Pick Setup & Hand-off"
+        - "Alles aus Audit"
+        - "Umsetzung erfolgt"
+        - "Schulungssitzung"
+        - "Sie betreiben es danach"
+      cta_label: "Setup und Übergabe wählen"
       cta_link: "?service=setup#contact"
     - slug: "dfy"
       name: "Done-For-You"
       price: "$500–1,200"
-      cadence: "per month"
+      cadence: "pro Monat"
       price_min: "500"
       price_max: "1200"
       price_currency: "USD"
       price_unit: "per month"
       highlight: false
-      use_when: "You have a budget but no time. You want it managed end-to-end."
+      use_when: "Sie haben Budget, aber keine Zeit. Sie wollen, dass es Ende-zu-Ende verwaltet wird."
       includes:
-        - "Everything in Setup"
-        - "Monthly optimization"
-        - "Content & reviews"
-        - "Reporting + strategy"
-      cta_label: "Talk about a retainer"
+        - "Alles aus Setup"
+        - "Monatliche Optimierung"
+        - "Inhalte und Bewertungen"
+        - "Reporting + Strategie"
+      cta_label: "Über einen Retainer sprechen"
       cta_link: "?service=dfy#contact"
-  # TODO: translate to German. Schema-only Offer; mirrored from data/en/pricing.yml.
+  # Schema-only Offer; mirrored from data/en/pricing.yml.
   # Consumed by ProfessionalService.offers in head.html. Audit H6 reframe.
   intake:
     enable: true
-    name: "Project brief intake"
-    description: "Email-first intake. First reply within 48–96 hours."
+    name: "Projekt-Brief-Eingang"
+    description: "E-Mail-erste Aufnahme. Erste Antwort innerhalb von 48 bis 96 Stunden."
     price: "0"
     price_currency: "USD"
     url_path: "?service=brief#contact"
-    category: "Free consultation"
+    category: "Kostenlose Beratung"

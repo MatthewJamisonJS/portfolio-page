@@ -1,40 +1,39 @@
-# TODO: translate to German
 faq:
   enable: true
-  title: "Common questions"
+  title: "Häufige Fragen"
   items:
-    - question: "What is AEO and how is it different from SEO?"
-      answer: "AEO (Answer Engine Optimization) is the practice of structuring your site so AI tools like ChatGPT, Perplexity, and Google's AI Overview cite you when someone asks a question. SEO targets the ten blue links. AEO targets being the quoted answer. The work overlaps — schema, page speed, content quality — but the goal is different."
+    - question: "Was ist AEO und worin unterscheidet es sich von SEO?"
+      answer: "AEO (Answer Engine Optimization, Optimierung für Antwort-Engines) ist die Praxis, Ihre Website so zu strukturieren, dass KI-Tools wie ChatGPT, Perplexity und Googles KI-Übersicht Sie zitieren, wenn jemand eine Frage stellt. SEO zielt auf die zehn blauen Links. AEO zielt darauf, die zitierte Antwort zu sein. Die Arbeit überschneidet sich — Schema, Seitengeschwindigkeit, Inhaltsqualität — aber das Ziel ist ein anderes."
 
-    - question: "Is AI search really replacing Google?"
-      answer: "Not entirely, but the share is shifting fast. <a href='https://www.gartner.com/en/newsroom/press-releases/2024-02-19-gartner-predicts-search-engine-volume-will-drop-25-percent-by-2026-due-to-ai-chatbots-and-other-virtual-agents' rel='external nofollow'>Gartner forecasts traditional search volume will drop 25% by 2026</a>. <a href='https://business.adobe.com/blog/ai-traffic-surge-retail-sites-not-machine-readable' rel='external nofollow'>Adobe Digital Insights reported AI traffic to U.S. retail sites grew 393% year-over-year in Q1 2026</a>. The customers asking AI for recommendations are real, and they're a growing share."
+    - question: "Ersetzt KI-Suche tatsächlich Google?"
+      answer: "Nicht vollständig, aber der Anteil verschiebt sich schnell. <a href='https://www.gartner.com/en/newsroom/press-releases/2024-02-19-gartner-predicts-search-engine-volume-will-drop-25-percent-by-2026-due-to-ai-chatbots-and-other-virtual-agents' rel='external nofollow'>Gartner prognostiziert, dass das traditionelle Suchvolumen bis 2026 um 25 % sinkt</a>. <a href='https://business.adobe.com/blog/ai-traffic-surge-retail-sites-not-machine-readable' rel='external nofollow'>Adobe Digital Insights meldete, dass der KI-Traffic auf US-Einzelhandelsseiten im 1. Quartal 2026 um 393 % im Jahresvergleich gestiegen ist</a>. Die Kunden, die KI um Empfehlungen bitten, sind real, und ihr Anteil wächst."
 
-    - question: "How much does AEO cost?"
-      answer: "Three tiers. Audit is $250 one-time. Setup and Hand-off is $700 one-time. Done-For-You runs $500 to $1,200 per month. We don't hide the prices and we don't quote different rates to different prospects. The tier you pick depends on whether you want to learn it, run it after, or have us manage it."
+    - question: "Was kostet AEO?"
+      answer: "Drei Stufen. Audit: 250 USD einmalig. Setup und Übergabe: 700 USD einmalig. Done-For-You: 500 bis 1.200 USD pro Monat. Wir verbergen Preise nicht und machen unterschiedlichen Interessenten keine unterschiedlichen Angebote. Welche Stufe passt, hängt davon ab, ob Sie es lernen, danach selbst betreiben oder es uns überlassen wollen."
 
-    - question: "How long until I see results?"
-      answer: "First measurable changes in about 30 days. Steady-state results around month six. The work is foundational — month one usually looks like a net loss because we're fixing things that should have been fixed before. By month twelve the curve compounds. Anyone promising faster is either lying or doing something that gets your business penalized."
+    - question: "Wie lange dauert es bis zu Ergebnissen?"
+      answer: "Erste messbare Veränderungen in etwa 30 Tagen. Stabile Ergebnisse um den sechsten Monat. Die Arbeit ist Fundamentarbeit — der erste Monat sieht meist nach einem Nettoverlust aus, weil wir Dinge reparieren, die schon vorher hätten in Ordnung sein sollen. Bis zum zwölften Monat verstärkt sich die Kurve. Wer Schnelleres verspricht, lügt oder tut etwas, das Ihr Geschäft bestraft."
 
-    - question: "Why are your prices so much lower than other agencies?"
-      answer: "Two reasons. We cap year one at 5 St. Louis clients, so we don't carry agency overhead. And we run the actual work ourselves — there's no project manager, no account executive, no slide deck. Slow growth means deep service. If you want a logo on a portfolio of 200 clients, we are not the right fit."
+    - question: "Warum sind Ihre Preise so viel niedriger als bei anderen Agenturen?"
+      answer: "Zwei Gründe. Wir begrenzen das erste Jahr auf 5 Kunden im Großraum St. Louis, also tragen wir keine Agentur-Gemeinkosten. Und wir erledigen die Arbeit selbst — kein Projektmanager, kein Account Executive, keine Präsentation. Langsames Wachstum bedeutet tiefen Service. Wenn Sie ein Logo in einem 200-Kunden-Portfolio wollen, sind wir nicht die Richtigen."
 
-    - question: "Can you guarantee a #1 ranking or a ChatGPT citation?"
-      answer: "No, and anyone who does is lying or breaking Google's rules. What we guarantee is the work itself: every month you see exactly what we did, you keep full access to your accounts, and you can stop any time. The result we shoot for is realistic ROI math, not a position promise."
+    - question: "Können Sie Platz 1 oder eine ChatGPT-Zitation garantieren?"
+      answer: "Nein, und wer es verspricht, lügt oder verstößt gegen Googles Richtlinien. Was wir garantieren, ist die Arbeit selbst: Sie sehen jeden Monat genau, was wir getan haben, behalten vollen Zugriff auf Ihre Konten und können jederzeit aufhören. Das Ziel, das wir anstreben, ist eine realistische ROI-Rechnung, kein Positionsversprechen."
 
-    - question: "What if I already have an SEO person?"
-      answer: "AEO and SEO overlap, so good SEO work makes our job easier. We'll often coordinate with an existing person rather than replace them. If your SEO setup is solid, the audit is the right starting point — it tells you exactly which AEO-specific gaps need closing without redoing what already works."
+    - question: "Was ist, wenn ich bereits eine SEO-Person habe?"
+      answer: "AEO und SEO überschneiden sich, gute SEO-Arbeit erleichtert also unsere. Wir koordinieren oft mit einer bestehenden Person, anstatt sie zu ersetzen. Wenn Ihr SEO-Setup solide ist, ist der Audit der richtige Ausgangspunkt — er zeigt genau, welche AEO-spezifischen Lücken zu schließen sind, ohne das zu wiederholen, was bereits funktioniert."
 
-    - question: "What if I don't even have a website?"
-      answer: "You can absolutely get cited by AI without a website. AI engines pull from Google Business Profile, Yelp, Foursquare, Apple Business Connect, and others. We'll claim and complete those first. A basic five-page site comes second. The site is the one piece you fully control, but it's not the foundation — your business listings are."
+    - question: "Was ist, wenn ich nicht einmal eine Website habe?"
+      answer: "Sie können auch ohne Website von KI zitiert werden. KI-Engines beziehen Daten aus Google Business Profile, Yelp, Foursquare, Apple Business Connect und anderen. Diese beanspruchen und vervollständigen wir zuerst. Eine einfache fünfseitige Website kommt danach. Die Website ist das Element, das Sie vollständig kontrollieren, aber nicht das Fundament — Ihre Brancheneinträge sind es."
 
-    - question: "What about my Google Business Profile?"
-      answer: "GBP is the single highest-ROI lever for local businesses. A complete, optimized GBP can move a business into the local 3-pack within 30–60 days with no other changes. If your profile is unclaimed, half empty, or missing photos, that's where every engagement starts. The <a href='https://whitespark.ca/local-search-ranking-factors/' rel='external nofollow'>Whitespark 2024 ranking factors study</a> still puts GBP at #1 for local pack."
+    - question: "Was ist mit meinem Google Business Profile?"
+      answer: "GBP ist der Hebel mit dem höchsten ROI für lokale Unternehmen. Ein vollständiges, optimiertes GBP kann ein Unternehmen ohne weitere Änderungen innerhalb von 30 bis 60 Tagen in das lokale 3-Pack heben. Wenn Ihr Profil nicht beansprucht, halb leer oder ohne Fotos ist, beginnt dort jedes Engagement. Die <a href='https://whitespark.ca/local-search-ranking-factors/' rel='external nofollow'>Whitespark-Studie 2024 zu lokalen Ranking-Faktoren</a> setzt GBP weiterhin auf Platz 1 für das Local Pack."
 
-    - question: "What if I want to stop?"
-      answer: "Stop. You own everything we touch — your domain, your GBP, your accounts, your content. We have no contract longer than month-to-month. If the work isn't paying off, you should leave, and honestly we'd rather know. Locking clients in is a sign that the work isn't good enough to keep them voluntarily."
+    - question: "Was ist, wenn ich aufhören will?"
+      answer: "Hören Sie auf. Sie besitzen alles, was wir berühren — Ihre Domain, Ihr GBP, Ihre Konten, Ihre Inhalte. Keine Verträge länger als von Monat zu Monat. Wenn die Arbeit sich nicht auszahlt, sollten Sie gehen, und ehrlich gesagt wollen wir das wissen. Kunden festzuhalten ist ein Zeichen dafür, dass die Arbeit nicht gut genug ist, um sie freiwillig zu halten."
 
-    - question: "Is 'AEO' the same as Answer Engine Optimization?"
-      answer: "Yes. We use AEO as shorthand throughout the site. It's the same thing as Generative Engine Optimization (GEO) — the industry hasn't settled on one term yet. Note: 'AEO' is also American Eagle Outfitters' stock ticker. Different industry, different trademark class. Our service is in the marketing-services class, not retail apparel."
+    - question: "Ist 'AEO' dasselbe wie Answer Engine Optimization?"
+      answer: "Ja. Wir verwenden AEO seitenweit als Abkürzung. Es ist dasselbe wie Generative Engine Optimization (GEO) — die Branche hat sich noch nicht auf einen Begriff geeinigt. Hinweis: 'AEO' ist auch das Börsenkürzel von American Eagle Outfitters. Andere Branche, andere Markenklasse. Unser Service liegt in der Marketing-Service-Klasse, nicht im Bekleidungseinzelhandel."
 
-    - question: "Can I do this myself with the audit?"
-      answer: "Yes. The Audit tier is built for that. You get the prioritized fix list, a 1-hour walkthrough, and you implement at your pace. Most owners can fix the high-impact items in an afternoon — robots.txt, Bing Webmaster Tools, schema basics. The audit credits toward Setup if you change your mind later."
+    - question: "Kann ich es mit dem Audit selbst machen?"
+      answer: "Ja. Die Audit-Stufe ist genau dafür gedacht. Sie erhalten die priorisierte Mängelliste und eine einstündige Begehung und setzen es in Ihrem Tempo um. Die meisten Inhaber können die wirkungsvollen Punkte an einem Nachmittag erledigen — robots.txt, Bing Webmaster Tools, Schema-Grundlagen. Der Audit wird auf das Setup angerechnet, falls Sie es sich später anders überlegen."

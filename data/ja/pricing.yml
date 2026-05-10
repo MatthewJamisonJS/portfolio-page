@@ -1,15 +1,14 @@
-# TODO: translate to Japanese
 pricing:
   enable: true
-  title: "Three honest tiers"
-  pick_label: "How to pick"
-  pick_text: "If you have time and want to learn — Audit. If you want it built right but you'll run it after — Setup & Hand-off. If you want it managed and you don't want to think about it — Done-For-You."
-  footnote: "Audit credits toward Setup if you continue. No long contracts. We cap year one at 5 St. Louis clients — slow growth means deep service."
+  title: "正直な 3 つのプラン"
+  pick_label: "選び方"
+  pick_text: "時間があって学びたい方は — Audit(監査)。きちんと構築してもらい、運用は自分でやりたい方は — Setup & Hand-off(導入と引き渡し)。任せきりにして考えたくない方は — Done-For-You(完全代行)。"
+  footnote: "継続される場合、Audit の費用は Setup に充当されます。長期契約なし。初年度はセントルイス都市圏で 5 社限定 — 緩やかな成長は深いサービスを意味します。"
   tiers:
     - slug: "audit"
       name: "Audit"
       price: "$250"
-      cadence: "one-time"
+      cadence: "一回"
       # Structured-price fields drive ProfessionalService.offers[].priceSpecification
       # in head.html (audit H7 fix). The visible `price` / `cadence` strings stay for
       # human display in the pricing card; the schema reads from these numeric fields.
@@ -18,55 +17,55 @@ pricing:
       price_currency: "USD"
       price_unit: "one-time"
       highlight: false
-      use_when: "You're skeptical and want to see the work before you commit. You'll fix things yourself afterwards."
+      use_when: "懐疑的で、契約前に作業内容を見たい方。あとはご自身で対応します。"
       includes:
-        - "Full visibility audit"
-        - "Prioritized fix list"
-        - "1-hour walkthrough"
-        - "You implement"
-      cta_label: "Start with an audit"
+        - "可視性の完全監査"
+        - "優先順位付けされた修正リスト"
+        - "1 時間のウォークスルー"
+        - "実装はご自身で"
+      cta_label: "Audit から始める"
       cta_link: "?service=audit#contact"
     - slug: "setup"
       name: "Setup & Hand-off"
       price: "$700"
-      cadence: "one-time"
+      cadence: "一回"
       price_min: "700"
       price_max: "700"
       price_currency: "USD"
       price_unit: "one-time"
       highlight: true
-      use_when: "You want it built right, then you run it after a training session."
+      use_when: "正しく構築してもらい、トレーニングのうえで運用は自分でやりたい方。"
       includes:
-        - "Everything in Audit"
-        - "Implementation done"
-        - "Training session"
-        - "You run it after"
-      cta_label: "Pick Setup & Hand-off"
+        - "Audit の内容すべて"
+        - "実装の実行"
+        - "トレーニングセッション"
+        - "あとはご自身で運用"
+      cta_label: "Setup & Hand-off を選ぶ"
       cta_link: "?service=setup#contact"
     - slug: "dfy"
       name: "Done-For-You"
       price: "$500–1,200"
-      cadence: "per month"
+      cadence: "月額"
       price_min: "500"
       price_max: "1200"
       price_currency: "USD"
       price_unit: "per month"
       highlight: false
-      use_when: "You have a budget but no time. You want it managed end-to-end."
+      use_when: "予算はあるが時間がない方。エンドツーエンドで管理してもらいたい方。"
       includes:
-        - "Everything in Setup"
-        - "Monthly optimization"
-        - "Content & reviews"
-        - "Reporting + strategy"
-      cta_label: "Talk about a retainer"
+        - "Setup の内容すべて"
+        - "毎月の最適化"
+        - "コンテンツとレビュー"
+        - "レポーティング + 戦略"
+      cta_label: "リテイナーについて相談"
       cta_link: "?service=dfy#contact"
-  # TODO: translate to Japanese. Schema-only Offer; mirrored from data/en/pricing.yml.
+  # Schema-only Offer; mirrored from data/en/pricing.yml.
   # Consumed by ProfessionalService.offers in head.html. Audit H6 reframe.
   intake:
     enable: true
-    name: "Project brief intake"
-    description: "Email-first intake. First reply within 48–96 hours."
+    name: "プロジェクトブリーフ受付"
+    description: "メール優先の受付。初回返信は 48〜96 時間以内。"
     price: "0"
     price_currency: "USD"
     url_path: "?service=brief#contact"
-    category: "Free consultation"
+    category: "無料相談"

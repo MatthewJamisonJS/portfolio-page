@@ -2,6 +2,7 @@
 /public/
 /resources/_gen/
 .hugo_build.lock
+hugo_stats.json
 
 # Lighthouse CI raw runs (consolidated baselines committed separately)
 .lighthouseci/

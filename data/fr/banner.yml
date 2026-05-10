@@ -3,7 +3,7 @@ banner:
   enable: true
   kicker: "Optimisation pour moteurs de réponse · St. Louis"
   title: "Regardez l'IA choisir les gagnants <em>de votre quartier.</em>"
-  subtitle: "Puis décidez si vous voulez être l'un d'eux. Nous aidons les petites entreprises de St. Louis à être citées par ChatGPT, Perplexity, Claude et l'aperçu IA de Google — avant vos concurrents."
+  subtitle: "Puis décidez si vous voulez être l'un d'eux. Nous aidons les petites entreprises de St. Louis à être citées par ChatGPT, Perplexity, Claude et l'aperçu IA de Google."
   button:
     enable: true
     label: "Envoyer un brief gratuit"

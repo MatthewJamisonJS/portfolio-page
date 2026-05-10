@@ -3,7 +3,7 @@ banner:
   enable: true
   kicker: "アンサーエンジン最適化 · セントルイス"
   title: "AI があなたの街区の勝者を選ぶのを <em>見届けよう。</em>"
-  subtitle: "そのうえで、あなたもその一人になりたいか決めてください。セントルイスの小規模ビジネスが、競合より先に ChatGPT、Perplexity、Claude、Google の AI 概要から引用されるよう支援します。"
+  subtitle: "そのうえで、あなたもその一人になりたいか決めてください。セントルイスの小規模ビジネスが ChatGPT、Perplexity、Claude、Google の AI 概要から引用されるよう支援します。"
   button:
     enable: true
     label: "無料ブリーフを送る"

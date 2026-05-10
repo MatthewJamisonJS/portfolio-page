@@ -33,7 +33,7 @@ module.exports = {
       'aeo-reel', 'aeo-reel-eyebrow', 'aeo-reel-eyebrow-dot',
       'aeo-reel-card', 'aeo-reel-card-head',
       'aeo-reel-engine', 'aeo-reel-tag',
-      'aeo-reel-frame', 'aeo-reel-video', 'aeo-reel-fallback',
+      'aeo-reel-frame', 'aeo-reel-video',
       'aeo-reel-foot', 'aeo-reel-pause', 'aeo-reel-pause-icon',
       'aeo-reel-pause-label', 'aeo-reel-disclaimer',
       // Method

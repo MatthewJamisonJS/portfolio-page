@@ -54,6 +54,18 @@
     var pauseLabel = btn ? btn.getAttribute('data-pause-label') : 'Pause';
     var resumeLabel = btn ? btn.getAttribute('data-resume-label') : 'Resume';
 
+    // Tighten clip-reel pacing — browser default 1.0× is too slow for the
+    // scroll-snap takeover; 1.7× lands closer to skim-speed without the
+    // tone-shift you get above ~2×. Re-applied on loadedmetadata / play
+    // because some engines reset playbackRate on each loop iteration.
+    var TARGET_RATE = 1.7;
+    function applyRate(v) { try { v.playbackRate = TARGET_RATE; } catch (e) {} }
+    videos.forEach(function (v) {
+      applyRate(v);
+      v.addEventListener('loadedmetadata', function () { applyRate(v); });
+      v.addEventListener('play', function () { applyRate(v); });
+    });
+
     // Honor prefers-reduced-motion (WCAG 2.3.3 / 2.2.2): suppress autoplay,
     // pre-pause both videos, mark user-paused so IO will not auto-resume.
     var reduceMotion = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;

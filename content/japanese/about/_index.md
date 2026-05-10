@@ -1,66 +1,65 @@
-<!-- TODO: translate to Japanese -->
 ---
-title: "About"
-description: "Matthew Jamison — Ruby on Rails developer at Concordia Publishing House (~1M users), now running Gateway Tech AEO for under-resourced St. Louis small businesses. Music identity, faith, family, and the engineering posture behind the consulting."
+title: "概要"
+description: "Matthew Jamison — セントルイスの AEO コンサルタント兼 Ruby on Rails 開発者。Shopify の 550 万以上の加盟店を支えるフレームワークが私の生計を立て、Gateway Tech AEO は同じエンジニアリングの厳格さをリソースの限られたセントルイスの中小企業へ届ける手段です。音楽のアイデンティティ、信仰、家族、そしてコンサルティングを支える姿勢について。"
 date: 2026-05-07
-lastmod: 2026-05-07
+lastmod: 2026-05-09
 draft: false
 type: "about"
 url: "/about/"
 schema_type: "AboutPage"
-keywords: ["Matthew Jamison", "Gateway Tech AEO", "St. Louis Rails developer", "Answer Engine Optimization consultant", "AEO", "Concordia Publishing House"]
+keywords: ["Matthew Jamison", "Gateway Tech AEO", "セントルイス AEO コンサルタント", "セントルイス Rails 開発者", "アンサーエンジン最適化コンサルタント", "AEO", "Ruby on Rails", "Shopify Rails モノリス"]
 ---
 
-I'm Matthew Jamison. I'm a Ruby on Rails developer at [Concordia Publishing House](https://www.cph.org/) — a Lutheran publisher in St. Louis whose flagship Rails 8 application serves around a million users — and I run [Gateway Tech AEO](https://gatewaytechaeo.com) on the side, a small Answer Engine Optimization practice for St. Louis small businesses. This page exists because someone hiring a solo operator deserves to know who they're hiring, what I actually do during the day, and why I kept the music side of the brand visible instead of hiding it.
+私は Matthew Jamison です。**セントルイスの AEO コンサルタント**であり、Ruby on Rails 開発者です。私が毎日扱うフレームワークは、Shopify の 550 万以上の加盟店、2025 年の取扱高 3,000 億ドル以上、そして毎秒およそ 1,900 万件の MySQL クエリを処理する [マジェスティック モノリス](https://rubyonrails.org/foundation/shopify) を支えるものと同じです。副業として [Gateway Tech AEO](https://gatewaytechaeo.com) を運営しています。セントルイスの中小企業向けの小さなアンサーエンジン最適化のプラクティスです。このページは、ひとり営業者を雇おうとする方が、誰を雇うのか、日中に実際に何をしているのか、そしてなぜ音楽の側をブランドから隠さず残しているのかを知るためのものです。
 
-## How I got here
+## ここに至るまで
 
-I started as a beat-maker. I grew up watching my cousin play drums at my father's church, moved through concert band and drumline, and ended up a session bass player for a handful of St. Louis bands. In 2020 I joined the [Sidechain Society](https://soundcloud.com/sidechain-society) collective and founded Matthew Jamison Music, LLC. That same year I started teaching myself to write Ruby. The transition is documented across my Bandcamp catalog and my GitHub commit history — a 56-track autobiographical album called *[The Journey](https://matthewjjamison.bandcamp.com/album/the-journey)* (January 2022) is the inflection-point record. By January 2024 I was releasing *[Shoot The J](https://matthewjjamison.bandcamp.com/album/shoot-the-j)*, an album with track titles written in actual Ruby, Rails, and SQL syntax — `validates :love, presence: true`, `structure.sql`, `bundle update --all`. Not a gimmick. By that point my brain was processing meaning in both beats and Ruby methods, and the album was the most honest description I could give of where the work lived.
+私はビートメイカーから始まりました。父の教会でいとこがドラムを叩くのを見ながら育ち、コンサートバンドとドラムラインを経て、セントルイスのいくつかのバンドでセッション ベーシストになりました。2020 年に [Sidechain Society](https://soundcloud.com/sidechain-society) コレクティブに加入し、Matthew Jamison Music, LLC を設立しました。その同じ年、独学で Ruby を書き始めました。この移行は私の Bandcamp カタログと GitHub のコミット履歴に記録されています — 56 トラックの自伝的アルバム *[The Journey](https://matthewjjamison.bandcamp.com/album/the-journey)*(2022 年 1 月)が転換点です。2024 年 1 月には *[Shoot The J](https://matthewjjamison.bandcamp.com/album/shoot-the-j)* をリリースしました。トラックタイトルが実際の Ruby、Rails、SQL の構文で書かれたアルバムです — `validates :love, presence: true`、`structure.sql`、`bundle update --all`。ギミックではありません。当時すでに、私の脳はビートと Ruby のメソッドの両方で意味を処理しており、このアルバムは仕事のありかを最も正直に説明できる方法でした。
 
-I've been at Concordia full-time since the transition. I've merged 194+ pull requests on a production Rails 8 codebase, work that's verifiable against [my GitHub profile](https://github.com/MatthewJamisonJS). The portfolio site you're reading this on is a Hugo static site with a complete schema.org `@graph`, hand-tuned Lighthouse scores, and a vendored theme I override partial-by-partial — also verifiable, also open to the public.
+移行以来フルタイムで本番 Rails を書いています。**本番 Rails 8 のコードベースで 194+ のプルリクエストをマージ**しており、これは [私の GitHub プロフィール](https://github.com/MatthewJamisonJS) で検証可能です。あなたが今読んでいるこのポートフォリオサイトは、完全な schema.org `@graph`、手で調整した Lighthouse スコア、そして部分テンプレートごとに上書きするベンダー管理のテーマを備えた Hugo の静的サイトです。これも検証可能で公開されています。
 
-## What I do day-to-day
+## 日々していること
 
-At Concordia I work on the application that runs the publisher's e-commerce, customer accounts, and content management. The stack is Rails 8 with PostgreSQL, served behind Cloudflare. The customers depend on it for products that are core to a religious tradition — that frames how I think about reliability, accessibility, and how much I'm willing to ship without a test.
+日中の仕事は Cloudflare の背後で動く PostgreSQL 上の Rails 8 アプリケーションです。Shopify のチェックアウトを支えるのと同じフレームワークを、ひとつの業界アプリケーションへ縮小したものです。マイグレーションのミスや雑なバリデーションが本物の顧客に響くスタックです — それが、信頼性、アクセシビリティ、そしてテストなしでどこまで出荷するかについての考え方を形作っています。
 
-After hours and on Saturdays I run Gateway Tech AEO. Three tiers, prices public, no contracts longer than month-to-month, capped at five year-one clients in the St. Louis metro. Most of the work is Google Business Profile, schema markup, robots.txt and llms.txt for AI crawlers, FAQ-shaped content with primary-source citations, and the kind of structured-data-first templating that gets a small business cited by [ChatGPT](https://chat.openai.com/), [Perplexity](https://perplexity.ai/), and Google's AI Overview rather than buried under a national chain in the ten blue links.
+業務時間外と土曜日は Gateway Tech AEO を運営します。三段階、価格は公開、月単位より長い契約は結ばず、セントルイス都市圏で初年度クライアントは 5 件を上限とします。仕事の大半は Google ビジネス プロフィール、スキーママークアップ、AI クローラー向けの robots.txt と llms.txt、一次情報を引用した FAQ 形式のコンテンツ、そして [ChatGPT](https://chat.openai.com/)、[Perplexity](https://perplexity.ai/)、Google の AI 概要に中小企業が引用されるようにする、構造化データ優先のテンプレートです。
 
-The transparency posture isn't a marketing choice — it's the only sustainable one for a solo practice. If I have to remember which prospect I quoted what, I lose. So everything is on the page: the prices, the cap, the methods, and the language about what I won't promise.
+透明性の姿勢はマーケティング上の選択ではなく、ひとり営業の唯一持続可能な選択です。誰にいくらと見積もったかを覚えておかなければならないなら、負けです。だから、価格、上限、手法、約束しない言葉まで、すべてページに載せています。
 
-## Why this practice exists
+## このプラクティスがある理由
 
-I get to do good engineering for an organization with the budget to maintain it. Most of the small businesses I know in St. Louis don't have that budget — and yet the answer engines are taking real traffic from them right now. [Gartner forecasts traditional search engine volume will drop 25% by 2026](https://www.gartner.com/en/newsroom/press-releases/2024-02-19-gartner-predicts-search-engine-volume-will-drop-25-percent-by-2026-due-to-ai-chatbots-and-other-virtual-agents); [Adobe Digital Insights reported AI traffic to U.S. retail sites grew 393% year-over-year in Q1 2026](https://business.adobe.com/blog/ai-traffic-surge-retail-sites-not-machine-readable). A roofing contractor or a Mexican restaurant doesn't have the in-house engineering to respond to that. Big agencies will respond by selling them a $10,000 retainer they can't afford. I think it's worth one of us showing up with the same methods at small-business prices and seeing how far that goes.
+私は予算のある組織のために本番品質のエンジニアリングを行えています。私が知るセントルイスの中小企業の大半にはその予算がありません — それでもアンサーエンジンは今まさに彼らから本物のトラフィックを奪っています。[Gartner は 2026 年までに従来の検索ボリュームが 25% 下がると予測し](https://www.gartner.com/en/newsroom/press-releases/2024-02-19-gartner-predicts-search-engine-volume-will-drop-25-percent-by-2026-due-to-ai-chatbots-and-other-virtual-agents)、[Adobe Digital Insights は米国の小売サイトへの AI トラフィックが 2026 年 Q1 に前年同期比 393% 成長したと報告しました](https://business.adobe.com/blog/ai-traffic-surge-retail-sites-not-machine-readable)。屋根工事業者やメキシカン レストランにはこれに対応する社内エンジニアリングはありません。大手代理店は彼らに払えない 1 万ドルのリテイナーを売って応えるでしょう。私たちのうち一人くらいは、同じ手法を中小企業価格で持って現れて、どこまで行けるか見る価値があると思います。
 
-That's what Gateway Tech AEO is. It's also why the year-one client cap is five — slow growth means I can actually do the work myself, and there is no project manager on the other end of the email.
+それが Gateway Tech AEO です。また、初年度クライアント 5 件の上限がある理由でもあります — ゆっくり育てれば、私自身で実作業ができ、メールの向こう側にプロジェクトマネージャーは存在しません。
 
-## Music is part of the brand
+## 音楽はブランドの一部
 
-I left the Bandcamp link in the music widget for a reason. The 30+ releases at [matthewjjamison.bandcamp.com](https://matthewjjamison.bandcamp.com) are part of the same person who's writing your schema and tuning your GBP listing. The current Bandcamp bio reads "A vessel grateful for expression healing-state." That's an accurate description of how I think the day-job and the side-project relate.
+理由があって Bandcamp のリンクは音楽ウィジェットに残しています。[matthewjjamison.bandcamp.com](https://matthewjjamison.bandcamp.com) の 30 以上のリリースは、あなたの schema を書き、GBP リスティングを調整しているのと同じ人間の一部です。今の Bandcamp バイオは "A vessel grateful for expression healing-state."(表現と癒やしの状態に感謝する器)です。日中の仕事と副業のプロジェクトの関係を私がどう考えているかを正確に表しています。
 
-If you're wondering whether you're hiring "the AEO guy" or "the music guy" — I am one person and the dual identity is the differentiator. The discipline a Rails developer brings to schema markup is the same discipline a producer brings to mixing a track. Both are about getting the structure exactly right so the listener doesn't have to work for it.
+「AEO の人」を雇っているのか「音楽の人」を雇っているのか迷っているなら — 一人の人間で、その二重のアイデンティティが差別化要因です。Rails 開発者がスキーママークアップに持ち込む規律は、プロデューサーがトラックをミックスするときの規律と同じです。どちらも、聞き手が苦労せずに済むように、構造を正確に整えることです。
 
-## Family
+## 家族
 
-I'm married to Berneshia, a minister at Refresh Community Church. We have two daughters; the older contributed vocals to "Jelly Asparaguys" on *Shoot The J*. The reason every commit, every release, and every line of this site happens around the family schedule is that the family is the work, and the work funds the family. If a project would compromise that, I won't take it. That's part of the year-one cap.
+私は Refresh Community Church の牧師である Berneshia と結婚しています。娘が二人いて、長女は *Shoot The J* の "Jelly Asparaguys" でボーカルを担当しました。コミット、リリース、このサイトの一行ごとが家族のスケジュールに合わせて行われる理由は、家族こそが仕事であり、仕事が家族を支えるからです。それを損なうプロジェクトは引き受けません。それも初年度上限の一部です。
 
-## Faith
+## 信仰
 
-A handful of my track titles cite scripture: Isaiah 40:31, Psalm 8:1, Matthew 23:26-28, James 1:2, Jeremiah 29:11, Isaiah 12:2, Isaiah 43:19. I'm not going to pretend that's not part of who I am — but I'm also not going to gate-keep clients on it. I work for non-Christian and non-religious clients on the same terms. The faith influences how I think about *how* I work, not *who* I work with.
+トラックタイトルのいくつかは聖書を引用しています:イザヤ書 40:31、詩篇 8:1、マタイ 23:26-28、ヤコブの手紙 1:2、エレミヤ書 29:11、イザヤ書 12:2、イザヤ書 43:19。それが私の一部であることを否定しません — しかし、それでクライアントを選別もしません。非キリスト教徒・非宗教のクライアントも同じ条件で受けます。信仰は、*どのように*働くかには影響しますが、*誰と*働くかには影響しません。
 
-## Things I cap
+## 限界として明示すること
 
-- **Year-one client cap: 5** in the St. Louis metro. After five active engagements, I close the form.
-- **No contracts longer than month-to-month.** You own everything I touch — your domain, your GBP, your accounts, your content — and you can stop any time.
-- **No agency overhead.** I do the work. There's no project manager, no account executive, no slide deck. If you need one of those things, I am not the right hire.
-- **No promises of #1 rankings or guaranteed AI citations.** Anyone who promises that is either lying or doing something that will get your business penalized. I commit to the work itself: every month you see exactly what I did and you keep full access.
+- **初年度クライアント上限: 5 件** セントルイス都市圏で。アクティブ案件が 5 件に達したらフォームを閉じます。
+- **月単位より長い契約はしません。** 私が触れるすべて — ドメイン、GBP、アカウント、コンテンツ — はあなたのものです。いつでも止められます。
+- **代理店オーバーヘッドはありません。** 作業は私がします。プロジェクトマネージャー、アカウントエグゼクティブ、スライド資料はありません。それらが必要なら、私は適任ではありません。
+- **「ランキング #1」「AI 引用の保証」はしません。** そう約束する人は嘘をついているか、あなたのビジネスをペナルティに導く何かをしています。私は作業そのものに対して責任を持ちます: 毎月、私が何をしたかを正確に見せ、あなたは完全なアクセスを保ちます。
 
-## Where to find me
+## 連絡先
 
-- Day job: [Concordia Publishing House](https://www.cph.org/)
-- Code: [github.com/MatthewJamisonJS](https://github.com/MatthewJamisonJS)
-- Music: [matthewjjamison.bandcamp.com](https://matthewjjamison.bandcamp.com)
+- 日中の仕事: 本番 Ruby on Rails — [Shopify を支えるフレームワーク](https://rubyonrails.org/foundation/shopify)(5.5M+ の加盟店、毎秒約 1,900 万 MySQL クエリ)
+- コード: [github.com/MatthewJamisonJS](https://github.com/MatthewJamisonJS)
+- 音楽: [matthewjjamison.bandcamp.com](https://matthewjjamison.bandcamp.com)
 - LinkedIn: [linkedin.com/in/matthew-jamison-65486bab](https://www.linkedin.com/in/matthew-jamison-65486bab/)
-- LLC site (forming): [gatewaytechaeo.com](https://gatewaytechaeo.com)
-- Email: [jamison.matthew@icloud.com](mailto:jamison.matthew@icloud.com) (until Cloudflare Email Routing for matthew@gatewaytechaeo.com is verified live)
+- LLC サイト(設立準備中): [gatewaytechaeo.com](https://gatewaytechaeo.com)
+- メール: [jamison.matthew@icloud.com](mailto:jamison.matthew@icloud.com)(matthew@gatewaytechaeo.com 向け Cloudflare Email Routing が稼働するまで)
 
-Intake is email-first — phone calls aren't part of how this practice runs. If you're considering working with me, send a brief: a link to your existing site, your city, a sentence on what your business does, and what you'd like AEO to fix. I reply within 48–96 hours with something specific to your business, not a generic pitch. If you're in St. Louis and would rather meet in person, that works too — same brief.
+依頼受付はメール優先です — 電話はこのプラクティスの運用に含まれません。私と仕事をするか検討中なら、ブリーフを送ってください: 既存サイトのリンク、街、ビジネスの内容を一文、AEO に何を直してほしいか。48〜96 時間以内に、定型ピッチではなく、あなたのビジネスに固有の返答を送ります。セントルイスにいて対面の方がよければ、それも対応可能です — 同じブリーフで。

@@ -1,66 +1,65 @@
-<!-- TODO: translate to German -->
 ---
-title: "About"
-description: "Matthew Jamison — Ruby on Rails developer at Concordia Publishing House (~1M users), now running Gateway Tech AEO for under-resourced St. Louis small businesses. Music identity, faith, family, and the engineering posture behind the consulting."
+title: "Über mich"
+description: "Matthew Jamison — AEO-Berater aus St. Louis und Ruby-on-Rails-Entwickler. Das Framework, das Shopifys 5,5 Mio.+ Händler trägt, zahlt meine Miete; Gateway Tech AEO ist mein Weg, dieselbe technische Sorgfalt zu kleinen Unternehmen in St. Louis mit knappen Mitteln zu bringen. Musikalische Identität, Glaube, Familie und die Haltung hinter der Beratung."
 date: 2026-05-07
-lastmod: 2026-05-07
+lastmod: 2026-05-09
 draft: false
 type: "about"
 url: "/about/"
 schema_type: "AboutPage"
-keywords: ["Matthew Jamison", "Gateway Tech AEO", "St. Louis Rails developer", "Answer Engine Optimization consultant", "AEO", "Concordia Publishing House"]
+keywords: ["Matthew Jamison", "Gateway Tech AEO", "AEO-Berater St. Louis", "Rails-Entwickler St. Louis", "Antwort-Engine-Optimierungs-Berater", "AEO", "Ruby on Rails", "Shopify Rails Monolith"]
 ---
 
-I'm Matthew Jamison. I'm a Ruby on Rails developer at [Concordia Publishing House](https://www.cph.org/) — a Lutheran publisher in St. Louis whose flagship Rails 8 application serves around a million users — and I run [Gateway Tech AEO](https://gatewaytechaeo.com) on the side, a small Answer Engine Optimization practice for St. Louis small businesses. This page exists because someone hiring a solo operator deserves to know who they're hiring, what I actually do during the day, and why I kept the music side of the brand visible instead of hiding it.
+Ich bin Matthew Jamison — **AEO-Berater aus St. Louis** und Ruby-on-Rails-Entwickler. Das Framework, mit dem ich täglich arbeite, ist dasselbe, das Shopifys 5,5 Mio.+ Händler, über 300 Mrd. USD Warenvolumen 2025 und den [majestätischen Monolithen](https://rubyonrails.org/foundation/shopify) trägt, der rund 19 Mio. MySQL-Abfragen pro Sekunde verarbeitet. Nebenbei betreibe ich [Gateway Tech AEO](https://gatewaytechaeo.com), eine kleine Antwort-Engine-Optimierungs-Praxis für Kleinunternehmen in St. Louis. Diese Seite gibt es, weil jemand, der einen Solo-Operator engagiert, wissen darf, wen er einstellt, was ich tagsüber wirklich mache und warum ich die musikalische Seite der Marke sichtbar gelassen habe, statt sie zu verstecken.
 
-## How I got here
+## Wie ich hierher kam
 
-I started as a beat-maker. I grew up watching my cousin play drums at my father's church, moved through concert band and drumline, and ended up a session bass player for a handful of St. Louis bands. In 2020 I joined the [Sidechain Society](https://soundcloud.com/sidechain-society) collective and founded Matthew Jamison Music, LLC. That same year I started teaching myself to write Ruby. The transition is documented across my Bandcamp catalog and my GitHub commit history — a 56-track autobiographical album called *[The Journey](https://matthewjjamison.bandcamp.com/album/the-journey)* (January 2022) is the inflection-point record. By January 2024 I was releasing *[Shoot The J](https://matthewjjamison.bandcamp.com/album/shoot-the-j)*, an album with track titles written in actual Ruby, Rails, and SQL syntax — `validates :love, presence: true`, `structure.sql`, `bundle update --all`. Not a gimmick. By that point my brain was processing meaning in both beats and Ruby methods, and the album was the most honest description I could give of where the work lived.
+Ich habe als Beatmaker angefangen. Ich wuchs auf, während ich meinem Cousin in der Kirche meines Vaters beim Schlagzeugspielen zusah, ging durch Konzertband und Drumline und wurde Session-Bassist für mehrere Bands in St. Louis. 2020 trat ich dem Kollektiv [Sidechain Society](https://soundcloud.com/sidechain-society) bei und gründete Matthew Jamison Music, LLC. Im selben Jahr brachte ich mir Ruby selbst bei. Der Übergang ist in meinem Bandcamp-Katalog und meiner GitHub-Commit-Historie dokumentiert — ein autobiografisches 56-Track-Album namens *[The Journey](https://matthewjjamison.bandcamp.com/album/the-journey)* (Januar 2022) ist die Wendepunktaufnahme. Im Januar 2024 veröffentlichte ich *[Shoot The J](https://matthewjjamison.bandcamp.com/album/shoot-the-j)*, ein Album mit Tracktiteln in echter Ruby-, Rails- und SQL-Syntax — `validates :love, presence: true`, `structure.sql`, `bundle update --all`. Kein Gimmick. Zu dem Zeitpunkt verarbeitete mein Gehirn Bedeutung sowohl in Beats als auch in Ruby-Methoden, und das Album war die ehrlichste Beschreibung, die ich davon geben konnte, wo die Arbeit lebte.
 
-I've been at Concordia full-time since the transition. I've merged 194+ pull requests on a production Rails 8 codebase, work that's verifiable against [my GitHub profile](https://github.com/MatthewJamisonJS). The portfolio site you're reading this on is a Hugo static site with a complete schema.org `@graph`, hand-tuned Lighthouse scores, and a vendored theme I override partial-by-partial — also verifiable, also open to the public.
+Seit dem Übergang schreibe ich Vollzeit produktives Rails. Ich habe **194+ Pull Requests auf einer produktiven Rails-8-Codebasis gemergt** — überprüfbar auf [meinem GitHub-Profil](https://github.com/MatthewJamisonJS). Die Portfolio-Seite, die Sie gerade lesen, ist eine statische Hugo-Seite mit vollständigem schema.org-`@graph`, handabgestimmten Lighthouse-Werten und einem vendorisierten Theme, das ich Partial für Partial überschreibe — auch überprüfbar, auch öffentlich.
 
-## What I do day-to-day
+## Was ich täglich tue
 
-At Concordia I work on the application that runs the publisher's e-commerce, customer accounts, and content management. The stack is Rails 8 with PostgreSQL, served behind Cloudflare. The customers depend on it for products that are core to a religious tradition — that frames how I think about reliability, accessibility, and how much I'm willing to ship without a test.
+Der Tagesjob ist eine Rails-8-Anwendung auf PostgreSQL hinter Cloudflare. Dasselbe Framework, das den Checkout von Shopify antreibt, heruntergeskaliert auf eine einzelne Branchenanwendung. Ein Stack, in dem eine versäumte Migration oder eine schlampige Validierung echte Kunden kostet — das prägt mein Denken über Zuverlässigkeit, Barrierefreiheit und wieviel ich ohne Test ausliefern will.
 
-After hours and on Saturdays I run Gateway Tech AEO. Three tiers, prices public, no contracts longer than month-to-month, capped at five year-one clients in the St. Louis metro. Most of the work is Google Business Profile, schema markup, robots.txt and llms.txt for AI crawlers, FAQ-shaped content with primary-source citations, and the kind of structured-data-first templating that gets a small business cited by [ChatGPT](https://chat.openai.com/), [Perplexity](https://perplexity.ai/), and Google's AI Overview rather than buried under a national chain in the ten blue links.
+Nach Feierabend und samstags betreibe ich Gateway Tech AEO. Drei Stufen, öffentliche Preise, keine Verträge länger als monatlich, im ersten Jahr auf fünf Klienten im Großraum St. Louis begrenzt. Der Großteil der Arbeit ist Google-Unternehmensprofil, Schema-Markup, robots.txt und llms.txt für KI-Crawler, FAQ-förmiger Inhalt mit Primärquellen-Zitaten und die Art von strukturiert-daten-zuerst-Templating, die einem Kleinunternehmen ermöglicht, von [ChatGPT](https://chat.openai.com/), [Perplexity](https://perplexity.ai/) und Googles KI-Übersicht zitiert zu werden, statt unter einer nationalen Kette in den zehn blauen Links zu verschwinden.
 
-The transparency posture isn't a marketing choice — it's the only sustainable one for a solo practice. If I have to remember which prospect I quoted what, I lose. So everything is on the page: the prices, the cap, the methods, and the language about what I won't promise.
+Die Transparenz-Haltung ist keine Marketing-Entscheidung — sie ist die einzige nachhaltige für eine Solo-Praxis. Wenn ich mich erinnern müsste, welchem Interessenten ich was angeboten habe, verliere ich. Also steht alles auf der Seite: die Preise, die Obergrenze, die Methoden und die Sprache zu dem, was ich nicht verspreche.
 
-## Why this practice exists
+## Warum es diese Praxis gibt
 
-I get to do good engineering for an organization with the budget to maintain it. Most of the small businesses I know in St. Louis don't have that budget — and yet the answer engines are taking real traffic from them right now. [Gartner forecasts traditional search engine volume will drop 25% by 2026](https://www.gartner.com/en/newsroom/press-releases/2024-02-19-gartner-predicts-search-engine-volume-will-drop-25-percent-by-2026-due-to-ai-chatbots-and-other-virtual-agents); [Adobe Digital Insights reported AI traffic to U.S. retail sites grew 393% year-over-year in Q1 2026](https://business.adobe.com/blog/ai-traffic-surge-retail-sites-not-machine-readable). A roofing contractor or a Mexican restaurant doesn't have the in-house engineering to respond to that. Big agencies will respond by selling them a $10,000 retainer they can't afford. I think it's worth one of us showing up with the same methods at small-business prices and seeing how far that goes.
+Ich darf produktionsreife Technik für eine Organisation mit Budget machen. Die meisten Kleinunternehmen, die ich in St. Louis kenne, haben dieses Budget nicht — und die Antwort-Engines nehmen ihnen gerade jetzt echten Traffic weg. [Gartner prognostiziert, dass das traditionelle Suchvolumen bis 2026 um 25% sinken wird](https://www.gartner.com/en/newsroom/press-releases/2024-02-19-gartner-predicts-search-engine-volume-will-drop-25-percent-by-2026-due-to-ai-chatbots-and-other-virtual-agents); [Adobe Digital Insights berichtete, dass der KI-Traffic auf US-Retail-Seiten in Q1 2026 um 393% gegenüber dem Vorjahr gewachsen ist](https://business.adobe.com/blog/ai-traffic-surge-retail-sites-not-machine-readable). Ein Dachdecker oder ein mexikanisches Restaurant hat keine eigene Technik, um darauf zu reagieren. Große Agenturen werden mit einem 10.000-Dollar-Retainer antworten, den sich diese Betriebe nicht leisten können. Ich denke, es lohnt sich, dass einer von uns mit denselben Methoden zu Kleinunternehmenspreisen auftaucht und schaut, wie weit das geht.
 
-That's what Gateway Tech AEO is. It's also why the year-one client cap is five — slow growth means I can actually do the work myself, and there is no project manager on the other end of the email.
+Das ist Gateway Tech AEO. Und das ist auch der Grund, warum die Erstjahres-Klientenobergrenze fünf ist — langsames Wachstum bedeutet, dass ich die Arbeit selbst machen kann und am anderen Ende der E-Mail kein Projektmanager sitzt.
 
-## Music is part of the brand
+## Musik gehört zur Marke
 
-I left the Bandcamp link in the music widget for a reason. The 30+ releases at [matthewjjamison.bandcamp.com](https://matthewjjamison.bandcamp.com) are part of the same person who's writing your schema and tuning your GBP listing. The current Bandcamp bio reads "A vessel grateful for expression healing-state." That's an accurate description of how I think the day-job and the side-project relate.
+Ich habe den Bandcamp-Link aus einem Grund im Musik-Widget gelassen. Die 30+ Veröffentlichungen auf [matthewjjamison.bandcamp.com](https://matthewjjamison.bandcamp.com) gehören zu derselben Person, die Ihr Schema schreibt und Ihren GBP-Eintrag feinjustiert. Die aktuelle Bandcamp-Bio liest sich „A vessel grateful for expression healing-state." Das beschreibt präzise, wie ich das Verhältnis von Tagesjob und Nebenprojekt sehe.
 
-If you're wondering whether you're hiring "the AEO guy" or "the music guy" — I am one person and the dual identity is the differentiator. The discipline a Rails developer brings to schema markup is the same discipline a producer brings to mixing a track. Both are about getting the structure exactly right so the listener doesn't have to work for it.
+Wenn Sie sich fragen, ob Sie „den AEO-Typen" oder „den Musik-Typen" einstellen — ich bin eine Person, und die Doppelidentität ist der Unterschied. Die Disziplin, die ein Rails-Entwickler in das Schema-Markup einbringt, ist dieselbe Disziplin, die ein Produzent in das Mixing eines Tracks einbringt. Beides geht darum, die Struktur genau richtig zu treffen, damit der Hörer sich nicht abmühen muss.
 
-## Family
+## Familie
 
-I'm married to Berneshia, a minister at Refresh Community Church. We have two daughters; the older contributed vocals to "Jelly Asparaguys" on *Shoot The J*. The reason every commit, every release, and every line of this site happens around the family schedule is that the family is the work, and the work funds the family. If a project would compromise that, I won't take it. That's part of the year-one cap.
+Ich bin verheiratet mit Berneshia, Ministerin der Refresh Community Church. Wir haben zwei Töchter; die ältere hat Gesang zu „Jelly Asparaguys" auf *Shoot The J* beigesteuert. Jeder Commit, jede Veröffentlichung und jede Zeile dieser Seite passieren rund um den Familienkalender, weil die Familie die Arbeit ist und die Arbeit die Familie finanziert. Wenn ein Projekt das gefährden würde, nehme ich es nicht an. Das gehört zur Erstjahres-Obergrenze.
 
-## Faith
+## Glaube
 
-A handful of my track titles cite scripture: Isaiah 40:31, Psalm 8:1, Matthew 23:26-28, James 1:2, Jeremiah 29:11, Isaiah 12:2, Isaiah 43:19. I'm not going to pretend that's not part of who I am — but I'm also not going to gate-keep clients on it. I work for non-Christian and non-religious clients on the same terms. The faith influences how I think about *how* I work, not *who* I work with.
+Ein paar Tracktitel zitieren die Heilige Schrift: Jesaja 40:31, Psalm 8:1, Matthäus 23:26-28, Jakobus 1:2, Jeremia 29:11, Jesaja 12:2, Jesaja 43:19. Ich werde nicht so tun, als wäre das nicht ein Teil von mir — aber ich filtere Klienten auch nicht danach. Ich arbeite für nicht-christliche und nicht-religiöse Klienten zu denselben Bedingungen. Der Glaube beeinflusst, *wie* ich arbeite, nicht *mit wem* ich arbeite.
 
-## Things I cap
+## Was ich begrenze
 
-- **Year-one client cap: 5** in the St. Louis metro. After five active engagements, I close the form.
-- **No contracts longer than month-to-month.** You own everything I touch — your domain, your GBP, your accounts, your content — and you can stop any time.
-- **No agency overhead.** I do the work. There's no project manager, no account executive, no slide deck. If you need one of those things, I am not the right hire.
-- **No promises of #1 rankings or guaranteed AI citations.** Anyone who promises that is either lying or doing something that will get your business penalized. I commit to the work itself: every month you see exactly what I did and you keep full access.
+- **Erstjahres-Klientenobergrenze: 5** im Großraum St. Louis. Nach fünf aktiven Engagements schließe ich das Formular.
+- **Keine Verträge länger als monatlich.** Sie besitzen alles, was ich anfasse — Ihre Domain, Ihr GBP, Ihre Konten, Ihren Inhalt — und können jederzeit aufhören.
+- **Kein Agentur-Overhead.** Ich mache die Arbeit. Keinen Projektmanager, keinen Account-Manager, kein Slidedeck. Wenn Sie eines davon brauchen, bin ich nicht der richtige Auftragnehmer.
+- **Keine Versprechen für #1-Rankings oder garantierte KI-Zitate.** Wer das verspricht, lügt entweder oder tut etwas, das Ihrem Geschäft schadet. Ich verpflichte mich auf die Arbeit selbst: jeden Monat sehen Sie genau, was ich getan habe, und behalten den vollen Zugriff.
 
-## Where to find me
+## Wo Sie mich finden
 
-- Day job: [Concordia Publishing House](https://www.cph.org/)
+- Tagesjob: produktives Ruby on Rails — [das Framework, das Shopify trägt](https://rubyonrails.org/foundation/shopify) (5,5 Mio.+ Händler, ~19 Mio. MySQL-Abfragen/Sek.)
 - Code: [github.com/MatthewJamisonJS](https://github.com/MatthewJamisonJS)
-- Music: [matthewjjamison.bandcamp.com](https://matthewjjamison.bandcamp.com)
+- Musik: [matthewjjamison.bandcamp.com](https://matthewjjamison.bandcamp.com)
 - LinkedIn: [linkedin.com/in/matthew-jamison-65486bab](https://www.linkedin.com/in/matthew-jamison-65486bab/)
-- LLC site (forming): [gatewaytechaeo.com](https://gatewaytechaeo.com)
-- Email: [jamison.matthew@icloud.com](mailto:jamison.matthew@icloud.com) (until Cloudflare Email Routing for matthew@gatewaytechaeo.com is verified live)
+- LLC-Seite (in Gründung): [gatewaytechaeo.com](https://gatewaytechaeo.com)
+- E-Mail: [jamison.matthew@icloud.com](mailto:jamison.matthew@icloud.com) (bis Cloudflare Email Routing für matthew@gatewaytechaeo.com live verifiziert ist)
 
-Intake is email-first — phone calls aren't part of how this practice runs. If you're considering working with me, send a brief: a link to your existing site, your city, a sentence on what your business does, and what you'd like AEO to fix. I reply within 48–96 hours with something specific to your business, not a generic pitch. If you're in St. Louis and would rather meet in person, that works too — same brief.
+Die Anfrage läuft per E-Mail — Telefonate gehören nicht zu dieser Praxis. Wenn Sie mit mir arbeiten möchten, schicken Sie ein Briefing: Link zur bestehenden Seite, Stadt, ein Satz dazu, was Ihr Unternehmen tut, und was AEO bei Ihnen reparieren soll. Ich antworte innerhalb von 48 bis 96 Stunden mit etwas, das spezifisch für Ihr Unternehmen ist, nicht mit einem Standard-Pitch. Wenn Sie in St. Louis sind und sich lieber persönlich treffen möchten, geht das auch — selbes Briefing.

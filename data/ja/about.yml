@@ -1,16 +1,16 @@
 ---
 about:
   enable: true
-  kicker: "Why this works"
-  title: "Production-grade engineering, indie-friendly pricing."
-  lede: "The same Rails 8 rigor that powers a publishing house with a million users — re-pointed at the FAQ page, schema graph, and Google Business Profile your AI-search visibility depends on."
+  kicker: "なぜこれが機能するか"
+  title: "製品レベルのエンジニアリング、個人事業に優しい価格。"
+  lede: "Shopify の 5.5M+ 加盟店、$300B+ の取扱高を支える Ruby on Rails と同じ厳格さ — それを FAQ ページ、スキーマグラフ、AI 検索可視性を左右する Google ビジネス プロフィールに向け直します。"
   credentials:
-    - number: "~1M"
-      description: "Users on the Rails 8 application I work on at Concordia Publishing House — every weekday."
+    - number: "5.5M+"
+      description: "Ruby on Rails を基盤とする Shopify 加盟店数 — 私が毎日扱うフレームワーク。"
     - number: "194+"
-      description: "Merged pull requests on the production codebase, verifiable on a public GitHub profile."
+      description: "本番 Rails 8 コードベースでマージされたプルリクエスト。GitHub の公開プロフィールで検証可能。"
     - number: "Lighthouse 98+"
-      description: "On the site you're reading. Verify the score in your browser address bar right now."
+      description: "あなたが今読んでいるこのサイト。ブラウザのアドレスバーで今すぐ確認できます。"
     - number: "5"
-      description: "Year-one client cap in the St. Louis metro. After five active engagements, the form closes."
+      description: "St. Louis 地域における初年度クライアント上限。アクティブ案件が 5 件に達するとフォームは閉じます。"
 ---

@@ -5,8 +5,8 @@ trust:
   items:
     - title: "Carrete de citas IA en vivo."
       description: "La prueba del hero — categorías genéricas de negocios de St. Louis citadas por cuatro motores, en bucle. Mira cómo las respuestas eligen ganadores."
-    - title: "Credibilidad del trabajo diario."
-      description: "Desarrollador Rails 8 en Concordia Publishing House. ~1M de usuarios. 194+ pull requests fusionados. Verificable en GitHub."
+    - title: "Credibilidad del ecosistema Rails."
+      description: "Desarrollador de Ruby on Rails. El framework impulsa Shopify (5.5M+ comerciantes, ~19M consultas MySQL/seg en el monolito). 194+ pull requests fusionados, verificables en GitHub."
     - title: "Postura de operador transparente."
       description: "Precios públicos. Cupo de clientes público. Métodos públicos. Sin sobrecosto de agencia. Sin NDAs para leer los métodos."
     - title: "Afiliaciones locales."

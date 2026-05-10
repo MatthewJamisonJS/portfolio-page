@@ -1,16 +1,16 @@
 ---
 about:
   enable: true
-  kicker: "Why this works"
-  title: "Production-grade engineering, indie-friendly pricing."
-  lede: "The same Rails 8 rigor that powers a publishing house with a million users — re-pointed at the FAQ page, schema graph, and Google Business Profile your AI-search visibility depends on."
+  kicker: "Pourquoi ça marche"
+  title: "Ingénierie de production, tarif accessible pour indépendants."
+  lede: "La même rigueur Ruby on Rails qui propulse les 5.5M+ marchands de Shopify et un monolithe à $300B+ de volume de marchandises — redirigée vers la page FAQ, le schema et le profil Google Business dont dépend votre visibilité dans la recherche IA."
   credentials:
-    - number: "~1M"
-      description: "Users on the Rails 8 application I work on at Concordia Publishing House — every weekday."
+    - number: "5.5M+"
+      description: "Marchands Shopify propulsés par Ruby on Rails — le framework avec lequel je travaille chaque jour."
     - number: "194+"
-      description: "Merged pull requests on the production codebase, verifiable on a public GitHub profile."
+      description: "Pull requests fusionnées sur des codes Rails 8 de production. Vérifiable sur mon profil GitHub public."
     - number: "Lighthouse 98+"
-      description: "On the site you're reading. Verify the score in your browser address bar right now."
+      description: "Sur le site que vous lisez. Vérifiez le score dans la barre d'adresse de votre navigateur maintenant."
     - number: "5"
-      description: "Year-one client cap in the St. Louis metro. After five active engagements, the form closes."
+      description: "Plafond de clients en première année dans la métropole de St. Louis. Après cinq engagements actifs, le formulaire se ferme."
 ---

@@ -5,8 +5,8 @@ trust:
   items:
     - title: "Live AI-citation reel."
       description: "The hero proof — generic St. Louis business categories cited by four engines, looping. Watch the answers pick winners."
-    - title: "Day-job credibility."
-      description: "Rails 8 developer at Concordia Publishing House. ~1M users. 194+ merged PRs. Verifiable on GitHub."
+    - title: "Rails-ecosystem credibility."
+      description: "Ruby on Rails developer. The framework powers Shopify (5.5M+ merchants, ~19M MySQL queries/sec on the monolith). 194+ merged PRs verifiable on GitHub."
     - title: "Operator-transparency posture."
       description: "Public pricing. Public client cap. Public methods. No agency overhead. No NDAs to read the methods."
     - title: "Local affiliations."

@@ -1,8 +1,10 @@
+{{ $data := index site.Data site.Language.Lang }}
+{{ $brand := $data.brand.brand }}
 <section class="sticky-top navigation">
   <div class="container">
     <nav class="navbar navbar-expand-lg navbar-dark">
-      <a class="navbar-brand p-0 mx-auto" href="{{ .Site.BaseURL | relLangURL }}" style="text-align: center;">
-        {{ .Site.Title }}
+      <a class="navbar-brand p-0 mx-auto" href="{{ .Site.BaseURL | relLangURL }}" style="text-align: center;" aria-label="{{ .Site.Title }}">
+        {{ $brand.name | default .Site.Title }}
       </a>
 
       <div class="collapse navbar-collapse show" id="navigation">

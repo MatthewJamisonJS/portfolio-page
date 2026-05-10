@@ -3,12 +3,12 @@ about:
   enable: true
   kicker: "Why this works"
   title: "Production-grade engineering, indie-friendly pricing."
-  lede: "The same Rails 8 rigor that powers a publishing house with a million users — re-pointed at the FAQ page, schema graph, and Google Business Profile your AI-search visibility depends on."
+  lede: "The same Ruby on Rails rigor that powers Shopify's 5.5M+ merchants and a $300B+ gross-merchandise-volume monolith — re-pointed at the FAQ page, schema graph, and Google Business Profile your AI-search visibility depends on."
   credentials:
-    - number: "~1M"
-      description: "Users on the Rails 8 application I work on at Concordia Publishing House — every weekday."
+    - number: "5.5M+"
+      description: "Shopify merchants powered by Ruby on Rails — the framework I work in every day."
     - number: "194+"
-      description: "Merged pull requests on the production codebase, verifiable on a public GitHub profile."
+      description: "Merged pull requests on production Rails 8 codebases. Verifiable on a public GitHub profile."
     - number: "Lighthouse 98+"
       description: "On the site you're reading. Verify the score in your browser address bar right now."
     - number: "5"

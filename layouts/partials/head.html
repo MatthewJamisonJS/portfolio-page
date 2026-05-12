@@ -97,6 +97,7 @@
 	{{/* $brand and $banner already declared near OG meta block above; reuse here. */}}
 	{{ $pricing := (index site.Data site.Language.Lang).pricing.pricing }}
 	{{ $faq := (index site.Data site.Language.Lang).faq.faq }}
+	{{ $method := (index site.Data site.Language.Lang).method.method }}
 	<!-- JSON-LD Structured Data for Search Engines -->
 	<script type="application/ld+json">
 	{
@@ -265,6 +266,23 @@
 							"@type": "Answer",
 							"text": {{ $item.answer | jsonify | safeJS }}
 						}
+					}{{ end }}
+				]
+			}{{ end }}{{ if and .IsHome $method.enable }},
+			{
+				"@type": "HowTo",
+				"@id": "{{ site.BaseURL }}#aeo-method",
+				"name": {{ $method.title | jsonify | safeJS }},
+				"description": {{ $method.intro | jsonify | safeJS }},
+				"totalTime": "P6M",
+				"step": [
+					{{ range $i, $p := $method.pillars }}{{ if $i }},{{ end }}
+					{
+						"@type": "HowToStep",
+						"position": {{ add $i 1 }},
+						"name": {{ $p.title | jsonify | safeJS }},
+						"text": {{ printf "%s — %s. %s" $p.title $p.tagline (delimit $p.bullets ". ") | jsonify | safeJS }},
+						"url": "{{ site.BaseURL }}#method-{{ $p.id }}"
 					}{{ end }}
 				]
 			}{{ end }}{{ if eq .Section "about" }},

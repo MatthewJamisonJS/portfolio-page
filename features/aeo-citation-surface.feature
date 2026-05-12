@@ -24,3 +24,10 @@ Feature: AEO citation surface upgrade
     When it parses the FAQPage node
     Then it should find a SpeakableSpecification pointing at .faq-answer and .hero-subtitle
     # Verified by: tests/schema/12-speakable-spec.spec.js (Task 3, audit H12)
+
+  Scenario: Method section is structured as HowTo
+    Given an answer-engine crawler fetches the homepage
+    When it parses the @graph
+    Then it should find a HowTo node with 3 HowToStep entries
+         matching the Technical / Authority / Content pillars from method.yml
+    # Verified by: tests/schema/13-howto.spec.js (Task 4, audit H13)

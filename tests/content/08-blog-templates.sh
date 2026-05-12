@@ -43,8 +43,8 @@ for p in "${POSTS[@]}"; do
   for marker in \
     'aria-label=("Breadcrumb"|Breadcrumb[> ])' \
     'class=("blog-post[^"]*"|blog-post)' \
-    'itemtype="https://schema.org/BlogPosting"' \
-    'href=("/about/"|/about/)'
+    'itemtype=("https://schema.org/BlogPosting"|https://schema.org/BlogPosting)' \
+    'href=("/(es/|ja/|fr/|de/)?about/"|/(es/|ja/|fr/|de/)?about/)'
   do
     if ! grep -qE "$marker" "$p"; then
       echo "FAIL — $p missing marker: $marker"

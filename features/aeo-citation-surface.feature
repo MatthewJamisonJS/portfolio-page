@@ -106,3 +106,13 @@ Feature: AEO citation surface upgrade
     Then they should see an author-bio card with the author photo, name,
          one-line bio, day-job evidence, and visible last-updated date
     # Verified by: tests/content/05-author-bio.sh (Task 9, audit L6)
+
+  Scenario: Pillar 1 is independently citable
+    Given a user asks an LLM "what is the difference between AEO and SEO"
+    When the LLM crawls /blog/aeo-vs-seo-what-changed/
+    Then it should find a 40-60 word lead answer in the first paragraph,
+         a BlogPosting JSON-LD node with author + publisher @id refs,
+         inline-cited primary sources (Gartner, Adobe, Schema.org, vendor docs),
+         and a body length between 1200 and 1800 words
+    # Verified by: tests/content/09-pillar-1-word-count.sh (Task 12)
+    # Schema gate: tests/schema/15-blogposting.spec.js (Task 6)

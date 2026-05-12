@@ -357,6 +357,12 @@ other = "By"
 [updated_label]
 other = "Updated"
 
+[day_job_label]
+other = "Day job"
+
+[side_label]
+other = "Side practice"
+
 [field_notes]
 other = "Field Notes"
 

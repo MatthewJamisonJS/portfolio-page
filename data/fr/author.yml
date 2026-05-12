@@ -1,0 +1,20 @@
+# Stub — locale-translated copy. EN canonical lives in data/en/author.yml.
+# Spec: docs/superpowers/plans/2026-05-11-aeo-citation-surface-upgrade.md Task 9.
+author:
+  name: "Matthew Jamison"
+  role: "Développeur Full-Stack & Consultant AEO"
+  bio_short: "Développeur Ruby on Rails à St. Louis sur une application à grande échelle (la même pile qui fait tourner Shopify). Consultant en Answer Engine Optimization pour des petites entreprises locales en dehors des heures de bureau."
+  day_job: "Codebase Rails 8 en production, plus de 194 pull requests fusionnées, le même framework qui propulse les 5,5 M+ de marchands Shopify."
+  side_practice: "Gateway Tech AEO — balisage schema.org, fiche Google Business, llms.txt et contenu format FAQ pour les PME de St. Louis."
+  photo: "/images/author/matthew-jamison.webp"
+  photo_alt: "Matthew Jamison, développeur Rails et consultant AEO à St. Louis"
+  links:
+    - label: "GitHub"
+      url: "https://github.com/MatthewJamisonJS"
+    - label: "LinkedIn"
+      url: "https://www.linkedin.com/in/matthew-jamison-65486bab/"
+    - label: "Bandcamp"
+      url: "https://matthewjjamison.bandcamp.com"
+  cta:
+    label: "Envoyer un brief"
+    url: "/fr/#contact"

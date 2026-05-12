@@ -99,3 +99,10 @@ Feature: AEO citation surface upgrade
     Then they should see a <time datetime="YYYY-MM-DD"> element
          carrying the page's published or last-modified date
     # Verified by: tests/metadata/07-lastmod-visible.sh (Task 17, audit L6)
+
+  Scenario: Author bio appears on About + every blog post
+    Given a reader lands on /about/ or any /blog/<post>/
+    When they scroll to the end of the main content
+    Then they should see an author-bio card with the author photo, name,
+         one-line bio, day-job evidence, and visible last-updated date
+    # Verified by: tests/content/05-author-bio.sh (Task 9, audit L6)

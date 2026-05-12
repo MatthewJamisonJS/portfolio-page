@@ -358,6 +358,12 @@ other = "Von"
 [updated_label]
 other = "Aktualisiert"
 
+[day_job_label]
+other = "Hauptberuf"
+
+[side_label]
+other = "Nebenpraxis"
+
 [field_notes]
 other = "Feldnotizen"
 

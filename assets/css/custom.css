@@ -1413,3 +1413,103 @@ button#contact-submit {
   .blog-post-header h1 { font-size: clamp(1.85rem, 7vw, 2.5rem); }
   .blog-post-toc { padding: 1rem 1.1rem; }
 }
+
+/* === Author bio card (audit L6 + Task 9) === */
+.author-bio {
+  margin: 3rem auto 0;
+  max-width: 60ch;
+  display: grid;
+  grid-template-columns: 120px 1fr;
+  gap: 1.5rem;
+  align-items: start;
+  background: var(--bone-2);
+  border: 1px solid var(--rule);
+  border-top: 3px solid var(--ink);
+  border-radius: 4px;
+  padding: 1.75rem 1.5rem;
+  box-shadow: 0 18px 36px -28px rgba(20, 17, 15, 0.18);
+}
+.author-bio__photo img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 1px solid var(--rule);
+  background: var(--bone);
+}
+.author-bio__body { display: flex; flex-direction: column; gap: 0.65rem; min-width: 0; }
+.author-bio__byline {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+  margin: 0;
+}
+.author-bio__byline-label { color: var(--brick); margin-right: 0.4rem; }
+.author-bio__byline strong {
+  font-family: var(--font-serif);
+  font-weight: 400;
+  font-size: 1.5rem;
+  text-transform: none;
+  letter-spacing: -0.01em;
+  color: var(--ink);
+  display: inline-block;
+  margin-right: 0.35rem;
+}
+.author-bio__role { text-transform: none; letter-spacing: 0; color: var(--ink-soft); }
+.author-bio__lead {
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-size: 1.0625rem;
+  line-height: 1.4;
+  color: var(--ink);
+  margin: 0;
+}
+.author-bio__evidence {
+  font-size: 0.9375rem;
+  line-height: 1.5;
+  color: var(--ink-soft);
+  margin: 0;
+}
+.author-bio__evidence strong { color: var(--ink); font-weight: 600; }
+.author-bio__lastmod {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+  margin: 0.25rem 0 0;
+}
+.author-bio__lastmod-label { color: var(--brick); margin-right: 0.35rem; }
+.author-bio__links {
+  list-style: none;
+  padding: 0;
+  margin: 0.5rem 0 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem 1.25rem;
+}
+.author-bio__links a {
+  font-family: var(--font-mono);
+  font-size: 0.8125rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--brick);
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  text-decoration-thickness: 1px;
+}
+.author-bio__links a:hover,
+.author-bio__links a:focus { color: var(--brick-deep); }
+.author-bio__cta { margin: 0.5rem 0 0; }
+.author-bio__cta .btn { font-size: 0.9rem; }
+@media (max-width: 600px) {
+  .author-bio {
+    grid-template-columns: 1fr;
+    text-align: left;
+    padding: 1.5rem 1.25rem;
+  }
+  .author-bio__photo img { width: 96px; height: 96px; }
+  .author-bio__byline strong { font-size: 1.35rem; }
+}

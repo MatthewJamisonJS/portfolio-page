@@ -358,6 +358,12 @@ other = "Par"
 [updated_label]
 other = "Mis à jour"
 
+[day_job_label]
+other = "Activité principale"
+
+[side_label]
+other = "Pratique parallèle"
+
 [field_notes]
 other = "Notes de terrain"
 

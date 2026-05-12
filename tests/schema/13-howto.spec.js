@@ -40,6 +40,17 @@ for (const rel of HOMES) {
     if (s['@type'] !== 'HowToStep') failures.push(`${rel}: step[${i}] @type != HowToStep`);
     if (!s.name) failures.push(`${rel}: step[${i}] missing name`);
     if (!s.text) failures.push(`${rel}: step[${i}] missing text`);
+    // Anchor existence — every step.url fragment must resolve to a real id in
+    // the rendered HTML. Catches "dead fragment" regression: a HowToStep that
+    // tells crawlers to deep-link to a non-existent anchor degrades citation
+    // quality and contradicts the H13 reason-to-exist.
+    if (s.url && s.url.includes('#')) {
+      const frag = s.url.split('#')[1];
+      const idRe = new RegExp(`id=["']?${frag.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}["'\\s>]`);
+      if (!idRe.test(html)) {
+        failures.push(`${rel}: step[${i}].url '#${frag}' has no matching id= in rendered HTML`);
+      }
+    }
   }
 }
 

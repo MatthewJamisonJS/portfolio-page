@@ -102,7 +102,10 @@
 	{{/* $brand and $banner already declared near OG meta block above; reuse here. */}}
 	{{ $pricing := (index site.Data site.Language.Lang).pricing.pricing }}
 	{{ $faq := (index site.Data site.Language.Lang).faq.faq }}
-	{{ $method := (index site.Data site.Language.Lang).method.method }}
+	{{/* $method is nil-safe: a locale without data/{lang}/method.yml renders an empty dict
+	     rather than panicking. The HowTo block gates on $method.enable which is falsy on dict. */}}
+	{{ $method := dict }}
+	{{ with (index site.Data site.Language.Lang).method }}{{ $method = .method }}{{ end }}
 	<!-- JSON-LD Structured Data for Search Engines -->
 	<script type="application/ld+json">
 	{
@@ -164,7 +167,7 @@
 				"@id": "{{ site.BaseURL }}#organization",
 				"name": "{{ $brand.name }}",
 				{{ if not $brand.show_legal_status }}"legalName": "{{ $brand.name }} LLC",{{ end }}
-				"url": "https://gatewaytechaeo.com",
+				"url": "{{ site.BaseURL }}",
 				"logo": "{{ site.BaseURL }}images/og/og-default.png",
 				"founder": { "@id": "{{ site.BaseURL }}#person" },
 				"areaServed": {
@@ -194,7 +197,33 @@
 				"description": "{{ with .Description }}{{ . }}{{ else }}{{ site.Params.description }}{{ end }}",
 				"inLanguage": "{{ site.LanguageCode | default "en-us" }}"
 			},
-			{{ partial "jsonld-breadcrumb.html" . | safeJS }},
+			{{/* BreadcrumbList: Home → Section → Page. Inlined (not a partial) so
+			     the JSON renders inside <script> context without Hugo's HTML auto-
+			     escape converting nested quotes to &#34; on section pages (audit H11). */}}
+			{
+				"@type": "BreadcrumbList",
+				"@id": "{{ .Permalink }}#breadcrumb",
+				"itemListElement": [
+					{
+						"@type": "ListItem",
+						"position": 1,
+						"name": "Home",
+						"item": "{{ site.BaseURL }}"
+					}{{ if and .Section (not .IsHome) }},
+					{
+						"@type": "ListItem",
+						"position": 2,
+						"name": {{ .Section | title | jsonify | safeJS }},
+						"item": "{{ site.BaseURL }}{{ .Section }}/"
+					}{{ end }}{{ if and (not .IsHome) (not .IsSection) }},
+					{
+						"@type": "ListItem",
+						"position": 3,
+						"name": {{ .Title | jsonify | safeJS }},
+						"item": "{{ .Permalink }}"
+					}{{ end }}
+				]
+			},
 			{
 				"@type": "ProfessionalService",
 				"@id": "{{ site.BaseURL }}#service",
@@ -261,6 +290,7 @@
 				"name": "{{ $brand.name }}",
 				"url": "{{ site.BaseURL }}",
 				"image": "{{ site.BaseURL }}images/og/og-default.png",
+				"priceRange": "$250 – $1,200/mo",
 				"founder": { "@id": "{{ site.BaseURL }}#person" },
 				"address": {
 					"@type": "PostalAddress",
@@ -314,15 +344,14 @@
 				"@id": "{{ site.BaseURL }}#aeo-method",
 				"name": {{ $method.title | jsonify | safeJS }},
 				"description": {{ $method.intro | jsonify | safeJS }},
-				"totalTime": "P6M",
 				"step": [
 					{{ range $i, $p := $method.pillars }}{{ if $i }},{{ end }}
 					{
 						"@type": "HowToStep",
 						"position": {{ add $i 1 }},
 						"name": {{ $p.title | jsonify | safeJS }},
-						"text": {{ printf "%s — %s. %s" $p.title $p.tagline (delimit $p.bullets ". ") | jsonify | safeJS }},
-						"url": "{{ site.BaseURL }}#method-{{ $p.id }}"
+						"text": {{ printf "%s — %s. %s." $p.title (strings.TrimRight "?.!" $p.tagline) (delimit $p.bullets ". ") | jsonify | safeJS }},
+						"url": "{{ site.BaseURL }}#pillar-{{ $p.id }}-title"
 					}{{ end }}
 				]
 			}{{ end }}{{ if eq .Section "about" }},

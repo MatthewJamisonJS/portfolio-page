@@ -58,6 +58,11 @@
 	     here so og:title / twitter:title ship clean text to social embeds and crawlers. */}}
 	{{ $ogTitle := cond .IsHome (printf "%s — %s" $brand.name (plainify $banner.title)) (printf "%s | %s" .Title site.Title) }}
 	{{ $ogDescription := cond .IsHome (plainify $banner.subtitle) (or .Description site.Params.description) }}
+	{{/* Per-page OG image. Pages may set .Params.image (e.g. blog posts ship a
+	     1200×630 hero). Pages without an explicit image fall back to og-default.png.
+	     Audit M11 fix. */}}
+	{{ $ogImage := cond (isset .Params "image") (printf "%s%s" site.BaseURL (strings.TrimPrefix "/" (.Params.image | default ""))) (printf "%simages/og/og-default.png" site.BaseURL) }}
+	{{ $ogImageAlt := cond (isset .Params "image_alt") (.Params.image_alt | default "") (printf "%s — AI search optimization for St. Louis small businesses" $brand.name) }}
 
 	<!-- Open Graph / Facebook -->
 	<meta property="og:type" content="website">
@@ -66,10 +71,10 @@
 	<meta property="og:locale" content="{{ $ogLocale }}">
 	<meta property="og:title" content="{{ $ogTitle }}">
 	<meta property="og:description" content="{{ $ogDescription }}">
-	<meta property="og:image" content="{{ site.BaseURL }}images/og/og-default.png">
+	<meta property="og:image" content="{{ $ogImage }}">
 	<meta property="og:image:width" content="1200">
 	<meta property="og:image:height" content="630">
-	<meta property="og:image:alt" content="{{ $brand.name }} — AI search optimization for St. Louis small businesses">
+	<meta property="og:image:alt" content="{{ $ogImageAlt }}">
 
 	<!-- Twitter Card -->
 	<meta name="twitter:card" content="summary_large_image">
@@ -78,8 +83,8 @@
 	<meta name="twitter:url" content="{{ .Permalink }}">
 	<meta name="twitter:title" content="{{ $ogTitle }}">
 	<meta name="twitter:description" content="{{ $ogDescription }}">
-	<meta name="twitter:image" content="{{ site.BaseURL }}images/og/og-default.png">
-	<meta name="twitter:image:alt" content="{{ $brand.name }} — AI search optimization for St. Louis small businesses">
+	<meta name="twitter:image" content="{{ $ogImage }}">
+	<meta name="twitter:image:alt" content="{{ $ogImageAlt }}">
 
 	<!-- Enhanced SEO -->
 	<link rel="canonical" href="{{ .Permalink }}">
@@ -97,6 +102,10 @@
 	{{/* $brand and $banner already declared near OG meta block above; reuse here. */}}
 	{{ $pricing := (index site.Data site.Language.Lang).pricing.pricing }}
 	{{ $faq := (index site.Data site.Language.Lang).faq.faq }}
+	{{/* $method is nil-safe: a locale without data/{lang}/method.yml renders an empty dict
+	     rather than panicking. The HowTo block gates on $method.enable which is falsy on dict. */}}
+	{{ $method := dict }}
+	{{ with (index site.Data site.Language.Lang).method }}{{ $method = .method }}{{ end }}
 	<!-- JSON-LD Structured Data for Search Engines -->
 	<script type="application/ld+json">
 	{
@@ -125,6 +134,11 @@
 					"Web Performance",
 					"WCAG Accessibility"
 				],
+				"worksFor": {
+					"@type": "Organization",
+					"name": "Concordia Publishing House",
+					"url": "https://www.cph.org/"
+				},
 				"hasOccupation": {
 					"@type": "Occupation",
 					"name": "Full-Stack Developer & AEO Consultant",
@@ -150,8 +164,7 @@
 				"sameAs": [
 					"https://github.com/MatthewJamisonJS",
 					"https://www.linkedin.com/in/matthew-jamison-65486bab/",
-					"https://x.com/matthewjamison",
-					"https://gatewaytechaeo.com"
+					"https://x.com/matthewjamison"
 				]
 			},
 			{
@@ -159,7 +172,7 @@
 				"@id": "{{ site.BaseURL }}#organization",
 				"name": "{{ $brand.name }}",
 				{{ if not $brand.show_legal_status }}"legalName": "{{ $brand.name }} LLC",{{ end }}
-				"url": "https://gatewaytechaeo.com",
+				"url": "{{ site.BaseURL }}",
 				"logo": "{{ site.BaseURL }}images/og/og-default.png",
 				"founder": { "@id": "{{ site.BaseURL }}#person" },
 				"areaServed": {
@@ -188,6 +201,33 @@
 				"about": { "@id": "{{ site.BaseURL }}#organization" },
 				"description": "{{ with .Description }}{{ . }}{{ else }}{{ site.Params.description }}{{ end }}",
 				"inLanguage": "{{ site.LanguageCode | default "en-us" }}"
+			},
+			{{/* BreadcrumbList: Home → Section → Page. Inlined (not a partial) so
+			     the JSON renders inside <script> context without Hugo's HTML auto-
+			     escape converting nested quotes to &#34; on section pages (audit H11). */}}
+			{
+				"@type": "BreadcrumbList",
+				"@id": "{{ .Permalink }}#breadcrumb",
+				"itemListElement": [
+					{
+						"@type": "ListItem",
+						"position": 1,
+						"name": "Home",
+						"item": "{{ site.BaseURL }}"
+					}{{ if and .Section (not .IsHome) }},
+					{
+						"@type": "ListItem",
+						"position": 2,
+						"name": {{ .Section | title | jsonify | safeJS }},
+						"item": "{{ site.BaseURL }}{{ .Section }}/"
+					}{{ end }}{{ if .IsPage }},
+					{
+						"@type": "ListItem",
+						"position": 3,
+						"name": {{ .Title | jsonify | safeJS }},
+						"item": "{{ .Permalink }}"
+					}{{ end }}
+				]
 			},
 			{
 				"@type": "ProfessionalService",
@@ -248,10 +288,50 @@
 					}
 					{{ end }}{{ end }}
 				]
+			},
+			{
+				"@type": "LocalBusiness",
+				"@id": "{{ site.BaseURL }}#localbusiness",
+				"name": "{{ $brand.name }}",
+				"url": "{{ site.BaseURL }}",
+				"image": "{{ site.BaseURL }}images/og/og-default.png",
+				"priceRange": "$250 – $1,200/mo",
+				"founder": { "@id": "{{ site.BaseURL }}#person" },
+				"address": {
+					"@type": "PostalAddress",
+					"addressLocality": "{{ $brand.city }}",
+					"addressRegion": "{{ $brand.region }}",
+					"addressCountry": "US"
+				},
+				"paymentAccepted": ["Cash", "Credit Card", "ACH"],
+				"currenciesAccepted": "USD",
+				"openingHoursSpecification": [
+					{
+						"@type": "OpeningHoursSpecification",
+						"dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+						"opens": "09:00",
+						"closes": "17:00"
+					}
+				],
+				"areaServed": {
+					"@type": "City",
+					"name": "{{ $brand.city }}",
+					"addressRegion": "{{ $brand.region }}",
+					"addressCountry": "US"
+				},
+				"geo": {
+					"@type": "GeoCoordinates",
+					"latitude": 38.6270,
+					"longitude": -90.1994
+				}
 			}{{ if .IsHome }},
 			{
 				"@type": "FAQPage",
 				"@id": "{{ .Permalink }}#faq",
+				"speakable": {
+					"@type": "SpeakableSpecification",
+					"cssSelector": [".faq-answer", ".hero-subtitle"]
+				},
 				"mainEntity": [
 					{{ range $i, $item := $faq.items }}{{ if $i }},{{ end }}
 					{
@@ -261,6 +341,22 @@
 							"@type": "Answer",
 							"text": {{ $item.answer | jsonify | safeJS }}
 						}
+					}{{ end }}
+				]
+			}{{ end }}{{ if and .IsHome $method.enable }},
+			{
+				"@type": "HowTo",
+				"@id": "{{ site.BaseURL }}#aeo-method",
+				"name": {{ $method.title | jsonify | safeJS }},
+				"description": {{ $method.intro | jsonify | safeJS }},
+				"step": [
+					{{ range $i, $p := $method.pillars }}{{ if $i }},{{ end }}
+					{
+						"@type": "HowToStep",
+						"position": {{ add $i 1 }},
+						"name": {{ $p.title | jsonify | safeJS }},
+						"text": {{ printf "%s — %s. %s." $p.title (strings.TrimRight "?.!" $p.tagline) (delimit $p.bullets ". ") | jsonify | safeJS }},
+						"url": "{{ site.BaseURL }}#pillar-{{ $p.id }}-title"
 					}{{ end }}
 				]
 			}{{ end }}{{ if eq .Section "about" }},
@@ -286,6 +382,21 @@
 				"publisher": { "@id": "{{ site.BaseURL }}#organization" },
 				"image": "{{ site.BaseURL }}images/og/og-default.png",
 				"mainEntityOfPage": { "@id": "{{ .Permalink }}#aboutpage" },
+				"inLanguage": "{{ site.LanguageCode | default "en-us" }}"
+			}{{ end }}{{ if and (eq .Section "blog") (ne .Kind "section") }},
+			{
+				"@type": "BlogPosting",
+				"@id": "{{ .Permalink }}#blogposting",
+				"headline": {{ .Title | jsonify | safeJS }},
+				"description": {{ with .Description }}{{ . | jsonify | safeJS }}{{ else }}{{ .Summary | plainify | jsonify | safeJS }}{{ end }},
+				"image": "{{ site.BaseURL }}{{ with .Params.image }}{{ strings.TrimPrefix "/" . }}{{ else }}images/og/og-default.png{{ end }}",
+				"datePublished": "{{ .Date.Format "2006-01-02" }}",
+				"dateModified": "{{ .Lastmod.Format "2006-01-02" }}",
+				"author": { "@id": "{{ site.BaseURL }}#person" },
+				"publisher": { "@id": "{{ site.BaseURL }}#organization" },
+				"mainEntityOfPage": { "@id": "{{ .Permalink }}#webpage" },
+				"articleSection": {{ with .Params.articleSection }}{{ . | jsonify | safeJS }}{{ else }}"AEO"{{ end }},
+				"keywords": [{{ range $i, $k := .Params.keywords }}{{ if $i }}, {{ end }}{{ $k | jsonify | safeJS }}{{ end }}],
 				"inLanguage": "{{ site.LanguageCode | default "en-us" }}"
 			}{{ end }}
 		]

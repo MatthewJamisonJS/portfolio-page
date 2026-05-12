@@ -4,7 +4,7 @@
 # Files to populate:
 #   01-cal-or-calendly-reachable.sh   — H6, booking URL responds 200
 set -e
-ROOT="$(cd "$(dirname "$0")" && pwd)"
+ROOT="$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )"
 shopt -s nullglob
 FILES=( "$ROOT"/[0-9][0-9]-*.sh )
 if (( ${#FILES[@]} == 0 )); then

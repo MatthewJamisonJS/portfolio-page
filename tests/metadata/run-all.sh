@@ -8,7 +8,7 @@
 #   04-preload-references-real.spec.js     — Phase 3, M3
 #   05-twitter-handle-consistency.sh       — Phase 3, M9
 set -e
-ROOT="$(cd "$(dirname "$0")" && pwd)"
+ROOT="$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )"
 shopt -s nullglob
 FILES=( "$ROOT"/[0-9][0-9]-*.sh "$ROOT"/[0-9][0-9]-*.spec.js )
 if (( ${#FILES[@]} == 0 )); then

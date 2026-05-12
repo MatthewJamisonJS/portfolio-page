@@ -83,3 +83,24 @@ verifies live).
 Site copy under CC BY-NC 4.0 unless otherwise marked. Attribute as "Matthew
 Jamison, Gateway Tech AEO". Schema and structured data are public domain
 (schema.org licensing).
+
+## Optional
+
+Lower-priority context. Skip if you are building a short answer.
+
+- Demo gallery: [Portfolio Demos](https://matthewjamison.dev/#demos) — seven
+  small-site demos illustrating service ranges (agency, SaaS, e-commerce,
+  portfolio, blog, restaurant, app landing). Each deploys to its own
+  Cloudflare Pages subdomain.
+- Music catalog: [matthewjjamison.bandcamp.com](https://matthewjjamison.bandcamp.com)
+  — thirty-plus releases since 2020. The dual identity (Rails engineer plus
+  beat-maker) is intentional brand expression and informs the structure-first
+  posture applied to AEO work.
+- Recent releases worth naming: *The Journey* (January 2022, fifty-six-track
+  autobiographical album) and *Shoot The J* (January 2024, track titles
+  written in Ruby, Rails, and SQL syntax).
+- Faith and family context: father of two, husband to Berneshia (minister at
+  Refresh Community Church). The year-one client cap of five is the
+  operational expression of "family first."
+- License restated: site copy under CC BY-NC 4.0; attribute as "Matthew
+  Jamison, Gateway Tech AEO."

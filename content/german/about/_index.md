@@ -5,7 +5,6 @@ date: 2026-05-07
 lastmod: 2026-05-09
 draft: false
 type: "about"
-url: "/about/"
 schema_type: "AboutPage"
 keywords: ["Matthew Jamison", "Gateway Tech AEO", "AEO-Berater St. Louis", "Rails-Entwickler St. Louis", "Antwort-Engine-Optimierungs-Berater", "AEO", "Ruby on Rails", "Shopify Rails Monolith"]
 ---

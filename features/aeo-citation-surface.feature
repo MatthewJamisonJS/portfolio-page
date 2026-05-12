@@ -38,3 +38,11 @@ Feature: AEO citation surface upgrade
     Then it should find PostalAddress (St. Louis, MO, US), paymentAccepted,
          currenciesAccepted "USD", and openingHoursSpecification
     # Verified by: tests/schema/14-localbusiness.spec.js (Task 5, audit H14)
+
+  Scenario: Blog posts emit BlogPosting with author and publisher
+    Given an answer-engine crawler fetches /blog/<post-slug>/
+    When it parses the @graph
+    Then it should find a BlogPosting node with author @id = #person,
+         publisher @id = #organization, datePublished, dateModified,
+         mainEntityOfPage, and inLanguage
+    # Verified by: tests/schema/15-blogposting.spec.js (Task 6, audit H15)

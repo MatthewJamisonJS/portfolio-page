@@ -344,6 +344,21 @@
 				"image": "{{ site.BaseURL }}images/og/og-default.png",
 				"mainEntityOfPage": { "@id": "{{ .Permalink }}#aboutpage" },
 				"inLanguage": "{{ site.LanguageCode | default "en-us" }}"
+			}{{ end }}{{ if and (eq .Section "blog") (ne .Kind "section") }},
+			{
+				"@type": "BlogPosting",
+				"@id": "{{ .Permalink }}#blogposting",
+				"headline": {{ .Title | jsonify | safeJS }},
+				"description": {{ with .Description }}{{ . | jsonify | safeJS }}{{ else }}{{ .Summary | plainify | jsonify | safeJS }}{{ end }},
+				"image": "{{ site.BaseURL }}{{ with .Params.image }}{{ strings.TrimPrefix "/" . }}{{ else }}images/og/og-default.png{{ end }}",
+				"datePublished": "{{ .Date.Format "2006-01-02" }}",
+				"dateModified": "{{ .Lastmod.Format "2006-01-02" }}",
+				"author": { "@id": "{{ site.BaseURL }}#person" },
+				"publisher": { "@id": "{{ site.BaseURL }}#organization" },
+				"mainEntityOfPage": { "@id": "{{ .Permalink }}#webpage" },
+				"articleSection": {{ with .Params.articleSection }}{{ . | jsonify | safeJS }}{{ else }}"AEO"{{ end }},
+				"keywords": [{{ range $i, $k := .Params.keywords }}{{ if $i }}, {{ end }}{{ $k | jsonify | safeJS }}{{ end }}],
+				"inLanguage": "{{ site.LanguageCode | default "en-us" }}"
 			}{{ end }}
 		]
 	}

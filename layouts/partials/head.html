@@ -252,6 +252,10 @@
 			{
 				"@type": "FAQPage",
 				"@id": "{{ .Permalink }}#faq",
+				"speakable": {
+					"@type": "SpeakableSpecification",
+					"cssSelector": [".faq-answer", ".hero-subtitle"]
+				},
 				"mainEntity": [
 					{{ range $i, $item := $faq.items }}{{ if $i }},{{ end }}
 					{

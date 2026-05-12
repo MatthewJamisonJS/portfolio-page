@@ -18,3 +18,9 @@ Feature: AEO citation surface upgrade
     When it parses the JSON-LD @graph
     Then it should find a BreadcrumbList node with at least Home as the first item
     # Verified by: tests/schema/11-breadcrumb-list.spec.js (Task 2, audit H11)
+
+  Scenario: FAQ answers are voice-citable
+    Given a voice answer engine fetches the homepage
+    When it parses the FAQPage node
+    Then it should find a SpeakableSpecification pointing at .faq-answer and .hero-subtitle
+    # Verified by: tests/schema/12-speakable-spec.spec.js (Task 3, audit H12)

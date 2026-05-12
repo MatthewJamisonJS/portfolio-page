@@ -983,6 +983,16 @@ button#contact-submit {
   color: var(--ink-soft);
   margin: 0;
 }
+.about-page-meta {
+  margin: 1.25rem 0 0;
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  font-weight: 500;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--stone);
+}
+.about-page-meta time { color: var(--ink); font-weight: 600; }
 .about-page-body {
   font-family: var(--font-serif);
   font-size: 1.125rem;

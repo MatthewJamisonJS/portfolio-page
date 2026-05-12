@@ -92,3 +92,10 @@ Feature: AEO citation surface upgrade
          and a counterpart route file at /<loc>/blog/<path>/index.html
          for every other locale
     # Verified by: tests/i18n/04-blog-hreflang.sh (Task 14)
+
+  Scenario: Pages surface a freshness signal
+    Given a reader or crawler lands on /about/ or /blog/<post>/
+    When they look near the byline
+    Then they should see a <time datetime="YYYY-MM-DD"> element
+         carrying the page's published or last-modified date
+    # Verified by: tests/metadata/07-lastmod-visible.sh (Task 17, audit L6)

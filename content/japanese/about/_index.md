@@ -5,7 +5,6 @@ date: 2026-05-07
 lastmod: 2026-05-09
 draft: false
 type: "about"
-url: "/about/"
 schema_type: "AboutPage"
 keywords: ["Matthew Jamison", "Gateway Tech AEO", "セントルイス AEO コンサルタント", "セントルイス Rails 開発者", "アンサーエンジン最適化コンサルタント", "AEO", "Ruby on Rails", "Shopify Rails モノリス"]
 ---

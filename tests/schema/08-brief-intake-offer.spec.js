@@ -45,7 +45,10 @@ for (const rel of HOMES) {
   }
 
   const offers = Array.isArray(ps.offers) ? ps.offers : [];
-  const intake = offers.find(o => /brief intake/i.test(o.name || ''));
+  // Match by price === "0" — the brief intake is the only free Offer in the array.
+  // Locale-agnostic; the EN name "Project brief intake" is translated in ES/JA/FR/DE.
+  const intake = offers.find(o => o.price === '0')
+              || offers.find(o => /brief intake/i.test(o.name || ''));
 
   if (!intake) {
     failures.push(`${rel}: no Brief intake Offer in ProfessionalService.offers (audit H6)`);

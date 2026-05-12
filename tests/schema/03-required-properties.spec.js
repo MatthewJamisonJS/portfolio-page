@@ -70,9 +70,13 @@ for (const rel of HOMES) {
     }
   }
 
-  // H7: DFY Offer uses priceSpecification not literal range string
+  // H7: DFY Offer uses priceSpecification not literal range string.
+  // Match by priceSpecification.unitText === "per month" — locale-agnostic;
+  // the EN name "Done-For-You" is translated in ES ("Servicio Gestionado")
+  // and FR ("Service géré"), so a name regex misses those locales.
   const offers = Array.isArray(ps.offers) ? ps.offers : [];
-  const dfy = offers.find(o => /Done-For-You/i.test(o.name || ''));
+  const dfy = offers.find(o => o.priceSpecification && /per month/i.test(o.priceSpecification.unitText || ''))
+           || offers.find(o => /Done-For-You/i.test(o.name || ''));
   if (!dfy) {
     failures.push(`${rel}: no Done-For-You Offer found`);
   } else {

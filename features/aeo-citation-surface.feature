@@ -52,3 +52,10 @@ Feature: AEO citation surface upgrade
     When it parses og:image and twitter:image
     Then the URL should match the page's .Params.image, not the default
     # Verified by: tests/metadata/06-og-image-per-page.spec.js (Task 7, audit M11)
+
+  Scenario: llms.txt follows v1.7.0 spec
+    Given an LLM agent fetches /llms.txt
+    When it parses the markdown sections
+    Then it should find an "Optional" section after the primary sections
+         listing demos and music context as skippable
+    # Verified by: tests/content/04-llms-txt-optional.sh (Task 8, audit M12)

@@ -341,3 +341,6 @@ other = "再開"
 
 [aeo_reel_description]
 other = "Google GeminiとOpenAI ChatGPTが、セントルイスのAEOテストクエリ4件(Dutchtownのコワーキング、O'Fallonの石膏ボード、サウスシティのタマレス、University Cityの不動産)に回答する画面録画のループ再生。両エンジンは引用元として matthewjamison.dev または gatewaytechaeo.com を表示しています。"
+
+[home_breadcrumb]
+other = "ホーム"

@@ -86,7 +86,8 @@ module.exports = {
       /^faq-/,
       /^trust-/,
       /^aeo-/,
-      /^about-/
+      /^about-/,
+      /^breadcrumb-/
     ],
     greedy: [
       /^wow/,
@@ -96,7 +97,7 @@ module.exports = {
   },
   rejected: [
     /carousel/, /modal/, /tooltip/, /popover/, /dropdown/, /alert/,
-    /badge/, /breadcrumb/, /pagination/, /progress/, /spinner/, /toast/,
+    /badge/, /pagination/, /progress/, /spinner/, /toast/,
     /portal-/, /sparkle/
   ]
 };

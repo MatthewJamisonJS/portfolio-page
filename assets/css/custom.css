@@ -890,3 +890,175 @@ button#contact-submit {
     scroll-behavior: auto !important;
   }
 }
+
+/* === Breadcrumb nav (Task 10) === */
+.breadcrumb-nav {
+  margin: 2rem 0 1rem;
+  font-family: var(--font-mono);
+  font-size: 0.8125rem;
+  font-weight: 500;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  line-height: 1.4;
+}
+.breadcrumb-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0 0.6rem;
+  row-gap: 0.35rem;
+}
+.breadcrumb-item {
+  display: inline-flex;
+  align-items: baseline;
+  color: var(--stone);
+  max-width: 100%;
+}
+.breadcrumb-item + .breadcrumb-item::before {
+  content: "/";
+  margin-right: 0.6rem;
+  color: var(--rule);
+  font-weight: 400;
+  letter-spacing: 0;
+}
+.breadcrumb-item a {
+  color: var(--stone);
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  padding-bottom: 1px;
+  transition: color 140ms ease, border-color 140ms ease;
+}
+.breadcrumb-item a:hover,
+.breadcrumb-item a:focus-visible {
+  color: var(--brick);
+  border-bottom-color: var(--brick);
+}
+.breadcrumb-current {
+  color: var(--ink);
+  font-weight: 600;
+  overflow-wrap: anywhere;
+  hyphens: auto;
+}
+@media (max-width: 540px) {
+  .breadcrumb-nav { font-size: 0.75rem; letter-spacing: 0.12em; }
+  .breadcrumb-list { gap: 0 0.45rem; }
+  .breadcrumb-item + .breadcrumb-item::before { margin-right: 0.45rem; }
+}
+
+/* === About page (Task 10 — section template) ===
+   Pairs with layouts/about/list.html. Long-form reading column matching the
+   editorial palette. Newsreader for body copy, Plex Sans for meta.
+   Namespaced `.about-page` to avoid colliding with the homepage's slim
+   `.about-section` block already defined earlier in this file. */
+.about-page {
+  background: var(--bone);
+  padding: clamp(2.5rem, 6vw, 5rem) 0 clamp(4rem, 8vw, 7rem);
+}
+.about-page-article {
+  max-width: 720px;
+  margin: 0 auto;
+}
+.about-page-header {
+  margin-bottom: 2.5rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid var(--rule);
+}
+.about-page-header h1 {
+  font-family: var(--font-serif);
+  font-weight: 400;
+  font-size: clamp(2.25rem, 5vw, 3.75rem);
+  line-height: 1.05;
+  letter-spacing: -0.02em;
+  color: var(--ink);
+  margin: 0 0 1rem;
+}
+.about-page-lead {
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-size: 1.25rem;
+  line-height: 1.45;
+  color: var(--ink-soft);
+  margin: 0;
+}
+.about-page-body {
+  font-family: var(--font-serif);
+  font-size: 1.125rem;
+  line-height: 1.7;
+  color: var(--ink-soft);
+}
+.about-page-body p {
+  margin: 0 0 1.25rem;
+  color: inherit;
+}
+.about-page-body h2 {
+  font-family: var(--font-serif);
+  font-weight: 500;
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  line-height: 1.15;
+  letter-spacing: -0.01em;
+  color: var(--ink);
+  margin: 2.75rem 0 1rem;
+}
+.about-page-body h3 {
+  font-family: var(--font-sans);
+  font-weight: 600;
+  font-size: 1.25rem;
+  line-height: 1.25;
+  color: var(--ink);
+  margin: 2rem 0 0.75rem;
+}
+.about-page-body a {
+  color: var(--brick);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  text-decoration-thickness: 1px;
+}
+.about-page-body a:hover,
+.about-page-body a:focus-visible {
+  color: var(--brick-deep);
+  text-decoration-thickness: 2px;
+}
+.about-page-body strong { color: var(--ink); font-weight: 600; }
+.about-page-body em { font-style: italic; }
+.about-page-body ul,
+.about-page-body ol {
+  padding-left: 1.25rem;
+  margin: 0 0 1.25rem;
+}
+.about-page-body li { margin-bottom: 0.5rem; }
+.about-page-body blockquote {
+  margin: 1.75rem 0;
+  padding: 0.75rem 0 0.75rem 1.25rem;
+  border-left: 3px solid var(--brick);
+  font-style: italic;
+  color: var(--ink-soft);
+}
+.about-page-body code {
+  font-family: var(--font-mono);
+  font-size: 0.92em;
+  background: var(--bone-2);
+  padding: 0.1em 0.35em;
+  border-radius: 3px;
+  color: var(--ink);
+}
+.about-page-body pre {
+  font-family: var(--font-mono);
+  font-size: 0.92rem;
+  line-height: 1.55;
+  background: var(--ink);
+  color: var(--bone);
+  padding: 1rem 1.25rem;
+  border-left: 3px solid var(--brick);
+  border-radius: 4px;
+  overflow-x: auto;
+  margin: 1.5rem 0;
+}
+.about-page-body pre code { background: transparent; padding: 0; color: inherit; }
+.about-page-body hr {
+  border: 0;
+  border-top: 1px solid var(--rule);
+  margin: 2.5rem 0;
+}

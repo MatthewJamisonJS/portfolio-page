@@ -341,3 +341,6 @@ other = "Fortsetzen"
 
 [aeo_reel_description]
 other = "Bildschirmaufnahmen in Schleife von Google Gemini und OpenAI ChatGPT, die Antworten auf vier St. Louis AEO-Testanfragen erzeugen (Coworking in Dutchtown, Trockenbau in O'Fallon, Tamales in South City, Immobilien in University City). Beide Engines verweisen auf matthewjamison.dev oder gatewaytechaeo.com als zitierte Quellen."
+
+[home_breadcrumb]
+other = "Startseite"

@@ -59,3 +59,11 @@ Feature: AEO citation surface upgrade
     Then it should find an "Optional" section after the primary sections
          listing demos and music context as skippable
     # Verified by: tests/content/04-llms-txt-optional.sh (Task 8, audit M12)
+
+  Scenario: Visible breadcrumb appears on inner pages
+    Given a reader lands on /about/ or any /blog/<post>/
+    When they look near the top of the main content
+    Then they should see a breadcrumb trail with Home → Section → Page
+         and aria-label="Breadcrumb" on the nav wrapper
+         and aria-current="page" on the current-page <li>
+    # Verified by: tests/content/07-breadcrumb-ui.sh (Task 10)

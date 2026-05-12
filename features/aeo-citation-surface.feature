@@ -84,3 +84,11 @@ Feature: AEO citation surface upgrade
          table-of-contents nav when the post has 4+ H2 sections
     # Verified by: tests/content/08-blog-templates.sh (Task 11)
     # Schema gate: tests/schema/15-blogposting.spec.js (Task 6)
+
+  Scenario: Blog routes have hreflang alternates in every locale
+    Given a crawler fetches any /blog/ route in any locale
+    When it parses the <head> alternates
+    Then it should find hreflang links for en, es, ja, fr, de, and x-default
+         and a counterpart route file at /<loc>/blog/<path>/index.html
+         for every other locale
+    # Verified by: tests/i18n/04-blog-hreflang.sh (Task 14)

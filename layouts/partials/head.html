@@ -215,7 +215,7 @@
 						"position": 2,
 						"name": {{ .Section | title | jsonify | safeJS }},
 						"item": "{{ site.BaseURL }}{{ .Section }}/"
-					}{{ end }}{{ if and (not .IsHome) (not .IsSection) }},
+					}{{ end }}{{ if .IsPage }},
 					{
 						"@type": "ListItem",
 						"position": 3,

@@ -11,7 +11,7 @@
 #   07-x-frame-aligned.sh           — M2 dup-suite
 #   08-security-txt-shape.sh        — M8, RFC 9116
 set -e
-ROOT="$(cd "$(dirname "$0")" && pwd)"
+ROOT="$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )"
 shopt -s nullglob
 FILES=( "$ROOT"/[0-9][0-9]-*.sh "$ROOT"/[0-9][0-9]-*.spec.js )
 if (( ${#FILES[@]} == 0 )); then

@@ -46,3 +46,9 @@ Feature: AEO citation surface upgrade
          publisher @id = #organization, datePublished, dateModified,
          mainEntityOfPage, and inLanguage
     # Verified by: tests/schema/15-blogposting.spec.js (Task 6, audit H15)
+
+  Scenario: Each route has a tailored OG preview
+    Given a social-media crawler fetches a page with front-matter image set
+    When it parses og:image and twitter:image
+    Then the URL should match the page's .Params.image, not the default
+    # Verified by: tests/metadata/06-og-image-per-page.spec.js (Task 7, audit M11)

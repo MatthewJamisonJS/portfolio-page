@@ -58,6 +58,11 @@
 	     here so og:title / twitter:title ship clean text to social embeds and crawlers. */}}
 	{{ $ogTitle := cond .IsHome (printf "%s — %s" $brand.name (plainify $banner.title)) (printf "%s | %s" .Title site.Title) }}
 	{{ $ogDescription := cond .IsHome (plainify $banner.subtitle) (or .Description site.Params.description) }}
+	{{/* Per-page OG image. Pages may set .Params.image (e.g. blog posts ship a
+	     1200×630 hero). Pages without an explicit image fall back to og-default.png.
+	     Audit M11 fix. */}}
+	{{ $ogImage := cond (isset .Params "image") (printf "%s%s" site.BaseURL (strings.TrimPrefix "/" (.Params.image | default ""))) (printf "%simages/og/og-default.png" site.BaseURL) }}
+	{{ $ogImageAlt := cond (isset .Params "image_alt") (.Params.image_alt | default "") (printf "%s — AI search optimization for St. Louis small businesses" $brand.name) }}
 
 	<!-- Open Graph / Facebook -->
 	<meta property="og:type" content="website">
@@ -66,10 +71,10 @@
 	<meta property="og:locale" content="{{ $ogLocale }}">
 	<meta property="og:title" content="{{ $ogTitle }}">
 	<meta property="og:description" content="{{ $ogDescription }}">
-	<meta property="og:image" content="{{ site.BaseURL }}images/og/og-default.png">
+	<meta property="og:image" content="{{ $ogImage }}">
 	<meta property="og:image:width" content="1200">
 	<meta property="og:image:height" content="630">
-	<meta property="og:image:alt" content="{{ $brand.name }} — AI search optimization for St. Louis small businesses">
+	<meta property="og:image:alt" content="{{ $ogImageAlt }}">
 
 	<!-- Twitter Card -->
 	<meta name="twitter:card" content="summary_large_image">
@@ -78,8 +83,8 @@
 	<meta name="twitter:url" content="{{ .Permalink }}">
 	<meta name="twitter:title" content="{{ $ogTitle }}">
 	<meta name="twitter:description" content="{{ $ogDescription }}">
-	<meta name="twitter:image" content="{{ site.BaseURL }}images/og/og-default.png">
-	<meta name="twitter:image:alt" content="{{ $brand.name }} — AI search optimization for St. Louis small businesses">
+	<meta name="twitter:image" content="{{ $ogImage }}">
+	<meta name="twitter:image:alt" content="{{ $ogImageAlt }}">
 
 	<!-- Enhanced SEO -->
 	<link rel="canonical" href="{{ .Permalink }}">

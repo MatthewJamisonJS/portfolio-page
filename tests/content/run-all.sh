@@ -8,7 +8,7 @@
 #   04-faq-citations.spec.js          — Phase 2, curl every link to confirm 200
 #   05-blog-rss-min-3.sh              — Phase 2, RSS has >=3 dated items
 set -e
-ROOT="$(cd "$(dirname "$0")" && pwd)"
+ROOT="$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )"
 shopt -s nullglob
 FILES=( "$ROOT"/[0-9][0-9]-*.sh "$ROOT"/[0-9][0-9]-*.spec.js )
 if (( ${#FILES[@]} == 0 )); then

@@ -12,3 +12,9 @@ Feature: AEO citation surface upgrade
     When it parses every sameAs URL in the JSON-LD @graph
     Then every URL should return HTTP 200 or be removed from the graph
     # Verified by: tests/schema/10-no-broken-sameas.spec.js (Task 1, audit H10)
+
+  Scenario: Every page emits BreadcrumbList
+    Given an answer-engine crawler fetches any rendered URL on the site
+    When it parses the JSON-LD @graph
+    Then it should find a BreadcrumbList node with at least Home as the first item
+    # Verified by: tests/schema/11-breadcrumb-list.spec.js (Task 2, audit H11)

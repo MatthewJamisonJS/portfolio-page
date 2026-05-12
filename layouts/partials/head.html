@@ -188,6 +188,7 @@
 				"description": "{{ with .Description }}{{ . }}{{ else }}{{ site.Params.description }}{{ end }}",
 				"inLanguage": "{{ site.LanguageCode | default "en-us" }}"
 			},
+			{{ partial "jsonld-breadcrumb.html" . | safeJS }},
 			{
 				"@type": "ProfessionalService",
 				"@id": "{{ site.BaseURL }}#service",

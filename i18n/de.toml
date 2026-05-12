@@ -344,3 +344,25 @@ other = "Bildschirmaufnahmen in Schleife von Google Gemini und OpenAI ChatGPT, d
 
 [home_breadcrumb]
 other = "Startseite"
+
+# Blog templates (Task 11)
+[read_more]
+other = "Weiterlesen"
+
+[in_this_post]
+other = "In diesem Beitrag"
+
+[by_label]
+other = "Von"
+
+[updated_label]
+other = "Aktualisiert"
+
+[field_notes]
+other = "Feldnotizen"
+
+[table_of_contents]
+other = "Inhaltsverzeichnis"
+
+[blog_empty]
+other = "Noch keine Beiträge veröffentlicht. Feldnotizen erscheinen hier, sobald ich AEO-Recherchen ausarbeite."

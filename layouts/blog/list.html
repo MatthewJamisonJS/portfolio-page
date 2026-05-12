@@ -1,0 +1,39 @@
+{{ define "main" }}
+
+<section class="section blog-list-section">
+  <div class="container">
+    {{ partial "breadcrumb.html" . }}
+    <header class="blog-list-header">
+      <p class="kicker">{{ i18n "field_notes" | default "Field Notes" }}</p>
+      <h1>{{ .Title }}</h1>
+      {{ with .Description }}<p class="blog-list-lead">{{ . }}</p>{{ end }}
+    </header>
+
+    {{ $posts := where .Pages "Section" "blog" }}
+    {{ if $posts }}
+    <ul class="blog-list list-unstyled">
+      {{ range $posts.ByPublishDate.Reverse }}
+      <li class="blog-list-item">
+        <article class="blog-card">
+          <div class="blog-card-body">
+            <p class="blog-card-meta">
+              <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "January 2, 2006" }}</time>
+              {{ with .Params.articleSection }} <span class="blog-card-section">· {{ . }}</span>{{ end }}
+            </p>
+            <h2 class="blog-card-title">
+              <a href="{{ .Permalink }}">{{ .Title }}</a>
+            </h2>
+            <p class="blog-card-desc">{{ with .Description }}{{ . }}{{ else }}{{ .Summary | plainify | truncate 220 }}{{ end }}</p>
+            <a href="{{ .Permalink }}" class="blog-card-cta" aria-label="{{ i18n "read_more" | default "Read more" }}: {{ .Title }}">{{ i18n "read_more" | default "Read more" }} →</a>
+          </div>
+        </article>
+      </li>
+      {{ end }}
+    </ul>
+    {{ else }}
+    <p class="blog-list-empty">{{ i18n "blog_empty" | default "No posts published yet. Field notes will appear here as I draft AEO research." }}</p>
+    {{ end }}
+  </div>
+</section>
+
+{{ end }}

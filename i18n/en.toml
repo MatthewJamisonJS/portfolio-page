@@ -343,3 +343,25 @@ other = "Looped screen recordings of Google Gemini and OpenAI ChatGPT generating
 
 [home_breadcrumb]
 other = "Home"
+
+# Blog templates (Task 11)
+[read_more]
+other = "Read more"
+
+[in_this_post]
+other = "In this post"
+
+[by_label]
+other = "By"
+
+[updated_label]
+other = "Updated"
+
+[field_notes]
+other = "Field Notes"
+
+[table_of_contents]
+other = "Table of contents"
+
+[blog_empty]
+other = "No posts published yet. Field notes will appear here as I draft AEO research."

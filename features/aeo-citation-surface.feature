@@ -67,3 +67,20 @@ Feature: AEO citation surface upgrade
          and aria-label="Breadcrumb" on the nav wrapper
          and aria-current="page" on the current-page <li>
     # Verified by: tests/content/07-breadcrumb-ui.sh (Task 10)
+
+  Scenario: Blog section returns 200 and lists posts
+    Given a reader navigates to /blog/
+    When the page renders
+    Then it should show a list of all published posts in date-descending order
+         with title, description, date, and a "Read more" link to each
+    # Verified by: tests/content/08-blog-templates.sh (Task 11)
+
+  Scenario: Blog single carries BlogPosting microdata and breadcrumb
+    Given a reader lands on /blog/<post>/
+    When the page renders
+    Then it should carry itemtype="https://schema.org/BlogPosting",
+         a visible breadcrumb, a byline link to /about/,
+         a published date, an optional updated date, and a
+         table-of-contents nav when the post has 4+ H2 sections
+    # Verified by: tests/content/08-blog-templates.sh (Task 11)
+    # Schema gate: tests/schema/15-blogposting.spec.js (Task 6)

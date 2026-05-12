@@ -87,7 +87,8 @@ module.exports = {
       /^trust-/,
       /^aeo-/,
       /^about-/,
-      /^breadcrumb-/
+      /^breadcrumb-/,
+      /^blog-/
     ],
     greedy: [
       /^wow/,

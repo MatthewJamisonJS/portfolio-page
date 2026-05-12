@@ -344,3 +344,25 @@ other = "Enregistrements d'écran en boucle de Google Gemini et OpenAI ChatGPT g
 
 [home_breadcrumb]
 other = "Accueil"
+
+# Blog templates (Task 11)
+[read_more]
+other = "Lire la suite"
+
+[in_this_post]
+other = "Dans cet article"
+
+[by_label]
+other = "Par"
+
+[updated_label]
+other = "Mis à jour"
+
+[field_notes]
+other = "Notes de terrain"
+
+[table_of_contents]
+other = "Table des matières"
+
+[blog_empty]
+other = "Aucun article publié pour le moment. Les notes de terrain apparaîtront ici à mesure que je rédige des recherches sur l'AEO."

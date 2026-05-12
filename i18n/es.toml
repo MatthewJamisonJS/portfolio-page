@@ -344,3 +344,25 @@ other = "Grabaciones de pantalla en bucle de Google Gemini y OpenAI ChatGPT gene
 
 [home_breadcrumb]
 other = "Inicio"
+
+# Blog templates (Task 11)
+[read_more]
+other = "Leer más"
+
+[in_this_post]
+other = "En esta publicación"
+
+[by_label]
+other = "Por"
+
+[updated_label]
+other = "Actualizado"
+
+[field_notes]
+other = "Notas de campo"
+
+[table_of_contents]
+other = "Tabla de contenido"
+
+[blog_empty]
+other = "Aún no hay publicaciones. Las notas de campo aparecerán aquí cuando redacte investigación de AEO."

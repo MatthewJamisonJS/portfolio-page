@@ -12,7 +12,7 @@
 #   08-brief-intake-offer.spec.js    — Brief intake Offer at price 0 (Phase 2, audit H6 reframe)
 #   09-article-schema.spec.js        — every /blog/* page emits Article schema (Phase 2)
 set -e
-ROOT="$(cd "$(dirname "$0")" && pwd)"
+ROOT="$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )"
 shopt -s nullglob
 FILES=( "$ROOT"/[0-9][0-9]-*.sh "$ROOT"/[0-9][0-9]-*.spec.js )
 if (( ${#FILES[@]} == 0 )); then

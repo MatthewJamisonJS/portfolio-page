@@ -31,3 +31,10 @@ Feature: AEO citation surface upgrade
     Then it should find a HowTo node with 3 HowToStep entries
          matching the Technical / Authority / Content pillars from method.yml
     # Verified by: tests/schema/13-howto.spec.js (Task 4, audit H13)
+
+  Scenario: Local search engines find an explicit LocalBusiness
+    Given a local-pack crawler resolves matthewjamison.dev/#localbusiness
+    When it inspects the node
+    Then it should find PostalAddress (St. Louis, MO, US), paymentAccepted,
+         currenciesAccepted "USD", and openingHoursSpecification
+    # Verified by: tests/schema/14-localbusiness.spec.js (Task 5, audit H14)

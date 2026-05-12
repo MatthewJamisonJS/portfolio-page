@@ -249,6 +249,41 @@
 					}
 					{{ end }}{{ end }}
 				]
+			},
+			{
+				"@type": "LocalBusiness",
+				"@id": "{{ site.BaseURL }}#localbusiness",
+				"name": "{{ $brand.name }}",
+				"url": "{{ site.BaseURL }}",
+				"image": "{{ site.BaseURL }}images/og/og-default.png",
+				"founder": { "@id": "{{ site.BaseURL }}#person" },
+				"address": {
+					"@type": "PostalAddress",
+					"addressLocality": "{{ $brand.city }}",
+					"addressRegion": "{{ $brand.region }}",
+					"addressCountry": "US"
+				},
+				"paymentAccepted": ["Cash", "Credit Card", "ACH"],
+				"currenciesAccepted": "USD",
+				"openingHoursSpecification": [
+					{
+						"@type": "OpeningHoursSpecification",
+						"dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+						"opens": "09:00",
+						"closes": "17:00"
+					}
+				],
+				"areaServed": {
+					"@type": "City",
+					"name": "{{ $brand.city }}",
+					"addressRegion": "{{ $brand.region }}",
+					"addressCountry": "US"
+				},
+				"geo": {
+					"@type": "GeoCoordinates",
+					"latitude": 38.6270,
+					"longitude": -90.1994
+				}
 			}{{ if .IsHome }},
 			{
 				"@type": "FAQPage",

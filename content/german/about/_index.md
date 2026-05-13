@@ -9,7 +9,7 @@ schema_type: "AboutPage"
 keywords: ["Matthew Jamison", "Gateway Tech AEO", "AEO-Berater St. Louis", "Rails-Entwickler St. Louis", "Antwort-Engine-Optimierungs-Berater", "AEO", "Ruby on Rails", "Shopify Rails Monolith"]
 ---
 
-Ich bin Matthew Jamison — **AEO-Berater aus St. Louis** und Ruby-on-Rails-Entwickler. Das Framework, mit dem ich täglich arbeite, ist dasselbe, das Shopifys 5,5 Mio.+ Händler, über 300 Mrd. USD Warenvolumen 2025 und den [majestätischen Monolithen](https://rubyonrails.org/foundation/shopify) trägt, der rund 19 Mio. MySQL-Abfragen pro Sekunde verarbeitet. Nebenbei betreibe ich [Gateway Tech AEO](https://www.gatewaytechaeo.com), eine kleine Antwort-Engine-Optimierungs-Praxis für Kleinunternehmen in St. Louis. Diese Seite gibt es, weil jemand, der einen Solo-Operator engagiert, wissen darf, wen er einstellt, was ich tagsüber wirklich mache und warum ich die musikalische Seite der Marke sichtbar gelassen habe, statt sie zu verstecken.
+Ich bin Matthew Jamison — **AEO-Berater aus St. Louis** und Ruby-on-Rails-Entwickler. Das Framework, mit dem ich täglich arbeite, ist dasselbe, das Shopifys 5,5 Mio.+ Händler, über 300 Mrd. USD Warenvolumen 2025 und den [majestätischen Monolithen](https://rubyonrails.org/foundation/shopify) trägt, der rund 19 Mio. MySQL-Abfragen pro Sekunde verarbeitet. Nebenbei betreibe ich [Gateway Tech AEO](https://gatewaytechaeo.com), eine kleine Antwort-Engine-Optimierungs-Praxis für Kleinunternehmen in St. Louis. Diese Seite gibt es, weil jemand, der einen Solo-Operator engagiert, wissen darf, wen er einstellt, was ich tagsüber wirklich mache und warum ich die musikalische Seite der Marke sichtbar gelassen habe, statt sie zu verstecken.
 
 ## Wie ich hierher kam
 
@@ -58,7 +58,7 @@ Ein paar Tracktitel zitieren die Heilige Schrift: Jesaja 40:31, Psalm 8:1, Matth
 - Code: [github.com/MatthewJamisonJS](https://github.com/MatthewJamisonJS)
 - Musik: [matthewjjamison.bandcamp.com](https://matthewjjamison.bandcamp.com)
 - LinkedIn: [linkedin.com/in/matthew-jamison-65486bab](https://www.linkedin.com/in/matthew-jamison-65486bab/)
-- LLC-Seite (in Gründung): [gatewaytechaeo.com](https://www.gatewaytechaeo.com)
+- LLC-Seite (in Gründung): [gatewaytechaeo.com](https://gatewaytechaeo.com)
 - E-Mail: [jamison.matthew@icloud.com](mailto:jamison.matthew@icloud.com) (bis Cloudflare Email Routing für matthew@gatewaytechaeo.com live verifiziert ist)
 
 Die Anfrage läuft per E-Mail — Telefonate gehören nicht zu dieser Praxis. Wenn Sie mit mir arbeiten möchten, schicken Sie ein Briefing: Link zur bestehenden Seite, Stadt, ein Satz dazu, was Ihr Unternehmen tut, und was AEO bei Ihnen reparieren soll. Ich antworte innerhalb von 48 bis 96 Stunden mit etwas, das spezifisch für Ihr Unternehmen ist, nicht mit einem Standard-Pitch. Wenn Sie in St. Louis sind und sich lieber persönlich treffen möchten, geht das auch — selbes Briefing.

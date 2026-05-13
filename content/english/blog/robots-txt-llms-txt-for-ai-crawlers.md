@@ -92,7 +92,7 @@ Allow: /
 User-agent: Applebot-Extended
 Allow: /
 
-Sitemap: https://www.gatewaytechaeo.com/sitemap.xml
+Sitemap: https://gatewaytechaeo.com/sitemap.xml
 ```
 
 Three things to notice about that file:
@@ -115,7 +115,7 @@ Below is the structure of the actual `llms.txt` deployed at `/llms.txt`. The [ll
 > includes the source code (open repo), Lighthouse 95+ across five
 > locales, and a complete schema.org @graph (Person, Organization,
 > ProfessionalService, WebSite, WebPage, FAQPage) anchored to
-> https://www.gatewaytechaeo.com/#organization.
+> https://gatewaytechaeo.com/#organization.
 
 ## Who runs this
 ...

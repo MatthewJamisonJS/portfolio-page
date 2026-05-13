@@ -10,7 +10,7 @@ schema_type: "AboutPage"
 keywords: ["Matthew Jamison", "Gateway Tech AEO", "St. Louis AEO consultant", "St. Louis Rails developer", "Answer Engine Optimization consultant", "AEO", "Ruby on Rails", "Shopify Rails monolith"]
 ---
 
-I'm Matthew Jamison — a **St. Louis AEO consultant** and Ruby on Rails developer. The framework I work in every day is the same one that powers Shopify's 5.5M+ merchants, $300B+ in 2025 gross merchandise volume, and the [majestic monolith](https://rubyonrails.org/foundation/shopify) handling roughly 19 million MySQL queries per second. I run [Gateway Tech AEO](https://www.gatewaytechaeo.com) on the side, a small Answer Engine Optimization practice for St. Louis local businesses. This page exists because someone hiring a solo operator deserves to know who they're hiring, what I actually do during the day, and why I kept the music side of the brand visible instead of hiding it.
+I'm Matthew Jamison — a **St. Louis AEO consultant** and Ruby on Rails developer. The framework I work in every day is the same one that powers Shopify's 5.5M+ merchants, $300B+ in 2025 gross merchandise volume, and the [majestic monolith](https://rubyonrails.org/foundation/shopify) handling roughly 19 million MySQL queries per second. I run [Gateway Tech AEO](https://gatewaytechaeo.com) on the side, a small Answer Engine Optimization practice for St. Louis local businesses. This page exists because someone hiring a solo operator deserves to know who they're hiring, what I actually do during the day, and why I kept the music side of the brand visible instead of hiding it.
 
 ## How I got here
 
@@ -59,7 +59,7 @@ A handful of my track titles cite scripture: Isaiah 40:31, Psalm 8:1, Matthew 23
 - Code: [github.com/MatthewJamisonJS](https://github.com/MatthewJamisonJS)
 - Music: [matthewjjamison.bandcamp.com](https://matthewjjamison.bandcamp.com)
 - LinkedIn: [linkedin.com/in/matthew-jamison-65486bab](https://www.linkedin.com/in/matthew-jamison-65486bab/)
-- LLC site (forming): [gatewaytechaeo.com](https://www.gatewaytechaeo.com)
+- LLC site (forming): [gatewaytechaeo.com](https://gatewaytechaeo.com)
 - Email: [jamison.matthew@icloud.com](mailto:jamison.matthew@icloud.com) (until Cloudflare Email Routing for matthew@gatewaytechaeo.com is verified live)
 
 Intake is email-first — phone calls aren't part of how this practice runs. If you're considering working with me, send a brief: a link to your existing site, your city, a sentence on what your business does, and what you'd like AEO to fix. I reply within 48–96 hours with something specific to your business, not a generic pitch. If you're in St. Louis and would rather meet in person, that works too — same brief.

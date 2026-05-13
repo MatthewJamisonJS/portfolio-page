@@ -7,6 +7,16 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Changed
+- Revert canonical URL back to apex now that `gatewaytechaeo.com`
+  nameservers are on Cloudflare and CF native CNAME-flattening at apex
+  handles the Pages DCV that ALIAS-flattening at Namecheap could not.
+  Reverts the temporary www-only swap from the previous commit cycle.
+  baseURL: `https://www.gatewaytechaeo.com/` → `https://gatewaytechaeo.com/`.
+  Mirrors the same file surface (config, brand.yml ×5, static/*, blog
+  posts, about pages). Both apex and www serve the site; canonical now
+  points at apex, www acts as the alternate.
+
 ### Security
 - Harden `/.well-known/security.txt` per RFC 9116: bump `Expires` to
   2027-05-13 (12-month refresh), add `Acknowledgments` field pointing

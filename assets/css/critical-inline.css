@@ -426,18 +426,25 @@ a:hover { color: var(--brick-deep); }
   .aeo-reel-card .aeo-reel-video {
     object-fit: cover;
     object-position: var(--reel-focus-x, 50%) var(--reel-focus-y, 50%);
+    /* transform-origin coords reuse --reel-focus-x/y for parity with
+       object-position. Only fires when --reel-zoom > 1; today both
+       loops ship zoom: 1 so this is a no-op. If a future tweak bumps
+       zoom back up, the focus vars will then anchor BOTH the scale AND
+       the source crop — verify the two coords still mean the same thing
+       in that scenario before shipping. */
     transform: scale(var(--reel-zoom, 1));
     transform-origin: var(--reel-focus-x, 50%) var(--reel-focus-y, 50%);
   }
+  /* --reel-focus-y is intentionally omitted from per-loop blocks: with
+     cover filling card height, y-position is moot. Add it back here if
+     a future zoom > 1 needs an asymmetric vertical anchor. */
   .aeo-reel-card[data-loop="gemini"] {
     --reel-zoom: 1;
     --reel-focus-x: 50%;
-    --reel-focus-y: 50%;
   }
   .aeo-reel-card[data-loop="openai"] {
     --reel-zoom: 1;
     --reel-focus-x: 60%;
-    --reel-focus-y: 50%;
   }
   /* Bigger corner crosshairs at viewport scale so the editorial
      framing reads at phone size. */

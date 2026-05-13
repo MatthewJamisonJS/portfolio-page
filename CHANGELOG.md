@@ -7,6 +7,16 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Security
+- Add CodeQL static analysis workflow (`.github/workflows/codeql.yml`)
+  scanning `javascript-typescript` (covers `assets/js/script.js` + inline
+  `<script>` blocks in layouts) and `actions` (workflow YAML tag-pinning
+  + permissions). Runs on push, pull_request, and weekly cron Monday
+  07:23 UTC. Results land in GitHub Security → Code scanning.
+- Extend `.github/dependabot.yml` with `gitsubmodule` ecosystem so
+  upstream Meghna theme commits surface as PRs. Both ecosystems batch
+  minor/patch updates and target Monday 08:00 America/Chicago.
+
 ### Changed
 - Revert canonical URL back to apex now that `gatewaytechaeo.com`
   nameservers are on Cloudflare and CF native CNAME-flattening at apex

@@ -7,6 +7,6 @@
 Contact: mailto:jamison.matthew@icloud.com
 Expires: 2027-05-13T00:00:00Z
 Preferred-Languages: en
-Canonical: https://www.gatewaytechaeo.com/.well-known/security.txt
+Canonical: https://gatewaytechaeo.com/.well-known/security.txt
 Policy: https://github.com/MatthewJamisonJS/portfolio-page/blob/main/SECURITY.md
-Acknowledgments: https://www.gatewaytechaeo.com/security/acknowledgments/
+Acknowledgments: https://gatewaytechaeo.com/security/acknowledgments/

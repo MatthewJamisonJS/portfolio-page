@@ -18,6 +18,18 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   future blank-slate project.
 - Twitter handle rebrand: `@matthewjamison` → `@M_J_Jamison` in
   `layouts/partials/head.html` (twitter:site, twitter:creator, Person `sameAs`).
+- Site lives at `https://www.gatewaytechaeo.com` (www subdomain) during NS
+  migration window. Cloudflare Pages requires a CNAME at apex; Namecheap
+  publishes apex as ALIAS-flattened A records which CF DCV cannot verify.
+  Workaround: serve at www until `gatewaytechaeo.com` nameservers are
+  migrated to Cloudflare (24–48h). Once NS migration completes and CF's
+  native apex CNAME-flattening is available, baseURL will revert to the
+  apex `https://gatewaytechaeo.com/` in a follow-up PR. URL refs updated:
+  `baseURL`, brand.yml ×5, robots.txt sitemap line, llms.txt links,
+  security.txt Canonical, About pages markdown links, blog post @id
+  references. Deployment docs (`DEPLOYMENT.md`, `.cloudflare/*`) and
+  i18n caption copy intentionally retain the apex form because they
+  document the long-term target state.
 
 ## [1.0.0] - 2025-10-30
 

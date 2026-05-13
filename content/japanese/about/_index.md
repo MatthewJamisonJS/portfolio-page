@@ -9,7 +9,7 @@ schema_type: "AboutPage"
 keywords: ["Matthew Jamison", "Gateway Tech AEO", "セントルイス AEO コンサルタント", "セントルイス Rails 開発者", "アンサーエンジン最適化コンサルタント", "AEO", "Ruby on Rails", "Shopify Rails モノリス"]
 ---
 
-私は Matthew Jamison です。**セントルイスの AEO コンサルタント**であり、Ruby on Rails 開発者です。私が毎日扱うフレームワークは、Shopify の 550 万以上の加盟店、2025 年の取扱高 3,000 億ドル以上、そして毎秒およそ 1,900 万件の MySQL クエリを処理する [マジェスティック モノリス](https://rubyonrails.org/foundation/shopify) を支えるものと同じです。副業として [Gateway Tech AEO](https://gatewaytechaeo.com) を運営しています。セントルイスの中小企業向けの小さなアンサーエンジン最適化のプラクティスです。このページは、ひとり営業者を雇おうとする方が、誰を雇うのか、日中に実際に何をしているのか、そしてなぜ音楽の側をブランドから隠さず残しているのかを知るためのものです。
+私は Matthew Jamison です。**セントルイスの AEO コンサルタント**であり、Ruby on Rails 開発者です。私が毎日扱うフレームワークは、Shopify の 550 万以上の加盟店、2025 年の取扱高 3,000 億ドル以上、そして毎秒およそ 1,900 万件の MySQL クエリを処理する [マジェスティック モノリス](https://rubyonrails.org/foundation/shopify) を支えるものと同じです。副業として [Gateway Tech AEO](https://www.gatewaytechaeo.com) を運営しています。セントルイスの中小企業向けの小さなアンサーエンジン最適化のプラクティスです。このページは、ひとり営業者を雇おうとする方が、誰を雇うのか、日中に実際に何をしているのか、そしてなぜ音楽の側をブランドから隠さず残しているのかを知るためのものです。
 
 ## ここに至るまで
 
@@ -58,7 +58,7 @@ keywords: ["Matthew Jamison", "Gateway Tech AEO", "セントルイス AEO コン
 - コード: [github.com/MatthewJamisonJS](https://github.com/MatthewJamisonJS)
 - 音楽: [matthewjjamison.bandcamp.com](https://matthewjjamison.bandcamp.com)
 - LinkedIn: [linkedin.com/in/matthew-jamison-65486bab](https://www.linkedin.com/in/matthew-jamison-65486bab/)
-- LLC サイト(設立準備中): [gatewaytechaeo.com](https://gatewaytechaeo.com)
+- LLC サイト(設立準備中): [gatewaytechaeo.com](https://www.gatewaytechaeo.com)
 - メール: [jamison.matthew@icloud.com](mailto:jamison.matthew@icloud.com)(matthew@gatewaytechaeo.com 向け Cloudflare Email Routing が稼働するまで)
 
 依頼受付はメール優先です — 電話はこのプラクティスの運用に含まれません。私と仕事をするか検討中なら、ブリーフを送ってください: 既存サイトのリンク、街、ビジネスの内容を一文、AEO に何を直してほしいか。48〜96 時間以内に、定型ピッチではなく、あなたのビジネスに固有の返答を送ります。セントルイスにいて対面の方がよければ、それも対応可能です — 同じブリーフで。

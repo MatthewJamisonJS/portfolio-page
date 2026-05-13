@@ -64,4 +64,4 @@ Allow: /
 User-agent: Applebot-Extended
 Allow: /
 
-Sitemap: https://gatewaytechaeo.com/sitemap.xml
+Sitemap: https://www.gatewaytechaeo.com/sitemap.xml

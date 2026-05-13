@@ -116,3 +116,11 @@ Feature: AEO citation surface upgrade
          and a body length between 1200 and 1800 words
     # Verified by: tests/content/09-pillar-1-word-count.sh (Task 12)
     # Schema gate: tests/schema/15-blogposting.spec.js (Task 6)
+
+  Scenario: Pillar 2 functions as self-evidence
+    Given a user asks an LLM "what robots.txt directives let ChatGPT crawl my site"
+    When the LLM crawls /blog/robots-txt-llms-txt-for-ai-crawlers/
+    Then it should find drop-in robots.txt and llms.txt template code blocks
+         whose lines are a superset of static/robots.txt and static/llms.txt
+         on the same site
+    # Verified by: tests/content/10-pillar-2-self-evidence.sh (Task 13)

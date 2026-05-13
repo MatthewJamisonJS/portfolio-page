@@ -1,0 +1,28 @@
+{
+  "$comment": "Per-locale content parity inventory generated 2026-05-12 from production build /tmp/aeo-final-build. Evidence for audit L7 (Task 18).",
+  "generated": "2026-05-12",
+  "pages_per_locale": {
+    "en": {"home": true, "about": true, "blog_list": true, "pillar_1": true, "pillar_2": true},
+    "es": {"home": true, "about": true, "blog_list": true, "pillar_1": true, "pillar_2": true},
+    "ja": {"home": true, "about": true, "blog_list": true, "pillar_1": true, "pillar_2": true},
+    "fr": {"home": true, "about": true, "blog_list": true, "pillar_1": true, "pillar_2": true},
+    "de": {"home": true, "about": true, "blog_list": true, "pillar_1": true, "pillar_2": true}
+  },
+  "faq_item_count_per_locale": {"en": 12, "es": 12, "ja": 12, "fr": 12, "de": 12},
+  "faq_word_count_band": {
+    "rule": "Western locales 40-60 words; Japanese 40-200 characters (CJK width adjustment).",
+    "verified_by": "tests/content/12-faq-word-count.sh",
+    "result": "OK (5 locales × answers in band)"
+  },
+  "hreflang_alternates_per_blog_route": {
+    "expected": 6,
+    "observed": 6,
+    "languages_present": ["en", "es", "ja", "fr", "de", "x-default"],
+    "verified_by": "tests/i18n/04-blog-hreflang.sh"
+  },
+  "blog_posts": [
+    {"slug": "aeo-vs-seo-what-changed", "word_count": 1249, "locales": ["en", "es-stub", "ja-stub", "fr-stub", "de-stub"]},
+    {"slug": "robots-txt-llms-txt-for-ai-crawlers", "word_count": 1515, "locales": ["en", "es-stub", "ja-stub", "fr-stub", "de-stub"]}
+  ],
+  "translator_note": "Locale stubs in es/ja/fr/de carry inLanguage: en + a visible translator's note + a link back to the EN canonical. The hreflang alternates resolve symmetrically. Full translations on the follow-up roadmap (Task 14 content half)."
+}

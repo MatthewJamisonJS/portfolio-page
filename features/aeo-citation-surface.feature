@@ -138,3 +138,13 @@ Feature: AEO citation surface upgrade
     When it counts the words in the acceptedAnswer text
     Then the count should be between 40 and 60 inclusive
     # Verified by: tests/content/12-faq-word-count.sh (Task 16, audit M13)
+
+  Scenario: All site claims survive verification
+    Given the AEO citation-surface plan has shipped (Tasks 1-17)
+    When the operator runs the full pre-merge verification suite
+    Then tests/run-all.sh, schema inventory, content parity, and CSP header
+         audit should all pass, and the evidence should be committed under
+         lighthouse-results/post-aeo-cluster/VERIFICATION.md
+    # Verified by: lighthouse-results/post-aeo-cluster/VERIFICATION.md (Task 18, audit L7)
+    # Lighthouse JSON + AI-engine dogfood captures are deferred to a follow-up
+    # commit run against the deployed Cloudflare Pages preview, not local 127.0.0.1.

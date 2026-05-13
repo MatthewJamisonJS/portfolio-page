@@ -1,0 +1,15 @@
+{
+  "$comment": "Security-header audit of static/_headers generated 2026-05-12. Evidence for audit L7 (Task 18). Source of truth for Cloudflare Pages deploy is the file path verified below.",
+  "generated": "2026-05-12",
+  "source": "static/_headers",
+  "headers_present": [
+    {"name": "Content-Security-Policy", "ok": true, "notes": "Allows: formspree.io, bandcamp.com, cloudflareinsights — verified against repo references/security-headers.md"},
+    {"name": "X-Frame-Options", "ok": true, "value": "SAMEORIGIN"},
+    {"name": "X-Content-Type-Options", "ok": true, "value": "nosniff"},
+    {"name": "Referrer-Policy", "ok": true, "value": "strict-origin-when-cross-origin"},
+    {"name": "Permissions-Policy", "ok": true, "value": "geolocation=(), microphone=(), camera=()"},
+    {"name": "Strict-Transport-Security", "ok": true, "value": "max-age=31536000; includeSubDomains; preload"}
+  ],
+  "deploy_time_verification": "Run `curl -I https://matthewjamison.dev` post-deploy to confirm Cloudflare Pages applies these headers as written. Result should match this file. Captured in tests/headers/07-x-frame-aligned.sh.",
+  "note": "netlify.toml carries duplicate header config as fallback target. Per .claude/rules/conventions.md: any third-party origin added requires updating BOTH static/_headers AND netlify.toml AND the DEPLOYMENT.md sample CSP block."
+}

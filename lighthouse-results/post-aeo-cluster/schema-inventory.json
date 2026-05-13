@@ -1,0 +1,31 @@
+{
+  "$comment": "Schema @type inventory extracted from production build of /tmp/aeo-final-build. Generated 2026-05-12 as evidence for audit L7 (Task 18).",
+  "generated": "2026-05-12",
+  "build_command": "HUGO_ENV=production hugo --minify --gc",
+  "pages": {
+    "home": {
+      "url": "/",
+      "graph_types": ["Answer","BreadcrumbList","City","FAQPage","GeoCoordinates","HowTo","HowToStep","ImageObject","ListItem","LocalBusiness","Occupation","Offer","OpeningHoursSpecification","Organization","Person","PostalAddress","PriceSpecification","ProfessionalService","Question","SpeakableSpecification","WebPage","WebSite"]
+    },
+    "about": {
+      "url": "/about/",
+      "graph_types": ["AboutPage","Article","BreadcrumbList","City","GeoCoordinates","ImageObject","ListItem","LocalBusiness","Occupation","Offer","OpeningHoursSpecification","Organization","Person","PostalAddress","PriceSpecification","ProfessionalService","WebPage","WebSite"]
+    },
+    "blog_aeo_vs_seo": {
+      "url": "/blog/aeo-vs-seo-what-changed/",
+      "graph_types": ["BlogPosting","BreadcrumbList","City","GeoCoordinates","ImageObject","ListItem","LocalBusiness","Occupation","Offer","OpeningHoursSpecification","Organization","Person","PostalAddress","PriceSpecification","ProfessionalService","WebPage","WebSite"]
+    },
+    "blog_robots_llms": {
+      "url": "/blog/robots-txt-llms-txt-for-ai-crawlers/",
+      "graph_types": ["BlogPosting","BreadcrumbList","City","GeoCoordinates","ImageObject","ListItem","LocalBusiness","Occupation","Offer","OpeningHoursSpecification","Organization","Person","PostalAddress","PriceSpecification","ProfessionalService","WebPage","WebSite"]
+    }
+  },
+  "audit_findings_closed": {
+    "H10": "Broken sameAs → gatewaytechaeo.com — removed from Person.sameAs (commit 0e2790a). Verified by tests/schema/10-no-broken-sameas.spec.js.",
+    "H11": "BreadcrumbList present on home + about + 2 blog posts. Verified by tests/schema/11-breadcrumb-list.spec.js (8 pages including 5 locales).",
+    "H12": "SpeakableSpecification present on FAQPage across 5 locales. Verified by tests/schema/12-speakable-spec.spec.js.",
+    "H13": "HowTo + HowToStep present on home page (method section), 5 locales. Verified by tests/schema/13-howto.spec.js.",
+    "H14": "LocalBusiness sibling node present on every page, anchored via @id. Verified by tests/schema/14-localbusiness.spec.js.",
+    "H15": "BlogPosting present on both pillar posts. Verified by tests/schema/15-blogposting.spec.js (2 posts)."
+  }
+}

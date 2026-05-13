@@ -3,10 +3,10 @@ faq:
   title: "Preguntas frecuentes"
   items:
     - question: "¿Qué es AEO y en qué se diferencia del SEO?"
-      answer: "AEO (Answer Engine Optimization u Optimización para Motores de Respuesta) es la práctica de estructurar tu sitio para que herramientas de IA como ChatGPT, Perplexity y la Vista General de IA de Google te citen cuando alguien hace una pregunta. El SEO apunta a los diez enlaces azules. AEO apunta a ser la respuesta citada. El trabajo se solapa — schema, velocidad de página, calidad de contenido — pero el objetivo es distinto."
+      answer: "AEO (Answer Engine Optimization) es la práctica de estructurar tu sitio para que herramientas de IA como ChatGPT, Perplexity y la Vista General de IA de Google te citen cuando alguien hace una pregunta. El SEO apunta a los diez enlaces azules. AEO apunta a ser la respuesta citada. El trabajo se solapa, pero el objetivo es distinto."
 
     - question: "¿La búsqueda con IA realmente está reemplazando a Google?"
-      answer: "No del todo, pero la cuota cambia rápido. <a href='https://www.gartner.com/en/newsroom/press-releases/2024-02-19-gartner-predicts-search-engine-volume-will-drop-25-percent-by-2026-due-to-ai-chatbots-and-other-virtual-agents' rel='external nofollow'>Gartner pronostica que el volumen de búsqueda tradicional caerá un 25 % para 2026</a>. <a href='https://business.adobe.com/blog/ai-traffic-surge-retail-sites-not-machine-readable' rel='external nofollow'>Adobe Digital Insights informó que el tráfico de IA hacia sitios minoristas de EE. UU. creció un 393 % interanual en el T1 de 2026</a>. Los clientes que piden recomendaciones a la IA son reales, y son una cuota creciente."
+      answer: "No del todo, pero la cuota cambia rápido. <a href='https://www.gartner.com/en/newsroom/press-releases/2024-02-19-gartner-predicts-search-engine-volume-will-drop-25-percent-by-2026-due-to-ai-chatbots-and-other-virtual-agents' rel='external nofollow'>Gartner pronostica que el volumen de búsqueda tradicional caerá un 25 % para 2026</a>. <a href='https://business.adobe.com/blog/ai-traffic-surge-retail-sites-not-machine-readable' rel='external nofollow'>Adobe Digital Insights reportó que el tráfico de IA hacia sitios minoristas de EE. UU. creció un 393 % interanual en el T1 2026</a>. Los clientes que piden recomendaciones a la IA son una cuota creciente."
 
     - question: "¿Cuánto cuesta el AEO?"
       answer: "Tres niveles. Auditoría: 250 USD una sola vez. Implementación y Entrega: 700 USD una sola vez. Servicio Gestionado: entre 500 y 1.200 USD al mes. No ocultamos los precios y no cotizamos tarifas distintas a distintos prospectos. El nivel que elijas depende de si quieres aprenderlo, ejecutarlo después, o que lo gestionemos nosotros."
@@ -21,19 +21,19 @@ faq:
       answer: "No, y cualquiera que lo prometa miente o incumple las normas de Google. Lo que garantizamos es el trabajo en sí: cada mes ves exactamente lo que hicimos, conservas acceso completo a tus cuentas y puedes cancelar en cualquier momento. El resultado al que apuntamos son cálculos realistas de ROI, no una promesa de posición."
 
     - question: "¿Y si ya tengo a alguien encargado del SEO?"
-      answer: "AEO y SEO se solapan, así que un buen trabajo de SEO facilita el nuestro. Solemos coordinarnos con esa persona en vez de reemplazarla. Si tu configuración de SEO es sólida, la auditoría es el punto de partida correcto — te dice exactamente qué huecos específicos de AEO hay que cerrar sin rehacer lo que ya funciona."
+      answer: "AEO y SEO se solapan; un buen trabajo de SEO facilita el nuestro. Solemos coordinarnos con esa persona en vez de reemplazarla. Si tu configuración de SEO es sólida, la auditoría es el punto de partida — te dice qué huecos específicos de AEO cerrar sin rehacer lo que ya funciona."
 
     - question: "¿Y si ni siquiera tengo sitio web?"
-      answer: "Puedes ser citado por la IA sin tener sitio web. Los motores de IA extraen información de Google Business Profile, Yelp, Foursquare, Apple Business Connect y otros. Reclamamos y completamos esos primero. Un sitio básico de cinco páginas viene después. El sitio es la pieza que controlas por completo, pero no es el cimiento — tus listados de negocio sí lo son."
+      answer: "Puedes ser citado por la IA sin sitio web. Los motores extraen información de Google Business Profile, Yelp, Foursquare, Apple Business Connect y otros. Reclamamos y completamos esos primero. Un sitio básico de cinco páginas viene después. El sitio lo controlas tú, pero no es el cimiento — tus listados sí lo son."
 
     - question: "¿Qué pasa con mi Google Business Profile?"
-      answer: "GBP es la palanca de mayor ROI para negocios locales. Un perfil completo y optimizado puede situar al negocio en el local 3-pack en 30 a 60 días sin ningún otro cambio. Si tu perfil está sin reclamar, a medias, o sin fotos, todo encargo empieza ahí. El <a href='https://whitespark.ca/local-search-ranking-factors/' rel='external nofollow'>estudio de factores de posicionamiento local 2024 de Whitespark</a> sigue colocando GBP en el #1 para el local pack."
+      answer: "GBP es la palanca de mayor ROI para negocios locales. Un perfil completo y optimizado puede situar al negocio en el local 3-pack en 30–60 días sin nada más. Si tu perfil está sin reclamar, a medias, o sin fotos, ahí empieza todo. El <a href='https://whitespark.ca/local-search-ranking-factors/' rel='external nofollow'>estudio Whitespark 2024</a> sigue colocando GBP en el #1 del local pack."
 
     - question: "¿Y si quiero parar?"
-      answer: "Para. Tú eres dueño de todo lo que tocamos — tu dominio, tu GBP, tus cuentas, tu contenido. No tenemos contratos de más de un mes. Si el trabajo no rinde, deberías irte, y honestamente preferimos saberlo. Atar a clientes es señal de que el trabajo no es lo bastante bueno como para retenerlos voluntariamente."
+      answer: "Para. Tú eres dueño de todo lo que tocamos — tu dominio, tu GBP, tus cuentas, tu contenido. No tenemos contratos de más de un mes. Si el trabajo no rinde, deberías irte, y preferimos saberlo. Atar a clientes es señal de que el trabajo no es lo bastante bueno."
 
     - question: "¿Es 'AEO' lo mismo que Answer Engine Optimization?"
-      answer: "Sí. Usamos AEO como abreviatura en todo el sitio. Es lo mismo que Generative Engine Optimization (GEO) — la industria aún no se ha decidido por un solo término. Nota: 'AEO' también es el ticker bursátil de American Eagle Outfitters. Industria distinta, clase de marca distinta. Nuestro servicio está en la clase de servicios de marketing, no en la de ropa al detalle."
+      answer: "Sí. Usamos AEO como abreviatura en todo el sitio. Es lo mismo que Generative Engine Optimization (GEO) — la industria aún no se ha decidido por un solo término. Nota: 'AEO' también es el ticker bursátil de American Eagle Outfitters. Industria distinta, clase de marca distinta. Nuestro servicio está en marketing, no en ropa."
 
     - question: "¿Puedo hacerlo yo mismo con la auditoría?"
       answer: "Sí. El nivel Auditoría está pensado para eso. Recibes la lista priorizada de arreglos, una sesión de 1 hora, y lo implementas a tu ritmo. La mayoría de propietarios pueden arreglar los puntos de alto impacto en una tarde — robots.txt, Bing Webmaster Tools, schema básico. La auditoría se acredita al Setup si cambias de opinión más adelante."

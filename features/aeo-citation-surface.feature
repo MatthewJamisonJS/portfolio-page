@@ -132,3 +132,9 @@ Feature: AEO citation surface upgrade
          and frame the practice as engineering rigor reaching back to small business
          (not "Watch AI pick the winners on your block")
     # Verified by: tests/content/11-hero-positioning.sh (Task 15, audit M14)
+
+  Scenario: FAQ answers fit AI citation window
+    Given an answer engine extracts a single FAQ pair from the FAQPage schema
+    When it counts the words in the acceptedAnswer text
+    Then the count should be between 40 and 60 inclusive
+    # Verified by: tests/content/12-faq-word-count.sh (Task 16, audit M13)

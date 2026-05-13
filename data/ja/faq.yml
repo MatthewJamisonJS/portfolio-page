@@ -3,7 +3,7 @@ faq:
   title: "よくある質問"
   items:
     - question: "AEO とは何ですか? SEO とどう違いますか?"
-      answer: "AEO(Answer Engine Optimization、回答エンジン最適化)は、ChatGPT、Perplexity、Google の AI 概要などの AI ツールが質問に答える際に、あなたのサイトを引用するようにサイト構造を整える実践です。SEO は10件の青いリンクで上位を狙います。AEO は引用される回答そのものになることを狙います。スキーマ、ページ速度、コンテンツの質といった作業領域は重なりますが、目的は異なります。"
+      answer: "AEO(Answer Engine Optimization)は、ChatGPT、Perplexity、Google の AI 概要などの AI ツールが質問に答える際に、あなたのサイトを引用するようにサイト構造を整える実践です。SEO は10件の青いリンクで上位を狙います。AEO は引用される回答そのものになることを狙います。作業領域は重なりますが、目的は異なります。"
 
     - question: "AI 検索は本当に Google を置き換えていますか?"
       answer: "完全にではありませんが、シェアは急速に変わっています。<a href='https://www.gartner.com/en/newsroom/press-releases/2024-02-19-gartner-predicts-search-engine-volume-will-drop-25-percent-by-2026-due-to-ai-chatbots-and-other-virtual-agents' rel='external nofollow'>Gartner は従来型検索の検索量が 2026 年までに 25% 減少すると予測しています</a>。<a href='https://business.adobe.com/blog/ai-traffic-surge-retail-sites-not-machine-readable' rel='external nofollow'>Adobe Digital Insights は、米国小売サイトへの AI 経由のトラフィックが 2026 年第 1 四半期に前年比 393% 増加したと報告しました</a>。AI に推奨を尋ねる顧客は実在し、その割合は増えています。"
@@ -24,10 +24,10 @@ faq:
       answer: "AEO と SEO は重なるため、良い SEO 作業は私たちの仕事を楽にします。担当者を置き換えるよりも連携することが多いです。SEO 設定が堅実であれば、Audit が正しい出発点です — 既に機能しているものをやり直さずに、AEO 固有のどのギャップを埋めるべきかを正確に示します。"
 
     - question: "ウェブサイトすらない場合は?"
-      answer: "ウェブサイトがなくても AI に引用されることは可能です。AI エンジンは Google Business Profile、Yelp、Foursquare、Apple Business Connect などから情報を取得します。それらをまず取得・整備します。基本的な 5 ページのサイトはその後です。サイトは完全に自分でコントロールできる唯一の要素ですが、土台ではありません — ビジネスリスティングこそが土台です。"
+      answer: "ウェブサイトがなくても AI に引用されることは可能です。AI エンジンは Google Business Profile、Yelp、Foursquare、Apple Business Connect などから情報を取得します。それらをまず取得・整備し、基本的な 5 ページのサイトはその後です。サイトは自分で完全にコントロールできますが、土台ではなく、ビジネスリスティングこそが土台です。"
 
     - question: "Google Business Profile はどうなりますか?"
-      answer: "GBP は地元ビジネスにとって最も ROI の高いレバーです。完全かつ最適化された GBP は、他に何もしなくても 30〜60 日でローカル 3-pack に押し上げ得ます。プロフィールが未取得、半分しか埋まっていない、写真がないなら、どの依頼もそこから始まります。<a href='https://whitespark.ca/local-search-ranking-factors/' rel='external nofollow'>Whitespark の 2024 年ローカル検索ランキング要因調査</a>でも GBP はローカルパックの 1 位要因として変わらず挙げられています。"
+      answer: "GBP は地元ビジネスにとって最も ROI の高いレバーです。完全かつ最適化された GBP は、他に何もしなくても 30〜60 日でローカル 3-pack に押し上げ得ます。プロフィールが未取得、半分しか埋まっていない、写真がないなら、どの依頼もそこから始まります。<a href='https://whitespark.ca/local-search-ranking-factors/' rel='external nofollow'>Whitespark 2024 調査</a>でも GBP はローカルパックの 1 位要因とされています。"
 
     - question: "途中でやめたい場合は?"
       answer: "やめてください。私たちが触れるすべての所有権はあなたにあります — ドメイン、GBP、アカウント、コンテンツ。月単位を超える契約はありません。成果が出ていないなら、去るべきですし、率直に言えば私たちもそれを知りたいです。クライアントを縛りつけるのは、自発的に残ってもらうほどの仕事ができていない兆候です。"

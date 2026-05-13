@@ -60,7 +60,7 @@ for field in Preferred-Languages Canonical; do
 done
 
 # Canonical must reference the .well-known path
-if ! grep -qE "^Canonical:[[:space:]]*https://matthewjamison\.dev/\.well-known/security\.txt\$" "$SEC"; then
+if ! grep -qE "^Canonical:[[:space:]]*https://gatewaytechaeo\.com/\.well-known/security\.txt\$" "$SEC"; then
   echo "FAIL — Canonical: must point at https://gatewaytechaeo.com/.well-known/security.txt"
   FAIL=1
 fi

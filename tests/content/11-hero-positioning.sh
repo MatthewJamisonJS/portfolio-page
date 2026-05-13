@@ -30,9 +30,10 @@ for locfile in data/en/banner.yml data/es/banner.yml data/ja/banner.yml data/fr/
   done
 done
 
-# Required-marker check — EN at minimum must reference Rails + Shopify + small business.
+# Required-marker check — EN at minimum must reference Full-Stack + St. Louis
+# + small business + AI-world (the operator's voice as of Task 15 refinement).
 EN=$REPO/data/en/banner.yml
-REQUIRED_EN=("Rails" "Shopify" "small business")
+REQUIRED_EN=("Full-Stack" "St. Louis" "small business" "AI-world")
 for marker in "${REQUIRED_EN[@]}"; do
   if ! grep -q "$marker" "$EN"; then
     echo "FAIL — data/en/banner.yml missing positioning marker: $marker"

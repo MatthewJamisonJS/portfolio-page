@@ -2,8 +2,8 @@
 banner:
   enable: true
   kicker: "Answer Engine Optimization · St. Louis"
-  title: "Day job: production Rails at Shopify-scale. <em>After hours: yours.</em>"
-  subtitle: "Day job is a production Rails 8 codebase — the same framework that powers Shopify's 5.5M+ merchants. After hours I bring that engineering rigor to under-resourced St. Louis small businesses, so AI tools cite you when your next customer asks ChatGPT for a recommendation."
+  title: "Built by a Full-Stack engineer in St. Louis. <em>Helping small businesses and entrepreneurs prepare for an AI-world.</em>"
+  subtitle: "A complete open schema.org graph on every page, source code in the open, and WCAG 2.1 AA across five locales. Verifiable in the address bar — right now."
   button:
     enable: true
     label: "Send a free brief"

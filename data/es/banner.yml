@@ -2,8 +2,8 @@
 banner:
   enable: true
   kicker: "Optimización para motores de respuesta · St. Louis"
-  title: "Trabajo principal: Rails en producción a la escala de Shopify. <em>Fuera de hora: para ti.</em>"
-  subtitle: "Mi trabajo principal es una base de código Rails 8 en producción — el mismo framework que potencia los 5,5 M+ comerciantes de Shopify. Fuera de hora llevo ese rigor de ingeniería a los pequeños negocios de St. Louis con menos recursos, para que las herramientas de IA te citen cuando tu próximo cliente le pida una recomendación a ChatGPT."
+  title: "Construido por un ingeniero Full-Stack en St. Louis. <em>Ayudando a pequeños negocios y emprendedores a prepararse para un mundo de IA.</em>"
+  subtitle: "Un grafo schema.org completo y abierto en cada página, código fuente público y WCAG 2.1 AA en cinco idiomas. Verificable en la barra de direcciones — ahora mismo."
   button:
     enable: true
     label: "Envía un brief gratis"

@@ -50,7 +50,7 @@ The shift is more pronounced in informational queries — "how do I", "what is",
 
 Classical SEO assumed the publisher (Google) wanted ten options on a page so the user could pick. Answer engines assume the user wants *one* answer. That changes the incentive: AEO is a winner-takes-most game per query. The site that gets cited in the answer collects the trust, the brand mention, and (sometimes) the link. The five sites that didn't get cited get nothing — not a #6 spot, not a partial mention. Nothing.
 
-The implication for local businesses is that consistency of identity matters more than ever. The `Organization.@id` graph on this site anchors every page back to a single entity at `https://matthewjamison.dev/#organization`. Every `BlogPosting` references the same `author` via `@id`. When an answer engine encounters the brand across thirty different pages, it resolves to one entity, not thirty. That's how an answer engine builds enough confidence to cite you by name instead of paraphrasing your content anonymously.
+The implication for local businesses is that consistency of identity matters more than ever. The `Organization.@id` graph on this site anchors every page back to a single entity at `https://gatewaytechaeo.com/#organization`. Every `BlogPosting` references the same `author` via `@id`. When an answer engine encounters the brand across thirty different pages, it resolves to one entity, not thirty. That's how an answer engine builds enough confidence to cite you by name instead of paraphrasing your content anonymously.
 
 ## What didn't change: E-E-A-T is still the moat
 

@@ -28,7 +28,7 @@ You want both. `robots.txt` controls access; `llms.txt` curates attention. They 
 Every line below is the actual `robots.txt` deployed at `/robots.txt` on this site. Lines that name a User-agent are also cited inline to the vendor's own documentation so you can verify the agent name is correct as of the date this post was last updated.
 
 ```
-# robots.txt for matthewjamison.dev
+# robots.txt for gatewaytechaeo.com
 # AEO posture: every verified AI crawler is welcomed by name.
 
 # Default — allow everything for legacy/general crawlers.
@@ -92,7 +92,7 @@ Allow: /
 User-agent: Applebot-Extended
 Allow: /
 
-Sitemap: https://matthewjamison.dev/sitemap.xml
+Sitemap: https://gatewaytechaeo.com/sitemap.xml
 ```
 
 Three things to notice about that file:
@@ -115,7 +115,7 @@ Below is the structure of the actual `llms.txt` deployed at `/llms.txt`. The [ll
 > includes the source code (open repo), Lighthouse 95+ across five
 > locales, and a complete schema.org @graph (Person, Organization,
 > ProfessionalService, WebSite, WebPage, FAQPage) anchored to
-> https://matthewjamison.dev/#organization.
+> https://gatewaytechaeo.com/#organization.
 
 ## Who runs this
 ...

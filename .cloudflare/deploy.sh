@@ -1,6 +1,6 @@
 #!/bin/bash
 # Cloudflare Pages deployment helper script for portfolio-page
-# Site: matthewjamison.dev
+# Site: gatewaytechaeo.com
 
 echo "Starting Hugo build for Cloudflare Pages..."
 echo "=============================================="

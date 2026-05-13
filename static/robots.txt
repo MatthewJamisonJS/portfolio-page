@@ -1,4 +1,4 @@
-# robots.txt for matthewjamison.dev
+# robots.txt for gatewaytechaeo.com
 # AEO posture: every verified AI crawler is welcomed by name.
 # Source list: AEO-TIGHTEN-SHIP.md §A.2 (each entry verified against vendor docs).
 
@@ -64,4 +64,4 @@ Allow: /
 User-agent: Applebot-Extended
 Allow: /
 
-Sitemap: https://matthewjamison.dev/sitemap.xml
+Sitemap: https://gatewaytechaeo.com/sitemap.xml

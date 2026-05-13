@@ -7,6 +7,18 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Changed
+- Primary domain cutover: matthewjamison.dev → gatewaytechaeo.com.
+  Updated `config/production/hugo.toml` `baseURL`, `data/{en,es,ja,fr,de}/brand.yml`
+  `website`, `static/robots.txt`, `static/llms.txt`, `static/.well-known/security.txt`,
+  blog post self-references, i18n caption copy (single-domain rewrite, all five
+  locales), and deployment docs (`DEPLOYMENT.md`, `.cloudflare/CHECKLIST.md`,
+  `.cloudflare/zone-config.md`, `.cloudflare/deploy.sh`). `matthewjamison.dev`
+  is being detached from this Cloudflare Pages project and reserved for a
+  future blank-slate project.
+- Twitter handle rebrand: `@matthewjamison` → `@M_J_Jamison` in
+  `layouts/partials/head.html` (twitter:site, twitter:creator, Person `sameAs`).
+
 ## [1.0.0] - 2025-10-30
 
 ### Wave 3: GitHub Standardization & WCAG 3.0 Accessibility

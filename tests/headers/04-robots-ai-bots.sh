@@ -33,7 +33,7 @@ for bot in "${EXPECTED[@]}"; do
 done
 
 # Sitemap line preserved
-if ! grep -qE "^Sitemap:[[:space:]]*https://matthewjamison.dev/sitemap.xml\$" "$ROBOTS"; then
+if ! grep -qE "^Sitemap:[[:space:]]*https://gatewaytechaeo.com/sitemap.xml\$" "$ROBOTS"; then
   echo "FAIL — Sitemap: line missing or wrong"
   FAIL=1
 fi

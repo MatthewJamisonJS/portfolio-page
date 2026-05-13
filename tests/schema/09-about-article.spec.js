@@ -41,7 +41,7 @@ for (const rel of ABOUT_PATHS) {
   } else {
     if (!aboutPage['@id']) failures.push(`${rel}: AboutPage missing @id`);
     if (!aboutPage.url) failures.push(`${rel}: AboutPage missing url`);
-    if (!aboutPage.mainEntity || aboutPage.mainEntity['@id'] !== 'https://matthewjamison.dev/#person') {
+    if (!aboutPage.mainEntity || aboutPage.mainEntity['@id'] !== 'https://gatewaytechaeo.com/#person') {
       failures.push(`${rel}: AboutPage.mainEntity must reference #person`);
     }
   }
@@ -54,10 +54,10 @@ for (const rel of ABOUT_PATHS) {
   for (const prop of ['headline', 'datePublished', 'dateModified', 'author', 'publisher', 'image', 'mainEntityOfPage']) {
     if (!article[prop]) failures.push(`${rel}: Article missing "${prop}"`);
   }
-  if (article.author && article.author['@id'] !== 'https://matthewjamison.dev/#person') {
+  if (article.author && article.author['@id'] !== 'https://gatewaytechaeo.com/#person') {
     failures.push(`${rel}: Article.author must reference #person, got ${JSON.stringify(article.author)}`);
   }
-  if (article.publisher && article.publisher['@id'] !== 'https://matthewjamison.dev/#organization') {
+  if (article.publisher && article.publisher['@id'] !== 'https://gatewaytechaeo.com/#organization') {
     failures.push(`${rel}: Article.publisher must reference #organization, got ${JSON.stringify(article.publisher)}`);
   }
 

@@ -234,13 +234,20 @@ a:hover { color: var(--brick-deep); }
   position: relative;
   z-index: 1;
   display: grid;
-  grid-template-columns: 1.05fr 1fr;
-  gap: clamp(2rem, 4vw, 4rem);
-  align-items: center;
+  grid-template-columns: 1fr;
+  gap: clamp(3rem, 6vw, 5.5rem);
+  align-items: stretch;
   max-width: 1480px;
   margin: 0 auto;
 }
-.hero-copy { display: flex; flex-direction: column; gap: 1.25rem; }
+.hero-copy {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  max-width: clamp(680px, 60vw, 1200px);
+  margin: 0 auto;
+  width: 100%;
+}
 .hero-corner-rule {
   display: flex;
   align-items: baseline;
@@ -353,6 +360,11 @@ a:hover { color: var(--brick-deep); }
      `50% − 50vw` trick yields edge-to-edge regardless of parent padding,
      and the section already clips horizontal overflow. */
   .hero-stack .aeo-reel {
+    /* Desktop base is 2-col grid; mobile flips back to single column
+       so each card can take the full Instagram-takeover panel. */
+    display: flex;
+    flex-direction: column;
+    grid-template-columns: 1fr;
     gap: 0;
     margin-top: 1.5rem;
     width: 100vw;
@@ -543,16 +555,21 @@ a:hover { color: var(--brick-deep); }
    per-card engine label header, mono pause-all + disclaimer foot.
    Native <video autoplay muted playsinline preload="metadata"> handles
    load/play/pause across browsers — no IO observer fragility. */
+/* Desktop hero reel: two-card grid sitting full-width below the H1/copy
+   block. Eyebrow spans both columns; each card fills its own column.
+   Mobile override at line ~351 swaps this to the full-bleed Instagram
+   takeover, so this rule is the desktop-and-tablet posture. */
 .aeo-reel {
-  display: flex;
-  flex-direction: column;
-  gap: 24px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: clamp(1.25rem, 2vw, 2rem);
   margin: 0;
   padding: 0;
   max-width: 100%;
 }
 
 .aeo-reel-eyebrow {
+  grid-column: 1 / -1;
   display: flex;
   align-items: center;
   gap: 10px;
@@ -622,7 +639,10 @@ a:hover { color: var(--brick-deep); }
 .aeo-reel-frame {
   position: relative;
   width: 100%;
-  max-width: 800px;
+  /* max-width 800 removed: the .aeo-reel grid (1fr 1fr) now constrains
+     each card to half the hero width naturally. Keeping 16:10 means the
+     card scales proportionally as the viewport grows — at 1480 hero max,
+     each card is ~720 wide × 450 tall, the symmetry the H1 needs. */
   aspect-ratio: 16 / 10;
   background: var(--ink);
   border: 1px solid var(--rule);
@@ -684,8 +704,11 @@ a:hover { color: var(--brick-deep); }
 }
 
 @media (max-width: 1024px) {
-  .aeo-reel { gap: 14px; }
-  .aeo-reel-frame { max-width: 600px; margin: 0 auto; }
+  /* Tablet: keep 2-up grid, tighten gap so the two cards breathe within
+     a narrower viewport. The max-width: 600 + margin: auto override that
+     used to live here was needed when the reel sat in the right column of
+     a 2-col hero; the new full-width 2-up grid sizes each card naturally. */
+  .aeo-reel { gap: clamp(0.75rem, 1.5vw, 1.25rem); }
 }
 @media (max-width: 768px) {
   .aeo-reel { gap: 12px; }

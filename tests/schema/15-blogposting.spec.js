@@ -51,10 +51,10 @@ for (const file of posts) {
   for (const k of ['headline', 'description', 'datePublished', 'dateModified', 'mainEntityOfPage', 'inLanguage']) {
     if (!bp[k]) failures.push(`${rel}: BlogPosting.${k} missing`);
   }
-  if (!bp.author || bp.author['@id'] !== 'https://matthewjamison.dev/#person') {
+  if (!bp.author || bp.author['@id'] !== 'https://gatewaytechaeo.com/#person') {
     failures.push(`${rel}: BlogPosting.author @id != #person`);
   }
-  if (!bp.publisher || bp.publisher['@id'] !== 'https://matthewjamison.dev/#organization') {
+  if (!bp.publisher || bp.publisher['@id'] !== 'https://gatewaytechaeo.com/#organization') {
     failures.push(`${rel}: BlogPosting.publisher @id != #organization`);
   }
 }

@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 // Audit H10: every sameAs URL emitted in the @graph must resolve to HTTP 200.
 // gatewaytechaeo.com is unreachable at plan time (2026-05-11) — drop until DNS
-// resolves OR an apex redirect to matthewjamison.dev ships in same PR.
+// resolves OR an apex redirect to gatewaytechaeo.com ships in same PR.
 //
 // Spec: docs/superpowers/plans/2026-05-11-aeo-citation-surface-upgrade.md Task 1.
 

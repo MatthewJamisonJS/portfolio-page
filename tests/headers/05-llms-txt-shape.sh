@@ -41,7 +41,7 @@ if (( H2_COUNT < 3 )); then
   FAIL=1
 fi
 
-if ! grep -qE '\(/about/\)|\(https://matthewjamison.dev/about/\)' "$LLMS"; then
+if ! grep -qE '\(/about/\)|\(https://gatewaytechaeo.com/about/\)' "$LLMS"; then
   echo "FAIL — llms.txt does not link to /about/"
   FAIL=1
 fi

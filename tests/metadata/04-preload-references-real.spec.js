@@ -51,7 +51,7 @@ for (const rel of HOMES) {
     let consumed = haystack.includes(href);
     if (!consumed) {
       try {
-        const u = new URL(href, 'https://matthewjamison.dev/');
+        const u = new URL(href, 'https://gatewaytechaeo.com/');
         consumed = haystack.includes(u.pathname);
       } catch (_) { /* not a URL — fall through */ }
     }

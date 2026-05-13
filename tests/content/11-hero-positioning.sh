@@ -31,9 +31,11 @@ for locfile in data/en/banner.yml data/es/banner.yml data/ja/banner.yml data/fr/
 done
 
 # Required-marker check — EN at minimum must reference Full-Stack + St. Louis
-# + small business + AI-world (the operator's voice as of Task 15 refinement).
+# + local businesses + AI search (operator's voice after the teach-first hero
+# refactor in PR #45 "small→local sweep" — replaces the older "small business
+# + AI-world" framing).
 EN=$REPO/data/en/banner.yml
-REQUIRED_EN=("Full-Stack" "St. Louis" "small business" "AI-world")
+REQUIRED_EN=("Full-Stack" "St. Louis" "local businesses" "AI search")
 for marker in "${REQUIRED_EN[@]}"; do
   if ! grep -q "$marker" "$EN"; then
     echo "FAIL — data/en/banner.yml missing positioning marker: $marker"

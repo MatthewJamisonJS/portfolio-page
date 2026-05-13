@@ -19,7 +19,7 @@ AI answer engines have their own crawlers. They are not the same as Googlebot, t
 
 `robots.txt` is the original 1994 [Robots Exclusion Protocol](https://www.rfc-editor.org/rfc/rfc9309) — every crawler with manners reads it before fetching. You use it to *allow* or *disallow* specific user agents. It's a plain-text file at your site root, and the syntax has barely changed in thirty years.
 
-`llms.txt` is a newer proposal from [llmstxt.org](https://llmstxt.org/) (current spec v1.7.0, released May 2026). It's a Markdown file at your root that tells LLMs *which content to read first*. Think of it as a `sitemap.xml` aimed at agents, written for humans. Where a sitemap is a flat list of URLs, an `llms.txt` is a curated, prioritized table of contents — the agent reads it before it decides which pages to spend tokens on.
+`llms.txt` is a newer proposal from [llmstxt.org](https://llmstxt.org/) — Jeremy Howard's standardisation proposal, originally published September 2024 and the de-facto reference today. The published spec has no version number; the canonical page at llmstxt.org IS the spec. It's a Markdown file at your root that tells LLMs *which content to read first*. Think of it as a `sitemap.xml` aimed at agents, written for humans. Where a sitemap is a flat list of URLs, an `llms.txt` is a curated, prioritized table of contents — the agent reads it before it decides which pages to spend tokens on.
 
 You want both. `robots.txt` controls access; `llms.txt` curates attention. They answer different questions: "are you allowed to read this site?" and "what's worth reading first?"
 
@@ -47,10 +47,19 @@ User-agent: OAI-SearchBot
 Allow: /
 
 # Anthropic crawlers
-# https://docs.anthropic.com/en/docs/agents-and-tools/web-crawler
+# https://support.claude.com/en/articles/8896518-does-anthropic-crawl-data-from-the-web-and-how-can-site-owners-block-the-crawler
+# Three current crawlers per Anthropic's support article (verified May 2026).
 User-agent: ClaudeBot
 Allow: /
 
+User-agent: Claude-User
+Allow: /
+
+User-agent: Claude-SearchBot
+Allow: /
+
+# Legacy Anthropic user-agents — kept allowed in case older deployments still
+# probe these names. Not enumerated in Anthropic's current support article.
 User-agent: anthropic-ai
 Allow: /
 
@@ -94,7 +103,7 @@ Three things to notice about that file:
 
 ## The drop-in llms.txt
 
-Below is the structure of the actual `llms.txt` deployed at `/llms.txt`. The [spec is v1.7.0 (May 2026)](https://llmstxt.org/), and the structure is: required H1, optional blockquote summary, zero or more H2-delimited sections, optional `## Optional` section.
+Below is the structure of the actual `llms.txt` deployed at `/llms.txt`. The [llmstxt.org proposal](https://llmstxt.org/) defines the structure as: required H1, optional blockquote summary, zero or more H2-delimited sections, and an optional `## Optional` section for lower-priority content.
 
 ```
 # Gateway Tech AEO
@@ -135,7 +144,7 @@ The full file is at `/llms.txt`. The annotated structure:
 - **H1.** Your project or business name. Required.
 - **Blockquote.** One paragraph the LLM can quote verbatim as a description. Make it citable.
 - **H2 sections.** One per topic. Lead with the most important. Link to specific pages on your site so the LLM can deepen if it has budget.
-- **`## Optional`.** Lower-priority context. Skip-if-token-budget-is-tight content. New in v1.7.0.
+- **`## Optional`.** Lower-priority context. Skip-if-token-budget-is-tight content. Defined in the original spec for content that agents can drop when budget is short.
 
 ## The three rules I follow
 
@@ -145,7 +154,7 @@ The full file is at `/llms.txt`. The annotated structure:
 
 ## What I won't recommend
 
-- **Don't disallow GPTBot or ClaudeBot to "force them to ignore your content."** Answer engines route around `robots.txt` for many use cases. The [Apple Intelligence docs](https://support.apple.com/en-us/119829) and [Anthropic's own crawler doc](https://docs.anthropic.com/en/docs/agents-and-tools/web-crawler) are clearer than most blog posts about which crawler honors which directive. If you're paranoid about training data, the correct directives are `Applebot-Extended: Disallow: /` and `Google-Extended: Disallow: /` — those opt you out of training while still letting Spotlight, Siri, and Search Generative Experience index you for live answers. Different agents, different scopes.
+- **Don't disallow GPTBot or ClaudeBot to "force them to ignore your content."** Answer engines route around `robots.txt` for many use cases. The [Apple Intelligence docs](https://support.apple.com/en-us/119829) and [Anthropic's own crawler doc](https://support.claude.com/en/articles/8896518-does-anthropic-crawl-data-from-the-web-and-how-can-site-owners-block-the-crawler) are clearer than most blog posts about which crawler honors which directive. If you're paranoid about training data, the correct directives are `Applebot-Extended: Disallow: /` and `Google-Extended: Disallow: /` — those opt you out of training while still letting Spotlight, Siri, and Search Generative Experience index you for live answers. Different agents, different scopes.
 - **Don't put your competitive secrets in `llms.txt`.** Treat it as marketing copy. Anything you write there is going into LLM context windows.
 - **Don't fork-bomb the file with every URL on your site.** A `sitemap.xml` already does that. `llms.txt` is supposed to be the curated short list.
 
@@ -155,7 +164,7 @@ Three details that catch people the first time they set this up:
 
 **`ChatGPT-User` is not the same as `GPTBot`.** [Per OpenAI's docs](https://platform.openai.com/docs/bots), `GPTBot` is the training crawler; `ChatGPT-User` is the live retrieval agent that fetches a URL on a user's behalf when someone pastes a link into the chat. `OAI-SearchBot` is the third — it powers ChatGPT's web search results. If you want to opt out of training but keep being citable, disallow `GPTBot` and allow the other two.
 
-**Anthropic has three agent names.** [Anthropic's web-crawler documentation](https://docs.anthropic.com/en/docs/agents-and-tools/web-crawler) lists `ClaudeBot`, `anthropic-ai`, and `Claude-Web` — each with different rules. The current canonical training crawler is `ClaudeBot`. The other two are kept for legacy reasons and may go away.
+**Anthropic has three current crawler names plus two legacy ones.** [Anthropic's current support article](https://support.claude.com/en/articles/8896518-does-anthropic-crawl-data-from-the-web-and-how-can-site-owners-block-the-crawler) enumerates `ClaudeBot` (training), `Claude-User` (live retrieval on a user's behalf), and `Claude-SearchBot` (search). Older robots.txt files still reference `anthropic-ai` and `Claude-Web`; those names are not in the current documentation, so treat them as legacy and verify against the support URL above rather than against secondary blog posts.
 
 **Perplexity has a verified-IP system, not just a user-agent.** [Perplexity's bots doc](https://docs.perplexity.ai/guides/bots) publishes an IP range list. Sites that want a stricter posture can require the IP range as the source of truth and treat the user-agent as merely a hint. Most small business sites won't need that level of verification.
 
@@ -165,7 +174,7 @@ Once you've deployed both files, run these three checks:
 
 1. **`curl -I https://your-site.com/robots.txt`** — confirm `Content-Type: text/plain` and HTTP 200.
 2. **`curl -I https://your-site.com/llms.txt`** — same.
-3. **Use Google's [robots.txt tester](https://developers.google.com/search/docs/crawling-indexing/robots/robots_txt) in Search Console.** There isn't an equivalent for `llms.txt` yet, but you can paste the file into [llmstxt.org's reference](https://llmstxt.org/) and compare against the v1.7.0 grammar.
+3. **Use Google's [robots.txt tester](https://developers.google.com/search/docs/crawling-indexing/robots/robots_txt) in Search Console.** There isn't an equivalent for `llms.txt` yet, but you can paste the file into [llmstxt.org's reference](https://llmstxt.org/) and compare against the published grammar on that page.
 
 A frequent gotcha: if your site is on Cloudflare Pages or Netlify, both will happily serve a 404 on `/robots.txt` if the file isn't in `static/`. Hugo, Astro, and Next.js each have a different conventional location for the file — verify the location for your stack before assuming a missing file is a deploy bug.
 

@@ -23,8 +23,15 @@ if (( WORDS < 1500 || WORDS > 2200 )); then
   exit 1
 fi
 
-# Every User-agent line in static/robots.txt must appear in the post.
+# Bidirectional drift check (post-review #40 hardening per reviewer finding #5).
+# 1. Every User-agent line in static/robots.txt must appear in the post.
+# 2. Every User-agent line in the post's robots.txt code block must appear in
+#    static/robots.txt. The post text explicitly promises bidirectional
+#    self-consistency ("every User-agent: line in the live robots.txt would
+#    appear in the post"); the test now enforces it in both directions.
 FAIL=0
+
+# Direction 1: live → post.
 while IFS= read -r line; do
   [[ -z "$line" || "$line" =~ ^# ]] && continue
   if [[ "$line" =~ ^User-agent: ]]; then
@@ -34,6 +41,16 @@ while IFS= read -r line; do
     fi
   fi
 done < "$ROBOTS"
+
+# Direction 2: post → live. Extract User-agent lines from the post (anywhere
+# in the body — fenced code blocks are not parsed, but grep is content-blind
+# enough that any 'User-agent:' line in the post counts as a claim).
+while IFS= read -r line; do
+  if ! grep -qF "$line" "$ROBOTS"; then
+    echo "FAIL — post claims a User-agent that is NOT in static/robots.txt: $line"
+    FAIL=1
+  fi
+done < <(grep -E '^User-agent:' "$POST")
 
 # H1 from static/llms.txt must appear in the post.
 LLMS_H1=$(grep -m1 '^# ' "$LLMSTXT")
@@ -45,7 +62,7 @@ fi
 # Required citations.
 REQUIRED=(
   "platform.openai.com/docs/bots"
-  "docs.anthropic.com"
+  "support.claude.com"
   "docs.perplexity.ai/guides/bots"
   "developers.google.com/search/docs/crawling-indexing"
   "support.apple.com"

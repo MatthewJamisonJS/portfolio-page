@@ -11,8 +11,10 @@ articleSection: "AEO Fundamentals"
 keywords: ["AEO", "Answer Engine Optimization", "SEO", "schema.org", "ChatGPT", "Perplexity", "Google AI Overview", "セントルイス"]
 image: "/images/og/og-aeo-vs-seo.webp"
 image_alt: "AEO vs SEO — what changed and what didn't. Gateway Tech AEO."
-inLanguage: "en"
-translator_note: "This article has not yet been translated to Japanese. Full content available at /blog/aeo-vs-seo-what-changed/."
+noindex: true
+sitemap:
+  disable: true
+translator_note: "This article has not yet been translated to Japanese. Full content available at /blog/aeo-vs-seo-what-changed/. Page set to noindex until translated."
 ---
 
 > **翻訳者註 (ja):** この記事はまだ日本語に翻訳されていません。本文は以下に英語のまま残されています。日本語訳は今後のロードマップに含まれています。[英語の原文を読む](/blog/aeo-vs-seo-what-changed/)。

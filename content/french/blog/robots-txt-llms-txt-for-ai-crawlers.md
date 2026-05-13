@@ -11,8 +11,10 @@ articleSection: "AEO Operations"
 keywords: ["robots.txt", "llms.txt", "crawlers IA", "GPTBot", "ClaudeBot", "PerplexityBot", "Google-Extended", "Applebot-Extended", "Bingbot"]
 image: "/images/og/og-robots-llms.webp"
 image_alt: "Robots.txt and llms.txt for AI crawlers — drop-in template. Gateway Tech AEO."
-inLanguage: "en"
-translator_note: "This article has not yet been translated to French. Full content available at /blog/robots-txt-llms-txt-for-ai-crawlers/."
+noindex: true
+sitemap:
+  disable: true
+translator_note: "This article has not yet been translated to French. Full content available at /blog/robots-txt-llms-txt-for-ai-crawlers/. Page set to noindex until translated."
 ---
 
 > **Note du traducteur (fr) :** Cet article n'a pas encore été traduit en français. Le texte complet reste en anglais ci-dessous. La traduction française figure sur la feuille de route. [Lire l'original en anglais](/blog/robots-txt-llms-txt-for-ai-crawlers/).

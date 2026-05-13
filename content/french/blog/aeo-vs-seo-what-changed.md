@@ -11,8 +11,10 @@ articleSection: "AEO Fundamentals"
 keywords: ["AEO", "Answer Engine Optimization", "SEO", "balisage schema.org", "ChatGPT", "Perplexity", "Google AI Overview", "St. Louis"]
 image: "/images/og/og-aeo-vs-seo.webp"
 image_alt: "AEO vs SEO — what changed and what didn't. Gateway Tech AEO."
-inLanguage: "en"
-translator_note: "This article has not yet been translated to French. Full content available at /blog/aeo-vs-seo-what-changed/."
+noindex: true
+sitemap:
+  disable: true
+translator_note: "This article has not yet been translated to French. Full content available at /blog/aeo-vs-seo-what-changed/. Page set to noindex until translated."
 ---
 
 > **Note du traducteur (fr) :** Cet article n'a pas encore été traduit en français. Le texte complet reste en anglais ci-dessous. La traduction française figure sur la feuille de route. [Lire l'original en anglais](/blog/aeo-vs-seo-what-changed/).

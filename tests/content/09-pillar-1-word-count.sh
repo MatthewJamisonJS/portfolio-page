@@ -37,7 +37,7 @@ REQUIRED=(
   "schema.org"
   "developers.google.com/search"
   "platform.openai.com/docs/bots"
-  "docs.anthropic.com"
+  "support.claude.com"
 )
 FAIL=0
 for host in "${REQUIRED[@]}"; do

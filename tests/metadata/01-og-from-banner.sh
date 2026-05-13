@@ -15,7 +15,7 @@ FAIL=0
 
 # Per-locale expected fragments. Source: data/{en,es,ja,fr,de}/banner.yml.
 declare -a CHECKS=(
-  "en|index.html|en_US|Watch AI pick the winners"
+  "en|index.html|en_US|production Rails at Shopify-scale"
   "es|es/index.html|es_ES|"
   "ja|ja/index.html|ja_JP|"
   "fr|fr/index.html|fr_FR|"

@@ -2,8 +2,8 @@
 banner:
   enable: true
   kicker: "Antwort-Engine-Optimierung · St. Louis"
-  title: "Beobachten Sie, wie KI die Gewinner <em>in Ihrem Viertel</em> auswählt."
-  subtitle: "Entscheiden Sie dann, ob Sie einer davon sein wollen. Wir helfen kleinen Unternehmen in St. Louis, von ChatGPT, Perplexity, Claude und Googles KI-Übersicht zitiert zu werden."
+  title: "Hauptberuf: Produktives Rails in Shopify-Größenordnung. <em>Außerhalb der Bürozeit: für Sie.</em>"
+  subtitle: "Mein Hauptberuf ist eine produktive Rails-8-Codebasis — dasselbe Framework, das die 5,5 Mio.+ Shopify-Händler trägt. Außerhalb der Bürozeit bringe ich diese Ingenieursdisziplin zu kleinen St. Louiser Unternehmen mit knappen Ressourcen, damit KI-Tools Sie zitieren, wenn Ihr nächster Kunde ChatGPT um eine Empfehlung bittet."
   button:
     enable: true
     label: "Kostenloses Brief senden"

@@ -124,3 +124,11 @@ Feature: AEO citation surface upgrade
          whose lines are a superset of static/robots.txt and static/llms.txt
          on the same site
     # Verified by: tests/content/10-pillar-2-self-evidence.sh (Task 13)
+
+  Scenario: Hero copy matches operator positioning
+    Given a visitor lands on the homepage in any locale
+    When they read the hero kicker, title, and subtitle
+    Then the positioning should lead with production-Rails-at-scale evidence
+         and frame the practice as engineering rigor reaching back to small business
+         (not "Watch AI pick the winners on your block")
+    # Verified by: tests/content/11-hero-positioning.sh (Task 15, audit M14)

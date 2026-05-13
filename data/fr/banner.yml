@@ -2,8 +2,8 @@
 banner:
   enable: true
   kicker: "Optimisation pour moteurs de réponse · St. Louis"
-  title: "Regardez l'IA choisir les gagnants <em>de votre quartier.</em>"
-  subtitle: "Puis décidez si vous voulez être l'un d'eux. Nous aidons les petites entreprises de St. Louis à être citées par ChatGPT, Perplexity, Claude et l'aperçu IA de Google."
+  title: "Activité principale : Rails en production à l'échelle de Shopify. <em>En dehors des heures : pour vous.</em>"
+  subtitle: "Mon activité principale, c'est une codebase Rails 8 en production — le même framework qui propulse les 5,5 M+ marchands Shopify. En dehors des heures de bureau, j'apporte cette même rigueur d'ingénierie aux petites entreprises de St. Louis aux ressources limitées, pour que les outils d'IA vous citent quand votre prochain client demandera une recommandation à ChatGPT."
   button:
     enable: true
     label: "Envoyer un brief gratuit"

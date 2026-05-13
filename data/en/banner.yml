@@ -2,8 +2,8 @@
 banner:
   enable: true
   kicker: "Answer Engine Optimization · St. Louis"
-  title: "Watch AI pick the winners <em>on your block.</em>"
-  subtitle: "Then decide whether you want to be one of them. We help St. Louis small businesses get cited by ChatGPT, Perplexity, Claude, and Google's AI Overview."
+  title: "Built by a Full-Stack engineer in St. Louis. <em>Helping small businesses and entrepreneurs prepare for an AI-world.</em>"
+  subtitle: "A complete open schema.org graph on every page, source code in the open, and WCAG 2.1 AA across five locales. Verifiable in the address bar — right now."
   button:
     enable: true
     label: "Send a free brief"

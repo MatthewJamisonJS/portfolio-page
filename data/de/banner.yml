@@ -2,8 +2,8 @@
 banner:
   enable: true
   kicker: "Antwort-Engine-Optimierung · St. Louis"
-  title: "Beobachten Sie, wie KI die Gewinner <em>in Ihrem Viertel</em> auswählt."
-  subtitle: "Entscheiden Sie dann, ob Sie einer davon sein wollen. Wir helfen kleinen Unternehmen in St. Louis, von ChatGPT, Perplexity, Claude und Googles KI-Übersicht zitiert zu werden."
+  title: "Gebaut von einem Full-Stack-Ingenieur in St. Louis. <em>Hilft kleinen Unternehmen und Unternehmern, sich auf eine KI-Welt vorzubereiten.</em>"
+  subtitle: "Ein vollständiger, offener schema.org-Graph auf jeder Seite, öffentlicher Quellcode und WCAG 2.1 AA in fünf Locales. Überprüfbar in der Adressleiste — gerade jetzt."
   button:
     enable: true
     label: "Kostenloses Brief senden"

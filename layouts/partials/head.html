@@ -88,7 +88,15 @@
 
 	<!-- Enhanced SEO -->
 	<link rel="canonical" href="{{ .Permalink }}">
+	{{/* Per-page robots directive. Pages may set `noindex: true` in front matter
+	     to opt out of indexing (e.g. locale stubs that ship English bodies until
+	     translated — declaring inLanguage drift would mislead crawlers, so the
+	     honest move is noindex until the body is translated). Audit L7 review. */}}
+	{{ if .Params.noindex }}
+	<meta name="robots" content="noindex, follow">
+	{{ else }}
 	<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+	{{ end }}
 	<meta name="keywords" content="answer engine optimization, AEO, AI search optimization, schema markup, structured data, ChatGPT citations, Perplexity citations, Google AI Overview, St. Louis small business, full-stack developer">
 
 	{{/* hreflang alternates for every locale + x-default → EN. Audit C3. */}}
@@ -383,7 +391,11 @@
 				"image": "{{ site.BaseURL }}images/og/og-default.png",
 				"mainEntityOfPage": { "@id": "{{ .Permalink }}#aboutpage" },
 				"inLanguage": "{{ site.LanguageCode | default "en-us" }}"
-			}{{ end }}{{ if and (eq .Section "blog") (ne .Kind "section") }},
+			}{{ end }}{{/* BlogPosting node is suppressed on noindex pages
+			(e.g. locale stubs that ship English bodies until translated). Emitting
+			a BlogPosting whose inLanguage tag doesn't match its body is the exact
+			schema-vs-content mismatch the post itself warns against. PR #40
+			review re-check finding. */}}{{ if and (eq .Section "blog") (ne .Kind "section") (not .Params.noindex) }},
 			{
 				"@type": "BlogPosting",
 				"@id": "{{ .Permalink }}#blogposting",

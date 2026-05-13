@@ -1,0 +1,36 @@
+{{/* Reusable author E-E-A-T card. Mounts on About + blog single.
+     Renders byline, photo, day-job evidence, side-practice line, link rail,
+     and a visible <time datetime> lastmod for freshness signal. Audit L6.
+     Spec: docs/superpowers/plans/2026-05-11-aeo-citation-surface-upgrade.md Task 9. */}}
+{{ $data := index site.Data site.Language.Lang }}
+{{ with $data.author.author }}
+<aside class="author-bio" aria-label="About the author" itemscope itemtype="https://schema.org/Person">
+  <div class="author-bio__photo">
+    <img src="{{ .photo | relURL }}" alt="{{ .photo_alt }}" width="120" height="120" loading="lazy" itemprop="image">
+  </div>
+  <div class="author-bio__body">
+    <p class="author-bio__byline">
+      <span class="author-bio__byline-label">{{ i18n "by_label" | default "By" }}</span>
+      <strong itemprop="name">{{ .name }}</strong>
+      <span class="author-bio__role" itemprop="jobTitle">— {{ .role }}</span>
+    </p>
+    <p class="author-bio__lead" itemprop="description">{{ .bio_short }}</p>
+    <p class="author-bio__evidence">
+      <strong>{{ i18n "day_job_label" | default "Day job" }}:</strong> {{ .day_job }}
+    </p>
+    <p class="author-bio__evidence">
+      <strong>{{ i18n "side_label" | default "Side practice" }}:</strong> {{ .side_practice }}
+    </p>
+    <p class="author-bio__lastmod">
+      <span class="author-bio__lastmod-label">{{ i18n "updated_label" | default "Last updated" }}:</span>
+      <time datetime="{{ $.Lastmod.Format "2006-01-02" }}">{{ $.Lastmod.Format "January 2, 2006" }}</time>
+    </p>
+    <ul class="author-bio__links" aria-label="Author links">
+      {{ range .links }}<li><a href="{{ .url }}" rel="me noopener" target="_blank">{{ .label }}</a></li>{{ end }}
+    </ul>
+    {{ with .cta }}
+    <p class="author-bio__cta"><a href="{{ .url }}" class="btn btn-primary page-scroll">{{ .label }}</a></p>
+    {{ end }}
+  </div>
+</aside>
+{{ end }}

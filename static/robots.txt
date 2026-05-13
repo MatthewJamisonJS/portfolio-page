@@ -18,10 +18,20 @@ User-agent: OAI-SearchBot
 Allow: /
 
 # Anthropic crawlers
-# https://docs.anthropic.com/en/docs/agents-and-tools/web-crawler
+# https://support.claude.com/en/articles/8896518-does-anthropic-crawl-data-from-the-web-and-how-can-site-owners-block-the-crawler
+# Three current crawlers per Anthropic's support article (verified May 2026).
 User-agent: ClaudeBot
 Allow: /
 
+User-agent: Claude-User
+Allow: /
+
+User-agent: Claude-SearchBot
+Allow: /
+
+# Legacy Anthropic user-agents — kept allowed in case older deployments still
+# probe these names. Anthropic's current support article (link above) does not
+# enumerate these; they may be removed in a future update.
 User-agent: anthropic-ai
 Allow: /
 

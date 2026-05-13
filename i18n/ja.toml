@@ -341,3 +341,34 @@ other = "再開"
 
 [aeo_reel_description]
 other = "Google GeminiとOpenAI ChatGPTが、セントルイスのAEOテストクエリ4件(Dutchtownのコワーキング、O'Fallonの石膏ボード、サウスシティのタマレス、University Cityの不動産)に回答する画面録画のループ再生。両エンジンは引用元として matthewjamison.dev または gatewaytechaeo.com を表示しています。"
+
+[home_breadcrumb]
+other = "ホーム"
+
+# Blog templates (Task 11)
+[read_more]
+other = "続きを読む"
+
+[in_this_post]
+other = "この記事の内容"
+
+[by_label]
+other = "著者:"
+
+[updated_label]
+other = "更新"
+
+[day_job_label]
+other = "本業"
+
+[side_label]
+other = "副業"
+
+[field_notes]
+other = "フィールドノート"
+
+[table_of_contents]
+other = "目次"
+
+[blog_empty]
+other = "まだ公開された記事はありません。AEO研究のフィールドノートを下書きしながらここに掲載していきます。"

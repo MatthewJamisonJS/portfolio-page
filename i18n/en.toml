@@ -340,3 +340,34 @@ other = "Resume"
 
 [aeo_reel_description]
 other = "Looped screen recordings of Google Gemini and OpenAI ChatGPT generating responses to four St. Louis AEO test queries (Dutchtown coworking, O'Fallon drywalling, south city tamales, University City real estate). Both engines surface matthewjamison.dev or gatewaytechaeo.com in their cited sources."
+
+[home_breadcrumb]
+other = "Home"
+
+# Blog templates (Task 11)
+[read_more]
+other = "Read more"
+
+[in_this_post]
+other = "In this post"
+
+[by_label]
+other = "By"
+
+[updated_label]
+other = "Updated"
+
+[day_job_label]
+other = "Day job"
+
+[side_label]
+other = "Side practice"
+
+[field_notes]
+other = "Field Notes"
+
+[table_of_contents]
+other = "Table of contents"
+
+[blog_empty]
+other = "No posts published yet. Field notes will appear here as I draft AEO research."

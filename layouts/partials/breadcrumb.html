@@ -1,0 +1,29 @@
+{{/* Visible breadcrumb nav. Pairs with the BreadcrumbList JSON-LD inlined in
+     head.html (audit H11 / Task 2). Two surfaces, same data: machine-readable
+     for crawlers, human-readable for readers.
+
+     Conditional gates mirror the JSON-LD logic to stay taxonomy-safe:
+       - Hidden on .IsHome (single-item trail to self is noise).
+       - Section link fires when .Section is non-empty AND we're not on the
+         section page itself (avoids "About / About" on /about/).
+       - Current-page label fires only on .IsPage so taxonomy listings render
+         "Home / Tags" not "Home / Tags / Tags".
+
+     Audit Task 10. Spec: docs/superpowers/plans/2026-05-11-aeo-citation-surface-upgrade.md */}}
+{{ if not .IsHome }}
+<nav class="breadcrumb-nav" aria-label="Breadcrumb">
+  <ol class="breadcrumb-list">
+    <li class="breadcrumb-item">
+      <a href="{{ "/" | relLangURL }}">{{ i18n "home_breadcrumb" | default "Home" }}</a>
+    </li>
+    {{ if and .Section (not .IsHome) (not .IsSection) }}
+    <li class="breadcrumb-item">
+      <a href="{{ printf "/%s/" .Section | relLangURL }}">{{ .Section | title }}</a>
+    </li>
+    {{ end }}
+    {{ if or .IsPage .IsSection }}
+    <li class="breadcrumb-item breadcrumb-current" aria-current="page">{{ .Title }}</li>
+    {{ end }}
+  </ol>
+</nav>
+{{ end }}

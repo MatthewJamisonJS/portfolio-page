@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
-# Audit M12: static/llms.txt must carry a `## Optional` section per
-# llmstxt.org v1.7.0 (released 2026-05-11).
+# Audit M12: static/llms.txt must carry a `## Optional` section per the
+# llmstxt.org canonical proposal (Jeremy Howard, Sept 2024 — no formal
+# version number; the proposal page IS the spec).
 # Spec: docs/superpowers/plans/2026-05-11-aeo-citation-surface-upgrade.md Task 8.
 set -e
 ROOT="$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )"
@@ -14,7 +15,7 @@ fi
 
 if ! grep -q "^## Optional" "$FILE"; then
   echo "tests/content/04-llms-txt-optional.sh: FAIL — '## Optional' section missing"
-  echo "  llmstxt.org v1.7.0 spec: https://llmstxt.org/"
+  echo "  llmstxt.org canonical spec: https://llmstxt.org/"
   exit 1
 fi
 

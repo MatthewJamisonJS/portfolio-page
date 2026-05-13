@@ -21,7 +21,7 @@ FAIL=0
 CLAIMS=(
   "Gartner forecasts traditional search volume|gartner.com/en/newsroom"
   "Adobe Digital Insights reported AI traffic|business.adobe.com/blog"
-  "Whitespark 2024 ranking factors|whitespark.ca"
+  "Whitespark 2026|whitespark.ca"
 )
 
 for loc in "" es ja fr de; do

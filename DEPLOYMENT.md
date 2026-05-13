@@ -308,6 +308,51 @@ stricter H.264 ffmpeg pass on the mp4 if needed.
 3. Run `hugo --environment production --minify --gc` and verify the new `<video
    data-loop="…">` slot renders.
 
+## Sibling Worker — CSP report collector
+
+The site's CSP `report-to` / `report-uri` directives target a separate Cloudflare
+Worker at `https://csp-report.gatewaytechaeo.com`. Source lives in
+`csp-report-collector/` at repo root and is deployed independently of Pages via
+`wrangler deploy` from that directory (uses the OAuth session on the cph.org
+Cloudflare account, account_id `9fe16a00e3fedbfd2be304559fc7f777`). Deploying
+the Worker is a **one-time op** — only redeploy when `csp-report-collector/src/`
+changes. Pages builds do not touch it. If the Worker is offline, browsers log a
+console warning when posting violation reports but the site continues to render
+normally (`report-to` failure is non-fatal).
+
+Observability lives in the Worker, not Pages: every POST is logged via
+`console.log` and is queryable through the `cf-observability` MCP
+(`query_worker_observability` against script name `csp-report-collector`).
+
+Verify a fresh deploy:
+
+```bash
+# GET stub
+curl -s https://csp-report.gatewaytechaeo.com/
+# expect: "CSP violation report endpoint. POST CSP reports here."
+
+# Legacy POST (Safari, older browsers)
+curl -s -o /dev/null -w "%{http_code}\n" -X POST \
+  -H 'Content-Type: application/csp-report' \
+  -d '{"csp-report":{"violated-directive":"connect-src"}}' \
+  https://csp-report.gatewaytechaeo.com/
+# expect: 204
+
+# Modern POST (Chrome/Edge Reporting API)
+curl -s -o /dev/null -w "%{http_code}\n" -X POST \
+  -H 'Content-Type: application/reports+json' \
+  -d '[{"type":"csp-violation","age":0,"url":"x","body":{}}]' \
+  https://csp-report.gatewaytechaeo.com/
+# expect: 204
+
+# Unknown content-type is rejected with 415
+curl -s -o /dev/null -w "%{http_code}\n" -X POST \
+  -H 'Content-Type: text/plain' \
+  -d 'hi' \
+  https://csp-report.gatewaytechaeo.com/
+# expect: 415
+```
+
 ## Files Reference
 
 - `.cloudflare/deploy.sh` - Deployment helper script
@@ -316,6 +361,8 @@ stricter H.264 ffmpeg pass on the mp4 if needed.
 - `static/_headers` - Security headers configuration
 - `static/robots.txt` - Search engine instructions
 - `config/` - Theme and layout configurations
+- `csp-report-collector/` - Sibling Cloudflare Worker that ingests CSP
+  violation reports (deployed via `wrangler deploy` from that directory)
 
 ## Support
 

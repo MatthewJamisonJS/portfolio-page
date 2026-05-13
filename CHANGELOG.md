@@ -8,6 +8,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 ### Security
+- Add CSP violation reporting endpoint at `https://csp-report.gatewaytechaeo.com`
+  via a Cloudflare Worker (`csp-report-collector/`). Worker validates
+  Content-Type, logs each report via `console.log` (queryable via the
+  `cf-observability` MCP), returns 204; rejects other content-types with
+  415. `static/_headers` gains the `csp-report-uri`/`report-to` CSP
+  directives, plus a modern `Reporting-Endpoints` header (Chrome/Edge ≥96)
+  and a legacy `Report-To` header for older Chrome. Safari + Firefox
+  only honor `report-uri`, so both delivery paths ship for full coverage.
 - Add CodeQL static analysis workflow (`.github/workflows/codeql.yml`)
   scanning `javascript-typescript` (covers `assets/js/script.js` + inline
   `<script>` blocks in layouts) and `actions` (workflow YAML tag-pinning

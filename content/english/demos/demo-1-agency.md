@@ -8,7 +8,7 @@ build:
 demo_url: "https://demo-agency.pages.dev"
 github_url: "https://github.com/MatthewJamisonJS/demo-agency"
 theme_name: "Andromeda Light"
-description: "Win client trust instantly with a polished agency presence. Showcase your portfolio, convert visitors into leads, and establish credibility—launch-ready in weeks with zero hosting costs and 98/100 performance."
+description: "Andromeda Light theme, Hugo + Tailwind, 98/100 Lighthouse, five-language i18n. Replaces a $500/month WordPress build at zero ongoing hosting cost."
 image: "/images/demos/demo-1-agency.webp"
 challenge: "Slow WordPress site costing $500/mo in hosting, poor mobile performance"
 solution_time: "2-3 weeks"

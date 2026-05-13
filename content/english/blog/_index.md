@@ -1,6 +1,6 @@
 ---
 title: "Field Notes"
-description: "Long-form notes from a St. Louis Rails developer doing AEO for small businesses outside business hours. Pillar pieces on schema, robots.txt, llms.txt, Google Business Profile, and the answer-engine citation game."
+description: "Long-form notes from a St. Louis Rails developer doing AEO for local businesses outside business hours. Pillar pieces on schema, robots.txt, llms.txt, Google Business Profile, and the answer-engine citation game."
 date: 2026-05-12
 lastmod: 2026-05-12
 draft: false

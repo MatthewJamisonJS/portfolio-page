@@ -8,7 +8,7 @@ build:
 demo_url: "https://demo-blog-a03.pages.dev"
 github_url: "https://github.com/MatthewJamisonJS/demo-blog"
 theme_name: "Parsa"
-description: "Build authority and drive organic traffic with a content platform designed for engagement and discovery. SEO-optimized structure, exceptional readability, and professional presentation turn readers into subscribers, customers, and advocates."
+description: "Parsa theme, Hugo + Lunr.js client-side search, 98/100 Lighthouse. Replaces a plugin-heavy WordPress blog at zero hosting cost, structured for answer-engine citation."
 image: "/images/demos/demo-5-blog.webp"
 challenge: "Content site drowning in WordPress plugins, slow page loads hurting SEO"
 solution_time: "2-3 weeks"

@@ -108,7 +108,7 @@ Below is the structure of the actual `llms.txt` deployed at `/llms.txt`. The [ll
 ```
 # Gateway Tech AEO
 
-> Answer Engine Optimization for St. Louis small businesses, run by a
+> Answer Engine Optimization for St. Louis local businesses, run by a
 > working Ruby on Rails developer. Three honest tiers, anti-guarantee
 > posture, capped at five year-one clients. Operator: Matthew Jamison
 > — a St. Louis AEO consultant; verifiable evidence on this site
@@ -166,7 +166,7 @@ Three details that catch people the first time they set this up:
 
 **Anthropic has three current crawler names plus two legacy ones.** [Anthropic's current support article](https://support.claude.com/en/articles/8896518-does-anthropic-crawl-data-from-the-web-and-how-can-site-owners-block-the-crawler) enumerates `ClaudeBot` (training), `Claude-User` (live retrieval on a user's behalf), and `Claude-SearchBot` (search). Older robots.txt files still reference `anthropic-ai` and `Claude-Web`; those names are not in the current documentation, so treat them as legacy and verify against the support URL above rather than against secondary blog posts.
 
-**Perplexity has a verified-IP system, not just a user-agent.** [Perplexity's bots doc](https://docs.perplexity.ai/guides/bots) publishes an IP range list. Sites that want a stricter posture can require the IP range as the source of truth and treat the user-agent as merely a hint. Most small business sites won't need that level of verification.
+**Perplexity has a verified-IP system, not just a user-agent.** [Perplexity's bots doc](https://docs.perplexity.ai/guides/bots) publishes an IP range list. Sites that want a stricter posture can require the IP range as the source of truth and treat the user-agent as merely a hint. Most local business sites won't need that level of verification.
 
 ## How to verify your file works
 
@@ -184,7 +184,7 @@ This post is also self-evidence. If you fetched `/robots.txt` and `/llms.txt` on
 
 That's not a clever rhetorical flourish. That's the entire point of running AEO from an engineering posture: every claim on the marketing surface is independently verifiable, every public template is the same file the operator deploys against, and the test suite is the thing that prevents the marketing copy from quietly aging into a lie.
 
-If you're a St. Louis small business owner and you want help setting both files up — plus the Google Business Profile, plus the FAQ schema, plus the `BlogPosting` markup that makes this post citable in the first place — [send a brief](/#contact). I run a [three-tier practice](/#pricing): a $250 audit, a $700 setup-and-hand-off, or a $500–$1,200/month managed retainer.
+If you're a St. Louis local business owner and you want help setting both files up — plus the Google Business Profile, plus the FAQ schema, plus the `BlogPosting` markup that makes this post citable in the first place — [send a brief](/#contact). I run a [three-tier practice](/#pricing): a $250 audit, a $700 setup-and-hand-off, or a $500–$1,200/month managed retainer.
 
 ## Further reading on this site
 

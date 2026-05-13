@@ -1,6 +1,6 @@
 ---
 title: "AEO vs SEO — what changed and what didn't"
-description: "Answer Engine Optimization is structuring a site so generative AI tools cite it as a source. SEO targets the ten blue links; AEO targets being the quoted answer. Tactics overlap; goals differ. Here's the working playbook from a St. Louis Rails developer running AEO for small business."
+description: "Answer Engine Optimization is structuring a site so generative AI tools cite it as a source. SEO targets the ten blue links; AEO targets being the quoted answer. Tactics overlap; goals differ. Here's the working playbook from a St. Louis Rails developer running AEO for local business."
 date: 2026-05-12
 lastmod: 2026-05-12
 draft: false
@@ -44,13 +44,13 @@ That's not a tier-1 vs tier-2 question. That's the *floor*. A site missing three
 
 [Gartner forecasts a 25% drop in traditional search engine volume by 2026](https://www.gartner.com/en/newsroom/press-releases/2024-02-19-gartner-predicts-search-engine-volume-will-drop-25-percent-by-2026-due-to-ai-chatbots-and-other-virtual-agents) as conversational interfaces absorb informational queries. [Adobe Digital Insights reported AI-driven traffic to U.S. retail sites grew 393% year-over-year between January and March 2026](https://business.adobe.com/blog/ai-traffic-surge-retail-sites-not-machine-readable), and the share has kept climbing through Q2. Those are not "interesting future trends." Those are revenue events that have already moved.
 
-The shift is more pronounced in informational queries — "how do I", "what is", "best X for Y" — where the answer engine can compose a confident response without sending traffic anywhere. Transactional queries ("buy", "near me", "open now") still flow heavily through classical search, which is why a small business that depends on local intent should not abandon Google Business Profile or paid search while it builds an AEO posture. The two channels are complementary, not substitutes, and at least through the next twelve months the budget split should reflect that.
+The shift is more pronounced in informational queries — "how do I", "what is", "best X for Y" — where the answer engine can compose a confident response without sending traffic anywhere. Transactional queries ("buy", "near me", "open now") still flow heavily through classical search, which is why a local business that depends on local intent should not abandon Google Business Profile or paid search while it builds an AEO posture. The two channels are complementary, not substitutes, and at least through the next twelve months the budget split should reflect that.
 
 ## What changed: the relationship with the publisher
 
 Classical SEO assumed the publisher (Google) wanted ten options on a page so the user could pick. Answer engines assume the user wants *one* answer. That changes the incentive: AEO is a winner-takes-most game per query. The site that gets cited in the answer collects the trust, the brand mention, and (sometimes) the link. The five sites that didn't get cited get nothing — not a #6 spot, not a partial mention. Nothing.
 
-The implication for small businesses is that consistency of identity matters more than ever. The `Organization.@id` graph on this site anchors every page back to a single entity at `https://matthewjamison.dev/#organization`. Every `BlogPosting` references the same `author` via `@id`. When an answer engine encounters the brand across thirty different pages, it resolves to one entity, not thirty. That's how an answer engine builds enough confidence to cite you by name instead of paraphrasing your content anonymously.
+The implication for local businesses is that consistency of identity matters more than ever. The `Organization.@id` graph on this site anchors every page back to a single entity at `https://matthewjamison.dev/#organization`. Every `BlogPosting` references the same `author` via `@id`. When an answer engine encounters the brand across thirty different pages, it resolves to one entity, not thirty. That's how an answer engine builds enough confidence to cite you by name instead of paraphrasing your content anonymously.
 
 ## What didn't change: E-E-A-T is still the moat
 
@@ -66,17 +66,17 @@ The author-bio card at the bottom of every post on this site exists for the huma
 
 ## What didn't change: the local pack
 
-For a St. Louis small business, [Google Business Profile (GBP)](https://www.google.com/business/) is still the highest-ROI lever. [Whitespark's 2026 Local Search Ranking Factors Report](https://whitespark.ca/local-search-ranking-factors/) puts Primary GBP Category at #1 for local pack appearance. Answer engines pull from GBP heavily — Perplexity and ChatGPT both cite Google's local data when answering "best X in St. Louis" prompts. If you have to pick one thing to fix first, it's GBP, not your website.
+For a St. Louis local business, [Google Business Profile (GBP)](https://www.google.com/business/) is still the highest-ROI lever. [Whitespark's 2026 Local Search Ranking Factors Report](https://whitespark.ca/local-search-ranking-factors/) puts Primary GBP Category at #1 for local pack appearance. Answer engines pull from GBP heavily — Perplexity and ChatGPT both cite Google's local data when answering "best X in St. Louis" prompts. If you have to pick one thing to fix first, it's GBP, not your website.
 
 ## What changed: review surfaces compound faster
 
-Reviews used to influence ranking. Now they influence *citation* in a measurable way. When an answer engine writes "the best-reviewed plumber in St. Louis is X," the underlying decision is built from a small bundle of corroborating signals — GBP review count, review recency, sentiment, and whether the same business name appears in third-party directory data. Inconsistent NAP (Name, Address, Phone) data across directories is what stops a small business from being named by an answer engine even when its reviews are excellent. Fix NAP first, then push for reviews; doing it in the other order leaves leverage on the table.
+Reviews used to influence ranking. Now they influence *citation* in a measurable way. When an answer engine writes "the best-reviewed plumber in St. Louis is X," the underlying decision is built from a small bundle of corroborating signals — GBP review count, review recency, sentiment, and whether the same business name appears in third-party directory data. Inconsistent NAP (Name, Address, Phone) data across directories is what stops a local business from being named by an answer engine even when its reviews are excellent. Fix NAP first, then push for reviews; doing it in the other order leaves leverage on the table.
 
 ## What this practice does
 
 I run [Gateway Tech AEO](/) as the side practice for what I do during the day on a production Rails 8 codebase. The same engineering rigor that keeps that codebase from breaking is what gets applied to a Mexican restaurant's GBP and schema markup. [Three tiers, prices public](/#pricing): an audit at $250, a setup-and-hand-off at $700, a managed retainer between $500 and $1,200 a month. I cap year one at five St. Louis clients. The cap is what lets me actually do the work myself instead of selling a slide deck.
 
-If you're a St. Louis small business owner wondering whether AI answer engines are sending you traffic, [send a brief](/#contact). I'll reply in 48–96 hours with something specific to your business — not a generic pitch.
+If you're a St. Louis local business owner wondering whether AI answer engines are sending you traffic, [send a brief](/#contact). I'll reply in 48–96 hours with something specific to your business — not a generic pitch.
 
 ## Further reading on this site
 

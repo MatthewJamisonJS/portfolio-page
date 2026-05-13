@@ -1,6 +1,6 @@
 # Gateway Tech AEO
 
-> Answer Engine Optimization for St. Louis small businesses, run by a
+> Answer Engine Optimization for St. Louis local businesses, run by a
 > working Ruby on Rails developer. Three honest tiers, anti-guarantee
 > posture, capped at five year-one clients. Operator: Matthew Jamison
 > — a St. Louis AEO consultant; verifiable evidence on this site

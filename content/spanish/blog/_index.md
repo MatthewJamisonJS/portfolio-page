@@ -1,6 +1,6 @@
 ---
 title: "Notas de campo"
-description: "Notas largas de un desarrollador de Rails en St. Louis que hace AEO para pequeños negocios fuera del horario de oficina. Publicaciones pilar sobre schema, robots.txt, llms.txt, Google Business Profile y el juego de citaciones de motores de respuesta."
+description: "Notas largas de un desarrollador de Rails en St. Louis que hace AEO para negocios locales fuera del horario de oficina. Publicaciones pilar sobre schema, robots.txt, llms.txt, Google Business Profile y el juego de citaciones de motores de respuesta."
 date: 2026-05-12
 lastmod: 2026-05-12
 draft: false

@@ -8,7 +8,7 @@ build:
 demo_url: "https://demo-creative-4tn.pages.dev"
 github_url: "https://github.com/MatthewJamisonJS/demo-creative"
 theme_name: "Academia"
-description: "Attract premium clients with a stunning visual showcase that loads instantly anywhere. Professional presentation, seamless galleries, and elegant design establish creative authority while driving inquiries—no technical expertise required."
+description: "Academia theme, Hugo + PhotoSwipe, 98/100 Lighthouse, 0.8-second load. Five-language portfolio for a designer who wants the site out of the way of the work."
 image: "/images/demos/demo-4-portfolio.webp"
 challenge: "Designer needs showcase site that loads instantly, works everywhere"
 solution_time: "2-3 weeks"

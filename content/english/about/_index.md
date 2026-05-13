@@ -1,6 +1,6 @@
 ---
 title: "About"
-description: "Matthew Jamison — St. Louis AEO consultant and Ruby on Rails developer. The framework that powers Shopify's 5.5M+ merchants pays my rent; Gateway Tech AEO is how I bring that engineering rigor to under-resourced St. Louis small businesses. Music identity, faith, family, and the posture behind the consulting."
+description: "Matthew Jamison — St. Louis AEO consultant and Ruby on Rails developer. The framework that powers Shopify's 5.5M+ merchants pays my rent; Gateway Tech AEO is how I bring that engineering rigor to under-resourced St. Louis local businesses. Music identity, faith, family, and the posture behind the consulting."
 date: 2026-05-07
 lastmod: 2026-05-09
 draft: false
@@ -10,7 +10,7 @@ schema_type: "AboutPage"
 keywords: ["Matthew Jamison", "Gateway Tech AEO", "St. Louis AEO consultant", "St. Louis Rails developer", "Answer Engine Optimization consultant", "AEO", "Ruby on Rails", "Shopify Rails monolith"]
 ---
 
-I'm Matthew Jamison — a **St. Louis AEO consultant** and Ruby on Rails developer. The framework I work in every day is the same one that powers Shopify's 5.5M+ merchants, $300B+ in 2025 gross merchandise volume, and the [majestic monolith](https://rubyonrails.org/foundation/shopify) handling roughly 19 million MySQL queries per second. I run [Gateway Tech AEO](https://gatewaytechaeo.com) on the side, a small Answer Engine Optimization practice for St. Louis small businesses. This page exists because someone hiring a solo operator deserves to know who they're hiring, what I actually do during the day, and why I kept the music side of the brand visible instead of hiding it.
+I'm Matthew Jamison — a **St. Louis AEO consultant** and Ruby on Rails developer. The framework I work in every day is the same one that powers Shopify's 5.5M+ merchants, $300B+ in 2025 gross merchandise volume, and the [majestic monolith](https://rubyonrails.org/foundation/shopify) handling roughly 19 million MySQL queries per second. I run [Gateway Tech AEO](https://gatewaytechaeo.com) on the side, a small Answer Engine Optimization practice for St. Louis local businesses. This page exists because someone hiring a solo operator deserves to know who they're hiring, what I actually do during the day, and why I kept the music side of the brand visible instead of hiding it.
 
 ## How I got here
 
@@ -22,13 +22,13 @@ I've been writing production Rails full-time since the transition. I've merged *
 
 The day job is a Rails 8 application on PostgreSQL behind Cloudflare. Same framework that runs Shopify's checkout, scaled down to a single industry application. It's the kind of stack where a missed migration or a sloppy validation costs real customers — that frames how I think about reliability, accessibility, and how much I'm willing to ship without a test.
 
-After hours and on Saturdays I run Gateway Tech AEO. Three tiers, prices public, no contracts longer than month-to-month, capped at five year-one clients in the St. Louis metro. Most of the work is Google Business Profile, schema markup, robots.txt and llms.txt for AI crawlers, FAQ-shaped content with primary-source citations, and the kind of structured-data-first templating that gets a small business cited by [ChatGPT](https://chat.openai.com/), [Perplexity](https://perplexity.ai/), and Google's AI Overview rather than buried under a national chain in the ten blue links.
+After hours and on Saturdays I run Gateway Tech AEO. Three tiers, prices public, no contracts longer than month-to-month, capped at five year-one clients in the St. Louis metro. Most of the work is Google Business Profile, schema markup, robots.txt and llms.txt for AI crawlers, FAQ-shaped content with primary-source citations, and the kind of structured-data-first templating that gets a local business cited by [ChatGPT](https://chat.openai.com/), [Perplexity](https://perplexity.ai/), and Google's AI Overview rather than buried under a national chain in the ten blue links.
 
 The transparency posture isn't a marketing choice — it's the only sustainable one for a solo practice. If I have to remember which prospect I quoted what, I lose. So everything is on the page: the prices, the cap, the methods, and the language about what I won't promise.
 
 ## Why this practice exists
 
-I get to do production-grade engineering for an organization with the budget to maintain it. Most of the small businesses I know in St. Louis don't have that budget — and yet the answer engines are taking real traffic from them right now. [Gartner forecasts traditional search engine volume will drop 25% by 2026](https://www.gartner.com/en/newsroom/press-releases/2024-02-19-gartner-predicts-search-engine-volume-will-drop-25-percent-by-2026-due-to-ai-chatbots-and-other-virtual-agents); [Adobe Digital Insights reported AI traffic to U.S. retail sites grew 393% year-over-year in Q1 2026](https://business.adobe.com/blog/ai-traffic-surge-retail-sites-not-machine-readable). A roofing contractor or a Mexican restaurant doesn't have the in-house engineering to respond to that. Big agencies will respond by selling them a $10,000 retainer they can't afford. I think it's worth one of us showing up with the same methods at small-business prices and seeing how far that goes.
+I get to do production-grade engineering for an organization with the budget to maintain it. Most of the local businesses I know in St. Louis don't have that budget — and yet the answer engines are taking real traffic from them right now. [Gartner forecasts traditional search engine volume will drop 25% by 2026](https://www.gartner.com/en/newsroom/press-releases/2024-02-19-gartner-predicts-search-engine-volume-will-drop-25-percent-by-2026-due-to-ai-chatbots-and-other-virtual-agents); [Adobe Digital Insights reported AI traffic to U.S. retail sites grew 393% year-over-year in Q1 2026](https://business.adobe.com/blog/ai-traffic-surge-retail-sites-not-machine-readable). A roofing contractor or a Mexican restaurant doesn't have the in-house engineering to respond to that. Big agencies will respond by selling them a $10,000 retainer they can't afford. I think it's worth one of us showing up with the same methods at local-business prices and seeing how far that goes.
 
 That's what Gateway Tech AEO is. It's also why the year-one client cap is five — slow growth means I can actually do the work myself, and there is no project manager on the other end of the email.
 

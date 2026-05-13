@@ -7,6 +7,18 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Security
+- Harden `/.well-known/security.txt` per RFC 9116: bump `Expires` to
+  2027-05-13 (12-month refresh), add `Acknowledgments` field pointing
+  at a new `/security/acknowledgments/` page, and document a GitHub
+  private security advisory channel as an alternative reporting path.
+- Rewrite `SECURITY.md` with explicit scope (in/out), safe-harbor
+  clause for good-faith research, coordinated-disclosure timeline
+  (48h ack / 7d assess / 90d disclose), supported-versions statement,
+  and a no-monetary-bounty acknowledgment with credit-only recognition.
+- Add `noindex` Hugo page at `/security/acknowledgments/` so the
+  RFC 9116 `Acknowledgments:` URL resolves to a real document.
+
 ### Changed
 - Primary domain cutover: matthewjamison.dev → gatewaytechaeo.com.
   Updated `config/production/hugo.toml` `baseURL`, `data/{en,es,ja,fr,de}/brand.yml`

@@ -2,8 +2,8 @@
 banner:
   enable: true
   kicker: "Optimización para motores de respuesta · St. Louis"
-  title: "Construido por un ingeniero Full-Stack en St. Louis. <em>Ayudando a pequeños negocios y emprendedores a prepararse para un mundo de IA.</em>"
-  subtitle: "Un grafo schema.org completo y abierto en cada página, código fuente público y WCAG 2.1 AA en cinco idiomas. Verificable en la barra de direcciones — ahora mismo."
+  title: "Construido por un ingeniero Full-Stack en St. Louis. <em>Ayudando a negocios locales a ser citados por la búsqueda con IA.</em>"
+  subtitle: "La búsqueda con IA decide qué citar a partir de dos señales públicas y gratuitas: tu [robots.txt](https://developers.google.com/search/docs/crawling-indexing/robots/intro) — que decide si la IA puede leer tu sitio — y tu marcado [schema](https://schema.org/) — que le dice a la IA qué significa cada página. Verificable en tu barra de direcciones — ahora mismo."
   button:
     enable: true
     label: "Envía un brief gratis"

@@ -8,7 +8,7 @@ build:
 demo_url: "https://demo-landing-dxx.pages.dev"
 github_url: "https://github.com/MatthewJamisonJS/demo-landing"
 theme_name: "Omega"
-description: "Maximize app downloads and user acquisition with a landing page engineered for conversion. Compelling feature showcases, app store optimization, and clear calls-to-action guide visitors from interest to install—supporting global markets from day one."
+description: "Omega theme, Hugo, 98/100 Lighthouse, five-language launch. App-store badges, install CTAs, no app-store-specific bloat."
 image: "/images/demos/demo-7-app.webp"
 challenge: "Mobile app needs fast landing page with app store badges, multi-language"
 solution_time: "2-3 weeks"

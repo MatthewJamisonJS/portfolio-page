@@ -98,7 +98,6 @@ module.exports = {
   },
   rejected: [
     /carousel/, /modal/, /tooltip/, /popover/, /dropdown/, /alert/,
-    /badge/, /pagination/, /progress/, /spinner/, /toast/,
-    /portal-/, /sparkle/
+    /badge/, /pagination/, /progress/, /spinner/, /toast/
   ]
 };

@@ -8,7 +8,7 @@ build:
 demo_url: "https://demo-restaurant-4az.pages.dev"
 github_url: "https://github.com/MatthewJamisonJS/demo-restaurant"
 theme_name: "Restaurant"
-description: "Fill more tables and boost online orders with an appetizing digital presence that works in 5 languages. Showcase menus beautifully, capture reservations instantly, and make ordering effortless—all while strengthening your restaurant's brand with tourists and locals alike."
+description: "Restaurant theme, Hugo + OpenTable API + Google Maps, 98/100 Lighthouse, five-language menu. Local restaurant aimed at both regulars and tourists."
 image: "/images/demos/demo-6-restaurant.webp"
 challenge: "Local restaurant needs multilingual menu site for tourist customers"
 solution_time: "2-3 weeks"

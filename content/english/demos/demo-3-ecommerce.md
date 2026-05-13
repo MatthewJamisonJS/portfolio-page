@@ -8,7 +8,7 @@ build:
 demo_url: "https://demo-ecommerce-am8.pages.dev"
 github_url: "https://github.com/MatthewJamisonJS/demo-ecommerce"
 theme_name: "Hargo"
-description: "Launch your online store and start generating revenue in weeks, not months. Professional product showcases, seamless checkout flows, and mobile-optimized shopping experiences maximize conversions and reduce cart abandonment across 5 languages."
+description: "Hargo theme, Hugo + Snipcart + Stripe, 98/100 Lighthouse, five-language storefront. Static site at zero hosting cost versus Shopify Plus at $600/month."
 image: "/images/demos/demo-3-ecommerce.webp"
 challenge: "International expansion blocked by lack of multilingual support"
 solution_time: "2-3 weeks"
@@ -100,7 +100,7 @@ A complete e-commerce solution built with Hugo and modern payment integrations. 
 ## Use Cases
 
 Perfect for:
-- Small business online stores
+- Local business online stores
 - Artist and creator shops
 - Digital product sales
 - Physical goods retailers

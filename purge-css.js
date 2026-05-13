@@ -27,10 +27,10 @@ async function purgeCSSFiles() {
         'collapse', 'navbar-collapse',
         'container', 'row',
         'btn', 'btn-transparent', 'page-scroll',
-        'hero-area', 'hero-gradient-overlay', 'video-button'
+        'hero-area', 'hero-gradient-overlay'
       ],
       deep: [/nav/, /navbar/, /btn/, /col-/, /hero/],
-      greedy: [/fade/, /pokemon/]
+      greedy: [/fade/]
     }
   });
 

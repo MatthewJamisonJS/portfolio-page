@@ -8,7 +8,7 @@ build:
 demo_url: "https://demo-saas.pages.dev"
 github_url: "https://github.com/MatthewJamisonJS/demo-saas"
 theme_name: "Bigspring Light"
-description: "Drive signups and slash customer acquisition costs with conversion-optimized design. Clear value propositions, compelling pricing, and trust-building elements turn visitors into paying customers—fast, professional, and built to scale globally."
+description: "Bigspring Light theme, Hugo + Alpine.js, 98/100 Lighthouse, sub-second loads across five locales. Launch-ready landing page for a product hitting multiple markets at once."
 image: "/images/demos/demo-2-saas.webp"
 challenge: "Need fast landing page for product launch, must support multiple markets"
 solution_time: "2-3 weeks"

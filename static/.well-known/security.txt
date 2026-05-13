@@ -1,8 +1,12 @@
 # RFC 9116 security disclosure policy for gatewaytechaeo.com
 # https://www.rfc-editor.org/rfc/rfc9116
+#
+# Reports may also be filed via GitHub at:
+# https://github.com/MatthewJamisonJS/portfolio-page/security/advisories/new
 
 Contact: mailto:jamison.matthew@icloud.com
-Expires: 2027-05-06T00:00:00Z
+Expires: 2027-05-13T00:00:00Z
 Preferred-Languages: en
 Canonical: https://www.gatewaytechaeo.com/.well-known/security.txt
 Policy: https://github.com/MatthewJamisonJS/portfolio-page/blob/main/SECURITY.md
+Acknowledgments: https://www.gatewaytechaeo.com/security/acknowledgments/

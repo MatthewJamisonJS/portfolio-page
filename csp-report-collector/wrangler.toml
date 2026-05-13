@@ -1,0 +1,11 @@
+name = "csp-report-collector"
+main = "src/index.ts"
+compatibility_date = "2026-05-13"
+account_id = "9fe16a00e3fedbfd2be304559fc7f777"
+
+[observability]
+enabled = true
+
+[[routes]]
+pattern = "csp-report.gatewaytechaeo.com"
+custom_domain = true

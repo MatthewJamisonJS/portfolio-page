@@ -1,0 +1,8 @@
+{{- /*
+  Markdown link render hook. External links (http:// or https://) ship with
+  rel="external nofollow" — the SEO/AEO hygiene marker the site applies to all
+  third-party citations. Internal links (relative paths, fragments) render
+  unchanged. Mirrors the explicit HTML pattern already used in data/{lang}/faq.yml.
+*/ -}}
+{{- $external := or (strings.HasPrefix .Destination "http://") (strings.HasPrefix .Destination "https://") -}}
+<a href="{{ .Destination | safeURL }}"{{ with .Title }} title="{{ . }}"{{ end }}{{ if $external }} rel="external nofollow"{{ end }}>{{ .Text | safeHTML }}</a>

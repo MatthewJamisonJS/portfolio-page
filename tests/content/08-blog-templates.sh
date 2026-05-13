@@ -35,11 +35,21 @@ for LIST in "${LISTS[@]}"; do
 done
 
 # Blog single pages — only single posts, not the list index.
+# Noindex stubs (locale stubs that ship EN bodies until translated) are
+# exempt from the BlogPosting itemtype check because their schema is
+# intentionally suppressed to avoid an inLanguage-vs-body mismatch.
+# PR #40 review re-check.
 POSTS=( "$BUILD"/blog/*/index.html "$BUILD"/*/blog/*/index.html )
 for p in "${POSTS[@]}"; do
   [[ -f "$p" ]] || continue
   # Skip the section index pages.
   [[ "$p" == */blog/index.html ]] && continue
+  # Skip noindex stubs (rendered HTML carries `name=robots content="noindex,
+  # follow"` for these — same condition that suppresses the schema in
+  # head.html and blog/single.html).
+  if grep -qE 'name=robots content="noindex' "$p" 2>/dev/null; then
+    continue
+  fi
   for marker in \
     'aria-label=("Breadcrumb"|Breadcrumb[> ])' \
     'class=("blog-post[^"]*"|blog-post)' \

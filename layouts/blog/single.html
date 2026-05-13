@@ -1,21 +1,25 @@
 {{ define "main" }}
 
-<article class="blog-post section" itemscope itemtype="https://schema.org/BlogPosting">
+{{/* Suppress BlogPosting microdata on noindex stubs (locale stubs that ship
+     English bodies until translated). Same gate as the JSON-LD BlogPosting
+     node in head.html and the meta robots directive. PR #40 review re-check. */}}
+{{ $blogposting := not .Params.noindex }}
+<article class="blog-post section"{{ if $blogposting }} itemscope itemtype="https://schema.org/BlogPosting"{{ end }}>
   <div class="container">
     {{ partial "breadcrumb.html" . }}
     <header class="blog-post-header">
       {{ with .Params.articleSection }}<p class="blog-post-section">{{ . }}</p>{{ else }}<p class="blog-post-section">AEO</p>{{ end }}
-      <h1 itemprop="headline">{{ .Title }}</h1>
+      <h1{{ if $blogposting }} itemprop="headline"{{ end }}>{{ .Title }}</h1>
       <p class="blog-post-meta">
         <span class="blog-post-byline">{{ i18n "by_label" | default "By" }}
-          <a href="{{ "/about/" | relLangURL }}" itemprop="author">Matthew Jamison</a></span>
-        · <time datetime="{{ .Date.Format "2006-01-02" }}" itemprop="datePublished">{{ .Date.Format "January 2, 2006" }}</time>
+          <a href="{{ "/about/" | relLangURL }}"{{ if $blogposting }} itemprop="author"{{ end }}>Matthew Jamison</a></span>
+        · <time datetime="{{ .Date.Format "2006-01-02" }}"{{ if $blogposting }} itemprop="datePublished"{{ end }}>{{ .Date.Format "January 2, 2006" }}</time>
         {{ if ne (.Date.Format "2006-01-02") (.Lastmod.Format "2006-01-02") }}
         · <span class="blog-post-updated">{{ i18n "updated_label" | default "Updated" }}
-          <time datetime="{{ .Lastmod.Format "2006-01-02" }}" itemprop="dateModified">{{ .Lastmod.Format "January 2, 2006" }}</time></span>
+          <time datetime="{{ .Lastmod.Format "2006-01-02" }}"{{ if $blogposting }} itemprop="dateModified"{{ end }}>{{ .Lastmod.Format "January 2, 2006" }}</time></span>
         {{ end }}
       </p>
-      {{ with .Description }}<p class="blog-post-lead" itemprop="description">{{ . }}</p>{{ end }}
+      {{ with .Description }}<p class="blog-post-lead"{{ if $blogposting }} itemprop="description"{{ end }}>{{ . }}</p>{{ end }}
     </header>
 
     {{ if ge (len (findRE "<h2" .Content)) 4 }}
@@ -25,7 +29,7 @@
     </nav>
     {{ end }}
 
-    <div class="blog-post-body" itemprop="articleBody">
+    <div class="blog-post-body"{{ if $blogposting }} itemprop="articleBody"{{ end }}>
       {{ .Content }}
     </div>
 

@@ -391,7 +391,11 @@
 				"image": "{{ site.BaseURL }}images/og/og-default.png",
 				"mainEntityOfPage": { "@id": "{{ .Permalink }}#aboutpage" },
 				"inLanguage": "{{ site.LanguageCode | default "en-us" }}"
-			}{{ end }}{{ if and (eq .Section "blog") (ne .Kind "section") }},
+			}{{ end }}{{/* BlogPosting node is suppressed on noindex pages
+			(e.g. locale stubs that ship English bodies until translated). Emitting
+			a BlogPosting whose inLanguage tag doesn't match its body is the exact
+			schema-vs-content mismatch the post itself warns against. PR #40
+			review re-check finding. */}}{{ if and (eq .Section "blog") (ne .Kind "section") (not .Params.noindex) }},
 			{
 				"@type": "BlogPosting",
 				"@id": "{{ .Permalink }}#blogposting",

@@ -1,5 +1,6 @@
 /*
   Content-Security-Policy: default-src 'self'; script-src 'self' 'unsafe-inline' https://formspree.io https://static.cloudflareinsights.com; style-src 'self' 'unsafe-inline'; font-src 'self'; img-src 'self' data: https:; media-src 'self'; connect-src 'self' https://formspree.io https://cloudflareinsights.com https://csp-report.gatewaytechaeo.com; frame-src 'self'; report-to csp; report-uri https://csp-report.gatewaytechaeo.com/
+  Reporting-Endpoints: csp="https://csp-report.gatewaytechaeo.com/"
   Report-To: {"group":"csp","max_age":10886400,"endpoints":[{"url":"https://csp-report.gatewaytechaeo.com/"}]}
   X-Frame-Options: SAMEORIGIN
   X-Content-Type-Options: nosniff

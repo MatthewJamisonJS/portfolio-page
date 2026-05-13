@@ -9,17 +9,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Security
 - Add CSP violation reporting endpoint at `https://csp-report.gatewaytechaeo.com`
-  backed by a small Cloudflare Worker (`csp-report-collector/`) on the cph.org
-  account (account_id `9fe16a00e3fedbfd2be304559fc7f777`). Worker accepts POSTs
-  up to 8KB, logs each via `console.log` (queryable through the `cf-observability`
-  MCP), returns 204. `static/_headers` updated: `connect-src` allowlists the new
-  origin so the Reporting API fetch isn't blocked by CSP itself; CSP gains
-  `report-to csp; report-uri https://csp-report.gatewaytechaeo.com/` so both
-  the modern Reporting API (Chrome/Firefox/Edge) and the legacy `report-uri`
-  fallback (Safari) deliver violations to the same endpoint. New sibling
-  `Report-To` header defines the `csp` group used by the modern directive.
-  Deploying the Worker is a one-time `wrangler deploy` from
-  `csp-report-collector/`; Pages builds are unchanged.
+  via a Cloudflare Worker (`csp-report-collector/`). Worker validates
+  Content-Type, logs each report via `console.log` (queryable via the
+  `cf-observability` MCP), returns 204; rejects other content-types with
+  415. `static/_headers` gains the `csp-report-uri`/`report-to` CSP
+  directives, plus a modern `Reporting-Endpoints` header (Chrome/Edge ≥96)
+  and a legacy `Report-To` header for older Chrome. Safari + Firefox
+  only honor `report-uri`, so both delivery paths ship for full coverage.
 - Add CodeQL static analysis workflow (`.github/workflows/codeql.yml`)
   scanning `javascript-typescript` (covers `assets/js/script.js` + inline
   `<script>` blocks in layouts) and `actions` (workflow YAML tag-pinning

@@ -324,6 +324,35 @@ Observability lives in the Worker, not Pages: every POST is logged via
 `console.log` and is queryable through the `cf-observability` MCP
 (`query_worker_observability` against script name `csp-report-collector`).
 
+Verify a fresh deploy:
+
+```bash
+# GET stub
+curl -s https://csp-report.gatewaytechaeo.com/
+# expect: "CSP violation report endpoint. POST CSP reports here."
+
+# Legacy POST (Safari, older browsers)
+curl -s -o /dev/null -w "%{http_code}\n" -X POST \
+  -H 'Content-Type: application/csp-report' \
+  -d '{"csp-report":{"violated-directive":"connect-src"}}' \
+  https://csp-report.gatewaytechaeo.com/
+# expect: 204
+
+# Modern POST (Chrome/Edge Reporting API)
+curl -s -o /dev/null -w "%{http_code}\n" -X POST \
+  -H 'Content-Type: application/reports+json' \
+  -d '[{"type":"csp-violation","age":0,"url":"x","body":{}}]' \
+  https://csp-report.gatewaytechaeo.com/
+# expect: 204
+
+# Unknown content-type is rejected with 415
+curl -s -o /dev/null -w "%{http_code}\n" -X POST \
+  -H 'Content-Type: text/plain' \
+  -d 'hi' \
+  https://csp-report.gatewaytechaeo.com/
+# expect: 415
+```
+
 ## Files Reference
 
 - `.cloudflare/deploy.sh` - Deployment helper script

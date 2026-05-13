@@ -340,7 +340,7 @@ other = "Pause"
 other = "Reprendre"
 
 [aeo_reel_description]
-other = "Enregistrements d'écran en boucle de Google Gemini et OpenAI ChatGPT générant des réponses à quatre requêtes de test AEO de St. Louis (coworking de Dutchtown, plaques de plâtre d'O'Fallon, tamales du sud de la ville, immobilier de University City). Les deux moteurs citent matthewjamison.dev ou gatewaytechaeo.com parmi leurs sources."
+other = "Enregistrements d'écran en boucle de Google Gemini et OpenAI ChatGPT générant des réponses à quatre requêtes de test AEO de St. Louis (coworking de Dutchtown, plaques de plâtre d'O'Fallon, tamales du sud de la ville, immobilier de University City). Les deux moteurs citent gatewaytechaeo.com parmi leurs sources."
 
 [home_breadcrumb]
 other = "Accueil"

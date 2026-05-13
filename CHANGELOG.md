@@ -7,6 +7,30 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Changed
+- Primary domain cutover: matthewjamison.dev → gatewaytechaeo.com.
+  Updated `config/production/hugo.toml` `baseURL`, `data/{en,es,ja,fr,de}/brand.yml`
+  `website`, `static/robots.txt`, `static/llms.txt`, `static/.well-known/security.txt`,
+  blog post self-references, i18n caption copy (single-domain rewrite, all five
+  locales), and deployment docs (`DEPLOYMENT.md`, `.cloudflare/CHECKLIST.md`,
+  `.cloudflare/zone-config.md`, `.cloudflare/deploy.sh`). `matthewjamison.dev`
+  is being detached from this Cloudflare Pages project and reserved for a
+  future blank-slate project.
+- Twitter handle rebrand: `@matthewjamison` → `@M_J_Jamison` in
+  `layouts/partials/head.html` (twitter:site, twitter:creator, Person `sameAs`).
+- Site lives at `https://www.gatewaytechaeo.com` (www subdomain) during NS
+  migration window. Cloudflare Pages requires a CNAME at apex; Namecheap
+  publishes apex as ALIAS-flattened A records which CF DCV cannot verify.
+  Workaround: serve at www until `gatewaytechaeo.com` nameservers are
+  migrated to Cloudflare (24–48h). Once NS migration completes and CF's
+  native apex CNAME-flattening is available, baseURL will revert to the
+  apex `https://gatewaytechaeo.com/` in a follow-up PR. URL refs updated:
+  `baseURL`, brand.yml ×5, robots.txt sitemap line, llms.txt links,
+  security.txt Canonical, About pages markdown links, blog post @id
+  references. Deployment docs (`DEPLOYMENT.md`, `.cloudflare/*`) and
+  i18n caption copy intentionally retain the apex form because they
+  document the long-term target state.
+
 ## [1.0.0] - 2025-10-30
 
 ### Wave 3: GitHub Standardization & WCAG 3.0 Accessibility

@@ -1,13 +1,13 @@
 # Deployment Checklist - portfolio-page
 
-**Site Domain:** `matthewjamison.dev`
+**Site Domain:** `gatewaytechaeo.com`
 **Cloudflare Project:** `portfolio-page` (custom domain)
 **Deployment Type:** Automatic (GitHub Push)
 
 ## Pre-Deployment
 
 - [ ] Hugo version is 0.152.2+ (current: 0.152.2)
-- [ ] `baseURL` in `hugo.toml` is correct: `https://matthewjamison.dev`
+- [ ] `baseURL` in `hugo.toml` is correct: `https://gatewaytechaeo.com`
 - [ ] All images are optimized to WebP format
 - [ ] `static/_headers` file exists with security headers
 - [ ] `robots.txt` has correct sitemap URL
@@ -22,15 +22,15 @@
 - [ ] Build output directory: `public`
 - [ ] Environment variable set: `HUGO_VERSION=0.152.2`
 - [ ] Environment variable set: `HUGO_ENV=production`
-- [ ] Custom domain configured: `matthewjamison.dev`
+- [ ] Custom domain configured: `gatewaytechaeo.com`
 - [ ] DNS records verified:
-  - [ ] CNAME: `matthewjamison.dev` → `portfolio-page.pages.dev`
+  - [ ] CNAME: `gatewaytechaeo.com` → `portfolio-page.pages.dev`
   - [ ] Or using Cloudflare's automatic DNS if domain is managed by Cloudflare
 
 ## Post-Deployment Verification
 
-- [ ] Site loads successfully at `https://matthewjamison.dev`
-- [ ] Check security headers: `curl -I https://matthewjamison.dev`
+- [ ] Site loads successfully at `https://gatewaytechaeo.com`
+- [ ] Check security headers: `curl -I https://gatewaytechaeo.com`
 - [ ] Verify security headers are present:
   - [ ] `Content-Security-Policy` header present
   - [ ] `X-Frame-Options: SAMEORIGIN`

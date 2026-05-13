@@ -9,7 +9,7 @@ schema_type: "AboutPage"
 keywords: ["Matthew Jamison", "Gateway Tech AEO", "consultor AEO St. Louis", "desarrollador Rails St. Louis", "consultor de Optimización para Motores de Respuesta", "AEO", "Ruby on Rails", "monolito Rails Shopify"]
 ---
 
-Soy Matthew Jamison — **consultor AEO de St. Louis** y desarrollador de Ruby on Rails. El framework con el que trabajo todos los días es el mismo que sostiene los 5.5M+ comerciantes de Shopify, $300B+ en volumen de mercancía bruta de 2025, y el [monolito majestuoso](https://rubyonrails.org/foundation/shopify) que maneja unas 19 millones de consultas MySQL por segundo. Llevo [Gateway Tech AEO](https://gatewaytechaeo.com) como práctica paralela, una pequeña consultoría de Optimización para Motores de Respuesta para negocios locales de St. Louis. Esta página existe porque quien contrata a un operador en solitario merece saber a quién está contratando, qué hago durante el día, y por qué dejé visible el lado musical de la marca en vez de ocultarlo.
+Soy Matthew Jamison — **consultor AEO de St. Louis** y desarrollador de Ruby on Rails. El framework con el que trabajo todos los días es el mismo que sostiene los 5.5M+ comerciantes de Shopify, $300B+ en volumen de mercancía bruta de 2025, y el [monolito majestuoso](https://rubyonrails.org/foundation/shopify) que maneja unas 19 millones de consultas MySQL por segundo. Llevo [Gateway Tech AEO](https://www.gatewaytechaeo.com) como práctica paralela, una pequeña consultoría de Optimización para Motores de Respuesta para negocios locales de St. Louis. Esta página existe porque quien contrata a un operador en solitario merece saber a quién está contratando, qué hago durante el día, y por qué dejé visible el lado musical de la marca en vez de ocultarlo.
 
 ## Cómo llegué aquí
 
@@ -58,7 +58,7 @@ Algunos títulos de pistas citan escritura: Isaías 40:31, Salmo 8:1, Mateo 23:2
 - Código: [github.com/MatthewJamisonJS](https://github.com/MatthewJamisonJS)
 - Música: [matthewjjamison.bandcamp.com](https://matthewjjamison.bandcamp.com)
 - LinkedIn: [linkedin.com/in/matthew-jamison-65486bab](https://www.linkedin.com/in/matthew-jamison-65486bab/)
-- Sitio LLC (en formación): [gatewaytechaeo.com](https://gatewaytechaeo.com)
+- Sitio LLC (en formación): [gatewaytechaeo.com](https://www.gatewaytechaeo.com)
 - Email: [jamison.matthew@icloud.com](mailto:jamison.matthew@icloud.com) (hasta que Cloudflare Email Routing para matthew@gatewaytechaeo.com esté verificado en vivo)
 
 La intake es por correo primero — las llamadas no forman parte de cómo opera esta práctica. Si estás considerando trabajar conmigo, envía un brief: enlace a tu sitio actual, tu ciudad, una frase sobre qué hace tu negocio, y qué te gustaría que el AEO arregle. Respondo en 48–96 horas con algo específico a tu negocio, no un pitch genérico. Si estás en St. Louis y prefieres reunirte en persona, también funciona — el mismo brief.

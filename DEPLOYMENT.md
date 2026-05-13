@@ -1,6 +1,6 @@
 # Cloudflare Pages Deployment Guide - portfolio-page
 
-**Live Domain:** `https://matthewjamison.dev`
+**Live Domain:** `https://gatewaytechaeo.com`
 
 This site is configured for automatic deployment on Cloudflare Pages with a custom domain.
 
@@ -8,7 +8,7 @@ This site is configured for automatic deployment on Cloudflare Pages with a cust
 
 1. **Push to GitHub**: Simply push to the `main` branch
 2. **Automatic Build**: Cloudflare Pages automatically builds and deploys
-3. **Live at**: `https://matthewjamison.dev`
+3. **Live at**: `https://gatewaytechaeo.com`
 
 ```bash
 git add .
@@ -52,7 +52,7 @@ HUGO_ENV = production
 
 1. Go to **Custom domains** tab
 2. Click **Set up a custom domain**
-3. Enter: `matthewjamison.dev`
+3. Enter: `gatewaytechaeo.com`
 4. Follow Cloudflare's instructions for DNS setup:
 
 **Option A: If your domain is on Cloudflare DNS:**
@@ -61,7 +61,7 @@ HUGO_ENV = production
 
 **Option B: If your domain is on another DNS provider:**
 - Add CNAME record:
-  - Name: `matthewjamison.dev` (or `@`)
+  - Name: `gatewaytechaeo.com` (or `@`)
   - Target: `portfolio-page.pages.dev`
   - TTL: 3600 (or automatic)
 
@@ -116,7 +116,7 @@ Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
 After deployment, verify headers are applied:
 
 ```bash
-curl -I https://matthewjamison.dev
+curl -I https://gatewaytechaeo.com
 ```
 
 Expected response:
@@ -183,7 +183,7 @@ Test at: https://pagespeed.web.dev/
 2. Verify Hugo config:
    ```bash
    grep "baseURL" hugo.toml
-   # Should output: baseURL = "https://matthewjamison.dev"
+   # Should output: baseURL = "https://gatewaytechaeo.com"
    ```
 
 3. Check domain configuration:

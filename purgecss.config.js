@@ -61,8 +61,6 @@ module.exports = {
       'portfolio-demos', 'demo-grid', 'demo-card', 'demo-image',
       'demo-overlay', 'demo-links',
       'demos-offer', 'demos-offer-title', 'demos-offer-body', 'demos-offer-cta',
-      // Footer + social
-      'social-list', 'social-item', 'social-link', 'social-mark',
       // Misc
       'brief-form', 'lozad', 'loaded',
       'cta-clicked', 'field-prefilled',

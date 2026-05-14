@@ -113,18 +113,6 @@ expire_days = 2
 [params.map]
 enable = false
 
-############################# social marks ##########################
-# Each entry's `brand` slug maps to a real inline brand SVG in
-# layouts/partials/footer.html. Marks come from Simple Icons (CC0).
-[[params.social]]
-brand = "github"
-label = "GitHub"
-link = "https://github.com/MatthewJamisonJS"
-
-[[params.social]]
-brand = "linkedin"
-label = "LinkedIn"
-link = "https://www.linkedin.com/in/matthew-jamison-65486bab/"
 
 ################################ English Language ########################
 [Languages.en]
@@ -135,7 +123,7 @@ weight = 1
 
 [Languages.en.params]
 home = "Home"
-copyright = "Matthew Jamison"
+copyright = "Gateway Tech AEO"
 
 ################################ Spanish Language ########################
 [Languages.es]
@@ -146,7 +134,7 @@ weight = 2
 
 [Languages.es.params]
 home = "Inicio"
-copyright = "Matthew Jamison"
+copyright = "Gateway Tech AEO"
 
 ################################ Japanese Language #######################
 [Languages.ja]
@@ -157,7 +145,7 @@ weight = 3
 
 [Languages.ja.params]
 home = "ホーム"
-copyright = "Matthew Jamison"
+copyright = "Gateway Tech AEO"
 
 ################################ French Language #########################
 [Languages.fr]
@@ -168,7 +156,7 @@ weight = 4
 
 [Languages.fr.params]
 home = "Accueil"
-copyright = "Matthew Jamison"
+copyright = "Gateway Tech AEO"
 
 ################################ German Language #########################
 [Languages.de]
@@ -179,6 +167,6 @@ weight = 5
 
 [Languages.de.params]
 home = "Startseite"
-copyright = "Matthew Jamison"
+copyright = "Gateway Tech AEO"
 
 ############################# Navigation Menu ##########################

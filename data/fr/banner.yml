@@ -3,8 +3,8 @@
 banner:
   enable: true
   kicker: "Answer Engine Optimization · St. Louis"
-  title: "When customers ask AI what you do, <em>do you show up?</em>"
-  subtitle: "We make sure they cite you."
+  title: "When they ask AI, <em>will you show up?</em>"
+  subtitle: "We make sure you do"
   button:
     enable: true
     label: "Why does this matter to me"

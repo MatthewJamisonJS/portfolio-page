@@ -144,7 +144,7 @@ h2 { font-size: var(--type-title); }
 h3 { font-size: var(--type-subtitle); line-height: 1.12; }
 h4 { font-size: 1.5rem; line-height: 1.18; }
 
-p { margin: 0; color: var(--ink-soft); }
+p { margin: 0; color: inherit; }
 
 a { color: var(--brick); text-decoration: underline; text-underline-offset: 3px; text-decoration-thickness: 1px; }
 a:hover { color: var(--brick-deep); }

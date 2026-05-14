@@ -65,8 +65,8 @@
 
 /* ----- Navigation ----- */
 .navigation {
-  background: var(--bone);
-  border-bottom: 1px solid var(--rule);
+  background: var(--espresso);
+  border-bottom: 1px solid rgba(244, 239, 231, 0.1);
   position: sticky;
   top: 0;
   z-index: 100;
@@ -77,7 +77,7 @@
   font-family: var(--font-serif);
   font-size: 1.25rem;
   font-weight: 500;
-  color: var(--ink) !important;
+  color: var(--bone) !important;
   letter-spacing: -0.01em;
 }
 .navigation .nav-link {
@@ -85,30 +85,30 @@
   font-size: 0.8125rem;
   letter-spacing: 0.12em;
   text-transform: uppercase;
-  color: var(--ink-soft) !important;
+  color: var(--stone-2) !important;
   padding: 0.5rem 1rem;
   border-radius: 999px;
 }
 .navigation .nav-link:hover,
-.navigation .nav-link:focus-visible { color: var(--brick) !important; }
+.navigation .nav-link:focus-visible { color: var(--clay) !important; }
 .navigation .navbar-toggler {
-  border-color: var(--rule);
-  color: var(--ink);
+  border-color: rgba(244, 239, 231, 0.25);
+  color: var(--bone);
 }
 .navigation #select-language {
-  background: var(--bone-2);
-  border: 1px solid var(--rule);
+  background: var(--espresso-card);
+  border: 1px solid rgba(244, 239, 231, 0.15);
   border-radius: 999px;
   padding: 6px 14px;
   font-family: var(--font-mono);
   font-size: 0.8125rem;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: var(--ink);
+  color: var(--stone-2);
   cursor: pointer;
 }
 .navigation #select-language:focus-visible {
-  outline: 3px solid var(--brick);
+  outline: 3px solid var(--amber);
   outline-offset: 2px;
 }
 
@@ -620,12 +620,18 @@ details summary::-webkit-details-marker,
   padding-top: var(--pad-y);
   padding-bottom: var(--pad-y);
 }
+.contact-us.section-bg h1, .contact-us.section-bg h2, .contact-us.section-bg h3,
+.contact-us.section-bg h4, .contact-us.section-bg h5,
+.contact-area h1, .contact-area h2, .contact-area h3,
+.contact-area h4, .contact-area h5 {
+  color: var(--bone);
+}
 .contact-us.section-bg h2,
 .contact-us.section-bg h3,
 .contact-us.section-bg p,
 .contact-us.section-bg label,
 .contact-us.section-bg .contact-info h3,
-.contact-us.section-bg .contact-info p { color: var(--ink); }
+.contact-us.section-bg .contact-info p { color: var(--bone); }
 .contact-us.section-bg .contact-info p { font-size: 1rem; }
 .contact-us.section-bg h2 {
   font-family: var(--font-serif);
@@ -633,7 +639,7 @@ details summary::-webkit-details-marker,
   font-size: clamp(2rem, 4vw, 3rem);
   text-align: center;
   margin: 0 0 2rem;
-  color: var(--ink);
+  color: var(--bone);
 }
 .contact-us.section-bg .border-meghna {
   display: block;
@@ -1409,14 +1415,14 @@ button#contact-submit {
   transition: transform 0.15s ease, box-shadow 0.15s ease;
 }
 .btn-fork-primary {
-  background: var(--primary);
-  color: var(--light-text);
-  border: 1px solid var(--primary);
+  background: var(--brick);
+  color: var(--bone);
+  border: 1px solid var(--brick);
 }
 .btn-fork-secondary {
   background: transparent;
-  color: var(--light-text);
-  border: 1px solid rgba(255, 255, 255, 0.4);
+  color: var(--bone);
+  border: 1px solid rgba(244, 239, 231, 0.4);
 }
 .btn-fork:hover { transform: translateY(-1px); }
 .hero-tertiary {
@@ -1435,8 +1441,8 @@ button#contact-submit {
   font-size: clamp(1.75rem, 4vw, 2.75rem);
   margin: 0 0 0.5rem;
 }
-.page-subtitle { font-size: 1.125rem; color: rgba(255, 255, 255, 0.85); margin: 0 0 0.75rem; }
-.page-intro { color: rgba(255, 255, 255, 0.7); margin: 0; }
+.page-subtitle { font-size: 1.125rem; color: var(--bone); margin: 0 0 0.75rem; }
+.page-intro { color: var(--stone-2); margin: 0; }
 .page-footer { margin-top: 3rem; }
 
 /* Stat cards (/why) */
@@ -1457,9 +1463,9 @@ button#contact-submit {
   color: var(--clay);
   margin: 0 0 0.75rem;
 }
-.stat-body { margin: 0 0 1rem; color: rgba(255, 255, 255, 0.9); }
+.stat-body { margin: 0 0 1rem; color: var(--bone); }
 .stat-source a {
-  color: rgba(255, 255, 255, 0.6);
+  color: var(--stone-2);
   font-size: 0.875rem;
   text-decoration: underline;
 }
@@ -1478,7 +1484,7 @@ button#contact-submit {
   padding: 1.5rem;
 }
 .pillar-card h3 { color: var(--clay); margin: 0 0 0.5rem; }
-.pillar-tag { color: var(--accent); font-style: italic; margin: 0 0 1rem; }
+.pillar-tag { color: var(--clay); font-style: italic; margin: 0 0 1rem; }
 
 /* Trust block (shared partial) */
 .trust-block { margin: 3rem 0; }
@@ -1505,8 +1511,8 @@ button#contact-submit {
 }
 .pricing-card h2 { margin: 0 0 0.5rem; }
 .pricing-card .price { font-size: 1.75rem; color: var(--clay); margin: 0 0 0.5rem; }
-.pricing-card .cadence { font-size: 0.95rem; color: rgba(255, 255, 255, 0.6); }
-.pricing-card .use-when { color: rgba(255, 255, 255, 0.75); margin: 0 0 1rem; }
+.pricing-card .cadence { font-size: 0.95rem; color: var(--stone-2); }
+.pricing-card .use-when { color: var(--stone-2); margin: 0 0 1rem; }
 .pricing-card ul.includes { list-style: none; padding: 0; margin: 0 0 1.5rem; }
 .pricing-card ul.includes li {
   padding: 0.5rem 0;
@@ -1517,7 +1523,7 @@ button#contact-submit {
   border-color: var(--primary);
   box-shadow: 0 0 0 1px rgba(233, 30, 99, 0.4);
 }
-.pricing-footnote { color: rgba(255, 255, 255, 0.6); font-size: 0.9rem; margin: 1.5rem 0; }
+.pricing-footnote { color: var(--stone-2); font-size: 0.9rem; margin: 1.5rem 0; }
 
 /* FAQ accordion (/faq) */
 .page-faq .faq-list dt {
@@ -1531,11 +1537,11 @@ button#contact-submit {
   text-decoration: none;
 }
 .page-faq .faq-list dt a:hover { color: var(--clay); }
-.page-faq .faq-list dd { margin: 0.75rem 0 0; color: rgba(255, 255, 255, 0.9); }
+.page-faq .faq-list dd { margin: 0.75rem 0 0; color: var(--bone); }
 
 /* Homepage teaser strip */
 .home-teaser { padding: 3rem 0; text-align: center; border-top: 1px solid rgba(255, 255, 255, 0.06); }
-.home-teaser-copy { margin: 0; color: rgba(255, 255, 255, 0.8); }
+.home-teaser-copy { margin: 0; color: var(--bone); }
 .home-teaser-link { color: var(--clay); text-decoration: underline; }
 
 /* Footer nav (from Task 4.2) */
@@ -1546,7 +1552,7 @@ button#contact-submit {
   margin: 1rem 0 1.5rem;
 }
 .footer-nav a {
-  color: rgba(255, 255, 255, 0.7);
+  color: var(--stone-2);
   text-decoration: none;
   font-size: 0.95rem;
 }
@@ -1577,6 +1583,16 @@ body,
   background-color: var(--espresso);
   color: var(--bone);
 }
+/* Base h1-h5 rule sets color:var(--ink) directly, which beats inherited bone.
+   Override explicitly so dark-surface headings read bone on espresso. */
+.page-why h1, .page-why h2, .page-why h3, .page-why h4, .page-why h5,
+.page-different h1, .page-different h2, .page-different h3, .page-different h4, .page-different h5,
+.page-pricing h1, .page-pricing h2, .page-pricing h3, .page-pricing h4, .page-pricing h5,
+.page-faq h1, .page-faq h2, .page-faq h3, .page-faq h4, .page-faq h5 {
+  color: var(--bone);
+}
+/* Global a { color: var(--brick) } fails on espresso (2.8:1). Clay = 6.6:1 on espresso. */
+.page-why a:not(.btn-fork), .page-different a:not(.btn-fork), .page-pricing a:not(.btn-fork), .page-faq a:not(.btn-fork) { color: var(--clay); }
 
 .hero-fork {
   background:
@@ -1640,18 +1656,18 @@ body,
     /* Push to right side while brand is on the left */
     margin-left: auto;
   }
-  /* Focus ring — 3:1 contrast minimum (WCAG 2.4.7) */
+  /* Focus ring — amber on espresso = 7.5:1 (WCAG 2.4.7 needs 3:1) */
   .navbar-toggler:focus-visible {
-    outline: 3px solid var(--brick);
+    outline: 3px solid var(--amber);
     outline-offset: 2px;
   }
 
-  /* 3-bar hamburger icon */
+  /* 3-bar hamburger icon — bone on espresso nav */
   .drawer-bar {
     display: block;
     width: 22px;
     height: 2px;
-    background: var(--ink);
+    background: var(--bone);
     border-radius: 2px;
     transition: transform 200ms ease, opacity 200ms ease;
     transform-origin: center;

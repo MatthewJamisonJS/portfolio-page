@@ -8,54 +8,12 @@
       </a>
 
       <div class="collapse navbar-collapse show" id="navigation">
-        <ul class="navbar-nav ml-auto">
-          <!-- menu active -->
-          {{ $currentPage := . }} {{ range site.Menus.main }} {{ $menuURL :=
-          .URL | absLangURL }} {{ $pageURL:= $currentPage.Permalink | absLangURL
-          }} {{ $active := eq $menuURL $pageURL }} {{ if .HasChildren }}
-          <li class="nav-item dropdown">
-            <a
-              class="nav-link dropdown-toggle"
-              href="#"
-              role="button"
-              data-toggle="dropdown"
-              aria-haspopup="true"
-              aria-expanded="false"
-            >
-              {{ .Name }}
-            </a>
-            <div class="dropdown-menu">
-              {{ range .Children }} {{ $childURL := .URL | absLangURL }} {{
-              $active := eq $childURL $pageURL }}
-              <a
-                class="dropdown-item"
-                {{if
-                findRE
-                `^http`
-                .URL}}target="_blank"
-                rel="noopener"
-                {{end}}
-                href="{{if findRE `^#` .URL}}{{if not $.IsHome}}{{site.BaseURL | relLangURL}}{{end}}{{.URL}}{{else}}{{.URL | relLangURL}}{{end}}"
-                >{{ .Name }}</a
-              >
-              {{ end }}
-            </div>
-          </li>
-          {{ else }}
-          <li class="nav-item">
-            <a
-              class="nav-link"
-              {{if
-              findRE
-              `^http`
-              .URL}}target="_blank"
-              rel="noopener"
-              {{end}}
-              href="{{if findRE `^#` .URL}}{{if not $.IsHome}}{{site.BaseURL | relLangURL}}{{end}}{{.URL}}{{else}}{{.URL | relLangURL}}{{end}}"
-              >{{.Name}}</a
-            >
-          </li>
-          {{ end }} {{ end }}
+        <ul class="navbar-nav ml-auto mr-3">
+          <li class="nav-item"><a class="nav-link" href="{{ "/why/" | relLangURL }}">{{ i18n "nav_why" }}</a></li>
+          <li class="nav-item"><a class="nav-link" href="{{ "/different/" | relLangURL }}">{{ i18n "nav_different" }}</a></li>
+          <li class="nav-item"><a class="nav-link" href="{{ "/pricing/" | relLangURL }}">{{ i18n "nav_pricing" }}</a></li>
+          <li class="nav-item"><a class="nav-link" href="{{ "/faq/" | relLangURL }}">{{ i18n "nav_faq" }}</a></li>
+          <li class="nav-item"><a class="nav-link nav-cta" href="{{ "/#contact" | relLangURL }}">{{ i18n "nav_brief" }}</a></li>
         </ul>
         <!-- Language List -->
         {{- if hugo.IsMultilingual }}

@@ -1,23 +1,6 @@
 # French Translations for Portfolio Site
 # TODO: Professional translation needed - currently using English placeholders
 
-# Section Headings
-[portfolio_demos]
-other = "Démos du Portfolio"
-
-[explore_demos_desc]
-other = "Explorez différentes approches de conception et de développement web. Chaque démo présente un style et un cas d'utilisation uniques."
-
-# Buttons and Links
-[view_demo]
-other = "Voir la Démo"
-
-[source_code]
-other = "Code Source"
-
-[learn_more]
-other = "En savoir plus →"
-
 # Music Widget
 [my_music]
 other = "Ma Musique"
@@ -319,15 +302,6 @@ other = "Setup & Hand-off"
 
 [dfy_tier]
 other = "Done-For-You"
-
-[demos_offer_title]
-other = "Want one of these for your business?"
-
-[demos_offer_body]
-other = "Each demo is the same Hugo + schema templating I'd ship for your site — same Lighthouse posture, same WCAG 2.1 AA, same AEO-ready structured data. Pick one you like and I'll fork it for your domain, brand it for your business, and wire in the content tailored to what you actually do."
-
-[demos_offer_cta]
-other = "Send a brief →"
 
 # Bobine vidéo AEO
 [aeo_reel_live_capture]

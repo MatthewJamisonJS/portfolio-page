@@ -1,14 +1,18 @@
+# TODO: translate from English (AEO-2 Task 6.2 mirror, 2026-05-14)
 ---
 banner:
   enable: true
-  kicker: "Antwort-Engine-Optimierung · St. Louis"
-  title: "Gebaut von einem Full-Stack-Ingenieur in St. Louis. <em>Hilft kleinen Unternehmen und Unternehmern, sich auf eine KI-Welt vorzubereiten.</em>"
-  subtitle: "Ein vollständiger, offener schema.org-Graph auf jeder Seite, öffentlicher Quellcode und WCAG 2.1 AA in fünf Locales. Überprüfbar in der Adressleiste — gerade jetzt."
+  kicker: "Answer Engine Optimization · St. Louis"
+  title: "When customers ask AI what you do, <em>do you show up?</em>"
+  subtitle: "We make sure they cite you."
   button:
     enable: true
-    label: "Kostenloses Brief senden"
-    link: "?service=brief#contact"
+    label: "Why does this matter to me"
+    link: "/why/"
   secondary:
-    label: "Preise ansehen"
-    link: "#pricing"
+    label: "What makes Gateway Tech AEO different"
+    link: "/different/"
+  tertiary:
+    label: "Or send a brief"
+    link: "?service=brief#contact"
 ---

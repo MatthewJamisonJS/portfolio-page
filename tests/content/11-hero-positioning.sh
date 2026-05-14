@@ -26,10 +26,7 @@ BANNED=(
   "Helping local businesses get cited by AI search"
 )
 
-# Loop scoped to EN only during the in-between window after Task 1.1 hero
-# refactor; expand back to all five locales once Task 6.2 mirrors the EN
-# banner into es/ja/fr/de.
-for locfile in data/en/banner.yml; do
+for locfile in data/en/banner.yml data/es/banner.yml data/ja/banner.yml data/fr/banner.yml data/de/banner.yml; do
   for phrase in "${BANNED[@]}"; do
     if grep -q "$phrase" "$REPO/$locfile"; then
       echo "FAIL — $locfile contains deprecated phrase: $phrase"

@@ -1,14 +1,18 @@
+# TODO: translate from English (AEO-2 Task 6.2 mirror, 2026-05-14)
 ---
 banner:
   enable: true
-  kicker: "アンサーエンジン最適化 · セントルイス"
-  title: "セントルイスのフルスタックエンジニアが構築。<em>小規模ビジネスと起業家が AI 時代に備えるのを支援。</em>"
-  subtitle: "全ページにオープンな schema.org グラフ、公開されたソースコード、5 ロケールで WCAG 2.1 AA。アドレスバーで確認できます ― 今すぐに。"
+  kicker: "Answer Engine Optimization · St. Louis"
+  title: "When customers ask AI what you do, <em>do you show up?</em>"
+  subtitle: "We make sure they cite you."
   button:
     enable: true
-    label: "無料ブリーフを送る"
-    link: "?service=brief#contact"
+    label: "Why does this matter to me"
+    link: "/why/"
   secondary:
-    label: "料金を見る"
-    link: "#pricing"
+    label: "What makes Gateway Tech AEO different"
+    link: "/different/"
+  tertiary:
+    label: "Or send a brief"
+    link: "?service=brief#contact"
 ---

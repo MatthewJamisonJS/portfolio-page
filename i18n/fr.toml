@@ -340,3 +340,32 @@ other = "Table des matières"
 
 [blog_empty]
 other = "Aucun article publié pour le moment. Les notes de terrain apparaîtront ici à mesure que je rédige des recherches sur l'AEO."
+
+# TODO: translate (AEO-2 Task 6.2 mirror, 2026-05-14)
+# AEO-2 fork architecture (Task 1.4)
+[hero_question]
+other = "When customers ask AI what you do, do you show up?"
+
+[cta_why]
+other = "Why does this matter to me"
+
+[cta_different]
+other = "What makes Gateway Tech AEO different"
+
+[cta_brief]
+other = "Or send a brief"
+
+[nav_why]
+other = "Why"
+
+[nav_different]
+other = "Different"
+
+[nav_pricing]
+other = "Pricing"
+
+[nav_faq]
+other = "FAQ"
+
+[nav_brief]
+other = "Send a brief"

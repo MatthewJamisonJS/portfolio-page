@@ -139,7 +139,7 @@
   border-top: 3px solid var(--ink);
   border-radius: 4px;
   padding: 2rem 1.5rem 1.75rem;
-  background: var(--bone-2);
+  background: var(--espresso-card);
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -212,8 +212,8 @@
 }
 .pricing-grid { gap: 0; align-items: stretch; }
 .pricing-card {
-  background: var(--bone);
-  border: 1px solid var(--rule);
+  background: var(--espresso-card);
+  border: 1px solid rgba(244, 239, 231, 0.08);
   padding: 2rem 1.75rem;
   height: 100%;
   display: flex;
@@ -615,8 +615,8 @@ details summary::-webkit-details-marker,
 /* ----- Contact form ----- */
 .contact-us.section-bg,
 .contact-area {
-  background: var(--bone-2);
-  color: var(--ink);
+  background: var(--espresso);
+  color: var(--bone);
   padding-top: var(--pad-y);
   padding-bottom: var(--pad-y);
 }
@@ -1560,3 +1560,52 @@ button#contact-submit {
   padding: 0.5rem 1rem;
 }
 .nav-cta:hover { color: var(--light-text); }
+
+/* ============================================================
+ * AEO-2 amendment: espresso atmosphere across the multi-page hub
+ * Closes the body-bg cascade leak — older bone-painted sections
+ * (.hero-area, .pillar-card, .pricing-card, .contact-area) are
+ * retargeted to espresso/espresso-card upstream. Belt-and-suspenders
+ * here so the page wrappers paint espresso even when older rules
+ * win specificity.
+ * ============================================================ */
+body,
+.page-why,
+.page-different,
+.page-pricing,
+.page-faq {
+  background-color: var(--espresso);
+  color: var(--bone);
+}
+
+.hero-fork {
+  background:
+    radial-gradient(circle at 30% 20%, rgba(173, 69, 39, 0.22), transparent 60%),
+    radial-gradient(circle at 80% 80%, rgba(212, 167, 58, 0.10), transparent 60%),
+    var(--espresso);
+}
+
+.stat-card,
+.pillar-card,
+.pricing-card {
+  background: var(--espresso-card);
+  border: 1px solid rgba(244, 239, 231, 0.08);
+}
+
+.stat-headline,
+.pricing-card .price,
+.home-teaser-link,
+.hero-kicker,
+.hero-tertiary {
+  color: var(--clay);
+}
+
+.pricing-highlight {
+  border-color: var(--amber);
+}
+
+.trust-block,
+.contact-area {
+  background: var(--espresso);
+  color: var(--bone);
+}

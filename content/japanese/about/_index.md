@@ -59,6 +59,6 @@ keywords: ["Matthew Jamison", "Gateway Tech AEO", "セントルイス AEO コン
 - 音楽: [matthewjjamison.bandcamp.com](https://matthewjjamison.bandcamp.com)
 - LinkedIn: [linkedin.com/in/matthew-jamison-65486bab](https://www.linkedin.com/in/matthew-jamison-65486bab/)
 - LLC サイト(設立準備中): [gatewaytechaeo.com](https://gatewaytechaeo.com)
-- メール: [jamison.matthew@icloud.com](mailto:jamison.matthew@icloud.com)(matthew@gatewaytechaeo.com 向け Cloudflare Email Routing が稼働するまで)
+- メール: [matthew@gatewaytechaeo.com](mailto:matthew@gatewaytechaeo.com)
 
 依頼受付はメール優先です — 電話はこのプラクティスの運用に含まれません。私と仕事をするか検討中なら、ブリーフを送ってください: 既存サイトのリンク、街、ビジネスの内容を一文、AEO に何を直してほしいか。48〜96 時間以内に、定型ピッチではなく、あなたのビジネスに固有の返答を送ります。セントルイスにいて対面の方がよければ、それも対応可能です — 同じブリーフで。

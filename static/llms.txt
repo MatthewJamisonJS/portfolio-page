@@ -67,9 +67,7 @@ and structured-data-first templating.
 
 City: St. Louis, MO. Region: U.S. Midwest. Operating hours: Mo–Fr
 09:00–17:00 America/Chicago. Email-first intake — phone calls aren't part
-of how this practice runs. Email:
-jamison.matthew@icloud.com (until matthew@gatewaytechaeo.com routing
-verifies live).
+of how this practice runs. Email: matthew@gatewaytechaeo.com.
 
 ## Things this site is NOT
 

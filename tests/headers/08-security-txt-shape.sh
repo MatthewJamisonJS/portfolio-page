@@ -16,9 +16,10 @@ fi
 
 FAIL=0
 
-# Contact: mailto:... is the only RFC-mandated field. We assert icloud.com
-# until orchestrator signals the routing swap (decision 1 of vivid-wondering-harp.md).
-if ! grep -qE "^Contact:[[:space:]]*mailto:jamison\.matthew@icloud\.com\$" "$SEC"; then
+# Contact: mailto:... is the only RFC-mandated field. Cloudflare Email Routing
+# for gatewaytechaeo.com is verified live; security@ forwards to the operator
+# inbox. Branded address is now the public-facing contact.
+if ! grep -qE "^Contact:[[:space:]]*mailto:security@gatewaytechaeo\.com\$" "$SEC"; then
   echo "FAIL — Contact: line missing or wrong value"
   FAIL=1
 fi

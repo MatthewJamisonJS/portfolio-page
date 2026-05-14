@@ -20,7 +20,7 @@ This document supplements the machine-readable `/.well-known/security.txt` per [
 
 ## How to report
 
-Preferred: email **jamison.matthew@icloud.com** with the prefix `[security]` in the subject line.
+Preferred: email **security@gatewaytechaeo.com** with the prefix `[security]` in the subject line.
 
 Alternative: file a private security advisory at [github.com/MatthewJamisonJS/portfolio-page/security/advisories/new](https://github.com/MatthewJamisonJS/portfolio-page/security/advisories/new). GitHub handles the routing without making the report public.
 

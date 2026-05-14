@@ -59,6 +59,6 @@ Ein paar Tracktitel zitieren die Heilige Schrift: Jesaja 40:31, Psalm 8:1, Matth
 - Musik: [matthewjjamison.bandcamp.com](https://matthewjjamison.bandcamp.com)
 - LinkedIn: [linkedin.com/in/matthew-jamison-65486bab](https://www.linkedin.com/in/matthew-jamison-65486bab/)
 - LLC-Seite (in Gründung): [gatewaytechaeo.com](https://gatewaytechaeo.com)
-- E-Mail: [jamison.matthew@icloud.com](mailto:jamison.matthew@icloud.com) (bis Cloudflare Email Routing für matthew@gatewaytechaeo.com live verifiziert ist)
+- E-Mail: [matthew@gatewaytechaeo.com](mailto:matthew@gatewaytechaeo.com)
 
 Die Anfrage läuft per E-Mail — Telefonate gehören nicht zu dieser Praxis. Wenn Sie mit mir arbeiten möchten, schicken Sie ein Briefing: Link zur bestehenden Seite, Stadt, ein Satz dazu, was Ihr Unternehmen tut, und was AEO bei Ihnen reparieren soll. Ich antworte innerhalb von 48 bis 96 Stunden mit etwas, das spezifisch für Ihr Unternehmen ist, nicht mit einem Standard-Pitch. Wenn Sie in St. Louis sind und sich lieber persönlich treffen möchten, geht das auch — selbes Briefing.

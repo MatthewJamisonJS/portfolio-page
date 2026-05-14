@@ -12,7 +12,7 @@ LOCALES=(en es ja fr de)
 FAIL=0
 
 # brand.yml byte-equal email + phone_format check
-EXPECTED_EMAIL="jamison.matthew@icloud.com"
+EXPECTED_EMAIL="matthew@gatewaytechaeo.com"
 echo "  brand.yml email (expected: $EXPECTED_EMAIL):"
 for loc in "${LOCALES[@]}"; do
   ACTUAL=$(awk -F'"' '/^[[:space:]]+email:/ { print $2; exit }' "data/$loc/brand.yml")

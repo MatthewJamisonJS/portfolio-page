@@ -11,7 +11,4 @@ banner:
   secondary:
     label: "What makes Gateway Tech AEO different"
     link: "/different/"
-  tertiary:
-    label: "Or send a brief"
-    link: "/?service=brief#contact"
 ---

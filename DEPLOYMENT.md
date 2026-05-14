@@ -102,8 +102,10 @@ Expected output:
 Security headers are automatically applied via `static/_headers`:
 
 ```
-Content-Security-Policy: default-src 'self'; script-src 'self' 'unsafe-inline' https://formspree.io https://static.cloudflareinsights.com; style-src 'self' 'unsafe-inline'; font-src 'self'; img-src 'self' data: https:; media-src 'self'; connect-src 'self' https://formspree.io https://cloudflareinsights.com; frame-src 'self'
+Content-Security-Policy: default-src 'self'; script-src 'self' 'unsafe-inline' https://static.cloudflareinsights.com; style-src 'self' 'unsafe-inline'; font-src 'self'; img-src 'self' data: https:; media-src 'self'; connect-src 'self' https://cloudflareinsights.com https://csp-report.gatewaytechaeo.com; frame-src 'self'; form-action 'self' https://intake.gatewaytechaeo.com; report-to csp; report-uri https://csp-report.gatewaytechaeo.com/
 
+Reporting-Endpoints: csp="https://csp-report.gatewaytechaeo.com/"
+Report-To: {"group":"csp","max_age":10886400,"endpoints":[{"url":"https://csp-report.gatewaytechaeo.com/"}]}
 X-Frame-Options: SAMEORIGIN
 X-Content-Type-Options: nosniff
 Referrer-Policy: strict-origin-when-cross-origin
@@ -124,7 +126,7 @@ Expected response:
 HTTP/2 200
 date: Thu, 29 Oct 2025 23:00:00 GMT
 content-type: text/html; charset=utf-8
-content-security-policy: default-src 'self'; script-src 'self' 'unsafe-inline' https://formspree.io https://static.cloudflareinsights.com; ...
+content-security-policy: default-src 'self'; script-src 'self' 'unsafe-inline' https://static.cloudflareinsights.com; ...
 x-frame-options: SAMEORIGIN
 x-content-type-options: nosniff
 strict-transport-security: max-age=31536000; includeSubDomains; preload
@@ -203,9 +205,11 @@ Test at: https://pagespeed.web.dev/
 
 ### Contact form not working
 
-1. Verify Formspree endpoint is configured in template
-2. Test form locally: `hugo server`
-3. Check Formspree integration in browser console for errors
+1. Confirm `data/{lang}/contact.yml` `form_action` points at `https://intake.gatewaytechaeo.com/brief`.
+2. Confirm the `brief-intake-collector` Worker is deployed (`wrangler deploy` from `brief-intake-collector/`).
+3. `curl -sI https://intake.gatewaytechaeo.com/` should return 200.
+4. `curl -X POST -d 'name=t&email=t@x.io&location=l&business_one_liner=b&current_goals=g' -H 'Content-Type: application/x-www-form-urlencoded' https://intake.gatewaytechaeo.com/brief` should return 303 and deliver to `jamison.matthew@icloud.com`.
+5. Verify `cf-observability` MCP logs for `brief-intake-collector` show recent receives.
 
 ### Security headers not applied
 
@@ -244,7 +248,7 @@ Test at: https://pagespeed.web.dev/
 - **Cloudflare Pages Docs**: https://developers.cloudflare.com/pages/
 - **Hugo Deployment Guide**: https://gohugo.io/hosting-and-deployment/hosting-on-cloudflare-pages/
 - **Custom Domains Setup**: https://developers.cloudflare.com/pages/platform/custom-domains/
-- **Formspree Integration**: https://formspree.io/docs/
+- **Cloudflare Email Routing — Send from Workers**: https://developers.cloudflare.com/email-routing/email-workers/send-email-workers/
 - **Lighthouse Testing**: https://pagespeed.web.dev/
 
 ## AEO loop video production

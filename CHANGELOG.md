@@ -7,8 +7,29 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Added
+- New brief-intake Worker at `https://intake.gatewaytechaeo.com/brief`
+  (`brief-intake-collector/`). Receives the contact form's POST, validates
+  fields, builds a markdown summary, and emails it to
+  `jamison.matthew@icloud.com` via the CF Email Routing `send_email` binding.
+  GET returns a stub; POST without required fields returns 400 JSON;
+  unsupported content-types return 415. Replaces Formspree.
+- New `/thanks/` page (EN, `noindex`) where the Worker redirects HTML form
+  submissions after success.
+
+### Changed
+- `data/{en,es,ja,fr,de}/contact.yml` `form_action` swapped from
+  `https://formspree.io/f/xjkpovyv` to `https://intake.gatewaytechaeo.com/brief`.
+- `static/_headers` CSP drops `https://formspree.io` from `script-src` and
+  `connect-src`. Adds `form-action 'self' https://intake.gatewaytechaeo.com`
+  so the form's cross-subdomain POST passes CSP. No other allowlist changes.
+
+### Removed
+- Third-party Formspree dependency. CSP allowlist no longer mentions
+  `formspree.io`. Contact-form path now lives entirely on Cloudflare
+  primitives (Worker → Email Routing → iCloud).
+
 ### Security
-- Add CSP violation reporting endpoint at `https://csp-report.gatewaytechaeo.com`
   via a Cloudflare Worker (`csp-report-collector/`). Worker validates
   Content-Type, logs each report via `console.log` (queryable via the
   `cf-observability` MCP), returns 204; rejects other content-types with

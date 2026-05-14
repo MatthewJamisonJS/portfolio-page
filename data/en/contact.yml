@@ -7,7 +7,7 @@ contact:
 
   contact_form:
     enable: true
-    form_action: "https://formspree.io/f/xjkpovyv"
+    form_action: "https://intake.gatewaytechaeo.com/brief"
     name: "Your Name"
     email: "Your Email"
     site_url: "Your Site (URL, if you have one)"

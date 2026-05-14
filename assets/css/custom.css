@@ -843,36 +843,6 @@ button#contact-submit {
   color: var(--bone-2);
   font-size: 0.875rem;
 }
-.social-list {
-  display: flex;
-  justify-content: center;
-  gap: 1rem;
-  list-style: none;
-  padding: 0;
-  margin: 0 0 1.5rem;
-}
-.social-item { margin: 0; }
-.social-link {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 44px;
-  height: 44px;
-  border-radius: 999px;
-  border: 1px solid rgba(244, 239, 231, 0.18);
-  color: var(--bone);
-  text-decoration: none;
-  transition: background 180ms ease, color 180ms ease, border-color 180ms ease;
-}
-.social-link:hover,
-.social-link:focus-visible {
-  background: var(--brick);
-  color: var(--bone);
-  border-color: var(--brick);
-}
-.social-link:focus-visible { outline: 3px solid var(--brick); outline-offset: 3px; }
-.social-mark { width: 18px; height: 18px; fill: currentColor; }
-
 /* ----- Bootstrap row/col bridge ----- */
 .text-center { text-align: center; }
 .mb-4 { margin-bottom: 1.5rem; }

@@ -110,17 +110,6 @@ expire_days = 2
 [params.map]
 enable = false
 
-############################# social marks ##########################
-[[params.social]]
-brand = "github"
-label = "GitHub"
-link = "https://github.com/MatthewJamisonJS"
-
-[[params.social]]
-brand = "linkedin"
-label = "LinkedIn"
-link = "https://www.linkedin.com/in/matthew-jamison-65486bab/"
-
 ################################ English Language ########################
 [Languages.en]
 languageName = "En"
@@ -130,4 +119,4 @@ weight = 1
 
 [Languages.en.params]
 home = "Home"
-copyright = "Matthew Jamison"
+copyright = "Gateway Tech AEO"

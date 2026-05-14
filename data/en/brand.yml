@@ -7,8 +7,5 @@ brand:
   operator: "Matthew Jamison"
   city: "St. Louis"
   region: "MO"
-  # Email reverts to icloud.com until Cloudflare Email Routing for
-  # matthew@gatewaytechaeo.com is verified live (orchestrator owns the swap
-  # post-Phase-5 per AEO-TIGHTEN-SHIP §3 + decision 1 of vivid-wondering-harp.md).
-  email: "jamison.matthew@icloud.com"
+  email: "matthew@gatewaytechaeo.com"
   website: "https://gatewaytechaeo.com"

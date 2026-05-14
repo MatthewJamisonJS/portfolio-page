@@ -60,6 +60,6 @@ A handful of my track titles cite scripture: Isaiah 40:31, Psalm 8:1, Matthew 23
 - Music: [matthewjjamison.bandcamp.com](https://matthewjjamison.bandcamp.com)
 - LinkedIn: [linkedin.com/in/matthew-jamison-65486bab](https://www.linkedin.com/in/matthew-jamison-65486bab/)
 - LLC site (forming): [gatewaytechaeo.com](https://gatewaytechaeo.com)
-- Email: [jamison.matthew@icloud.com](mailto:jamison.matthew@icloud.com) (until Cloudflare Email Routing for matthew@gatewaytechaeo.com is verified live)
+- Email: [matthew@gatewaytechaeo.com](mailto:matthew@gatewaytechaeo.com)
 
 Intake is email-first — phone calls aren't part of how this practice runs. If you're considering working with me, send a brief: a link to your existing site, your city, a sentence on what your business does, and what you'd like AEO to fix. I reply within 48–96 hours with something specific to your business, not a generic pitch. If you're in St. Louis and would rather meet in person, that works too — same brief.

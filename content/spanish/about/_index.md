@@ -59,6 +59,6 @@ Algunos títulos de pistas citan escritura: Isaías 40:31, Salmo 8:1, Mateo 23:2
 - Música: [matthewjjamison.bandcamp.com](https://matthewjjamison.bandcamp.com)
 - LinkedIn: [linkedin.com/in/matthew-jamison-65486bab](https://www.linkedin.com/in/matthew-jamison-65486bab/)
 - Sitio LLC (en formación): [gatewaytechaeo.com](https://gatewaytechaeo.com)
-- Email: [jamison.matthew@icloud.com](mailto:jamison.matthew@icloud.com) (hasta que Cloudflare Email Routing para matthew@gatewaytechaeo.com esté verificado en vivo)
+- Email: [matthew@gatewaytechaeo.com](mailto:matthew@gatewaytechaeo.com)
 
 La intake es por correo primero — las llamadas no forman parte de cómo opera esta práctica. Si estás considerando trabajar conmigo, envía un brief: enlace a tu sitio actual, tu ciudad, una frase sobre qué hace tu negocio, y qué te gustaría que el AEO arregle. Respondo en 48–96 horas con algo específico a tu negocio, no un pitch genérico. Si estás en St. Louis y prefieres reunirte en persona, también funciona — el mismo brief.

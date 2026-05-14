@@ -4,7 +4,7 @@
 # Reports may also be filed via GitHub at:
 # https://github.com/MatthewJamisonJS/portfolio-page/security/advisories/new
 
-Contact: mailto:jamison.matthew@icloud.com
+Contact: mailto:security@gatewaytechaeo.com
 Expires: 2027-05-13T00:00:00Z
 Preferred-Languages: en
 Canonical: https://gatewaytechaeo.com/.well-known/security.txt

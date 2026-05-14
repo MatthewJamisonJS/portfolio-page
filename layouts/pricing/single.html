@@ -1,0 +1,34 @@
+{{ define "main" }}
+{{ $data := (index site.Data site.Language.Lang).pricing.pricing }}
+{{ $different := (index site.Data site.Language.Lang).different.different }}
+<main class="page-pricing">
+  <article class="container">
+    <header class="page-header">
+      <h1>{{ $data.title }}</h1>
+      <p class="page-subtitle">Audit credits toward Setup if you continue. No long contracts.</p>
+    </header>
+
+    <section class="pricing-grid">
+      {{ range $data.tiers }}
+      <article class="pricing-card{{ if .highlight }} pricing-highlight{{ end }}" id="tier-{{ .slug }}">
+        <h2>{{ .name }}</h2>
+        <p class="price">{{ .price }} <span class="cadence">{{ .cadence }}</span></p>
+        <p class="use-when">{{ .use_when }}</p>
+        <ul class="includes">
+          {{ range .includes }}<li>{{ . }}</li>{{ end }}
+        </ul>
+        <a href="{{ .cta_link }}" class="btn-fork btn-fork-primary">{{ .cta_label }} <span aria-hidden="true">→</span></a>
+      </article>
+      {{ end }}
+    </section>
+
+    <p class="pricing-footnote">{{ $data.footnote }}</p>
+
+    {{ partial "trust-moves.html" $different.blocks.trust }}
+
+    <footer class="page-footer">
+      <a href="/#contact" class="btn-fork btn-fork-primary">Send a brief <span aria-hidden="true">→</span></a>
+    </footer>
+  </article>
+</main>
+{{ end }}

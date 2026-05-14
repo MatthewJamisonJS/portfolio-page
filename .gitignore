@@ -26,3 +26,7 @@ Thumbs.db
 .tmp/
 # Local AI context, specs, and settings — never commit (competitive sensitivity)
 .claude/
+
+# Worker node_modules (Workers are deployed via wrangler; lockfile committed)
+brief-intake-collector/node_modules/
+csp-report-collector/node_modules/

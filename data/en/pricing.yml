@@ -24,7 +24,7 @@ pricing:
         - "1-hour walkthrough"
         - "You implement"
       cta_label: "Start with an audit"
-      cta_link: "?service=audit#contact"
+      cta_link: "/?service=audit#contact"
     - slug: "setup"
       name: "Setup & Hand-off"
       price: "$700"
@@ -41,7 +41,7 @@ pricing:
         - "Training session"
         - "You run it after"
       cta_label: "Pick Setup & Hand-off"
-      cta_link: "?service=setup#contact"
+      cta_link: "/?service=setup#contact"
     - slug: "dfy"
       name: "Done-For-You"
       price: "$500–1,200"
@@ -58,7 +58,7 @@ pricing:
         - "Content & reviews"
         - "Reporting + strategy"
       cta_label: "Talk about a retainer"
-      cta_link: "?service=dfy#contact"
+      cta_link: "/?service=dfy#contact"
   # Schema-only Offer for free email intake. Not rendered in pricing section;
   # consumed by ProfessionalService.offers in head.html. Audit H6 reframe —
   # replaces the dropped "Discovery Call" Offer (phone-call posture removed in

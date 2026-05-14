@@ -14,5 +14,5 @@ banner:
     link: "/different/"
   tertiary:
     label: "Or send a brief"
-    link: "?service=brief#contact"
+    link: "/?service=brief#contact"
 ---

@@ -73,6 +73,7 @@
   /* Accent */
   --brick:       #ad4527;       /* primary accent — 4.95:1 vs bone (AA normal) */
   --brick-deep:  #8a3520;       /* hover, focus, mark fill — 7.0:1 vs bone (AAA) */
+  --clay:        #e88a6e;       /* brick lifted for AA on charcoal — 5.7:1 vs #232323 (AA normal, AAA large) */
   --slate:       #2a3447;       /* dark surface alt */
   --citron:      #c9a13a;       /* tweak/notice pip only */
 

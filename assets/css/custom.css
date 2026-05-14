@@ -1368,8 +1368,8 @@ button#contact-submit {
 /* Fork hero */
 .hero-fork {
   background:
-    radial-gradient(circle at 30% 20%, rgba(233, 30, 99, 0.18), transparent 60%),
-    radial-gradient(circle at 80% 80%, rgba(0, 188, 212, 0.10), transparent 60%),
+    radial-gradient(circle at 30% 20%, rgba(173, 69, 39, 0.22), transparent 60%),
+    radial-gradient(circle at 80% 80%, rgba(232, 138, 110, 0.10), transparent 60%),
     var(--charcoal);
   padding: 6rem 0 5rem;
   text-align: center;
@@ -1379,7 +1379,7 @@ button#contact-submit {
   text-transform: uppercase;
   font-size: 0.875rem;
   letter-spacing: 0.12em;
-  color: var(--accent);
+  color: var(--clay);
   margin-bottom: 1.5rem;
 }
 .hero-title {
@@ -1387,7 +1387,7 @@ button#contact-submit {
   line-height: 1.15;
   margin: 0 0 1rem;
 }
-.hero-title em { color: var(--primary); font-style: normal; }
+.hero-title em { color: var(--clay); font-style: normal; }
 .hero-subtitle {
   font-size: 1.25rem;
   color: rgba(255, 255, 255, 0.85);
@@ -1421,7 +1421,7 @@ button#contact-submit {
 .btn-fork:hover { transform: translateY(-1px); }
 .hero-tertiary {
   display: inline-block;
-  color: var(--accent);
+  color: var(--clay);
   text-decoration: underline;
   font-size: 0.95rem;
 }
@@ -1454,7 +1454,7 @@ button#contact-submit {
 }
 .stat-headline {
   font-size: 1.25rem;
-  color: var(--accent);
+  color: var(--clay);
   margin: 0 0 0.75rem;
 }
 .stat-body { margin: 0 0 1rem; color: rgba(255, 255, 255, 0.9); }
@@ -1477,7 +1477,7 @@ button#contact-submit {
   border-radius: 8px;
   padding: 1.5rem;
 }
-.pillar-card h3 { color: var(--primary); margin: 0 0 0.5rem; }
+.pillar-card h3 { color: var(--clay); margin: 0 0 0.5rem; }
 .pillar-tag { color: var(--accent); font-style: italic; margin: 0 0 1rem; }
 
 /* Trust block (shared partial) */
@@ -1504,7 +1504,7 @@ button#contact-submit {
   padding: 1.75rem 1.5rem;
 }
 .pricing-card h2 { margin: 0 0 0.5rem; }
-.pricing-card .price { font-size: 1.75rem; color: var(--primary); margin: 0 0 0.5rem; }
+.pricing-card .price { font-size: 1.75rem; color: var(--clay); margin: 0 0 0.5rem; }
 .pricing-card .cadence { font-size: 0.95rem; color: rgba(255, 255, 255, 0.6); }
 .pricing-card .use-when { color: rgba(255, 255, 255, 0.75); margin: 0 0 1rem; }
 .pricing-card ul.includes { list-style: none; padding: 0; margin: 0 0 1.5rem; }
@@ -1530,13 +1530,13 @@ button#contact-submit {
   color: var(--light-text);
   text-decoration: none;
 }
-.page-faq .faq-list dt a:hover { color: var(--accent); }
+.page-faq .faq-list dt a:hover { color: var(--clay); }
 .page-faq .faq-list dd { margin: 0.75rem 0 0; color: rgba(255, 255, 255, 0.9); }
 
 /* Homepage teaser strip */
 .home-teaser { padding: 3rem 0; text-align: center; border-top: 1px solid rgba(255, 255, 255, 0.06); }
 .home-teaser-copy { margin: 0; color: rgba(255, 255, 255, 0.8); }
-.home-teaser-link { color: var(--accent); text-decoration: underline; }
+.home-teaser-link { color: var(--clay); text-decoration: underline; }
 
 /* Footer nav (from Task 4.2) */
 .footer-nav {
@@ -1550,7 +1550,7 @@ button#contact-submit {
   text-decoration: none;
   font-size: 0.95rem;
 }
-.footer-nav a:hover { color: var(--accent); text-decoration: underline; }
+.footer-nav a:hover { color: var(--clay); text-decoration: underline; }
 
 /* Nav CTA (from Task 4.1) */
 .nav-cta {

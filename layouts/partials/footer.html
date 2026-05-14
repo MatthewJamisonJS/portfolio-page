@@ -4,6 +4,13 @@
 		<div class="row wow fadeInUp" data-wow-duration="500ms">
 			<div class="col-xl-12">
 
+				{{"<!-- footer nav -->" | safeHTML}}
+				<nav class="footer-nav" aria-label="Footer">
+					<a href="{{ "/pricing/" | relLangURL }}">{{ i18n "nav_pricing" }}</a>
+					<a href="{{ "/faq/" | relLangURL }}">{{ i18n "nav_faq" }}</a>
+					<a href="{{ "/#contact" | relLangURL }}">{{ i18n "nav_brief" }}</a>
+				</nav>
+
 				{{"<!-- copyright -->" | safeHTML}}
 				<div class="copyright text-center">
 					<p>Copyright &copy; {{ now.Format "2006" }} {{ site.Params.copyright | markdownify }}</p>
@@ -81,9 +88,3 @@
 </script>
 
 <!-- FAQ accordion now uses native <details>/<summary>; no JS needed -->
-
-<!-- Multi-Layer Vortex Portal Animation for Start Project Button -->
-<script>
-// Portal animation removed - button now uses simple scroll via page-scroll class
-// Smooth scrolling is handled by script.js
-</script>

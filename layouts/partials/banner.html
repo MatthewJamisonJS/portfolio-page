@@ -1,11 +1,11 @@
 {{ $data := index site.Data site.Language.Lang }}
 {{ if $data.banner.banner.enable }}
 {{ with $data.banner.banner }}
-<section class="hero-area hero-fork">
+<section class="hero-area hero-fork" aria-labelledby="hero-title">
   <div class="container">
     <span class="hero-kicker">{{ .kicker }}</span>
-    <h1 class="hero-title">{{ .title | safeHTML }}</h1>
-    <p class="hero-subtitle">{{ .subtitle }}</p>
+    <h1 id="hero-title" class="hero-title">{{ .title | safeHTML }}</h1>
+    <p class="hero-subtitle">{{ .subtitle | markdownify }}</p>
     <div class="hero-fork-ctas">
       <a href="{{ .button.link }}" class="btn-fork btn-fork-primary">{{ .button.label }} <span aria-hidden="true">→</span></a>
       <a href="{{ .secondary.link }}" class="btn-fork btn-fork-secondary">{{ .secondary.label }} <span aria-hidden="true">→</span></a>

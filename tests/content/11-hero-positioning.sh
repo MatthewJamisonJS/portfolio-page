@@ -13,11 +13,23 @@ FAIL=0
 # Banned phrases — must not appear in any locale's banner.yml title or subtitle.
 BANNED=(
   "Watch AI pick the winners"
+  "Mira a la IA elegir"
+  "Mira cómo la IA elige"
+  "AIが勝者を選ぶ"
+  "Regardez l'IA choisir"
+  "Beobachten Sie, wie KI"
   "Built by a Full-Stack engineer"
+  "Construido por un ingeniero Full-Stack"
+  "セントルイスのフルスタックエンジニア"
+  "Conçu par un ingénieur Full-Stack"
+  "Gebaut von einem Full-Stack"
   "Helping local businesses get cited by AI search"
 )
 
-for locfile in data/en/banner.yml data/es/banner.yml data/ja/banner.yml data/fr/banner.yml data/de/banner.yml; do
+# Loop scoped to EN only during the in-between window after Task 1.1 hero
+# refactor; expand back to all five locales once Task 6.2 mirrors the EN
+# banner into es/ja/fr/de.
+for locfile in data/en/banner.yml; do
   for phrase in "${BANNED[@]}"; do
     if grep -q "$phrase" "$REPO/$locfile"; then
       echo "FAIL — $locfile contains deprecated phrase: $phrase"

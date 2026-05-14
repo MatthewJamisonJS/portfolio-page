@@ -80,7 +80,7 @@
   color: var(--bone) !important;
   letter-spacing: -0.01em;
 }
-.navigation .nav-link {
+.navigation .nav-link:not(.nav-cta) {
   font-family: var(--font-mono);
   font-size: 0.8125rem;
   letter-spacing: 0.12em;
@@ -89,8 +89,8 @@
   padding: 0.5rem 1rem;
   border-radius: 999px;
 }
-.navigation .nav-link:hover,
-.navigation .nav-link:focus-visible { color: var(--clay) !important; }
+.navigation .nav-link:not(.nav-cta):hover,
+.navigation .nav-link:not(.nav-cta):focus-visible { color: var(--clay) !important; }
 .navigation .navbar-toggler {
   border-color: rgba(244, 239, 231, 0.25);
   color: var(--bone);
@@ -1560,12 +1560,12 @@ button#contact-submit {
 
 /* Nav CTA (from Task 4.1) */
 .nav-cta {
-  background: var(--primary);
-  color: var(--light-text);
+  background: var(--brick);
+  color: var(--bone);
   border-radius: 4px;
   padding: 0.5rem 1rem;
 }
-.nav-cta:hover { color: var(--light-text); }
+.nav-cta:hover { color: var(--bone); }
 
 /* ============================================================
  * AEO-2 amendment: espresso atmosphere across the multi-page hub

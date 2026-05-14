@@ -1,78 +1,20 @@
 {{ define "main" }}
-
-<!-- Banner / Hero Section -->
 {{ partial "banner.html" . }}
 
-<!-- Navigation (sticky) -->
-{{ partial "navigation.html" . }}
+{{/*
+  Homepage intentionally minimal post-AEO-2 rebrand.
+  Educational + reassurance content lives on /why and /different.
+  Pricing on /pricing. FAQ on /faq. Intake form mounted on /#contact.
+*/}}
 
-<!-- Three-pillar Method section -->
-{{ partial "method.html" . }}
-
-<!-- FAQ — Common questions, answer-first content -->
-{{ partial "faq.html" . }}
-
-<!-- Pricing tiers -->
-{{ partial "pricing.html" . }}
-
-<!-- Demos grid — proof points -->
-<section id="demos" class="portfolio-demos section">
+<section class="home-teaser" aria-label="Direct contact">
   <div class="container">
-    <div class="row">
-      <div class="col-12">
-        <div class="section-title text-center">
-          <h2>{{ i18n "portfolio_demos" }}</h2>
-          <p>{{ i18n "explore_demos_desc" }}</p>
-        </div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-12">
-        <div class="row demo-grid">
-          {{ range where site.Pages "Section" "demos" }}
-          {{ if not .IsNode }}
-          <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
-            <div class="demo-card card h-100">
-              {{ if .Params.image }}
-              <div class="demo-image">
-                {{ $imgPath := .Params.image }}
-                {{ $img582 := replace $imgPath ".webp" "-582w.webp" }}
-                {{ $img768 := replace $imgPath ".webp" "-768w.webp" }}
-                <img src="{{ $img582 | relURL }}" srcset="{{ $img582 | relURL }} 582w, {{ $img768 | relURL }} 768w" sizes="(max-width: 768px) 100vw, 582px" alt="{{ .Title }}" class="card-img-top" loading="lazy">
-                <div class="demo-overlay">
-                  <div class="demo-links">
-                    {{ if .Params.demo_url }}<a href="{{ .Params.demo_url }}" target="_blank" class="btn btn-sm btn-primary" rel="noopener">{{ i18n "view_demo" }}</a>{{ end }}
-                    {{ if .Params.github_url }}<a href="{{ .Params.github_url }}" target="_blank" class="btn btn-sm btn-secondary" rel="noopener">{{ i18n "source_code" }}</a>{{ end }}
-                  </div>
-                </div>
-              </div>
-              {{ end }}
-              <div class="card-body">
-                <h3 class="card-title">{{ .Title }}</h3>
-                <p class="card-text">{{ .Params.description }}</p>
-                <a href="#contact" class="read-more page-scroll">{{ i18n "learn_more" }}</a>
-              </div>
-            </div>
-          </div>
-          {{ end }}
-          {{ end }}
-        </div>
-      </div>
-    </div>
-
-    <div class="row demos-offer">
-      <div class="col-lg-8 offset-lg-2 text-center">
-        <h3 class="demos-offer-title">{{ i18n "demos_offer_title" }}</h3>
-        <p class="demos-offer-body">{{ i18n "demos_offer_body" }}</p>
-        <a href="?service=brief#contact" class="demos-offer-cta page-scroll" data-service="brief">{{ i18n "demos_offer_cta" }}</a>
-      </div>
-    </div>
+    <p class="home-teaser-copy">
+      Or, if you already know what you need:
+      <a href="/#contact" class="home-teaser-link">send a brief <span aria-hidden="true">→</span></a>
+    </p>
   </div>
 </section>
 
-{{/* Discovery CTA strip removed per operator review (2026-05-07) — duplicate of banner hero CTA + demos-offer CTA. Partial deleted in the post-review pass; git history preserves the prior content. */}}
-
-<!-- Contact form -->
 {{ partial "contact.html" . }}
-
 {{ end }}

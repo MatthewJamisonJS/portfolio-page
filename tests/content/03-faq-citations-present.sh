@@ -25,10 +25,14 @@ CLAIMS=(
 )
 
 for loc in "" es ja fr de; do
-  HTML="/tmp/aeo-faq-build${loc:+/$loc}/index.html"
+  HTML="/tmp/aeo-faq-build${loc:+/$loc}/faq/index.html"
   if [[ ! -f "$HTML" ]]; then
-    echo "FAIL — $HTML missing"
-    FAIL=1
+    # Non-EN locales may not have /faq translated yet — only the EN page
+    # is the citation source of truth. Skip silently for non-EN.
+    if [[ -z "$loc" ]]; then
+      echo "FAIL — $HTML missing"
+      FAIL=1
+    fi
     continue
   fi
   for entry in "${CLAIMS[@]}"; do

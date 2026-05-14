@@ -139,6 +139,13 @@ Feature: AEO citation surface upgrade
     Then the count should be between 40 and 60 inclusive
     # Verified by: tests/content/12-faq-word-count.sh (Task 16, audit M13)
 
+  Scenario: Hero asks the fork question
+    Given a visitor lands on the homepage
+    When they read the hero
+    Then they should see "When customers ask AI what you do, do you show up?"
+    And two CTAs labeled "Why does this matter to me" and "What makes Gateway Tech AEO different"
+    # Verified by: tests/content/13-fork-hero.sh
+
   Scenario: All site claims survive verification
     Given the AEO citation-surface plan has shipped (Tasks 1-17)
     When the operator runs the full pre-merge verification suite

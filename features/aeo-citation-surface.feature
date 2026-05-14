@@ -100,12 +100,10 @@ Feature: AEO citation surface upgrade
          carrying the page's published or last-modified date
     # Verified by: tests/metadata/07-lastmod-visible.sh (Task 17, audit L6)
 
-  Scenario: Author bio appears on About + every blog post
-    Given a reader lands on /about/ or any /blog/<post>/
-    When they scroll to the end of the main content
-    Then they should see an author-bio card with the author photo, name,
-         one-line bio, day-job evidence, and visible last-updated date
-    # Verified by: tests/content/05-author-bio.sh (Task 9, audit L6)
+  # Scenario "Author bio appears on About + every blog post" was superseded by
+  # AEO-2 Task 3.3 — the operator's bio, photo, and /about/ page are intentionally
+  # absent from the public site (audience-first positioning). Verified by:
+  # tests/content/19-no-author-bio.sh.
 
   Scenario: Pillar 1 is independently citable
     Given a user asks an LLM "what is the difference between AEO and SEO"

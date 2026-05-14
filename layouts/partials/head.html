@@ -350,30 +350,6 @@
 						"url": "{{ site.BaseURL }}#pillar-{{ $p.id }}-title"
 					}{{ end }}
 				]
-			}{{ end }}{{ if eq .Section "about" }},
-			{
-				"@type": "AboutPage",
-				"@id": "{{ .Permalink }}#aboutpage",
-				"url": "{{ .Permalink }}",
-				"name": "{{ .Title }} — {{ $brand.operator }}",
-				"isPartOf": { "@id": "{{ site.BaseURL }}#website" },
-				"about": { "@id": "{{ site.BaseURL }}#person" },
-				"mainEntity": { "@id": "{{ site.BaseURL }}#person" },
-				"inLanguage": "{{ site.LanguageCode | default "en-us" }}"
-			},
-			{
-				"@type": "Article",
-				"@id": "{{ .Permalink }}#article",
-				"headline": "About {{ $brand.operator }}",
-				"description": "{{ .Description }}",
-				"url": "{{ .Permalink }}",
-				"datePublished": "{{ .Date.Format "2006-01-02" }}",
-				"dateModified": "{{ .Lastmod.Format "2006-01-02" }}",
-				"author": { "@id": "{{ site.BaseURL }}#person" },
-				"publisher": { "@id": "{{ site.BaseURL }}#organization" },
-				"image": "{{ site.BaseURL }}images/og/og-default.png",
-				"mainEntityOfPage": { "@id": "{{ .Permalink }}#aboutpage" },
-				"inLanguage": "{{ site.LanguageCode | default "en-us" }}"
 			}{{ end }}{{/* BlogPosting node is suppressed on noindex pages
 			(e.g. locale stubs that ship English bodies until translated). Emitting
 			a BlogPosting whose inLanguage tag doesn't match its body is the exact

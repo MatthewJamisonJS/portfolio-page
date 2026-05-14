@@ -332,12 +332,6 @@ other = "著者:"
 [updated_label]
 other = "更新"
 
-[day_job_label]
-other = "本業"
-
-[side_label]
-other = "副業"
-
 [field_notes]
 other = "フィールドノート"
 

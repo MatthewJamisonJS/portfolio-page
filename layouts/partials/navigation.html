@@ -7,7 +7,15 @@
         {{ $brand.name | default .Site.Title }}
       </a>
 
-      <div class="collapse navbar-collapse show" id="navigation">
+      <button class="navbar-toggler" type="button" aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="drawer-bar" aria-hidden="true"></span>
+        <span class="drawer-bar" aria-hidden="true"></span>
+        <span class="drawer-bar" aria-hidden="true"></span>
+      </button>
+
+      <div class="nav-scrim" aria-hidden="true"></div>
+
+      <div class="collapse navbar-collapse" id="navigation">
         <ul class="navbar-nav ml-auto mr-3">
           <li class="nav-item"><a class="nav-link" href="{{ "/why/" | relLangURL }}">{{ i18n "nav_why" }}</a></li>
           <li class="nav-item"><a class="nav-link" href="{{ "/different/" | relLangURL }}">{{ i18n "nav_different" }}</a></li>

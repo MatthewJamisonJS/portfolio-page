@@ -79,7 +79,10 @@ module.exports = {
       'home-teaser', 'home-teaser-copy', 'home-teaser-link',
       'footer-nav', 'nav-cta',
       'faq-list', 'faq-permalink',
-      'block-audit-scope', 'block-pillars', 'block-deliverable'
+      'block-audit-scope', 'block-pillars', 'block-deliverable',
+      // Mobile hamburger drawer
+      'navbar-toggler', 'navbar-toggler-icon', 'is-open',
+      'nav-locked', 'nav-scrim', 'drawer-bar'
     ],
     deep: [
       /^nav/,

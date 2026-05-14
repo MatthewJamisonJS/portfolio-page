@@ -1,36 +1,18 @@
 {{ $data := index site.Data site.Language.Lang }}
-{{ $brand := $data.brand }}
 {{ if $data.banner.banner.enable }}
 {{ with $data.banner.banner }}
-<section class="hero-area" aria-labelledby="hero-headline">
-  <svg class="hero-texture" viewBox="0 0 600 600" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-    <filter id="paperNoise">
-      <feTurbulence type="fractalNoise" baseFrequency="0.65" numOctaves="3" stitchTiles="stitch"/>
-    </filter>
-    <rect width="100%" height="100%" filter="url(#paperNoise)"/>
-  </svg>
-
-  <div class="hero-stack">
-    <div class="hero-copy">
-      <div class="hero-corner-rule">
-        <span class="mark"><span class="keystone" aria-hidden="true"></span> {{ $brand.brand.name }}</span>
-      </div>
-      {{ with .kicker }}<div class="kicker">{{ . }}</div>{{ end }}
-      <h1 id="hero-headline">{{ .title | safeHTML }}</h1>
-      <hr class="title-rule" aria-hidden="true">
-      <p class="hero-subtitle">{{ .subtitle | markdownify }}</p>
-      {{ if .button.enable }}{{ with .button }}
-      <a href="{{ .link }}" id="start-project-btn" class="hero-cta page-scroll" data-service="brief">
-        <span>{{ .label }}</span>
-        <span aria-hidden="true">→</span>
-      </a>
-      {{ end }}{{ end }}
-      {{ with .secondary }}
-      <a href="{{ .link }}" class="hero-cta-secondary page-scroll">{{ .label }}</a>
-      {{ end }}
+<section class="hero-area hero-fork" aria-labelledby="hero-title">
+  <div class="container">
+    <span class="hero-kicker">{{ .kicker }}</span>
+    <h1 id="hero-title" class="hero-title">{{ .title | safeHTML }}</h1>
+    <p class="hero-subtitle">{{ .subtitle | markdownify }}</p>
+    <div class="hero-fork-ctas">
+      <a href="{{ .button.link }}" class="btn-fork btn-fork-primary">{{ .button.label }} <span aria-hidden="true">→</span></a>
+      <a href="{{ .secondary.link }}" class="btn-fork btn-fork-secondary">{{ .secondary.label }} <span aria-hidden="true">→</span></a>
     </div>
-
-    {{ partial "aeo-loop-videos.html" . }}
+    {{ if .tertiary }}
+    <a href="{{ .tertiary.link }}" class="hero-tertiary">{{ .tertiary.label }} <span aria-hidden="true">→</span></a>
+    {{ end }}
   </div>
 </section>
 {{ end }}

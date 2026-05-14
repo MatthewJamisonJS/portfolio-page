@@ -2,13 +2,16 @@
 banner:
   enable: true
   kicker: "Answer Engine Optimization · St. Louis"
-  title: "Built by a Full-Stack engineer in St. Louis. <em>Helping local businesses get cited by AI search.</em>"
-  subtitle: "AI search decides what to cite from two free public signals: your [robots.txt](https://developers.google.com/search/docs/crawling-indexing/robots/intro) — which decides whether AI can read your site — and your [schema](https://schema.org/) markup — which tells AI what each page means. Verifiable in your address bar — right now."
+  title: "When customers ask AI what you do, <em>do you show up?</em>"
+  subtitle: "We make sure they cite you."
   button:
     enable: true
-    label: "Send a free brief"
-    link: "?service=brief#contact"
+    label: "Why does this matter to me"
+    link: "/why/"
   secondary:
-    label: "See pricing"
-    link: "#pricing"
+    label: "What makes Gateway Tech AEO different"
+    link: "/different/"
+  tertiary:
+    label: "Or send a brief"
+    link: "/?service=brief#contact"
 ---

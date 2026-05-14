@@ -14,8 +14,10 @@ HUGO_ENV=production hugo --minify --gc -d /tmp/aeo-og-build >/dev/null
 FAIL=0
 
 # Per-locale expected fragments. Source: data/{en,es,ja,fr,de}/banner.yml.
+# AEO-2 Task 1.1: hero copy refactored to the "fork" question. Title fragment
+# updated to match the new banner.yml content.
 declare -a CHECKS=(
-  "en|index.html|en_US|Built by a Full-Stack engineer in St. Louis"
+  "en|index.html|en_US|When customers ask AI what you do"
   "es|es/index.html|es_ES|"
   "ja|ja/index.html|ja_JP|"
   "fr|fr/index.html|fr_FR|"

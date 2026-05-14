@@ -66,7 +66,23 @@ module.exports = {
       'cta-clicked', 'field-prefilled',
       'wow', 'fadeInUp', 'fadeIn', 'bounceIn',
       // Themify icons retained
-      'ti-github', 'ti-linkedin', 'ti-music', 'ti-server', 'ti-layout', 'ti-pulse'
+      'ti-github', 'ti-linkedin', 'ti-music', 'ti-server', 'ti-layout', 'ti-pulse',
+      // AEO-2 fork hero + page templates
+      'btn-fork', 'btn-fork-primary', 'btn-fork-secondary',
+      'hero-fork', 'hero-kicker', 'hero-title', 'hero-fork-ctas', 'hero-tertiary',
+      'stat-grid', 'stat-card', 'stat-headline', 'stat-body', 'stat-source',
+      'pillar-grid', 'pillar-tag',
+      'trust-block', 'trust-moves', 'trust-heading',
+      'pricing-highlight', 'use-when', 'includes', 'cadence', 'price',
+      'page-why', 'page-different', 'page-pricing', 'page-faq',
+      'page-header', 'page-subtitle', 'page-intro', 'page-footer',
+      'home-teaser', 'home-teaser-copy', 'home-teaser-link',
+      'footer-nav', 'nav-cta',
+      'faq-list', 'faq-permalink',
+      'block-audit-scope', 'block-pillars', 'block-deliverable',
+      // Mobile hamburger drawer
+      'navbar-toggler', 'navbar-toggler-icon', 'is-open',
+      'nav-locked', 'nav-scrim', 'drawer-bar'
     ],
     deep: [
       /^nav/,

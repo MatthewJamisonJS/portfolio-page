@@ -7,7 +7,9 @@
 #   - first line: `# <site name>` (we use "# Gateway Tech AEO")
 #   - second non-blank line begins with `>` (blockquote summary)
 #   - at least 3 H2 sections (## ...)
-#   - links to /about/ and gatewaytechaeo.com (LLC site)
+#   - links to gatewaytechaeo.com (LLC site)
+# AEO-2 Task 3.3: /about/ link removed — operator bio is intentionally absent
+# from the public site (audience-first positioning).
 set -e
 ROOT="$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )"
 REPO="$( cd -- "$ROOT/../.." &> /dev/null && pwd )"
@@ -38,11 +40,6 @@ H2_COUNT=$(grep -c "^## " "$LLMS" || true)
 H2_COUNT=${H2_COUNT:-0}
 if (( H2_COUNT < 3 )); then
   echo "FAIL — expected >=3 ## headings; found $H2_COUNT"
-  FAIL=1
-fi
-
-if ! grep -qE '\(/about/\)|\(https://gatewaytechaeo.com/about/\)' "$LLMS"; then
-  echo "FAIL — llms.txt does not link to /about/"
   FAIL=1
 fi
 

@@ -12,7 +12,7 @@
       <h1{{ if $blogposting }} itemprop="headline"{{ end }}>{{ .Title }}</h1>
       <p class="blog-post-meta">
         <span class="blog-post-byline">{{ i18n "by_label" | default "By" }}
-          <a href="{{ "/about/" | relLangURL }}"{{ if $blogposting }} itemprop="author"{{ end }}>Matthew Jamison</a></span>
+          <span{{ if $blogposting }} itemprop="author"{{ end }}>Matthew Jamison</span></span>
         · <time datetime="{{ .Date.Format "2006-01-02" }}"{{ if $blogposting }} itemprop="datePublished"{{ end }}>{{ .Date.Format "January 2, 2006" }}</time>
         {{ if ne (.Date.Format "2006-01-02") (.Lastmod.Format "2006-01-02") }}
         · <span class="blog-post-updated">{{ i18n "updated_label" | default "Updated" }}
@@ -32,8 +32,6 @@
     <div class="blog-post-body"{{ if $blogposting }} itemprop="articleBody"{{ end }}>
       {{ .Content }}
     </div>
-
-    {{ partial "author-bio.html" . }}
   </div>
 </article>
 

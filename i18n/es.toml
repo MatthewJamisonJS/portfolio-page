@@ -1,23 +1,6 @@
 # Spanish Translations for Portfolio Site
 # TODO: Professional translation needed - currently using English placeholders
 
-# Section Headings
-[portfolio_demos]
-other = "Demostraciones de Portafolio"
-
-[explore_demos_desc]
-other = "Explora diferentes enfoques de diseño y desarrollo web. Cada demostración muestra un estilo y caso de uso único."
-
-# Buttons and Links
-[view_demo]
-other = "Ver Demo"
-
-[source_code]
-other = "Código Fuente"
-
-[learn_more]
-other = "Saber más →"
-
 # Music Widget
 [my_music]
 other = "Mi Música"
@@ -320,15 +303,6 @@ other = "Setup & Hand-off"
 [dfy_tier]
 other = "Done-For-You"
 
-[demos_offer_title]
-other = "Want one of these for your business?"
-
-[demos_offer_body]
-other = "Each demo is the same Hugo + schema templating I'd ship for your site — same Lighthouse posture, same WCAG 2.1 AA, same AEO-ready structured data. Pick one you like and I'll fork it for your domain, brand it for your business, and wire in the content tailored to what you actually do."
-
-[demos_offer_cta]
-other = "Send a brief →"
-
 # AEO video reel
 [aeo_reel_live_capture]
 other = "captura en vivo"
@@ -358,12 +332,6 @@ other = "Por"
 [updated_label]
 other = "Actualizado"
 
-[day_job_label]
-other = "Trabajo diario"
-
-[side_label]
-other = "Práctica paralela"
-
 [field_notes]
 other = "Notas de campo"
 
@@ -372,3 +340,32 @@ other = "Tabla de contenido"
 
 [blog_empty]
 other = "Aún no hay publicaciones. Las notas de campo aparecerán aquí cuando redacte investigación de AEO."
+
+# TODO: translate (AEO-2 Task 6.2 mirror, 2026-05-14)
+# AEO-2 fork architecture (Task 1.4)
+[hero_question]
+other = "When customers ask AI what you do, do you show up?"
+
+[cta_why]
+other = "Why does this matter to me"
+
+[cta_different]
+other = "What makes Gateway Tech AEO different"
+
+[cta_brief]
+other = "Or send a brief"
+
+[nav_why]
+other = "Why"
+
+[nav_different]
+other = "Different"
+
+[nav_pricing]
+other = "Pricing"
+
+[nav_faq]
+other = "FAQ"
+
+[nav_brief]
+other = "Send a brief"

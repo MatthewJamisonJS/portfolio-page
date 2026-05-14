@@ -1,0 +1,26 @@
+# TODO: translate from English (AEO-2 Task 6.2 mirror, 2026-05-14)
+different:
+  enable: true
+  title: "What makes Gateway Tech AEO different."
+  subtitle: "One operator. Three audits in one. A plan you can act on."
+  blocks:
+    audit_scope:
+      heading: "We audit three things, not one."
+      body: "Most AEO services check whether AI can cite you. We audit your visibility across classical search (the ten blue links), answer engines (ChatGPT, Perplexity, AI Overview), and generative search (the citations themselves). You get one report covering all three, because being absent is rarely just an AEO problem."
+    pillars:
+      heading: "Three pillars. If a tactic does not strengthen one of them, we do not do it."
+      ref: "method"
+    deliverable:
+      heading: "What you actually get."
+      body: "An actionable audit summary. We tell you what to fix, in what order, and what each fix is worth — in plain language you can act on. Deeper execution playbooks and the audit tooling stay scoped to the engagement."
+    trust:
+      heading: "How we operate."
+      moves:
+        - "We cap year one at 5 St. Louis clients. Slow growth means deep service."
+        - "You own everything we touch. Your domain, your Google Business Profile, your content, your accounts."
+        - "Month-to-month, no long contracts. Stop when you want."
+    cta:
+      pricing_label: "See pricing"
+      pricing_link: "/pricing/"
+      brief_label: "Send a brief"
+      brief_link: "/#contact"

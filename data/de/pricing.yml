@@ -24,7 +24,7 @@ pricing:
         - "1-stündige Begehung"
         - "Sie setzen es um"
       cta_label: "Mit einem Audit starten"
-      cta_link: "?service=audit#contact"
+      cta_link: "/?service=audit#contact"
     - slug: "setup"
       name: "Setup und Übergabe"
       price: "$700"
@@ -41,7 +41,7 @@ pricing:
         - "Schulungssitzung"
         - "Sie betreiben es danach"
       cta_label: "Setup und Übergabe wählen"
-      cta_link: "?service=setup#contact"
+      cta_link: "/?service=setup#contact"
     - slug: "dfy"
       name: "Done-For-You"
       price: "$500–1,200"
@@ -58,7 +58,7 @@ pricing:
         - "Inhalte und Bewertungen"
         - "Reporting + Strategie"
       cta_label: "Über einen Retainer sprechen"
-      cta_link: "?service=dfy#contact"
+      cta_link: "/?service=dfy#contact"
   # Schema-only Offer; mirrored from data/en/pricing.yml.
   # Consumed by ProfessionalService.offers in head.html. Audit H6 reframe.
   intake:

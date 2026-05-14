@@ -73,8 +73,12 @@
   /* Accent */
   --brick:       #ad4527;       /* primary accent — 4.95:1 vs bone (AA normal) */
   --brick-deep:  #8a3520;       /* hover, focus, mark fill — 7.0:1 vs bone (AAA) */
+  --clay:        #e88a6e;       /* brick lifted for AA on charcoal — 5.7:1 vs #232323 (AA normal, AAA large) */
   --slate:       #2a3447;       /* dark surface alt */
   --citron:      #c9a13a;       /* tweak/notice pip only */
+  --espresso:      #1f1812;       /* page base — warm-dark, 15:1 vs bone */
+  --espresso-card: #2a2018;       /* card surface over espresso */
+  --amber:         #d4a73a;       /* lifted citron — 6.0:1 vs espresso */
 
   /* Type ramp — desktop. Scaled down for mobile via clamp() in component CSS. */
   --type-display:  clamp(3rem, 8vw, 7rem);          /* 48–112 */
@@ -92,6 +96,7 @@
   --primary:        var(--brick);
   --accent:         var(--brick);
   --dark-bg:        var(--ink);
+  --charcoal:       #1a1a1a;
   --light-text:     var(--bone);
   --gray-light:     var(--bone-2);
   --gray-medium:    var(--stone);
@@ -117,8 +122,8 @@ html, body {
   padding: 0;
 }
 body {
-  background: var(--bone);
-  color: var(--ink);
+  background-color: var(--espresso);
+  color: var(--light-text);
   font-family: var(--font-sans);
   font-size: var(--type-body);
   line-height: 1.55;
@@ -139,7 +144,7 @@ h2 { font-size: var(--type-title); }
 h3 { font-size: var(--type-subtitle); line-height: 1.12; }
 h4 { font-size: 1.5rem; line-height: 1.18; }
 
-p { margin: 0; color: var(--ink-soft); }
+p { margin: 0; color: inherit; }
 
 a { color: var(--brick); text-decoration: underline; text-underline-offset: 3px; text-decoration-thickness: 1px; }
 a:hover { color: var(--brick-deep); }
@@ -201,8 +206,8 @@ a:hover { color: var(--brick-deep); }
 .hero-area {
   position: relative;
   overflow: hidden;
-  background: var(--bone);
-  color: var(--ink);
+  background: var(--espresso);
+  color: var(--bone);
   padding: clamp(6rem, 9vw, 9rem) var(--pad-x) clamp(4rem, 7vw, 7rem);
   isolation: isolate;
 }
@@ -723,4 +728,11 @@ a:hover { color: var(--brick-deep); }
   .hero-area .hero-texture { display: none; }
   .aeo-reel-eyebrow-dot,
   .aeo-reel-tag::before { animation: none; box-shadow: none; }
+  .hero-area::before,
+  .hero-area .video-button,
+  .stat-card,
+  .pillar-card {
+    animation: none !important;
+    transition: none !important;
+  }
 }

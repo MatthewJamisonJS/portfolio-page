@@ -1,0 +1,29 @@
+{{ define "main" }}
+{{ $data := (index site.Data site.Language.Lang).why.why }}
+<main class="page-why">
+  <article class="container">
+    <header class="page-header">
+      <h1>{{ $data.title }}</h1>
+      <p class="page-subtitle">{{ $data.subtitle }}</p>
+      <p class="page-intro">{{ $data.intro }}</p>
+    </header>
+
+    <section class="stat-grid" aria-label="Six cited statistics about AI search">
+      {{ range $data.stats }}
+      <article class="stat-card" id="stat-{{ .id }}">
+        <h2 class="stat-headline">{{ .headline }}</h2>
+        <p class="stat-body">{{ .body }}</p>
+        <p class="stat-source">
+          <a href="{{ .source_url }}" rel="external nofollow" target="_blank">{{ .source_label }}</a>
+        </p>
+      </article>
+      {{ end }}
+    </section>
+
+    <footer class="page-footer">
+      <p class="page-outro">{{ $data.outro.body }}</p>
+      <a href="{{ $data.outro.cta_link }}" class="btn-fork btn-fork-primary">{{ $data.outro.cta_label }} <span aria-hidden="true">→</span></a>
+    </footer>
+  </article>
+</main>
+{{ end }}

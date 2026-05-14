@@ -16,9 +16,14 @@ BANNED=(
   "Mira a la IA elegir"
   "Mira cómo la IA elige"
   "AIが勝者を選ぶ"
-  "AI があなたの街区の勝者を選ぶ"
   "Regardez l'IA choisir"
   "Beobachten Sie, wie KI"
+  "Built by a Full-Stack engineer"
+  "Construido por un ingeniero Full-Stack"
+  "セントルイスのフルスタックエンジニア"
+  "Conçu par un ingénieur Full-Stack"
+  "Gebaut von einem Full-Stack"
+  "Helping local businesses get cited by AI search"
 )
 
 for locfile in data/en/banner.yml data/es/banner.yml data/ja/banner.yml data/fr/banner.yml data/de/banner.yml; do
@@ -35,7 +40,7 @@ done
 # refactor in PR #45 "small→local sweep" — replaces the older "small business
 # + AI-world" framing).
 EN=$REPO/data/en/banner.yml
-REQUIRED_EN=("Full-Stack" "St. Louis" "local businesses" "AI search")
+REQUIRED_EN=("When customers ask AI" "Why does this matter to me" "What makes Gateway Tech AEO different")
 for marker in "${REQUIRED_EN[@]}"; do
   if ! grep -q "$marker" "$EN"; then
     echo "FAIL — data/en/banner.yml missing positioning marker: $marker"

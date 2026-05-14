@@ -24,7 +24,7 @@ pricing:
         - "Session d'une heure"
         - "Vous implémentez"
       cta_label: "Commencer par un Audit"
-      cta_link: "?service=audit#contact"
+      cta_link: "/?service=audit#contact"
     - slug: "setup"
       name: "Mise en place et transfert"
       price: "$700"
@@ -41,7 +41,7 @@ pricing:
         - "Session de formation"
         - "Vous l'exploitez ensuite"
       cta_label: "Choisir Mise en place et transfert"
-      cta_link: "?service=setup#contact"
+      cta_link: "/?service=setup#contact"
     - slug: "dfy"
       name: "Service géré"
       price: "$500–1,200"
@@ -58,7 +58,7 @@ pricing:
         - "Contenu et avis"
         - "Reporting + stratégie"
       cta_label: "Parler d'un retainer"
-      cta_link: "?service=dfy#contact"
+      cta_link: "/?service=dfy#contact"
   # Schema-only Offer; mirrored from data/en/pricing.yml.
   # Consumed by ProfessionalService.offers in head.html. Audit H6 reframe.
   intake:

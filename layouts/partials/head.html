@@ -112,7 +112,6 @@
 
 	{{/* $brand and $banner already declared near OG meta block above; reuse here. */}}
 	{{ $pricing := (index site.Data site.Language.Lang).pricing.pricing }}
-	{{ $faq := (index site.Data site.Language.Lang).faq.faq }}
 	{{/* $method is nil-safe: a locale without data/{lang}/method.yml renders an empty dict
 	     rather than panicking. The HowTo block gates on $method.enable which is falsy on dict. */}}
 	{{ $method := dict }}
@@ -335,26 +334,7 @@
 					"latitude": 38.6270,
 					"longitude": -90.1994
 				}
-			}{{ if .IsHome }},
-			{
-				"@type": "FAQPage",
-				"@id": "{{ .Permalink }}#faq",
-				"speakable": {
-					"@type": "SpeakableSpecification",
-					"cssSelector": [".faq-answer", ".hero-subtitle"]
-				},
-				"mainEntity": [
-					{{ range $i, $item := $faq.items }}{{ if $i }},{{ end }}
-					{
-						"@type": "Question",
-						"name": {{ $item.question | jsonify | safeJS }},
-						"acceptedAnswer": {
-							"@type": "Answer",
-							"text": {{ $item.answer | jsonify | safeJS }}
-						}
-					}{{ end }}
-				]
-			}{{ end }}{{ if and .IsHome $method.enable }},
+			}{{ if and .IsHome $method.enable }},
 			{
 				"@type": "HowTo",
 				"@id": "{{ site.BaseURL }}#aeo-method",
@@ -367,33 +347,11 @@
 						"position": {{ add $i 1 }},
 						"name": {{ $p.title | jsonify | safeJS }},
 						"text": {{ printf "%s — %s. %s." $p.title (strings.TrimRight "?.!" $p.tagline) (delimit $p.bullets ". ") | jsonify | safeJS }},
-						"url": "{{ site.BaseURL }}#pillar-{{ $p.id }}-title"
+						{{/* AEO-2 Task 1.3: pillars relocated from homepage method partial onto /different/.
+						     The anchor id is `pillar-{id}` (no `-title` suffix) per /different/ template. */}}
+						"url": "{{ site.BaseURL }}different/#pillar-{{ $p.id }}"
 					}{{ end }}
 				]
-			}{{ end }}{{ if eq .Section "about" }},
-			{
-				"@type": "AboutPage",
-				"@id": "{{ .Permalink }}#aboutpage",
-				"url": "{{ .Permalink }}",
-				"name": "{{ .Title }} — {{ $brand.operator }}",
-				"isPartOf": { "@id": "{{ site.BaseURL }}#website" },
-				"about": { "@id": "{{ site.BaseURL }}#person" },
-				"mainEntity": { "@id": "{{ site.BaseURL }}#person" },
-				"inLanguage": "{{ site.LanguageCode | default "en-us" }}"
-			},
-			{
-				"@type": "Article",
-				"@id": "{{ .Permalink }}#article",
-				"headline": "About {{ $brand.operator }}",
-				"description": "{{ .Description }}",
-				"url": "{{ .Permalink }}",
-				"datePublished": "{{ .Date.Format "2006-01-02" }}",
-				"dateModified": "{{ .Lastmod.Format "2006-01-02" }}",
-				"author": { "@id": "{{ site.BaseURL }}#person" },
-				"publisher": { "@id": "{{ site.BaseURL }}#organization" },
-				"image": "{{ site.BaseURL }}images/og/og-default.png",
-				"mainEntityOfPage": { "@id": "{{ .Permalink }}#aboutpage" },
-				"inLanguage": "{{ site.LanguageCode | default "en-us" }}"
 			}{{ end }}{{/* BlogPosting node is suppressed on noindex pages
 			(e.g. locale stubs that ship English bodies until translated). Emitting
 			a BlogPosting whose inLanguage tag doesn't match its body is the exact

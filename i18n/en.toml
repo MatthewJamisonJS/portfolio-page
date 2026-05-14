@@ -1,31 +1,5 @@
 # English Translations for Portfolio Site
 
-# Section Headings
-[portfolio_demos]
-other = "Portfolio Demos"
-
-[explore_demos_desc]
-other = "Explore different approaches to web design and development. Each demo showcases a unique style and use case."
-
-[demos_offer_title]
-other = "Want one of these for your business?"
-
-[demos_offer_body]
-other = "Each demo is the same Hugo + schema templating I'd ship for your site — same Lighthouse posture, same WCAG 2.1 AA, same AEO-ready structured data. Pick one you like and I'll fork it for your domain, brand it for your business, and wire in the content tailored to what you actually do."
-
-[demos_offer_cta]
-other = "Send a brief →"
-
-# Buttons and Links
-[view_demo]
-other = "View Demo"
-
-[source_code]
-other = "Source"
-
-[learn_more]
-other = "Learn more →"
-
 # Music Widget
 [my_music]
 other = "My Music"
@@ -357,12 +331,6 @@ other = "By"
 [updated_label]
 other = "Updated"
 
-[day_job_label]
-other = "Day job"
-
-[side_label]
-other = "Side practice"
-
 [field_notes]
 other = "Field Notes"
 
@@ -371,3 +339,31 @@ other = "Table of contents"
 
 [blog_empty]
 other = "No posts published yet. Field notes will appear here as I draft AEO research."
+
+# AEO-2 fork architecture (Task 1.4)
+[hero_question]
+other = "When customers ask AI what you do, do you show up?"
+
+[cta_why]
+other = "Why does this matter to me"
+
+[cta_different]
+other = "What makes Gateway Tech AEO different"
+
+[cta_brief]
+other = "Or send a brief"
+
+[nav_why]
+other = "Why"
+
+[nav_different]
+other = "Different"
+
+[nav_pricing]
+other = "Pricing"
+
+[nav_faq]
+other = "FAQ"
+
+[nav_brief]
+other = "Send a brief"

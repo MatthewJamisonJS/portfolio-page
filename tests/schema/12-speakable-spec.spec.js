@@ -7,7 +7,10 @@ const fs = require('node:fs');
 const path = require('node:path');
 
 const BUILD = process.env.AEO_BUILD || '/tmp/aeo-test-build';
-const HOMES = ['index.html', 'es/index.html', 'ja/index.html', 'fr/index.html', 'de/index.html'];
+// AEO-2 Phase 2.4: FAQPage migrated off the home @graph onto the dedicated
+// /faq/ page. SpeakableSpecification rides the FAQPage where it now lives.
+// Spanish/Japanese/French/German /faq/ routes ship once locale translations land.
+const HOMES = ['faq/index.html'];
 
 const failures = [];
 const ldRegex = /<script type=application\/ld\+json>([\s\S]*?)<\/script>/g;
@@ -17,7 +20,10 @@ function extractGraph(html) {
   let m;
   while ((m = ldRegex.exec(html)) !== null) {
     try {
-      const graph = JSON.parse(m[1])['@graph'] || [];
+      const parsed = JSON.parse(m[1]);
+      // Some JSON-LD scripts use @graph; others (the standalone FAQPage on /faq/)
+      // emit a single typed object. Walk both shapes.
+      const graph = parsed['@graph'] || [parsed];
       blocks.push(...graph);
     } catch (_) {}
   }
@@ -50,9 +56,9 @@ for (const rel of HOMES) {
   if (!selectors.includes('.faq-answer')) {
     failures.push(`${rel}: SpeakableSpecification cssSelector missing .faq-answer`);
   }
-  if (!selectors.includes('.hero-subtitle')) {
-    failures.push(`${rel}: SpeakableSpecification cssSelector missing .hero-subtitle`);
-  }
+  // AEO-2 Phase 2.4: FAQPage moved off homepage onto /faq/. The .hero-subtitle
+  // selector no longer applies to the FAQPage's page-of-residence (no hero there);
+  // citation-ready voice content on this page is the answer list.
 }
 
 if (failures.length) {
@@ -60,4 +66,4 @@ if (failures.length) {
   for (const f of failures) console.error('  - ' + f);
   process.exit(1);
 }
-console.log('tests/schema/12-speakable-spec.spec.js: OK (5 locales)');
+console.log(`tests/schema/12-speakable-spec.spec.js: OK (${HOMES.length} page(s))`);

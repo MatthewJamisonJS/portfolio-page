@@ -15,29 +15,9 @@ HUGO_ENV=production hugo --minify --gc -d "$BUILD" >/dev/null
 
 FAIL=0
 
-# Every locale's /about/ must carry the nav landmark.
-for L in "" "es/" "ja/" "fr/" "de/"; do
-  ABOUT="$BUILD/${L}about/index.html"
-  if [[ ! -f "$ABOUT" ]]; then
-    echo "FAIL — $ABOUT not built"
-    FAIL=1
-    continue
-  fi
-  # Hugo's minifier drops quotes around attribute values where safe, so test
-  # accepts both `aria-label=Breadcrumb` and `aria-label="Breadcrumb"`.
-  if ! grep -qE 'aria-label=("Breadcrumb"|Breadcrumb[> ])' "$ABOUT"; then
-    echo "FAIL — /${L}about/ missing breadcrumb nav (aria-label=Breadcrumb)"
-    FAIL=1
-  fi
-  if ! grep -qE '<a[^>]*href=("?/"?)[^>]*>(Home|Inicio|ホーム|Accueil|Startseite)</a>' "$ABOUT"; then
-    echo "FAIL — /${L}about/ missing localized 'Home' link as first crumb"
-    FAIL=1
-  fi
-  if ! grep -qE 'aria-current=("page"|page[> ])' "$ABOUT"; then
-    echo "FAIL — /${L}about/ missing aria-current=page on current crumb"
-    FAIL=1
-  fi
-done
+# AEO-2 Task 3.3 superseded the /about/ requirement: bio + photo + about page
+# were removed entirely (audience-first positioning). The breadcrumb contract
+# now applies to /blog/* singles only — those are still verified below.
 
 # Home must NOT carry the breadcrumb (single-item trail to self is noise).
 if grep -qE 'aria-label=("Breadcrumb"|Breadcrumb[> ])' "$BUILD/index.html"; then

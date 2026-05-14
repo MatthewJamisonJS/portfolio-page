@@ -24,7 +24,7 @@ pricing:
         - "1 時間のウォークスルー"
         - "実装はご自身で"
       cta_label: "Audit から始める"
-      cta_link: "?service=audit#contact"
+      cta_link: "/?service=audit#contact"
     - slug: "setup"
       name: "Setup & Hand-off"
       price: "$700"
@@ -41,7 +41,7 @@ pricing:
         - "トレーニングセッション"
         - "あとはご自身で運用"
       cta_label: "Setup & Hand-off を選ぶ"
-      cta_link: "?service=setup#contact"
+      cta_link: "/?service=setup#contact"
     - slug: "dfy"
       name: "Done-For-You"
       price: "$500–1,200"
@@ -58,7 +58,7 @@ pricing:
         - "コンテンツとレビュー"
         - "レポーティング + 戦略"
       cta_label: "リテイナーについて相談"
-      cta_link: "?service=dfy#contact"
+      cta_link: "/?service=dfy#contact"
   # Schema-only Offer; mirrored from data/en/pricing.yml.
   # Consumed by ProfessionalService.offers in head.html. Audit H6 reframe.
   intake:

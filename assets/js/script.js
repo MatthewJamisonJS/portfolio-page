@@ -175,4 +175,118 @@ document.addEventListener('DOMContentLoaded', function () {
 		console.log('💼 Pricing CTA handler initialized');
 	})();
 
+	/* ========================================================================= */
+	/*	Mobile hamburger drawer (vanilla JS)
+	/*	WCAG 2.2: 2.1.1 keyboard, 2.1.2 no focus trap when closed,
+	/*	2.4.3 focus order, 2.4.7 focus visible, 2.5.5 target size.
+	/* ========================================================================= */
+	(function initMobileDrawer() {
+		const toggler = document.querySelector('.navbar-toggler');
+		const drawer = document.getElementById('navigation');
+		const scrim = document.querySelector('.nav-scrim');
+		if (!toggler || !drawer) return;
+
+		// Focus cycle when drawer is open. The toggler is the close affordance
+		// (the ✕), so it lives inside the cycle alongside nav links + lang select.
+		// Order: toggler-as-close (✕) → nav links → language switcher → back to toggler.
+		function focusables() {
+			return [toggler].concat(
+				Array.prototype.slice.call(
+					drawer.querySelectorAll('a[href], select, button:not([disabled])')
+				)
+			);
+		}
+
+		function openDrawer() {
+			drawer.classList.add('is-open');
+			if (scrim) scrim.classList.add('is-open');
+			toggler.classList.add('is-open');
+			toggler.setAttribute('aria-expanded', 'true');
+			drawer.removeAttribute('aria-hidden');
+			document.documentElement.style.setProperty('--scrollbar-width', (window.innerWidth - document.documentElement.clientWidth) + 'px');
+			document.body.classList.add('nav-locked');
+			// Move focus to first nav item inside drawer (skip the toggler itself).
+			const items = focusables();
+			if (items.length > 1) items[1].focus();
+		}
+
+		function closeDrawer(restoreFocus) {
+			drawer.classList.remove('is-open');
+			if (scrim) scrim.classList.remove('is-open');
+			toggler.classList.remove('is-open');
+			toggler.setAttribute('aria-expanded', 'false');
+			drawer.setAttribute('aria-hidden', 'true');
+			document.body.classList.remove('nav-locked');
+			document.documentElement.style.removeProperty('--scrollbar-width');
+			if (restoreFocus !== false) toggler.focus();
+		}
+
+		toggler.addEventListener('click', function () {
+			if (drawer.classList.contains('is-open')) {
+				closeDrawer();
+			} else {
+				openDrawer();
+			}
+		});
+
+		// ESC closes.
+		document.addEventListener('keydown', function (e) {
+			if (e.key === 'Escape' && drawer.classList.contains('is-open')) {
+				closeDrawer();
+			}
+		});
+
+		// Scrim tap closes.
+		if (scrim) {
+			scrim.addEventListener('click', function () { closeDrawer(); });
+		}
+
+		// Nav-link click closes (so route change feels clean).
+		drawer.querySelectorAll('a[href]').forEach(function (link) {
+			link.addEventListener('click', function () { closeDrawer(false); });
+		});
+
+		// Focus trap: when drawer open, Tab cycles within (toggler + drawer contents).
+		// Listener lives on document because the toggler is a sibling of the drawer,
+		// so a keydown originating on the toggler won't bubble through the drawer.
+		document.addEventListener('keydown', function (e) {
+			if (e.key !== 'Tab') return;
+			if (!drawer.classList.contains('is-open')) return;
+			const items = focusables();
+			if (!items.length) return;
+			const first = items[0];
+			const last = items[items.length - 1];
+			const idx = items.indexOf(document.activeElement);
+			// If focus escaped the cycle, pull it back to the first item.
+			if (idx === -1) {
+				e.preventDefault();
+				first.focus();
+				return;
+			}
+			if (e.shiftKey && document.activeElement === first) {
+				e.preventDefault();
+				last.focus();
+			} else if (!e.shiftKey && document.activeElement === last) {
+				e.preventDefault();
+				first.focus();
+			}
+		});
+
+		// Viewport-aware ARIA state. On desktop (≥992px) the drawer is always
+		// visible, so neither aria-hidden nor aria-expanded should be present.
+		// On mobile, mirror the closed-drawer state unless the user has opened it.
+		const desktopMQ = window.matchMedia('(min-width: 992px)');
+		function syncAriaForViewport() {
+			if (desktopMQ.matches) {
+				drawer.removeAttribute('aria-hidden');
+				toggler.removeAttribute('aria-expanded');
+			} else if (!drawer.classList.contains('is-open')) {
+				drawer.setAttribute('aria-hidden', 'true');
+				toggler.setAttribute('aria-expanded', 'false');
+			}
+		}
+		syncAriaForViewport();
+		desktopMQ.addEventListener('change', syncAriaForViewport);
+	})();
+
 });

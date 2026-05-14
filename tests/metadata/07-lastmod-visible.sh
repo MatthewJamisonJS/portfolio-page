@@ -1,8 +1,10 @@
 #!/usr/bin/env bash
-# Audit L6 / Task 17: About + blog single pages must render a visible
+# Audit L6 / Task 17: Blog single pages must render a visible
 # <time datetime="YYYY-MM-DD"> element carrying the page's published or
 # last-modified date. Crawlers and readers both use this signal to judge
 # freshness.
+#
+# AEO-2 Task 3.3: /about/ removed; freshness signal now scoped to /blog/<post>/.
 #
 # Spec: docs/superpowers/plans/2026-05-11-aeo-citation-surface-upgrade.md Task 17.
 set -e
@@ -32,11 +34,6 @@ check_lastmod() {
     FAIL=1
   fi
 }
-
-# About page in every locale.
-for L in "" "es/" "ja/" "fr/" "de/"; do
-  check_lastmod "$BUILD/${L}about/index.html"
-done
 
 # Blog singles in every locale (vacuous until Task 12/13 ship posts).
 shopt -s nullglob

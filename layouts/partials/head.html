@@ -347,7 +347,9 @@
 						"position": {{ add $i 1 }},
 						"name": {{ $p.title | jsonify | safeJS }},
 						"text": {{ printf "%s — %s. %s." $p.title (strings.TrimRight "?.!" $p.tagline) (delimit $p.bullets ". ") | jsonify | safeJS }},
-						"url": "{{ site.BaseURL }}#pillar-{{ $p.id }}-title"
+						{{/* AEO-2 Task 1.3: pillars relocated from homepage method partial onto /different/.
+						     The anchor id is `pillar-{id}` (no `-title` suffix) per /different/ template. */}}
+						"url": "{{ site.BaseURL }}different/#pillar-{{ $p.id }}"
 					}{{ end }}
 				]
 			}{{ end }}{{/* BlogPosting node is suppressed on noindex pages

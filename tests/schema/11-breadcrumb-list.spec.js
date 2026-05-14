@@ -14,10 +14,11 @@ const BUILD = process.env.AEO_BUILD || '/tmp/aeo-test-build';
 // depth 3 = Home → Section → Page (regular leaf pages).
 const PAGES = [
   { file: 'index.html', expectedDepth: 1 },
-  // /about/ is rendered from about/_index.md, so Hugo's Kind is "section".
-  // Depth 2 (Home → About) is the right shape for a section-index page.
-  // Leaf pages under a section (e.g. /blog/<post>/) get depth 3 once Tasks 12+13 ship.
-  { file: 'about/index.html', expectedDepth: 2 },
+  // AEO-2 Task 3.3: /about/ removed (operator bio absent from public site).
+  // Blog section index + posts retain the depth-2/depth-3 breadcrumbs.
+  { file: 'blog/index.html', expectedDepth: 2 },
+  { file: 'blog/aeo-vs-seo-what-changed/index.html', expectedDepth: 3 },
+  { file: 'blog/robots-txt-llms-txt-for-ai-crawlers/index.html', expectedDepth: 3 },
   { file: 'es/index.html', expectedDepth: 1 },
   { file: 'ja/index.html', expectedDepth: 1 },
   { file: 'fr/index.html', expectedDepth: 1 },

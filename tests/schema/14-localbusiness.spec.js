@@ -8,7 +8,9 @@ const fs = require('node:fs');
 const path = require('node:path');
 
 const BUILD = process.env.AEO_BUILD || '/tmp/aeo-test-build';
-const PAGES = ['index.html', 'about/index.html'];
+// AEO-2 Task 3.3: /about/ removed (operator bio absent from public site).
+// LocalBusiness must still ride the homepage @graph.
+const PAGES = ['index.html'];
 
 const failures = [];
 const ldRegex = /<script type=application\/ld\+json>([\s\S]*?)<\/script>/g;

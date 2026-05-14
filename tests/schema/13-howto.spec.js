@@ -41,14 +41,28 @@ for (const rel of HOMES) {
     if (!s.name) failures.push(`${rel}: step[${i}] missing name`);
     if (!s.text) failures.push(`${rel}: step[${i}] missing text`);
     // Anchor existence — every step.url fragment must resolve to a real id in
-    // the rendered HTML. Catches "dead fragment" regression: a HowToStep that
-    // tells crawlers to deep-link to a non-existent anchor degrades citation
-    // quality and contradicts the H13 reason-to-exist.
+    // the rendered HTML of the *target page* (path before the fragment).
+    // Catches "dead fragment" regression: a HowToStep that tells crawlers to
+    // deep-link to a non-existent anchor degrades citation quality and
+    // contradicts the H13 reason-to-exist.
+    // AEO-2 Task 1.3: HowToStep urls point at /different/#pillar-{id}, not /#…,
+    // so we resolve the target page relative to BUILD before checking the id.
     if (s.url && s.url.includes('#')) {
-      const frag = s.url.split('#')[1];
+      const [target, frag] = s.url.split('#');
+      // Strip protocol+host; everything after the trailing slash of host is
+      // the path. Hugo emits absolute URLs, so split off the host.
+      let pathPart = target.replace(/^https?:\/\/[^/]+/, '');
+      if (!pathPart || pathPart === '/') pathPart = '/index.html';
+      else if (pathPart.endsWith('/')) pathPart += 'index.html';
+      const targetFile = path.join(BUILD, pathPart.replace(/^\//, ''));
+      if (!fs.existsSync(targetFile)) {
+        failures.push(`${rel}: step[${i}].url target file ${pathPart} missing`);
+        continue;
+      }
+      const targetHtml = fs.readFileSync(targetFile, 'utf-8');
       const idRe = new RegExp(`id=["']?${frag.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}["'\\s>]`);
-      if (!idRe.test(html)) {
-        failures.push(`${rel}: step[${i}].url '#${frag}' has no matching id= in rendered HTML`);
+      if (!idRe.test(targetHtml)) {
+        failures.push(`${rel}: step[${i}].url '${pathPart}#${frag}' has no matching id= in target HTML`);
       }
     }
   }

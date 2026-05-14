@@ -21,7 +21,6 @@ operator's GitHub profile. Now offering AEO consulting through a
 forming-LLC, Gateway Tech AEO, to under-resourced St. Louis
 businesses.
 
-- Operator profile: [/about/](https://gatewaytechaeo.com/about/)
 - LLC site (forming): [gatewaytechaeo.com](https://gatewaytechaeo.com)
 - GitHub: [MatthewJamisonJS](https://github.com/MatthewJamisonJS)
 - LinkedIn: [matthew-jamison](https://www.linkedin.com/in/matthew-jamison-65486bab/)

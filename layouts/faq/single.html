@@ -22,6 +22,10 @@
 {
   "@context": "https://schema.org",
   "@type": "FAQPage",
+  "speakable": {
+    "@type": "SpeakableSpecification",
+    "cssSelector": [".faq-answer"]
+  },
   "mainEntity": [
     {{ range $i, $item := $data.items }}{{ if gt $i 0 }},{{ end }}
     {

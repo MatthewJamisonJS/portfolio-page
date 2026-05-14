@@ -20,10 +20,12 @@ Feature: AEO citation surface upgrade
     # Verified by: tests/schema/11-breadcrumb-list.spec.js (Task 2, audit H11)
 
   Scenario: FAQ answers are voice-citable
-    Given a voice answer engine fetches the homepage
+    Given a voice answer engine fetches /faq/
     When it parses the FAQPage node
-    Then it should find a SpeakableSpecification pointing at .faq-answer and .hero-subtitle
+    Then it should find a SpeakableSpecification pointing at .faq-answer
     # Verified by: tests/schema/12-speakable-spec.spec.js (Task 3, audit H12)
+    # AEO-2 Phase 2.4: FAQPage migrated off home @graph; .hero-subtitle selector
+    # dropped because hero lives on /, not /faq/.
 
   Scenario: Method section is structured as HowTo
     Given an answer-engine crawler fetches the homepage
@@ -61,12 +63,13 @@ Feature: AEO citation surface upgrade
     # Verified by: tests/content/04-llms-txt-optional.sh (Task 8, audit M12)
 
   Scenario: Visible breadcrumb appears on inner pages
-    Given a reader lands on /about/ or any /blog/<post>/
+    Given a reader lands on any /blog/<post>/
     When they look near the top of the main content
     Then they should see a breadcrumb trail with Home → Section → Page
          and aria-label="Breadcrumb" on the nav wrapper
          and aria-current="page" on the current-page <li>
     # Verified by: tests/content/07-breadcrumb-ui.sh (Task 10)
+    # AEO-2 Task 3.3: /about/ removed — breadcrumb gate now blog-only.
 
   Scenario: Blog section returns 200 and lists posts
     Given a reader navigates to /blog/
@@ -79,11 +82,12 @@ Feature: AEO citation surface upgrade
     Given a reader lands on /blog/<post>/
     When the page renders
     Then it should carry itemtype="https://schema.org/BlogPosting",
-         a visible breadcrumb, a byline link to /about/,
+         a visible breadcrumb, a byline (operator name only — no /about/ link),
          a published date, an optional updated date, and a
          table-of-contents nav when the post has 4+ H2 sections
     # Verified by: tests/content/08-blog-templates.sh (Task 11)
     # Schema gate: tests/schema/15-blogposting.spec.js (Task 6)
+    # AEO-2 Task 3.3: /about/ removed; byline no longer links to a profile page.
 
   Scenario: Blog routes have hreflang alternates in every locale
     Given a crawler fetches any /blog/ route in any locale
@@ -94,11 +98,12 @@ Feature: AEO citation surface upgrade
     # Verified by: tests/i18n/04-blog-hreflang.sh (Task 14)
 
   Scenario: Pages surface a freshness signal
-    Given a reader or crawler lands on /about/ or /blog/<post>/
+    Given a reader or crawler lands on /blog/<post>/
     When they look near the byline
     Then they should see a <time datetime="YYYY-MM-DD"> element
          carrying the page's published or last-modified date
     # Verified by: tests/metadata/07-lastmod-visible.sh (Task 17, audit L6)
+    # AEO-2 Task 3.3: /about/ removed; freshness gate scoped to /blog/.
 
   # Scenario "Author bio appears on About + every blog post" was superseded by
   # AEO-2 Task 3.3 — the operator's bio, photo, and /about/ page are intentionally

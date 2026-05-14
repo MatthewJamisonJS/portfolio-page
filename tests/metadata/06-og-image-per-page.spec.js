@@ -9,9 +9,9 @@ const path = require('node:path');
 const BUILD = process.env.AEO_BUILD || '/tmp/aeo-test-build';
 
 // Each sample asserts the og:image and twitter:image regex against the page.
+// AEO-2 Task 3.3: /about/ sample dropped — page intentionally absent.
 const SAMPLES = [
   { file: 'index.html', expect: /og-default\.png/ },
-  { file: 'about/index.html', expect: /og-default\.png/ },
   // Tasks 12+13 ship per-post hero images; the post sample lines below activate
   // once the build contains those routes.
 ];

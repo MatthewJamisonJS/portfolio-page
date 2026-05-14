@@ -203,6 +203,7 @@ document.addEventListener('DOMContentLoaded', function () {
 			toggler.classList.add('is-open');
 			toggler.setAttribute('aria-expanded', 'true');
 			drawer.removeAttribute('aria-hidden');
+			document.documentElement.style.setProperty('--scrollbar-width', (window.innerWidth - document.documentElement.clientWidth) + 'px');
 			document.body.classList.add('nav-locked');
 			// Move focus to first nav item inside drawer (skip the toggler itself).
 			const items = focusables();
@@ -216,6 +217,7 @@ document.addEventListener('DOMContentLoaded', function () {
 			toggler.setAttribute('aria-expanded', 'false');
 			drawer.setAttribute('aria-hidden', 'true');
 			document.body.classList.remove('nav-locked');
+			document.documentElement.style.removeProperty('--scrollbar-width');
 			if (restoreFocus !== false) toggler.focus();
 		}
 

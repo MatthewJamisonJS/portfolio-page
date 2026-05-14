@@ -1,0 +1,44 @@
+{{ define "main" }}
+{{ $data := (index site.Data site.Language.Lang).different.different }}
+{{ $method := (index site.Data site.Language.Lang).method.method }}
+<main class="page-different">
+  <article class="container">
+    <header class="page-header">
+      <h1>{{ $data.title }}</h1>
+      <p class="page-subtitle">{{ $data.subtitle }}</p>
+    </header>
+
+    <section class="block-audit-scope">
+      <h2>{{ $data.blocks.audit_scope.heading }}</h2>
+      <p>{{ $data.blocks.audit_scope.body }}</p>
+    </section>
+
+    <section class="block-pillars" aria-labelledby="pillars-heading">
+      <h2 id="pillars-heading">{{ $data.blocks.pillars.heading }}</h2>
+      <div class="pillar-grid">
+        {{ range $method.pillars }}
+        <article class="pillar-card" id="pillar-{{ .id }}">
+          <h3>{{ .title }}</h3>
+          <p class="pillar-tag">{{ .tagline }}</p>
+          <ul>
+            {{ range .bullets }}<li>{{ . }}</li>{{ end }}
+          </ul>
+        </article>
+        {{ end }}
+      </div>
+    </section>
+
+    <section class="block-deliverable">
+      <h2>{{ $data.blocks.deliverable.heading }}</h2>
+      <p>{{ $data.blocks.deliverable.body }}</p>
+    </section>
+
+    {{ partial "trust-moves.html" $data.blocks.trust }}
+
+    <footer class="page-footer cta-pair">
+      <a href="{{ $data.blocks.cta.pricing_link }}" class="btn-fork btn-fork-primary">{{ $data.blocks.cta.pricing_label }} <span aria-hidden="true">→</span></a>
+      <a href="{{ $data.blocks.cta.brief_link }}" class="btn-fork btn-fork-secondary">{{ $data.blocks.cta.brief_label }} <span aria-hidden="true">→</span></a>
+    </footer>
+  </article>
+</main>
+{{ end }}

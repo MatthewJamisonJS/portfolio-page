@@ -1,0 +1,8 @@
+{{ with . }}
+<section class="trust-block" aria-labelledby="trust-heading">
+  <h2 id="trust-heading" class="trust-heading">{{ .heading }}</h2>
+  <ul class="trust-moves">
+    {{ range .moves }}<li>{{ . }}</li>{{ end }}
+  </ul>
+</section>
+{{ end }}

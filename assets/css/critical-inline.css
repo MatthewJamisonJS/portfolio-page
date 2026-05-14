@@ -92,6 +92,7 @@
   --primary:        var(--brick);
   --accent:         var(--brick);
   --dark-bg:        var(--ink);
+  --charcoal:       #1a1a1a;
   --light-text:     var(--bone);
   --gray-light:     var(--bone-2);
   --gray-medium:    var(--stone);
@@ -117,8 +118,8 @@ html, body {
   padding: 0;
 }
 body {
-  background: var(--bone);
-  color: var(--ink);
+  background-color: var(--charcoal);
+  color: var(--light-text);
   font-family: var(--font-sans);
   font-size: var(--type-body);
   line-height: 1.55;
@@ -723,4 +724,11 @@ a:hover { color: var(--brick-deep); }
   .hero-area .hero-texture { display: none; }
   .aeo-reel-eyebrow-dot,
   .aeo-reel-tag::before { animation: none; box-shadow: none; }
+  .hero-area::before,
+  .hero-area .video-button,
+  .stat-card,
+  .pillar-card {
+    animation: none !important;
+    transition: none !important;
+  }
 }

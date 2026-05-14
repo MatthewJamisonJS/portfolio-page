@@ -187,17 +187,55 @@ function renderThanksHtml(): string {
     --ink: #14110f;
     --stone: #6b665d;
     --brick: #ad4527;
+    --brick-deep: #8a3520;
+  }
+  @font-face {
+    font-family: "Newsreader";
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url("https://gatewaytechaeo.com/fonts/newsreader-v26-latin-regular.woff2") format("woff2");
+  }
+  @font-face {
+    font-family: "Newsreader";
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+    src: url("https://gatewaytechaeo.com/fonts/newsreader-v26-latin-500.woff2") format("woff2");
+  }
+  @font-face {
+    font-family: "Newsreader";
+    font-style: italic;
+    font-weight: 400;
+    font-display: swap;
+    src: url("https://gatewaytechaeo.com/fonts/newsreader-v26-latin-italic.woff2") format("woff2");
   }
   html, body { margin: 0; padding: 0; background: var(--bone); color: var(--ink); }
-  body { font-family: Georgia, "Times New Roman", serif; line-height: 1.6; }
-  main { max-width: 640px; margin: 0 auto; padding: clamp(3rem, 8vw, 6rem) clamp(1rem, 4vw, 1.5rem); }
-  h1 { font-size: clamp(2rem, 5vw, 2.75rem); font-weight: 400; margin: 0 0 1rem; letter-spacing: -0.02em; }
-  p { font-size: 1.125rem; color: var(--ink); margin: 0 0 1.25rem; }
+  body {
+    font-family: "Newsreader", Georgia, "Times New Roman", serif;
+    line-height: 1.6;
+    overflow-wrap: break-word;
+    -webkit-text-size-adjust: 100%;
+  }
+  main {
+    max-width: 640px;
+    margin: 0 auto;
+    min-height: 100dvh;
+    box-sizing: border-box;
+    padding:
+      clamp(2.5rem, 10vh, 6rem)
+      max(1.25rem, env(safe-area-inset-right, 0px))
+      clamp(2.5rem, 10vh, 6rem)
+      max(1.25rem, env(safe-area-inset-left, 0px));
+  }
+  h1 { font-size: clamp(2rem, 7vw, 2.75rem); font-weight: 500; margin: 0 0 1rem; letter-spacing: -0.02em; line-height: 1.15; }
+  p { font-size: clamp(1rem, 2.6vw, 1.125rem); color: var(--ink); margin: 0 0 1.25rem; }
   p.lede { font-style: italic; color: var(--stone); }
-  strong { color: var(--ink); }
-  a { color: var(--brick); text-decoration: none; border-bottom: 1px solid var(--brick); }
-  a:hover, a:focus { background: var(--brick); color: var(--bone); outline: none; }
-  .back { margin-top: 3rem; font-size: 0.9375rem; }
+  strong { color: var(--ink); font-weight: 500; }
+  a { color: var(--brick); text-decoration: none; border-bottom: 1px solid var(--brick); padding-bottom: 1px; }
+  a:hover, a:focus { background: var(--brick-deep); border-color: var(--brick-deep); color: var(--bone); outline: none; }
+  .back { margin-top: clamp(2rem, 6vh, 3rem); font-size: 0.9375rem; }
+  @media (prefers-reduced-motion: reduce) { * { animation: none !important; transition: none !important; } }
 </style>
 </head>
 <body>

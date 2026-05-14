@@ -112,7 +112,6 @@
 
 	{{/* $brand and $banner already declared near OG meta block above; reuse here. */}}
 	{{ $pricing := (index site.Data site.Language.Lang).pricing.pricing }}
-	{{ $faq := (index site.Data site.Language.Lang).faq.faq }}
 	{{/* $method is nil-safe: a locale without data/{lang}/method.yml renders an empty dict
 	     rather than panicking. The HowTo block gates on $method.enable which is falsy on dict. */}}
 	{{ $method := dict }}
@@ -335,26 +334,7 @@
 					"latitude": 38.6270,
 					"longitude": -90.1994
 				}
-			}{{ if .IsHome }},
-			{
-				"@type": "FAQPage",
-				"@id": "{{ .Permalink }}#faq",
-				"speakable": {
-					"@type": "SpeakableSpecification",
-					"cssSelector": [".faq-answer", ".hero-subtitle"]
-				},
-				"mainEntity": [
-					{{ range $i, $item := $faq.items }}{{ if $i }},{{ end }}
-					{
-						"@type": "Question",
-						"name": {{ $item.question | jsonify | safeJS }},
-						"acceptedAnswer": {
-							"@type": "Answer",
-							"text": {{ $item.answer | jsonify | safeJS }}
-						}
-					}{{ end }}
-				]
-			}{{ end }}{{ if and .IsHome $method.enable }},
+			}{{ if and .IsHome $method.enable }},
 			{
 				"@type": "HowTo",
 				"@id": "{{ site.BaseURL }}#aeo-method",

@@ -13,11 +13,12 @@
 [[headers]]
   for = "/*"
   [headers.values]
-    # Enable gzip and Brotli compression
+    Content-Security-Policy = "default-src 'self'; script-src 'self' 'unsafe-inline' https://static.cloudflareinsights.com; style-src 'self' 'unsafe-inline'; font-src 'self'; img-src 'self' data: https:; media-src 'self'; connect-src 'self' https://cloudflareinsights.com https://csp-report.gatewaytechaeo.com; frame-src 'self'; form-action 'self' https://intake.gatewaytechaeo.com; report-uri https://csp-report.gatewaytechaeo.com/"
     X-Content-Type-Options = "nosniff"
     X-Frame-Options = "SAMEORIGIN"
-    X-XSS-Protection = "1; mode=block"
     Referrer-Policy = "strict-origin-when-cross-origin"
+    Permissions-Policy = "geolocation=(), microphone=(), camera=()"
+    Strict-Transport-Security = "max-age=31536000; includeSubDomains; preload"
 
 # Compress text assets
 [[headers]]

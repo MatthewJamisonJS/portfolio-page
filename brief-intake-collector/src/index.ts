@@ -164,10 +164,18 @@ function buildRawMime(args: {
   return headers.join("\r\n") + "\r\n\r\n" + args.body.replace(/\r?\n/g, "\r\n");
 }
 
+function withNoIndex(res: Response): Response {
+  res.headers.set("x-robots-tag", "noindex");
+  return res;
+}
+
 function jsonResponse(status: number, body: unknown): Response {
   return new Response(JSON.stringify(body), {
     status,
-    headers: { "content-type": "application/json; charset=utf-8" },
+    headers: {
+      "content-type": "application/json; charset=utf-8",
+      "x-robots-tag": "noindex",
+    },
   });
 }
 
@@ -269,25 +277,25 @@ export default {
       }
       return new Response(
         "Brief-intake endpoint. POST application/x-www-form-urlencoded or application/json to /brief.\n",
-        { status: 200, headers: { "content-type": "text/plain; charset=utf-8" } }
+        { status: 200, headers: { "content-type": "text/plain; charset=utf-8", "x-robots-tag": "noindex" } }
       );
     }
 
     if (req.method !== "POST") {
       return new Response(null, {
         status: 405,
-        headers: { Allow: "GET, POST" },
+        headers: { Allow: "GET, POST", "x-robots-tag": "noindex" },
       });
     }
 
     if (url.pathname !== "/brief") {
-      return new Response(null, { status: 404 });
+      return new Response(null, { status: 404, headers: { "x-robots-tag": "noindex" } });
     }
 
     const ct = req.headers.get("content-type") ?? "";
     const mode = detectMode(ct);
     if (!mode) {
-      return new Response(null, { status: 415 });
+      return new Response(null, { status: 415, headers: { "x-robots-tag": "noindex" } });
     }
 
     const data: Record<string, string> = {};
@@ -345,6 +353,9 @@ export default {
     if (accept.includes("application/json")) {
       return jsonResponse(200, { ok: true });
     }
-    return Response.redirect(THANKS_URL, 303);
+    return withNoIndex(new Response(null, {
+      status: 303,
+      headers: { Location: THANKS_URL },
+    }));
   },
 };

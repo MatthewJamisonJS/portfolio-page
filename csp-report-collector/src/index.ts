@@ -1,15 +1,13 @@
 export default {
   async fetch(req: Request): Promise<Response> {
-    // Only accept POST; GET returns a stub so the URL doesn't 404
-    // for accidental browser hits.
     if (req.method === "GET") {
       return new Response("CSP violation report endpoint. POST CSP reports here.", {
         status: 200,
-        headers: { "content-type": "text/plain; charset=utf-8" },
+        headers: { "content-type": "text/plain; charset=utf-8", "x-robots-tag": "noindex" },
       });
     }
     if (req.method !== "POST") {
-      return new Response(null, { status: 405, headers: { Allow: "GET, POST" } });
+      return new Response(null, { status: 405, headers: { Allow: "GET, POST", "x-robots-tag": "noindex" } });
     }
 
     // Validate Content-Type: real CSP reports arrive as one of two MIME
@@ -26,7 +24,7 @@ export default {
         cf_ray: req.headers.get("cf-ray"),
         cf_ipcountry: req.headers.get("cf-ipcountry"),
       }));
-      return new Response(null, { status: 415 });
+      return new Response(null, { status: 415, headers: { "x-robots-tag": "noindex" } });
     }
 
     const body = await req.text();
@@ -47,7 +45,6 @@ export default {
       truncated: body.length > 8192,
     }));
 
-    // 204 No Content is the conventional ack for CSP report endpoints.
-    return new Response(null, { status: 204 });
+    return new Response(null, { status: 204, headers: { "x-robots-tag": "noindex" } });
   },
 };

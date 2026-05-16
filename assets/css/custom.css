@@ -1556,16 +1556,16 @@ button#contact-submit {
 
 .home-section h2 {
   font-size: var(--type-subtitle);
-  font-weight: 600;
+  font-weight: 400;
   margin-bottom: 1.5rem;
   color: var(--bone);
-  font-family: 'Newsreader', serif;
+  font-family: var(--font-serif);
 }
 
 .section-body {
   font-size: var(--type-body);
   line-height: 1.7;
-  color: var(--stone-2);
+  color: var(--bone);
   margin-bottom: 1.5rem;
 }
 
@@ -1583,7 +1583,7 @@ button#contact-submit {
 }
 
 .section-body a:hover {
-  color: var(--brick);
+  color: var(--brick-deep);
 }
 
 .section-cta {
@@ -1855,13 +1855,13 @@ body,
   align-items: baseline;
 }
 .article-meta a {
-  color: var(--brick);
+  color: var(--clay);
   text-decoration: underline;
   text-underline-offset: 2px;
   text-decoration-thickness: 1px;
 }
 .article-meta a:hover {
-  color: var(--brick-deep);
+  color: var(--bone);
 }
 .article-meta time {
   font-variant-numeric: tabular-nums;

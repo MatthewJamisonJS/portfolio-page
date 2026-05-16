@@ -1625,7 +1625,8 @@ body,
 .page-why,
 .page-different,
 .page-pricing,
-.page-faq {
+.page-faq,
+.page-about {
   background-color: var(--espresso);
   color: var(--bone);
 }
@@ -1634,11 +1635,19 @@ body,
 .page-why h1, .page-why h2, .page-why h3, .page-why h4, .page-why h5,
 .page-different h1, .page-different h2, .page-different h3, .page-different h4, .page-different h5,
 .page-pricing h1, .page-pricing h2, .page-pricing h3, .page-pricing h4, .page-pricing h5,
-.page-faq h1, .page-faq h2, .page-faq h3, .page-faq h4, .page-faq h5 {
+.page-faq h1, .page-faq h2, .page-faq h3, .page-faq h4, .page-faq h5,
+.page-about h1, .page-about h2, .page-about h3, .page-about h4, .page-about h5 {
   color: var(--bone);
 }
 /* Global a { color: var(--brick) } fails on espresso (2.8:1). Clay = 6.6:1 on espresso. */
-.page-why a:not(.btn-fork), .page-different a:not(.btn-fork), .page-pricing a:not(.btn-fork), .page-faq a:not(.btn-fork) { color: var(--clay); }
+.page-why a:not(.btn-fork), .page-different a:not(.btn-fork), .page-pricing a:not(.btn-fork), .page-faq a:not(.btn-fork), .page-about a:not(.btn-fork) { color: var(--clay); }
+
+/* About page */
+.page-about { padding: 4rem 0 5rem; }
+.page-about .about-body { max-width: 68ch; }
+.page-about .about-body h2 { font-size: 1.375rem; margin: 2rem 0 0.75rem; color: var(--clay); }
+.page-about .about-body p { margin: 0 0 1.25rem; line-height: 1.75; }
+.page-about .about-body a { color: var(--clay); }
 
 .hero-fork {
   background:

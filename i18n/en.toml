@@ -367,3 +367,6 @@ other = "FAQ"
 
 [nav_brief]
 other = "Send a brief"
+
+[nav_about]
+other = "About"

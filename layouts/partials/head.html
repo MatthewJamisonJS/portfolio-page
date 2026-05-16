@@ -388,8 +388,11 @@
 	<link rel="preload" href="/fonts/ibm-plex-sans-v23-latin-600.woff2" as="font" type="font/woff2" crossorigin>
 	<link rel="preload" href="/fonts/ibm-plex-mono-v20-latin-500.woff2" as="font" type="font/woff2" crossorigin>
 
-	<!-- Preconnect to Cloudflare Web Analytics beacon (auto-injected by
-	     Cloudflare Pages). Saves DNS+TCP+TLS on first beacon request. -->
+	<!-- Preconnect to Cloudflare Web Analytics (auto-injected by Cloudflare Pages).
+	     Two distinct origins: the script loads from static.cloudflareinsights.com,
+	     the beacon posts to cloudflareinsights.com. Both need early connection
+	     warm-up to avoid blocking the analytics load on first visit. -->
+	<link rel="preconnect" href="https://static.cloudflareinsights.com" crossorigin>
 	<link rel="preconnect" href="https://cloudflareinsights.com" crossorigin>
 
 	<!-- PWA Manifest -->

@@ -15,9 +15,9 @@ Matthew Jamison — **St. Louis AEO consultant** and Ruby on Rails
 developer. The framework that pays the rent powers Shopify's 5.5M+
 merchants, $300B+ in 2025 gross merchandise volume, and a single
 majestic monolith handling ~19M MySQL queries per second
-(https://rubyonrails.org/foundation/shopify). 194+ merged pull
-requests on production Rails 8 codebases, verifiable on the
-operator's GitHub profile. Now offering AEO consulting through a
+(https://rubyonrails.org/foundation/shopify). Ruby on Rails developer
+with active contributions to production codebases. Public work:
+https://github.com/MatthewJamisonJS. Now offering AEO consulting through a
 forming-LLC, Gateway Tech AEO, to under-resourced St. Louis
 businesses.
 

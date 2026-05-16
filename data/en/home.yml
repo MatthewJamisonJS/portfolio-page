@@ -4,7 +4,9 @@ home:
     - id: "what-is-aeo"
       heading: "What is Answer Engine Optimization?"
       body: |
-        AEO means structuring your site so AI tools—ChatGPT, Perplexity, Google AI Overview, Claude—quote you when customers ask a question. Unlike classical SEO, which chases the ten blue links, AEO targets being the cited answer. The technical work overlaps (schema, page speed, clean URLs), but the goal is different: SEO builds discoverability; AEO builds authority you can verify and cite.
+        AEO means structuring your site so AI tools—ChatGPT, Perplexity, Google AI Overview, Claude, Apple Intelligence, Bing Copilot—quote you when customers ask a question. Unlike classical SEO, which chases the ten blue links, AEO targets being the cited answer. The technical work overlaps (schema, page speed, clean URLs), but the goal is different: SEO builds discoverability; AEO builds authority you can verify and cite.
+
+        The shift matters because how people search is changing. Instead of typing "plumber near me" into a search bar and scanning a list, a growing share of customers ask a chat assistant a full question: "Who's the best emergency plumber in south St. Louis that opens early?" The answer they receive is one sentence, one or two names, sometimes with a link. If your business is not in the answer, the rest of your marketing does not get the chance to work.
 
     - id: "why-matters-local"
       heading: "Why this matters for St. Louis local businesses"
@@ -14,16 +16,22 @@ home:
     - id: "how-we-work"
       heading: "How we work"
       body: |
-        Three pillars guide every decision: **Technical** (Can AI find you?), **Authority** (Can AI trust you?), **Content** (Do you answer what they ask?). We audit all three, produce a prioritized fix list, and help you act on it. [Learn what makes us different.](/different/) Pick the tier based on your bandwidth: Audit if you want to learn and implement yourself; Setup & Hand-off if you want it built right then you run it; Done-For-You if you want it managed end-to-end.
+        Three pillars guide every decision: **Technical** (Can AI find you?), **Authority** (Can AI trust you?), **Content** (Do you answer what they ask?). We audit all three, produce a prioritized fix list, and help you act on it. [Learn what makes us different.](/different/)
+
+        Pick the tier based on your bandwidth: Audit if you want to learn and implement yourself; Setup & Hand-off if you want it built right then you run it; Done-For-You if you want it managed end-to-end. Every engagement starts the same way—a written audit you keep, whether you continue with us or not. The audit names the specific problems on your site, ranks them by impact, and shows you the verifiable evidence. No proposals dressed up as reports.
 
     - id: "who-this-for"
       heading: "Who this is for—and who it isn't"
       body: |
-        This works for service businesses with tight geography: plumbers, electricians, HVAC, dental, legal, accounting, home repair. Real estate and retail fare better. If you're a SaaS trying to rank nationally on Google, classical SEO and paid ads own your ROI. If you're a local business in the St. Louis area, AEO is the unfair advantage. We cap at 5 clients per year because local work requires attention; if you need us to add you to a roster of 100+ others, we're not the fit.
+        This works for service businesses with tight geography: plumbers, electricians, HVAC, dental, legal, accounting, home repair, real estate, and local retail. The sharper your service area, the better AEO works—because answer engines weigh local intent heavily and the competitive field is smaller than a national keyword. If you're a SaaS trying to rank nationally on Google, classical SEO and paid ads own your ROI. If you're a local business in the St. Louis area, AEO is the unfair advantage.
+
+        We cap at 5 clients per year because local work requires attention; if you need us to add you to a roster of 100+ others, we're not the fit. We prefer owner-operators and small teams. We will not work with multi-location chains, lead-generation farms, or any business whose model depends on misleading customers about pricing or scope. Honest businesses are the only kind that benefit from being more findable.
 
     - id: "day-one-deliverables"
       heading: "What you get on day one"
       body: |
         We hand off four technical foundations. **Schema markup** tags your business, hours, address, reviews, FAQs in a format AI engines read natively. **robots.txt** explicitly allows GPTBot, ClaudeBot, PerplexityBot to crawl your site (most local businesses block AI by default). **Verified sitemap** lists all your pages so indexing is complete. **llms.txt** points AI tools toward your licensing, privacy policies, and any off-limits content. These four files take an afternoon to wire. Most local sites have zero of them. That's the gap.
+
+        Beyond the four files we configure your Google Business Profile, claim and align your Apple Business Connect listing, fix NAP (name, address, phone) consistency across the directories AI engines actually read, and add review-friendly schema so star ratings can travel into AI answers. Every change is documented in a plain-language report so you understand what was done and why—no black-box reporting.
       cta_text: "See detailed pricing"
       cta_link: "/pricing/"

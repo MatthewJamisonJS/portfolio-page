@@ -1846,13 +1846,19 @@ body,
 .article-meta {
   font-family: var(--font-mono);
   font-size: 0.875rem;
-  color: var(--stone);
+  color: var(--stone-2);
   margin-top: 0.75rem;
   margin-bottom: 1.5rem;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.25rem 0;
-  align-items: baseline;
+  line-height: 1.6;
+}
+/* Mobile: stack the byline + date(s) for clean wrapping on narrow viewports.
+   Below 480px the separator dot has too little room and wraps awkwardly to
+   the start of the next line. Hide the dots and let each chunk flow on its
+   own row instead. */
+@media (max-width: 480px) {
+  .article-meta { display: flex; flex-direction: column; gap: 0.15rem; }
+  .article-meta time { display: block; }
+  .article-meta time::before { content: ""; }
 }
 .article-meta a {
   color: var(--clay);

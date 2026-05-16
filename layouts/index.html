@@ -20,7 +20,7 @@
 
 {{ $homeData := index site.Data site.Language.Lang }}
 {{ if $homeData.home.home.enable }}
-<main class="home-expanded-content">
+<div class="home-expanded-content">
   {{ range $homeData.home.home.sections }}
   <section id="{{ .id }}" class="home-section">
     <div class="container">
@@ -36,6 +36,6 @@
     </div>
   </section>
   {{ end }}
-</main>
+</div>
 {{ end }}
 {{ end }}

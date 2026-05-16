@@ -1,6 +1,6 @@
 {{ define "main" }}
 {{ $data := (index site.Data site.Language.Lang).why.why }}
-<main class="page-why">
+<div class="page-why">
   <article class="container">
     <header class="page-header">
       <h1>{{ $data.title }}</h1>
@@ -30,5 +30,5 @@
       <a href="{{ $data.outro.cta_link }}" class="btn-fork btn-fork-primary">{{ $data.outro.cta_label }} <span aria-hidden="true">→</span></a>
     </footer>
   </article>
-</main>
+</div>
 {{ end }}

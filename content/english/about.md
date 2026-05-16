@@ -1,5 +1,5 @@
 ---
-title: "About Matthew Jamison"
+title: "About Matthew Jamison — Rails developer, AEO consultant"
 description: "Rails developer and AEO consultant in St. Louis. I build structured data, fix robots.txt, and help local businesses show up when people ask AI."
 type: "about"
 layout: "single"

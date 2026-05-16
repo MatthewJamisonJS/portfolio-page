@@ -26,7 +26,7 @@
     </section>
 
     <footer class="page-footer">
-      <p class="page-outro">{{ $data.outro.body }}</p>
+      <p class="page-outro">{{ $data.outro.body | markdownify }}</p>
       <a href="{{ $data.outro.cta_link }}" class="btn-fork btn-fork-primary">{{ $data.outro.cta_label }} <span aria-hidden="true">→</span></a>
     </footer>
   </article>

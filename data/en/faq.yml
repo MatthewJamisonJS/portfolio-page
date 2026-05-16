@@ -3,7 +3,7 @@ faq:
   title: "Common questions"
   items:
     - question: "What is AEO and how is it different from SEO?"
-      answer: "AEO (Answer Engine Optimization) structures your site so AI tools—ChatGPT, Perplexity, Google's AI Overview—quote you when someone asks a question. SEO targets the ten blue links. AEO targets being the quoted answer. The work overlaps: schema, page speed, content quality. The goal is different. SEO builds discoverability; AEO builds authority you can cite."
+      answer: "AEO (Answer Engine Optimization) structures your site so AI tools—ChatGPT, Perplexity, Google's AI Overview—quote you when someone asks a question. SEO targets the ten blue links. AEO targets being the quoted answer. The work overlaps: schema, page speed, content quality. The goal is different. SEO builds discoverability; AEO builds authority you can cite. [See why this shift matters for St. Louis local businesses](/why/)."
 
     - question: "What are robots.txt and schema markup, and why do they matter for AEO?"
       answer: "Two free files unlock AI discovery. Your <a href='https://developers.google.com/search/docs/crawling-indexing/robots/intro' rel='external nofollow'>robots.txt</a> tells GPTBot, ClaudeBot, and PerplexityBot whether they can read your site. Your <a href='https://schema.org/' rel='external nofollow'>schema markup</a> tags each page with structured data—hours, prices, FAQs, address—so AI engines understand what you sell. Most local sites block AI crawlers by default and ship zero schema. Fix both and you move from invisible to discoverable."
@@ -12,7 +12,7 @@ faq:
       answer: "<a href='https://www.gartner.com/en/newsroom/press-releases/2024-02-19-gartner-predicts-search-engine-volume-will-drop-25-percent-by-2026-due-to-ai-chatbots-and-other-virtual-agents' rel='external nofollow'>Gartner forecasts traditional search volume will drop 25% by 2026</a>. <a href='https://business.adobe.com/blog/ai-traffic-surge-retail-sites-not-machine-readable' rel='external nofollow'>Adobe reported AI traffic to U.S. retail sites grew 393% year-over-year in Q1 2026</a>. Search isn't disappearing; AI is taking share. Customers asking ChatGPT for local recommendations are real, and they're growing fast."
 
     - question: "How much does AEO cost?"
-      answer: "Three tiers: Audit $250 one-time, Setup $700 one-time, Done-For-You $500–$1,200 per month. No hidden pricing. No different rates for different prospects. Pick the tier based on what you need: learn it yourself, implement after we hand off, or we manage it ongoing."
+      answer: "Three tiers: Audit $250 one-time, Setup $700 one-time, Done-For-You $500–$1,200 per month. No hidden pricing. No different rates for different prospects. [See detailed pricing and what's included at each tier](/pricing/). Pick the tier based on what you need: learn it yourself, implement after we hand off, or we manage it ongoing."
 
     - question: "How long until I see results?"
       answer: "First changes show in 30 days. Steady-state results around month six. Month one looks like a net loss because we're fixing foundational problems—years of unclaimed listings, missing schema, blocked crawlers—that should have been fixed long ago. By month twelve the ROI compounds. Anyone promising faster is lying or breaking Google's rules."
@@ -39,4 +39,4 @@ faq:
       answer: "Yes. AEO and Generative Engine Optimization (GEO) mean the same thing—the industry hasn't settled on one term yet. Note: AEO is also American Eagle Outfitters' stock ticker, but different trademark class (retail apparel vs. marketing services). No conflict."
 
     - question: "Can I do this myself with the audit?"
-      answer: "Yes. The Audit is built for DIY implementation. You get the prioritized fix list, a 1-hour walkthrough, and you implement at your pace. Most owners fix high-impact items in an afternoon: robots.txt, Bing Webmaster Tools, schema basics. Audit cost credits toward Setup if you change your mind and want us to take over."
+      answer: "Yes. The Audit is built for DIY implementation. You get the prioritized fix list, a 1-hour walkthrough, and you implement at your pace. Most owners fix high-impact items in an afternoon: robots.txt, Bing Webmaster Tools, schema basics. [Check the Audit pricing tier](/pricing/#audit) — cost credits toward Setup if you change your mind and want us to take over."

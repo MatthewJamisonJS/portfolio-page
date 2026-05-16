@@ -35,7 +35,7 @@
 
     <section class="block-deliverable">
       <h2>{{ $data.blocks.deliverable.heading }}</h2>
-      <p>{{ $data.blocks.deliverable.body }}</p>
+      <p>{{ $data.blocks.deliverable.body | markdownify }}</p>
     </section>
 
     {{ partial "trust-moves.html" $data.blocks.trust }}

@@ -2,7 +2,7 @@ pricing:
   enable: true
   title: "Three honest tiers"
   pick_label: "How to pick"
-  pick_text: "If you have time and want to learn — Audit. If you want it built right but you'll run it after — Setup & Hand-off. If you want it managed and you don't want to think about it — Done-For-You."
+  pick_text: "If you have time and want to learn — Audit. If you want it built right but you'll run it after — Setup & Hand-off. If you want it managed and you don't want to think about it — Done-For-You. Still deciding? [Read about what we audit](/different/) across AI search, classical search, and third-party listings."
   footnote: "Audit credits toward Setup if you continue. No long contracts. We cap year one at 5 St. Louis clients — slow growth means deep service."
   tiers:
     - slug: "audit"

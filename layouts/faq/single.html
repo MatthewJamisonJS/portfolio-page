@@ -17,7 +17,7 @@
       <dt id="{{ $slug }}" class="faq-question">
         <a href="#{{ $slug }}" class="faq-permalink">{{ $item.question }}</a>
       </dt>
-      <dd class="faq-answer">{{ $item.answer | safeHTML }}</dd>
+      <dd class="faq-answer">{{ $item.answer | markdownify }}</dd>
       {{ end }}
     </dl>
   </article>

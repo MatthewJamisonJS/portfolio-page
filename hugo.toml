@@ -30,8 +30,14 @@ target = '$1'
 
 ############################# Outputs ##############################
 [outputs]
-home = ["HTML", "RSS"]
+home = ["HTML", "RSS", "SITEMAP"]
 page = ["HTML"]
+
+############################# Sitemap ##############################
+[sitemap]
+  changefreq = "monthly"
+  filename = "sitemap.xml"
+  priority = 0.5
 
 ############################# Imaging ##############################
 [imaging]

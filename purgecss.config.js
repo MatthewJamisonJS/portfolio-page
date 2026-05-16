@@ -77,6 +77,7 @@ module.exports = {
       'page-why', 'page-different', 'page-pricing', 'page-faq',
       'page-header', 'page-subtitle', 'page-intro', 'page-footer',
       'home-teaser', 'home-teaser-copy', 'home-teaser-link',
+      'home-expanded-content', 'home-section', 'section-body', 'section-cta',
       'footer-nav', 'nav-cta',
       'faq-list', 'faq-permalink',
       'block-audit-scope', 'block-pillars', 'block-deliverable',

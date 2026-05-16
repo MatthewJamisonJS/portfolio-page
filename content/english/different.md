@@ -4,4 +4,7 @@ description: "We audit visibility across AI search, classical search, and third-
 type: "different"
 layout: "single"
 url: "/different/"
+date: 2026-01-15
+lastmod: 2026-05-15
+author: "Matthew Jamison"
 ---

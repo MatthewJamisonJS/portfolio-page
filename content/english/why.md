@@ -4,4 +4,7 @@ description: "Six cited facts on AI adoption, citation rates, and how answer eng
 type: "why"
 layout: "single"
 url: "/why/"
+date: 2026-01-15
+lastmod: 2026-05-15
+author: "Matthew Jamison"
 ---

@@ -4,4 +4,7 @@ description: "Twelve questions on AEO and Answer Engine Optimization, costs, gua
 type: "faq"
 layout: "single"
 url: "/faq/"
+date: 2026-01-15
+lastmod: 2026-05-15
+author: "Matthew Jamison"
 ---

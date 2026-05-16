@@ -1835,3 +1835,34 @@ body,
     .drawer-bar { transition: none; }
   }
 }
+
+/* ===================================
+   Article metadata — E-E-A-T byline
+   Rendered below the <h1> on content
+   pages (why, different, pricing, faq,
+   about). Uses tokens from critical-
+   inline.css — no new variables.
+   =================================== */
+.article-meta {
+  font-family: var(--font-mono);
+  font-size: 0.875rem;
+  color: var(--stone);
+  margin-top: 0.75rem;
+  margin-bottom: 1.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem 0;
+  align-items: baseline;
+}
+.article-meta a {
+  color: var(--brick);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  text-decoration-thickness: 1px;
+}
+.article-meta a:hover {
+  color: var(--brick-deep);
+}
+.article-meta time {
+  font-variant-numeric: tabular-nums;
+}

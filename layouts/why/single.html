@@ -1,9 +1,14 @@
 {{ define "main" }}
 {{ $data := (index site.Data site.Language.Lang).why.why }}
-<main class="page-why">
+<div class="page-why">
   <article class="container">
     <header class="page-header">
       <h1>{{ $data.title }}</h1>
+      <div class="article-meta">
+        <span>By <a href="/about/">{{ .Params.author | default "Matthew Jamison" }}</a></span>
+        {{ with .Date }} · <time datetime="{{ .Format "2006-01-02" }}">Published {{ .Format "January 2, 2006" }}</time>{{ end }}
+        {{ if and .Lastmod (ne .Lastmod .Date) }} · <time datetime="{{ .Lastmod.Format "2006-01-02" }}">Updated {{ .Lastmod.Format "January 2, 2006" }}</time>{{ end }}
+      </div>
       <p class="page-subtitle">{{ $data.subtitle }}</p>
       <p class="page-intro">{{ $data.intro }}</p>
     </header>
@@ -21,9 +26,9 @@
     </section>
 
     <footer class="page-footer">
-      <p class="page-outro">{{ $data.outro.body }}</p>
+      <p class="page-outro">{{ $data.outro.body | markdownify }}</p>
       <a href="{{ $data.outro.cta_link }}" class="btn-fork btn-fork-primary">{{ $data.outro.cta_label }} <span aria-hidden="true">→</span></a>
     </footer>
   </article>
-</main>
+</div>
 {{ end }}

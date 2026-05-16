@@ -1,10 +1,15 @@
 {{ define "main" }}
 {{ $data := (index site.Data site.Language.Lang).pricing.pricing }}
 {{ $different := (index site.Data site.Language.Lang).different.different }}
-<main class="page-pricing">
+<div class="page-pricing">
   <article class="container">
     <header class="page-header">
       <h1>{{ $data.title }}</h1>
+      <div class="article-meta">
+        <span>By <a href="/about/">{{ .Params.author | default "Matthew Jamison" }}</a></span>
+        {{ with .Date }} · <time datetime="{{ .Format "2006-01-02" }}">Published {{ .Format "January 2, 2006" }}</time>{{ end }}
+        {{ if and .Lastmod (ne .Lastmod .Date) }} · <time datetime="{{ .Lastmod.Format "2006-01-02" }}">Updated {{ .Lastmod.Format "January 2, 2006" }}</time>{{ end }}
+      </div>
       <p class="page-subtitle">Audit credits toward Setup if you continue. No long contracts.</p>
     </header>
 
@@ -30,5 +35,5 @@
       <a href="/#contact" class="btn-fork btn-fork-primary">Send a brief <span aria-hidden="true">→</span></a>
     </footer>
   </article>
-</main>
+</div>
 {{ end }}

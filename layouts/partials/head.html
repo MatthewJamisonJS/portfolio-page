@@ -132,7 +132,7 @@
 					"url": "{{ site.BaseURL }}images/og/og-default.png"
 				},
 				"jobTitle": "Full-Stack Developer & AEO Consultant",
-				"description": "St. Louis AEO consultant and Ruby on Rails developer. The framework powers Shopify's 5.5M+ merchants, $300B+ in 2025 gross merchandise volume, and a single majestic monolith handling ~19M MySQL queries per second. 194+ merged pull requests on production Rails 8 codebases, verifiable on the operator's GitHub profile. Now offering Answer Engine Optimization services to St. Louis local businesses through {{ $brand.name }}.",
+				"description": "St. Louis AEO consultant and Ruby on Rails developer. The framework powers Shopify's 5.5M+ merchants, $300B+ in 2025 gross merchandise volume, and a single majestic monolith handling ~19M MySQL queries per second. Built by a Rails developer with public OSS contributions at github.com/MatthewJamisonJS. Now offering Answer Engine Optimization services to St. Louis local businesses through {{ $brand.name }}.",
 				"knowsLanguage": ["en", "es", "ja", "fr", "de"],
 				"knowsAbout": [
 					"Answer Engine Optimization",
@@ -388,8 +388,11 @@
 	<link rel="preload" href="/fonts/ibm-plex-sans-v23-latin-600.woff2" as="font" type="font/woff2" crossorigin>
 	<link rel="preload" href="/fonts/ibm-plex-mono-v20-latin-500.woff2" as="font" type="font/woff2" crossorigin>
 
-	<!-- Preconnect to Cloudflare Web Analytics beacon (auto-injected by
-	     Cloudflare Pages). Saves DNS+TCP+TLS on first beacon request. -->
+	<!-- Preconnect to Cloudflare Web Analytics (auto-injected by Cloudflare Pages).
+	     Two distinct origins: the script loads from static.cloudflareinsights.com,
+	     the beacon posts to cloudflareinsights.com. Both need early connection
+	     warm-up to avoid blocking the analytics load on first visit. -->
+	<link rel="preconnect" href="https://static.cloudflareinsights.com" crossorigin>
 	<link rel="preconnect" href="https://cloudflareinsights.com" crossorigin>
 
 	<!-- PWA Manifest -->
@@ -404,5 +407,17 @@
 	<link rel="preconnect" href="https://www.googletagmanager.com">
 	<link rel="dns-prefetch" href="https://www.googletagmanager.com">
 	{{ end }}
+
+	{{- /* Schema partials — organization/website/localbusiness/webpage are
+	       handled inside the @graph above; those partials are architecture
+	       placeholders. faqpage/service-catalog/article emit standalone
+	       <script type="application/ld+json"> blocks. */ -}}
+	{{ partial "schema/organization.html" . }}
+	{{ partial "schema/website.html" . }}
+	{{ if .IsHome }}{{ partial "schema/localbusiness.html" . }}{{ end }}
+	{{ if eq .Type "faq" }}{{ partial "schema/faqpage.html" . }}{{ end }}
+	{{ if eq .Type "pricing" }}{{ partial "schema/service-catalog.html" . }}{{ end }}
+	{{ if or (eq .Type "why") (eq .Type "different") }}{{ partial "schema/article.html" . }}{{ end }}
+	{{ partial "schema/webpage.html" . }}
 
 </head>

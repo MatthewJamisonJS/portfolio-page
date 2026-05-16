@@ -17,4 +17,25 @@
 </section>
 
 {{ partial "contact.html" . }}
+
+{{ $homeData := index site.Data site.Language.Lang }}
+{{ if $homeData.home.home.enable }}
+<div class="home-expanded-content">
+  {{ range $homeData.home.home.sections }}
+  <section id="{{ .id }}" class="home-section">
+    <div class="container">
+      <h2>{{ .heading }}</h2>
+      <div class="section-body">
+        {{ .body | markdownify }}
+      </div>
+      {{ if .cta_link }}
+      <div class="section-cta">
+        <a href="{{ .cta_link }}" class="btn-fork btn-fork-secondary">{{ .cta_text }} <span aria-hidden="true">→</span></a>
+      </div>
+      {{ end }}
+    </div>
+  </section>
+  {{ end }}
+</div>
+{{ end }}
 {{ end }}

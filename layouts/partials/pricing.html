@@ -25,7 +25,7 @@
     </div>
     <div class="row">
       <div class="col-12 text-center pricing-pick">
-        <p><strong>{{ .pick_label }}:</strong> {{ .pick_text }}</p>
+        <p><strong>{{ .pick_label }}:</strong> {{ .pick_text | markdownify }}</p>
         <p class="pricing-footnote"><small>{{ .footnote }}</small></p>
       </div>
     </div>

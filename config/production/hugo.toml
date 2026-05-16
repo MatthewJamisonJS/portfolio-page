@@ -1,6 +1,6 @@
 ################################# Default configuration ###################
 baseURL = "https://gatewaytechaeo.com/"
-title = "Gateway Tech AEO — AI search optimization for St. Louis local businesses"
+title = "When customers ask AI, will your St. Louis business show up?"
 theme = "meghna"
 # Default time zone for time stamps
 timeZone = "America/Chicago"
@@ -30,7 +30,13 @@ target = '$1'
 
 ############################# Outputs ##############################
 [outputs]
-home = ["HTML", "RSS"]
+home = ["HTML", "RSS", "SITEMAP"]
+
+############################# Sitemap ##############################
+[sitemap]
+  changefreq = "monthly"
+  filename = "sitemap.xml"
+  priority = 0.5
 
 ############################# Imaging ##############################
 [imaging]

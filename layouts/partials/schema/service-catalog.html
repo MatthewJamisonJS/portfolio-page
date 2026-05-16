@@ -1,0 +1,57 @@
+{{- /*
+  schema/service-catalog.html
+  ServiceCatalog + ItemList for /pricing/.
+  The head.html @graph emits a ProfessionalService.offers node with the
+  same pricing data (via $pricing.tiers). This partial adds a standalone
+  ItemList typed as a ServiceCatalog so answer engines can pull the tier
+  list directly without parsing the full @graph.
+  Rendered only on the /pricing/ page.
+  Pattern: jsonify (no surrounding quotes) for copy fields; "{{ }}" for
+  safe URL fragments and numeric values.
+*/ -}}
+{{ $pricing := (index site.Data site.Language.Lang).pricing.pricing }}
+{{ if $pricing.enable }}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "@id": "{{ site.BaseURL }}#service-catalog",
+  "name": {{ $pricing.title | jsonify | safeJS }},
+  "description": {{ $pricing.footnote | jsonify | safeJS }},
+  "url": "{{ .Permalink }}",
+  "numberOfItems": {{ len $pricing.tiers }},
+  "itemListElement": [
+    {{ range $i, $tier := $pricing.tiers }}{{ if $i }},{{ end }}
+    {
+      "@type": "ListItem",
+      "position": {{ add $i 1 }},
+      "item": {
+        "@type": "Service",
+        "@id": "{{ site.BaseURL }}#tier-{{ $tier.slug }}",
+        "name": {{ $tier.name | jsonify | safeJS }},
+        "description": {{ $tier.use_when | jsonify | safeJS }},
+        "provider": {
+          "@id": "{{ site.BaseURL }}#organization"
+        },
+        "areaServed": {
+          "@type": "City",
+          "name": "St. Louis",
+          "addressRegion": "MO",
+          "addressCountry": "US"
+        },
+        "offers": {
+          "@type": "Offer",
+          "priceSpecification": {
+            "@type": "PriceSpecification",
+            "minPrice": "{{ $tier.price_min }}",
+            "maxPrice": "{{ $tier.price_max }}",
+            "priceCurrency": "{{ $tier.price_currency | default "USD" }}",
+            "unitText": {{ $tier.price_unit | jsonify | safeJS }}
+          }
+        }
+      }
+    }{{ end }}
+  ]
+}
+</script>
+{{ end }}

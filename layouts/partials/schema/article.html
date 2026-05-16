@@ -1,0 +1,36 @@
+{{- /*
+  schema/article.html
+  Article schema for long-form editorial pages (/why/, /different/).
+  Rendered on pages where .RelPermalink matches /why/ or /different/.
+  The head.html @graph already covers WebPage and Organization;
+  Article is additive — it signals editorial depth to answer engines.
+  Pattern: use jsonify (no surrounding quotes) for values that may
+  contain special characters; use "{{ }}" only for safe URL fragments.
+*/ -}}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "@id": "{{ .Permalink }}#article",
+  "headline": {{ .Title | jsonify }},
+  "description": {{ with .Description }}{{ . | jsonify }}{{ else }}{{ site.Params.description | jsonify }}{{ end }},
+  "url": "{{ .Permalink }}",
+  "datePublished": "{{ with .Date }}{{ .Format "2006-01-02" }}{{ else }}2026-01-01{{ end }}",
+  "dateModified": "{{ with .Lastmod }}{{ .Format "2006-01-02" }}{{ else }}{{ now.Format "2006-01-02" }}{{ end }}",
+  "author": {
+    "@type": "Person",
+    "@id": "{{ site.BaseURL }}#person",
+    "name": "Matthew Jamison"
+  },
+  "publisher": {
+    "@id": "{{ site.BaseURL }}#organization"
+  },
+  "mainEntityOfPage": {
+    "@id": "{{ .Permalink }}#webpage"
+  },
+  "isPartOf": {
+    "@id": "{{ site.BaseURL }}#website"
+  },
+  "inLanguage": "{{ site.LanguageCode | default "en-us" }}"
+}
+</script>

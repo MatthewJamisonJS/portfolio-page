@@ -1,0 +1,40 @@
+{{- /*
+  schema/faqpage.html
+  FAQPage schema for /faq/.
+  Reads Q&A pairs from data/{lang}/faq.yml so the schema matches
+  exactly what is rendered on screen. The acceptedAnswer.text uses
+  plainify to strip HTML links (schema.org Answer.text should be
+  plain text per Google's FAQPage guidelines).
+  Rendered only on the /faq/ page.
+  Pattern: jsonify (no surrounding quotes) for all copy fields.
+*/ -}}
+{{ $data := (index site.Data site.Language.Lang).faq.faq }}
+{{ if $data.enable }}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "@id": "{{ .Permalink }}#faqpage",
+  "name": {{ $data.title | jsonify }},
+  "url": "{{ .Permalink }}",
+  "isPartOf": {
+    "@id": "{{ site.BaseURL }}#website"
+  },
+  "speakable": {
+    "@type": "SpeakableSpecification",
+    "cssSelector": [".faq-answer"]
+  },
+  "mainEntity": [
+    {{ range $i, $item := $data.items }}{{ if gt $i 0 }},{{ end }}
+    {
+      "@type": "Question",
+      "name": {{ $item.question | jsonify }},
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": {{ $item.answer | plainify | jsonify }}
+      }
+    }{{ end }}
+  ]
+}
+</script>
+{{ end }}

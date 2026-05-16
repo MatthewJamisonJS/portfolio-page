@@ -408,4 +408,16 @@
 	<link rel="dns-prefetch" href="https://www.googletagmanager.com">
 	{{ end }}
 
+	{{- /* Schema partials — organization/website/localbusiness/webpage are
+	       handled inside the @graph above; those partials are architecture
+	       placeholders. faqpage/service-catalog/article emit standalone
+	       <script type="application/ld+json"> blocks. */ -}}
+	{{ partial "schema/organization.html" . }}
+	{{ partial "schema/website.html" . }}
+	{{ if .IsHome }}{{ partial "schema/localbusiness.html" . }}{{ end }}
+	{{ if eq .RelPermalink "/faq/" }}{{ partial "schema/faqpage.html" . }}{{ end }}
+	{{ if eq .RelPermalink "/pricing/" }}{{ partial "schema/service-catalog.html" . }}{{ end }}
+	{{ if or (eq .RelPermalink "/why/") (eq .RelPermalink "/different/") }}{{ partial "schema/article.html" . }}{{ end }}
+	{{ partial "schema/webpage.html" . }}
+
 </head>

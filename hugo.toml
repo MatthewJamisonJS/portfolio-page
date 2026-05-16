@@ -1,6 +1,6 @@
 ################################# Default configuration ###################
 baseURL = "/"
-title = "Gateway Tech AEO — AI search optimization for St. Louis local businesses"
+title = "When customers ask AI, will your St. Louis business show up?"
 theme = "meghna"
 # Default time zone for time stamps
 timeZone = "America/Chicago"
@@ -98,7 +98,7 @@ link = "plugins/lazy-load/lozad.min.js"
 [params]
 logo = "images/logo.png"
 # Meta data
-description = "Answer Engine Optimization for St. Louis local businesses. Get cited by ChatGPT, Perplexity, and Google's AI Overview — before your competitors do."
+description = "When customers ask AI for local recommendations, we make sure yours shows up. Three tiers: audit, setup and hand-off, or done-for-you management."
 author = "Matthew Jamison"
 # Google Analytics (add your tracking ID when ready)
 google_analytics_id = ""

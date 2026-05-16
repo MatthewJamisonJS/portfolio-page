@@ -15,7 +15,7 @@
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "@id": "{{ .Permalink }}#faqpage",
-  "name": {{ $data.title | jsonify }},
+  "name": {{ $data.title | jsonify | safeJS }},
   "url": "{{ .Permalink }}",
   "isPartOf": {
     "@id": "{{ site.BaseURL }}#website"
@@ -28,10 +28,10 @@
     {{ range $i, $item := $data.items }}{{ if gt $i 0 }},{{ end }}
     {
       "@type": "Question",
-      "name": {{ $item.question | jsonify }},
+      "name": {{ $item.question | jsonify | safeJS }},
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": {{ $item.answer | plainify | jsonify }}
+        "text": {{ $item.answer | markdownify | plainify | jsonify | safeJS }}
       }
     }{{ end }}
   ]

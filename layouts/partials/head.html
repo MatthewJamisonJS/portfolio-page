@@ -132,7 +132,7 @@
 					"url": "{{ site.BaseURL }}images/og/og-default.png"
 				},
 				"jobTitle": "Full-Stack Developer & AEO Consultant",
-				"description": "St. Louis AEO consultant and Ruby on Rails developer. The framework powers Shopify's 5.5M+ merchants, $300B+ in 2025 gross merchandise volume, and a single majestic monolith handling ~19M MySQL queries per second. 194+ merged pull requests on production Rails 8 codebases, verifiable on the operator's GitHub profile. Now offering Answer Engine Optimization services to St. Louis local businesses through {{ $brand.name }}.",
+				"description": "St. Louis AEO consultant and Ruby on Rails developer. The framework powers Shopify's 5.5M+ merchants, $300B+ in 2025 gross merchandise volume, and a single majestic monolith handling ~19M MySQL queries per second. Built by a Rails developer with public OSS contributions at github.com/MatthewJamisonJS. Now offering Answer Engine Optimization services to St. Louis local businesses through {{ $brand.name }}.",
 				"knowsLanguage": ["en", "es", "ja", "fr", "de"],
 				"knowsAbout": [
 					"Answer Engine Optimization",
@@ -415,9 +415,9 @@
 	{{ partial "schema/organization.html" . }}
 	{{ partial "schema/website.html" . }}
 	{{ if .IsHome }}{{ partial "schema/localbusiness.html" . }}{{ end }}
-	{{ if eq .RelPermalink "/faq/" }}{{ partial "schema/faqpage.html" . }}{{ end }}
-	{{ if eq .RelPermalink "/pricing/" }}{{ partial "schema/service-catalog.html" . }}{{ end }}
-	{{ if or (eq .RelPermalink "/why/") (eq .RelPermalink "/different/") }}{{ partial "schema/article.html" . }}{{ end }}
+	{{ if eq .Type "faq" }}{{ partial "schema/faqpage.html" . }}{{ end }}
+	{{ if eq .Type "pricing" }}{{ partial "schema/service-catalog.html" . }}{{ end }}
+	{{ if or (eq .Type "why") (eq .Type "different") }}{{ partial "schema/article.html" . }}{{ end }}
 	{{ partial "schema/webpage.html" . }}
 
 </head>

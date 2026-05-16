@@ -16,8 +16,8 @@
   "@context": "https://schema.org",
   "@type": "ItemList",
   "@id": "{{ site.BaseURL }}#service-catalog",
-  "name": {{ $pricing.title | jsonify }},
-  "description": {{ $pricing.footnote | jsonify }},
+  "name": {{ $pricing.title | jsonify | safeJS }},
+  "description": {{ $pricing.footnote | jsonify | safeJS }},
   "url": "{{ .Permalink }}",
   "numberOfItems": {{ len $pricing.tiers }},
   "itemListElement": [
@@ -28,8 +28,8 @@
       "item": {
         "@type": "Service",
         "@id": "{{ site.BaseURL }}#tier-{{ $tier.slug }}",
-        "name": {{ $tier.name | jsonify }},
-        "description": {{ $tier.use_when | jsonify }},
+        "name": {{ $tier.name | jsonify | safeJS }},
+        "description": {{ $tier.use_when | jsonify | safeJS }},
         "provider": {
           "@id": "{{ site.BaseURL }}#organization"
         },
@@ -46,7 +46,7 @@
             "minPrice": "{{ $tier.price_min }}",
             "maxPrice": "{{ $tier.price_max }}",
             "priceCurrency": "{{ $tier.price_currency | default "USD" }}",
-            "unitText": {{ $tier.price_unit | jsonify }}
+            "unitText": {{ $tier.price_unit | jsonify | safeJS }}
           }
         }
       }

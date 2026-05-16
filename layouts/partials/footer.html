@@ -8,7 +8,7 @@
 				<nav class="footer-nav" aria-label="Footer">
 					<a href="{{ "/pricing/" | relLangURL }}">{{ i18n "nav_pricing" }}</a>
 					<a href="{{ "/faq/" | relLangURL }}">{{ i18n "nav_faq" }}</a>
-					<a href="{{ "/about/" | relLangURL }}">{{ i18n "nav_about" }}</a>
+					{{ if eq .Lang "en" }}<a href="{{ "/about/" | relLangURL }}">{{ i18n "nav_about" }}</a>{{ end }}
 					<a href="{{ "/#contact" | relLangURL }}">{{ i18n "nav_brief" }}</a>
 				</nav>
 

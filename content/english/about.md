@@ -9,7 +9,7 @@ lastmod: 2026-05-16
 author: "Matthew Jamison"
 ---
 
-I'm a Rails developer at Concordia Publishing House, a 160-year-old publisher in St. Louis. The codebase I work in daily serves about 500,000 users. I've shipped 77+ merged pull requests there. AEO consulting is what I do on the side, for local businesses that don't have a development team.
+I'm a Rails developer at Concordia Publishing House, a 160-year-old publisher in St. Louis. The codebase I work in daily serves about 500,000 users. My public OSS contributions are at [github.com/MatthewJamisonJS](https://github.com/MatthewJamisonJS). AEO consulting is what I do on the side, for local businesses that don't have a development team.
 
 ## Why AEO
 

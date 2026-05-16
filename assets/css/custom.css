@@ -1872,3 +1872,16 @@ body,
 .article-meta time {
   font-variant-numeric: tabular-nums;
 }
+
+/* WCAG 2.1 AA hover-contrast fix.
+   Global `a:hover { color: var(--brick-deep) }` in critical-inline.css
+   measures 2.18:1 on the espresso surface — fails 1.4.3. Page-scoped
+   override lifts hover to --bone (17.4:1 vs --ink, AAA) on long-form
+   pages. .btn-fork buttons keep their own hover styling. */
+.page-why a:not(.btn-fork):hover,
+.page-different a:not(.btn-fork):hover,
+.page-pricing a:not(.btn-fork):hover,
+.page-faq a:not(.btn-fork):hover,
+.page-about a:not(.btn-fork):hover {
+  color: var(--bone);
+}

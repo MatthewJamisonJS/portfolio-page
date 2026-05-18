@@ -1,6 +1,6 @@
 ---
 title: "Common questions about AEO, pricing, and how to start"
-description: "Thirteen questions on AEO and Answer Engine Optimization, costs, guarantees, Google Business Profile optimization, contracts, and DIY versus managed service."
+description: "Thirteen direct answers on Answer Engine Optimization: costs, guarantees, Google Business Profile, contracts, and DIY versus managed service."
 type: "faq"
 layout: "single"
 url: "/faq/"

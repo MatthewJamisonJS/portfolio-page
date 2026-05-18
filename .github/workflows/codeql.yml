@@ -27,7 +27,7 @@ jobs:
 
     steps:
       - name: Checkout
-        uses: actions/checkout@v5
+        uses: actions/checkout@v6
         with:
           # Theme submodule is meghna (HTML/CSS only) and CodeQL doesn't
           # scan HTML; skipping the checkout saves ~30s per matrix leg.

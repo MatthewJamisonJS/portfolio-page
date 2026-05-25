@@ -1,5 +1,11 @@
 #!/usr/bin/env bash
-# AEO-2 Task 3.3: no author photo or bio on any built page.
+# AEO-2 Task 3.3: no author photo or bio-card markup on any built page.
+#
+# Note (2026-05-25): the original Task 3.3 also banned the /about/ page
+# wholesale, but the EN voice refactor reinstated /about/ as a plain
+# professional bio page (no photo, no bio-card markup). The ban here is
+# narrowed to the photo file, the bio-card classes, and the legacy
+# data/<lang>/author.yml source.
 set -e
 ROOT="$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )"
 REPO="$( cd -- "$ROOT/../.." &> /dev/null && pwd )"
@@ -12,15 +18,8 @@ if grep -rq 'matthew-jamison.webp' "$BUILD"; then
   echo "FAIL — author photo still referenced in built site"; FAIL=1
 fi
 
-# No /about/ page in any locale.
-for prefix in "" "es/" "ja/" "fr/" "de/"; do
-  if [[ -d "$BUILD/${prefix}about" ]]; then
-    echo "FAIL — $BUILD/${prefix}about still exists"; FAIL=1
-  fi
-done
-
-# No author-bio class markup rendered in built HTML.
-for f in "$BUILD/index.html" "$BUILD/different/index.html" "$BUILD/why/index.html" "$BUILD/pricing/index.html" "$BUILD/faq/index.html"; do
+# No author-bio class markup rendered in built HTML (including /about/).
+for f in "$BUILD/index.html" "$BUILD/about/index.html" "$BUILD/different/index.html" "$BUILD/why/index.html" "$BUILD/pricing/index.html" "$BUILD/faq/index.html"; do
   if [[ -f "$f" ]] && grep -q 'author-bio\|author-photo\|author-bio-card' "$f"; then
     echo "FAIL — author-bio markup found on $f"; FAIL=1
   fi

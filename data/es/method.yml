@@ -1,7 +1,7 @@
 method:
   enable: true
   title: "Cómo pensamos sobre el AEO"
-  intro: "Tres pilares. Si una táctica no fortalece uno, no la hacemos."
+  intro: "Tres pilares. Si una táctica no fortalece al menos uno, no se entrega."
   pillars:
     - id: "technical"
       title: "Técnico"

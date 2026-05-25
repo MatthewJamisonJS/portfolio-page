@@ -2,36 +2,36 @@ home:
   enable: true
   sections:
     - id: "what-is-aeo"
-      heading: "What is Answer Engine Optimization?"
+      heading: "Was ist Answer Engine Optimization?"
       body: |
-        AEO is the work you do so AI tools cite you when a customer asks. ChatGPT, Perplexity, Google's AI Overview, Claude, Apple Intelligence, Bing Copilot. SEO chases the ten blue links; AEO targets being the cited answer. Same technical hygiene (schema, page speed, clean URLs), different finish line. SEO builds discoverability. AEO builds something the AI can quote.
+        AEO ist die Arbeit, die du machst, damit KI-Werkzeuge dich zitieren, wenn ein Kunde fragt. ChatGPT, Perplexity, Google AI Overview, Claude, Apple Intelligence, Bing Copilot. SEO jagt den zehn blauen Links nach; AEO will die zitierte Antwort sein. Gleiches technisches Fundament (Schema, Seitengeschwindigkeit, saubere URLs), anderes Ziel. SEO baut Auffindbarkeit. AEO baut etwas, das die KI zitieren kann.
 
-        How people search has changed. Instead of typing "plumber near me" and scanning ten results, customers ask a chat assistant the whole question: "Who's the best emergency plumber in south St. Louis that opens early?" They get one sentence back. One or two names. Sometimes a link. If you're not in the answer, the rest of your marketing doesn't get to work.
+        Wie Menschen suchen, hat sich verändert. Statt „Klempner in der Nähe" zu tippen und zehn Treffer zu überfliegen, stellen Kunden dem Chat-Assistenten die ganze Frage: „Wer ist der beste Notfall-Klempner im Süden von St. Louis, der früh öffnet?" Sie bekommen einen Satz zurück. Ein, zwei Namen. Manchmal einen Link. Wer nicht in der Antwort steht, dessen restliches Marketing kommt gar nicht erst zum Zug.
 
     - id: "why-matters-local"
-      heading: "Why this matters for St. Louis local businesses"
+      heading: "Warum das für lokale Unternehmen in St. Louis zählt"
       body: |
-        45% of local consumers ask AI for business recommendations. A year ago that number was 6%. The Yellow Pages-to-Google migration didn't move this fast. Most St. Louis local businesses are still invisible to it: blocked robots.txt, no schema, unclaimed listings. Your competitors get cited when AI looks up plumbers, accountants, realtors; you don't. The customers are real and the gap is widening every quarter.
+        45 % der lokalen Verbraucher fragen die KI nach Geschäftsempfehlungen. Vor einem Jahr lag diese Zahl bei 6 %. Der Übergang von den Gelben Seiten zu Google ging nicht so schnell. Die meisten lokalen Unternehmen in St. Louis sind für diese KI weiterhin unsichtbar: blockierte robots.txt, kein Schema, nicht beanspruchte Einträge. Deine Konkurrenten werden zitiert, wenn die KI nach Klempnern, Steuerberatern, Maklern sucht; du nicht. Die Kunden sind real und der Abstand wächst von Quartal zu Quartal.
 
     - id: "how-we-work"
-      heading: "How we work"
+      heading: "Wie wir arbeiten"
       body: |
-        Three pillars guide every call: **Technical** (can AI find you?), **Authority** (can AI trust you?), **Content** (do you answer what they ask?). We audit all three, write you a prioritized fix list, and help you act on it. [Read what makes us different.](/different/)
+        Drei Säulen leiten jede Entscheidung: **Technik** (kann die KI dich finden?), **Autorität** (vertraut die KI dir?), **Inhalt** (beantwortest du, was sie fragen?). Wir auditieren alle drei, schreiben dir eine priorisierte Korrekturliste und begleiten die Umsetzung. [Lies, was uns unterscheidet.](/different/)
 
-        Pick the tier that fits your bandwidth. Audit if you want to learn it and run it yourself. Setup & Hand-off if you want it built right then handed over. Done-For-You if you want it managed end-to-end. Every engagement starts the same way: a written audit you keep, whether you stay with us or not. The audit names the specific problems on your site, ranks them by impact, shows the verifiable evidence. No proposals dressed up as reports.
+        Wähl die Stufe, die zu deiner Bandbreite passt. Audit, wenn du es lernen und selbst betreiben willst. Setup & Hand-off, wenn du es richtig gebaut haben und danach übernehmen willst. Done-For-You, wenn wir es Ende zu Ende führen sollen. Jedes Engagement beginnt gleich: ein schriftliches Audit, das dir gehört, egal ob du bei uns bleibst oder nicht. Das Audit benennt die konkreten Probleme deiner Seite, ordnet sie nach Wirkung, zeigt die überprüfbaren Belege. Keine Angebote im Bericht-Mantel.
 
     - id: "who-this-for"
-      heading: "Who this is for, and who it isn't"
+      heading: "Für wen das passt, und für wen nicht"
       body: |
-        This works for service businesses with tight geography. Plumbers, electricians, HVAC, dental, legal, accounting, home repair, real estate, local retail. The sharper your service area, the better AEO performs: answer engines weigh local intent heavily and the competitive field shrinks. If you're a SaaS trying to rank nationally on Google, classical SEO and paid ads own your ROI. If you're a local business around St. Louis, AEO is the lever almost nobody is pulling yet.
+        Funktioniert für Dienstleistungsbetriebe mit engem Einzugsgebiet. Klempner, Elektriker, HLK, Zahnmedizin, Recht, Buchhaltung, Hausreparatur, Immobilien, lokaler Einzelhandel. Je schärfer dein Servicegebiet, desto stärker wirkt AEO: Antwortmaschinen gewichten lokale Absicht hoch und das Konkurrenzfeld schrumpft. Wenn du ein SaaS bist, das national auf Google ranken will, holen klassisches SEO und bezahlte Anzeigen den ROI. Wenn du ein lokales Unternehmen rund um St. Louis bist, ist AEO der Hebel, den fast niemand sonst zieht.
 
-        We cap year one at 5 clients. Local work needs attention; if you need us to add you to a roster of 100, we're not the fit. We prefer owner-operators and small teams. We won't work with multi-location chains, lead-generation farms, or any business whose model depends on hiding the real price. Honest businesses are the only kind that benefit from being more findable.
+        Wir begrenzen das erste Jahr auf 5 Kunden. Lokale Arbeit braucht Aufmerksamkeit; wer auf eine Liste von 100 will, ist bei uns falsch. Wir bevorzugen Inhaber-Betreiber und kleine Teams. Wir arbeiten nicht mit Filialketten, Lead-Generation-Farmen oder Modellen, die den echten Preis verstecken. Nur ehrliche Unternehmen gewinnen dadurch, leichter gefunden zu werden.
 
     - id: "day-one-deliverables"
-      heading: "What you get on day one"
+      heading: "Was du am ersten Tag bekommst"
       body: |
-        Four technical foundations get wired on day one. **Schema markup** tags your business, hours, address, reviews, and FAQs in the format AI engines read natively. **robots.txt** explicitly allows GPTBot, ClaudeBot, and PerplexityBot to crawl your site (most local businesses block them by accident). **Verified sitemap** lists every page so indexing is complete. **llms.txt** points AI tools at your licensing, privacy policies, and anything off-limits. These four files take an afternoon. Most local sites have zero of them. That's the gap.
+        Vier technische Fundamente sind am ersten Tag verdrahtet. Das **Schema-Markup** kennzeichnet dein Unternehmen, Öffnungszeiten, Adresse, Bewertungen und FAQs in dem Format, das KI-Maschinen nativ lesen. **robots.txt** erlaubt GPTBot, ClaudeBot und PerplexityBot ausdrücklich, deine Seite zu durchsuchen (die meisten lokalen Unternehmen blockieren sie aus Versehen). Die **verifizierte Sitemap** listet jede Seite auf, damit die Indexierung vollständig wird. **llms.txt** verweist KI-Werkzeuge auf deine Lizenz, Datenschutzrichtlinien und alle gesperrten Inhalte. Diese vier Dateien brauchen einen Nachmittag. Die meisten lokalen Seiten haben null davon. Genau da liegt die Lücke.
 
-        After the four files, we configure your Google Business Profile, claim and align your Apple Business Connect listing, and fix NAP (name, address, phone) consistency across the directories AI engines actually read. Review schema gets added so star ratings travel into AI answers. Every change lands in a plain-language report so you can see what was done and why. No black-box reporting.
-      cta_text: "See detailed pricing"
+        Nach den vier Dateien richten wir dein Google Business Profil ein, beanspruchen und gleichen deinen Apple Business Connect Eintrag ab, und beheben die NAP-Konsistenz (Name, Adresse, Telefon) in den Verzeichnissen, die KI-Maschinen wirklich lesen. Review-Schema kommt dazu, damit Sterne in die KI-Antworten wandern. Jede Änderung landet in einem Bericht in klarer Sprache, damit du siehst, was getan wurde und warum. Keine Blackbox-Berichte.
+      cta_text: "Detaillierte Preise sehen"
       cta_link: "/pricing/"

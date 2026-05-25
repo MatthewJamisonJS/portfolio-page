@@ -1,7 +1,7 @@
 method:
   enable: true
   title: "Notre approche de l'AEO"
-  intro: "Trois piliers. Si une tactique n'en renforce aucun, on ne la fait pas."
+  intro: "Trois piliers. Si une tactique n'en renforce pas au moins un, on ne la livre pas."
   pillars:
     - id: "technical"
       title: "Technique"

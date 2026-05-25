@@ -2,8 +2,8 @@ pricing:
   enable: true
   title: "Three honest tiers"
   pick_label: "How to pick"
-  pick_text: "If you have time and want to learn — Audit. If you want it built right but you'll run it after — Setup & Hand-off. If you want it managed and you don't want to think about it — Done-For-You. Still deciding? [Read about what we audit](/different/) across AI search, classical search, and third-party listings."
-  footnote: "Audit credits toward Setup if you continue. No long contracts. We cap year one at 5 St. Louis clients — slow growth means deep service."
+  pick_text: "Audit: you have time and want to learn. Setup & Hand-off: you want it built right but you'll run it after. Done-For-You: you have a budget but no time. Still deciding? [Read about what we audit](/different/) across AI search, classical search, and third-party listings."
+  footnote: "Audit credits toward Setup if you continue. No long contracts. Year one is capped at 5 St. Louis clients: slow growth means deep service."
   tiers:
     - slug: "audit"
       name: "Audit"
@@ -17,7 +17,7 @@ pricing:
       price_currency: "USD"
       price_unit: "one-time"
       highlight: false
-      use_when: "You're skeptical and want to see the work before you commit. You'll fix things yourself afterwards."
+      use_when: "You're skeptical and want to see the work before you commit. You'll fix things yourself after."
       includes:
         - "Full visibility audit"
         - "Prioritized fix list"

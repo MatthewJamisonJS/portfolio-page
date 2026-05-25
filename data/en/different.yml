@@ -1,22 +1,22 @@
 different:
   enable: true
   title: "What makes Gateway Tech AEO different."
-  subtitle: "One operator. Three audits in one. A plan you can act on."
+  subtitle: "One operator. Three audits in one report. A plan you can act on."
   blocks:
     audit_scope:
       heading: "We audit three things, not one."
-      body: "Most AEO services check whether AI can cite you. We audit your visibility across classical search (the ten blue links), answer engines (ChatGPT, Perplexity, AI Overview), and generative search (the citations themselves). You get one report covering all three, because being absent is rarely just an AEO problem."
+      body: "Most AEO services only check whether AI can cite you. We audit your visibility across classical search (the ten blue links), answer engines (ChatGPT, Perplexity, AI Overview), and generative search (the citations themselves). One report covers all three because being absent is rarely only an AEO problem."
     pillars:
-      heading: "Three pillars. If a tactic does not strengthen one of them, we do not do it."
+      heading: "Three pillars. If a tactic doesn't strengthen at least one, it doesn't ship."
       ref: "method"
     deliverable:
       heading: "What you actually get."
-      body: "An actionable audit summary. We tell you what to fix, in what order, and what each fix is worth — in plain language you can act on. Deeper execution playbooks and the audit tooling stay scoped to the engagement. Choose the [pricing tier](/pricing/) that fits your bandwidth: DIY Audit, Setup & Hand-off, or Done-For-You managed service."
+      body: "An actionable audit summary in plain language: what to fix, in what order, and what each fix is worth. Deeper execution playbooks and the audit tooling stay inside the engagement. Pick the [pricing tier](/pricing/) that fits your bandwidth: DIY Audit, Setup & Hand-off, or Done-For-You managed service."
     trust:
       heading: "How we operate."
       moves:
-        - "We cap year one at 5 St. Louis clients. Slow growth means deep service."
-        - "You own everything we touch. Your domain, your Google Business Profile, your content, your accounts."
+        - "Year one is capped at 5 St. Louis clients. Slow growth means deep service."
+        - "You own everything we touch: your domain, your Google Business Profile, your content, your accounts."
         - "Month-to-month, no long contracts. Stop when you want."
     cta:
       pricing_label: "See pricing"

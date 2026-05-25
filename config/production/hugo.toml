@@ -95,7 +95,7 @@ link = "plugins/lazy-load/lozad.min.js"
 [params]
 logo = "images/logo.png"
 # Meta data
-description = "Answer Engine Optimization for St. Louis local businesses. Get cited by ChatGPT, Perplexity, and Google's AI Overview — before your competitors do."
+description = "Answer Engine Optimization for St. Louis local businesses. Get cited by ChatGPT, Perplexity, and Google's AI Overview before your competitors do."
 author = "Matthew Jamison"
 # Google Analytics (add your tracking ID when ready)
 google_analytics_id = ""

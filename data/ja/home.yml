@@ -2,36 +2,36 @@ home:
   enable: true
   sections:
     - id: "what-is-aeo"
-      heading: "What is Answer Engine Optimization?"
+      heading: "Answer Engine Optimization（AEO）とは？"
       body: |
-        AEO is the work you do so AI tools cite you when a customer asks. ChatGPT, Perplexity, Google's AI Overview, Claude, Apple Intelligence, Bing Copilot. SEO chases the ten blue links; AEO targets being the cited answer. Same technical hygiene (schema, page speed, clean URLs), different finish line. SEO builds discoverability. AEO builds something the AI can quote.
+        AEO は、顧客が質問したときに AI ツールにあなたを引用させるための仕事です。ChatGPT、Perplexity、Google AI Overview、Claude、Apple Intelligence、Bing Copilot。SEO は十の青いリンクを追いかけますが、AEO は引用される答えになることを狙います。技術的な土台（スキーマ、ページ速度、整ったURL）は同じでも、ゴールが違います。SEO は発見可能性を、AEO は AI が引用できる何かを築きます。
 
-        How people search has changed. Instead of typing "plumber near me" and scanning ten results, customers ask a chat assistant the whole question: "Who's the best emergency plumber in south St. Louis that opens early?" They get one sentence back. One or two names. Sometimes a link. If you're not in the answer, the rest of your marketing doesn't get to work.
+        人が検索する仕方は変わりました。「近くの配管工」と打って十件の結果を眺めるかわりに、顧客はチャットアシスタントに質問まるごとを尋ねます。「サウス・セントルイスで朝早く開く、最高の緊急配管工は？」返ってくるのは一文です。名前は一つか二つ。たまにリンク。あなたが答えに入っていなければ、ほかのマーケティングは働くチャンスをもらえません。
 
     - id: "why-matters-local"
-      heading: "Why this matters for St. Louis local businesses"
+      heading: "セントルイスの地元ビジネスにとって、なぜ重要か"
       body: |
-        45% of local consumers ask AI for business recommendations. A year ago that number was 6%. The Yellow Pages-to-Google migration didn't move this fast. Most St. Louis local businesses are still invisible to it: blocked robots.txt, no schema, unclaimed listings. Your competitors get cited when AI looks up plumbers, accountants, realtors; you don't. The customers are real and the gap is widening every quarter.
+        地元の消費者の 45% が AI にビジネスの推薦を尋ねています。一年前、その数字は 6% でした。イエローページから Google への移行も、ここまで速くは動きませんでした。それでも大半のセントルイスの地元ビジネスは、AI から見えないままです。ブロックされた robots.txt、欠けたスキーマ、未取得のリスティング。AI が配管工、会計士、不動産業者を調べると、競合は引用されます。あなたは引用されない。顧客は実在し、その差は四半期ごとに広がっています。
 
     - id: "how-we-work"
-      heading: "How we work"
+      heading: "私たちの進め方"
       body: |
-        Three pillars guide every call: **Technical** (can AI find you?), **Authority** (can AI trust you?), **Content** (do you answer what they ask?). We audit all three, write you a prioritized fix list, and help you act on it. [Read what makes us different.](/different/)
+        三つの柱がすべての判断を導きます。**技術**（AI はあなたを見つけられるか？）、**権威**（AI はあなたを信頼するか？）、**コンテンツ**（質問に答えているか？）。三つすべてを監査し、優先順位付きの修正リストを書き、実行を支援します。[私たちの違いを読む。](/different/)
 
-        Pick the tier that fits your bandwidth. Audit if you want to learn it and run it yourself. Setup & Hand-off if you want it built right then handed over. Done-For-You if you want it managed end-to-end. Every engagement starts the same way: a written audit you keep, whether you stay with us or not. The audit names the specific problems on your site, ranks them by impact, shows the verifiable evidence. No proposals dressed up as reports.
+        あなたの帯域に合う段を選んでください。学んで自分で運用するなら監査。きちんと組んでから引き継ぎたいなら、セットアップとハンドオフ。最初から最後まで管理してほしいなら、フルマネージドサービス。どの契約も同じ始まり方をします。書面の監査レポートは、私たちと続けるかどうかに関係なく、あなたのものです。監査は、あなたのサイト固有の問題を名指しし、影響度で並べ、検証可能な証拠を示します。提案書を装ったレポートではありません。
 
     - id: "who-this-for"
-      heading: "Who this is for, and who it isn't"
+      heading: "向いている人、向いていない人"
       body: |
-        This works for service businesses with tight geography. Plumbers, electricians, HVAC, dental, legal, accounting, home repair, real estate, local retail. The sharper your service area, the better AEO performs: answer engines weigh local intent heavily and the competitive field shrinks. If you're a SaaS trying to rank nationally on Google, classical SEO and paid ads own your ROI. If you're a local business around St. Louis, AEO is the lever almost nobody is pulling yet.
+        地理が狭いサービス業に効きます。配管工、電気工、HVAC、歯科、法務、会計、住宅修理、不動産、ローカル小売。サービス対象地域が絞れているほど AEO は強く効きます。回答エンジンはローカル意図を重く見ますし、競合の層も薄くなります。Google で全米ランクを狙う SaaS なら、従来型 SEO と有料広告が ROI を取り戻します。セントルイス周辺の地元ビジネスなら、AEO はまだ誰も引いていないレバーです。
 
-        We cap year one at 5 clients. Local work needs attention; if you need us to add you to a roster of 100, we're not the fit. We prefer owner-operators and small teams. We won't work with multi-location chains, lead-generation farms, or any business whose model depends on hiding the real price. Honest businesses are the only kind that benefit from being more findable.
+        一年目は 5 社に絞ります。地元の仕事は注意が要ります。100 社のリストに自社を足してほしいなら、私たちは合いません。オーナー兼運営者と少人数チームを好みます。多拠点チェーン、リード生成業者、本当の価格を隠す事業モデルとは仕事をしません。誠実なビジネスだけが、見つけやすくなることで得をします。
 
     - id: "day-one-deliverables"
-      heading: "What you get on day one"
+      heading: "初日に手に入るもの"
       body: |
-        Four technical foundations get wired on day one. **Schema markup** tags your business, hours, address, reviews, and FAQs in the format AI engines read natively. **robots.txt** explicitly allows GPTBot, ClaudeBot, and PerplexityBot to crawl your site (most local businesses block them by accident). **Verified sitemap** lists every page so indexing is complete. **llms.txt** points AI tools at your licensing, privacy policies, and anything off-limits. These four files take an afternoon. Most local sites have zero of them. That's the gap.
+        初日に四つの技術的基盤が組み上がります。**スキーマ・マークアップ**は、あなたの事業、営業時間、住所、レビュー、FAQ を AI エンジンが直接読める形式でタグ付けします。**robots.txt** で GPTBot、ClaudeBot、PerplexityBot に明示的にクロール許可を出します（多くの地元サイトは無意識にブロックしています）。**検証済みサイトマップ**は、すべてのページを列挙してインデックスを完全にします。**llms.txt** は、ライセンス、プライバシーポリシー、立ち入り禁止の領域を AI ツールに示します。この四ファイルは午後一回分の作業です。多くのローカルサイトはゼロです。そこがギャップです。
 
-        After the four files, we configure your Google Business Profile, claim and align your Apple Business Connect listing, and fix NAP (name, address, phone) consistency across the directories AI engines actually read. Review schema gets added so star ratings travel into AI answers. Every change lands in a plain-language report so you can see what was done and why. No black-box reporting.
-      cta_text: "See detailed pricing"
+        四ファイルのあと、Google ビジネス プロフィールの設定、Apple Business Connect リスティングの確保と整合、そして AI エンジンが実際に読むディレクトリでの NAP（名前・住所・電話）整合を行います。星評価が AI の答えに乗るようレビュー用スキーマを追加します。すべての変更は、何をなぜ行ったかを平易な言葉で書いたレポートに残ります。ブラックボックス報告はしません。
+      cta_text: "詳細な料金を見る"
       cta_link: "/pricing/"

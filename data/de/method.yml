@@ -1,7 +1,7 @@
 method:
   enable: true
   title: "Unser Ansatz zu AEO"
-  intro: "Drei Säulen. Stärkt eine Taktik keine davon, machen wir sie nicht."
+  intro: "Drei Säulen. Stärkt eine Taktik nicht mindestens eine, wird sie nicht ausgeliefert."
   pillars:
     - id: "technical"
       title: "Technik"

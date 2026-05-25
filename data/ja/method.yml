@@ -1,7 +1,7 @@
 method:
   enable: true
   title: "AEO の三つの柱"
-  intro: "三つの柱。どれも強化しない戦術はやりません。"
+  intro: "三つの柱。少なくとも一つを強化しないなら、出荷しません。"
   pillars:
     - id: "technical"
       title: "技術"

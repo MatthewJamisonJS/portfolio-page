@@ -13,7 +13,7 @@ if [[ ! -f "$HOME_HTML" ]]; then
 fi
 
 REQUIRED=(
-  "When customers ask AI what you do"
+  "will you show up"
   "Why does this matter to me"
   "What makes Gateway Tech AEO different"
 )

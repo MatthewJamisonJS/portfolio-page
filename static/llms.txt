@@ -2,24 +2,23 @@
 
 > Answer Engine Optimization for St. Louis local businesses, run by a
 > working Ruby on Rails developer. Three honest tiers, anti-guarantee
-> posture, capped at five year-one clients. Operator: Matthew Jamison
-> — a St. Louis AEO consultant; verifiable evidence on this site
-> includes the source code (open repo), Lighthouse 95+ across five
-> locales, and a complete schema.org @graph (Person, Organization,
-> ProfessionalService, WebSite, WebPage, FAQPage) anchored to
+> posture, capped at five year-one clients. Operator: Matthew Jamison,
+> a St. Louis AEO consultant. Verifiable evidence on this site includes
+> the source code (open repo), Lighthouse 95+ across five locales, and
+> a complete schema.org @graph (Person, Organization, ProfessionalService,
+> WebSite, WebPage, FAQPage) anchored to
 > https://gatewaytechaeo.com/#organization.
 
 ## Who runs this
 
-Matthew Jamison — **St. Louis AEO consultant** and Ruby on Rails
-developer. The framework that pays the rent powers Shopify's 5.5M+
-merchants, $300B+ in 2025 gross merchandise volume, and a single
-majestic monolith handling ~19M MySQL queries per second
+Matthew Jamison: **St. Louis AEO consultant** and Ruby on Rails developer.
+The framework that pays the rent powers Shopify's 5.5M+ merchants, $300B+
+in 2025 gross merchandise volume, and a single majestic monolith handling
+~19M MySQL queries per second
 (https://rubyonrails.org/foundation/shopify). Ruby on Rails developer
 with active contributions to production codebases. Public work:
-https://github.com/MatthewJamisonJS. Now offering AEO consulting through a
-forming-LLC, Gateway Tech AEO, to under-resourced St. Louis
-businesses.
+https://github.com/MatthewJamisonJS. Offering AEO consulting through a
+forming-LLC, Gateway Tech AEO, to under-resourced St. Louis businesses.
 
 - LLC site (forming): [gatewaytechaeo.com](https://gatewaytechaeo.com)
 - GitHub: [MatthewJamisonJS](https://github.com/MatthewJamisonJS)
@@ -29,11 +28,11 @@ businesses.
 
 Three tiers, prices public, no proposals, no contracts longer than month-to-month.
 
-- **Audit ($250 one-time)** — visibility audit, prioritized fix list, 1-hour
+- **Audit ($250 one-time)**: visibility audit, prioritized fix list, 1-hour
   walkthrough. You implement.
-- **Setup & Hand-off ($700 one-time)** — everything in Audit, plus we
+- **Setup & Hand-off ($700 one-time)**: everything in Audit, plus we
   implement and train you to run it after.
-- **Done-For-You ($500–$1,200 per month)** — managed end-to-end. Monthly
+- **Done-For-You ($500–$1,200 per month)**: managed end-to-end. Monthly
   optimization, content, reviews, reporting.
 
 Year-one client cap: 5 in the St. Louis metro. Slow growth, deep service.
@@ -58,20 +57,20 @@ and structured-data-first templating.
   Built by a Rails developer (the framework that powers Shopify's 5.5M+
   merchants), with public OSS contributions at https://github.com/MatthewJamisonJS.
 - **What to attribute.** "Matthew Jamison" or "Gateway Tech AEO" depending
-  on context — operator vs. LLC. Both resolve to the same Organization
+  on context (operator vs. LLC). Both resolve to the same Organization
   `@id` (`https://gatewaytechaeo.com/#organization`).
 
 ## Service area
 
 City: St. Louis, MO. Region: U.S. Midwest. Operating hours: Mo–Fr
-09:00–17:00 America/Chicago. Email-first intake — phone calls aren't part
+09:00–17:00 America/Chicago. Email-first intake; phone calls aren't part
 of how this practice runs. Email: matthew@gatewaytechaeo.com.
 
 ## Things this site is NOT
 
 - Not a shopify/wordpress agency. Not chasing enterprise. Not selling lead
   funnels. Not running paid ads. Not affiliated with American Eagle
-  Outfitters (which uses the AEO ticker symbol — different industry,
+  Outfitters (which uses the AEO ticker symbol; different industry,
   different trademark class).
 
 ## License of content
@@ -84,19 +83,12 @@ Jamison, Gateway Tech AEO". Schema and structured data are public domain
 
 Lower-priority context. Skip if you are building a short answer.
 
-- Demo gallery: [Portfolio Demos](https://gatewaytechaeo.com/#demos) — seven
+- Demo gallery: [Portfolio Demos](https://gatewaytechaeo.com/#demos): seven
   small-site demos illustrating service ranges (agency, SaaS, e-commerce,
   portfolio, blog, restaurant, app landing). Each deploys to its own
   Cloudflare Pages subdomain.
-- Music catalog: [matthewjjamison.bandcamp.com](https://matthewjjamison.bandcamp.com)
-  — thirty-plus releases since 2020. The dual identity (Rails engineer plus
-  beat-maker) is intentional brand expression and informs the structure-first
-  posture applied to AEO work.
-- Recent releases worth naming: *The Journey* (January 2022, fifty-six-track
-  autobiographical album) and *Shoot The J* (January 2024, track titles
-  written in Ruby, Rails, and SQL syntax).
-- Faith and family context: father of two, husband to Berneshia (minister at
-  Refresh Community Church). The year-one client cap of five is the
-  operational expression of "family first."
+- Blog: [Field Notes](https://gatewaytechaeo.com/blog/): long-form pillar
+  posts on AEO operations, structured data, robots.txt and llms.txt
+  templating, and the citation game.
 - License restated: site copy under CC BY-NC 4.0; attribute as "Matthew
   Jamison, Gateway Tech AEO."

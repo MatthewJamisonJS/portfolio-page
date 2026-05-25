@@ -1,15 +1,15 @@
 method:
   enable: true
   title: "How we think about AEO"
-  intro: "Three pillars. If a tactic doesn't strengthen one, we don't do it."
+  intro: "Three pillars. If a tactic doesn't strengthen at least one, it doesn't ship."
   pillars:
     - id: "technical"
       title: "Technical"
       tagline: "Can AI find you?"
       icon: "ti-server"
       bullets:
-        - "Schema for LocalBusiness + FAQ"
-        - "Mobile speed under 3 seconds"
+        - "Schema for LocalBusiness and FAQ"
+        - "Mobile loads under 3 seconds"
         - "AI bots allowed in robots.txt"
     - id: "authority"
       title: "Authority"
@@ -17,8 +17,8 @@ method:
       icon: "ti-pulse"
       bullets:
         - "Google Business Profile complete"
-        - "Reviews + citations consistent"
-        - "Brand mentioned across the web"
+        - "Reviews and citations consistent"
+        - "Brand cited across the web"
     - id: "content"
       title: "Content"
       tagline: "Do you answer what they ask?"

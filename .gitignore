@@ -30,3 +30,6 @@ Thumbs.db
 # Worker node_modules (Workers are deployed via wrangler; lockfile committed)
 brief-intake-collector/node_modules/
 csp-report-collector/node_modules/
+
+# Local research / scrape outputs — never commit
+.firecrawl/

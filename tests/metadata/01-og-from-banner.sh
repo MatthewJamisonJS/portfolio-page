@@ -17,7 +17,7 @@ FAIL=0
 # AEO-2 Task 1.1: hero copy refactored to the "fork" question. Title fragment
 # updated to match the new banner.yml content.
 declare -a CHECKS=(
-  "en|index.html|en_US|When customers ask AI what you do"
+  "en|index.html|en_US|will you show up"
   "es|es/index.html|es_ES|"
   "ja|ja/index.html|ja_JP|"
   "fr|fr/index.html|fr_FR|"

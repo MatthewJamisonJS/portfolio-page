@@ -3,7 +3,7 @@ contact:
   enable: true
   title: "Project intake"
   subtitle: "Email-first intake. I reply within 48–96 hours."
-  content: "Tell me about your business so I can be useful right away. The more context the brief carries, the more tailored the first reply — I use what you send to draft something specific to your site, your city, and your customers. St. Louis local? Coffee meeting works too — same brief."
+  content: "Tell me about your business so I can be useful right away. The more context the brief carries, the more tailored the first reply. I use what you send to draft something specific to your site, your city, and your customers. St. Louis local? Coffee meeting works too: same brief."
 
   contact_form:
     enable: true

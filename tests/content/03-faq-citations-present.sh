@@ -20,7 +20,7 @@ FAIL=0
 # claim_phrase|expected_href_substring
 CLAIMS=(
   "Gartner forecasts traditional search volume|gartner.com/en/newsroom"
-  "Adobe Digital Insights reported AI traffic|business.adobe.com/blog"
+  "Adobe reported AI traffic|business.adobe.com/blog"
   "Whitespark 2026|whitespark.ca"
 )
 
@@ -51,10 +51,13 @@ for loc in "" es ja fr de; do
     fi
     # Pull a window around the phrase via node — BSD grep's bounded
     # repetition with large counts is unreliable; node handles it cleanly.
+    # Use lastIndexOf so we hit the visible HTML occurrence (which carries
+    # the <a href> wrapper) rather than the JSON-LD FAQPage block (which
+    # ships the same phrase but strips links).
     WINDOW=$(node -e "
       const fs = require('fs');
       const html = fs.readFileSync('$HTML', 'utf8');
-      const i = html.indexOf('$phrase');
+      const i = html.lastIndexOf('$phrase');
       if (i < 0) { process.exit(0); }
       const start = Math.max(0, i - 200);
       process.stdout.write(html.slice(start, i + 400));

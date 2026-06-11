@@ -10,26 +10,116 @@
         {{ with .Date }} · <time datetime="{{ .Format "2006-01-02" }}">Published {{ .Format "January 2, 2006" }}</time>{{ end }}
         {{ if and .Lastmod (ne .Lastmod .Date) }} · <time datetime="{{ .Lastmod.Format "2006-01-02" }}">Updated {{ .Lastmod.Format "January 2, 2006" }}</time>{{ end }}
       </div>
-      <p class="page-subtitle">Audit credits toward Setup if you continue. No long contracts.</p>
+      {{ with $data.subtitle }}<p class="page-subtitle">{{ . }}</p>{{ end }}
     </header>
 
-    <section class="pricing-grid">
-      {{ range $data.tiers }}
-      <article class="pricing-card{{ if .highlight }} pricing-highlight{{ end }}" id="tier-{{ .slug }}">
-        <h2>{{ .name }}</h2>
-        <p class="price">{{ .price }} <span class="cadence">{{ .cadence }}</span></p>
-        <p class="use-when">{{ .use_when }}</p>
-        <ul class="includes">
-          {{ range .includes }}<li>{{ . }}</li>{{ end }}
-        </ul>
-        <a href="{{ .cta_link }}" class="btn-fork btn-fork-primary">{{ .cta_label }} <span aria-hidden="true">→</span></a>
-      </article>
+    {{ with $data.principle }}
+    <p class="pricing-lead"><span class="pricing-lead__label">{{ .label }}.</span> {{ .body }}</p>
+    {{ end }}
+
+    <div class="svc-tabs">
+      {{ range $i, $tab := $data.tabs }}
+      <input class="svc-tab-radio" type="radio" name="svc-tab" id="svc-tab-{{ $tab.id }}"{{ if eq $i 0 }} checked{{ end }}>
       {{ end }}
-    </section>
 
-    <p class="pricing-footnote">{{ $data.footnote }}</p>
+      <div class="svc-tabs__list" role="tablist" aria-label="Service categories">
+        {{ range $data.tabs }}
+        <label class="svc-tabs__label" for="svc-tab-{{ .id }}">{{ .label }}</label>
+        {{ end }}
+      </div>
 
-    {{ partial "trust-moves.html" $different.blocks.trust }}
+      {{ range $tab := $data.tabs }}
+      <div class="svc-tabs__panel svc-tabs__panel--{{ $tab.id }}" id="svc-panel-{{ $tab.id }}">
+        {{ range $group := where $data.groups "tab" $tab.id }}
+
+          {{ if eq $group.display "feature" }}
+            {{ range $group.items }}
+            <div class="build-premium{{ if .highlight }} build-premium--start{{ end }}" id="tier-{{ .slug }}">
+              {{ if .highlight }}<p class="build-premium__flag">Start here</p>{{ end }}
+              <div class="build-premium__head">
+                <h2 class="build-premium__name">{{ .name }}</h2>
+                <p class="build-premium__price">{{ .price }} <span class="build-premium__cadence">{{ .cadence }}</span></p>
+              </div>
+              <p class="svc-what svc-what--lg">{{ .what }}</p>
+              <p class="svc-why">{{ .why }}</p>
+              <a class="build-premium__cta pricing-cta-btn" href="{{ .cta_link }}" data-service="{{ .slug }}">{{ .cta_label }} <span aria-hidden="true">→</span></a>
+            </div>
+            {{ end }}
+
+          {{ else if eq $group.display "rows" }}
+            <section class="offer-group">
+              <h2 class="offer-group__name">{{ $group.name }}</h2>
+              <ul class="offer-list" role="list">
+                {{ range $group.items }}
+                <li class="offer" id="tier-{{ .slug }}">
+                  <div class="offer__head">
+                    <h3 class="offer__name">{{ .name }}</h3>
+                    <p class="offer__price">{{ .price }} <span class="offer__cadence">{{ .cadence }}</span></p>
+                  </div>
+                  <p class="svc-what">{{ .what }}</p>
+                  <p class="svc-why">{{ .why }}</p>
+                  <a class="offer__cta pricing-cta-btn" href="{{ .cta_link }}" data-service="{{ .slug }}">{{ .cta_label }} <span aria-hidden="true">→</span></a>
+                </li>
+                {{ end }}
+              </ul>
+            </section>
+
+          {{ else }}{{/* cards */}}
+            <section class="pricing-section-block">
+              <h2 class="offer-group__name">{{ $group.name }}</h2>
+              <ul class="pricing-grid pricing-grid--cards" role="list">
+                {{ range $group.items }}
+                <li class="price-card{{ if .highlight }} price-card--featured{{ end }}" id="tier-{{ .slug }}">
+                  {{ if .highlight }}<p class="price-card__flag">Most chosen</p>{{ end }}
+                  <div class="price-card__head">
+                    <h3 class="price-card__name">{{ .name }}</h3>
+                    <p class="price-card__price">{{ .price }} <span class="price-card__cadence">{{ .cadence }}</span></p>
+                  </div>
+                  <p class="svc-what">{{ .what }}</p>
+                  <p class="svc-why">{{ .why }}</p>
+                  <a class="price-card__cta pricing-cta-btn" href="{{ .cta_link }}" data-service="{{ .slug }}">{{ .cta_label }} <span aria-hidden="true">→</span></a>
+                </li>
+                {{ end }}
+              </ul>
+            </section>
+          {{ end }}
+
+        {{ end }}
+      </div>
+      {{ end }}
+    </div>{{/* end .svc-tabs */}}
+
+    <div class="pricing-footer">
+      {{ with $data.ad_hoc }}{{ if .enable }}
+      <section class="pricing-footer__section" aria-labelledby="adhoc-heading">
+        <h2 class="pricing-footer__heading" id="adhoc-heading">{{ .heading }}</h2>
+        <ul class="addons-list" role="list">
+          <li class="addons-list__row">
+            <span class="addons-list__item">{{ .label }}</span>
+            <span class="addons-list__price">{{ .rate }} {{ .unit }}</span>
+          </li>
+        </ul>
+      </section>
+      {{ end }}{{ end }}
+
+      {{ with $data.wont_promise }}
+      <section class="pricing-callout" aria-labelledby="wont-promise-heading">
+        <h2 class="pricing-callout__heading" id="wont-promise-heading">{{ .label }}</h2>
+        <p>{{ .body }}</p>
+      </section>
+      {{ end }}
+
+      {{ with $data.declined }}
+      <section class="pricing-callout" aria-labelledby="declined-heading">
+        <h2 class="pricing-callout__heading" id="declined-heading">{{ .label }}</h2>
+        <p>{{ delimit .items ", " }}.</p>
+      </section>
+      {{ end }}
+
+      {{ with $data.footnote }}<p class="pricing-footer__note">{{ . }}</p>{{ end }}
+    </div>{{/* end .pricing-footer */}}
+
+    {{ with $different.blocks.trust }}{{ partial "trust-moves.html" . }}{{ end }}
 
     <footer class="page-footer">
       <a href="/#contact" class="btn-fork btn-fork-primary">Send a brief <span aria-hidden="true">→</span></a>

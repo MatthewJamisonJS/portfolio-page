@@ -21,9 +21,7 @@ pricing:
     - id: "build"
       label: "Umsetzung & Builds"
     - id: "programs"
-      label: "Programme & Retainer"
-    - id: "consulting"
-      label: "Beratung & Tracking"
+      label: "Programme"
 
   groups:
     - id: "diagnostic"
@@ -162,100 +160,6 @@ pricing:
           cta_label: "Programm planen"
           cta_link: "/?service=program#contact"
 
-    - id: "retainers"
-      tab: "programs"
-      display: "cards"
-      name: "Retainer"
-      items:
-        - slug: "foundation"
-          name: "Foundation"
-          price: "$2,500"
-          cadence: "pro Monat"
-          price_min: "2500"
-          price_max: "2500"
-          price_currency: "USD"
-          price_unit: "per month"
-          what: "Warten und überwachen"
-          why: "Das Erreichte halten"
-          scope: "Wartung, Monitoring, monatlicher Bericht — für ein Unternehmen, das das Erreichte hält."
-          cta_label: "Position halten"
-          cta_link: "/?service=foundation#contact"
-        - slug: "growth"
-          name: "Growth"
-          price: "$5,000"
-          cadence: "pro Monat"
-          price_min: "5000"
-          price_max: "5000"
-          price_currency: "USD"
-          price_unit: "per month"
-          highlight: true
-          what: "Inhalt plus Zitate"
-          why: "Sichtbarkeit weiter ausbauen"
-          scope: "Schema-Pflege, Content-Rhythmus, Zitatsaufbau, monatliches KI-Sichtbarkeits-Tracking und Reporting."
-          cta_label: "Growth wählen"
-          cta_link: "/?service=growth#contact"
-        - slug: "concierge"
-          name: "Concierge"
-          price: "$8,500"
-          cadence: "pro Monat"
-          price_min: "8500"
-          price_max: "8500"
-          price_currency: "USD"
-          price_unit: "per month"
-          what: "Vollservice, alle Kanäle"
-          why: "KI-Sichtbarkeit, erledigt"
-          scope: "Vollständiger SEO + AEO + GEO-Service, eigenes monatliches Reporting, Earned-Media-Outreach, vierteljährliche Strategie."
-          cta_label: "Concierge besprechen"
-          cta_link: "/?service=concierge#contact"
-
-    - id: "consulting"
-      tab: "consulting"
-      display: "rows"
-      name: "KI-Suchoptimierung — Engine-übergreifende Beratung"
-      items:
-        - slug: "consulting"
-          name: "KI-Sichtbarkeits-Beratung"
-          price: "Programm oder Retainer"
-          cadence: "nicht à la carte"
-          price_on_request: true
-          what: "Engine-übergreifende Strategie"
-          why: "Jede KI, ein Plan"
-          scope: "Entity-Konsolidierung im gesamten Web, Markenerwähnungs-Strategie (Erwähnungen korrelieren mehrfach stärker mit KI-Sichtbarkeit als Backlinks), Präsenz auf Bewertungsplattformen, die KI tatsächlich liest, und Messung, die zeigt, ob Sie gewinnen oder verlieren. Geliefert über ein Programm oder einen Retainer."
-          cta_label: "Programm besprechen"
-          cta_link: "/?service=consulting#contact"
-
-    - id: "tracking"
-      tab: "consulting"
-      display: "rows"
-      name: "Verwaltetes KI-Sichtbarkeits-Tracking"
-      items:
-        - slug: "tracking"
-          name: "Verwaltetes Tracking"
-          price: "$150–$500"
-          cadence: "pro Monat"
-          price_min: "150"
-          price_max: "500"
-          price_currency: "USD"
-          price_unit: "per month"
-          what: "Wir überwachen die Dashboards"
-          why: "Wissen, was sich geändert hat"
-          scope: "Tool-Einrichtung, laufendes Monitoring und ein verständlicher monatlicher Bericht über das, was sich bewegt hat und warum. Tracking-Tool-Abonnement wird separat zum Selbstkostenpreis abgerechnet."
-          cta_label: "Tracking einrichten"
-          cta_link: "/?service=tracking#contact"
-
-  # Ad-hoc hourly — footer addons row + its own Offer (UnitPriceSpecification,
-  # HUR) in head.html.
-  ad_hoc:
-    enable: true
-    heading: "Ad-hoc & außerhalb des Umfangs"
-    label: "Nicht im Umfang enthaltene Arbeit, für alle Leistungen"
-    rate: "$225"
-    unit: "/ Stunde"
-    price: "225"
-    price_currency: "USD"
-    cta_label: "Ad-hoc-Arbeit anfragen"
-    cta_link: "/?service=ad-hoc#contact"
-
   # Anti-guarantee posture (footer callout). Load-bearing honesty, not a disclaimer.
   wont_promise:
     label: "Was wir nicht versprechen"
@@ -271,7 +175,7 @@ pricing:
       - "Waffenverkauf"
       - "Unternehmen unter aktiven Regulierungsmaßnahmen"
 
-  footnote: "Diagnose wird auf die Implementierung angerechnet. Retainer monatlich kündbar. St. Louis, MO — bundesweit, remote."
+  footnote: "Diagnose wird auf die Implementierung angerechnet. Festpreis-Engagements ohne Bindung. St. Louis, MO — bundesweit, remote."
 
   # Schema-only Offer for free email intake. Consumed by ProfessionalService.offers
   # in head.html; not rendered in the catalog.

@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
-# /pricing renders the service catalog (diagnostic, programs, retainers, flat packages) + footer.
+# /pricing renders the service catalog (diagnostic, implementation, programs, flat packages) + footer.
+# Hourly ad-hoc + monthly retainers (Concierge/$8,500, $225/hr) were retired — assert kept services.
 set -e
 ROOT="$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )"
 REPO="$( cd -- "$ROOT/../.." &> /dev/null && pwd )"
@@ -12,10 +13,10 @@ if [[ ! -f "$P_HTML" ]]; then echo "FAIL — $P_HTML not built"; exit 1; fi
 REQ=(
   "AEO / AI Visibility Diagnostic"
   "\$1,750"
-  "Concierge"
-  "\$8,500"
-  "\$225"
-  "Foundation"
+  "30-Day Foundation Sprint"
+  "\$5,500"
+  "90-Day AI Visibility Program"
+  "\$495"
 )
 for r in "${REQ[@]}"; do
   if ! grep -q "$r" "$P_HTML"; then

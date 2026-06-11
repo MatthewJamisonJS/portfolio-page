@@ -11,13 +11,13 @@ different:
       ref: "method"
     deliverable:
       heading: "Ce que vous obtenez concrètement."
-      body: "Un plan en langage clair : quoi corriger, dans quel ordre, et ce que vaut chaque correction. Les guides d'exécution approfondis et les outils d'audit restent dans le cadre de l'engagement. Choisissez ce qui vous convient — un diagnostic ponctuel, une implémentation délimitée, un programme de 30 ou 90 jours, ou un contrat mensuel. Quand le projet appelle un nouveau site conçu pour être cité plutôt que retravaillé, nous le livrons avec notre studio partenaire, [Jamison Software Solutions](https://jamisonsoftwaresolutions.com). [Consultez le menu et les tarifs.](/pricing/)"
+      body: "Un plan en langage clair : quoi corriger, dans quel ordre, et ce que vaut chaque correction. Les guides d'exécution approfondis et les outils d'audit restent dans le cadre de l'engagement. Choisissez ce qui vous convient — un diagnostic ponctuel, une implémentation délimitée, ou un programme de 30 ou 90 jours. Quand le projet appelle un nouveau site conçu pour être cité plutôt que retravaillé, nous le livrons avec notre studio partenaire, [Jamison Software Solutions](https://jamisonsoftwaresolutions.com). [Consultez le menu et les tarifs.](/pricing/)"
     trust:
       heading: "Comment nous opérons."
       moves:
         - "L'éligibilité avant l'autorité. Nous ne vous vendrons pas de construction de citations sur un site que les robots ne peuvent pas lire ; la fondation passe en premier, sinon rien ne tient."
         - "Vous êtes propriétaire de tout ce que nous touchons : votre domaine, votre Google Business Profile, votre contenu, vos comptes."
-        - "Mois par mois. Pas de longs contrats, pas d'enfermement — partez quand ça cesse d'être rentable."
+        - "Missions à portée fixe, chiffrées avant de commencer. Pas de contrats à durée indéterminée, pas d'enfermement — vous décidez à chaque phase si vous continuez."
         - "Pas de placement garanti dans une réponse IA. Nous implémentons ce que les preuves soutiennent et rendons compte honnêtement des résultats. Quiconque promet une citation promet quelque chose que personne ne peut tenir."
     cta:
       pricing_label: "Voir les tarifs"

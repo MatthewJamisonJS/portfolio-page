@@ -1,6 +1,6 @@
 ---
 title: "Common questions about AEO, pricing, and how to start"
-description: "Sixteen direct answers on Answer Engine Optimization: costs, the diagnostic versus implementation, retainers, guarantees, Google Business Profile, working nationwide, and what's DIY-able."
+description: "Fifteen direct answers on Answer Engine Optimization: costs, the diagnostic versus implementation, programs, guarantees, Google Business Profile, working nationwide, and what's DIY-able."
 type: "faq"
 layout: "single"
 url: "/faq/"

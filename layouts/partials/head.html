@@ -259,7 +259,7 @@
 				"name": "Answer Engine Optimization & AI Search Visibility",
 				"provider": { "@id": "{{ site.BaseURL }}#organization" },
 				"image": "{{ site.BaseURL }}images/og/og-default.png",
-				"priceRange": "$225–$18,000",
+				"priceRange": "$495–$18,000",
 				"areaServed": {
 					"@type": "Country",
 					"name": "United States"
@@ -283,7 +283,7 @@
 					"Search Engine Optimization",
 					"Digital Marketing Consulting"
 				],
-				"description": "Answer Engine Optimization and AI-search visibility for businesses nationwide, run from St. Louis, Missouri. A one-time $1,750 diagnostic, scoped implementation, 30- and 90-day programs, monthly retainers from $2,500 to $8,500, AEO-native website builds, managed visibility tracking, and fixed-price small-business packages from $495. Ad-hoc work at $225/hr. Anti-guarantee posture: we implement what the evidence supports and report honestly against it.",
+				"description": "Answer Engine Optimization and AI-search visibility for businesses nationwide, run from St. Louis, Missouri. A one-time $1,750 diagnostic, scoped implementation, 30- and 90-day programs, AEO-native website builds, and fixed-price small-business packages from $495. Anti-guarantee posture: we implement what the evidence supports and report honestly against it.",
 				"offers": [
 					{{- $offers := slice -}}
 					{{- range $g := $pricing.groups }}{{ range $it := $g.items }}{{ if not $it.price_on_request }}{{ $offers = $offers | append $it }}{{ end }}{{ end }}{{ end -}}
@@ -330,7 +330,7 @@
 				"name": "{{ $brand.name }}",
 				"url": "{{ site.BaseURL }}",
 				"image": "{{ site.BaseURL }}images/og/og-default.png",
-				"priceRange": "$225–$18,000",
+				"priceRange": "$495–$18,000",
 				"founder": { "@id": "{{ site.BaseURL }}#person" },
 				"address": {
 					"@type": "PostalAddress",

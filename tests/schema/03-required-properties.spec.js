@@ -70,24 +70,29 @@ for (const rel of HOMES) {
     }
   }
 
-  // H7: recurring (retainer) Offers use priceSpecification, not a literal range
-  // string. Match by priceSpecification.unitText === "per month" — locale-
-  // agnostic; the Foundation/Growth/Concierge retainers all carry it.
+  // H7: range-priced Offers must express the range via priceSpecification
+  // minPrice/maxPrice, NOT a literal range string in `price`. Match a
+  // remaining range offer (minPrice !== maxPrice) — locale-agnostic; the
+  // scoped implementation ($2,500–$6,500), AEO-native build, and 90-day
+  // program all carry a true min/max range. (The per-month retainers that
+  // previously anchored this check were removed when hourly + retainer
+  // billing was retired.)
   const offers = Array.isArray(ps.offers) ? ps.offers : [];
-  const monthlyOffer = offers.find(o => o.priceSpecification && /per month/i.test(o.priceSpecification.unitText || ''));
-  if (!monthlyOffer) {
-    failures.push(`${rel}: no monthly-retainer Offer found`);
+  const rangeOffer = offers.find(o =>
+    o.priceSpecification &&
+    o.priceSpecification.minPrice &&
+    o.priceSpecification.maxPrice &&
+    o.priceSpecification.minPrice !== o.priceSpecification.maxPrice
+  );
+  if (!rangeOffer) {
+    failures.push(`${rel}: no range-priced Offer found (expected scoped implementation / build / 90-day program)`);
   } else {
-    if (typeof monthlyOffer.price === 'string' && /[–—\-]/.test(monthlyOffer.price)) {
-      failures.push(`${rel}: retainer Offer.price is a literal range string "${monthlyOffer.price}" — should use priceSpecification.minPrice/maxPrice (audit H7)`);
+    if (typeof rangeOffer.price === 'string' && /[–—\-]/.test(rangeOffer.price)) {
+      failures.push(`${rel}: range Offer.price is a literal range string "${rangeOffer.price}" — should use priceSpecification.minPrice/maxPrice (audit H7)`);
     }
-    if (!monthlyOffer.priceSpecification) {
-      failures.push(`${rel}: retainer Offer missing priceSpecification (audit H7)`);
-    } else {
-      const ps2 = monthlyOffer.priceSpecification;
-      for (const k of ['minPrice', 'maxPrice', 'priceCurrency']) {
-        if (!ps2[k]) failures.push(`${rel}: retainer priceSpecification missing "${k}"`);
-      }
+    const ps2 = rangeOffer.priceSpecification;
+    for (const k of ['minPrice', 'maxPrice', 'priceCurrency']) {
+      if (!ps2[k]) failures.push(`${rel}: range priceSpecification missing "${k}"`);
     }
   }
 }

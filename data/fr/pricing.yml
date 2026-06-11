@@ -21,9 +21,7 @@ pricing:
     - id: "build"
       label: "Implémentation et création"
     - id: "programs"
-      label: "Programmes et contrats"
-    - id: "consulting"
-      label: "Conseil et suivi"
+      label: "Programmes"
 
   groups:
     - id: "diagnostic"
@@ -162,100 +160,6 @@ pricing:
           cta_label: "Planifier le programme"
           cta_link: "/?service=program#contact"
 
-    - id: "retainers"
-      tab: "programs"
-      display: "cards"
-      name: "Contrats mensuels"
-      items:
-        - slug: "foundation"
-          name: "Foundation"
-          price: "$2,500"
-          cadence: "par mois"
-          price_min: "2500"
-          price_max: "2500"
-          price_currency: "USD"
-          price_unit: "per month"
-          what: "Maintenir et surveiller"
-          why: "Consolider vos acquis"
-          scope: "Maintenance, surveillance, rapport mensuel — pour une entreprise qui consolide les gains déjà acquis."
-          cta_label: "Tenir la ligne"
-          cta_link: "/?service=foundation#contact"
-        - slug: "growth"
-          name: "Growth"
-          price: "$5,000"
-          cadence: "par mois"
-          price_min: "5000"
-          price_max: "5000"
-          price_currency: "USD"
-          price_unit: "per month"
-          highlight: true
-          what: "Contenu et citations"
-          why: "Continuer à gagner en visibilité"
-          scope: "Mise à jour du schema, rythme de contenu, construction de citations, suivi et reporting mensuel de la visibilité IA."
-          cta_label: "Choisir Growth"
-          cta_link: "/?service=growth#contact"
-        - slug: "concierge"
-          name: "Concierge"
-          price: "$8,500"
-          cadence: "par mois"
-          price_min: "8500"
-          price_max: "8500"
-          price_currency: "USD"
-          price_unit: "per month"
-          what: "Service complet, tous canaux"
-          why: "Visibilité IA, prise en charge"
-          scope: "SEO + AEO + GEO complet, reporting mensuel propriétaire, actions earned media, stratégie trimestrielle."
-          cta_label: "Parler de Concierge"
-          cta_link: "/?service=concierge#contact"
-
-    - id: "consulting"
-      tab: "consulting"
-      display: "rows"
-      name: "Optimisation de la recherche IA — conseil multi-moteurs"
-      items:
-        - slug: "consulting"
-          name: "Conseil en Visibilité IA"
-          price: "Programme ou contrat"
-          cadence: "pas à la carte"
-          price_on_request: true
-          what: "Stratégie multi-moteurs"
-          why: "Chaque moteur, un plan"
-          scope: "Consolidation des entités sur le web, stratégie de mentions de marque (les mentions corrèlent avec la visibilité IA bien plus fortement que les backlinks), présence sur les plateformes d'avis que les moteurs lisent vraiment, et mesure qui vous indique si vous progressez ou reculez. Livré via un programme ou un contrat."
-          cta_label: "Discuter d'un programme"
-          cta_link: "/?service=consulting#contact"
-
-    - id: "tracking"
-      tab: "consulting"
-      display: "rows"
-      name: "Suivi géré de la visibilité IA"
-      items:
-        - slug: "tracking"
-          name: "Suivi géré"
-          price: "$150–$500"
-          cadence: "par mois"
-          price_min: "150"
-          price_max: "500"
-          price_currency: "USD"
-          price_unit: "per month"
-          what: "Nous surveillons les tableaux de bord"
-          why: "Savoir ce qui a changé"
-          scope: "Mise en place des outils, surveillance continue et lecture mensuelle en langage clair de ce qui a bougé et pourquoi. Abonnement aux outils de suivi facturé séparément au coût."
-          cta_label: "Configurer le suivi"
-          cta_link: "/?service=tracking#contact"
-
-  # Ad-hoc hourly — footer addons row + its own Offer (UnitPriceSpecification,
-  # HUR) in head.html.
-  ad_hoc:
-    enable: true
-    heading: "Travaux ponctuels et hors périmètre"
-    label: "Travaux hors périmètre, pour tous les services"
-    rate: "$225"
-    unit: "/ heure"
-    price: "225"
-    price_currency: "USD"
-    cta_label: "Demander un travail ponctuel"
-    cta_link: "/?service=ad-hoc#contact"
-
   # Anti-guarantee posture (footer callout). Load-bearing honesty, not a disclaimer.
   wont_promise:
     label: "Ce que nous ne promettons pas"
@@ -271,7 +175,7 @@ pricing:
       - "Ventes d'armes à feu"
       - "Entreprises sous action réglementaire en cours"
 
-  footnote: "Le diagnostic est crédité vers l'implémentation. Contrats mois par mois. St. Louis, MO — partout aux États-Unis, à distance."
+  footnote: "Le diagnostic est crédité vers l'implémentation. Missions à portée fixe, sans engagement. St. Louis, MO — partout aux États-Unis, à distance."
 
   # Schema-only Offer for free email intake. Consumed by ProfessionalService.offers
   # in head.html; not rendered in the catalog.

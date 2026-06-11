@@ -171,6 +171,10 @@
 						"addressCountry": "US"
 					}
 				},
+				"owns": [
+					{ "@id": "{{ site.BaseURL }}#organization" },
+					{ "@id": "https://jamisonsoftwaresolutions.com/#organization" }
+				],
 				"sameAs": [
 					"https://github.com/MatthewJamisonJS",
 					"https://www.linkedin.com/in/matthew-jamison-65486bab/",
@@ -181,17 +185,27 @@
 				"@type": "Organization",
 				"@id": "{{ site.BaseURL }}#organization",
 				"name": "{{ $brand.name }}",
-				{{ if not $brand.show_legal_status }}"legalName": "{{ $brand.name }} LLC",{{ end }}
+				{{ with $brand.legal_name }}"legalName": {{ . | jsonify | safeJS }},{{ end }}
 				"url": "{{ site.BaseURL }}",
 				"logo": "{{ site.BaseURL }}images/og/og-default.png",
 				"founder": { "@id": "{{ site.BaseURL }}#person" },
 				"areaServed": {
-					"@type": "City",
-					"name": "{{ $brand.city }}",
-					"addressRegion": "{{ $brand.region }}",
-					"addressCountry": "US"
+					"@type": "Country",
+					"name": "United States"
 				},
 				"sameAs": [ "https://github.com/MatthewJamisonJS" ]
+			},
+			{{/* Sister company. Jamison Software Solutions builds and owns client
+			     sites; Gateway Tech AEO is its dedicated search-visibility delivery
+			     arm. Distinct legal entities, same founder — modeled via the shared
+			     #person owner, NOT sameAs (sameAs would conflate two LLCs). */}}
+			{
+				"@type": "Organization",
+				"@id": "https://jamisonsoftwaresolutions.com/#organization",
+				"name": "Jamison Software Solutions, LLC",
+				"url": "https://jamisonsoftwaresolutions.com",
+				"founder": { "@id": "{{ site.BaseURL }}#person" },
+				"description": "Software studio building and owning client websites. Gateway Tech AEO, LLC is its dedicated search-visibility (AEO/GEO) delivery arm — a distinct legal entity with the same founder."
 			},
 			{
 				"@type": "WebSite",
@@ -242,15 +256,13 @@
 			{
 				"@type": "ProfessionalService",
 				"@id": "{{ site.BaseURL }}#service",
-				"name": "Answer Engine Optimization for St. Louis Local Businesses",
+				"name": "Answer Engine Optimization & AI Search Visibility",
 				"provider": { "@id": "{{ site.BaseURL }}#organization" },
 				"image": "{{ site.BaseURL }}images/og/og-default.png",
-				"priceRange": "$250 – $1,200/mo",
+				"priceRange": "$225–$18,000",
 				"areaServed": {
-					"@type": "City",
-					"name": "{{ $brand.city }}",
-					"addressRegion": "{{ $brand.region }}",
-					"addressCountry": "US"
+					"@type": "Country",
+					"name": "United States"
 				},
 				"geo": {
 					"@type": "GeoCoordinates",
@@ -271,21 +283,34 @@
 					"Search Engine Optimization",
 					"Digital Marketing Consulting"
 				],
-				"description": "Three-tier AEO consulting for local businesses: a $250 audit, a $700 setup-and-hand-off, and a $500 to $1,200 per month managed retainer. Anti-guarantee posture; capped at 5 St. Louis clients in year one.",
+				"description": "Answer Engine Optimization and AI-search visibility for businesses nationwide, run from St. Louis, Missouri. A one-time $1,750 diagnostic, scoped implementation, 30- and 90-day programs, monthly retainers from $2,500 to $8,500, AEO-native website builds, managed visibility tracking, and fixed-price small-business packages from $495. Ad-hoc work at $225/hr. Anti-guarantee posture: we implement what the evidence supports and report honestly against it.",
 				"offers": [
-					{{ range $i, $tier := $pricing.tiers }}{{ if $i }},{{ end }}
+					{{- $offers := slice -}}
+					{{- range $g := $pricing.groups }}{{ range $it := $g.items }}{{ if not $it.price_on_request }}{{ $offers = $offers | append $it }}{{ end }}{{ end }}{{ end -}}
+					{{ range $i, $it := $offers }}{{ if $i }},{{ end }}
 					{
 						"@type": "Offer",
-						"name": {{ $tier.name | jsonify | safeJS }},
-						"description": {{ $tier.use_when | jsonify | safeJS }},
+						"name": {{ $it.name | jsonify | safeJS }},
+						"description": {{ $it.scope | jsonify | safeJS }},
 						"priceSpecification": {
 							"@type": "PriceSpecification",
-							"minPrice": "{{ $tier.price_min }}",
-							"maxPrice": "{{ $tier.price_max }}",
-							"priceCurrency": "{{ $tier.price_currency | default "USD" }}",
-							"unitText": "{{ $tier.price_unit }}"
+							"minPrice": "{{ $it.price_min }}",
+							"maxPrice": "{{ $it.price_max }}",
+							"priceCurrency": "{{ $it.price_currency | default "USD" }}",
+							"unitText": {{ $it.price_unit | jsonify | safeJS }}
 						}
-					}{{ end }}{{ with $pricing.intake }}{{ if .enable }},
+					}{{ end }}{{ with $pricing.ad_hoc }}{{ if .enable }},
+					{
+						"@type": "Offer",
+						"name": {{ .label | jsonify | safeJS }},
+						"priceSpecification": {
+							"@type": "UnitPriceSpecification",
+							"price": "{{ .price }}",
+							"priceCurrency": "{{ .price_currency | default "USD" }}",
+							"unitCode": "HUR",
+							"unitText": {{ .unit | jsonify | safeJS }}
+						}
+					}{{ end }}{{ end }}{{ with $pricing.intake }}{{ if .enable }},
 					{
 						"@type": "Offer",
 						"name": {{ .name | jsonify | safeJS }},
@@ -305,7 +330,7 @@
 				"name": "{{ $brand.name }}",
 				"url": "{{ site.BaseURL }}",
 				"image": "{{ site.BaseURL }}images/og/og-default.png",
-				"priceRange": "$250 – $1,200/mo",
+				"priceRange": "$225–$18,000",
 				"founder": { "@id": "{{ site.BaseURL }}#person" },
 				"address": {
 					"@type": "PostalAddress",
@@ -324,10 +349,8 @@
 					}
 				],
 				"areaServed": {
-					"@type": "City",
-					"name": "{{ $brand.city }}",
-					"addressRegion": "{{ $brand.region }}",
-					"addressCountry": "US"
+					"@type": "Country",
+					"name": "United States"
 				},
 				"geo": {
 					"@type": "GeoCoordinates",

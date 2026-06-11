@@ -1,14 +1,14 @@
 ---
 banner:
   enable: true
-  kicker: "Answer Engine Optimization · St. Louis"
+  kicker: "Answer Engine Optimization · Nationwide, remote"
   title: "When they ask AI, <em>will you show up?</em>"
   subtitle: "We make sure you do"
   button:
     enable: true
-    label: "Why does this matter to me"
+    label: "Why this matters now"
     link: "/why/"
   secondary:
-    label: "What makes Gateway Tech AEO different"
+    label: "What Gateway Tech AEO does"
     link: "/different/"
 ---

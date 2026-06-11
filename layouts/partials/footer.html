@@ -45,11 +45,23 @@
 	const service = urlParams.get('service');
 
 	if (service) {
-		// Map service slugs to display names
+		// Map service slugs to display names. Slugs match data/{lang}/pricing.yml
+		// cta_link query params (?service=...) plus brief/general intake.
 		const serviceNames = {
-			'audit': 'Audit',
-			'setup': 'Setup & Hand-off',
-			'dfy': 'Done-For-You',
+			'diagnostic': 'AEO / AI Visibility Diagnostic',
+			'implementation': 'AEO Implementation',
+			'consulting': 'AI Visibility Consulting',
+			'sprint': '30-Day Foundation Sprint',
+			'program': '90-Day AI Visibility Program',
+			'foundation': 'Foundation retainer',
+			'growth': 'Growth retainer',
+			'concierge': 'Concierge retainer',
+			'build': 'AEO-native website build',
+			'tracking': 'Managed AI-visibility tracking',
+			'quick-check': 'AI Visibility Quick Check',
+			'schema-pack': 'Schema Pack',
+			'audit-lite': 'AEO Audit (lite)',
+			'ad-hoc': 'Ad-hoc / hourly work',
 			'brief': 'Project brief',
 			'general': 'General Inquiry'
 		};

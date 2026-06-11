@@ -1,6 +1,6 @@
 ---
-title: "Pricing: from $250 audit to $1,200/month done-for-you"
-description: "Three one-time and monthly tiers from $250 audit to done-for-you management. Transparent pricing, month-to-month contracts, no long commitment."
+title: "Services & pricing: diagnostic, implementation, programs, retainers"
+description: "What Gateway Tech AEO costs: a $1,750 AI-visibility diagnostic, scoped implementation ($2,500–$6,500), 30- and 90-day programs, monthly retainers from $2,500, fixed-price small-business packages from $495, and $225/hr ad-hoc work. Month-to-month, no lock-in."
 type: "pricing"
 layout: "single"
 url: "/pricing/"

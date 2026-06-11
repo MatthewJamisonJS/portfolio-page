@@ -1,6 +1,6 @@
 ---
 title: "About Matthew Jamison: Rails developer, AEO consultant"
-description: "Rails developer and AEO consultant in St. Louis. I build structured data, fix robots.txt, and help local businesses show up when people ask AI."
+description: "Rails developer and AEO consultant based in St. Louis, working nationwide. I build structured data, fix robots.txt, and help businesses show up when people ask AI."
 type: "about"
 layout: "single"
 url: "/about/"
@@ -9,7 +9,7 @@ lastmod: 2026-05-16
 author: "Matthew Jamison"
 ---
 
-I'm a Rails developer at Concordia Publishing House, a 160-year-old publisher in St. Louis. The codebase I work in daily serves about 500,000 users. My public OSS contributions live at [github.com/MatthewJamisonJS](https://github.com/MatthewJamisonJS). AEO consulting is what I do on the side, for local businesses that don't have a development team.
+I'm a Rails developer at Concordia Publishing House, a 160-year-old publisher in St. Louis. The codebase I work in daily serves about 500,000 users. My public OSS contributions live at [github.com/MatthewJamisonJS](https://github.com/MatthewJamisonJS). Gateway Tech AEO, LLC is the company I run alongside that engineering work — for businesses, local and nationwide, that don't have a development team of their own.
 
 ## Why AEO
 
@@ -37,6 +37,6 @@ I also have a full-time job. I take on a small number of clients at a time. If t
 
 ## How to reach me
 
-The contact form on the home page is the fastest path. Tell me your business name, your city, and what you're trying to be found for. I'll reply within 24 hours, usually same day.
+The contact form on the home page is the fastest path. Tell me your business name, where you are, and what you're trying to be found for. I'll reply within 48–96 hours, often sooner.
 
 [Send a brief →](/#contact)

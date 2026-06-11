@@ -1,23 +1,24 @@
 different:
   enable: true
   title: "What makes Gateway Tech AEO different."
-  subtitle: "One operator. Three audits in one report. A plan you can act on."
+  subtitle: "One operator. Eligibility first, then citability. A plan you can act on."
   blocks:
     audit_scope:
-      heading: "We audit three things, not one."
-      body: "Most AEO services only check whether AI can cite you. We audit your visibility across classical search (the ten blue links), answer engines (ChatGPT, Perplexity, AI Overview), and generative search (the citations themselves). One report covers all three because being absent is rarely only an AEO problem."
+      heading: "We read three surfaces, not one."
+      body: "Most AEO shops only check whether an engine can cite you. We read your visibility across classical search (the ten blue links), answer engines (ChatGPT, Perplexity, AI Overviews), and generative search (the citations themselves). One report covers all three, because being absent is rarely only an AEO problem — and the sources each engine trusts barely overlap, so a single playbook for all of them fails."
     pillars:
       heading: "Three pillars. If a tactic doesn't strengthen at least one, it doesn't ship."
       ref: "method"
     deliverable:
       heading: "What you actually get."
-      body: "An actionable audit summary in plain language: what to fix, in what order, and what each fix is worth. Deeper execution playbooks and the audit tooling stay inside the engagement. Pick the [pricing tier](/pricing/) that fits your bandwidth: DIY Audit, Setup & Hand-off, or Done-For-You managed service."
+      body: "A plain-language plan: what to fix, in what order, and what each fix is worth. The deeper execution playbooks and the audit tooling stay inside the engagement. Pick what fits — a one-time diagnostic, scoped implementation, a 30- or 90-day program, or a monthly retainer. When the job calls for a new site built to be cited rather than retrofitted, we deliver it with our sister studio, [Jamison Software Solutions](https://jamisonsoftwaresolutions.com). [See the menu and pricing.](/pricing/)"
     trust:
       heading: "How we operate."
       moves:
-        - "Year one is capped at 5 St. Louis clients. Slow growth means deep service."
+        - "Eligibility before authority. We won't sell you citation-building on a site crawlers can't read; the foundation comes first or nothing sticks."
         - "You own everything we touch: your domain, your Google Business Profile, your content, your accounts."
-        - "Month-to-month, no long contracts. Stop when you want."
+        - "Month-to-month. No long contracts, no lock-in — leave when it stops paying off."
+        - "No guaranteed placement in an AI answer. We implement what the evidence supports and report honestly against it. Anyone promising a citation is promising something no one can keep."
     cta:
       pricing_label: "See pricing"
       pricing_link: "/pricing/"

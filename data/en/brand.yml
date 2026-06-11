@@ -2,8 +2,9 @@ brand:
   # Single source of truth for brand identity. Swap `name` to retarget
   # everything (hero, footer, schema, OG meta) on next rebuild.
   name: "Gateway Tech AEO"
-  legal_status: "LLC formation in progress"
-  show_legal_status: true            # toggle false once LLC clears
+  legal_status: "Gateway Tech AEO, LLC"
+  legal_name: "Gateway Tech AEO, LLC"
+  show_legal_status: false           # LLC cleared — legalName now emitted in schema
   operator: "Matthew Jamison"
   city: "St. Louis"
   region: "MO"

@@ -1,68 +1,280 @@
 pricing:
   enable: true
-  title: "Three honest tiers"
-  pick_label: "How to pick"
-  pick_text: "Audit: you have time and want to learn. Setup & Hand-off: you want it built right but you'll run it after. Done-For-You: you have a budget but no time. Still deciding? [Read about what we audit](/different/) across AI search, classical search, and third-party listings."
-  footnote: "Audit credits toward Setup if you continue. No long contracts. Year one is capped at 5 St. Louis clients: slow growth means deep service."
-  tiers:
-    - slug: "audit"
-      name: "Audit"
-      price: "$250"
-      cadence: "one-time"
-      # Structured-price fields drive ProfessionalService.offers[].priceSpecification
-      # in head.html (audit H7 fix). The visible `price` / `cadence` strings stay for
-      # human display in the pricing card; the schema reads from these numeric fields.
-      price_min: "250"
-      price_max: "250"
-      price_currency: "USD"
-      price_unit: "one-time"
-      highlight: false
-      use_when: "You're skeptical and want to see the work before you commit. You'll fix things yourself after."
-      includes:
-        - "Full visibility audit"
-        - "Prioritized fix list"
-        - "1-hour walkthrough"
-        - "You implement"
-      cta_label: "Start with an audit"
-      cta_link: "/?service=audit#contact"
-    - slug: "setup"
-      name: "Setup & Hand-off"
-      price: "$700"
-      cadence: "one-time"
-      price_min: "700"
-      price_max: "700"
-      price_currency: "USD"
-      price_unit: "one-time"
-      highlight: true
-      use_when: "You want it built right, then you run it after a training session."
-      includes:
-        - "Everything in Audit"
-        - "Implementation done"
-        - "Training session"
-        - "You run it after"
-      cta_label: "Pick Setup & Hand-off"
-      cta_link: "/?service=setup#contact"
-    - slug: "dfy"
-      name: "Done-For-You"
-      price: "$500–1,200"
-      cadence: "per month"
-      price_min: "500"
-      price_max: "1200"
-      price_currency: "USD"
-      price_unit: "per month"
-      highlight: false
-      use_when: "You have a budget but no time. You want it managed end-to-end."
-      includes:
-        - "Everything in Setup"
-        - "Monthly optimization"
-        - "Content & reviews"
-        - "Reporting + strategy"
-      cta_label: "Talk about a retainer"
-      cta_link: "/?service=dfy#contact"
-  # Schema-only Offer for free email intake. Not rendered in pricing section;
-  # consumed by ProfessionalService.offers in head.html. Audit H6 reframe —
-  # replaces the dropped "Discovery Call" Offer (phone-call posture removed in
-  # commit d8d8800).
+  title: "Services & pricing"
+  subtitle: "Getting businesses found, trusted, and cited by AI."
+  # Punchy lead above the tabs. Kept short on purpose.
+  principle:
+    label: "How it works"
+    body: "Eligibility first, then citability."
+
+  # ---------------------------------------------------------------------------
+  # PRESENTATION: CSS-only segmented tabs (mirrors jamisonsoftwaresolutions.com
+  # /services). `tabs` = the segmented control; each group carries a `tab` and a
+  # `display` (feature | cards | rows).
+  # Each item shows a 4-word `what` + 4-word `why` + CTA on the page. The longer
+  # `scope` is NOT rendered — it feeds ProfessionalService.offers[] in head.html
+  # and the ServiceCatalog ItemList (rich, citable detail for answer engines).
+  # ---------------------------------------------------------------------------
+  tabs:
+    - id: "diagnostics"
+      label: "Diagnostics & packages"
+    - id: "build"
+      label: "Implementation & builds"
+    - id: "programs"
+      label: "Programs & retainers"
+    - id: "consulting"
+      label: "Consulting & tracking"
+
+  groups:
+    - id: "diagnostic"
+      tab: "diagnostics"
+      display: "feature"
+      name: "Start here: the AEO / AI Visibility Diagnostic"
+      items:
+        - slug: "diagnostic"
+          name: "AEO / AI Visibility Diagnostic"
+          price: "$1,750"
+          cadence: "one-time"
+          price_min: "1750"
+          price_max: "1750"
+          price_currency: "USD"
+          price_unit: "one-time"
+          highlight: true
+          what: "Your AI-visibility report"
+          why: "See what's blocking you"
+          scope: "Robots/crawler-access audit (the 2026 three-tier crawler reality, not 'block GPTBot'), Google Business Profile + NAP-consistency check, an AI-visibility spot test against real prompts, a review-and-authority read, a 10–15 page report, a 30-minute call, and a prioritized roadmap. Delivered in 10–14 days. Credited toward implementation if you proceed."
+          cta_label: "Start with a diagnostic"
+          cta_link: "/?service=diagnostic#contact"
+
+    - id: "flat-packages"
+      tab: "diagnostics"
+      display: "cards"
+      name: "Small-business flat packages"
+      items:
+        - slug: "quick-check"
+          name: "AI Visibility Quick Check"
+          price: "$495"
+          cadence: "one-time"
+          price_min: "495"
+          price_max: "495"
+          price_currency: "USD"
+          price_unit: "one-time"
+          what: "Fast visibility snapshot"
+          why: "Three fixes, ranked"
+          scope: "Where you stand across the major engines, and the three things to fix first."
+          cta_label: "Get a Quick Check"
+          cta_link: "/?service=quick-check#contact"
+        - slug: "schema-pack"
+          name: "Schema Pack"
+          price: "$895"
+          cadence: "one-time"
+          price_min: "895"
+          price_max: "895"
+          price_currency: "USD"
+          price_unit: "one-time"
+          what: "Validated schema, done"
+          why: "Engines can read you"
+          scope: "LocalBusiness + FAQPage + Person schema, generated from your real data and validated in Google's Rich Results Test."
+          cta_label: "Order the Schema Pack"
+          cta_link: "/?service=schema-pack#contact"
+        - slug: "audit-lite"
+          name: "AEO Audit (lite)"
+          price: "$1,495"
+          cadence: "one-time"
+          price_min: "1495"
+          price_max: "1495"
+          price_currency: "USD"
+          price_unit: "one-time"
+          what: "Small-business diagnostic"
+          why: "Single-location focus"
+          scope: "The diagnostic, scaled for a single-location small business."
+          cta_label: "Book the lite audit"
+          cta_link: "/?service=audit-lite#contact"
+
+    - id: "implementation"
+      tab: "build"
+      display: "feature"
+      name: "Answer Engine Optimization — implementation"
+      items:
+        - slug: "implementation"
+          name: "AEO implementation"
+          price: "$2,500–$6,500"
+          cadence: "by scope"
+          price_min: "2500"
+          price_max: "6500"
+          price_currency: "USD"
+          price_unit: "by scope"
+          what: "We build the foundation"
+          why: "Eligible to be cited"
+          scope: "Robots.txt corrected for the 2026 crawler split (allow OAI-SearchBot, Claude-SearchBot, PerplexityBot). LocalBusiness, FAQPage, and Person schema, validated, with schema text matched to visible copy. Answer-first rewrites — the answer in sentence one. Google Business Profile claimed and completed; one canonical NAP propagated across the directories AI ingests. Bing Webmaster Tools, sitemap submission, and IndexNow."
+          cta_label: "Scope an implementation"
+          cta_link: "/?service=implementation#contact"
+
+    - id: "website-build"
+      tab: "build"
+      display: "feature"
+      name: "AEO-native website build"
+      items:
+        - slug: "build"
+          name: "AEO-native website build"
+          price: "$6,000–$15,000"
+          cadence: "by scope"
+          price_min: "6000"
+          price_max: "15000"
+          price_currency: "USD"
+          price_unit: "by scope"
+          what: "New cite-ready site"
+          why: "Built to be cited"
+          scope: "Schema-first architecture, entity consistency baked in, answer-first content, Bing and IndexNow wired from launch. Delivered jointly with Jamison Software Solutions, LLC."
+          cta_label: "Scope a build"
+          cta_link: "/?service=build#contact"
+
+    - id: "programs"
+      tab: "programs"
+      display: "cards"
+      name: "Productized programs"
+      items:
+        - slug: "sprint"
+          name: "30-Day Foundation Sprint"
+          price: "$5,500"
+          cadence: "30-day program"
+          price_min: "5500"
+          price_max: "5500"
+          price_currency: "USD"
+          price_unit: "30-day program"
+          what: "Eligibility in 30 days"
+          why: "Foundation locked fast"
+          scope: "Crawler access, schema, answer-first rewrites, GBP + directories, Bing + IndexNow. Eligibility, locked in 30 days."
+          cta_label: "Book the sprint"
+          cta_link: "/?service=sprint#contact"
+        - slug: "program"
+          name: "90-Day AI Visibility Program"
+          price: "$12,000–$18,000"
+          cadence: "90-day program"
+          price_min: "12000"
+          price_max: "18000"
+          price_currency: "USD"
+          price_unit: "90-day program"
+          highlight: true
+          what: "Eligibility through citability"
+          why: "Get named by engines"
+          scope: "The sprint, plus content cadence, citation building, and earned-media groundwork. Eligibility through early citability."
+          cta_label: "Plan the program"
+          cta_link: "/?service=program#contact"
+
+    - id: "retainers"
+      tab: "programs"
+      display: "cards"
+      name: "Retainers"
+      items:
+        - slug: "foundation"
+          name: "Foundation"
+          price: "$2,500"
+          cadence: "per month"
+          price_min: "2500"
+          price_max: "2500"
+          price_currency: "USD"
+          price_unit: "per month"
+          what: "Maintain and monitor"
+          why: "Hold your ground"
+          scope: "Maintenance, monitoring, monthly report — for a business holding the ground it's gained."
+          cta_label: "Hold the line"
+          cta_link: "/?service=foundation#contact"
+        - slug: "growth"
+          name: "Growth"
+          price: "$5,000"
+          cadence: "per month"
+          price_min: "5000"
+          price_max: "5000"
+          price_currency: "USD"
+          price_unit: "per month"
+          highlight: true
+          what: "Content plus citations"
+          why: "Keep gaining visibility"
+          scope: "Schema upkeep, content cadence, citation building, monthly AI-visibility tracking and reporting."
+          cta_label: "Pick Growth"
+          cta_link: "/?service=growth#contact"
+        - slug: "concierge"
+          name: "Concierge"
+          price: "$8,500"
+          cadence: "per month"
+          price_min: "8500"
+          price_max: "8500"
+          price_currency: "USD"
+          price_unit: "per month"
+          what: "Full-service, all channels"
+          why: "AI visibility, handled"
+          scope: "Full-service SEO + AEO + GEO, proprietary monthly reporting, earned-media outreach, quarterly strategy."
+          cta_label: "Talk Concierge"
+          cta_link: "/?service=concierge#contact"
+
+    - id: "consulting"
+      tab: "consulting"
+      display: "rows"
+      name: "AI Search Optimization — cross-engine consulting"
+      items:
+        - slug: "consulting"
+          name: "AI Visibility Consulting"
+          price: "Program or retainer"
+          cadence: "not à la carte"
+          price_on_request: true
+          what: "Cross-engine strategy"
+          why: "Every engine, one plan"
+          scope: "Entity consolidation across the web, brand-mention strategy (mentions correlate with AI visibility several times more strongly than backlinks do), review-platform presence on the sites engines actually read, and measurement that tells you whether you're gaining or slipping. Delivered through a program or retainer."
+          cta_label: "Talk through a program"
+          cta_link: "/?service=consulting#contact"
+
+    - id: "tracking"
+      tab: "consulting"
+      display: "rows"
+      name: "Managed AI-visibility tracking"
+      items:
+        - slug: "tracking"
+          name: "Managed tracking"
+          price: "$150–$500"
+          cadence: "per month"
+          price_min: "150"
+          price_max: "500"
+          price_currency: "USD"
+          price_unit: "per month"
+          what: "We watch the dashboards"
+          why: "Know what changed"
+          scope: "Tool setup, ongoing monitoring, and a plain-language monthly read of what moved and why. Tracking-tool subscription billed separately at cost."
+          cta_label: "Set up tracking"
+          cta_link: "/?service=tracking#contact"
+
+  # Ad-hoc hourly — footer addons row + its own Offer (UnitPriceSpecification,
+  # HUR) in head.html.
+  ad_hoc:
+    enable: true
+    heading: "Ad-hoc & out-of-scope"
+    label: "Out-of-scope work, across all services"
+    rate: "$225"
+    unit: "/ hour"
+    price: "225"
+    price_currency: "USD"
+    cta_label: "Ask about ad-hoc work"
+    cta_link: "/?service=ad-hoc#contact"
+
+  # Anti-guarantee posture (footer callout). Load-bearing honesty, not a disclaimer.
+  wont_promise:
+    label: "What we won't promise"
+    body: "No guaranteed citations. A single model update can replace cited sources overnight. We implement what the evidence supports and report honestly against it."
+
+  # Industries declined (footer callout).
+  declined:
+    label: "Industries we decline"
+    items:
+      - "Cryptocurrency or NFTs"
+      - "MLM or pyramid structures"
+      - "Adult content"
+      - "Firearms sales"
+      - "Businesses under active regulatory action"
+
+  footnote: "Diagnostic credits toward implementation. Retainers month-to-month. St. Louis, MO — nationwide, remote."
+
+  # Schema-only Offer for free email intake. Consumed by ProfessionalService.offers
+  # in head.html; not rendered in the catalog.
   intake:
     enable: true
     name: "Project brief intake"

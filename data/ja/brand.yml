@@ -1,8 +1,9 @@
 # TODO: translate to Japanese once English copy is locked
 brand:
   name: "Gateway Tech AEO"
-  legal_status: "LLC formation in progress"
-  show_legal_status: true
+  legal_status: "Gateway Tech AEO, LLC"
+  legal_name: "Gateway Tech AEO, LLC"
+  show_legal_status: false
   operator: "Matthew Jamison"
   city: "St. Louis"
   region: "MO"

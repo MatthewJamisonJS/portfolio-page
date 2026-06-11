@@ -1,6 +1,6 @@
 ################################# Default configuration ###################
 baseURL = "https://gatewaytechaeo.com/"
-title = "When customers ask AI, will your St. Louis business show up?"
+title = "When customers ask AI, will your business show up?"
 theme = "meghna"
 # Default time zone for time stamps
 timeZone = "America/Chicago"
@@ -95,7 +95,7 @@ link = "plugins/lazy-load/lozad.min.js"
 [params]
 logo = "images/logo.png"
 # Meta data
-description = "Answer Engine Optimization for St. Louis local businesses. Get cited by ChatGPT, Perplexity, and Google's AI Overview before your competitors do."
+description = "Answer Engine Optimization that gets your business cited by ChatGPT, Perplexity, and Google's AI Overviews. St. Louis-based, working with B2B clients nationwide."
 author = "Matthew Jamison"
 # Google Analytics (add your tracking ID when ready)
 google_analytics_id = ""

@@ -4,34 +4,36 @@ home:
     - id: "what-is-aeo"
       heading: "What is Answer Engine Optimization?"
       body: |
-        AEO is the work you do so AI tools cite you when a customer asks. ChatGPT, Perplexity, Google's AI Overview, Claude, Apple Intelligence, Bing Copilot. SEO chases the ten blue links; AEO targets being the cited answer. Same technical hygiene (schema, page speed, clean URLs), different finish line. SEO builds discoverability. AEO builds something the AI can quote.
+        AEO is the work you do so AI tools cite you when someone asks. ChatGPT, Perplexity, Google's AI Overviews, Claude, Apple Intelligence, Bing Copilot. SEO chased the ten blue links; AEO targets being the cited answer. Same technical hygiene underneath (schema, page speed, clean URLs), different finish line. SEO built discoverability. AEO builds something an engine can quote.
 
-        How people search has changed. Instead of typing "plumber near me" and scanning ten results, customers ask a chat assistant the whole question: "Who's the best emergency plumber in south St. Louis that opens early?" They get one sentence back. One or two names. Sometimes a link. If you're not in the answer, the rest of your marketing doesn't get to work.
+        How people search changed. Instead of typing a keyword and scanning a page of results, they ask the whole question — "who's the best emergency plumber in south St. Louis that opens early," or "which firms do AEO for B2B SaaS" — and they get one or two names back, sometimes a link, often no link at all. If you're not in that answer, the rest of your marketing never gets a turn.
 
     - id: "why-matters-local"
-      heading: "Why this matters for St. Louis local businesses"
+      heading: "Why this matters now"
       body: |
-        45% of local consumers ask AI for business recommendations. A year ago that number was 6%. The Yellow Pages-to-Google migration didn't move this fast. Most St. Louis local businesses are still invisible to it: blocked robots.txt, no schema, unclaimed listings. Your competitors get cited when AI looks up plumbers, accountants, realtors; you don't. The customers are real and the gap is widening every quarter.
+        Search stopped being ten blue links. People ask an assistant and act on what it says back. BrightLocal's 2026 survey put AI use for business recommendations at 45%, up from 6% a year earlier; the Yellow-Pages-to-Google shift never moved that fast. The catch is that being cited isn't the same as ranking. Whitespark found AI Overviews on roughly 48% of tracked queries, yet only about 17% of the sources those answers cite also sit in Google's organic top ten. You can own page one and still be absent from the answer.
+
+        Most businesses are invisible to this for boring reasons: a robots.txt that blocks the crawlers, no schema, listings nobody claimed. That's the gap, and it widens every quarter. [Read the six facts behind it.](/why/)
 
     - id: "how-we-work"
-      heading: "How we work"
+      heading: "How the work is sequenced"
       body: |
-        Three pillars guide every call: **Technical** (can AI find you?), **Authority** (can AI trust you?), **Content** (do you answer what they ask?). We audit all three, write you a prioritized fix list, and help you act on it. [Read what makes us different.](/different/)
+        Two layers, in order. **Eligibility** first — the entity exists, crawlers can reach it, the answers are machine-readable. **Citability** second — enough outside sources corroborate you that an engine trusts you enough to name you. Pour authority on a broken foundation and you amplify nothing, so we don't.
 
-        Pick the tier that fits your bandwidth. Audit if you want to learn it and run it yourself. Setup & Hand-off if you want it built right then handed over. Done-For-You if you want it managed end-to-end. Every engagement starts the same way: a written audit you keep, whether you stay with us or not. The audit names the specific problems on your site, ranks them by impact, shows the verifiable evidence. No proposals dressed up as reports.
+        Most engagements open with a diagnostic: a read of where you stand across the major engines and exactly what's blocking you, credited back if you go on to implementation. From there it's scoped implementation, a 30- or 90-day program, or a monthly retainer — whatever matches how much you want to own yourself versus hand off. [See the full menu and what each costs.](/pricing/)
 
     - id: "who-this-for"
       heading: "Who this is for, and who it isn't"
       body: |
-        This works for service businesses with tight geography. Plumbers, electricians, HVAC, dental, legal, accounting, home repair, real estate, local retail. The sharper your service area, the better AEO performs: answer engines weigh local intent heavily and the competitive field shrinks. If you're a SaaS trying to rank nationally on Google, classical SEO and paid ads own your ROI. If you're a local business around St. Louis, AEO is the lever almost nobody is pulling yet.
+        Businesses that want to be the answer an engine gives. Local service companies with tight geography do especially well, because answer engines weigh local intent heavily and the competitive field is thin; B2B firms selling nationwide benefit too, since their buyers research by asking. The work is the same shape either way: make the entity legible, then make it cited.
 
-        We cap year one at 5 clients. Local work needs attention; if you need us to add you to a roster of 100, we're not the fit. We prefer owner-operators and small teams. We won't work with multi-location chains, lead-generation farms, or any business whose model depends on hiding the real price. Honest businesses are the only kind that benefit from being more findable.
+        We don't take cryptocurrency or NFT projects, MLM structures, adult content, firearms sales, or anyone under active regulatory action. And we don't promise citations — retrieval pipelines re-rank on their own schedule, and one model update can swap out a chunk of previously cited sources overnight. What we promise is honest work you can verify and accounts you keep full control of.
 
     - id: "day-one-deliverables"
-      heading: "What you get on day one"
+      heading: "What gets wired first"
       body: |
-        Four technical foundations get wired on day one. **Schema markup** tags your business, hours, address, reviews, and FAQs in the format AI engines read natively. **robots.txt** explicitly allows GPTBot, ClaudeBot, and PerplexityBot to crawl your site (most local businesses block them by accident). **Verified sitemap** lists every page so indexing is complete. **llms.txt** points AI tools at your licensing, privacy policies, and anything off-limits. These four files take an afternoon. Most local sites have zero of them. That's the gap.
+        The foundation is a handful of files most sites are missing. **Schema markup** tags your business, hours, address, reviews, and FAQs in the structured format engines read natively. **robots.txt** gets corrected for the 2026 crawler split — answer crawlers like `OAI-SearchBot`, `Claude-SearchBot`, and `PerplexityBot` allowed by name, training crawlers left as a separate decision you make on purpose, not by accident. A **verified sitemap** plus **IndexNow** and **Bing Webmaster Tools** cover the cheapest high-leverage signal most shops skip, and an **llms.txt** points AI tools at what's licensed and what's off-limits.
 
-        After the four files, we configure your Google Business Profile, claim and align your Apple Business Connect listing, and fix NAP (name, address, phone) consistency across the directories AI engines actually read. Review schema gets added so star ratings travel into AI answers. Every change lands in a plain-language report so you can see what was done and why. No black-box reporting.
-      cta_text: "See detailed pricing"
+        Then the local layer: Google Business Profile claimed and completed, one canonical NAP (name, address, phone) propagated across the directories engines actually ingest, review schema added so star ratings travel into answers. Every change lands in a plain-language report, so you can see what was done and why. No black-box dashboards.
+      cta_text: "See services & pricing"
       cta_link: "/pricing/"

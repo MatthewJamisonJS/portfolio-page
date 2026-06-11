@@ -1,7 +1,7 @@
 why:
   enable: true
   title: "Your customers ask AI about businesses like yours."
-  subtitle: "Most local businesses are invisible to it."
+  subtitle: "Most businesses are invisible to it."
   intro: "Six facts, all from public sources you can verify in 30 seconds. They build the case in order."
   stats:
     - id: "adoption"

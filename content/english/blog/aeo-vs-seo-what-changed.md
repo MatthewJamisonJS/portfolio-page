@@ -66,7 +66,7 @@ The author-bio card at the bottom of every post on this site exists for the huma
 
 ## What didn't change: the local pack
 
-For a St. Louis local business, [Google Business Profile (GBP)](https://www.google.com/business/) is still the highest-ROI lever. [Whitespark's 2026 Local Search Ranking Factors Report](https://whitespark.ca/local-search-ranking-factors/) puts Primary GBP Category at #1 for local pack appearance. Answer engines pull from GBP heavily; Perplexity and ChatGPT both cite Google's local data when answering "best X in St. Louis" prompts. If you have to pick one thing to fix first, it's GBP, not your website.
+For a local business, [Google Business Profile (GBP)](https://www.google.com/business/) is still the highest-ROI lever. [Whitespark's 2026 Local Search Ranking Factors Report](https://whitespark.ca/local-search-ranking-factors/) puts Primary GBP Category at #1 for local pack appearance. Answer engines pull from GBP heavily; Perplexity and ChatGPT both cite Google's local data when answering "best X near me" prompts. If you have to pick one thing to fix first, it's GBP, not your website.
 
 ## What changed: review surfaces compound faster
 
@@ -74,9 +74,9 @@ Reviews used to influence ranking. Now they influence *citation* in a measurable
 
 ## What this practice does
 
-I run [Gateway Tech AEO](/) as the side practice for what I do during the day on a production Rails 8 codebase. The same engineering rigor that keeps that codebase from breaking is what gets applied to a Mexican restaurant's GBP and schema markup. [Three tiers, prices public](/#pricing): an audit at $250, a setup-and-hand-off at $700, a managed retainer between $500 and $1,200 a month. I cap year one at five St. Louis clients. The cap is what lets me actually do the work myself instead of selling a slide deck.
+I run [Gateway Tech AEO](/) alongside what I do during the day on a production Rails 8 codebase. The same engineering rigor that keeps that codebase from breaking is what gets applied to a Mexican restaurant's GBP and schema markup. [Prices are public](/pricing/): a $1,750 diagnostic, scoped implementation from $2,500, 30- and 90-day programs, and monthly retainers from $2,500. No proposals dressed up as reports — you see exactly what you're buying.
 
-If you're a St. Louis local business owner wondering whether AI answer engines are sending you traffic, [send a brief](/#contact). I'll reply in 48–96 hours with something specific to your business, not a generic pitch.
+If you're wondering whether AI answer engines are sending you traffic, [send a brief](/#contact). I'll reply in 48–96 hours with something specific to your business, not a generic pitch.
 
 ## Further reading on this site
 

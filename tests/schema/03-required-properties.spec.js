@@ -70,25 +70,23 @@ for (const rel of HOMES) {
     }
   }
 
-  // H7: DFY Offer uses priceSpecification not literal range string.
-  // Match by priceSpecification.unitText === "per month" — locale-agnostic;
-  // the EN name "Done-For-You" is translated in ES ("Servicio Gestionado")
-  // and FR ("Service géré"), so a name regex misses those locales.
+  // H7: recurring (retainer) Offers use priceSpecification, not a literal range
+  // string. Match by priceSpecification.unitText === "per month" — locale-
+  // agnostic; the Foundation/Growth/Concierge retainers all carry it.
   const offers = Array.isArray(ps.offers) ? ps.offers : [];
-  const dfy = offers.find(o => o.priceSpecification && /per month/i.test(o.priceSpecification.unitText || ''))
-           || offers.find(o => /Done-For-You/i.test(o.name || ''));
-  if (!dfy) {
-    failures.push(`${rel}: no Done-For-You Offer found`);
+  const monthlyOffer = offers.find(o => o.priceSpecification && /per month/i.test(o.priceSpecification.unitText || ''));
+  if (!monthlyOffer) {
+    failures.push(`${rel}: no monthly-retainer Offer found`);
   } else {
-    if (typeof dfy.price === 'string' && /[–—\-]/.test(dfy.price)) {
-      failures.push(`${rel}: DFY Offer.price is a literal range string "${dfy.price}" — should use priceSpecification.minPrice/maxPrice (audit H7)`);
+    if (typeof monthlyOffer.price === 'string' && /[–—\-]/.test(monthlyOffer.price)) {
+      failures.push(`${rel}: retainer Offer.price is a literal range string "${monthlyOffer.price}" — should use priceSpecification.minPrice/maxPrice (audit H7)`);
     }
-    if (!dfy.priceSpecification) {
-      failures.push(`${rel}: DFY Offer missing priceSpecification (audit H7)`);
+    if (!monthlyOffer.priceSpecification) {
+      failures.push(`${rel}: retainer Offer missing priceSpecification (audit H7)`);
     } else {
-      const ps2 = dfy.priceSpecification;
+      const ps2 = monthlyOffer.priceSpecification;
       for (const k of ['minPrice', 'maxPrice', 'priceCurrency']) {
-        if (!ps2[k]) failures.push(`${rel}: DFY priceSpecification missing "${k}"`);
+        if (!ps2[k]) failures.push(`${rel}: retainer priceSpecification missing "${k}"`);
       }
     }
   }

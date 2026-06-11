@@ -108,13 +108,14 @@ Below is the structure of the actual `llms.txt` deployed at `/llms.txt`. The [ll
 ```
 # Gateway Tech AEO
 
-> Answer Engine Optimization for St. Louis local businesses, run by a
-> working Ruby on Rails developer. Three honest tiers, anti-guarantee
-> posture, capped at five year-one clients. Operator: Matthew Jamison,
-> a St. Louis AEO consultant. Verifiable evidence on this site includes
-> the source code (open repo), Lighthouse 95+ across five locales, and
-> a complete schema.org @graph (Person, Organization, ProfessionalService,
-> WebSite, WebPage, FAQPage) anchored to
+> Answer Engine Optimization and AI-search visibility for businesses
+> nationwide, run from St. Louis, Missouri by a working Ruby on Rails
+> developer. Eligibility first, then citability. Anti-guarantee posture.
+> Operator: Matthew Jamison. Gateway Tech AEO, LLC is the search-visibility
+> arm of its sister company, Jamison Software Solutions, LLC. Verifiable
+> evidence on this site includes the open source code, Lighthouse 95+ across
+> five locales, and a complete schema.org @graph (Person, two Organizations,
+> ProfessionalService, WebSite, WebPage, FAQPage, ServiceCatalog) anchored to
 > https://gatewaytechaeo.com/#organization.
 
 ## Who runs this
@@ -184,7 +185,7 @@ This post is also self-evidence. If you fetched `/robots.txt` and `/llms.txt` on
 
 That's not a clever rhetorical flourish. That's the entire point of running AEO from an engineering posture: every claim on the marketing surface is independently verifiable, every public template is the same file the operator deploys against, and the test suite is the thing that prevents the marketing copy from quietly aging into a lie.
 
-If you're a St. Louis local business owner and you want help setting both files up (plus the Google Business Profile, plus the FAQ schema, plus the `BlogPosting` markup that makes this post citable in the first place), [send a brief](/#contact). I run a [three-tier practice](/#pricing): a $250 audit, a $700 setup-and-hand-off, or a $500–$1,200/month managed retainer.
+If you want help setting both files up (plus the Google Business Profile, plus the FAQ schema, plus the `BlogPosting` markup that makes this post citable in the first place), [send a brief](/#contact). [Services and prices are public](/pricing/): a $1,750 diagnostic, scoped implementation from $2,500, 30- and 90-day programs, monthly retainers from $2,500, and fixed-price small-business packages from $495.
 
 ## Further reading on this site
 

@@ -185,7 +185,7 @@ This post is also self-evidence. If you fetched `/robots.txt` and `/llms.txt` on
 
 That's not a clever rhetorical flourish. That's the entire point of running AEO from an engineering posture: every claim on the marketing surface is independently verifiable, every public template is the same file the operator deploys against, and the test suite is the thing that prevents the marketing copy from quietly aging into a lie.
 
-If you want help setting both files up (plus the Google Business Profile, plus the FAQ schema, plus the `BlogPosting` markup that makes this post citable in the first place), [send a brief](/#contact). [Services and prices are public](/pricing/): a $1,750 diagnostic, scoped implementation from $2,500, 30- and 90-day programs, monthly retainers from $2,500, and fixed-price small-business packages from $495.
+If you want help setting both files up (plus the Google Business Profile, plus the FAQ schema, plus the `BlogPosting` markup that makes this post citable in the first place), [send a brief](/#contact). [Services and prices are public](/pricing/): a $1,750 diagnostic, scoped implementation from $2,500, 30- and 90-day programs, and fixed-price small-business packages from $495.
 
 ## Further reading on this site
 

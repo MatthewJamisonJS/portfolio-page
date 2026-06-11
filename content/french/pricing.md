@@ -1,6 +1,6 @@
 ---
-title: "Services et tarifs : diagnostic, implémentation, programmes, contrats"
-description: "Ce que coûte Gateway Tech AEO : un diagnostic de visibilité IA à $1,750, une implémentation délimitée ($2,500–$6,500), des programmes de 30 et 90 jours, des contrats mensuels à partir de $2,500, des forfaits petites entreprises à partir de $495 et des travaux ponctuels à $225/h. Mois par mois, sans enfermement."
+title: "Services et tarifs : diagnostic, implémentation, programmes"
+description: "Ce que coûte Gateway Tech AEO : un diagnostic de visibilité IA à $1,750, une implémentation délimitée ($2,500–$6,500), des programmes de 30 et 90 jours, des créations de site AEO-natives et des forfaits petites entreprises à partir de $495. Portée fixe, sans enfermement."
 type: "pricing"
 layout: "single"
 date: 2026-01-15

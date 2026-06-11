@@ -74,7 +74,7 @@ Reviews used to influence ranking. Now they influence *citation* in a measurable
 
 ## What this practice does
 
-I run [Gateway Tech AEO](/) alongside what I do during the day on a production Rails 8 codebase. The same engineering rigor that keeps that codebase from breaking is what gets applied to a Mexican restaurant's GBP and schema markup. [Prices are public](/pricing/): a $1,750 diagnostic, scoped implementation from $2,500, 30- and 90-day programs, and monthly retainers from $2,500. No proposals dressed up as reports — you see exactly what you're buying.
+I run [Gateway Tech AEO](/) alongside what I do during the day on a production Rails 8 codebase. The same engineering rigor that keeps that codebase from breaking is what gets applied to a Mexican restaurant's GBP and schema markup. [Prices are public](/pricing/): a $1,750 diagnostic, scoped implementation from $2,500, 30- and 90-day programs, and fixed-price packages from $495. No proposals dressed up as reports — you see exactly what you're buying.
 
 If you're wondering whether AI answer engines are sending you traffic, [send a brief](/#contact). I'll reply in 48–96 hours with something specific to your business, not a generic pitch.
 

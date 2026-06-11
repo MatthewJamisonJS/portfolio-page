@@ -21,9 +21,7 @@ pricing:
     - id: "build"
       label: "実装・構築"
     - id: "programs"
-      label: "プログラム・リテーナー"
-    - id: "consulting"
-      label: "コンサルティング・トラッキング"
+      label: "プログラム"
 
   groups:
     - id: "diagnostic"
@@ -162,100 +160,6 @@ pricing:
           cta_label: "プログラムを計画する"
           cta_link: "/?service=program#contact"
 
-    - id: "retainers"
-      tab: "programs"
-      display: "cards"
-      name: "リテーナー"
-      items:
-        - slug: "foundation"
-          name: "Foundation"
-          price: "$2,500"
-          cadence: "月額"
-          price_min: "2500"
-          price_max: "2500"
-          price_currency: "USD"
-          price_unit: "per month"
-          what: "維持と監視"
-          why: "獲得したポジションを守る"
-          scope: "保守、監視、月次レポート——すでに獲得したポジションを守るビジネスのために。"
-          cta_label: "ポジションを守る"
-          cta_link: "/?service=foundation#contact"
-        - slug: "growth"
-          name: "Growth"
-          price: "$5,000"
-          cadence: "月額"
-          price_min: "5000"
-          price_max: "5000"
-          price_currency: "USD"
-          price_unit: "per month"
-          highlight: true
-          what: "コンテンツと引用構築"
-          why: "ビジビリティを伸ばし続ける"
-          scope: "schemaの維持、コンテンツのリズム、引用構築、月次AIビジビリティトラッキングとレポーティング。"
-          cta_label: "Growthを選ぶ"
-          cta_link: "/?service=growth#contact"
-        - slug: "concierge"
-          name: "Concierge"
-          price: "$8,500"
-          cadence: "月額"
-          price_min: "8500"
-          price_max: "8500"
-          price_currency: "USD"
-          price_unit: "per month"
-          what: "フルサービス、全チャネル"
-          why: "AIビジビリティをお任せ"
-          scope: "フルサービスSEO + AEO + GEO、独自月次レポーティング、獲得メディアアウトリーチ、四半期戦略。"
-          cta_label: "Conciergeについて話す"
-          cta_link: "/?service=concierge#contact"
-
-    - id: "consulting"
-      tab: "consulting"
-      display: "rows"
-      name: "AI検索最適化 — クロスエンジンコンサルティング"
-      items:
-        - slug: "consulting"
-          name: "AIビジビリティコンサルティング"
-          price: "プログラムまたはリテーナー"
-          cadence: "単品販売なし"
-          price_on_request: true
-          what: "クロスエンジン戦略"
-          why: "全エンジン、一つのプランで"
-          scope: "ウェブ全体でのエンティティ統合、ブランド言及戦略（言及はバックリンクよりも何倍も強くAIビジビリティと相関する）、エンジンが実際に読むサイトでのレビュープラットフォーム存在感、ゲインしているかスリップしているかを示す計測。プログラムまたはリテーナーを通じて提供。"
-          cta_label: "プログラムについて話す"
-          cta_link: "/?service=consulting#contact"
-
-    - id: "tracking"
-      tab: "consulting"
-      display: "rows"
-      name: "マネージドAIビジビリティトラッキング"
-      items:
-        - slug: "tracking"
-          name: "マネージドトラッキング"
-          price: "$150–$500"
-          cadence: "月額"
-          price_min: "150"
-          price_max: "500"
-          price_currency: "USD"
-          price_unit: "per month"
-          what: "ダッシュボードを見守ります"
-          why: "何が変わったかを把握"
-          scope: "ツールのセットアップ、継続的な監視、何が動いてなぜかを平易な言葉で書いた月次レポート。トラッキングツールのサブスクリプションは実費で別途請求。"
-          cta_label: "トラッキングを設定する"
-          cta_link: "/?service=tracking#contact"
-
-  # Ad-hoc hourly — footer addons row + its own Offer (UnitPriceSpecification,
-  # HUR) in head.html.
-  ad_hoc:
-    enable: true
-    heading: "アドホック・スコープ外"
-    label: "全サービスにわたるスコープ外の作業"
-    rate: "$225"
-    unit: "/ 時間"
-    price: "225"
-    price_currency: "USD"
-    cta_label: "アドホック作業について問い合わせる"
-    cta_link: "/?service=ad-hoc#contact"
-
   # Anti-guarantee posture (footer callout). Load-bearing honesty, not a disclaimer.
   wont_promise:
     label: "約束しないこと"
@@ -271,7 +175,7 @@ pricing:
       - "銃器販売"
       - "規制当局の調査下にある事業"
 
-  footnote: "診断費用は実装に充当されます。リテーナーは月単位。St. Louis, MO — 全国対応、リモート。"
+  footnote: "診断費用は実装に充当されます。スコープ固定のエンゲージメント、ロックインなし。St. Louis, MO — 全国対応、リモート。"
 
   # Schema-only Offer for free email intake. Consumed by ProfessionalService.offers
   # in head.html; not rendered in the catalog.

@@ -20,7 +20,7 @@ home:
       body: |
         Deux couches, dans l'ordre. L'**éligibilité** d'abord — l'entité existe, les robots peuvent l'atteindre, les réponses sont lisibles par les machines. La **citabilité** ensuite — assez de sources extérieures vous corroborent pour qu'un moteur vous fasse confiance. Verser de l'autorité sur une base défaillante n'amplifie rien ; nous ne le faisons donc pas.
 
-        La plupart des engagements commencent par un diagnostic : une lecture de votre positionnement sur les principaux moteurs et de ce qui vous bloque exactement, créditée si vous passez à l'implémentation. Ensuite, c'est une implémentation délimitée, un programme de 30 ou 90 jours, ou un contrat mensuel — selon ce que vous voulez gérer vous-même ou déléguer. [Consultez le menu complet et ce que chaque option coûte.](/pricing/)
+        La plupart des engagements commencent par un diagnostic : une lecture de votre positionnement sur les principaux moteurs et de ce qui vous bloque exactement, créditée si vous passez à l'implémentation. Ensuite, c'est une implémentation délimitée ou un programme de 30 ou 90 jours — selon ce que vous voulez gérer vous-même ou déléguer. [Consultez le menu complet et ce que chaque option coûte.](/pricing/)
 
     - id: "who-this-for"
       heading: "Pour qui c'est, et pour qui ce n'est pas"

@@ -6,25 +6,22 @@ faq:
       answer: "AEO（Answer Engine Optimization）は、誰かが質問したときにAIツールがあなたを引用するようサイトを構造化します。ChatGPT、Perplexity、Google AI Overviews、Claude。SEOは10件の青いリンクを狙い、AEOは引用される答えになることを狙います。下にある足場は同じ（schema、ページ速度、コンテンツ品質）ですが、ゴールが違います。SEOは発見可能性を、AEOはエンジンが引用できる権威性を築きます。[なぜ今これが重要なのかを見る](/why/)。"
 
     - question: "robots.txtとschemaマークアップとは何ですか？なぜAEOに重要なのですか？"
-      answer: "2つのファイルがほとんどの仕事をします。<a href='https://developers.google.com/search/docs/crawling-indexing/robots/intro' rel='external nofollow'>robots.txt</a>はAIクローラーがあなたのサイトを読めるかどうかを伝えます——2026年においてこれは分割判断です。答えを提供するための検索クローラー（OAI-SearchBot、Claude-SearchBot、PerplexityBot）は名前で許可する価値があり、学習クローラー（GPTBot、ClaudeBot）は偶然ではなく意図的に下す別の判断です。<a href='https://schema.org/' rel='external nofollow'>schemaマークアップ</a>は各ページに構造化データ（営業時間、価格、FAQ、住所）でタグ付けし、エンジンがあなたの事業を理解できるようにします。ほとんどのサイトは検索クローラーを誤ってブロックし、schemaをゼロで出荷しています。両方を修正すれば、見えない存在から読み取れる存在へと変わります。"
+      answer: "2つのファイルがほとんどの仕事をします。<a href='https://developers.google.com/search/docs/crawling-indexing/robots/intro' rel='external nofollow'>robots.txt</a>はAIクローラーがサイトを読めるかを決めます。検索クローラー（OAI-SearchBot、Claude-SearchBot、PerplexityBot）は名前で許可し、学習クローラー（GPTBot、ClaudeBot）は別判断です。<a href='https://schema.org/' rel='external nofollow'>schemaマークアップ</a>は各ページに構造化データ（営業時間、価格、FAQ、住所）でタグ付けします。多くのサイトは検索クローラーを誤ってブロックし、schemaをゼロで出荷しています。両方を直せば、見えない存在から読み取れる存在へ変わります。"
 
     - question: "AI検索は本当にGoogleを置き換えていますか？"
       answer: "<a href='https://www.gartner.com/en/newsroom/press-releases/2024-02-19-gartner-predicts-search-engine-volume-will-drop-25-percent-by-2026-due-to-ai-chatbots-and-other-virtual-agents' rel='external nofollow'>Gartnerは従来型検索量が2026年までに25%減少すると予測しました</a>。また<a href='https://business.adobe.com/blog/ai-traffic-surge-retail-sites-not-machine-readable' rel='external nofollow'>Adobeは2026年第1四半期に米国小売サイトへのAIトラフィックが前年比393%増加したと報告しました</a>。検索がなくなるわけではなく、AIがシェアを取っています。アシスタントに推薦を尋ねる顧客は実在し、その割合は増え続けています。"
 
     - question: "費用はいくらですか？"
-      answer: "情報を買うのか、作業を買うのかによります。AEO / AI Visibility Diagnosticは一回$1,750で、継続される場合は実装費用に充当されます。単体の実装はスコープに応じて$2,500〜$6,500。製品化されたプログラムは30日スプリントが$5,500、90日プログラムが$12,000〜$18,000。リテーナーは月額$2,500、$5,000、$8,500。単一拠点の小規模ビジネス向けには$495からの固定価格パッケージもあります。スコープ外の作業は時間単価$225。[料金ページで詳細を見る](/pricing/)。"
+      answer: "情報を買うのか、作業を買うのかによります。AEO / AI Visibility Diagnosticは一回$1,750で、継続される場合は実装費用に充当されます。単体の実装はスコープに応じて$2,500〜$6,500。製品化されたプログラムは30日スプリントが$5,500、90日プログラムが$12,000〜$18,000。単一拠点の小規模ビジネス向けには$495からの固定価格パッケージもあります。[料金ページで詳細を見る](/pricing/)。"
 
     - question: "診断と実装の違いは何ですか？"
-      answer: "診断は読み解きです。主要なエンジン全体でのポジション、妨げているもの、優先順位付きのロードマップを10〜14日で提供します。実装は作業そのものです——robots.txtの修正、schemaの検証、答え優先の書き直し、Google Business ProfileとNAP、BingとIndexNow。ほとんどの方は診断から始め、進める場合はその費用を実装に充当します。問題の形がすでにわかっている場合は、プログラムやリテーナーに直接進むこともできます。"
-
-    - question: "リテーナーには何が含まれますか？"
-      answer: "3つの段階があり、ほとんどのクライアントは中間に落ち着きます。Foundation（$2,500/月）は、すでに獲得したポジションを守るビジネスのための保守、監視、月次レポートです。Growth（$5,000/月）はschemaの維持、コンテンツのリズム、引用構築、月次AIビジビリティトラッキングを追加します。Concierge（$8,500/月）は独自レポート、獲得メディアアウトリーチ、四半期戦略を含むフルサービスSEO + AEO + GEOで、AIビジビリティを本格的なチャネルとして扱うビジネス向けです。[料金ページで比較する](/pricing/#retainers)。"
+      answer: "診断は読み解きです。主要なエンジン全体でのポジション、妨げているもの、優先順位付きのロードマップを10〜14日で提供します。実装は作業そのものです——robots.txtの修正、schemaの検証、答え優先の書き直し、Google Business ProfileとNAP、BingとIndexNow。ほとんどの方は診断から始め、進める場合はその費用を実装に充当します。問題の形がすでにわかっている場合は、プログラムに直接進むこともできます。"
 
     - question: "結果はいつ出ますか？"
       answer: "最初の変化は約30日で現れ、安定状態は6ヶ月目頃に訪れます。1ヶ月目はネット損失のように見えることが多いです。何年も放置されてきた未申請リスティング、欠落したschema、ブロックされたクローラーといった根本的な問題を修正しているためです。12ヶ月目にはROIが複利で効いてきます。これより速く約束する人は嘘をついているか、Googleのルールを破っています。"
 
     - question: "1位やChatGPTの引用を保証できますか？"
-      answer: "いいえ。理由を説明します。Retrieval-augmented pipelineは確率的に再ランク付けし、モデルの更新一つで以前に引用されていたソースの大部分が置き換わることがあります——Gemini 3のロールアウトは2026年初頭にまさにそれを行いました。代わりに私たちが保証するのは透明な作業です。毎月、何をしたかを確認でき、アカウントへの完全なアクセスを保持でき、いつでも離れられます。AI回答への掲載保証は、誰も守れない約束です。"
+      answer: "いいえ。理由を説明します。Retrieval-augmented pipelineは確率的に再ランク付けし、モデルの更新一つで以前に引用されていたソースの大部分が置き換わることがあります——Gemini 3のロールアウトは2026年初頭にまさにそれを行いました。代わりに私たちが保証するのは透明な作業です。エンゲージメントを通じて、何をしたかを確認でき、アカウントへの完全なアクセスを保持でき、いつでも離れられます。AI回答への掲載保証は、誰も守れない約束です。"
 
     - question: "セントルイスのビジネスとのみ仕事をしますか？"
       answer: "いいえ。GatewayはSt. Louis、Missouriを拠点とし、全国のB2Bクライアントとリモートで仕事をしています。地理的に絞られたローカルサービスビジネスは最も速く動きが出る傾向があります。答えエンジンはローカルの意図を重視し、競合フィールドが薄いためです。ただし、全国展開する企業も同様に引用可能になれます。あなたがどこにいるかよりも、エンジンがあなたを読んで信頼できるかどうかのほうが重要です。"
@@ -42,7 +39,7 @@ faq:
       answer: "ローカルビジネスにとって最もROIの高いレバーです。完全なプロフィールは、他に何もしなくても30〜60日でローカル3-packに押し上げることができます。未申請、半分しか埋まっていない、写真がないなら、そこから作業が始まります。<a href='https://whitespark.ca/local-search-ranking-factors/' rel='external nofollow'>Whitespark 2026 Local Search Ranking Factors報告書</a>は依然としてGBPをローカルパック可視性の第1位要因として位置付けています。"
 
     - question: "やめたい場合は？"
-      answer: "やめてください。あなたが所有しています——ドメイン、GBP、アカウント、コンテンツ——そして月単位を超える契約はありません。成果が出ていないなら離れてください。それを知らせてもらえるほうがありがたいです。クライアントを縛りつけるのは、価値で繋ぎとめられないという兆候です。"
+      answer: "エンゲージメントはスコープ固定なので、解約するものはありません——すべてあなたが所有していて（ドメイン、GBP、アカウント、コンテンツ）、続けるかどうかはフェーズごとに自分で決められます。クライアントを縛りつけるのは、価値で繋ぎとめられないという兆候です。"
 
     - question: "'AEO'はAnswer Engine Optimizationと同じですか？"
       answer: "はい。AEOとGenerative Engine Optimization（GEO）は同じものを指します。業界はまだ用語を統一していません。（注：AEOはAmerican Eagle Outfittersの株式ティッカーでもありますが、商標クラスが異なります——小売衣料品とマーケティングサービスでは区分が異なり、競合はありません。）"

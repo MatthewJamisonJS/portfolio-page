@@ -21,9 +21,7 @@ pricing:
     - id: "build"
       label: "Implementation & builds"
     - id: "programs"
-      label: "Programs & retainers"
-    - id: "consulting"
-      label: "Consulting & tracking"
+      label: "Programs"
 
   groups:
     - id: "diagnostic"
@@ -162,100 +160,6 @@ pricing:
           cta_label: "Plan the program"
           cta_link: "/?service=program#contact"
 
-    - id: "retainers"
-      tab: "programs"
-      display: "cards"
-      name: "Retainers"
-      items:
-        - slug: "foundation"
-          name: "Foundation"
-          price: "$2,500"
-          cadence: "per month"
-          price_min: "2500"
-          price_max: "2500"
-          price_currency: "USD"
-          price_unit: "per month"
-          what: "Maintain and monitor"
-          why: "Hold your ground"
-          scope: "Maintenance, monitoring, monthly report — for a business holding the ground it's gained."
-          cta_label: "Hold the line"
-          cta_link: "/?service=foundation#contact"
-        - slug: "growth"
-          name: "Growth"
-          price: "$5,000"
-          cadence: "per month"
-          price_min: "5000"
-          price_max: "5000"
-          price_currency: "USD"
-          price_unit: "per month"
-          highlight: true
-          what: "Content plus citations"
-          why: "Keep gaining visibility"
-          scope: "Schema upkeep, content cadence, citation building, monthly AI-visibility tracking and reporting."
-          cta_label: "Pick Growth"
-          cta_link: "/?service=growth#contact"
-        - slug: "concierge"
-          name: "Concierge"
-          price: "$8,500"
-          cadence: "per month"
-          price_min: "8500"
-          price_max: "8500"
-          price_currency: "USD"
-          price_unit: "per month"
-          what: "Full-service, all channels"
-          why: "AI visibility, handled"
-          scope: "Full-service SEO + AEO + GEO, proprietary monthly reporting, earned-media outreach, quarterly strategy."
-          cta_label: "Talk Concierge"
-          cta_link: "/?service=concierge#contact"
-
-    - id: "consulting"
-      tab: "consulting"
-      display: "rows"
-      name: "AI Search Optimization — cross-engine consulting"
-      items:
-        - slug: "consulting"
-          name: "AI Visibility Consulting"
-          price: "Program or retainer"
-          cadence: "not à la carte"
-          price_on_request: true
-          what: "Cross-engine strategy"
-          why: "Every engine, one plan"
-          scope: "Entity consolidation across the web, brand-mention strategy (mentions correlate with AI visibility several times more strongly than backlinks do), review-platform presence on the sites engines actually read, and measurement that tells you whether you're gaining or slipping. Delivered through a program or retainer."
-          cta_label: "Talk through a program"
-          cta_link: "/?service=consulting#contact"
-
-    - id: "tracking"
-      tab: "consulting"
-      display: "rows"
-      name: "Managed AI-visibility tracking"
-      items:
-        - slug: "tracking"
-          name: "Managed tracking"
-          price: "$150–$500"
-          cadence: "per month"
-          price_min: "150"
-          price_max: "500"
-          price_currency: "USD"
-          price_unit: "per month"
-          what: "We watch the dashboards"
-          why: "Know what changed"
-          scope: "Tool setup, ongoing monitoring, and a plain-language monthly read of what moved and why. Tracking-tool subscription billed separately at cost."
-          cta_label: "Set up tracking"
-          cta_link: "/?service=tracking#contact"
-
-  # Ad-hoc hourly — footer addons row + its own Offer (UnitPriceSpecification,
-  # HUR) in head.html.
-  ad_hoc:
-    enable: true
-    heading: "Ad-hoc & out-of-scope"
-    label: "Out-of-scope work, across all services"
-    rate: "$225"
-    unit: "/ hour"
-    price: "225"
-    price_currency: "USD"
-    cta_label: "Ask about ad-hoc work"
-    cta_link: "/?service=ad-hoc#contact"
-
   # Anti-guarantee posture (footer callout). Load-bearing honesty, not a disclaimer.
   wont_promise:
     label: "What we won't promise"
@@ -271,7 +175,7 @@ pricing:
       - "Firearms sales"
       - "Businesses under active regulatory action"
 
-  footnote: "Diagnostic credits toward implementation. Retainers month-to-month. St. Louis, MO — nationwide, remote."
+  footnote: "Diagnostic credits toward implementation. Fixed-scope engagements, no lock-in. St. Louis, MO — nationwide, remote."
 
   # Schema-only Offer for free email intake. Consumed by ProfessionalService.offers
   # in head.html; not rendered in the catalog.

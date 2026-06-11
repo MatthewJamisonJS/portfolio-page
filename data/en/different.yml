@@ -11,13 +11,13 @@ different:
       ref: "method"
     deliverable:
       heading: "What you actually get."
-      body: "A plain-language plan: what to fix, in what order, and what each fix is worth. The deeper execution playbooks and the audit tooling stay inside the engagement. Pick what fits — a one-time diagnostic, scoped implementation, a 30- or 90-day program, or a monthly retainer. When the job calls for a new site built to be cited rather than retrofitted, we deliver it with our sister studio, [Jamison Software Solutions](https://jamisonsoftwaresolutions.com). [See the menu and pricing.](/pricing/)"
+      body: "A plain-language plan: what to fix, in what order, and what each fix is worth. The deeper execution playbooks and the audit tooling stay inside the engagement. Pick what fits — a one-time diagnostic, scoped implementation, or a 30- or 90-day program. When the job calls for a new site built to be cited rather than retrofitted, we deliver it with our sister studio, [Jamison Software Solutions](https://jamisonsoftwaresolutions.com). [See the menu and pricing.](/pricing/)"
     trust:
       heading: "How we operate."
       moves:
         - "Eligibility before authority. We won't sell you citation-building on a site crawlers can't read; the foundation comes first or nothing sticks."
         - "You own everything we touch: your domain, your Google Business Profile, your content, your accounts."
-        - "Month-to-month. No long contracts, no lock-in — leave when it stops paying off."
+        - "Fixed-scope engagements, priced before we start. No open-ended contracts, no lock-in — you decide at each phase whether to continue."
         - "No guaranteed placement in an AI answer. We implement what the evidence supports and report honestly against it. Anyone promising a citation is promising something no one can keep."
     cta:
       pricing_label: "See pricing"

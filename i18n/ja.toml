@@ -23,19 +23,19 @@ other = "目次"
 other = "まだ公開された記事はありません。AEO研究のフィールドノートを下書きしながらここに掲載していきます。"
 
 [nav_why]
-other = "Why"
+other = "理由"
 
 [nav_different]
-other = "Different"
+other = "違い"
 
 [nav_pricing]
-other = "Pricing"
+other = "料金"
 
 [nav_faq]
-other = "FAQ"
+other = "よくある質問"
 
 [nav_brief]
-other = "Send a brief"
+other = "ブリーフを送る"
 
 [nav_about]
-other = "About"
+other = "プロフィール"

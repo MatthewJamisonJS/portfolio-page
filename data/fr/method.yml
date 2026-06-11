@@ -1,7 +1,7 @@
 method:
   enable: true
   title: "Notre approche de l'AEO"
-  intro: "Trois piliers. Si une tactique n'en renforce pas au moins un, on ne la livre pas."
+  intro: "Trois piliers. Si une tactique n'en renforce pas au moins un, elle ne passe pas."
   pillars:
     - id: "technical"
       title: "Technique"
@@ -9,19 +9,19 @@ method:
       icon: "ti-server"
       bullets:
         - "Schema LocalBusiness et FAQ"
-        - "Vitesse mobile sous 3 secondes"
+        - "Chargement mobile sous 3 secondes"
         - "Bots IA autorisés dans robots.txt"
     - id: "authority"
       title: "Autorité"
       tagline: "L'IA vous fait-elle confiance ?"
       icon: "ti-pulse"
       bullets:
-        - "Profil Google Business complet"
+        - "Google Business Profile complet"
         - "Avis et citations cohérents"
-        - "Marque mentionnée sur le web"
+        - "Marque citée sur le web"
     - id: "content"
       title: "Contenu"
-      tagline: "Répondez-vous à leurs questions ?"
+      tagline: "Répondez-vous à ce qu'on demande ?"
       icon: "ti-layout"
       bullets:
         - "Format réponse en premier"

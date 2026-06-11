@@ -1,26 +1,26 @@
-# TODO: translate from English (AEO-2 Task 6.2 mirror, 2026-05-14)
 different:
   enable: true
-  title: "What makes Gateway Tech AEO different."
-  subtitle: "One operator. Three audits in one. A plan you can act on."
+  title: "Was Gateway Tech AEO unterscheidet."
+  subtitle: "Ein Anbieter. Förderfähigkeit zuerst, dann Zitierfähigkeit. Ein Plan, den Sie umsetzen können."
   blocks:
     audit_scope:
-      heading: "We audit three things, not one."
-      body: "Most AEO services check whether AI can cite you. We audit your visibility across classical search (the ten blue links), answer engines (ChatGPT, Perplexity, AI Overview), and generative search (the citations themselves). You get one report covering all three, because being absent is rarely just an AEO problem."
+      heading: "Wir lesen drei Oberflächen, nicht eine."
+      body: "Die meisten AEO-Anbieter prüfen nur, ob eine KI Sie zitieren kann. Wir lesen Ihre Sichtbarkeit über klassische Suche (die zehn blauen Links), Antwort-KIs (ChatGPT, Perplexity, AI Overviews) und generative Suche (die Zitate selbst). Ein Bericht deckt alle drei ab — weil Unsichtbarkeit selten nur ein AEO-Problem ist und die Quellen, denen jede KI vertraut, kaum überlappen; ein einziger Spielplan für alle scheitert daher."
     pillars:
-      heading: "Three pillars. If a tactic does not strengthen one of them, we do not do it."
+      heading: "Drei Säulen. Stärkt eine Taktik nicht mindestens eine, wird sie nicht umgesetzt."
       ref: "method"
     deliverable:
-      heading: "What you actually get."
-      body: "An actionable audit summary. We tell you what to fix, in what order, and what each fix is worth — in plain language you can act on. Deeper execution playbooks and the audit tooling stay scoped to the engagement."
+      heading: "Was Sie konkret bekommen."
+      body: "Einen verständlichen Plan: was zu beheben ist, in welcher Reihenfolge und was jede Korrektur bringt. Die tieferen Umsetzungs-Playbooks und das Audit-Werkzeug bleiben im Engagement. Wählen Sie, was passt — eine einmalige Diagnose, eine abgestimmte Umsetzung, ein 30- oder 90-Tages-Programm oder ein monatlicher Retainer. Wenn der Auftrag eine neue, von Grund auf zitierfähige Website erfordert statt eines Umbaus, liefern wir diese gemeinsam mit unserem Schwesterunternehmen [Jamison Software Solutions](https://jamisonsoftwaresolutions.com). [Alle Angebote und Preise.](/pricing/)"
     trust:
-      heading: "How we operate."
+      heading: "Wie wir arbeiten."
       moves:
-        - "We cap year one at 5 St. Louis clients. Slow growth means deep service."
-        - "You own everything we touch. Your domain, your Google Business Profile, your content, your accounts."
-        - "Month-to-month, no long contracts. Stop when you want."
+        - "Förderfähigkeit vor Autorität. Wir verkaufen kein Zitatsaufbau auf einer Website, die Crawler nicht lesen können — das Fundament kommt zuerst, sonst bleibt nichts hängen."
+        - "Sie besitzen alles, was wir anfassen: Ihre Domain, Ihr Google Business Profile, Ihre Inhalte, Ihre Konten."
+        - "Monatlich kündbar. Keine langen Verträge, keine Bindung — gehen Sie, wenn es sich nicht mehr lohnt."
+        - "Keine garantierten Platzierungen in KI-Antworten. Wir setzen um, was die Belege stützen, und berichten ehrlich dagegen. Wer ein Zitat verspricht, verspricht etwas, das niemand halten kann."
     cta:
-      pricing_label: "See pricing"
+      pricing_label: "Preise ansehen"
       pricing_link: "/pricing/"
-      brief_label: "Send a brief"
+      brief_label: "Brief senden"
       brief_link: "/#contact"

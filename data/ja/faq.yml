@@ -2,38 +2,50 @@ faq:
   enable: true
   title: "よくある質問"
   items:
-    - question: "AEO とは何ですか? SEO とどう違いますか?"
-      answer: "AEO(Answer Engine Optimization)は、ChatGPT、Perplexity、Google の AI 概要などの AI ツールが質問に答える際に、あなたのサイトを引用するようにサイト構造を整える実践です。SEO は10件の青いリンクで上位を狙います。AEO は引用される回答そのものになることを狙います。作業領域は重なりますが、目的は異なります。"
+    - question: "AEOとは何ですか？SEOとどう違いますか？"
+      answer: "AEO（Answer Engine Optimization）は、誰かが質問したときにAIツールがあなたを引用するようサイトを構造化します。ChatGPT、Perplexity、Google AI Overviews、Claude。SEOは10件の青いリンクを狙い、AEOは引用される答えになることを狙います。下にある足場は同じ（schema、ページ速度、コンテンツ品質）ですが、ゴールが違います。SEOは発見可能性を、AEOはエンジンが引用できる権威性を築きます。[なぜ今これが重要なのかを見る](/why/)。"
 
-    - question: "AI 検索は本当に Google を置き換えていますか?"
-      answer: "完全にではありませんが、シェアは急速に変わっています。<a href='https://www.gartner.com/en/newsroom/press-releases/2024-02-19-gartner-predicts-search-engine-volume-will-drop-25-percent-by-2026-due-to-ai-chatbots-and-other-virtual-agents' rel='external nofollow'>Gartner は従来型検索の検索量が 2026 年までに 25% 減少すると予測しています</a>。<a href='https://business.adobe.com/blog/ai-traffic-surge-retail-sites-not-machine-readable' rel='external nofollow'>Adobe Digital Insights は、米国小売サイトへの AI 経由のトラフィックが 2026 年第 1 四半期に前年比 393% 増加したと報告しました</a>。AI に推奨を尋ねる顧客は実在し、その割合は増えています。"
+    - question: "robots.txtとschemaマークアップとは何ですか？なぜAEOに重要なのですか？"
+      answer: "2つのファイルがほとんどの仕事をします。<a href='https://developers.google.com/search/docs/crawling-indexing/robots/intro' rel='external nofollow'>robots.txt</a>はAIクローラーがあなたのサイトを読めるかどうかを伝えます——2026年においてこれは分割判断です。答えを提供するための検索クローラー（OAI-SearchBot、Claude-SearchBot、PerplexityBot）は名前で許可する価値があり、学習クローラー（GPTBot、ClaudeBot）は偶然ではなく意図的に下す別の判断です。<a href='https://schema.org/' rel='external nofollow'>schemaマークアップ</a>は各ページに構造化データ（営業時間、価格、FAQ、住所）でタグ付けし、エンジンがあなたの事業を理解できるようにします。ほとんどのサイトは検索クローラーを誤ってブロックし、schemaをゼロで出荷しています。両方を修正すれば、見えない存在から読み取れる存在へと変わります。"
 
-    - question: "AEO の費用はいくらですか?"
-      answer: "3 つのプラン。Audit(監査)は 250 USD 一回。Setup & Hand-off(導入と引き渡し)は 700 USD 一回。Done-For-You(完全代行)は月額 500〜1,200 USD。価格は隠さず、見込み客ごとに違う料金を提示することもしません。どのプランにするかは、自分で学んで運用したいか、構築だけ任せたいか、運用まで任せたいかによります。"
+    - question: "AI検索は本当にGoogleを置き換えていますか？"
+      answer: "<a href='https://www.gartner.com/en/newsroom/press-releases/2024-02-19-gartner-predicts-search-engine-volume-will-drop-25-percent-by-2026-due-to-ai-chatbots-and-other-virtual-agents' rel='external nofollow'>Gartnerは従来型検索量が2026年までに25%減少すると予測しました</a>。また<a href='https://business.adobe.com/blog/ai-traffic-surge-retail-sites-not-machine-readable' rel='external nofollow'>Adobeは2026年第1四半期に米国小売サイトへのAIトラフィックが前年比393%増加したと報告しました</a>。検索がなくなるわけではなく、AIがシェアを取っています。アシスタントに推薦を尋ねる顧客は実在し、その割合は増え続けています。"
 
-    - question: "結果はどのくらいで見えますか?"
-      answer: "最初の測定可能な変化は約 30 日で。安定的な結果は 6 か月目あたりから。作業は基礎工事のため、初月は本来は事前に直しておくべきだったものを直す段階となり、ネット損失のように見えがちです。12 か月目には複利的に効いてきます。これより速く約束する人は嘘をついているか、ビジネスにペナルティを招く手法を使っています。"
+    - question: "費用はいくらですか？"
+      answer: "情報を買うのか、作業を買うのかによります。AEO / AI Visibility Diagnosticは一回$1,750で、継続される場合は実装費用に充当されます。単体の実装はスコープに応じて$2,500〜$6,500。製品化されたプログラムは30日スプリントが$5,500、90日プログラムが$12,000〜$18,000。リテーナーは月額$2,500、$5,000、$8,500。単一拠点の小規模ビジネス向けには$495からの固定価格パッケージもあります。スコープ外の作業は時間単価$225。[料金ページで詳細を見る](/pricing/)。"
 
-    - question: "なぜ他社より大幅に価格が安いのですか?"
-      answer: "理由は 2 つ。初年度はセントルイス都市圏で 5 社限定にしているため、代理店としての間接費を抱えていません。そして実作業を私自身が行うため、プロジェクトマネージャー、アカウントエグゼクティブ、提案資料がありません。緩やかな成長は深いサービスにつながります。200 社のロゴが並ぶポートフォリオが目的なら、私たちは適していません。"
+    - question: "診断と実装の違いは何ですか？"
+      answer: "診断は読み解きです。主要なエンジン全体でのポジション、妨げているもの、優先順位付きのロードマップを10〜14日で提供します。実装は作業そのものです——robots.txtの修正、schemaの検証、答え優先の書き直し、Google Business ProfileとNAP、BingとIndexNow。ほとんどの方は診断から始め、進める場合はその費用を実装に充当します。問題の形がすでにわかっている場合は、プログラムやリテーナーに直接進むこともできます。"
 
-    - question: "1 位や ChatGPT の引用を保証できますか?"
-      answer: "いいえ。それを約束する人は、嘘をついているか、Google のルールに違反しています。私たちが保証するのは作業そのものです。毎月、何をしたかを正確に確認でき、アカウントへの完全なアクセスは保持され、いつでも停止できます。狙う成果は現実的な ROI 計算であって、順位の約束ではありません。"
+    - question: "リテーナーには何が含まれますか？"
+      answer: "3つの段階があり、ほとんどのクライアントは中間に落ち着きます。Foundation（$2,500/月）は、すでに獲得したポジションを守るビジネスのための保守、監視、月次レポートです。Growth（$5,000/月）はschemaの維持、コンテンツのリズム、引用構築、月次AIビジビリティトラッキングを追加します。Concierge（$8,500/月）は独自レポート、獲得メディアアウトリーチ、四半期戦略を含むフルサービスSEO + AEO + GEOで、AIビジビリティを本格的なチャネルとして扱うビジネス向けです。[料金ページで比較する](/pricing/#retainers)。"
 
-    - question: "すでに SEO 担当者がいる場合は?"
-      answer: "AEO と SEO は重なるため、良い SEO 作業は私たちの仕事を楽にします。担当者を置き換えるよりも連携することが多いです。SEO 設定が堅実であれば、Audit が正しい出発点です — 既に機能しているものをやり直さずに、AEO 固有のどのギャップを埋めるべきかを正確に示します。"
+    - question: "結果はいつ出ますか？"
+      answer: "最初の変化は約30日で現れ、安定状態は6ヶ月目頃に訪れます。1ヶ月目はネット損失のように見えることが多いです。何年も放置されてきた未申請リスティング、欠落したschema、ブロックされたクローラーといった根本的な問題を修正しているためです。12ヶ月目にはROIが複利で効いてきます。これより速く約束する人は嘘をついているか、Googleのルールを破っています。"
 
-    - question: "ウェブサイトすらない場合は?"
-      answer: "ウェブサイトがなくても AI に引用されることは可能です。AI エンジンは Google Business Profile、Yelp、Foursquare、Apple Business Connect などから情報を取得します。それらをまず取得・整備し、基本的な 5 ページのサイトはその後です。サイトは自分で完全にコントロールできますが、土台ではなく、ビジネスリスティングこそが土台です。"
+    - question: "1位やChatGPTの引用を保証できますか？"
+      answer: "いいえ。理由を説明します。Retrieval-augmented pipelineは確率的に再ランク付けし、モデルの更新一つで以前に引用されていたソースの大部分が置き換わることがあります——Gemini 3のロールアウトは2026年初頭にまさにそれを行いました。代わりに私たちが保証するのは透明な作業です。毎月、何をしたかを確認でき、アカウントへの完全なアクセスを保持でき、いつでも離れられます。AI回答への掲載保証は、誰も守れない約束です。"
 
-    - question: "Google Business Profile はどうなりますか?"
-      answer: "GBP は地元ビジネスにとって最も ROI の高いレバーです。完全かつ最適化された GBP は、他に何もしなくても 30〜60 日でローカル 3-pack に押し上げ得ます。プロフィールが未取得、半分しか埋まっていない、写真がないなら、どの依頼もそこから始まります。<a href='https://whitespark.ca/local-search-ranking-factors/' rel='external nofollow'>Whitespark 2026 報告書</a>でも GBP はローカルパックの 1 位要因とされています。"
+    - question: "セントルイスのビジネスとのみ仕事をしますか？"
+      answer: "いいえ。GatewayはSt. Louis、Missouriを拠点とし、全国のB2Bクライアントとリモートで仕事をしています。地理的に絞られたローカルサービスビジネスは最も速く動きが出る傾向があります。答えエンジンはローカルの意図を重視し、競合フィールドが薄いためです。ただし、全国展開する企業も同様に引用可能になれます。あなたがどこにいるかよりも、エンジンがあなたを読んで信頼できるかどうかのほうが重要です。"
 
-    - question: "途中でやめたい場合は?"
-      answer: "やめてください。私たちが触れるすべての所有権はあなたにあります — ドメイン、GBP、アカウント、コンテンツ。月単位を超える契約はありません。成果が出ていないなら、去るべきですし、率直に言えば私たちもそれを知りたいです。クライアントを縛りつけるのは、自発的に残ってもらうほどの仕事ができていない兆候です。"
+    - question: "Jamison Software Solutionsとの関係は？"
+      answer: "2つのLLC、1人の創業者です。Jamison Software Solutionsはクライアントのウェブサイトを構築・所有します。Gateway Tech AEOはサーチビジビリティの作業を行います——JSSクライアントに対してはホワイトラベルで、またはすでに持っているサイトに満足しているビジネスに対して直接。両者は独立した法人で互いを関連組織として参照しています。これは複数のブランドを持つクライアントへのエンティティ作業で採用しているモデルと同じです。"
 
-    - question: "'AEO' と Answer Engine Optimization は同じものですか?"
-      answer: "はい。サイト全体で AEO を略称として使っています。Generative Engine Optimization(GEO)と同じ意味です — 業界はまだ用語を統一していません。注意:'AEO' は American Eagle Outfitters の株式ティッカーでもあります。業界も商標分類も異なります。私たちのサービスはマーケティングサービスのクラスであり、衣料品小売ではありません。"
+    - question: "すでにSEO担当者がいる場合は？"
+      answer: "AEOとSEOは重なるため、しっかりしたSEO作業はAEOを楽にします。既存のSEOチームを置き換えるのではなく、連携します。診断から始めてください。すでに機能しているものをやり直さずに、どのAEOギャップを埋めるべきかを正確に示します。両方を持ち続けるクライアントは多いです。"
 
-    - question: "Audit を使って自分でできますか?"
-      answer: "はい。Audit プランはまさにそのためにあります。優先順位付けされた修正リストと 1 時間のウォークスルーを受け取り、自分のペースで実装します。robots.txt、Bing Webmaster Tools、基本的な schema など、影響度の高い項目はほとんどの経営者が一日のうちに直せます。後で気が変わった場合、Audit の費用は Setup に充当されます。"
+    - question: "ウェブサイトすらない場合は？"
+      answer: "サイトなしでも引用されることができます。エンジンはGoogle Business Profile、Yelp、Foursquare、Apple Business Connectから引用するため、まずそれらを申請・整備します。サイトが必要になったとき、後から手直しするのではなく、AEOネイティブで構築します——schema優先、答え優先、BingとIndexNowを最初から組み込んで。サイトはあなたが完全にコントロールできる唯一の資産ですが、リスティングがエンジンが最初に見つける基盤です。"
+
+    - question: "Google Business Profileはどうなりますか？"
+      answer: "ローカルビジネスにとって最もROIの高いレバーです。完全なプロフィールは、他に何もしなくても30〜60日でローカル3-packに押し上げることができます。未申請、半分しか埋まっていない、写真がないなら、そこから作業が始まります。<a href='https://whitespark.ca/local-search-ranking-factors/' rel='external nofollow'>Whitespark 2026 Local Search Ranking Factors報告書</a>は依然としてGBPをローカルパック可視性の第1位要因として位置付けています。"
+
+    - question: "やめたい場合は？"
+      answer: "やめてください。あなたが所有しています——ドメイン、GBP、アカウント、コンテンツ——そして月単位を超える契約はありません。成果が出ていないなら離れてください。それを知らせてもらえるほうがありがたいです。クライアントを縛りつけるのは、価値で繋ぎとめられないという兆候です。"
+
+    - question: "'AEO'はAnswer Engine Optimizationと同じですか？"
+      answer: "はい。AEOとGenerative Engine Optimization（GEO）は同じものを指します。業界はまだ用語を統一していません。（注：AEOはAmerican Eagle Outfittersの株式ティッカーでもありますが、商標クラスが異なります——小売衣料品とマーケティングサービスでは区分が異なり、競合はありません。）"
+
+    - question: "自分でできますか？"
+      answer: "一部はできます。固定価格パッケージはそのために設計されています。AI Visibility Quick Check（$495）は現状と最初に修正すべき3つのことを教え、Schema Pack（$895）はあなたの実際のデータから生成・検証されたLocalBusiness、FAQPage、Personのschemaを提供します。ほとんどのオーナーは高インパクトな項目を午後一回で片付けられます——robots.txt、Bing Webmaster Tools、schemaの基本。[小規模ビジネス向けパッケージを見る](/pricing/#flat-packages)。"

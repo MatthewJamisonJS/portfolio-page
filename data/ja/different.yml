@@ -1,26 +1,26 @@
-# TODO: translate from English (AEO-2 Task 6.2 mirror, 2026-05-14)
 different:
   enable: true
-  title: "What makes Gateway Tech AEO different."
-  subtitle: "One operator. Three audits in one. A plan you can act on."
+  title: "Gateway Tech AEOが違う理由。"
+  subtitle: "1人のオペレーター。適格性優先、次に引用可能性。実行できるプランを。"
   blocks:
     audit_scope:
-      heading: "We audit three things, not one."
-      body: "Most AEO services check whether AI can cite you. We audit your visibility across classical search (the ten blue links), answer engines (ChatGPT, Perplexity, AI Overview), and generative search (the citations themselves). You get one report covering all three, because being absent is rarely just an AEO problem."
+      heading: "3つの面を読みます。1つではなく。"
+      body: "ほとんどのAEO業者は、エンジンがあなたを引用できるかどうかだけを確認します。私たちはクラシック検索（10件の青いリンク）、答えエンジン（ChatGPT、Perplexity、AI Overviews）、生成検索（引用そのもの）の3つにわたるあなたの可視性を読みます。1つのレポートで3つすべてをカバーします。不在の問題はAEOだけの問題であることはほとんどなく、各エンジンが信頼するソースはほとんど重なっていないため、1つのプレイブックでは機能しないからです。"
     pillars:
-      heading: "Three pillars. If a tactic does not strengthen one of them, we do not do it."
+      heading: "3つの柱。いずれか1つを強化しない戦術は採用しません。"
       ref: "method"
     deliverable:
-      heading: "What you actually get."
-      body: "An actionable audit summary. We tell you what to fix, in what order, and what each fix is worth — in plain language you can act on. Deeper execution playbooks and the audit tooling stay scoped to the engagement."
+      heading: "実際に得られるもの。"
+      body: "平易な言葉のプラン：何を、どの順番で修正するか、各修正の価値は何か。より深い実行プレイブックと監査ツールはエンゲージメントの範囲内に留まります。一回限りの診断、スコープ型実装、30日または90日プログラム、月額リテーナーから選べます。引き渡しではなく新たに構築するほうが理にかなっている場合は、パートナースタジオの[Jamison Software Solutions](https://jamisonsoftwaresolutions.com)と共同でお届けします。[メニューと料金を見る。](/pricing/)"
     trust:
-      heading: "How we operate."
+      heading: "運営方針。"
       moves:
-        - "We cap year one at 5 St. Louis clients. Slow growth means deep service."
-        - "You own everything we touch. Your domain, your Google Business Profile, your content, your accounts."
-        - "Month-to-month, no long contracts. Stop when you want."
+        - "権威より適格性を先に。クローラーが読めないサイトには引用構築は売りません。基盤が先、さもなければ何も定着しません。"
+        - "私たちが触れるものはすべてあなたのものです：ドメイン、Google Business Profile、コンテンツ、アカウント。"
+        - "月単位。長期契約なし、ロックインなし——成果が出なくなったらいつでも離れられます。"
+        - "AI回答への掲載保証はしません。エビデンスが支持するものを実装し、それに対して誠実に報告します。引用を約束する人は、誰も守れないことを約束しています。"
     cta:
-      pricing_label: "See pricing"
+      pricing_label: "料金を見る"
       pricing_link: "/pricing/"
-      brief_label: "Send a brief"
+      brief_label: "ブリーフを送る"
       brief_link: "/#contact"

@@ -1,20 +1,19 @@
-# TODO: translate to Spanish
 ---
 contact:
   enable: true
-  title: "Project intake"
-  subtitle: "Email-first intake. I reply within 48–96 hours."
-  content: "Tell me about your business so I can be useful right away. The more context the brief carries, the more tailored the first reply — I use what you send to draft something specific to your site, your city, and your customers. St. Louis local? Coffee meeting works too — same brief."
+  title: "Recepción de proyecto"
+  subtitle: "Recepción por correo electrónico. Respondo en 48–96 horas."
+  content: "Cuéntame sobre tu negocio para poder ser útil desde el primer momento. Cuanto más contexto lleve el brief, más personalizada será la primera respuesta. Uso lo que me envías para redactar algo específico a tu sitio, tu ciudad y tus clientes. ¿Eres local de St. Louis? Una reunión con café también funciona: mismo brief."
 
   contact_form:
     enable: true
     form_action: "https://intake.gatewaytechaeo.com/brief"
-    name: "Your Name"
-    email: "Your Email"
-    site_url: "Your Site (URL, if you have one)"
-    location: "City, State"
-    business_one_liner: "What does your business do? (one sentence)"
-    current_goals: "What would you like AEO to fix?"
-    message: "Anything else I should know"
-    submit: "Send brief"
+    name: "Tu nombre"
+    email: "Tu correo electrónico"
+    site_url: "Tu sitio (URL, si tienes uno)"
+    location: "Ciudad, Estado"
+    business_one_liner: "¿A qué se dedica tu negocio? (una frase)"
+    current_goals: "¿Qué te gustaría que el AEO resolviera?"
+    message: "Cualquier otra cosa que deba saber"
+    submit: "Enviar brief"
 ---

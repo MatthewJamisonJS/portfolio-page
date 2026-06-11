@@ -1,15 +1,14 @@
-# TODO: translate from English (AEO-2 Task 6.2 mirror, 2026-05-14)
 ---
 banner:
   enable: true
-  kicker: "Answer Engine Optimization · St. Louis"
-  title: "When they ask AI, <em>will you show up?</em>"
-  subtitle: "We make sure you do"
+  kicker: "Answer Engine Optimization · A nivel nacional, en remoto"
+  title: "Cuando alguien le pregunta a la IA, <em>¿apareces tú?</em>"
+  subtitle: "Nos aseguramos de que sí"
   button:
     enable: true
-    label: "Why does this matter to me"
+    label: "Por qué esto importa ahora"
     link: "/why/"
   secondary:
-    label: "What makes Gateway Tech AEO different"
+    label: "Qué hace Gateway Tech AEO"
     link: "/different/"
 ---

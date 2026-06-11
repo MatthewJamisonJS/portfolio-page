@@ -4,34 +4,36 @@ home:
     - id: "what-is-aeo"
       heading: "¿Qué es la Optimización para Motores de Respuesta?"
       body: |
-        AEO es el trabajo que haces para que las herramientas de IA te citen cuando un cliente pregunta. ChatGPT, Perplexity, Google AI Overview, Claude, Apple Intelligence, Bing Copilot. El SEO persigue los diez enlaces azules; el AEO busca ser la respuesta citada. Misma higiene técnica (schema, velocidad de página, URLs limpias), línea de meta distinta. El SEO construye visibilidad. El AEO construye algo que la IA puede citar.
+        AEO es el trabajo que haces para que las herramientas de IA te citen cuando alguien pregunta. ChatGPT, Perplexity, Google AI Overviews, Claude, Apple Intelligence, Bing Copilot. El SEO perseguía los diez enlaces azules; el AEO apunta a ser la respuesta citada. Misma higiene técnica (schema, velocidad de página, URLs limpias), línea de meta distinta. El SEO construyó visibilidad. El AEO construye algo que un motor puede citar.
 
-        Cómo busca la gente ha cambiado. En vez de escribir "plomero cerca de mí" y revisar diez resultados, los clientes le hacen al asistente la pregunta completa: "¿Quién es el mejor plomero de emergencia en el sur de St. Louis que abre temprano?" Reciben una sola frase. Uno o dos nombres. A veces un enlace. Si no estás en la respuesta, el resto de tu marketing no llega a trabajar.
+        Cómo busca la gente ha cambiado. En lugar de escribir una palabra clave y escanear una página de resultados, le hacen la pregunta completa a un asistente — "¿quién es el mejor plomero de emergencia en el sur de St. Louis que abre temprano?", o "¿qué empresas hacen AEO para SaaS B2B?" — y reciben uno o dos nombres, a veces un enlace, muchas veces ningún enlace en absoluto. Si no estás en esa respuesta, el resto de tu marketing no llega a tener turno.
 
     - id: "why-matters-local"
-      heading: "Por qué esto importa para los negocios locales de St. Louis"
+      heading: "Por qué esto importa ahora"
       body: |
-        El 45 % de los consumidores locales le pide a la IA recomendaciones de negocios. Hace un año esa cifra era del 6 %. La migración de Páginas Amarillas a Google no se movió tan rápido. La mayoría de los negocios locales de St. Louis siguen siendo invisibles para esa IA: robots.txt bloqueado, sin schema, fichas sin reclamar. Tus competidores aparecen citados cuando la IA busca plomeros, contadores, agentes inmobiliarios; tú no. Los clientes son reales y la brecha se ensancha cada trimestre.
+        La búsqueda dejó de ser diez enlaces azules. La gente le pregunta a un asistente y actúa según lo que le responde. La encuesta de BrightLocal de 2026 situó el uso de IA para recomendaciones de negocios en el 45 %, frente al 6 % del año anterior; el cambio de las Páginas Amarillas a Google nunca se movió tan rápido. La clave está en que ser citado no es lo mismo que posicionarse. Whitespark encontró AI Overviews en aproximadamente el 48 % de las consultas rastreadas, pero solo alrededor del 17 % de las fuentes que esas respuestas citan también aparecen en el top diez orgánico de Google. Puedes dominar la primera página y seguir siendo invisible en la respuesta.
+
+        La mayoría de los negocios son invisibles a esto por razones simples: un robots.txt que bloquea los crawlers, sin schema, fichas que nadie ha reclamado. Esa es la brecha, y se amplía cada trimestre. [Lee los seis hechos que lo respaldan.](/why/)
 
     - id: "how-we-work"
-      heading: "Cómo trabajamos"
+      heading: "Cómo se secuencia el trabajo"
       body: |
-        Tres pilares guían cada decisión: **Técnico** (¿la IA puede encontrarte?), **Autoridad** (¿la IA confía en ti?), **Contenido** (¿respondes a lo que preguntan?). Auditamos los tres, te escribimos una lista priorizada de arreglos y te acompañamos a ejecutarla. [Lee qué nos hace diferentes.](/different/)
+        Dos capas, en orden. **Eligibilidad** primero — la entidad existe, los crawlers pueden alcanzarla, las respuestas son legibles por máquinas. **Citabilidad** después — suficientes fuentes externas te corroboran para que un motor confíe en ti lo bastante para nombrarte. Verter autoridad sobre una base rota no amplifica nada, así que no lo hacemos.
 
-        Elige el nivel que se ajusta a tu ancho de banda. Auditoría si quieres aprenderlo y ejecutarlo tú mismo. Implementación y Entrega si quieres que se construya bien y luego se te entregue. Servicio Gestionado si quieres que lo manejemos de extremo a extremo. Cada compromiso empieza igual: una auditoría escrita que te quedas, sigas con nosotros o no. La auditoría nombra los problemas específicos de tu sitio, los ordena por impacto y muestra la evidencia verificable. No propuestas disfrazadas de informes.
+        La mayoría de los contratos comienzan con un diagnóstico: un análisis de dónde estás en los principales motores y exactamente qué te está bloqueando, acreditado al precio si continúas con la implementación. A partir de ahí es implementación con alcance definido, un programa de 30 o 90 días, o una retención mensual — lo que encaje con cuánto quieres gestionar tú frente a lo que quieres delegar. [Consulta el menú completo y lo que cuesta cada opción.](/pricing/)
 
     - id: "who-this-for"
       heading: "Para quién es esto, y para quién no"
       body: |
-        Funciona para negocios de servicios con geografía cerrada. Plomeros, electricistas, HVAC, dental, legal, contaduría, reparaciones, inmobiliarios, comercio local. Cuanto más afinada sea tu zona de servicio, mejor rinde el AEO: los motores de respuesta pesan mucho la intención local y el campo competitivo se reduce. Si eres una SaaS intentando posicionarte a nivel nacional en Google, el SEO clásico y los anuncios pagados se llevan tu ROI. Si eres un negocio local en el área de St. Louis, el AEO es la palanca que casi nadie está tirando todavía.
+        Negocios que quieren ser la respuesta que da un motor. Las empresas de servicios locales con geografía ajustada funcionan especialmente bien, porque los motores de respuesta ponderan mucho la intención local y el campo competitivo es escaso; las empresas B2B que venden a nivel nacional también se benefician, ya que sus compradores investigan preguntando. El trabajo tiene la misma forma en cualquier caso: hacer la entidad legible y luego hacer que la citen.
 
-        Limitamos el primer año a 5 clientes. El trabajo local pide atención; si necesitas que te sumemos a una cartera de 100, no somos el ajuste. Preferimos dueños operadores y equipos pequeños. No trabajamos con cadenas multi-local, granjas de generación de leads, ni negocios cuyo modelo depende de esconder el precio real. Solo los negocios honestos se benefician de ser más visibles.
+        No trabajamos con proyectos de criptomonedas o NFT, estructuras de MLM, contenido adulto, venta de armas, ni nadie bajo acción regulatoria activa. Y no prometemos citas — las tuberías de recuperación reclasifican según su propio calendario, y una actualización de modelo puede desplazar de un día para otro una parte de las fuentes que antes citaban. Lo que prometemos es un trabajo honesto que puedes verificar y cuentas que tú controlas completamente.
 
     - id: "day-one-deliverables"
-      heading: "Lo que recibes el primer día"
+      heading: "Qué se conecta primero"
       body: |
-        Cuatro fundamentos técnicos quedan conectados el día uno. El **schema markup** etiqueta tu negocio, horarios, dirección, reseñas y FAQ en el formato que los motores de IA leen de forma nativa. **robots.txt** permite explícitamente a GPTBot, ClaudeBot y PerplexityBot rastrear tu sitio (la mayoría de los negocios locales los bloquea sin querer). **Mapa del sitio verificado** lista cada página para que la indexación quede completa. **llms.txt** apunta a las herramientas de IA hacia tu licencia, políticas de privacidad y cualquier contenido restringido. Estos cuatro archivos toman una tarde. La mayoría de los sitios locales tiene cero. Esa es la brecha.
+        La base son unos pocos archivos que la mayoría de los sitios no tiene. El **marcado schema** etiqueta tu negocio, horarios, dirección, reseñas y FAQs en el formato estructurado que los motores leen de forma nativa. **robots.txt** se corrige para la división de crawlers de 2026 — los crawlers de búsqueda que alimentan respuestas (OAI-SearchBot, Claude-SearchBot y PerplexityBot) permitidos por nombre; los crawlers de entrenamiento (GPTBot, ClaudeBot) quedan como una decisión separada que tomas a propósito, no por accidente. Un **mapa del sitio verificado** más **IndexNow** y **Bing Webmaster Tools** cubren la señal de mayor palanca y menor coste que la mayoría de los equipos omiten, y un **llms.txt** apunta a las herramientas de IA hacia lo que tiene licencia y lo que está fuera de límites.
 
-        Después de los cuatro archivos, configuramos tu Perfil de Google Business, reclamamos y alineamos tu ficha de Apple Business Connect, y arreglamos la consistencia NAP (nombre, dirección, teléfono) en los directorios que los motores de IA realmente leen. Se añade el schema de reseñas para que las estrellas viajen a las respuestas de IA. Cada cambio queda documentado en un informe en lenguaje claro para que veas qué se hizo y por qué. Nada de informes caja negra.
-      cta_text: "Ver precios detallados"
+        Después la capa local: Google Business Profile reclamado y completado, un NAP canónico (nombre, dirección, teléfono) propagado por los directorios que los motores realmente ingieren, schema de reseñas añadido para que las valoraciones con estrellas viajen a las respuestas. Cada cambio aparece en un informe en lenguaje claro para que veas qué se hizo y por qué. Sin paneles de caja negra.
+      cta_text: "Ver servicios y precios"
       cta_link: "/pricing/"

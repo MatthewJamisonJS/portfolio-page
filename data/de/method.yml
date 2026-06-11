@@ -1,7 +1,7 @@
 method:
   enable: true
   title: "Unser Ansatz zu AEO"
-  intro: "Drei Säulen. Stärkt eine Taktik nicht mindestens eine, wird sie nicht ausgeliefert."
+  intro: "Drei Säulen. Stärkt eine Taktik nicht mindestens eine, wird sie nicht umgesetzt."
   pillars:
     - id: "technical"
       title: "Technik"
@@ -9,14 +9,14 @@ method:
       icon: "ti-server"
       bullets:
         - "Schema für LocalBusiness und FAQ"
-        - "Mobile Geschwindigkeit unter 3 Sekunden"
-        - "KI-Bots in robots.txt erlaubt"
+        - "Mobile-Ladezeit unter 3 Sekunden"
+        - "KI-Crawler in robots.txt erlaubt"
     - id: "authority"
       title: "Autorität"
       tagline: "Vertraut KI Ihnen?"
       icon: "ti-pulse"
       bullets:
-        - "Google-Unternehmensprofil komplett"
+        - "Google Business Profile vollständig"
         - "Bewertungen und Zitate konsistent"
         - "Marke im Web erwähnt"
     - id: "content"

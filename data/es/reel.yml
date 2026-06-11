@@ -1,18 +1,18 @@
 reel:
   enable: true
   eyebrow: "Prueba en vivo de citas IA"
-  aria_label: "Grabaciones en vivo de motores de búsqueda IA respondiendo a consultas AEO de St. Louis"
-  disclaimer: "Grabado · capturado 2026-05-09 · las respuestas son capturas reales de cada proveedor de IA"
+  aria_label: "Grabaciones en vivo de motores de búsqueda con IA respondiendo a consultas AEO reales"
+  disclaimer: "Grabación editada · capturada el 2026-05-09 · las respuestas son capturas reales de cada proveedor de IA"
   loops:
     - slug: gemini
       enabled: true
       engine: "Gemini · 2.5 Flash"
       poster: /images/posters/loop-gemini-poster.webp
       mp4:  /videos/loop-gemini.mp4
-      aria_label: "Google Gemini respondiendo a cuatro consultas AEO de St. Louis"
+      aria_label: "Google Gemini respondiendo a cuatro consultas AEO reales"
     - slug: openai
       enabled: true
       engine: "ChatGPT · 5"
       poster: /images/posters/loop-openai-poster.webp
       mp4:  /videos/loop-openai.mp4
-      aria_label: "OpenAI ChatGPT respondiendo a cuatro consultas AEO de St. Louis"
+      aria_label: "OpenAI ChatGPT respondiendo a cuatro consultas AEO reales"

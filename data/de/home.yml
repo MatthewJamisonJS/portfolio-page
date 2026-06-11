@@ -4,34 +4,36 @@ home:
     - id: "what-is-aeo"
       heading: "Was ist Answer Engine Optimization?"
       body: |
-        AEO ist die Arbeit, die du machst, damit KI-Werkzeuge dich zitieren, wenn ein Kunde fragt. ChatGPT, Perplexity, Google AI Overview, Claude, Apple Intelligence, Bing Copilot. SEO jagt den zehn blauen Links nach; AEO will die zitierte Antwort sein. Gleiches technisches Fundament (Schema, Seitengeschwindigkeit, saubere URLs), anderes Ziel. SEO baut Auffindbarkeit. AEO baut etwas, das die KI zitieren kann.
+        AEO ist die Arbeit, die Sie tun, damit KI-Tools Sie zitieren, wenn jemand fragt. ChatGPT, Perplexity, Google AI Overviews, Claude, Apple Intelligence, Bing Copilot. SEO jagt die zehn blauen Links; AEO zielt darauf, die zitierte Antwort zu sein. Gleiches technisches Fundament (Schema, Seitengeschwindigkeit, saubere URLs), anderes Ziel. SEO baut Auffindbarkeit. AEO baut etwas, das eine KI zitieren kann.
 
-        Wie Menschen suchen, hat sich verändert. Statt „Klempner in der Nähe" zu tippen und zehn Treffer zu überfliegen, stellen Kunden dem Chat-Assistenten die ganze Frage: „Wer ist der beste Notfall-Klempner im Süden von St. Louis, der früh öffnet?" Sie bekommen einen Satz zurück. Ein, zwei Namen. Manchmal einen Link. Wer nicht in der Antwort steht, dessen restliches Marketing kommt gar nicht erst zum Zug.
+        Die Art, wie Menschen suchen, hat sich verändert. Statt ein Stichwort einzugeben und eine Ergebnisseite zu überfliegen, stellen sie die ganze Frage: „Wer ist der beste Notfall-Klempner im Süden von St. Louis, der früh öffnet?" oder „Welche Firmen machen AEO für B2B-SaaS?" — und bekommen ein oder zwei Namen zurück, manchmal einen Link, oft gar keinen. Wer in dieser Antwort nicht steht, dem bekommt der Rest seines Marketings nie eine Chance.
 
     - id: "why-matters-local"
-      heading: "Warum das für lokale Unternehmen in St. Louis zählt"
+      heading: "Warum das jetzt wichtig ist"
       body: |
-        45 % der lokalen Verbraucher fragen die KI nach Geschäftsempfehlungen. Vor einem Jahr lag diese Zahl bei 6 %. Der Übergang von den Gelben Seiten zu Google ging nicht so schnell. Die meisten lokalen Unternehmen in St. Louis sind für diese KI weiterhin unsichtbar: blockierte robots.txt, kein Schema, nicht beanspruchte Einträge. Deine Konkurrenten werden zitiert, wenn die KI nach Klempnern, Steuerberatern, Maklern sucht; du nicht. Die Kunden sind real und der Abstand wächst von Quartal zu Quartal.
+        Suche ist nicht mehr nur zehn blaue Links. Menschen fragen einen Assistenten und handeln nach der Antwort. Die BrightLocal-Umfrage 2026 beziffert den KI-Einsatz für Geschäftsempfehlungen auf 45 % — ein Jahr zuvor waren es 6 %; der Übergang von den Gelben Seiten zu Google verlief nie so schnell. Das Problem: Zitiert werden ist nicht dasselbe wie ranken. Whitespark stellte fest, dass AI Overviews bei rund 48 % der erfassten Suchanfragen erscheinen, doch nur etwa 17 % der zitierten Quellen stehen auch in Googles organischen Top 10. Man kann Seite 1 besitzen und trotzdem in der Antwort fehlen.
+
+        Die meisten Unternehmen sind für diese KI aus banalen Gründen unsichtbar: eine robots.txt, die Crawler blockiert, kein Schema, nicht beanspruchte Einträge. Das ist die Lücke — und sie wird von Quartal zu Quartal größer. [Lesen Sie die sechs Fakten dahinter.](/why/)
 
     - id: "how-we-work"
-      heading: "Wie wir arbeiten"
+      heading: "Wie die Arbeit gegliedert ist"
       body: |
-        Drei Säulen leiten jede Entscheidung: **Technik** (kann die KI dich finden?), **Autorität** (vertraut die KI dir?), **Inhalt** (beantwortest du, was sie fragen?). Wir auditieren alle drei, schreiben dir eine priorisierte Korrekturliste und begleiten die Umsetzung. [Lies, was uns unterscheidet.](/different/)
+        Zwei Ebenen, in dieser Reihenfolge. Zuerst **Förderfähigkeit** — das Unternehmen existiert, Crawler können es erreichen, die Antworten sind maschinenlesbar. Dann **Zitierfähigkeit** — genug externe Quellen bestätigen Sie, damit eine KI Sie vertrauensvoll nennt. Autorität auf ein defektes Fundament zu gießen verstärkt nichts — daher tun wir das nicht.
 
-        Wähl die Stufe, die zu deiner Bandbreite passt. Audit, wenn du es lernen und selbst betreiben willst. Setup & Hand-off, wenn du es richtig gebaut haben und danach übernehmen willst. Done-For-You, wenn wir es Ende zu Ende führen sollen. Jedes Engagement beginnt gleich: ein schriftliches Audit, das dir gehört, egal ob du bei uns bleibst oder nicht. Das Audit benennt die konkreten Probleme deiner Seite, ordnet sie nach Wirkung, zeigt die überprüfbaren Belege. Keine Angebote im Bericht-Mantel.
+        Die meisten Engagements beginnen mit einer Diagnose: ein Überblick über Ihren Stand bei den wichtigsten KI-Tools und genau das, was Sie blockiert — wird auf die Implementierung angerechnet, wenn Sie fortfahren. Danach folgt eine abgestimmte Umsetzung, ein 30- oder 90-Tages-Programm oder ein monatlicher Retainer — je nachdem, wie viel Sie selbst in der Hand behalten oder abgeben wollen. [Alle Angebote und Preise.](/pricing/)
 
     - id: "who-this-for"
-      heading: "Für wen das passt, und für wen nicht"
+      heading: "Für wen das gedacht ist — und für wen nicht"
       body: |
-        Funktioniert für Dienstleistungsbetriebe mit engem Einzugsgebiet. Klempner, Elektriker, HLK, Zahnmedizin, Recht, Buchhaltung, Hausreparatur, Immobilien, lokaler Einzelhandel. Je schärfer dein Servicegebiet, desto stärker wirkt AEO: Antwortmaschinen gewichten lokale Absicht hoch und das Konkurrenzfeld schrumpft. Wenn du ein SaaS bist, das national auf Google ranken will, holen klassisches SEO und bezahlte Anzeigen den ROI. Wenn du ein lokales Unternehmen rund um St. Louis bist, ist AEO der Hebel, den fast niemand sonst zieht.
+        Für Unternehmen, die die Antwort sein wollen, die eine KI gibt. Lokale Dienstleister mit engem Einzugsgebiet profitieren besonders, weil Antwort-KIs lokale Absichten stark gewichten und das Wettbewerbsfeld dünn ist; B2B-Firmen mit nationalem Vertrieb profitieren ebenfalls, da ihre Käufer durch Fragen recherchieren. Die Arbeit hat in beiden Fällen dieselbe Form: das Unternehmen lesbar machen, dann zitierbar.
 
-        Wir begrenzen das erste Jahr auf 5 Kunden. Lokale Arbeit braucht Aufmerksamkeit; wer auf eine Liste von 100 will, ist bei uns falsch. Wir bevorzugen Inhaber-Betreiber und kleine Teams. Wir arbeiten nicht mit Filialketten, Lead-Generation-Farmen oder Modellen, die den echten Preis verstecken. Nur ehrliche Unternehmen gewinnen dadurch, leichter gefunden zu werden.
+        Wir nehmen keine Kryptowährungs- oder NFT-Projekte, keine MLM-Strukturen, keine Inhalte für Erwachsene, keinen Waffenverkauf und keine Unternehmen unter aktiven Regulierungsmaßnahmen. Und wir versprechen keine Zitate — Retrieval-Pipelines re-ranken nach eigenem Zeitplan, und ein einziges Modell-Update kann über Nacht einen großen Teil zuvor zitierter Quellen ersetzen. Was wir versprechen, ist ehrliche Arbeit, die Sie nachprüfen können, und Konten, die vollständig unter Ihrer Kontrolle bleiben.
 
     - id: "day-one-deliverables"
-      heading: "Was du am ersten Tag bekommst"
+      heading: "Was zuerst eingerichtet wird"
       body: |
-        Vier technische Fundamente sind am ersten Tag verdrahtet. Das **Schema-Markup** kennzeichnet dein Unternehmen, Öffnungszeiten, Adresse, Bewertungen und FAQs in dem Format, das KI-Maschinen nativ lesen. **robots.txt** erlaubt GPTBot, ClaudeBot und PerplexityBot ausdrücklich, deine Seite zu durchsuchen (die meisten lokalen Unternehmen blockieren sie aus Versehen). Die **verifizierte Sitemap** listet jede Seite auf, damit die Indexierung vollständig wird. **llms.txt** verweist KI-Werkzeuge auf deine Lizenz, Datenschutzrichtlinien und alle gesperrten Inhalte. Diese vier Dateien brauchen einen Nachmittag. Die meisten lokalen Seiten haben null davon. Genau da liegt die Lücke.
+        Das Fundament sind wenige Dateien, die die meisten Websites nicht haben. **Schema-Markup** kennzeichnet Ihr Unternehmen, Öffnungszeiten, Adresse, Bewertungen und FAQs in dem strukturierten Format, das KI-Tools nativ lesen. **robots.txt** wird für die 2026er Crawler-Aufteilung korrigiert — Antwort-Crawler wie `OAI-SearchBot`, `Claude-SearchBot` und `PerplexityBot` werden namentlich erlaubt, Training-Crawler bleiben eine separate, bewusste Entscheidung Ihrerseits. Eine **verifizierte Sitemap** plus **IndexNow** und **Bing Webmaster Tools** decken das günstigste Signal mit hohem Hebel ab, das die meisten überspringen, und eine **llms.txt** verweist KI-Tools darauf, was lizenziert und was gesperrt ist.
 
-        Nach den vier Dateien richten wir dein Google Business Profil ein, beanspruchen und gleichen deinen Apple Business Connect Eintrag ab, und beheben die NAP-Konsistenz (Name, Adresse, Telefon) in den Verzeichnissen, die KI-Maschinen wirklich lesen. Review-Schema kommt dazu, damit Sterne in die KI-Antworten wandern. Jede Änderung landet in einem Bericht in klarer Sprache, damit du siehst, was getan wurde und warum. Keine Blackbox-Berichte.
-      cta_text: "Detaillierte Preise sehen"
+        Dann die lokale Ebene: Google Business Profile beansprucht und vervollständigt, ein kanonisches NAP (Name, Adresse, Telefon) in den Verzeichnissen propagiert, die KI tatsächlich einliest, Review-Schema hinzugefügt, damit Sternebewertungen in Antworten wandern. Jede Änderung landet in einem verständlichen Bericht, damit Sie sehen, was getan wurde und warum. Keine Blackbox-Dashboards.
+      cta_text: "Leistungen & Preise ansehen"
       cta_link: "/pricing/"

@@ -1,18 +1,18 @@
 reel:
   enable: true
-  eyebrow: "AI 引用のリアルタイム証拠"
-  aria_label: "St. Louis の AEO クエリに応答する AI 検索エンジンのライブ録画"
-  disclaimer: "録画リール · 2026-05-09 撮影 · 応答は各 AI プロバイダーからの実際の収録"
+  eyebrow: "AI引用のライブ証拠"
+  aria_label: "実際のAEOクエリに応答するAI検索エンジンのライブ録画"
+  disclaimer: "録画リール · 2026-05-09撮影 · 応答は各AIプロバイダーからの実際のキャプチャ"
   loops:
     - slug: gemini
       enabled: true
       engine: "Gemini · 2.5 Flash"
       poster: /images/posters/loop-gemini-poster.webp
       mp4:  /videos/loop-gemini.mp4
-      aria_label: "Google Gemini が St. Louis の 4 つの AEO クエリに応答"
+      aria_label: "Google Geminiが4つの実際のAEOクエリに応答"
     - slug: openai
       enabled: true
       engine: "ChatGPT · 5"
       poster: /images/posters/loop-openai-poster.webp
       mp4:  /videos/loop-openai.mp4
-      aria_label: "OpenAI ChatGPT が St. Louis の 4 つの AEO クエリに応答"
+      aria_label: "OpenAI ChatGPTが4つの実際のAEOクエリに応答"

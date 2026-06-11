@@ -1,8 +1,9 @@
 ---
-noindex: true
-# TODO: translate from English
-title: "Why AI search visibility matters"
-description: "Six cited facts about how customers find local businesses through AI search."
+title: "あなたのお客様はAIでビジネスを探しています：なぜ重要なのか"
+description: "AI導入率、引用率、答えエンジンと従来型検索の違いについて引用付きの6つの事実。すべて30秒以内に検証可能。"
 type: "why"
 layout: "single"
+date: 2026-01-15
+lastmod: 2026-05-15
+author: "Matthew Jamison"
 ---

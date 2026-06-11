@@ -1,26 +1,26 @@
-# TODO: translate from English (AEO-2 Task 6.2 mirror, 2026-05-14)
 different:
   enable: true
-  title: "What makes Gateway Tech AEO different."
-  subtitle: "One operator. Three audits in one. A plan you can act on."
+  title: "Qué hace diferente a Gateway Tech AEO."
+  subtitle: "Un operador. Elegibilidad primero, luego citabilidad. Un plan sobre el que puedes actuar."
   blocks:
     audit_scope:
-      heading: "We audit three things, not one."
-      body: "Most AEO services check whether AI can cite you. We audit your visibility across classical search (the ten blue links), answer engines (ChatGPT, Perplexity, AI Overview), and generative search (the citations themselves). You get one report covering all three, because being absent is rarely just an AEO problem."
+      heading: "Leemos tres superficies, no una."
+      body: "La mayoría de los servicios de AEO solo comprueban si un motor puede citarte. Nosotros leemos tu visibilidad en la búsqueda clásica (los diez enlaces azules), los motores de respuesta (ChatGPT, Perplexity, AI Overviews) y la búsqueda generativa (las propias citas). Un único informe cubre las tres, porque estar ausente rara vez es solo un problema de AEO — y las fuentes en las que confía cada motor apenas se solapan, por lo que un único libro de jugadas para todas ellas falla."
     pillars:
-      heading: "Three pillars. If a tactic does not strengthen one of them, we do not do it."
+      heading: "Tres pilares. Si una táctica no fortalece al menos uno, no se entrega."
       ref: "method"
     deliverable:
-      heading: "What you actually get."
-      body: "An actionable audit summary. We tell you what to fix, in what order, and what each fix is worth — in plain language you can act on. Deeper execution playbooks and the audit tooling stay scoped to the engagement."
+      heading: "Qué obtienes realmente."
+      body: "Un plan en lenguaje claro: qué arreglar, en qué orden y cuánto vale cada arreglo. Los playbooks de ejecución más profundos y las herramientas de auditoría permanecen dentro del compromiso. Elige lo que encaje — un diagnóstico puntual, implementación con alcance definido, un programa de 30 o 90 días, o una retención mensual. Cuando el trabajo requiere un sitio nuevo construido para ser citado en lugar de adaptado, lo entregamos junto con nuestra agencia hermana, [Jamison Software Solutions](https://jamisonsoftwaresolutions.com). [Consulta el menú y los precios.](/pricing/)"
     trust:
-      heading: "How we operate."
+      heading: "Cómo operamos."
       moves:
-        - "We cap year one at 5 St. Louis clients. Slow growth means deep service."
-        - "You own everything we touch. Your domain, your Google Business Profile, your content, your accounts."
-        - "Month-to-month, no long contracts. Stop when you want."
+        - "Elegibilidad antes que autoridad. No te venderemos construcción de citas en un sitio que los crawlers no pueden leer; la base viene primero o nada se sostiene."
+        - "Tú eres dueño de todo lo que tocamos: tu dominio, tu Google Business Profile, tu contenido, tus cuentas."
+        - "Mes a mes. Sin contratos largos, sin ataduras — te vas cuando deja de ser rentable."
+        - "Sin garantía de aparición en una respuesta de IA. Implementamos lo que respalda la evidencia e informamos con honestidad sobre los resultados. Quien promete una cita está prometiendo algo que nadie puede cumplir."
     cta:
-      pricing_label: "See pricing"
+      pricing_label: "Ver precios"
       pricing_link: "/pricing/"
-      brief_label: "Send a brief"
+      brief_label: "Enviar un brief"
       brief_link: "/#contact"

@@ -1,18 +1,18 @@
 reel:
   enable: true
-  eyebrow: "Live-Beleg für AI-Zitate"
-  aria_label: "Live-Aufzeichnungen von AI-Suchmaschinen, die auf AEO-Anfragen aus St. Louis antworten"
-  disclaimer: "Aufgezeichneter Reel · aufgenommen 2026-05-09 · die Antworten sind echte Aufnahmen vom jeweiligen AI-Anbieter"
+  eyebrow: "Live-Beleg für KI-Zitate"
+  aria_label: "Live-Aufzeichnungen von KI-Suchmaschinen, die auf echte AEO-Anfragen antworten"
+  disclaimer: "Aufgezeichneter Reel · aufgenommen 2026-05-09 · die Antworten sind echte Aufnahmen vom jeweiligen KI-Anbieter"
   loops:
     - slug: gemini
       enabled: true
       engine: "Gemini · 2.5 Flash"
       poster: /images/posters/loop-gemini-poster.webp
       mp4:  /videos/loop-gemini.mp4
-      aria_label: "Google Gemini antwortet auf vier St. Louis AEO-Anfragen"
+      aria_label: "Google Gemini antwortet auf vier echte AEO-Anfragen"
     - slug: openai
       enabled: true
       engine: "ChatGPT · 5"
       poster: /images/posters/loop-openai-poster.webp
       mp4:  /videos/loop-openai.mp4
-      aria_label: "OpenAI ChatGPT antwortet auf vier St. Louis AEO-Anfragen"
+      aria_label: "OpenAI ChatGPT antwortet auf vier echte AEO-Anfragen"

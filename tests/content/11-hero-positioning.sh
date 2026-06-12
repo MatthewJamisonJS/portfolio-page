@@ -40,7 +40,7 @@ done
 # refactor in PR #45 "small→local sweep" — replaces the older "small business
 # + AI-world" framing).
 EN=$REPO/data/en/banner.yml
-REQUIRED_EN=("When they ask AI" "Why does this matter to me" "What makes Gateway Tech AEO different")
+REQUIRED_EN=("When they ask AI" "Why this matters now" "What Gateway Tech AEO does")
 for marker in "${REQUIRED_EN[@]}"; do
   if ! grep -q "$marker" "$EN"; then
     echo "FAIL — data/en/banner.yml missing positioning marker: $marker"

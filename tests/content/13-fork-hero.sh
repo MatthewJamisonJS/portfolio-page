@@ -14,8 +14,8 @@ fi
 
 REQUIRED=(
   "will you show up"
-  "Why does this matter to me"
-  "What makes Gateway Tech AEO different"
+  "Why this matters now"
+  "What Gateway Tech AEO does"
 )
 for needle in "${REQUIRED[@]}"; do
   if ! grep -q "$needle" "$HOME_HTML"; then

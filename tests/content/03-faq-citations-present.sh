@@ -19,7 +19,7 @@ FAIL=0
 
 # claim_phrase|expected_href_substring
 CLAIMS=(
-  "Gartner forecasts traditional search volume|gartner.com/en/newsroom"
+  "Gartner forecast traditional search volume|gartner.com/en/newsroom"
   "Adobe reported AI traffic|business.adobe.com/blog"
   "Whitespark 2026|whitespark.ca"
 )
